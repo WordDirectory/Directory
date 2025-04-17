@@ -20,7 +20,6 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
-      "@emails/*": ["./emails/*"]
     }
   },
   "include": [
@@ -28,7 +27,6 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "trigger.config.ts"
   ],
   "exclude": ["node_modules"]
 }

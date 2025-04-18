@@ -1,5 +1,5 @@
 import { Separator } from "@/components/ui/separator";
-import { getWord } from "@/lib/utils";
+import { capitalize, getWord } from "@/lib/utils";
 import { TWord } from "@/types/word";
 
 interface WordPageProps {
@@ -37,7 +37,7 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
           />
         )}
         <h1 className="text-5xl font-bold tracking-tight text-foreground/85 md:text-7xl">
-          {word}
+          {capitalize(word)}
         </h1>
       </div>
 

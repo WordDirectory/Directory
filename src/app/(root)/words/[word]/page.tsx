@@ -1,6 +1,9 @@
 import { Separator } from "@/components/ui/separator";
 import { capitalize, getWord } from "@/lib/utils";
 import { TWord } from "@/types/word";
+import { Quote } from "lucide-react";
+import { FaQuoteLeft } from "react-icons/fa6";
+import { Card, CardContent } from "@/components/ui/card";
 
 interface WordPageProps {
   params: Promise<{
@@ -15,9 +18,11 @@ export default async function WordPage({ params }: WordPageProps) {
   return (
     <div className="mx-auto max-w-3xl py-16 px-6">
       <WordHeader word={word} details={details} />
-      <Separator className="mb-8" />
       {details.definitions.length > 1 && (
-        <WordContent word={word} details={details} />
+        <>
+          <Separator className="mb-8" />
+          <WordContent word={word} details={details} />
+        </>
       )}
     </div>
   );
@@ -57,14 +62,20 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
         <>
           <Separator className="mb-8" />
           <div className="space-y-4">
-            <h2 className="text-xl font-semibold text-foreground/85">
+            <h2 className="text-xl font-semibold text-foreground/85 flex items-center gap-2">
+              <FaQuoteLeft className="w-5 h-5 text-muted-foreground" />
               Examples
             </h2>
-            <div className="rounded-lg bg-muted p-4 text-muted-foreground space-y-3">
+            <div className="grid gap-4 md:grid-cols-2">
               {details.examples.map((example, i) => (
-                <p key={i}>
-                  "<em>{example}</em>"
-                </p>
+                <Card key={i} className="group relative">
+                  <CardContent className="p-4">
+                    <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
+                    <p className="text-foreground/80 relative z-10">
+                      {example}
+                    </p>
+                  </CardContent>
+                </Card>
               ))}
             </div>
           </div>
@@ -81,7 +92,7 @@ function WordContent({ word, details }: { word: string; details: TWord }) {
         Definitions
       </h2>
 
-      <div className="space-y-6">
+      <div className="space-y-8">
         {details.definitions.map((def, index) => (
           <div key={index}>
             {def.image && (
@@ -96,12 +107,23 @@ function WordContent({ word, details }: { word: string; details: TWord }) {
             <p className="text-foreground/70">{def.text}</p>
 
             {details.examples.length > 0 && (
-              <div className="mt-2 rounded-lg bg-muted p-3 text-muted-foreground">
-                {details.examples.map((example, i) => (
-                  <p key={i}>
-                    "<em>{example}</em>"
-                  </p>
-                ))}
+              <div className="mt-4">
+                <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
+                  <Quote className="w-4 h-4" />
+                  Usage Examples
+                </h3>
+                <div className="grid gap-3 md:grid-cols-2">
+                  {details.examples.map((example, i) => (
+                    <Card key={i} className="group relative">
+                      <CardContent className="p-4">
+                        <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
+                        <p className="text-foreground/80 relative z-10">
+                          {example}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </div>
             )}
           </div>

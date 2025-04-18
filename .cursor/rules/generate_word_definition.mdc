@@ -1,0 +1,24 @@
+---
+description: Generate word definitions
+globs: 
+alwaysApply: false
+---
+When generating word definitions, they must be human readable and make sense. Unlike other definition sites where they define words with a bunch of other words that nobody understands, this dataset/site we're building makes everything stupid simple.
+
+Example with the word "Absolutely":
+❌ "Without qualification or restriction; completely." (what the fuck does this even mean)
+✅ "When you want to say 'yes' but in a really strong way. It means you completely agree or are totally sure about something. Think of it like saying 'yes' with extra power behind it. It can also mean something is totally complete or 100% true with no doubts." (everybody gets this)
+
+Data to generate in src/data/words.ts:
+// src/data/words.ts
+import { TDictionary } from "@/types/word";
+
+export const words: TDictionary = {
+  wordName: {
+    definitions: [{ text: "readable definition" }], // this can have 1 or more definitions, depending on the word
+    examples: ["Example 1", "Example 2"], // must be readable too, add 4-6 examples
+    pronunciation: "pronunciation goes here"
+  }
+};
+
+You must ONLY read 250 lines of `src/data/words.ts`. Since this file is extremely long, you only need to read a short snippet of it to understand it and generate word definitions properly and consistently.

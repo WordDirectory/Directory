@@ -5,7 +5,7 @@ alwaysApply: false
 ---
 You must not read the full `src/data/words.ts` file as it can get extremely long! Grep the codebase for the specific word instead.
 
-Grep the word by: "absolutely: {"
+Grep the word by EXACTLY: "absolutely: {". This exact structure will fetch words properly. Do not add escape characters or anything.
 
 ## Searching multiple words
 

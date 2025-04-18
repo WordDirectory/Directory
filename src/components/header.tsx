@@ -1,6 +1,7 @@
 import { SearchInput } from "./search-input";
 import Link from "next/link";
 import Image from "next/image";
+import { ThemeToggle } from "./theme-toggle";
 
 export function Header() {
   return (
@@ -17,8 +18,9 @@ export function Header() {
         </Link>
       </div>
 
-      <div className="w-full flex-1 md:w-auto md:flex-none">
+      <div className="flex w-full items-center justify-between gap-4 md:w-auto md:flex-none">
         <SearchInput />
+        <ThemeToggle />
       </div>
     </header>
   );

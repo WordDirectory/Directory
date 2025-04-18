@@ -1,0 +1,6 @@
+---
+description: When you need to search for a word like checking if a word exists or checking out a specific word
+globs: 
+alwaysApply: false
+---
+You must not read the full `src/data/words.ts` file as it can get extremely long! Grep the codebase for the specific word instead.

@@ -47,6 +47,21 @@ export function searchWords({
   return matches;
 }
 
+export function getRandomWords({ maxCount }: { maxCount: number }): string[] {
+  const totalWords = Object.entries(words).length;
+
+  if (maxCount > totalWords) {
+    maxCount = totalWords;
+  }
+
+  const selectedIndices = new Set<number>();
+  while (selectedIndices.size < maxCount) {
+    selectedIndices.add(Math.floor(Math.random() * totalWords));
+  }
+
+  return Array.from(selectedIndices).map((index) => Object.keys(words)[index]);
+}
+
 export function capitalize(text: string) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }

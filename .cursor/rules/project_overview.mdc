@@ -1,0 +1,31 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Word Directory (worddirectory.app)
+
+Words explained simply
+
+Because looking up one word shouldn't mean looking up five more. This app words how you'd explain them to a friend.
+
+It's like any other definition site - but with human readable definitions.
+
+## Structure
+- `src/data/words.ts` (all word definitions are stored here)
+- `src/app` (Next.js app)
+- `src/lib/utils.ts` (all utilities)
+- `src/types` (types)
+  - `word.ts` (word-related types)
+
+## Tech stack
+
+The project uses:
+- Next.js 15
+- Shadcn UI
+- Tailwind CSS
+- TypeScript
+
+## Creator
+
+Maze (hi! 👋)

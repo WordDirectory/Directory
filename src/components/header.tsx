@@ -1,8 +1,6 @@
-"use client";
-
+import { SearchInput } from "./search-input";
 import Link from "next/link";
 import Image from "next/image";
-import { SearchInput } from "@/components/search-input";
 
 export function Header() {
   return (

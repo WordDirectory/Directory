@@ -27,17 +27,24 @@ export function getWord(word: string): {
   return { word: normalizedWord, details: wordDetails };
 }
 
-export function searchWords(query: string): string[] {
-  if (!query) {
-    return Object.keys(words);
+export function searchWords({
+  query,
+  limit = 50,
+}: {
+  query: string;
+  limit?: number;
+}): string[] {
+  const normalizedQuery = query?.toLowerCase().trim() || "";
+  const matches: string[] = [];
+
+  for (const word of Object.keys(words)) {
+    if (word.toLowerCase().includes(normalizedQuery)) {
+      matches.push(word);
+      if (matches.length >= limit) break;
+    }
   }
 
-  const normalizedQuery = query.toLowerCase().trim();
-  const allWords = Object.keys(words);
-
-  return allWords.filter((word) =>
-    word.toLowerCase().includes(normalizedQuery)
-  );
+  return matches;
 }
 
 export function capitalize(text: string) {

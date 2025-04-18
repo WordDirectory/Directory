@@ -1,13 +1,23 @@
-# Next.js Template
+# Word Directory
 
-Hey, Tailwind V4 sucks. Everything that happened in web dev since like, January 2025 is a complete disaster.
+## Introduction
 
-So I made this template which uses the good old Tailwind V3, all that good stuff.
+Words explained like a human would
 
-It doesn't include any BS. Just exactly what you need.
+This is basically a site to find definitions of words, but they're actually readable.
 
-By the way, this was cloned from [Mazeway](https://github.com/mazeway-dev/mazeway)
+You know when you look up on Google "[word] definition" and it throws around a bunch of other buzzwords that nobody ever uses so you have to look at the definition of other words to get the definition of the original word?
 
-Because that project actually uses cool tech.
+It's a fucking mess.
 
-(source: I built it)
+(If you're born in the US, you probably don't have this problem lol)
+
+This app solves that by giving you human readable definitions that actually make sense.
+
+Instead of:
+- ❌ "Hello is when you greet someone" (if they don't know hello, what's the fucking chance they know greet?)
+
+We do:
+- ✅ "Hello is basically when you meet someone and you want to let them know you see them or want to talk to them"
+
+Like, we actually explain what the word is.

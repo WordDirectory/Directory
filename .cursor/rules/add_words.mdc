@@ -34,6 +34,40 @@ Examples of words we SHOULD include that you might be tempted to skip:
 
 The only real question should be: "Would this be in a normal dictionary?" If yes, add it.
 
+## Multiple definitions
+
+Many words have multiple meanings - don't try to cram them all into one definition. Instead:
+
+✅ DO THIS:
+- Split different meanings into separate definitions
+- Make each definition clear and focused on ONE meaning
+- Order them from most common/modern usage to less common
+- Keep each definition simple and independent
+
+❌ DON'T DO THIS:
+- Don't write "This can mean X, Y, or Z" in a single definition
+- Don't try to connect different meanings with "or" and "also"
+- Don't skip less common meanings just because they're not the main one
+
+Example of good multiple definitions:
+```program: {
+  definitions: [
+    {
+      text: "Software that runs on computers or phones",  // Most common modern usage
+    },
+    {
+      text: "A plan that tells you what's gonna happen and when",  // Second meaning
+    },
+    {
+      text: "A structured set of steps to achieve something",  // Third meaning
+    }
+  ]
+}```
+
+Remember: If you find yourself writing "or" or "also" in a definition, you probably should split it into multiple definitions!
+
+---
+
 **If the script gives you multiple words, check each one against the directory criteria. If at least one word fits, proceed with that word and ignore the others that don't fit. If no words fit, try running the script again. After 3 attempts with no fitting words, stop and tell the user you couldn't find any words that match the directory criteria.**
 
 ## If no words are provided

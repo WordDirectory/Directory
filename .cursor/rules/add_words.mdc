@@ -86,6 +86,7 @@ In case the user does not specify any words to add, it means you should:
       c. Based on that, decide if the word has one or more definitions, and what definitions exactly
       d. Write each definition and the examples for ALL words
       e. Do not skip any words or split them into multiple edits
+      f. It is important that you think about EVERY SINGLE WORD, and HOW they are used in the real world to get all contexts/definitions.
 3. Execute
    - Add ALL words to the file `src/data/words.ts` at the bottom of the file
    - Don't use the edit_file tool. Instead, add the words to a codeblock! (allows the user to copy/paste manually)

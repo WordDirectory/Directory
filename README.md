@@ -38,3 +38,7 @@ Built with:
 ## Creator
 
 Made by Maze (hi! 👋) - because looking up one word shouldn't mean looking up five more.
+
+## License
+
+MIT Licensed. Check out the [LICENSE](LICENSE) file for details.

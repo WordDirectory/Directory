@@ -9,15 +9,15 @@ import { cn } from "@/lib/utils";
 
 const SIZES = {
   sm: {
-    input: "h-9 w-72 text-sm",
+    input: "h-9 w-full md:w-72 text-sm",
     container: "w-full",
-    showSearchIcon: false
+    showSearchIcon: false,
   },
   lg: {
-    input: "h-12 w-[450px] text-lg pl-4 pr-12 rounded-full", 
+    input: "h-12 w-[450px] text-lg pl-4 pr-12 rounded-full",
     container: "w-full w-[450px]",
-    showSearchIcon: true
-  }
+    showSearchIcon: true,
+  },
 } as const;
 
 type SearchInputProps = {
@@ -26,7 +26,11 @@ type SearchInputProps = {
 
 export function SearchInput({ size = "sm" }: SearchInputProps) {
   const [open, setOpen] = useState(false);
-  const { input: inputClasses, container: containerClasses, showSearchIcon } = SIZES[size];
+  const {
+    input: inputClasses,
+    container: containerClasses,
+    showSearchIcon,
+  } = SIZES[size];
 
   const handleOpen = () => setOpen(true);
 
@@ -38,10 +42,7 @@ export function SearchInput({ size = "sm" }: SearchInputProps) {
           placeholder="Search words..."
           onClick={handleOpen}
           readOnly
-          className={cn(
-            "cursor-pointer hover:bg-accent !ring-0",
-            inputClasses
-          )}
+          className={cn("cursor-pointer hover:bg-accent !ring-0", inputClasses)}
         />
         {showSearchIcon && (
           <Button

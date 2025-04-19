@@ -31,7 +31,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading={`Words (${totalCount})`}>
+        <CommandGroup heading={`${totalCount} words in total`}>
           {words.map((word) => (
             <CommandItem
               key={word}

@@ -10,12 +10,13 @@ import { cn } from "@/lib/utils";
 const SIZES = {
   sm: {
     input: "h-9 w-full md:w-72 text-sm",
-    container: "w-full",
+    container: "w-full md:w-auto",
     showSearchIcon: false,
   },
   lg: {
-    input: "h-12 w-[450px] text-lg pl-4 pr-12 rounded-full",
-    container: "w-full w-[450px]",
+    input:
+      "h-12 w-full max-w-[450px] text-base sm:text-lg pl-4 pr-12 rounded-full",
+    container: "w-full max-w-[450px]",
     showSearchIcon: true,
   },
 } as const;

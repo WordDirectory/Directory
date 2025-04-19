@@ -18,6 +18,27 @@ Example with the word "Absolutely":
 ❌ "Without qualification or restriction; completely." (what the fuck does this even mean)
 ✅ "When you want to say 'yes' but in a really strong way. It means you completely agree or are totally sure about something. Think of it like saying 'yes' with extra power behind it. It can also mean something is totally complete or 100% true with no doubts." (everybody gets this)
 
+## Handling controversial or offensive words
+
+Don't shy away from controversial words - they're part of language too. But handle them like this:
+
+1. Keep it real
+   - Don't moralize or preach
+   - Don't tiptoe around it
+   - Just explain what's up with the word
+
+2. Structure the definition like:
+   - "Technically means X, but people use it like Y"
+   - Include both original/technical meaning and common usage
+   - Acknowledge if it pisses some people off, but don't make it a huge deal
+
+3. Examples should show:
+   - How it's commonly used (the real shit)
+   - The technical/original usage if relevant
+   - Mix of contexts to show the full picture
+
+Remember: We're not here to judge or censor - we're here to explain words how people actually use them. Let users make their own choices about what words to use.
+
 ## Data to generate
 
 // src/data/words.ts

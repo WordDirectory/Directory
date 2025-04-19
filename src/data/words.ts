@@ -872,4 +872,36 @@ export const words: TDictionary = {
     pronunciation:
       "/njuːˌmɒnəʊˌʌltrəˌmaɪkrəʊˌskɒpɪkˌsɪlɪkəʊvɒlˌkeɪnəʊˌkəʊniˈəʊsɪs/",
   },
+  a: {
+    definitions: [
+      {
+        text: "A word you use when you're talking about one of something, but it doesn't matter which one. It's like pointing at something without being specific. You use it before words that start with consonant sounds (sounds that aren't vowels).",
+      },
+    ],
+    examples: [
+      "I need a nap",
+      "Let's grab a coffee",
+      "She's a doctor",
+      "I saw a dog at the park",
+      "Can you hand me a pen?",
+      "There's a spider in the bathroom!",
+    ],
+    pronunciation: "/eɪ/",
+  },
+  an: {
+    definitions: [
+      {
+        text: "Just like 'a', but you use it before words that start with vowel sounds (a, e, i, o, u sounds). It's basically the same thing as 'a', but it sounds smoother when the next word starts with a vowel sound.",
+      },
+    ],
+    examples: [
+      "I ate an apple",
+      "She's an engineer",
+      "We need an umbrella",
+      "That was an awesome party",
+      "He's an honest person",
+      "I had an interesting dream",
+    ],
+    pronunciation: "/æn/",
+  },
 };

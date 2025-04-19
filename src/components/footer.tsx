@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { FaGithub, FaXTwitter } from "react-icons/fa6";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,7 +9,15 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Description section with title */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="font-bold text-lg mb-4">Word Directory</h3>
+            <div className="flex items-center gap-3 mb-4">
+              <Image 
+                src="/logo.png"
+                alt="Word Directory Logo"
+                width={28}
+                height={28}
+              />
+              <h3 className="font-bold text-lg">Word Directory</h3>
+            </div>
             <p className="text-sm text-muted-foreground max-w-md">
               A dictionary that actually makes sense.{" "}
               <span className="font-medium">

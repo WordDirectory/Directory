@@ -33,23 +33,26 @@ export function searchWords({
 }: {
   query: string;
   limit?: number;
-}): string[] {
+}): { results: string[]; totalCount: number } {
   const normalizedQuery = query?.toLowerCase().trim() || "";
-  const matches: string[] = [];
+  const allWords = Object.keys(words);
 
-  // If there's no query, return limited results
+  // If there's no query, return limited results but total count
   if (!normalizedQuery) {
-    for (const word of Object.keys(words)) {
-      matches.push(word);
-      if (matches.length >= limit) break;
-    }
-    return matches;
+    return {
+      results: allWords.slice(0, limit),
+      totalCount: allWords.length,
+    };
   }
 
-  // If there's a query, search through all words without limit
-  return Object.keys(words).filter((word) =>
+  // If there's a query, search through all words
+  const matches = allWords.filter((word) =>
     word.toLowerCase().includes(normalizedQuery)
   );
+  return {
+    results: matches,
+    totalCount: matches.length,
+  };
 }
 
 export function getRandomWords({ maxCount }: { maxCount: number }): string[] {

@@ -20,6 +20,20 @@ Instead of:
 We do:
 - ✅ "Hello is basically when you meet someone and you want to let them know you see them or want to talk to them"
 
+## What words do we include?
+
+We focus on words that people actually need explained:
+- Everyday words that might confuse non-native speakers
+- Slang and internet terms ("yeet", "sus", "fomo")
+- Complex words explained simply ("gaslighting", "procrastinate")
+- Words with multiple meanings that need context
+- Even "inappropriate" words - we don't censor. If people use it, we explain it
+
+We don't waste time on:
+- Names of people or places (that's what Google Maps is for)
+- Brand names (just Google it)
+- Super technical terms only specialists use (like very technical)
+
 ## Features
 
 - 🔍 **Stupid simple**: Every definition is written like a human would explain it

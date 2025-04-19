@@ -55,3 +55,6 @@ scripts/decode-jwt.py
 
 .trigger
 .cursor/mcp.json
+
+scripts/all_english_words.txt
+scripts/get_words.ts

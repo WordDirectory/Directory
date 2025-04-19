@@ -5,7 +5,8 @@ import { Input } from "./ui/input";
 import { SearchCommand } from "./search-command";
 import { Button } from "./ui/button";
 import { Search } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, capitalize } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 
 const SIZES = {
   sm: {
@@ -27,6 +28,7 @@ type SearchInputProps = {
 
 export function SearchInput({ size = "sm" }: SearchInputProps) {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
   const {
     input: inputClasses,
     container: containerClasses,
@@ -35,12 +37,18 @@ export function SearchInput({ size = "sm" }: SearchInputProps) {
 
   const handleOpen = () => setOpen(true);
 
+  // Get the word from the pathname if we're on a word page
+  const word = pathname.startsWith("/words/")
+    ? capitalize(pathname.split("/words/")[1])
+    : "";
+
   return (
     <div className={cn("relative mx-auto", containerClasses)}>
       <div className="relative w-full">
         <Input
           type="search"
           placeholder="Search words..."
+          value={word}
           onClick={handleOpen}
           readOnly
           className={cn("cursor-pointer hover:bg-accent !ring-0", inputClasses)}

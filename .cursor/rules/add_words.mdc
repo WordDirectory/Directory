@@ -23,7 +23,8 @@ In case the user does not specify any words to add, it means you should:
       d. Ensure the definitions are consistent to the others
       e. Do not skip any words or split them into multiple edits
 3. Execute
-   - Add ALL words to the file `src/data/words.ts` in a SINGLE edit at the bottom of the file
+   - Add ALL words to the file `src/data/words.ts` at the bottom of the file
+   - Don't use the edit_file tool. Instead, add the words to a codeblock! (allows the user to copy/paste manually)
    - Do not split the additions into multiple edits or responses
    - All words from the script output should be added in one go
    - Make sure to lowercase the words!

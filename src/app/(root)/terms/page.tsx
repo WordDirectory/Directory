@@ -35,8 +35,10 @@ export default function TermsPage() {
           <h2 className="text-2xl font-semibold">2. Using Our Service</h2>
           <p>
             Our service is provided "as is" without any warranties. While we
-            strive for accuracy, we cannot guarantee that all definitions are
-            100% accurate or suitable for all purposes.
+            strive for accuracy in our definitions and examples, we cannot guarantee
+            that all content is 100% accurate. Some definitions or examples may contain
+            errors, and we strongly recommend verifying any important information from
+            authoritative sources.
           </p>
           <p>
             You may use our service for personal, non-commercial purposes. You

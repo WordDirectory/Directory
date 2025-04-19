@@ -8,6 +8,7 @@ alwaysApply: false
 ## If no words are provided
 
 In case the user does not specify any words to add, it means you should:
+
 1. Get the words yourself by running the command `npx ts-node scripts/get_words.ts`
    - This script will get words from the English directory you should add
    - Check for any existing words in `src/data/words.ts`

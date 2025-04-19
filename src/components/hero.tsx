@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
 import { SearchCommand } from "@/components/search-command";
 import { SearchInput } from "./search-input";
 import { useState } from "react";

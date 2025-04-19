@@ -19,6 +19,7 @@ In case the user does not specify any words to add, it means you should:
       a. Decide if the word has one or more definitions
       b. Write each definition and the examples for the word
       c. Ensure the definitions are consistent to the others
+      d. Do not skip any words
 3. Execute
    - Add the word to the file `src/data/words.ts`
 

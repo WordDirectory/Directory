@@ -18,14 +18,15 @@ interface SearchCommandProps {
 
 export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const router = useRouter();
+  const words = searchWords({ query: "", limit: 50 });
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
       <CommandInput placeholder="Search words..." />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading="Words">
-          {searchWords({ query: "", limit: 50 }).map((word) => (
+        <CommandGroup heading={`Words (${words.length})`}>
+          {words.map((word) => (
             <CommandItem
               key={word}
               onSelect={() => {

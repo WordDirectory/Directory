@@ -37,14 +37,19 @@ export function searchWords({
   const normalizedQuery = query?.toLowerCase().trim() || "";
   const matches: string[] = [];
 
-  for (const word of Object.keys(words)) {
-    if (word.toLowerCase().includes(normalizedQuery)) {
+  // If there's no query, return limited results
+  if (!normalizedQuery) {
+    for (const word of Object.keys(words)) {
       matches.push(word);
       if (matches.length >= limit) break;
     }
+    return matches;
   }
 
-  return matches;
+  // If there's a query, search through all words without limit
+  return Object.keys(words).filter((word) =>
+    word.toLowerCase().includes(normalizedQuery)
+  );
 }
 
 export function getRandomWords({ maxCount }: { maxCount: number }): string[] {

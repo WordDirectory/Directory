@@ -682,14 +682,14 @@ export const words: TDictionary = {
   basic: {
     definitions: [
       {
-        text: "When someone or something is super mainstream and predictable - like they're following every basic trend without adding any originality. Think pumpkin spice lattes, Ugg boots, and taking pics of your avocado toast for Instagram.",
+        text: "When someone or something follows all the popular trends without any creativity or personal style. Like when someone's whole personality is just copying whatever's trending on social media. It's not necessarily bad - it just means you're playing it safe and sticking to what everyone else is doing instead of doing your own thing.",
       },
     ],
     examples: [
       "I know it's basic, but I actually love taking fall pictures in pumpkin patches",
       "Her entire personality is just basic white girl energy",
       "The party was pretty basic - just pizza and beer",
-      "I'm feeling basic today - might go get a Starbucks and do some shopping",
+      "I'm feeling basic today - might go get a Starbucks and do some shopping", 
       "The restaurant's decor was super basic - all white walls and Edison bulbs",
       "He called me basic for liking Taylor Swift, but whatever - her music slaps",
     ],

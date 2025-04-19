@@ -10,7 +10,7 @@ export function Footer() {
           {/* Description section with title */}
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <Image 
+              <Image
                 src="/logo.png"
                 alt="Word Directory Logo"
                 width={28}
@@ -56,7 +56,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
               <Link
-                href="https://github.com/mazeincoding/definition-site"
+                href="https://github.com/WordDirectory/Directory"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"
@@ -64,7 +64,7 @@ export function Footer() {
                 <FaGithub size={24} />
               </Link>
               <Link
-                href="https://x.com/mazeincoding"
+                href="https://x.com/WordDirectory"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-foreground transition-colors"

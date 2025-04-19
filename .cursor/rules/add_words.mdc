@@ -15,7 +15,6 @@ This dictionary is focused on words that:
 DO NOT include:
 - Names of people/places like "John" or "Paris"
 - Brand names (like "Addressograph")
-- Words like "Messages" or "Policies. Prefer "Message" and "Policy"
 
 Examples of good words to add:
 - Basic words and articles ("the", "of", "and", etc.) explained simply
@@ -24,7 +23,7 @@ Examples of good words to add:
 - Words with complex or multiple meanings that need simple explanation
 - Words commonly used but hard to understand ("gaslighting", "procrastinate")
 - Controversial or "inappropriate" words (we don't censor - if people use it, we explain it)
-
+- Do include words like "results" or "pages" (where there's multiple of something)
 
 **If the script gives you multiple words, check each one against the directory criteria. If at least one word fits, proceed with that word and ignore the others that don't fit. If no words fit, try running the script again. After 3 attempts with no fitting words, stop and tell the user you couldn't find any words that match the directory criteria.**
 

@@ -11,6 +11,7 @@ This dictionary is focused on words that:
 1. People actually use and might need explained in simple terms
 2. Have meanings that need to be broken down in a relatable way
 3. Could be confusing or have multiple contexts/uses
+4. Basic words (like "the", "of", "and") that non-native speakers might struggle with
 
 DO NOT include:
 - Proper nouns (names of people/places like "John" or "Paris")
@@ -18,13 +19,14 @@ DO NOT include:
 - Super technical terms that only specialists use (like SUPER technical)
 
 Examples of good words to add:
+- Basic words and articles ("the", "of", "and", etc.) explained simply
 - Everyday words that might confuse non-native speakers
 - Slang terms ("yeet", "sus", "fomo")
 - Words with complex or multiple meanings that need simple explanation
 - Words commonly used but hard to understand ("gaslighting", "procrastinate")
 - Controversial or "inappropriate" words (we don't censor - if people use it, we explain it)
 
-**If the script gives you words that don't fit into the directory, ignore them and add any other words that fit. If no words fit, move on and try finding words again until you find some words. note: AFTER 3 ATTEMPTS, STOP AND TELL THE USER YOU COULDN'T FIND ANY WORDS THAT FIT THE DIRECTORY!**
+**If the script gives you multiple words, check each one against the directory criteria. If at least one word fits, proceed with that word and ignore the others that don't fit. If no words fit, try running the script again. After 3 attempts with no fitting words, stop and tell the user you couldn't find any words that match the directory criteria.**
 
 ## If no words are provided
 
@@ -35,7 +37,6 @@ In case the user does not specify any words to add, it means you should:
    - Check for any existing words in `src/data/words.ts`
    - And return words that don't yet exist
 2. Come up with a human readable definition
-   - Read exactly 200 lines of the file `src/data/words.ts`
    - In your response, start a <thinking> block
    - Within the <thinking> block:
       a. Analyze ALL words returned from the script at once

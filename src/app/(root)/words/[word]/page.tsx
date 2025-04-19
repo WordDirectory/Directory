@@ -71,7 +71,7 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
                 <Card key={i} className="group relative">
                   <CardContent className="p-4">
                     <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                    <p className="text-foreground/80 relative z-10">
+                    <p className="text-foreground/80 relative z-10 break-words hyphens-auto">
                       {example}
                     </p>
                   </CardContent>
@@ -117,7 +117,7 @@ function WordContent({ word, details }: { word: string; details: TWord }) {
                     <Card key={i} className="group relative">
                       <CardContent className="p-4">
                         <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                        <p className="text-foreground/80 relative z-10">
+                        <p className="text-foreground/80 relative z-10 break-words hyphens-auto">
                           {example}
                         </p>
                       </CardContent>

@@ -904,4 +904,19 @@ export const words: TDictionary = {
     ],
     pronunciation: "/æn/",
   },
+  retard: {
+    definitions: [
+      {
+        text: "Technically means 'to slow down' (like in science), but let's be real - people use it to call someone or something stupid. Yeah it started as a medical term, but now it's just another insult people throw around. Some people get mad about it, others don't give a fuck.",
+      },
+    ],
+    examples: [
+      "Bro that's retarded, why would you microwave a fork?",
+      "These rules are retarded fr",
+      "The chemicals retard the growth of bacteria (the nerdy way to use it)",
+      "Fire retardant materials slow down the spread of flames",
+      "The timing was retarded to prevent engine knocking",
+    ],
+    pronunciation: "/rɪˈtɑːrd/",
+  },
 };

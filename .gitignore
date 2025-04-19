@@ -56,5 +56,11 @@ scripts/decode-jwt.py
 .trigger
 .cursor/mcp.json
 
+.cursor/rules/add_words.mdc
+.cursor/rules/searching_words.mdc
+
+scripts/add_words.ts
 scripts/english_words.txt
 scripts/get_words.ts
+scripts/tsconfig.json
+scripts/lowercase_all_words.ts

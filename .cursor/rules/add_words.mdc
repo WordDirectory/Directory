@@ -1,9 +1,28 @@
 ---
-description: Generate word definitions
+description: Add words to directory
 globs: 
 alwaysApply: false
 ---
-## Steps for generating a new word
+## Steps for adding a new word
+
+## If no words are provided
+
+In case the user does not specify any words to add, it means you should:
+1. Get the words yourself by running the command `npx ts-node scripts/get_words.ts`
+   - This script will get 5 words from the English directory
+   - Check for any existing words in `src/data/words.ts`
+   - And return words that don't yet exist
+2. Come up with a human readable definition
+   - Read exactly 200 lines of the file `src/data/words.ts`
+   - In your response, start a <thinking> block
+   - Within the <thinking> block:
+      a. Decide if the word has one or more definitions
+      b. Write each definition and the examples for the word
+      c. Ensure the definitions are consistent to the others
+3. Execute
+   - Add the word to the file `src/data/words.ts`
+
+### If a specific word is provided, or multiple words
 
 1. Ensure it's human readable and has relatable examples
 2. Check if the word already exists (follow [searching_words.mdc](mdc:.cursor/rules/searching_words.mdc))

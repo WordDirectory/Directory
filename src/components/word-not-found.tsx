@@ -1,0 +1,39 @@
+"use client";
+
+import { Button } from "@/components/ui/button";
+import { getRandomWords } from "@/lib/utils";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+
+interface WordNotFoundProps {
+  word: string;
+}
+
+export function WordNotFound({ word }: WordNotFoundProps) {
+  const router = useRouter();
+
+  const handleRandomWord = () => {
+    const [randomWord] = getRandomWords({ maxCount: 1 });
+    router.push(`/words/${randomWord}`);
+  };
+
+  return (
+    <div className="h-[calc(100vh-4rem)] mx-auto max-w-3xl py-16 px-6 text-center flex flex-col justify-center items-center">
+      <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground/85 mb-8">
+        Word Not Found
+      </h1>
+      <p className="text-xl text-muted-foreground mb-8">
+        Sorry, we couldn't find a definition for "{word}". This word might not
+        be in our dictionary yet.
+      </p>
+      <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <Button asChild variant="default">
+          <Link href="/">Go home</Link>
+        </Button>
+        <Button variant="outline" onClick={handleRandomWord}>
+          Try a random word
+        </Button>
+      </div>
+    </div>
+  );
+}

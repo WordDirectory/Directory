@@ -4,6 +4,7 @@ import { TWord } from "@/types/word";
 import { Quote } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { Card, CardContent } from "@/components/ui/card";
+import { WordNotFound } from "@/components/word-not-found";
 
 interface WordPageProps {
   params: Promise<{
@@ -13,19 +14,24 @@ interface WordPageProps {
 
 export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
-  const { word, details } = await getWord(paramWord);
 
-  return (
-    <div className="mx-auto max-w-3xl py-16 px-6">
-      <WordHeader word={word} details={details} />
-      {details.definitions.length > 1 && (
-        <>
-          <Separator className="mb-8" />
-          <WordContent word={word} details={details} />
-        </>
-      )}
-    </div>
-  );
+  try {
+    const { word, details } = await getWord(paramWord);
+
+    return (
+      <div className="mx-auto max-w-3xl py-16 px-6">
+        <WordHeader word={word} details={details} />
+        {details.definitions.length > 1 && (
+          <>
+            <Separator className="mb-8" />
+            <WordContent word={word} details={details} />
+          </>
+        )}
+      </div>
+    );
+  } catch (error) {
+    return <WordNotFound word={paramWord} />;
+  }
 }
 
 function WordHeader({ word, details }: { word: string; details: TWord }) {

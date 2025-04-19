@@ -689,7 +689,7 @@ export const words: TDictionary = {
       "I know it's basic, but I actually love taking fall pictures in pumpkin patches",
       "Her entire personality is just basic white girl energy",
       "The party was pretty basic - just pizza and beer",
-      "I'm feeling basic today - might go get a Starbucks and do some shopping", 
+      "I'm feeling basic today - might go get a Starbucks and do some shopping",
       "The restaurant's decor was super basic - all white walls and Edison bulbs",
       "He called me basic for liking Taylor Swift, but whatever - her music slaps",
     ],
@@ -854,5 +854,22 @@ export const words: TDictionary = {
       "No cap, I could eat this whole pizza by myself",
     ],
     pronunciation: "/noʊ kæp/",
+  },
+  pneumonoultramicroscopicsilicovolcanoconiosis: {
+    definitions: [
+      {
+        text: "A lung disease you get from breathing in super tiny bits of volcanic dust and minerals. It's basically what happens when your lungs get pissed off from inhaling too much volcanic stuff. Fun fact: it's also one of the longest words in English, which is probably why doctors just call it silicosis instead.",
+      },
+    ],
+    examples: [
+      "The miners had to wear special masks to avoid getting pneumonoultramicroscopicsilicovolcanoconiosis",
+      "My professor took five attempts to pronounce pneumonoultramicroscopicsilicovolcanoconiosis correctly",
+      "The documentary explained how volcanic workers are at risk of pneumonoultramicroscopicsilicovolcanoconiosis",
+      "Scientists studying active volcanoes need protection against pneumonoultramicroscopicsilicovolcanoconiosis",
+      "The medical textbook had a whole chapter on pneumonoultramicroscopicsilicovolcanoconiosis, but everyone just called it silicosis",
+      "She won the spelling bee by correctly spelling pneumonoultramicroscopicsilicovolcanoconiosis",
+    ],
+    pronunciation:
+      "/njuːˌmɒnəʊˌʌltrəˌmaɪkrəʊˌskɒpɪkˌsɪlɪkəʊvɒlˌkeɪnəʊˌkəʊniˈəʊsɪs/",
   },
 };

@@ -20,7 +20,7 @@ interface SearchCommandProps {
 export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const router = useRouter();
   const [query, setQuery] = useState("");
-  const words = searchWords({ query });
+  const { results: words, totalCount } = searchWords({ query });
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
@@ -31,7 +31,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading={`Words (${words.length})`}>
+        <CommandGroup heading={`Words (${totalCount})`}>
           {words.map((word) => (
             <CommandItem
               key={word}

@@ -39,10 +39,10 @@ In case the user does not specify any words to add, it means you should:
 2. Come up with a human readable definition
    - In your response, start a <thinking> block
    - Within the <thinking> block:
-      a. Analyze ALL words returned from the script at once
-      b. Decide if each word has one or more definitions
-      c. Write each definition and the examples for ALL words
-      d. Ensure the definitions are consistent to the others
+      a. Analyze ALL words returned from the script
+      b. Think through how each word is used in real life
+      c. Based on that, decide if the word has one or more definitions, and what definitions exactly
+      d. Write each definition and the examples for ALL words
       e. Do not skip any words or split them into multiple edits
 3. Execute
    - Add ALL words to the file `src/data/words.ts` at the bottom of the file

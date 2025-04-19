@@ -41,7 +41,7 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
             className="h-20 w-20 object-contain"
           />
         )}
-        <h1 className="text-5xl font-bold tracking-tight text-foreground/85 md:text-7xl">
+        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
           {capitalize(word)}
         </h1>
       </div>

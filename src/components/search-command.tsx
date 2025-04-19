@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { getRandomWords, searchWords } from "@/lib/utils";
+import { searchWords } from "@/lib/utils";
 import {
   CommandDialog,
   CommandEmpty,
@@ -10,8 +10,6 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { useState } from "react";
-import { useEffect } from "react";
 
 interface SearchCommandProps {
   open: boolean;
@@ -20,11 +18,6 @@ interface SearchCommandProps {
 
 export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const router = useRouter();
-  const [words, setWords] = useState<string[]>([]);
-
-  useEffect(() => {
-    setWords(getRandomWords({ maxCount: 10 }));
-  }, []);
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>

@@ -10,6 +10,7 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
+import { useState } from "react";
 
 interface SearchCommandProps {
   open: boolean;
@@ -18,11 +19,16 @@ interface SearchCommandProps {
 
 export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const router = useRouter();
-  const words = searchWords({ query: "", limit: 50 });
+  const [query, setQuery] = useState("");
+  const words = searchWords({ query });
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
-      <CommandInput placeholder="Search words..." />
+      <CommandInput
+        placeholder="Search words..."
+        value={query}
+        onValueChange={setQuery}
+      />
       <CommandList>
         <CommandEmpty>No results found.</CommandEmpty>
         <CommandGroup heading={`Words (${words.length})`}>

@@ -21,10 +21,12 @@ In case the user does not specify any words to add, it means you should:
       c. Write each definition and the examples for ALL words
       d. Ensure the definitions are consistent to the others
       e. Do not skip any words or split them into multiple edits
-3. Execute
-   - Add ALL words to the file `src/data/words.ts` in a SINGLE edit
-   - Do not split the additions into multiple edits or responses
-   - All words from the script output should be added in one go
+3. Add the words
+   - Run a PowerShell script to clear all the content in `scripts/words.json`
+   - Add the words to `scripts/words.json`
+   - Run the script `scripts/add_words.ts` which will:
+      a. Get all words from `scripts/words.json`
+      b. Add them to `src/data/words.ts`
 
 ### If a specific word is provided, or multiple words
 

@@ -9,17 +9,17 @@ alwaysApply: false
 
 In case the user does not specify any words to add, it means you should:
 1. Get the words yourself by running the command `npx ts-node scripts/get_words.ts`
-   - This script will get 5 words from the English directory
+   - This script will get words from the English directory you should add
    - Check for any existing words in `src/data/words.ts`
    - And return words that don't yet exist
 2. Come up with a human readable definition
    - Read exactly 200 lines of the file `src/data/words.ts`
    - In your response, start a <thinking> block
    - Within the <thinking> block:
-      a. Decide if the word has one or more definitions
+      a. Decide if each word has one or more definitions
       b. Write each definition and the examples for the word
       c. Ensure the definitions are consistent to the others
-      d. Do not skip any words
+      d. Do not skip any words. You should add all words returned from the script
 3. Execute
    - Add the word to the file `src/data/words.ts`
 

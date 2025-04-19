@@ -16,12 +16,15 @@ In case the user does not specify any words to add, it means you should:
    - Read exactly 200 lines of the file `src/data/words.ts`
    - In your response, start a <thinking> block
    - Within the <thinking> block:
-      a. Decide if each word has one or more definitions
-      b. Write each definition and the examples for the word
-      c. Ensure the definitions are consistent to the others
-      d. Do not skip any words. You should add all words returned from the script
+      a. Analyze ALL words returned from the script at once
+      b. Decide if each word has one or more definitions
+      c. Write each definition and the examples for ALL words
+      d. Ensure the definitions are consistent to the others
+      e. Do not skip any words or split them into multiple edits
 3. Execute
-   - Add the word to the file `src/data/words.ts`
+   - Add ALL words to the file `src/data/words.ts` in a SINGLE edit
+   - Do not split the additions into multiple edits or responses
+   - All words from the script output should be added in one go
 
 ### If a specific word is provided, or multiple words
 

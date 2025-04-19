@@ -24,6 +24,8 @@ Examples of good words to add:
 - Words commonly used but hard to understand ("gaslighting", "procrastinate")
 - Controversial or "inappropriate" words (we don't censor - if people use it, we explain it)
 
+**If the script gives you words that don't fit into the directory, ignore them and add any other words that fit. If no words fit, move on and try finding words again until you find some words. note: AFTER 3 ATTEMPTS, STOP AND TELL THE USER YOU COULDN'T FIND ANY WORDS THAT FIT THE DIRECTORY!**
+
 ## If no words are provided
 
 In case the user does not specify any words to add, it means you should:

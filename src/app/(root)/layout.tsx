@@ -9,7 +9,7 @@ export default function RootLayout({
   return (
     <div className="min-h-dvh flex flex-col">
       <Header />
-      <main className="flex-1 min-h-dvh">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );

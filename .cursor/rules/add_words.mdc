@@ -23,7 +23,10 @@ In case the user does not specify any words to add, it means you should:
       d. Ensure the definitions are consistent to the others
       e. Do not skip any words or split them into multiple edits
 3. Add the words
-   - Run a PowerShell script to clear all the content in `scripts/words.json`
+   - Run this PowerShell script to clear all the content in `scripts/words.json`:
+   ```PowerShell
+   [System.IO.File]::WriteAllText("scripts/words.json", "")
+   ```
    - Add the words to `scripts/words.json`
    - Run the script `scripts/add_words.ts` which will:
       a. Get all words from `scripts/words.json`

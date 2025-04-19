@@ -5,8 +5,31 @@ alwaysApply: false
 ---
 You must not read the full `src/data/words.ts` file as it can get extremely long! Grep the codebase for the specific word instead.
 
-Grep the word by EXACTLY: "absolutely: {". This exact structure will fetch words properly. Do not add escape characters or anything.
+## Single Word Search
+When searching for a single word, use this exact pattern:
+```
+word: {
+```
 
-## Searching multiple words
+For example, to search for "absolutely", use:
+```
+absolutely: {
+```
 
-IMPORTANT: If searching for multiple words, you MUST search for each word one by one.
+## Searching Multiple Words
+When searching for multiple words, combine them with the OR operator (|) in a single grep search. Use this exact pattern:
+```
+word1: \{|word2: \{|word3: \{
+```
+
+For example, to search for "lit", "mood", "salty", and "tea" at once:
+```
+lit: \{|mood: \{|salty: \{|tea: \{
+```
+
+## Important Notes
+1. Do NOT add any extra escape characters
+2. The space after the colon is required
+3. The curly brace is required
+4. Keep the pattern exact - don't add any extra characters or spaces
+5. For multiple words, always use the | (pipe) operator to separate them

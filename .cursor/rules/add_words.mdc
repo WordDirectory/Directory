@@ -7,23 +7,32 @@ alwaysApply: false
 
 ## What words to include
 
-This dictionary is focused on words that:
-1. Are used in everyday conversation
-2. Basic words (like "the", "of", "and") that non-native speakers might struggle with
-3. Words like "Pathetic" or "Procrastinate" (complex stuff)
+The rule is simple as fuck: If Google/dictionaries would define it, we should too.
 
-DO NOT include:
-- Names of people/places like "John" or "Paris"
-- Brand names (like "Addressograph")
+✅ Include:
+- Pretty much ANY real word that you'd find in a dictionary
+- Basic words like "hotel", "center", "international" - if someone might look it up, it belongs here
+- Words that seem "obvious" to native speakers but might not be to others
+- Multiple forms of words (like "reviews" even though "review" exists)
+- Different spellings (center/centre) - just pick one and note the variant
 
-Examples of good words to add:
-- Basic words and articles ("the", "of", "and", etc.) explained simply
-- Everyday words that might confuse non-native speakers
-- Slang terms ("yeet", "sus", "fomo")
-- Words with complex or multiple meanings that need simple explanation
-- Words commonly used but hard to understand ("gaslighting", "procrastinate")
-- Controversial or "inappropriate" words (we don't censor - if people use it, we explain it)
-- Do include words like "results" or "pages" (where there's multiple of something)
+❌ Only exclude:
+- Proper nouns (names of specific people, places, brands)
+- Words that ONLY exist as part of proper nouns (like "united" in "United States")
+- Brand names (unless they've become generic terms like "google" as a verb)
+
+That's it. No overthinking. No "is this word complex enough?" bullshit.
+
+Remember: We're building a dictionary. If someone might look it up, it belongs here. Period.
+
+Examples of words we SHOULD include that you might be tempted to skip:
+- "hotel" (basic but needed)
+- "international" (seems obvious but isn't to everyone)
+- "center" (common but has multiple meanings)
+- "book" (basic as fuck but still needs defining)
+- "the" (yes, even articles - non-native speakers need these explained)
+
+The only real question should be: "Would this be in a normal dictionary?" If yes, add it.
 
 **If the script gives you multiple words, check each one against the directory criteria. If at least one word fits, proceed with that word and ignore the others that don't fit. If no words fit, try running the script again. After 3 attempts with no fitting words, stop and tell the user you couldn't find any words that match the directory criteria.**
 

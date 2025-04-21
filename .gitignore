@@ -64,3 +64,6 @@ scripts/english_words.txt
 scripts/get_words.ts
 scripts/tsconfig.json
 scripts/lowercase_all_words.ts
+
+/apps/extension/dist
+/apps/extension/node_modules

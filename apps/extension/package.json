@@ -1,0 +1,13 @@
+{
+  "name": "worddirectory-extension",
+  "version": "1.0.0",
+  "description": "The no-bullshit dictionary extension. Real definitions for real humans.",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.2",
+    "@types/chrome": "^0.0.263"
+  }
+} 

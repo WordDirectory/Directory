@@ -7,7 +7,8 @@ const SEARCH_ENGINES: SearchEngine[] = [
   { hostname: 'google.com', queryParam: 'q' },
   { hostname: 'bing.com', queryParam: 'q' },
   { hostname: 'duckduckgo.com', queryParam: 'q' },
-  { hostname: 'yahoo.com', queryParam: 'p' }
+  { hostname: 'yahoo.com', queryParam: 'p' },
+  { hostname: 'search.brave.com', queryParam: 'q' }
 ];
 
 const isSearchEngine = (hostname: string): SearchEngine | undefined => {

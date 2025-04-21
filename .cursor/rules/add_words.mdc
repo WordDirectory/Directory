@@ -62,7 +62,8 @@ Example of good multiple definitions:
       text: "A structured set of steps to achieve something",  // Third meaning
     }
   ]
-}```
+}
+```
 
 Remember: If you find yourself writing "or" or "also" in a definition, you probably should split it into multiple definitions!
 

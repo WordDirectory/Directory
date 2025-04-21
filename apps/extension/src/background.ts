@@ -34,6 +34,30 @@ async function wordExists(word: string): Promise<boolean> {
   }
 }
 
+function handleSelectedWord(word: string, tabId: number) {
+  const cleanWord = word.toLowerCase().trim();
+  chrome.tabs.update(tabId, {
+    url: `https://worddirectory.app/words/${encodeURIComponent(cleanWord)}`
+  });
+}
+
+// Create context menu on install
+chrome.runtime.onInstalled.addListener(() => {
+  chrome.contextMenus.create({
+    id: 'word-directory',
+    title: 'Look up "%s" in WordDirectory',
+    contexts: ['selection']
+  });
+});
+
+// Handle context menu clicks
+chrome.contextMenus.onClicked.addListener((info, tab) => {
+  if (info.menuItemId === 'word-directory' && info.selectionText && tab?.id) {
+    handleSelectedWord(info.selectionText, tab.id);
+  }
+});
+
+// Handle search bar definitions
 chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
   const url = new URL(details.url);
   const searchEngine = isSearchEngine(url.hostname);

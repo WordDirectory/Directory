@@ -4,7 +4,8 @@
   "version": "1.0",
   "description": "Words explained simply, because fuck complex definitions. No more reading 10 definitions to understand one word.",
   "permissions": [
-    "webNavigation"
+    "webNavigation",
+    "contextMenus"
   ],
   "host_permissions": [
     "https://worddirectory.app/*"

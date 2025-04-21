@@ -64,29 +64,30 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
         /{details.pronunciation}/
       </div>
 
-      {details.definitions.length === 1 && details.examples.length > 0 && (
-        <>
-          <Separator className="mb-8" />
-          <div className="space-y-4">
-            <h2 className="text-xl font-semibold text-foreground/85 flex items-center gap-2">
-              <FaQuoteLeft className="w-5 h-5 text-muted-foreground" />
-              Examples
-            </h2>
-            <div className="grid gap-4 md:grid-cols-2">
-              {details.examples.map((example, i) => (
-                <Card key={i} className="group relative">
-                  <CardContent className="p-4">
-                    <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                    <p className="text-foreground/80 relative z-10 break-words">
-                      {example}
-                    </p>
-                  </CardContent>
-                </Card>
-              ))}
+      {details.definitions.length === 1 &&
+        details.definitions[0].examples.length > 0 && (
+          <>
+            <Separator className="mb-8" />
+            <div className="space-y-4">
+              <h2 className="text-xl font-semibold text-foreground/85 flex items-center gap-2">
+                <FaQuoteLeft className="w-5 h-5 text-muted-foreground" />
+                Examples
+              </h2>
+              <div className="grid gap-4 md:grid-cols-2">
+                {details.definitions[0].examples.map((example, i) => (
+                  <Card key={i} className="group relative">
+                    <CardContent className="p-4">
+                      <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
+                      <p className="text-foreground/80 relative z-10 break-words">
+                        {example}
+                      </p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
             </div>
-          </div>
-        </>
-      )}
+          </>
+        )}
     </>
   );
 }
@@ -112,14 +113,14 @@ function WordContent({ word, details }: { word: string; details: TWord }) {
             )}
             <p className="text-foreground/70">{def.text}</p>
 
-            {details.examples.length > 0 && (
+            {def.examples.length > 0 && (
               <div className="mt-4">
                 <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
                   <Quote className="w-4 h-4" />
                   Usage Examples
                 </h3>
                 <div className="grid gap-3 md:grid-cols-2">
-                  {details.examples.map((example, i) => (
+                  {def.examples.map((example, i) => (
                     <Card key={i} className="group relative">
                       <CardContent className="p-4">
                         <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>

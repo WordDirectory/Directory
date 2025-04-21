@@ -76,7 +76,7 @@ const CommandList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <CommandPrimitive.List
     ref={ref}
-    className={cn("max-h-80 overflow-y-auto overflow-x-hidden", className)}
+    className={cn("max-h-80 overflow-y-auto overflow-x-hidden overscroll-contain will-change-scroll transform-gpu", className)}
     {...props}
   />
 ));
@@ -131,7 +131,7 @@ const CommandItem = React.forwardRef<
   <CommandPrimitive.Item
     ref={ref}
     className={cn(
-      "relative flex cursor-default select-none items-center gap-3 rounded-md px-2 py-1.5 text-sm outline-none data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0",
+      "relative flex cursor-default select-none items-center gap-3 rounded-md px-2 py-1.5 text-sm outline-none will-change-transform data-[disabled=true]:pointer-events-none data-[selected=true]:bg-accent data-[selected=true]:text-accent-foreground data-[disabled=true]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&>*]:translate-z-0",
       className
     )}
     {...props}

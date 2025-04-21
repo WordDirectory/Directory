@@ -7122,4 +7122,31 @@ abrahamitic: {
     ],
     pronunciation: "/ˈsɪli/",
   },
+  unfuckwithable: {
+    definitions: [
+      {
+        text: "Someone who's so confident, strong, or respected that others can't mess with them, challenge them, or bring them down. A person who has their shit together so well that nothing can shake them.",
+        examples: [
+          "After she stood up to her boss, everyone knew she was unfuckwithable.",
+          "He's completely unfuckwithable since he stopped caring what others think.",
+          "My grandma is unfuckwithable - nobody argues with her and wins.",
+        ],
+      },
+      {
+        text: "A state of being so mentally strong and confident that criticism, drama, and negative energy don't affect you.",
+        examples: [
+          "Working on yourself until you reach that unfuckwithable level of confidence.",
+          "True freedom is being unfuckwithable - nothing can break your peace of mind.",
+          "It took years of therapy, but I finally feel unfuckwithable.",
+        ],
+      },
+      {
+        text: "Zayn's song",
+        examples: [
+          "Dude have you heard unfuckwithable by Zayn? Yeah it's so good!",
+        ],
+      },
+    ],
+    pronunciation: "/ʌnˈfʌk.wɪð.ə.bəl/",
+  },
 };

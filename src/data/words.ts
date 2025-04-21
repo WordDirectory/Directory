@@ -4804,14 +4804,14 @@ abrahamitic: {
   in: {
     definitions: [
       {
-        text: "Shows when something is inside something else, whether it's a physical place, a time, or a situation. It's like drawing a circle around something to show where it is or when it's happening.",
+        text: "When something is inside something else. This could be a thing inside a box, you being inside a building, or even being inside a feeling or situation.",
         examples: [
-          "The cat is in the box (physically inside)",
-          "In love with you (emotionally inside a feeling)",
-          "In trouble again (inside a situation)",
-          "Wake up in the morning (during this time)",
-          "Living in New York (located in this place)",
-          "Dressed in black (wearing this color)",
+          "The cat is in the box",
+          "She's in love",
+          "I'm in trouble",
+          "We'll meet in an hour",
+          "They live in Paris",
+          "Dressed in red",
         ],
       },
     ],
@@ -4820,14 +4820,14 @@ abrahamitic: {
   for: {
     definitions: [
       {
-        text: "Shows why something is happening, who's getting something, or how long something lasts. It's like putting a label on an action or gift that explains the purpose or recipient. Can also show how much time something takes, like putting a timer on it.",
+        text: "Shows why you're doing something, who's getting something, or how long something lasts. It connects things with their purpose, owner, or time.",
         examples: [
-          "This gift is for you (showing who gets it)",
-          "Running for president (showing the goal)",
-          "For three hours straight (showing how long)",
-          "I did it for the money (showing the reason)",
-          "Trading cards for cash (showing what you get in exchange)",
-          "For fuck's sake! (showing frustration - yeah, we use it like this too)",
+          "This present is for you",
+          "I'm studying for the test",
+          "We waited for hours",
+          "Did it for the money",
+          "Trade this for that",
+          "For God's sake!",
         ],
       },
     ],
@@ -4836,14 +4836,14 @@ abrahamitic: {
   is: {
     definitions: [
       {
-        text: "A word that connects what something is with what it's like or what it's doing right now. It's like an equal sign in language, saying 'this thing = that thing' or 'this is happening right now.' The present tense version of 'to be.'",
+        text: "Shows what something is or what's happening right now. It's like saying 'equals' or 'happening now' in a single word. It's the present form of 'to be'.",
         examples: [
-          "The sky is blue (describing what something is like)",
-          "She is sleeping (showing what's happening now)",
-          "This is bullshit (making a statement about something)",
-          "Life is good (expressing a state of being)",
-          "The party is tonight (stating when something happens)",
-          "Water is wet (stating a fact)",
+          "The sky is blue",
+          "She is running",
+          "This is wrong",
+          "Today is Monday",
+          "The door is open",
+          "He is tall",
         ],
       },
     ],
@@ -4852,14 +4852,14 @@ abrahamitic: {
   on: {
     definitions: [
       {
-        text: "Shows when something is touching or supported by something else, or when something is happening. Like 'in' but for surfaces instead of insides. Can also show when something is working or active, like a switch being flipped up.",
+        text: "Shows when something sits on top of or touches a surface. Also used for dates, to show something is working, or that an event is happening.",
         examples: [
-          "The book is on the table (showing physical position)",
-          "The movie is on Netflix (showing where to find it)",
-          "I'm on fire today! (doing really well)",
-          "The party is on Friday (showing when)",
-          "Keep on trucking (continuing to do something)",
-          "The lights are on (showing something is active/working)",
+          "The book is on the table",
+          "It's on TV tonight",
+          "The party is on Friday",
+          "Turn the lights on",
+          "I'm on the phone",
+          "Keep on walking",
         ],
       },
     ],
@@ -4868,14 +4868,14 @@ abrahamitic: {
   that: {
     definitions: [
       {
-        text: "Points to specific things, ideas, or connects parts of sentences together. It's like a verbal pointer that can either say 'that specific thing over there' or join ideas like 'this happened so that could happen.' Super flexible word that helps us be more specific or connect our thoughts.",
+        text: "Points to a specific thing or connects parts of sentences. Used to make clear which thing you're talking about or to join ideas together.",
         examples: [
-          "That car is mine (pointing to a specific car)",
-          "I can't believe that happened (referring to a specific event)",
-          "The book that I read (specifying which book)",
-          "I hope that you're happy (connecting ideas)",
-          "Not that bad (showing degree or extent)",
-          "That's what she said! (referring to something just mentioned)",
+          "That car is mine",
+          "I saw that movie",
+          "The shirt that I bought",
+          "I think that you're right",
+          "Not that bad",
+          "That's what I meant",
         ],
       },
     ],
@@ -4884,14 +4884,14 @@ abrahamitic: {
   by: {
     definitions: [
       {
-        text: "Shows who did something, how something happened, or where/when something is. It's like giving credit to someone, explaining your method, or pointing to a location or deadline. Think of it as answering 'who,' 'how,' or 'when' questions.",
+        text: "Shows who did something, how it was done, or where/when it happened. Tells us about the person, method, place, or time.",
         examples: [
-          "Written by Stephen King (showing who did it)",
-          "Get it done by Friday (showing when)",
-          "Standing by the door (showing location)",
-          "Travel by train (showing how/method)",
-          "Day by day (showing progression)",
-          "Just by chance (showing how something happened)",
+          "Written by Shakespeare",
+          "Finish by tomorrow",
+          "Standing by the window",
+          "Travel by bus",
+          "Little by little",
+          "Found by accident",
         ],
       },
     ],
@@ -4900,7 +4900,7 @@ abrahamitic: {
   this: {
     definitions: [
       {
-        text: "A word you use to point at or talk about something specific that's right here, right now, or that you just mentioned. It's like using your words to point at something instead of your finger.",
+        text: "A word you use to point at or talk about something specific that's close to you right now or that you just mentioned. It's the opposite of 'that' which points to things farther away. It's like using your words to point at something nearby instead of your finger.",
         examples: [
           "This pizza is amazing",
           "I don't understand this math problem",
@@ -4916,7 +4916,7 @@ abrahamitic: {
   with: {
     definitions: [
       {
-        text: "Used to show that things or people are together, connected, or using something. Think of it like showing a relationship or connection between stuff - whether it's people hanging out together, using a tool to do something, or describing how something is done.",
+        text: "Used to show that things or people are together, connected, or using something. It shows a relationship between stuff - whether it's people hanging out together, using a tool, or describing how something is done.",
         examples: [
           "I'm going to the movies with my friends",
           "She cut the paper with scissors",
@@ -4932,7 +4932,7 @@ abrahamitic: {
   i: {
     definitions: [
       {
-        text: "The word you use when you're talking about yourself. It's like your name tag in a sentence - when you're the one doing something or feeling something, you use 'I'.",
+        text: "The word you use when you're talking about yourself. It's always written as a capital letter in English. It's like your name tag in a sentence - when you're the one doing something or feeling something, you use 'I'.",
         examples: [
           "I love pizza",
           "I don't know what to do",
@@ -4948,7 +4948,7 @@ abrahamitic: {
   you: {
     definitions: [
       {
-        text: "The word used to talk directly to someone or a group of people you're speaking to. It's like pointing at someone with your words instead of your finger, whether you're talking to one person or many.",
+        text: "The word used to talk directly to someone or a group of people you're speaking to. In English, 'you' works for both one person or many people. It's like pointing at someone with your words instead of your finger.",
         examples: [
           "You look great today",
           "Can you help me?",
@@ -4964,7 +4964,7 @@ abrahamitic: {
   it: {
     definitions: [
       {
-        text: "A word used to talk about something without saying its name again, or to talk about situations in general. It's like a placeholder word that stands in for things, ideas, or situations that we've already mentioned or that everyone knows about.",
+        text: "A word used to talk about things or situations without saying their name again. We use 'it' for objects and concepts, not for people. It's like a placeholder that stands in for something we've already mentioned or that everyone can see.",
         examples: [
           "The pizza is hot - don't eat it yet",
           "It's raining outside",
@@ -4980,7 +4980,7 @@ abrahamitic: {
   not: {
     definitions: [
       {
-        text: "The word you use to make something negative or to say the opposite. It's like hitting the 'opposite' button on whatever you're saying - turning yes into no, or is into isn't.",
+        text: "The word you use to make something negative or to say the opposite. It turns yes into no, or is into isn't. In speaking, people often shorten it with contractions like don't, isn't, or can't.",
         examples: [
           "I'm not hungry",
           "That's not what I meant",
@@ -4996,7 +4996,7 @@ abrahamitic: {
   or: {
     definitions: [
       {
-        text: "A word used when you're giving choices or alternatives. It's like standing at a fork in the road - you can go this way OR that way. You use it when there's more than one possibility or option to choose from.",
+        text: "A word used when giving choices or alternatives. It shows there are different options and usually means you pick one but not both. Like saying 'this one or that one' when you're deciding.",
         examples: [
           "Do you want pizza or burgers?",
           "We can go now or wait until later",
@@ -5006,13 +5006,22 @@ abrahamitic: {
           "It might rain or snow tomorrow",
         ],
       },
+      {
+        text: "Used in math and computer stuff to mean that at least one of the things mentioned is true (unlike 'and' which means all things must be true).",
+        examples: [
+          "You need to be 18 or have a parent with you",
+          "The package will arrive Monday or Tuesday",
+          "If it's raining or snowing, the game will be canceled",
+        ],
+      },
     ],
     pronunciation: "/ɔːr/",
   },
+  
   be: {
     definitions: [
       {
-        text: "One of the most basic but important words in English - it's used to say what something is, describe states of being, or form other tenses. It shows up as 'am', 'is', 'are', 'was', 'were', 'been', and 'being'. Think of it as the word that connects things to what they are or how they're doing.",
+        text: "The most basic word that shows existence or what something is. It changes form to 'am', 'is', 'are', 'was', 'were', 'been', or 'being' depending on who you're talking about and when it happened.",
         examples: [
           "I want to be a doctor",
           "Let it be",
@@ -5022,13 +5031,23 @@ abrahamitic: {
           "They might be lost",
         ],
       },
+      {
+        text: "Used to make ongoing actions with -ing words, showing something is happening right now or over time.",
+        examples: [
+          "She is being careful",
+          "We are being watched",
+          "They were being loud",
+          "I've been working all day",
+        ],
+      },
     ],
     pronunciation: "/biː/",
   },
+  
   are: {
     definitions: [
       {
-        text: "The form of 'be' used when talking about multiple things or people, or when talking directly to someone using 'you'. It's like the plural version of 'is', or what you use when saying 'you' instead of 'he' or 'she'.",
+        text: "The version of 'be' used with 'you', 'we', 'they', or multiple things. It's what you use instead of 'is' when talking about more than one thing or when talking to someone.",
         examples: [
           "You are amazing",
           "Where are my keys?",
@@ -5041,10 +5060,11 @@ abrahamitic: {
     ],
     pronunciation: "/ɑːr/",
   },
+  
   from: {
     definitions: [
       {
-        text: "A word that shows where something starts, comes from, or originates. It's like drawing a line from the starting point of something - whether that's a place, time, person, or situation.",
+        text: "Shows where something starts or comes from - could be a place, person, time, or cause. It points to the beginning or source of something.",
         examples: [
           "I'm from New York",
           "This package is from my mom",
@@ -5054,13 +5074,23 @@ abrahamitic: {
           "The quote is from Shakespeare",
         ],
       },
+      {
+        text: "Shows the distance or difference between things, like how far apart they are in space, time, or quality.",
+        examples: [
+          "The hotel is just across from the beach",
+          "This is different from what I expected",
+          "The taste ranges from sweet to sour",
+          "We've come a long way from where we started",
+        ],
+      },
     ],
     pronunciation: "/frʌm/",
   },
+  
   at: {
     definitions: [
       {
-        text: "Used to point to a specific place, time, or situation. It's like dropping a pin on a map or pointing at something with your finger to show exactly where or when something is.",
+        text: "Points to an exact spot, time, or situation. It's more specific than 'in' or 'on' - like putting your finger on a specific point.",
         examples: [
           "I'll meet you at the coffee shop",
           "The movie starts at 8 PM",
@@ -5070,13 +5100,22 @@ abrahamitic: {
           "Look at that sunset!",
         ],
       },
+      {
+        text: "Shows a rate, price, or speed that something happens.",
+        examples: [
+          "The car was moving at 60 miles per hour",
+          "They sell these at $5 each",
+          "She types at an amazing speed",
+        ],
+      },
     ],
     pronunciation: "/æt/",
   },
+  
   as: {
     definitions: [
       {
-        text: "Used to compare things or explain how something is being used or seen. It's like saying 'in the same way as' or 'in the role of' - basically showing how things are similar or what role something is playing.",
+        text: "Shows how things are similar or what role something plays. It connects things that happen at the same time or in the same way.",
         examples: [
           "She works as a teacher",
           "The ice cream melted as quickly as it was served",
@@ -5086,13 +5125,29 @@ abrahamitic: {
           "Use this pan as a shield",
         ],
       },
+      {
+        text: "Shows that two things happen at the same time.",
+        examples: [
+          "As I was leaving, the phone rang",
+          "He fell asleep as he was reading",
+          "The crowd cheered as the band took the stage",
+        ],
+      },
+      {
+        text: "Used to give a reason for something.",
+        examples: [
+          "As you're already here, you might as well stay for dinner",
+          "As it's raining, we should stay inside",
+          "I can't go out as I have too much work",
+        ],
+      },
     ],
     pronunciation: "/æz/",
   },
   your: {
     definitions: [
       {
-        text: "Shows that something belongs to or is connected to you. It's like putting a name tag on something that says 'this is yours!'",
+        text: "Shows that something belongs to you or is connected to you personally. It points to something that's yours.",
         examples: [
           "Is this your phone?",
           "Your attitude needs work",
@@ -5100,6 +5155,14 @@ abrahamitic: {
           "What's your problem?",
           "Your pizza is ready",
           "Tell me your side of the story",
+        ],
+      },
+      {
+        text: "Used when talking directly to someone about a thing related to them, even if they don't actually own it.",
+        examples: [
+          "Your bus is running late",
+          "How's your family doing?",
+          "Your country has beautiful mountains",
         ],
       },
     ],
@@ -5124,14 +5187,28 @@ abrahamitic: {
   have: {
     definitions: [
       {
-        text: "To own, possess, or hold something. Also used to show experiences or actions that happened in the past. It's like when you've got something or when you've done something.",
+        text: "To own, hold, or possess something physical or non-physical.",
         examples: [
           "I have a dog",
           "Do you have any money?",
-          "They have been waiting for hours",
+          "She has blue eyes",
+          "They have a big house",
+        ],
+      },
+      {
+        text: "Used to talk about things that happened in the past or experiences.",
+        examples: [
+          "I have been to Japan",
+          "Have you eaten lunch yet?",
+          "We have known each other for years",
+        ],
+      },
+      {
+        text: "Used to show that something needs to be done or will happen.",
+        examples: [
           "I have to go now",
-          "We have nothing to lose",
           "You have got to be kidding me",
+          "She'll have to work tomorrow",
         ],
       },
     ],
@@ -5214,6 +5291,23 @@ abrahamitic: {
           "I will never do that again",
         ],
       },
+      {
+        text: "A strong desire or determination to do something. It's the mental power that helps you keep going even when things get tough.",
+        examples: [
+          "Where there's a will, there's a way",
+          "She has a strong will to succeed",
+          "It takes will power to quit smoking",
+          "He lost the will to continue fighting",
+        ],
+      },
+      {
+        text: "A legal document that says who gets your stuff after you die.",
+        examples: [
+          "My grandma left me her house in her will",
+          "You should make a will before you travel",
+          "The lawyer read the will to the family",
+        ],
+      },
     ],
     pronunciation: "/wɪl/",
   },
@@ -5262,20 +5356,44 @@ abrahamitic: {
           "The astronauts lost contact with Earth",
         ],
       },
+      {
+        text: "A person you know and can reach out to, especially for help, work, or information. Basically, someone in your network.",
+        examples: [
+          "I have a contact at that company who might be able to help",
+          "She's got contacts in the music industry",
+          "Do you have any contacts who could get us tickets?",
+          "He's my emergency contact",
+        ],
+      },
     ],
     pronunciation: "/ˈkɒntækt/",
   },
   business: {
     definitions: [
       {
-        text: "Any activity where people trade stuff or services for money. It can be a company, a store, or just what someone does to make money. Can also mean 'not your problem' when someone says 'mind your own business!'",
+        text: "Any activity where people trade stuff or services for money. It can be a company, a store, or just what someone does to make money.",
         examples: [
           "She started her own business selling homemade cookies",
-          "Mind your own business!",
           "The restaurant business is tough",
           "What kind of business do you work in?",
-          "It's none of your business what I do in my free time",
           "Let's get down to business and start working",
+        ],
+      },
+      {
+        text: "Something that concerns you or that you have a right to know about. Used when talking about privacy or when telling someone to stop being nosy.",
+        examples: [
+          "Mind your own business!",
+          "It's none of your business what I do in my free time",
+          "How I spend my money is my business",
+        ],
+      },
+      {
+        text: "Work-related activities or tasks that need to be done, as opposed to personal stuff.",
+        examples: [
+          "I'm traveling for business next week",
+          "This is a business call, not a personal one",
+          "She flew business class to the conference",
+          "The store is closed outside of business hours",
         ],
       },
     ],
@@ -5300,14 +5418,26 @@ abrahamitic: {
   pm: {
     definitions: [
       {
-        text: "Short for two things: 'Private Message' when you're talking online, or 'Post Meridiem' (afternoon/evening time after 12 noon). In politics, it can also mean 'Prime Minister', but that's not as common in everyday chat.",
+        text: "Short for 'Private Message' - when you send someone a message that only they can see, not everyone else. Used a lot in chat rooms, forums, social media, and games.",
         examples: [
           "I'll PM you the details later",
-          "The party starts at 8 PM",
           "Send me a PM if you want to talk privately",
-          "She works from 2 PM to 10 PM",
           "Check your PMs, I sent you the link",
+        ],
+      },
+      {
+        text: "Short for 'Post Meridiem' - the time after noon (12:00) until midnight. Used with numbers to show time in the afternoon or evening.",
+        examples: [
+          "The party starts at 8 PM",
+          "She works from 2 PM to 10 PM",
           "Is that 9 AM or 9 PM?",
+        ],
+      },
+      {
+        text: "Short for 'Prime Minister' - the leader of the government in many countries (like the UK, Canada, Australia, etc.)",
+        examples: [
+          "The PM announced new policies yesterday",
+          "Who's your country's current PM?",
         ],
       },
     ],
@@ -5316,14 +5446,27 @@ abrahamitic: {
   view: {
     definitions: [
       {
-        text: "What you can see from where you are, or how you think about something. Online, it's when you look at content (like video views). Can also mean your opinion on stuff, like when someone asks 'What's your view on this?'",
+        text: "What you can see from where you are standing or sitting.",
         examples: [
           "The view from the mountain was amazing",
-          "What's your view on the new policy?",
-          "This video has a million views",
-          "I have a different view on that",
-          "Click here to view more details",
           "The trees are blocking my view",
+          "We paid extra for a room with an ocean view",
+        ],
+      },
+      {
+        text: "Your opinion or way of thinking about something.",
+        examples: [
+          "What's your view on the new policy?",
+          "I have a different view on that",
+          "Her political views have changed over time",
+        ],
+      },
+      {
+        text: "When someone looks at content online, like a video, webpage, or post.",
+        examples: [
+          "This video has a million views",
+          "Click here to view more details",
+          "The blogger tracks how many views each article gets",
         ],
       },
     ],
@@ -5348,14 +5491,35 @@ abrahamitic: {
   service: {
     definitions: [
       {
-        text: "Help or work that someone does for others, usually for money. Can also mean maintaining or fixing something (like servicing a car), or doing your duty (like military service). Basically anytime someone's doing something useful for someone else.",
+        text: "Work someone does to help others, usually for money.",
         examples: [
           "The customer service at this store sucks",
-          "My car needs to be serviced soon",
-          "She did ten years of military service",
           "The waiter provided excellent service",
+          "They charge extra for delivery service",
+        ],
+      },
+      {
+        text: "Checking, fixing, or maintaining something to keep it working well.",
+        examples: [
+          "My car needs to be serviced soon",
+          "The elevator is out of service today",
+          "Remember to service your heating system every year",
+        ],
+      },
+      {
+        text: "Working for an organization like the military or government.",
+        examples: [
+          "She did ten years of military service",
+          "Public service was important to her family",
+          "He joined the civil service after college",
+        ],
+      },
+      {
+        text: "A system that provides something people need, like electricity or internet.",
+        examples: [
           "Is there cell phone service in this area?",
           "The internet service is down again",
+          "Emergency services arrived quickly after the call",
         ],
       },
     ],
@@ -5380,14 +5544,35 @@ abrahamitic: {
   top: {
     definitions: [
       {
-        text: "The highest part or point of something, like the peak of a mountain or the lid of a container. Can also mean being the best or first in a ranking, or a piece of clothing you wear on your upper body.",
+        text: "The highest part or point of something.",
         examples: [
-          "Put the top back on the water bottle",
-          "She's at the top of her class in math",
-          "I bought a new crop top for summer",
+          "Put the lid on top of the jar",
           "The view from the top of the building is amazing",
+          "There's snow on top of the mountain",
+        ],
+      },
+      {
+        text: "Being the best or first in a ranking or competition.",
+        examples: [
+          "She's at the top of her class in math",
           "He topped the leaderboard three weeks in a row",
+          "Their song reached the top of the charts",
+        ],
+      },
+      {
+        text: "A piece of clothing worn on the upper body.",
+        examples: [
+          "I bought a new crop top for summer",
+          "He was wearing a tank top and shorts",
+          "This top matches perfectly with your skirt",
+        ],
+      },
+      {
+        text: "To fill something completely or add more to something that's already partially full.",
+        examples: [
           "Can you top off my coffee cup?",
+          "I need to top up my phone credit",
+          "The bartender topped my glass with more soda",
         ],
       },
     ],
@@ -5396,7 +5581,7 @@ abrahamitic: {
   state: {
     definitions: [
       {
-        text: "Has a few meanings: 1) A condition or way something is (like being happy or sad), 2) A part of a country that has its own government (like Texas or California), or 3) When you say something clearly (like stating your opinion).",
+        text: "Has a few meanings: 1) The way something is right now (like being happy, sad, or broken), 2) A part of a country with its own government (like Texas or California), or 3) When you say something clearly (like telling someone your name).",
         examples: [
           "The house is in a terrible state - everything's broken",
           "Which state do you live in?",
@@ -5412,7 +5597,7 @@ abrahamitic: {
   health: {
     definitions: [
       {
-        text: "How good or bad your body and mind are doing. It's about being sick or well, strong or weak, and taking care of yourself. Can also refer to how well something else is doing, like a business or relationship.",
+        text: "How good or bad your body and mind are feeling. It's about not being sick, having energy, and taking care of yourself. Can also mean how well other things are doing, like a business or relationship.",
         examples: [
           "Mental health is just as important as physical health",
           "His health improved after he quit smoking",
@@ -5428,7 +5613,7 @@ abrahamitic: {
   data: {
     definitions: [
       {
-        text: "Information, usually in the form of facts, numbers, or details that you can use or analyze. Think of it like ingredients that computers, scientists, or businesses use to figure stuff out or make decisions.",
+        text: "Information, facts, or numbers that can be used to figure things out. Like the building blocks that help people make decisions or understand stuff. Think of it as the raw info that computers, scientists, or businesses work with.",
         examples: [
           "The app collects data about your running speed and distance",
           "Scientists need more data before reaching a conclusion",
@@ -5460,7 +5645,7 @@ abrahamitic: {
   system: {
     definitions: [
       {
-        text: "A group of things or parts that work together to do something. Like how your body is a system of organs working together, or how a computer is a system of hardware and software. Can also be a way of organizing or doing things.",
+        text: "A bunch of parts that work together to do something. Like how your body has different organs working together, or how a computer has hardware and software working together. Also means a way of doing or organizing things.",
         examples: [
           "The solar system includes the sun and all its planets",
           "My immune system is fighting off a cold",
@@ -5492,7 +5677,7 @@ abrahamitic: {
   re: {
     definitions: [
       {
-        text: "Short for 'regarding' or 'about' - it's that thing you see at the start of email subject lines to show what the message is about. Comes from Latin 'res' meaning 'thing' or 'matter'. People often think it means 'reply' but it doesn't - it's just saying what the thing is about.",
+        text: "Short for 'regarding' or 'about' - used at the start of emails or notes to show what the message is about. It's like a label saying 'this is what we're talking about.' Comes from Latin, not from 'reply' like many people think.",
         examples: [
           "Re: Your application for the job position",
           "Re: Meeting next Tuesday",
@@ -5508,7 +5693,7 @@ abrahamitic: {
   available: {
     definitions: [
       {
-        text: "When something or someone is ready to use, free to do something, or not busy. It's like when your friend can hang out because they've got nothing else planned, or when there's still pizza left at the party.",
+        text: "When something or someone is free to use, not busy, or can be gotten right now. Like when your friend can hang out because they have nothing else planned, when there's still food left, or when a product is ready to buy.",
         examples: [
           "Is this seat available? I need somewhere to sit",
           "Sorry, I'm not available this weekend - I've got plans",
@@ -5524,7 +5709,7 @@ abrahamitic: {
   support: {
     definitions: [
       {
-        text: "To help someone or something, either by being there for them emotionally, physically holding them up, or providing what they need. Like when your friends help you through a breakup, or when legs hold up a table.",
+        text: "To help something or someone by giving what they need. This could be emotional help (like when friends listen to your problems), physical help (like when a wall holds up a roof), or other kinds of help (like money or advice).",
         examples: [
           "My family always supports me in my decisions",
           "These pillars support the whole bridge",
@@ -5540,7 +5725,7 @@ abrahamitic: {
   message: {
     definitions: [
       {
-        text: "Information you send to someone else, whether it's through text, voice, or even body language. It's like any time you're trying to tell someone something, whether it's 'hey what's up' or 'I'll be late for dinner.'",
+        text: "Information you send to another person. It can be words on a screen, a voice recording, a note on paper, or even using your face or body to show what you mean. It's just any time you try to tell someone something.",
         examples: [
           "I sent you a message on WhatsApp - did you get it?",
           "The movie had a powerful message about friendship",
@@ -5556,7 +5741,7 @@ abrahamitic: {
   software: {
     definitions: [
       {
-        text: "The programs and apps that make computers and phones do stuff. It's like the brain that tells the machine what to do - whether that's showing you TikTok videos or letting you write an essay.",
+        text: "The programs, apps, and code that make computers and phones do things. Unlike hardware (the physical parts you can touch), software is the stuff that runs on the machine and tells it what to do - from games to word processors to phone apps.",
         examples: [
           "I need to update my antivirus software",
           "The new software makes editing photos super easy",
@@ -5572,7 +5757,7 @@ abrahamitic: {
   public: {
     definitions: [
       {
-        text: "When something is open for everyone to use, see, or know about - not private or secret. Like a park anyone can visit, or information that everyone knows.",
+        text: "Something that's open for everyone to use, see, or know about - not private or secret. It can mean a place anyone can go to (like a park), information everyone knows, or when something belongs to the whole community instead of one person.",
         examples: [
           "The beach is public - anyone can go there",
           "Keep your voice down, we're in public",
@@ -5636,7 +5821,7 @@ abrahamitic: {
   rights: {
     definitions: [
       {
-        text: "Things you're allowed to do or have by law or just because you're a person. Think of them like rules that protect you and make sure you're treated fairly - like the right to speak your mind or the right to privacy.",
+        text: "Things you're allowed to do or have just because you're a person or because of laws. They're like promises that make sure everyone is treated fairly - such as being able to speak freely or have privacy.",
         examples: [
           "You have the right to remain silent",
           "Everyone has rights, no matter who they are",
@@ -5652,13 +5837,20 @@ abrahamitic: {
   book: {
     definitions: [
       {
-        text: "A bundle of pages with words or pictures that tells a story or shares information. But it's not just paper anymore - now we've got e-books, audiobooks, and all that. Also means to write something down officially or reserve something, like when you book a flight or reserve a table.",
+        text: "A bunch of pages with words or pictures bound together that tells a story or shares information. These days they also come as e-books you can read on screens or as audiobooks you can listen to.",
         examples: [
           "I love reading a good book before bed",
-          "Can you book us a table for dinner?",
           "She's writing a book about her travels",
-          "The police booked him for speeding",
           "I prefer a real book over an e-book",
+          "The library has thousands of books",
+        ],
+      },
+      {
+        text: "To reserve something ahead of time or write something down officially in a record.",
+        examples: [
+          "Can you book us a table for dinner?",
+          "I need to book our flights for vacation",
+          "The police booked him for speeding",
           "Let me check the book to see if we made a profit",
         ],
       },
@@ -5731,6 +5923,15 @@ abrahamitic: {
           "Doctor's orders - you need rest",
         ],
       },
+      {
+        text: "The state of things being calm, peaceful, and following rules in society.",
+        examples: [
+          "The police are here to maintain law and order",
+          "After the disaster, order was eventually restored to the city",
+          "The meeting descended into disorder when everyone started arguing",
+          "Social order broke down during the crisis",
+        ],
+      },
     ],
     pronunciation: "/ˈɔːrdər/",
   },
@@ -5786,18 +5987,34 @@ abrahamitic: {
           "She prefers the company of books to people",
         ],
       },
+      {
+        text: "A group of soldiers that's smaller than a battalion but bigger than a platoon, usually led by a captain.",
+        examples: [
+          "He served in Company B during the war",
+          "The captain ordered his company to advance",
+          "Each company has about 100-250 soldiers",
+          "The companies were divided into three platoons each",
+        ],
+      },
     ],
     pronunciation: "/ˈkʌmpəni/",
   },
   sex: {
     definitions: [
       {
-        text: "Physical intimacy between people, or the biological category (male/female) you're assigned at birth. It's a natural part of life that people sometimes get weird talking about, but it's important to understand.",
+        text: "When people get physically intimate with each other, involving genitals. It's a basic human activity that can be for pleasure, making babies, or connecting with someone.",
         examples: [
           "Sex education should be taught in schools",
+          "Let's talk about sex, baby",
+          "They decided to wait before having sex",
+          "Safe sex practices prevent STDs",
+        ],
+      },
+      {
+        text: "The biological category (male or female) based on your body parts and genetics. It's what doctors check when babies are born.",
+        examples: [
           "What's the sex of the baby?",
           "They had to mark their sex on the form",
-          "Let's talk about sex, baby",
           "The doctor asked about their biological sex",
           "Gender identity isn't the same as biological sex",
         ],
@@ -5808,14 +6025,14 @@ abrahamitic: {
   user: {
     definitions: [
       {
-        text: "Someone who uses something - usually talking about people using apps, websites, or technology. Like when you log into Netflix, you're a Netflix user.",
+        text: "Someone who uses something. Most often it's about people using apps, websites, or technology, but can be about anyone who uses any product or service.",
         examples: [
           "The app has over a million active users",
           "Please enter your user name and password",
           "This update will improve the user experience",
           "Are you a Mac or PC user?",
-          "The user manual explains how to set it up",
-          "Instagram users are posting about the new feature",
+          "The gym offers special rates for regular users",
+          "Drug users may need medical help",
         ],
       },
     ],
@@ -5824,14 +6041,20 @@ abrahamitic: {
   general: {
     definitions: [
       {
-        text: "When something applies to most things or isn't specific. It's like giving a rough idea instead of exact details, or talking about what usually happens instead of one specific time.",
+        text: "Something that applies to most things or isn't specific. It's a big-picture view instead of tiny details.",
         examples: [
           "In general, I prefer coffee over tea",
           "The general idea is to save money",
           "She gave me general directions to the store",
           "The general public isn't allowed in this area",
-          "I have a general understanding of how it works",
-          "As a general rule, don't click on suspicious links",
+        ],
+      },
+      {
+        text: "A high-ranking military officer who commands large groups of soldiers.",
+        examples: [
+          "General Patton led troops during World War II",
+          "She was promoted to general after years of service",
+          "The generals met to discuss battle strategy",
         ],
       },
     ],
@@ -5840,14 +6063,13 @@ abrahamitic: {
   research: {
     definitions: [
       {
-        text: "When you dig deep into a topic to learn more about it or find answers. It's like being a detective but for information - whether you're googling stuff or doing serious scientific studies.",
+        text: "Looking for information to learn about something. Could be as simple as Googling stuff or as complex as running tests in a lab for years.",
         examples: [
           "I need to do some research before buying a car",
           "She's doing research on climate change",
           "Have you done your research on the company?",
           "The research shows that exercise helps mental health",
           "I spent hours researching vacation spots",
-          "Their research led to a breakthrough in cancer treatment",
         ],
       },
     ],
@@ -5856,7 +6078,7 @@ abrahamitic: {
   hotel: {
     definitions: [
       {
-        text: "A building where you pay to stay temporarily when you're away from home. Like a home-away-from-home, but with room service and someone else making your bed. They range from super fancy (5-star with pools and fancy restaurants) to basic (just a clean bed and bathroom).",
+        text: "A building where you pay to stay temporarily when you're away from home. Like a home-away-from-home, but with room service and someone else making your bed. They range from super fancy (5-star with pools and fancy restaurants) to basic (just a clean bed and bathroom). Hotels evolved from old inns and taverns that travelers used to stay at on long journeys.",
         examples: [
           "We booked a hotel room for our vacation in Miami",
           "The five-star hotel has a rooftop pool and spa",
@@ -5961,6 +6183,7 @@ abrahamitic: {
     ],
     pronunciation: "/meɪl/",
   },
+  
   map: {
     definitions: [
       {
@@ -5973,7 +6196,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "To plan out or create a representation of something, often showing relationships or connections between things.",
+        text: "When you figure out how things connect or relate to each other, or make a plan of something.",
         examples: [
           "Can you map out the quickest route to the airport?",
           "The scientists mapped the human genome",
@@ -5981,7 +6204,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "A diagram or guide that reveals the location of something hidden or special.",
+        text: "A drawing that shows where to find something special or hidden, like in adventure stories.",
         examples: [
           "The treasure map led us to a hidden beach",
           "The ancient map showed the location of the temple",
@@ -5991,6 +6214,7 @@ abrahamitic: {
     ],
     pronunciation: "/mæp/",
   },
+  
   reviews: {
     definitions: [
       {
@@ -6021,24 +6245,25 @@ abrahamitic: {
     ],
     pronunciation: "/rɪˈvjuːz/",
   },
+  
   program: {
     definitions: [
       {
-        text: "A plan or schedule that outlines what's going to happen and when, like an event schedule or TV lineup.",
+        text: "A list that tells you what's going to happen and when. Like what's playing on TV, or the order of songs at a concert.",
         examples: [
           "What program are you watching on TV?",
           "The concert program lists all the songs they'll play",
         ],
       },
       {
-        text: "Software or applications that run on computers to perform specific tasks.",
+        text: "Software that runs on computers or phones. The stuff that makes your devices do useful things.",
         examples: [
           "I need to install a new program on my computer",
           "She wrote a program to automate her work tasks",
         ],
       },
       {
-        text: "A structured plan or system designed to achieve specific goals over time.",
+        text: "A set of steps or activities designed to help you reach a goal over time.",
         examples: [
           "The fitness program includes both cardio and weights",
           "The training program lasts for six weeks",
@@ -6050,7 +6275,7 @@ abrahamitic: {
   management: {
     definitions: [
       {
-        text: "The art of getting shit done by organizing people, time, or resources. It's like being the person who makes sure everything runs smoothly, whether it's a team at work, your personal time, or your money.",
+        text: "The act of running or controlling something, like making sure a group of people, a project, or your money is handled well. It's about organizing things so they work properly.",
         examples: [
           "Good time management is key to getting your work done",
           "The project failed due to poor management",
@@ -6058,14 +6283,14 @@ abrahamitic: {
         ],
       },
       {
-        text: "The group of people in charge of running an organization or business, making decisions and setting policies.",
+        text: "The group of people who are in charge of a company or organization. They're the bosses who make the big decisions.",
         examples: [
           "She's in charge of management for the whole department",
           "The new management changed all the company policies",
         ],
       },
       {
-        text: "The process of dealing with or controlling things or situations, especially difficult ones.",
+        text: "Dealing with or handling tough situations or problems, like figuring out how to cope with stress or difficult feelings.",
         examples: ["Stress management is important for mental health"],
       },
     ],
@@ -6074,7 +6299,7 @@ abrahamitic: {
   travel: {
     definitions: [
       {
-        text: "Moving from one place to another, usually for fun, work, or to see new shit. Could be a quick trip to the next town or flying across the world.",
+        text: "Going from one place to another, especially places that are far away. It can be for fun, work, or just to see new stuff.",
         examples: [
           "She loves to travel and has been to over 30 countries",
           "I have to travel to New York next week for a business meeting",
@@ -6083,10 +6308,11 @@ abrahamitic: {
         ],
       },
       {
-        text: "The act or process of going on journeys, especially long ones for business purposes.",
+        text: "The overall experience or activity of going places. When people talk about 'travel' as a thing itself.",
         examples: [
           "The band is traveling around the country on tour",
           "His job involves a lot of travel between different offices",
+          "Air travel has changed a lot in the last 20 years",
         ],
       },
     ],
@@ -6095,7 +6321,7 @@ abrahamitic: {
   report: {
     definitions: [
       {
-        text: "When you tell someone (usually someone in charge) about what happened or what you found out. Could be a school paper, work update, or snitching to your mom about your sibling.",
+        text: "Telling someone what happened or what you found out. Could be something you write down for school or work, or just telling someone about something.",
         examples: [
           "I have to write a report about the class field trip",
           "My boss wants a report on my progress by Friday",
@@ -6103,7 +6329,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "To let someone know about a problem, issue, or something that needs attention. Like reporting a bug in an app, a broken streetlight, or that asshole who keeps parking in your spot.",
+        text: "Telling someone in charge about a problem or something bad that happened. Like telling a teacher, the police, or a website about something wrong.",
         examples: [
           "She had to report the stolen bike to the police",
           "I reported that bug to the developers",
@@ -6111,7 +6337,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "A formal document or presentation that provides information about a particular subject, situation, or event.",
+        text: "A document with important information about something. Usually more official than just telling someone.",
         examples: [
           "The financial report shows we're under budget",
           "Scientists published a report on climate change",
@@ -6124,7 +6350,7 @@ abrahamitic: {
   details: {
     definitions: [
       {
-        text: "All the small but important parts of something. The little things that make the bigger picture clearer or more complete.",
+        text: "The small bits of information that make up the whole picture. All the little parts that might not seem important at first but actually matter.",
         examples: [
           "The details in her artwork are incredible",
           "He always pays attention to details when cleaning",
@@ -6132,7 +6358,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "Information or facts about something specific. The who, what, when, where and how of a situation.",
+        text: "Specific information about something - the exact facts about what, where, when, and how something happened or will happen.",
         examples: [
           "Can you give me the details about the party?",
           "The police asked for details about what happened",
@@ -6145,7 +6371,7 @@ abrahamitic: {
   result: {
     definitions: [
       {
-        text: "What you get after something happens or after you do something. The outcome, ending, or consequence - good or bad.",
+        text: "What you get after something happens or after you do something. The end product or effect - good or bad.",
         examples: [
           "The test results come out next week",
           "The experiment produced some unexpected results",
@@ -6154,7 +6380,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "To be caused by or come from something else - when one thing leads to another.",
+        text: "When one thing causes or leads to another thing happening. Like when X makes Y happen.",
         examples: [
           "His hard work resulted in a promotion",
           "As a result of the rain, the game was cancelled",
@@ -6197,7 +6423,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "Relating to a nation's identity, culture, or shared characteristics that define it as a country.",
+        text: "Related to what makes a country feel like its own thing - the shared feelings, customs, and stories that make people feel they belong to that country.",
         examples: [
           "That restaurant chain has gone national",
           "There's a national shortage of chicken wings",
@@ -6236,7 +6462,7 @@ abrahamitic: {
   terms: {
     definitions: [
       {
-        text: "The rules, conditions, or requirements for something. Like the rules you never read before clicking 'I agree'.",
+        text: "The rules or conditions for something. Like the fine print you never read before clicking 'I agree' on websites.",
         examples: [
           "Have you read the terms and conditions?",
           "Let's discuss the terms of the agreement",
@@ -6256,13 +6482,21 @@ abrahamitic: {
           "They're on good terms with their ex",
         ],
       },
+      {
+        text: "A set time period, like a school term or a president's term in office.",
+        examples: [
+          "The fall term starts in September",
+          "She'll serve a four-year term as mayor",
+          "His prison term ends next month",
+        ],
+      },
     ],
     pronunciation: "/tɜːrmz/",
   },
   local: {
     definitions: [
       {
-        text: "Stuff that's close to where you are, or belongs to your area. Think neighborhood shops, local news, or that one restaurant everyone in town knows about.",
+        text: "Something that belongs to or is connected to the place where you are right now. The nearby stuff in your area.",
         examples: [
           "The local coffee shop makes the best lattes",
           "I always watch the local news to see what's happening nearby",
@@ -6291,10 +6525,11 @@ abrahamitic: {
   office: {
     definitions: [
       {
-        text: "A place where people do work stuff, usually with desks, computers, and that one person who always microwaves fish for lunch.",
+        text: "A place where people do work stuff, usually with desks, computers, boring meetings, and that one person who always microwaves fish for lunch.",
         examples: [
           "I spend way too much time at the office",
           "The doctor's office called with your results",
+          "Our office has free coffee and snacks",
         ],
       },
       {
@@ -6302,6 +6537,7 @@ abrahamitic: {
         examples: [
           "The president's office issued a statement",
           "She's running for office in the local election",
+          "He took office last January",
         ],
       },
       {
@@ -6309,6 +6545,7 @@ abrahamitic: {
         examples: [
           "I need Office to open this spreadsheet",
           "The latest Office update broke my formatting",
+          "My school gives students free Office software",
         ],
       },
     ],
@@ -6397,6 +6634,14 @@ abrahamitic: {
           "The artist community in this city is thriving",
         ],
       },
+      {
+        text: "The feeling of belonging and connection between people who share something in common, like experiences, goals, or where they live.",
+        examples: [
+          "There's a strong sense of community in our apartment building",
+          "We've lost the community spirit that used to be in this town",
+          "The school tries to build community through shared activities",
+        ],
+      },
     ],
     pronunciation: "/kəˈmjuːnəti/",
   },
@@ -6443,6 +6688,14 @@ abrahamitic: {
           "She stated her case convincingly to the judge",
         ],
       },
+      {
+        text: "A country or nation, especially when talking about how countries deal with each other. Like when countries have agreements or problems with other states.",
+        examples: [
+          "The heads of state will meet at the summit next week",
+          "The secretary of state handles relations with other countries",
+          "Relations between the two states have improved recently",
+        ],
+      },
     ],
     pronunciation: "/steɪts/",
   },
@@ -6472,7 +6725,7 @@ abrahamitic: {
   dvd: {
     definitions: [
       {
-        text: "A flat, round disc that stores movies, TV shows, or other data. It's like a CD but can hold more stuff and usually has better quality. People used to rent or buy these before streaming took over.",
+        text: "A flat, round disc that stores movies, TV shows, or other data. It was super popular in the late 1990s to early 2010s before streaming took over. DVDs look like CDs but can hold way more stuff and have better picture quality.",
         examples: [
           "I still have a collection of DVDs from before Netflix was a thing",
           "The movie comes with bonus features on the DVD",
@@ -6480,6 +6733,13 @@ abrahamitic: {
           "I found some old family videos on a DVD in the attic",
           "Remember when Blockbuster used to rent DVDs?",
           "The DVD skipped during the best part of the movie",
+        ],
+      },
+      {
+        text: "Short for 'Digital Versatile Disc' or 'Digital Video Disc' - but nobody actually calls it that in real life.",
+        examples: [
+          "DVD players were a must-have home entertainment device in the 2000s",
+          "The DVD format replaced VHS tapes because of its better quality and durability",
         ],
       },
     ],
@@ -6512,13 +6772,21 @@ abrahamitic: {
           "Their motto is 'ship early, ship often'",
         ],
       },
+      {
+        text: "The business of transporting goods by sea. This is the original meaning that all the others came from.",
+        examples: [
+          "The company specializes in international shipping",
+          "The shipping industry has been around for thousands of years",
+          "Container shipping revolutionized global trade in the 20th century",
+        ],
+      },
     ],
     pronunciation: "/ˈʃɪpɪŋ/",
   },
   reserved: {
     definitions: [
       {
-        text: "When something is kept specifically for someone or some purpose. Like a table at a restaurant that has a 'reserved' sign on it, or seats saved for VIPs.",
+        text: "When something is kept specially for someone or some purpose. Like a table at a restaurant with a 'reserved' sign, or spots saved for specific people.",
         examples: [
           "Sorry, this table is reserved for another party",
           "These parking spaces are reserved for staff only",
@@ -6527,10 +6795,17 @@ abrahamitic: {
         ],
       },
       {
-        text: "When someone is quiet, private, and doesn't easily show emotions or share personal stuff. Like that person who never really opens up at parties.",
+        text: "When someone is quiet, private, and doesn't easily show emotions or share personal stuff. It's like that person who never really opens up at parties.",
         examples: [
           "She's usually very reserved around new people",
           "He has a reserved personality and takes time to warm up to others",
+        ],
+      },
+      {
+        text: "When rights or powers are kept for a specific person or group. Often used in legal or political contexts.",
+        examples: [
+          "The constitution says certain powers are reserved for the states",
+          "The right to make that decision is reserved for the board of directors",
         ],
       },
     ],
@@ -6555,6 +6830,13 @@ abrahamitic: {
         examples: [
           "The king's subjects had to pay heavy taxes",
           "She's the subject of a new documentary about entrepreneurs",
+        ],
+      },
+      {
+        text: "When you make someone go through something, usually something bad or unpleasant. Like when someone forces you to do something.",
+        examples: [
+          "They subjected the new employee to a long training session",
+          "She was subjected to unfair treatment at her old job",
         ],
       },
     ],
@@ -6612,7 +6894,10 @@ abrahamitic: {
       },
       {
         text: "A group of things that are similar or related, like in science when they group animals or plants together.",
-        examples: ["Lions belong to the cat family of animals"],
+        examples: [
+          "Lions belong to the cat family of animals",
+          "Maple is part of the hardwood family of trees"
+        ],
       },
     ],
     pronunciation: "/ˈfæm.əl.i/",
@@ -6620,7 +6905,7 @@ abrahamitic: {
   based: {
     definitions: [
       {
-        text: "Modern slang for when someone is confidently themselves and doesn't care what others think. It's like saying 'you're right and brave for saying it' even if others might disagree.",
+        text: "Modern internet slang for when someone isn't afraid to express their honest opinion without caring if others disagree. It's like saying 'respect' for someone being true to themselves.",
         examples: [
           "That's a based opinion, I don't care what anyone else says",
           "She made a based comment about the company's policies",
@@ -6674,7 +6959,7 @@ abrahamitic: {
   special: {
     definitions: [
       {
-        text: "When something or someone is different from normal in a good way - like better, more important, or just unique. Think birthday-level stuff or that one pizza place that just hits different.",
+        text: "When something or someone stands out from normal things in a good way - better, more important, or just unique. Like a birthday or an item with personal meaning.",
         examples: [
           "We're having a special dinner to celebrate her promotion",
           "That necklace is special to me - it was my grandmother's",
@@ -6685,7 +6970,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "Something designed for a specific purpose or need that's different from the usual. Like when something is made just for certain situations or people.",
+        text: "Something made for a specific purpose or need that's different from the usual. Like things created just for certain situations or people.",
         examples: [
           "She works in special education with kids who need extra support",
           "The special forces are trained for dangerous missions",
@@ -6700,7 +6985,7 @@ abrahamitic: {
   website: {
     definitions: [
       {
-        text: "A place on the internet where you can find stuff - like a digital store, blog, or service. It's made up of different pages all connected together, kind of like a digital book or magazine.",
+        text: "A place on the internet with connected pages that show information, services, or content. Think of it like a digital shop, book, or magazine that you visit through your browser.",
         examples: [
           "I ordered my shoes from the company's website",
           "She built a website to show off her art",
@@ -6716,7 +7001,7 @@ abrahamitic: {
   index: {
     definitions: [
       {
-        text: "A list that helps you find stuff quickly, like the index at the back of a book that tells you which page everything is on.",
+        text: "A list that helps you find stuff quickly, like the back of a book that tells you which page to find things on.",
         examples: [
           "Look up 'dragons' in the book's index",
           "The library has an index of all their books",
@@ -6728,14 +7013,14 @@ abrahamitic: {
         examples: ["Click here to return to the index page"],
       },
       {
-        text: "A number that tracks how something changes over time, like stock market prices.",
+        text: "A number that tracks how something changes over time, like stock market prices or the cost of living.",
         examples: [
           "The stock market index went up today",
           "The cost of living index helps track inflation",
         ],
       },
       {
-        text: "Your pointer finger - the one next to your thumb that you use to point at things or press buttons.",
+        text: "Your pointer finger - the one next to your thumb that you use to point at things.",
         examples: [
           "He raised his index finger to ask a question",
           "She swiped the screen with her index finger",
@@ -6748,7 +7033,7 @@ abrahamitic: {
   women: {
     definitions: [
       {
-        text: "Adult female humans. More broadly, it can mean anyone who identifies as a woman, regardless of what sex they were assigned at birth.",
+        text: "Adult female humans. It's also used for people who feel like and live as women, even if they weren't born female.",
         examples: [
           "The women's soccer team won the world cup",
           "More women are becoming CEOs than ever before",
@@ -6776,15 +7061,21 @@ abrahamitic: {
         examples: ["She keeps all her important papers in a file cabinet"],
       },
       {
-        text: "A tool used to smooth rough edges on metal or other materials.",
-        examples: ["He used a nail file to smooth the rough edges"],
+        text: "A tool used to smooth rough edges, like a nail file for your fingernails or a metal file for woodwork.",
+        examples: [
+          "He used a nail file to smooth the rough edges",
+          "The carpenter used a metal file to shape the wood",
+        ],
       },
       {
-        text: "A collection of information or records about a person, case, or subject.",
-        examples: ["The police have a file on the suspect"],
+        text: "A collection of information about a person, case, or subject.",
+        examples: [
+          "The police have a file on the suspect",
+          "The doctor keeps a file of your medical history",
+        ],
       },
       {
-        text: "To formally submit or register something with an organization or authority.",
+        text: "To submit something officially to an organization or authority.",
         examples: [
           "Don't forget to file a report about the incident",
           "She filed her taxes just before the deadline",
@@ -6797,7 +7088,7 @@ abrahamitic: {
   silly: {
     definitions: [
       {
-        text: "Acting or behaving in a way that's not serious or sensible, but usually harmless and often fun. It's when someone is being playful, goofy, or doing things that might seem a bit foolish but make people laugh.",
+        text: "Behaving in a fun, playful, or goofy way that isn't serious. It's when someone is being deliberately foolish just to make others laugh or have fun.",
         examples: [
           "We got silly and made funny faces in all the photos.",
           "That movie is just a silly comedy that doesn't make much sense.",
@@ -6805,7 +7096,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "When something doesn't make sense or seems ridiculous. It's used to describe ideas or situations that seem too foolish to take seriously.",
+        text: "When something makes no sense or seems completely ridiculous. Used for ideas or situations that are too foolish to take seriously.",
         examples: [
           "It's silly to wear a winter coat when it's 90 degrees outside.",
           "That rule is just silly - nobody follows it.",
@@ -6813,7 +7104,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "A way to describe something as trivial or not important. When something isn't worth worrying about.",
+        text: "Something small, unimportant, or not worth worrying about. Used for minor issues that shouldn't be taken too seriously.",
         examples: [
           "Don't get upset over such a silly mistake.",
           "They had a fight over something silly like what movie to watch.",
@@ -6821,7 +7112,7 @@ abrahamitic: {
         ],
       },
       {
-        text: "Historically (hundreds of years ago), this word actually meant 'helpless,' 'weak,' or 'pitiful' - completely different from how we use it today.",
+        text: "Hundreds of years ago, this word meant almost the opposite - 'helpless,' 'weak,' 'innocent,' or 'pitiful.' The meaning completely changed over time.",
         examples: [
           "In old English texts, they might describe a poor or unfortunate person as 'silly.'",
           "The word silly has changed dramatically in meaning over the centuries.",

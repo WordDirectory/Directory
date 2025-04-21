@@ -17,7 +17,8 @@ export function getWord(word: string): {
     throw new Error("Word parameter is required");
   }
 
-  const normalizedWord = word.toLowerCase().trim();
+  // Decode URL-encoded characters first, then normalize
+  const normalizedWord = decodeURIComponent(word).toLowerCase().trim();
   const wordDetails = words[normalizedWord];
 
   if (!wordDetails) {

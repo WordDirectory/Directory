@@ -23,7 +23,18 @@ const extractWord = (query: string): string | null => {
   return null;
 };
 
-chrome.webNavigation.onBeforeNavigate.addListener((details) => {
+async function wordExists(word: string): Promise<boolean> {
+  try {
+    const response = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`, {
+      method: 'HEAD'
+    });
+    return response.status === 200;
+  } catch {
+    return false;
+  }
+}
+
+chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
   const url = new URL(details.url);
   const searchEngine = isSearchEngine(url.hostname);
   
@@ -33,11 +44,12 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
     
     if (query) {
       const word = extractWord(query);
-      if (word) {
+      if (word && await wordExists(word)) {
         chrome.tabs.update(details.tabId, {
           url: `https://worddirectory.app/words/${encodeURIComponent(word)}`
         });
       }
+      // If word doesn't exist or API fails, do nothing (let search proceed)
     }
   }
 }); 

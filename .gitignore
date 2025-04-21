@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+/apps/web/node_modules
 /.pnp
 .pnp.*
 .yarn/*
@@ -11,14 +11,14 @@
 !.yarn/versions
 
 # testing
-/coverage
+/apps/web/coverage
 
 # next.js
-/.next/
-/out/
+/apps/web/.next/
+/apps/web/out/
 
 # production
-/build
+/apps/web/build
 
 # misc
 .DS_Store
@@ -38,7 +38,7 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
-next-env.d.ts
+/apps/web/next-env.d.ts
 
 # cursor
 .cursorrules

@@ -3,9 +3,11 @@
 import { SearchCommand } from "@/components/search-command";
 import { SearchInput } from "./search-input";
 import { useState } from "react";
+import { words } from "@/data/words";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
+  const wordCount = Object.keys(words).length;
 
   return (
     <section className="relative w-full overflow-hidden px-4">
@@ -23,7 +25,7 @@ export function Hero() {
 
         <div className="mx-auto grid max-w-4xl grid-cols-2 gap-8 border-t border-border pt-10 sm:grid-cols-4">
           {[
-            ["10,000+", "Words"],
+            [wordCount, "Words"],
             ["100%", "Human readable"],
             ["24/7", "Availability"],
             ["Free", "Forever"],

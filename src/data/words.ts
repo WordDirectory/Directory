@@ -7149,4 +7149,597 @@ abrahamitic: {
     ],
     pronunciation: "/ʌnˈfʌk.wɪð.ə.bəl/",
   },
+  technology: {
+    definitions: [
+      {
+        text: "Tools, machines, and methods that humans create to make life easier or better. Most commonly used to talk about electronic stuff like phones, computers, and apps.",
+        examples: [
+          "My grandma struggles with new technology like smartphones.",
+          "The company invested in better technology to speed up production.",
+          "Schools are using more technology in classrooms.",
+        ],
+      },
+      {
+        text: "The whole field or world of creating and using these tools. When people say they 'work in technology', they usually mean they work with computers, software, or similar electronic stuff.",
+        examples: [
+          "She studied technology in college.",
+          "Technology is changing how we live and work.",
+          "The technology sector has lots of job opportunities.",
+        ],
+      },
+    ],
+    pronunciation: "/tekˈnɒlədʒi/",
+  },
+  case: {
+    definitions: [
+      {
+        text: "A container or box that holds or protects something.",
+        examples: [
+          "Put your glasses in their case so they don't get scratched.",
+          "The jewelry came in a fancy wooden case.",
+          "He bought a new case for his phone.",
+        ],
+      },
+      {
+        text: "A situation or example of something happening.",
+        examples: [
+          "In this case, I think you're right.",
+          "That's not always true, but in some cases it might be.",
+          "Let's look at a case where this went wrong.",
+        ],
+      },
+      {
+        text: "A legal matter being looked at in court.",
+        examples: [
+          "The lawyer won the case.",
+          "There's not enough evidence to make a case.",
+          "This court case has been going on for years.",
+        ],
+      },
+      {
+        text: "An instance of a disease or problem being reported.",
+        examples: [
+          "There were five new cases of flu this week.",
+          "The first case was reported in March.",
+          "Doctors are seeing more cases of burnout.",
+        ],
+      },
+      {
+        text: "Whether a letter is uppercase (big) or lowercase (small).",
+        examples: [
+          "Your password needs at least one upper case letter.",
+          "The first letter of a sentence should be capital case.",
+          "Some people write emails in all lower case.",
+        ],
+      },
+    ],
+    pronunciation: "/keɪs/",
+  },
+  project: {
+    definitions: [
+      {
+        text: "Something you plan to create, build, or get done. Usually takes time and involves multiple steps.",
+        examples: [
+          "We're working on a project to redesign the website.",
+          "This school project is due next week.",
+          "He started a DIY project in his garage.",
+        ],
+      },
+      {
+        text: "To throw or direct something forward or outward.",
+        examples: [
+          "The actor needed to project their voice to the back of the theater.",
+          "The movie was projected onto the screen.",
+          "Sales are projected to grow next year.",
+        ],
+      },
+      {
+        text: "To guess or estimate what might happen in the future.",
+        examples: [
+          "They projected the costs would be around $5000.",
+          "It's hard to project how the market will change.",
+          "Weather forecasts project rain for the weekend.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈprɒdʒekt/",
+  },
+  version: {
+    definitions: [
+      {
+        text: "A specific form or variation of something, usually newer or different from other forms.",
+        examples: [
+          "This is the latest version of the app.",
+          "I like the original version of the song better.",
+          "Can you send me the updated version of the document?",
+        ],
+      },
+      {
+        text: "Someone's own telling or understanding of what happened.",
+        examples: [
+          "That's his version of the story, but others remember it differently.",
+          "The witness gave their version of events to the police.",
+          "Both kids had different versions of who started the fight.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈvɜːʃən/",
+  },
+  section: {
+    definitions: [
+      {
+        text: "A part or piece of something bigger that's been divided up.",
+        examples: [
+          "This section of the book talks about World War 2.",
+          "The front section of the plane is first class.",
+          "Which section of the store sells batteries?",
+        ],
+      },
+      {
+        text: "A group of similar things or people that are organized together.",
+        examples: [
+          "The string section of the orchestra plays here.",
+          "I sit in section B of the stadium.",
+          "The fruit section is at the front of the supermarket.",
+        ],
+      },
+      {
+        text: "To divide or cut something into smaller parts.",
+        examples: [
+          "They sectioned off part of the road for construction.",
+          "The orange is sectioned into small pieces.",
+          "The teacher sectioned the class into groups.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈsekʃən/",
+  },
+  found: {
+    definitions: [
+      {
+        text: "To come across something you were or weren't looking for. It's when you finally see or get something that was lost or hidden.",
+        examples: [
+          "I found my keys under the couch",
+          "They found a cool spot for picnics in the park",
+          "She finally found her dream job",
+          "I found out the truth about what happened",
+          "The police found the stolen bike",
+        ],
+      },
+      {
+        text: "To start or create something new, usually something big like a company or organization. It's when you're the first person to build or set up something.",
+        examples: [
+          "He found a new company that makes electric bikes",
+          "The university was found in 1902",
+          "They found a club for people who love cats",
+        ],
+      },
+    ],
+    pronunciation: "/faʊnd/",
+  },
+  sports: {
+    definitions: [
+      {
+        text: "Games or activities where people use their body to play, compete, or have fun. Can be done alone or in teams, and people can play them or just watch them for fun.",
+        examples: [
+          "Football and basketball are team sports",
+          "She loves watching sports on TV",
+          "The school has lots of sports you can join",
+          "Running and swimming are sports you can do alone",
+          "They play sports every weekend for fun",
+        ],
+      },
+    ],
+    pronunciation: "/spɔːrts/",
+  },
+  sport: {
+    definitions: [
+      {
+        text: "A game or activity where people use their body to play, compete, or have fun. Can be done alone or in teams.",
+        examples: [
+          "Tennis is my favorite sport",
+          "What sport do you play?",
+          "Skateboarding became an Olympic sport",
+        ],
+      },
+      {
+        text: "A friendly way to call someone, usually used by older people. Like saying 'buddy' or 'pal'.",
+        examples: [
+          "Thanks, sport!",
+          "Hey sport, can you help me with this?",
+          "Good job, sport!",
+        ],
+      },
+    ],
+    pronunciation: "/spɔːrt/",
+  },
+  related: {
+    definitions: [
+      {
+        text: "When things or people are connected to each other in some way. Like when two things go together or when people are family.",
+        examples: [
+          "These two problems are related to each other",
+          "She's related to me - she's my cousin",
+          "The stomach ache was related to what I ate",
+          "All these songs are related because they're about love",
+        ],
+      },
+      {
+        text: "When something has to do with a specific topic or thing.",
+        examples: [
+          "These are work-related questions",
+          "The teacher only wants movie-related comments",
+          "Please send any food-related issues to the kitchen",
+        ],
+      },
+    ],
+    pronunciation: "/rɪˈleɪtɪd/",
+  },
+  security: {
+    definitions: [
+      {
+        text: "Being safe and protected from bad things that might happen. It's when you don't have to worry about danger.",
+        examples: [
+          "The new locks will add more security to our house",
+          "They increased security at the airport",
+          "The password gives your account better security",
+        ],
+      },
+      {
+        text: "People whose job is to keep things, places, or other people safe.",
+        examples: [
+          "The security guard watches the mall at night",
+          "Building security stopped the thief",
+          "There's extra security at concerts",
+        ],
+      },
+      {
+        text: "When you feel sure that good things in your life (like your job or money) won't go away suddenly.",
+        examples: [
+          "Having savings gives you financial security",
+          "The new job contract offered more security",
+          "They wanted the security of owning their own home",
+        ],
+      },
+    ],
+    pronunciation: "/səˈkjʊərəti/",
+  },
+  american: {
+    definitions: [
+      {
+        text: "Someone or something from the United States of America. When people say 'American' without any other context, they usually mean this.",
+        examples: [
+          "She's American - she grew up in Chicago",
+          "I love American movies like Star Wars",
+          "That's a typical American car - big and powerful",
+          "He has an American accent when he speaks English",
+        ],
+      },
+      {
+        text: "Someone or something from North or South America - the whole continent. This meaning is more common outside the US, especially in Latin America.",
+        examples: [
+          "Both Canadians and Brazilians are technically American",
+          "The American continents stretch from Alaska to Argentina",
+          "Many American cultures existed before Europeans arrived",
+        ],
+      },
+    ],
+    pronunciation: "/əˈmer.ɪ.kən/",
+  },
+  member: {
+    definitions: [
+      {
+        text: "Someone who belongs to or has joined a group, club, team, or organization. Usually means you signed up or were let in somehow.",
+        examples: [
+          "She's a member of the gym down the street",
+          "All Discord server members can use these emojis",
+          "He's been a member of the band for five years",
+          "Premium members get special discounts",
+        ],
+      },
+      {
+        text: "A part of something bigger, like a part of your body or a piece of something that belongs to a set.",
+        examples: [
+          "The arm is a member of the body",
+          "Each member of the family has their own room",
+          "That's a key member of our team",
+        ],
+      },
+    ],
+    pronunciation: "/ˈmem.bər/",
+  },
+  power: {
+    definitions: [
+      {
+        text: "The ability to make things happen or control stuff. When you can make others do what you want or change how things work.",
+        examples: [
+          "The boss has the power to fire anyone",
+          "Money gives people a lot of power",
+          "She has the power to change the rules",
+        ],
+      },
+      {
+        text: "The electricity that makes things work, like what comes from batteries or wall plugs.",
+        examples: [
+          "My phone is out of power",
+          "The storm knocked out the power in our neighborhood",
+          "Don't forget to turn off the power before fixing it",
+        ],
+      },
+      {
+        text: "Physical strength or force - how much muscle or energy something has.",
+        examples: [
+          "That car has a lot of power under the hood",
+          "He punched the wall with all his power",
+          "The power of the waves destroyed the beach houses",
+        ],
+      },
+    ],
+    pronunciation: "/ˈpaʊ.ər/",
+  },
+  network: {
+    definitions: [
+      {
+        text: "The system that gives you internet or phone connection. When your WiFi or phone says 'no network', it means you can't connect to the internet or make calls.",
+        examples: [
+          "The network is down so I can't send any messages",
+          "I have full network bars on my phone",
+          "Connect to the home network to use the printer",
+          "The coffee shop has a free network you can use",
+        ],
+      },
+      {
+        text: "A bunch of people or things connected to each other. Like your friends and their friends, or computers that can talk to each other.",
+        examples: [
+          "Your professional network helps you find jobs",
+          "The WiFi network isn't working again",
+          "She has a huge network of contacts in the industry",
+        ],
+      },
+      {
+        text: "A company that shows TV shows or broadcasts stuff, like NBC or BBC.",
+        examples: [
+          "The football game is on another network",
+          "She works for a news network",
+          "Which network shows that series?",
+        ],
+      },
+    ],
+    pronunciation: "/ˈnet.wɜːk/",
+  },
+  computer: {
+    definitions: [
+      {
+        text: "An electronic device that lets you do all kinds of stuff like browse the internet, play games, write documents, or edit videos. Basically a smart machine that follows your instructions.",
+        examples: [
+          "My computer crashed while I was working",
+          "You can buy computers at any electronics store",
+          "Most jobs require you to use a computer",
+        ],
+      },
+      {
+        text: "Back in the day (like 1900s), this word meant a person who did math and calculations by hand. Now it's mostly used for machines.",
+        examples: [
+          "Before machines, computers were people who calculated stuff",
+          "NASA used to hire human computers to do space math",
+        ],
+      },
+    ],
+    pronunciation: "/kəmˈpjuː.tər/",
+  },
+  total: {
+    definitions: [
+      {
+        text: "The complete amount of something when you add it all up. It's the final number you get after counting everything.",
+        examples: [
+          "The total for your groceries is $50",
+          "We counted a total of 27 people at the party",
+          "What's the total distance we walked today?",
+        ],
+      },
+      {
+        text: "When something is complete or absolute - like saying it's 100% that way.",
+        examples: [
+          "The project was a total disaster",
+          "The room was in total darkness",
+          "She has total control over the situation",
+        ],
+      },
+    ],
+    pronunciation: "/ˈtoʊtl/",
+  },
+  following: {
+    definitions: [
+      {
+        text: "Coming right after something else, like what happens next or what comes after.",
+        examples: [
+          "The following day was sunny",
+          "Please read the following instructions",
+          "In the following weeks, everything changed",
+        ],
+      },
+      {
+        text: "When you're going behind or after someone or something, either physically or online.",
+        examples: [
+          "The puppy kept following me around the house",
+          "I'm following my favorite band on social media",
+          "She's following in her mother's footsteps",
+        ],
+      },
+    ],
+    pronunciation: "/ˈfɑːloʊɪŋ/",
+  },
+  download: {
+    definitions: [
+      {
+        text: "When you get something from the internet and save it to your phone, computer, or tablet. Like grabbing a file from the internet and putting it on your device.",
+        examples: [
+          "I need to download the new app",
+          "She downloaded all her photos from the cloud",
+          "The game is still downloading",
+          "Can you download that song for me?",
+        ],
+      },
+    ],
+    pronunciation: "/ˈdaʊnloʊd/",
+  },
+  access: {
+    definitions: [
+      {
+        text: "Being able to use, get to, or reach something. It's like having the key to a door or the password to an account.",
+        examples: [
+          "You need a password to access your email",
+          "The building has wheelchair access",
+          "Sorry, you don't have access to this file",
+          "The library gives you access to thousands of books",
+        ],
+      },
+      {
+        text: "When you actually use or get to something - like opening a file or entering a building.",
+        examples: [
+          "I can't access the internet right now",
+          "She accessed her bank account online",
+          "You can access the beach through this path",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækses/",
+  },
+  resource: {
+    definitions: [
+      {
+        text: "Something useful that you can use when you need it - like money, materials, or information. Think of it as tools or supplies that help you get shit done.",
+        examples: [
+          "The library is a great resource for research",
+          "We don't have enough resources to finish this project",
+          "Natural resources like oil and water are limited",
+          "She's really good with Excel - she's become a valuable resource for the team",
+          "The website has tons of free resources for learning coding",
+        ],
+      },
+    ],
+    pronunciation: "/ˈriːsɔːrs/",
+  },
+  current: {
+    definitions: [
+      {
+        text: "Happening right now or existing at this moment. It's the present-day version of something, not the past or future one.",
+        examples: [
+          "What's your current address?",
+          "The current president is trying to fix the economy",
+          "These prices are only valid for the current month",
+          "My current job is way better than my last one",
+          "What's the current status of the project?",
+        ],
+      },
+      {
+        text: "The flow of something, usually water or electricity, moving in a particular direction. Like when you're swimming and feel the water pushing you one way.",
+        examples: [
+          "The river's current was too strong for swimming",
+          "Electrical current flows through the wires",
+          "Ocean currents can carry boats off course",
+          "Don't swim against the current, you'll get tired",
+        ],
+      },
+    ],
+    pronunciation: "/ˈkʌrənt/",
+  },
+  media: {
+    definitions: [
+      {
+        text: "Videos, movies, music, or any kind of digital content you can watch or listen to. Like when you're streaming shows or playing videos on your phone.",
+        examples: [
+          "The media player won't load my video",
+          "I downloaded some media for the flight",
+          "The app lets you stream different types of media",
+          "My phone is full of media files",
+          "The media controls stopped working",
+        ],
+      },
+      {
+        text: "The various ways we get news and entertainment, like TV, newspapers, websites, and radio. Basically anywhere you can consume content or information.",
+        examples: [
+          "The media is covering the story 24/7",
+          "Don't believe everything you see in the media",
+          "She works in social media marketing",
+          "Traditional media like newspapers are losing popularity",
+          "The media attention made them famous overnight",
+        ],
+      },
+      {
+        text: "The actual stuff used to store or create content - like paint for art, or hard drives for data. Though people mostly use this meaning when talking about art supplies.",
+        examples: [
+          "She works with mixed media in her artwork",
+          "The artist uses unusual media like coffee and wine to paint",
+          "Digital media has replaced most physical storage formats",
+        ],
+      },
+    ],
+    pronunciation: "/ˈmiːdiə/",
+  },
+  law: {
+    definitions: [
+      {
+        text: "The official rules that everyone in a country or area has to follow, made by the government. Break these and you might end up in trouble.",
+        examples: [
+          "It's against the law to drive without a license",
+          "They passed a new law about smoking in public",
+          "Breaking the law can get you arrested",
+          "The law requires everyone to pay taxes",
+          "You need to know the laws of the country you're visiting",
+        ],
+      },
+      {
+        text: "A rule that always works the same way in science or nature, like gravity. It's not made by people - it's just how things work.",
+        examples: [
+          "The laws of physics can't be broken",
+          "Newton's laws of motion explain how things move",
+          "It's like a law of nature - what goes up must come down",
+        ],
+      },
+      {
+        text: "The whole system of rules and the people who work with them, like lawyers and judges. Also means studying to become a lawyer.",
+        examples: [
+          "She's studying law at university",
+          "My sister practices law in New York",
+          "They took the dispute to law",
+          "He works in corporate law",
+        ],
+      },
+    ],
+    pronunciation: "/lɔː/",
+  },
+  control: {
+    definitions: [
+      {
+        text: "The power to make decisions or determine what happens. When you're in charge of a situation or can make something do what you want.",
+        examples: [
+          "She's in control of the whole project",
+          "The remote control isn't working",
+          "He needs to learn to control his temper",
+          "They lost control of the car on the ice",
+          "Who's in control here?",
+        ],
+      },
+      {
+        text: "The ability to keep your emotions or actions in check - like not losing your shit when someone's being annoying.",
+        examples: [
+          "He has no self-control when it comes to chocolate",
+          "She managed to control herself despite being angry",
+          "The crowd was out of control",
+          "It takes a lot of control not to laugh during serious moments",
+        ],
+      },
+      {
+        text: "The buttons, switches, or tools you use to operate something, like on a game controller or in a car.",
+        examples: [
+          "The controls for this game are really complicated",
+          "Where are the volume controls?",
+          "The pilot checked all the flight controls",
+          "These controls are different from the old model",
+        ],
+      },
+    ],
+    pronunciation: "/kənˈtrəʊl/",
+  },
 };

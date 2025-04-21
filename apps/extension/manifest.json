@@ -7,7 +7,7 @@
     "webNavigation"
   ],
   "background": {
-    "service_worker": "background.js",
+    "service_worker": "dist/background.js",
     "type": "module"
   },
   "icons": {

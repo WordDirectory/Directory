@@ -4,7 +4,7 @@ import { words } from '@/data/words';
 import { audioRateLimit } from '@/lib/rate-limit';
 
 // Default voice ID for a natural, clear voice from ElevenLabs
-const DEFAULT_VOICE_ID = 'dj3G1R1ilKoFKhBnWOzG';
+const DEFAULT_VOICE_ID = 'TX3LPaxmHKxFdv7VOQHJ';
 
 export async function GET(
   request: Request,

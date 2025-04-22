@@ -61,6 +61,7 @@ scripts/decode-jwt.py
 
 scripts/add_words.ts
 scripts/english_words.txt
+scripts/all_english_words.txt
 scripts/get_words.ts
 scripts/tsconfig.json
 scripts/lowercase_all_words.ts

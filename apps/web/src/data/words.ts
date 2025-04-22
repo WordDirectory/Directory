@@ -7767,4 +7767,38 @@ abrahamitic: {
     ],
     pronunciation: "/ˈkeɪ.pə.bəl/",
   },
+  cheating: {
+    definitions: [
+      {
+        text: "Breaking someone's trust by going behind their back, especially in relationships. Like when you're dating someone but secretly seeing someone else.",
+        examples: [
+          "She found out he was cheating on her with his coworker",
+          "They broke up because he caught her cheating",
+          "Emotional cheating can hurt just as much as physical cheating",
+          "He's been cheating on his diet with late-night snacks",
+          "She felt like she was cheating on her old job by going to interviews",
+        ],
+      },
+      {
+        text: "What insecure people call it when you use better tools than them. It's bullshit gatekeeping by people who are scared of change. They called calculators 'cheating' in math class, Google 'cheating' for homework, and now AI 'cheating' at work. It's not cheating - they're just mad you found a better way to do shit while they're stuck in the past.",
+        examples: [
+          "My professor called AI cheating but still uses a calculator - make it make sense",
+          "Everyone said using Google was cheating until they realized how fucking stupid that sounds",
+          "Boomers think using new tools is cheating because they're scared of becoming irrelevant",
+          "If using better tools is cheating, then writing with a pen instead of a rock is cheating too",
+          "They'll call it cheating until they start using it themselves, then it's suddenly 'innovation'",
+        ],
+      },
+      {
+        text: "In games or sports, not following the rules to win. This is the old-school, straightforward kind of cheating that everyone agrees is wrong.",
+        examples: [
+          "He was caught cheating at cards by hiding aces in his sleeve",
+          "The team was disqualified for cheating in the tournament",
+          "Kids often try cheating at board games by sneaking extra moves",
+          "The company was caught cheating on their emissions tests",
+        ],
+      },
+    ],
+    pronunciation: "/ˈtʃiːtɪŋ/",
+  },
 };

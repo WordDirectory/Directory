@@ -37,6 +37,12 @@ export function Footer() {
                 About
               </Link>
               <Link
+                href="/contact"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+              >
+                Contact
+              </Link>
+              <Link
                 href="/privacy"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
               >

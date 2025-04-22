@@ -19,37 +19,32 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-semibold">1. Introduction</h2>
           <p>
             Your privacy matters to us. This policy explains how Word Directory
-            collects, uses, and protects any information when you use our
+            and our service providers handle any information when you use our
             service.
           </p>
           <p>
             We keep this shit simple - we collect minimal data and we're
-            straight up about what we do with it.
+            straight up about what happens with it.
           </p>
         </section>
 
         <Separator className="my-12" />
 
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold">2. Information We Collect</h2>
-          <p>We collect the following information:</p>
+          <h2 className="text-2xl font-semibold">2. Information Collection</h2>
+          <p>Word Directory itself does not directly collect or store any personal information.</p>
+          
+          <p className="mt-4">However, our hosting provider (Vercel) automatically collects and processes:</p>
           <ul className="list-disc pl-6 space-y-2">
             <li>
-              <span className="font-medium">Usage Data:</span> Basic analytics
-              about how you use the site (pages visited, time spent)
+              <span className="font-medium">Server Logs:</span> Basic server logs including IP addresses and request information
             </li>
             <li>
-              <span className="font-medium">Technical Data:</span> Your IP
-              address, browser type, and device info
-            </li>
-            <li>
-              <span className="font-medium">Cookies:</span> Small files stored
-              on your device to remember your preferences
+              <span className="font-medium">Analytics Data:</span> Through Vercel Analytics, which collects anonymous usage data like pages visited and performance metrics
             </li>
           </ul>
           <p className="mt-4">
-            That's it. We don't ask for your life story or sell your data to
-            sketchy third parties.
+            We use Vercel as our hosting platform, and their analytics are privacy-focused and GDPR-compliant. We don't add any additional tracking or data collection beyond what Vercel provides by default.
           </p>
         </section>
 
@@ -57,18 +52,16 @@ export default function PrivacyPage() {
 
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">
-            3. How We Use Your Information
+            3. How Information Is Used
           </h2>
-          <p>We use your information to:</p>
+          <p>The information collected by Vercel is used to:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Make the website work properly</li>
-            <li>Understand how people use our service</li>
-            <li>Improve our definitions and user experience</li>
-            <li>Protect against abuse or misuse of our service</li>
+            <li>Ensure the website runs properly and securely</li>
+            <li>Understand basic usage patterns to improve the service</li>
+            <li>Protect against abuse or security threats</li>
           </ul>
           <p className="mt-4">
-            We use Vercel Analytics to track basic usage stats. It's
-            privacy-focused and doesn't track personal info.
+            We specifically chose Vercel because they take a privacy-first approach to hosting and analytics.
           </p>
         </section>
 
@@ -77,13 +70,10 @@ export default function PrivacyPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">4. Data Security</h2>
           <p>
-            We take reasonable steps to protect your information. However, no
-            internet transmission is 100% secure, so we can't guarantee absolute
-            security.
+            Since we don't directly collect or store any personal data, our security focus is on maintaining a secure hosting environment through Vercel.
           </p>
           <p>
-            We don't store sensitive data, and we keep only what we need to run
-            the service.
+            Vercel handles all data processing in compliance with GDPR and other privacy regulations.
           </p>
         </section>
 
@@ -93,10 +83,10 @@ export default function PrivacyPage() {
           <h2 className="text-2xl font-semibold">5. Your Rights</h2>
           <p>You have the right to:</p>
           <ul className="list-disc pl-6 space-y-2">
-            <li>Know what data we have about you</li>
-            <li>Ask us to delete your data</li>
-            <li>Opt out of analytics</li>
-            <li>File a complaint if you think we're fucking up</li>
+            <li>Use our service without any direct data collection from us</li>
+            <li>Understand what data Vercel collects as our hosting provider</li>
+            <li>Contact Vercel directly about their data practices</li>
+            <li>File a complaint if you think something's not right</li>
           </ul>
         </section>
 
@@ -116,7 +106,7 @@ export default function PrivacyPage() {
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold">7. Contact Us</h2>
           <p>
-            Questions about your privacy? Hit us up at hi@worddirectory.app
+            Questions about privacy? Hit us up at hi@worddirectory.app
           </p>
         </section>
       </div>

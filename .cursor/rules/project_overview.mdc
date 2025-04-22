@@ -12,6 +12,13 @@ Because looking up one word shouldn't mean looking up five more. This app words 
 
 It's like any other definition site - but with human readable definitions.
 
+## Features
+
+- Human-readable definitions that make sense
+- Text-to-speech pronunciation using ElevenLabs AI
+- Clean, modern UI with dark mode support
+- Super fast and responsive
+
 ## Tech stack
 
 The project uses:
@@ -19,6 +26,7 @@ The project uses:
 - Shadcn UI
 - Tailwind CSS
 - TypeScript
+- ElevenLabs API for text-to-speech
 
 ## Web app (apps/web)
 

@@ -5,6 +5,7 @@ import { Quote } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { Card, CardContent } from "@/components/ui/card";
 import { WordNotFound } from "@/components/word-not-found";
+import { WordAudioButton } from "@/components/word-audio-button";
 
 interface WordPageProps {
   params: Promise<{
@@ -37,7 +38,7 @@ export default async function WordPage({ params }: WordPageProps) {
 function WordHeader({ word, details }: { word: string; details: TWord }) {
   return (
     <>
-      <div className="mb-8 flex items-center gap-8">
+      <div className="mb-8 flex items-center gap-4">
         {details.definitions.length === 1 && details.definitions[0].image && (
           <img
             src={details.definitions[0].image}
@@ -47,9 +48,12 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
             className="h-20 w-20 object-contain"
           />
         )}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
-          {capitalize(word)}
-        </h1>
+        <div className="flex items-center gap-4">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
+            {capitalize(word)}
+          </h1>
+          <WordAudioButton word={word} />
+        </div>
       </div>
 
       {details.definitions.length === 1 && (

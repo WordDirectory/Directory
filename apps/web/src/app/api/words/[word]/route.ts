@@ -38,7 +38,7 @@ export async function HEAD(
 
 export async function GET(
   request: Request,
-  { params }: { params: { word: string } }
+  { params }: { params: Promise<{ word: string }> }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -51,7 +51,7 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get('fallback');
-    const word = params.word.toLowerCase().trim();
+    const word = (await params).word.toLowerCase().trim();
 
     // If word exists, redirect to the word page
     if (words[word]) {

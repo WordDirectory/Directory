@@ -7742,4 +7742,29 @@ abrahamitic: {
     ],
     pronunciation: "/kənˈtrəʊl/",
   },
+  capable: {
+    definitions: [
+      {
+        text: "Being able to do something - having the skills, power, or ability to make shit happen. It's like being qualified or having what it takes to get something done.",
+        examples: [
+          "She's totally capable of handling this project on her own",
+          "This old laptop isn't capable of running new games",
+          "I'm not sure if I'm capable of lifting that much weight",
+          "We hired her because she seemed very capable",
+          "The car is capable of reaching high speeds",
+          "Are you capable of keeping a secret?",
+        ],
+      },
+      {
+        text: "Having potential to do something - whether good or bad. It's about what could happen, not what will happen.",
+        examples: [
+          "The situation is capable of getting worse",
+          "He's capable of violence when he's angry",
+          "This recipe is capable of feeding twenty people",
+          "The software is capable of improvement",
+        ],
+      },
+    ],
+    pronunciation: "/ˈkeɪ.pə.bəl/",
+  },
 };

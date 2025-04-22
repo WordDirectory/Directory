@@ -9445,4 +9445,187 @@ visit: {
     ],
     pronunciation: "/ˈvɪzɪt/"
   },
+  save: {
+    definitions: [
+      {
+        text: "To keep something safe or store it for later use. Like when you put money in the bank, or when you hit that floppy disk icon to not lose your work.",
+        examples: [
+          "Don't forget to save your game before turning it off",
+          "I'm trying to save money for a new car",
+          "She saved the last piece of cake for her sister",
+          "Quick, save this number in your phone",
+          "The goalie saved the ball from going in the net",
+        ],
+      },
+      {
+        text: "To stop something or someone from danger or trouble. Like when a lifeguard pulls someone out of the water or when your friend stops you from doing something stupid.",
+        examples: [
+          "The firefighter saved the cat from the tree",
+          "You saved my ass by helping with this project",
+          "The seatbelt saved his life in the crash",
+          "She saved me from making a huge mistake",
+          "The backup files saved us when the computer crashed",
+        ],
+      },
+    ],
+    pronunciation: "/seɪv/",
+  },
+tools: {
+    definitions: [
+      {
+        text: "Things you use to help you do work or make stuff. Like hammers, screwdrivers, or any object that makes a job easier.",
+        examples: [
+          "I need some tools to fix my bike",
+          "The app comes with built-in editing tools",
+          "He keeps his tools organized in the garage",
+          "You're using the wrong tool for the job",
+          "A chef's most important tool is their knife",
+        ],
+      },
+      {
+        text: "Software or apps that help you do specific tasks on a computer or phone.",
+        examples: [
+          "This website has great tools for editing photos",
+          "We use different tools to track our project progress",
+          "The developer created tools to make the job easier",
+          "Social media tools help manage multiple accounts",
+        ],
+      },
+    ],
+    pronunciation: "/tuːlz/",
+  },
+low: {
+    definitions: [
+      {
+        text: "When something's not high up or is below normal levels. Think close to the ground or less than usual.",
+        examples: [
+          "The shelf was too low for me to reach",
+          "My phone battery is running low",
+          "They're selling these shoes at a low price",
+          "Keep your voice low, people are sleeping",
+          "The temperature is really low today",
+        ],
+      },
+      {
+        text: "When you're feeling down, sad, or without energy. Like when you're having a really rough day.",
+        examples: [
+          "I've been feeling pretty low since the breakup",
+          "His energy was low after working all night",
+          "The team's morale was low after losing the game",
+          "She hit a new low when she stole from her friend",
+        ],
+      },
+    ],
+    pronunciation: "/ləʊ/",
+  },
+reply: {
+    definitions: [
+      {
+        text: "When you answer or respond to someone, whether it's in person, in a message, or online. It's what you do when someone asks you something and you get back to them.",
+        examples: [
+          "She didn't reply to my text for hours",
+          "Please reply to this email by Friday",
+          "He just nodded in reply",
+          "I'm still waiting for a reply from the company",
+          "Don't forget to reply to the party invitation",
+        ],
+      },
+    ],
+    pronunciation: "/rɪˈplaɪ/",
+  },
+  luxury: {
+    definitions: [
+      {
+        text: "A way of living with lots of expensive, fancy things and comfort - beyond what most people have or need. It's when you can afford to have or do things just because they're nice, not because you need them.",
+        examples: [
+          "They live in luxury with a personal chef and maid",
+          "After years of being broke, he can finally afford some luxury in his life",
+          "The palace was filled with luxury",
+          "She grew up in luxury but chose a simpler life",
+          "Having free time is the greatest luxury of all",
+        ],
+      },
+      {
+        text: "A word used to describe expensive, high-end products or brands that are marketed as better than regular versions. It's basically a fancy label that companies use to charge more money.",
+        examples: [
+          "Gucci and Louis Vuitton are luxury brands",
+          "They just opened a new luxury hotel downtown",
+          "The luxury version of the car comes with heated seats",
+          "She works in the luxury retail sector",
+          "These aren't regular apartments - they're luxury condos",
+        ],
+      },
+    ],
+    pronunciation: "/ˈlʌkʃəri/",
+  },
+  word: {
+    definitions: [
+      {
+        text: "A group of letters (or sounds when speaking) that has meaning and is used as a building block to make sentences. It's the basic unit we use to communicate - like 'dog', 'run', or 'happy'.",
+        examples: [
+          "The word 'yeet' is pretty new to the dictionary",
+          "I don't know how to spell that word",
+          "What's another word for 'tired'?",
+          "She's learning five new words every day",
+          "That's a really long word to pronounce",
+        ],
+      },
+      {
+        text: "When someone wants to talk to you about something, usually in private or seriously. Like when your friend says 'can I have a word?' they probably want to tell you something important.",
+        examples: [
+          "Can I have a word with you in private?",
+          "The boss wants a word with you in her office",
+          "Just a word of warning: the coffee is really hot",
+          "I need to have a word with you about your behavior",
+          "She didn't say a word all day",
+        ],
+      },
+      {
+        text: "To choose specific words to express something in a particular way. It's like when you're trying to figure out the best way to say something without fucking it up.",
+        examples: [
+          "How should I word this email to my boss?",
+          "He worded his apology perfectly",
+          "I don't know how to word this without sounding rude",
+          "Let me help you word that message",
+          "She carefully worded her response to avoid drama",
+        ],
+      },
+    ],
+    pronunciation: "/wɜːd/",
+  },
+  words: {
+    definitions: [
+      {
+        text: "More than one word - but usually used to talk about language or communication as a whole. Like when you're talking about speaking, writing, or expressing ideas.",
+        examples: [
+          "I can't find the words to describe how amazing it was",
+          "These are just words on paper - actions matter more",
+          "She has a way with words",
+          "The song has some really deep words",
+          "Put your feelings into words",
+        ],
+      },
+      {
+        text: "When people have an argument or serious discussion, usually a heated one. Like when someone says 'we had words', they mean they got into an argument.",
+        examples: [
+          "Me and my roommate had words about the dirty dishes",
+          "There were some strong words exchanged at the meeting",
+          "Those are fighting words where I come from",
+          "They had a few choice words for the referee",
+          "We need to have words about what happened last night",
+        ],
+      },
+      {
+        text: "Used in phrases to explain or rephrase something. Like when you're trying to make something clearer by saying it differently.",
+        examples: [
+          "In other words, you're saying we're screwed",
+          "Words of wisdom from my grandma: never go shopping when hungry",
+          "The final words of the contract are important",
+          "In your own words, what happened?",
+          "His last words were 'I love you'",
+        ],
+      },
+    ],
+    pronunciation: "/wɜːdz/",
+  },
 };

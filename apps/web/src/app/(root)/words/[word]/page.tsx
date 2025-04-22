@@ -103,40 +103,48 @@ function WordContent({ word, details }: { word: string; details: TWord }) {
         Definitions
       </h2>
 
-      <div className="space-y-8">
+      <div className="space-y-12">
         {details.definitions.map((def, index) => (
-          <div key={index}>
-            {def.image && (
-              <img
-                src={def.image}
-                alt={`Illustration for ${word}`}
-                width={100}
-                height={100}
-                className="mb-6 rounded-lg"
-              />
-            )}
-            <p className="text-foreground/70">{def.text}</p>
+          <div key={index} className="relative">
+            {index > 0 && <Separator className="absolute -top-6 w-full" />}
+            <div className="flex items-start gap-2">
+              <span className="text-lg font-medium text-muted-foreground select-none leading-[1.5]">
+                {index + 1}.
+              </span>
+              <div className="flex-1 pt-[2px]">
+                {def.image && (
+                  <img
+                    src={def.image}
+                    alt={`Illustration for ${word}`}
+                    width={100}
+                    height={100}
+                    className="mb-6 rounded-lg"
+                  />
+                )}
+                <p className="text-foreground/70">{def.text}</p>
 
-            {def.examples.length > 0 && (
-              <div className="mt-4">
-                <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
-                  <Quote className="w-4 h-4" />
-                  Usage Examples
-                </h3>
-                <div className="grid gap-3 md:grid-cols-2">
-                  {def.examples.map((example, i) => (
-                    <Card key={i} className="group relative">
-                      <CardContent className="p-4">
-                        <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                        <p className="text-foreground/80 relative z-10 break-words">
-                          {example}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+                {def.examples.length > 0 && (
+                  <div className="mt-6">
+                    <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
+                      <Quote className="w-4 h-4" />
+                      Usage Examples
+                    </h3>
+                    <div className="grid gap-3 md:grid-cols-2">
+                      {def.examples.map((example, i) => (
+                        <Card key={i} className="group relative">
+                          <CardContent className="p-4">
+                            <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
+                            <p className="text-foreground/80 relative z-10 break-words">
+                              {example}
+                            </p>
+                          </CardContent>
+                        </Card>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-            )}
+            </div>
           </div>
         ))}
       </div>

@@ -4,7 +4,7 @@ globs:
 alwaysApply: true
 ---
 
-# Word Directory (worddirectory.app)
+# WordDirectory
 
 Words explained simply
 
@@ -19,6 +19,20 @@ The project uses:
 - Shadcn UI
 - Tailwind CSS
 - TypeScript
+
+## Web app (apps/web)
+
+This is the main site where users can find word definitions.
+
+Live at: https://worddirectory.app
+
+## Chrome extension (apps/extension)
+
+This is a Chrome extension that makes it easier to find definitions (and more conveniently).
+
+Some cool features:
+- Highlight a word on any web page, right-click and get the definition of it
+- Search "[word] definition" and it'll take the user to the word's definition on the site
 
 ## Creator
 

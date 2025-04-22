@@ -98,6 +98,29 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+        
+        <Separator className="my-12" />
+
+        <section className="space-y-4">
+          <h2 className="text-2xl font-semibold">Who's behind this?</h2>
+          <p>
+            Hey! I'm Maze, and I built this because I was tired of looking up words
+            and ending up more confused than when I started. 
+          </p>
+          <p>
+            I'm not a linguistics professor or a dictionary expert. I'm just someone who:
+          </p>
+          <ul className="list-disc pl-6 space-y-2 mt-4">
+            <li>Gets annoyed when simple things are made complicated</li>
+            <li>Thinks dictionaries should be written by actual humans for actual humans</li>
+            <li>Has strong opinions about keeping knowledge free and accessible</li>
+          </ul>
+          <p className="mt-4">
+            This isn't some corporate project with a team of experts and a fancy mission statement.
+            It's just me, building the dictionary I wish existed, and sharing it with anyone who's
+            also tired of dictionary sites that make you feel dumb for not knowing a word.
+          </p>
+        </section>
 
         <Separator className="my-12" />
 

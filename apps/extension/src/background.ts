@@ -23,21 +23,10 @@ const extractWord = (query: string): string | null => {
   return null;
 };
 
-async function wordExists(word: string): Promise<boolean> {
-  try {
-    const response = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`, {
-      method: 'HEAD'
-    });
-    return response.status === 200;
-  } catch {
-    return false;
-  }
-}
-
 function handleSelectedWord(word: string, tabId: number) {
   const cleanWord = word.toLowerCase().trim();
   chrome.tabs.create({
-    url: `https://worddirectory.app/words/${encodeURIComponent(cleanWord)}`
+    url: `https://worddirectory.app/api/words/${encodeURIComponent(cleanWord)}`
   });
 }
 
@@ -58,7 +47,7 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
 });
 
 // Handle search bar definitions
-chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
+chrome.webNavigation.onBeforeNavigate.addListener((details) => {
   const url = new URL(details.url);
   const searchEngine = isSearchEngine(url.hostname);
   
@@ -68,12 +57,11 @@ chrome.webNavigation.onBeforeNavigate.addListener(async (details) => {
     
     if (query) {
       const word = extractWord(query);
-      if (word && await wordExists(word)) {
+      if (word) {
         chrome.tabs.update(details.tabId, {
-          url: `https://worddirectory.app/words/${encodeURIComponent(word)}`
+          url: `https://worddirectory.app/api/words/${encodeURIComponent(word)}?fallback=${encodeURIComponent(details.url)}`
         });
       }
-      // If word doesn't exist or API fails, do nothing (let search proceed)
     }
   }
 }); 

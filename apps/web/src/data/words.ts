@@ -1604,405 +1604,405 @@ export const words: TDictionary = {
     pronunciation: "/ˈeɪbiːz/",
   },
   abel: {
-  definitions: [
-    {
-      text: "A name for a person, most famous from the Bible story where he was the second son of Adam and Eve who got killed by his brother Cain. It was the first murder in the Bible.",
-      examples: [
-        "The story of Cain and Abel is like the original family drama gone wrong",
-        "They named their baby Abel after the biblical character",
-        "The pastor talked about Abel as an example of innocence",
-        "In the Bible, Abel was a shepherd who took care of animals",
-        "Abel's blood is described as 'crying out from the ground' after he was killed",
-      ],
-    },
-    {
-      text: "In math, 'Abel' refers to certain types of equations or math concepts named after Niels Henrik Abel, a Norwegian mathematician who died super young (at 26) but made huge discoveries.",
-      examples: [
-        "We learned about Abel equations in advanced math class",
-        "The Abel Prize is like the Nobel Prize but for math people",
-        "These Abel-type equations can actually be solved, unlike some nastier equations",
-        "Abel was a math genius who died way too young",
-      ],
-    },
-  ],
-  pronunciation: "/ˈeɪbəl/",
-},
-abelia: {
-  definitions: [
-    {
-      text: "A type of tough flowering bush that keeps blooming when other plants have stopped. It has shiny leaves and pretty flowers that bees and butterflies love. It's really hard to kill, even if you're bad at gardening.",
-      examples: [
-        "I planted abelia in my yard because it stays pretty almost all year",
-        "The abelia bushes were still flowering in late fall when everything else looked dead",
-        "We put abelia along the fence for privacy since it keeps its leaves most of the year",
-        "Even in the drought, the abelia plants survived without much water",
-        "Butterflies are always all over our abelia flowers",
-      ],
-    },
-  ],
-  pronunciation: "/əˈbiːliə/",
-},
-abelian: {
-  definitions: [
-    {
-      text: "In math, when the order of doing things doesn't change the result. Like how 3+5 gives you the same answer as 5+3. Or how putting on your socks then shoes gives the same result as putting on your shoes then socks (oh wait, that one doesn't work!).",
-      examples: [
-        "Addition is abelian because 4+7 equals 7+4",
-        "Multiplication with regular numbers is abelian: 3×6 equals 6×3",
-        "The math teacher explained that subtraction is not abelian because 5-3 is definitely not the same as 3-5",
-        "In computer science, some operations are abelian while others aren't",
-        "The weird thing about matrices is that their multiplication isn't abelian",
-      ],
-    },
-  ],
-  pronunciation: "/əˈbiːliən/",
-},
-abencerrages: {
-  definitions: [
-    {
-      text: "A powerful Muslim family in medieval Spain (Granada) who got caught in a huge political drama. They were super influential until most of them were killed in a mass execution that people still talk about today. Their story is basically medieval Spain's version of a famous tragedy.",
-      examples: [
-        "Tourists visit the Hall of the Abencerrages in the Alhambra palace where the massacre happened",
-        "The Abencerrages went from being the most powerful family to being almost completely wiped out",
-        "Stories about the Abencerrages have been told in Spanish history books for centuries",
-        "Legend says you can still see the blood stains of the Abencerrages on the marble floor",
-        "Their downfall was caused by court politics and rivalry with other powerful families",
-      ],
-    },
-  ],
-  pronunciation: "/æbenˈserɑːheɪz/",
-},
-abelicea: {
-  definitions: [
-    {
-      text: "A super rare tree that only grows on the island of Crete in Greece. It's endangered, meaning there aren't many left and scientists are trying to protect it. It's like that one unique thing that's on the edge of disappearing forever.",
-      examples: [
-        "The Abelicea is so rare that most tree experts have never seen one in real life",
-        "Researchers went all the way to Crete just to study the few Abelicea trees left",
-        "Finding that old record store was like finding an Abelicea - almost impossible",
-        "Local people in Crete use Abelicea wood to make traditional stuff",
-        "People are trying to save the Abelicea from dying out completely",
-      ],
-    },
-  ],
-  pronunciation: "/əˌbeɪlɪˈsiːə/",
-},
-abelite: {
-  definitions: [
-    {
-      text: "A group of religious people from North Africa way back in ancient times (around 400-500 AD) who had this weird belief that married couples shouldn't have kids. They thought they were following the example of Abel from the Bible, who they believed was married but didn't have children.",
-      examples: [
-        "The Abelites were like the first 'no kids by choice' movement but for religious reasons",
-        "Old history books show that other Christians thought the Abelites were pretty weird",
-        "Like the Abelites, some couples today choose to get married without having children",
-        "The Abelites disappeared pretty quickly, probably because, well, they didn't have kids",
-        "Some religions still debate the ideas that groups like the Abelites brought up",
-      ],
-    },
-  ],
-  pronunciation: "/əˈbeɪlaɪt/",
-},
-abelmoschus: {
-  definitions: [
-    {
-      text: "The science name for okra and related plants. It's in the same family as those colorful hibiscus flowers, but this branch is mostly known for food. Okra is that green veggie that gets super slimy when cooked, which some people love and others hate.",
-      examples: [
-        "Okra (or Abelmoschus) is what makes gumbo thick and slightly slimy",
-        "If you grow Abelmoschus in your garden, you can harvest fresh okra all summer",
-        "Some types of Abelmoschus are grown just for their pretty flowers, not for eating",
-        "The seeds from some Abelmoschus plants are used to make perfume",
-        "Farmers are working on growing types of Abelmoschus that can survive with less water",
-      ],
-    },
-  ],
-  pronunciation: "/əˌbɛlˈmɒskəs/",
-},
-abiezer: {
-  definitions: [
-    {
-      text: "A person mentioned in the Bible who was the head of an important family in ancient Israel. He was part of the tribe of Manasseh, and his family later became known as the Abiezrites.",
-      examples: [
-        "In the Bible, Abiezer's family became pretty important in their tribe",
-        "Gideon, who became a famous leader in the Bible, was from Abiezer's family",
-        "Some religious parents might name their kid Abiezer after this biblical figure",
-        "The story of Abiezer shows how family names were super important in ancient times",
-      ],
-    },
-    {
-      text: "As a name, it literally means 'my father is help' or 'father of help' in Hebrew, which was a common naming pattern in ancient times to show a connection to God or family strength.",
-      examples: [
-        "Names like Abiezer often had special meanings in ancient Hebrew culture",
-        "They named their son Abiezer because they believed God had helped them",
-        "Understanding names like Abiezer helps us understand ancient naming traditions",
-      ],
-    },
-  ],
-  pronunciation: "/əˈbaɪ.iːzər/",
-},
-abigail: {
-  definitions: [
-    {
-      text: "A girl's name that comes from the Bible. In the Bible story, Abigail was a smart woman who later married King David. Today, many parents name their daughters Abigail.",
-      examples: [
-        "My friend named her baby Abigail.",
-        "Abigail often gets shortened to Abby.",
-        "In the Bible, Abigail was known for being wise.",
-        "Abigail has been a popular name for hundreds of years.",
-      ],
-    },
-    {
-      text: "In old-fashioned slang (especially in Britain), a term for a servant girl or maid.",
-      examples: [
-        "In some old books, you might read about 'the abigail' who helped the lady dress.",
-        "She worked as an abigail in the wealthy household.",
-      ],
-    },
-  ],
-  pronunciation: "/ˈæb.ɪ.ɡeɪl/",
-},
-abipon: {
-  definitions: [
-    {
-      text: "A group of native people who lived in what's now Argentina. They were known for being good on horses and for fighting skills. Today, there aren't many pure Abipon people left.",
-      examples: [
-        "The Abipon people had their own language and customs.",
-        "When Europeans came to South America, the Abipon way of life changed a lot.",
-        "The Abipon were known for being strong fighters on horseback.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌæb.ɪˈpoʊn/",
-},
-abitibi: {
-  definitions: [
-    {
-      text: "A big area in Canada that sits between Ontario and Quebec. It has a lake and river with the same name.",
-      examples: [
-        "Many people go fishing in Lake Abitibi.",
-        "The Abitibi area is known for its forests and mines.",
-        "Native people lived in the Abitibi region long before Europeans came.",
-      ],
-    },
-    {
-      text: "The name of a big paper company in Canada (Abitibi Paper) that makes things like newspaper and cardboard.",
-      examples: [
-        "He works at the Abitibi paper mill.",
-        "Abitibi merged with another company to become one of the biggest paper makers.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌæb.ɪˈtɪb.i/",
-},
-abkhaz: {
-  definitions: [
-    {
-      text: "The people who live in Abkhazia, which is a place near the Black Sea that broke away from Georgia (the country, not the US state).",
-      examples: [
-        "The Abkhaz people have their own language and culture.",
-        "She has Abkhaz roots through her grandmother.",
-      ],
-    },
-    {
-      text: "The language spoken by Abkhaz people. It's known for being hard to learn because it has lots of unusual sounds.",
-      examples: [
-        "He's studying the Abkhaz language at university.",
-        "Very few people outside the region can speak Abkhaz fluently.",
-      ],
-    },
-    {
-      text: "Anything that comes from or relates to Abkhazia.",
-      examples: [
-        "They serve Abkhaz food at that restaurant.",
-        "She collects Abkhaz music and traditional instruments.",
-      ],
-    },
-  ],
-  pronunciation: "/ɑːbˈkɑːz/",
-},
-abkhasian: {
-  definitions: [
-    {
-      text: "Relating to Abkhazia (a region between Georgia and Russia), its people, language, or culture. It's basically how you describe anything from this place.",
-      examples: [
-        "We tried some delicious Abkhazian food during our trip.",
-        "She speaks the Abkhazian language fluently.",
-        "The museum has an exhibit on Abkhazian history and traditions.",
-        "Their family has Abkhazian roots going back many generations.",
-      ],
-    },
-  ],
-  pronunciation: "/ɑːbˈkɑːziən/",
-},
-ablepharus: {
-  definitions: [
-    {
-      text: "A type of small lizard (also called 'snake-eyed skinks') that doesn't have normal eyelids. Instead, they have a clear scale covering their eyes, making them look like they're always staring.",
-      examples: [
-        "The kid found an Ablepharus lizard under a rock in the garden.",
-        "Ablepharus lizards are usually small, only a few inches long.",
-        "These lizards can't blink because they don't have eyelids.",
-        "Scientists study how Ablepharus lizards protect their eyes without eyelids.",
-      ],
-    },
-  ],
-  pronunciation: "/əˈblɛfərəs/",
-},
-abnaki: {
-  definitions: [
-    {
-      text: "A group of Native American people who originally lived in parts of what's now Maine, New Hampshire, Vermont, and Quebec. Also spelled 'Abenaki'. They have their own language, traditions, and history going back thousands of years.",
-      examples: [
-        "Many rivers and lakes in New England have Abenaki names.",
-        "The Abenaki people used to make canoes from birch bark.",
-        "She's learning about Abenaki stories and history from community elders.",
-        "Several Abenaki communities still exist today in the northeastern US and Canada.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌæbəˈnɑːki/",
-},
-abner: {
-  definitions: [
-    {
-      text: "A man's name that comes from the Bible. In the Bible stories, Abner was a military commander and the cousin of King Saul.",
-      examples: [
-        "My great-grandfather was named Abner.",
-        "In the Bible, Abner was killed by one of King David's men.",
-        "The name Abner isn't very common these days.",
-        "Abner was a popular name in America during the 1800s.",
-      ],
-    },
-    {
-      text: "In old slang (especially from early 1900s comics), sometimes used to refer to a country person or someone who's seen as simple or unsophisticated.",
-      examples: [
-        "The city folks called him an Abner because of his overalls and country accent.",
-        "The character Abner in the comic strip was always getting into trouble.",
-      ],
-    },
-  ],
-  pronunciation: "/ˈæbnər/",
-},
-abo: {
-  definitions: [
-    {
-      text: "An offensive, shortened term for 'Aboriginal' that refers to Indigenous Australians. Most people see it as a slur or insult. Don't use this word - it's hurtful and disrespectful.",
-      examples: [
-        "That word is considered really offensive to Indigenous Australians.",
-        "People might get upset if you use that term instead of saying 'Aboriginal people'.",
-        "Historical books sometimes used this word, but we know better now.",
-        "The term shows up in some old Australian writings, but it's recognized as harmful today.",
-      ],
-    },
-  ],
-  pronunciation: "/ˈæboʊ/",
-},
-abobra: {
-  definitions: [
-    {
-      text: "A climbing plant from South America that grows small gourd-like fruits. It's not a common word unless you're into plants or gardening.",
-      examples: [
-        "She grew abobra in her garden because she liked how the fruits looked.",
-        "Abobra plants can climb up walls and fences using their curly tendrils.",
-        "The abobra fruits aren't usually eaten but look pretty in gardens.",
-        "You might find abobra seeds in specialty gardening stores.",
-      ],
-    },
-  ],
-  pronunciation: "/əˈboʊbrə/",
-},
-abongo: {
-  definitions: [
-    {
-      text: "A group of people who live in the forests of Gabon in Africa. They're traditionally hunter-gatherers, which means they hunt animals and gather plants for food rather than farming.",
-      examples: [
-        "The Abongo people have lived in these forests for thousands of years.",
-        "Cutting down forests threatens the Abongo's traditional way of life.",
-        "The Abongo know a lot about forest plants and which ones can be used as medicine.",
-        "Researchers sometimes study how the Abongo live in harmony with the forest.",
-      ],
-    },
-  ],
-  pronunciation: "/əˈbɒŋɡoʊ/",
-},
-abraham: {
-  definitions: [
-    {
-      text: "An important religious figure in Judaism, Christianity, and Islam. He's known for having strong faith in God and is seen as a father figure in all three religions.",
-      examples: [
-        "The story of Abraham almost sacrificing his son is famous in religious texts.",
-        "Many boys are named Abraham after this religious figure.",
-        "In Islam, Abraham is called Ibrahim but it's the same person.",
-        "Abraham is considered the father of many nations in religious traditions.",
-      ],
-    },
-    {
-      text: "A male first name that's been popular for centuries in many countries.",
-      examples: [
-        "Abraham Lincoln was the 16th president of the United States.",
-        "He named his son Abraham after his grandfather.",
-        "Abraham goes by 'Abe' with his close friends.",
-        "There are several famous Abrahams throughout history.",
-      ],
-    },
-  ],
-  pronunciation: "/ˈeɪbrəhæm/",
-},
-abrahamic: {
-  definitions: [
-    {
-      text: "Related to Abraham, the ancient religious figure. Usually describes the three major religions that claim him as their founder: Judaism, Christianity, and Islam. It's just a way to group these religions together because they share some history.",
-      examples: [
-        "Judaism, Christianity, and Islam are the three main Abrahamic religions.",
-        "Many Abrahamic beliefs involve one God instead of many gods.",
-        "The Abrahamic holy books all mention Abraham as an important person.",
-        "Different Abrahamic religions pray in different ways but often to the same God.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌeɪbrəˈhæmɪk/",
-},
-abrahamidae: {
-  definitions: [
-    {
-      text: "This isn't actually a word people use in everyday talk. It looks like someone tried to create a scientific-sounding name for 'Abraham-related things' by adding '-idae' (which is how scientists name animal families). You probably won't need this word unless you're making up terms.",
-      examples: [
-        "There's no such scientific group as Abrahamidae in biology.",
-        "Someone might invent a term like Abrahamidae when trying to sound scientific.",
-        "The ending '-idae' is used in real scientific names like 'canidae' (the dog family).",
-        "Unlike real scientific terms, Abrahamidae isn't found in biology textbooks.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌeɪbrəˈhæmɪdiː/",
-},
-abrahamite: {
-  definitions: [
-    {
-      text: "A person who follows one of the religions connected to Abraham (Judaism, Christianity, or Islam). It's a simple way to talk about people from these three religions as one big group.",
-      examples: [
-        "Both Muslims and Christians are considered Abrahamites.",
-        "Abrahamites generally believe in one God who created everything.",
-        "As an Abrahamite, she follows religious traditions that go back thousands of years.",
-        "The three main Abrahamite groups sometimes disagree on religious details.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌeɪbrəˈhæmaɪt/",
-},
-abrahamitic: {
-  definitions: [
-    {
-      text: "Having to do with Abraham or the religions that trace back to him. It's basically the same as 'Abrahamic' but less commonly used. If you're talking about Jewish, Christian, or Islamic stuff together, you might call it Abrahamitic.",
-      examples: [
-        "The museum had stuff from all the Abrahamitic religions.",
-        "Their family celebrates several Abrahamitic holidays throughout the year.",
-        "Abrahamitic stories often include similar characters but with different details.",
-        "The three Abrahamitic groups all consider Jerusalem an important city.",
-      ],
-    },
-  ],
-  pronunciation: "/ˌeɪbrəˈhæmɪtɪk/",
-},
+    definitions: [
+      {
+        text: "A name for a person, most famous from the Bible story where he was the second son of Adam and Eve who got killed by his brother Cain. It was the first murder in the Bible.",
+        examples: [
+          "The story of Cain and Abel is like the original family drama gone wrong",
+          "They named their baby Abel after the biblical character",
+          "The pastor talked about Abel as an example of innocence",
+          "In the Bible, Abel was a shepherd who took care of animals",
+          "Abel's blood is described as 'crying out from the ground' after he was killed",
+        ],
+      },
+      {
+        text: "In math, 'Abel' refers to certain types of equations or math concepts named after Niels Henrik Abel, a Norwegian mathematician who died super young (at 26) but made huge discoveries.",
+        examples: [
+          "We learned about Abel equations in advanced math class",
+          "The Abel Prize is like the Nobel Prize but for math people",
+          "These Abel-type equations can actually be solved, unlike some nastier equations",
+          "Abel was a math genius who died way too young",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪbəl/",
+  },
+  abelia: {
+    definitions: [
+      {
+        text: "A type of tough flowering bush that keeps blooming when other plants have stopped. It has shiny leaves and pretty flowers that bees and butterflies love. It's really hard to kill, even if you're bad at gardening.",
+        examples: [
+          "I planted abelia in my yard because it stays pretty almost all year",
+          "The abelia bushes were still flowering in late fall when everything else looked dead",
+          "We put abelia along the fence for privacy since it keeps its leaves most of the year",
+          "Even in the drought, the abelia plants survived without much water",
+          "Butterflies are always all over our abelia flowers",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːliə/",
+  },
+  abelian: {
+    definitions: [
+      {
+        text: "In math, when the order of doing things doesn't change the result. Like how 3+5 gives you the same answer as 5+3. Or how putting on your socks then shoes gives the same result as putting on your shoes then socks (oh wait, that one doesn't work!).",
+        examples: [
+          "Addition is abelian because 4+7 equals 7+4",
+          "Multiplication with regular numbers is abelian: 3×6 equals 6×3",
+          "The math teacher explained that subtraction is not abelian because 5-3 is definitely not the same as 3-5",
+          "In computer science, some operations are abelian while others aren't",
+          "The weird thing about matrices is that their multiplication isn't abelian",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːliən/",
+  },
+  abencerrages: {
+    definitions: [
+      {
+        text: "A powerful Muslim family in medieval Spain (Granada) who got caught in a huge political drama. They were super influential until most of them were killed in a mass execution that people still talk about today. Their story is basically medieval Spain's version of a famous tragedy.",
+        examples: [
+          "Tourists visit the Hall of the Abencerrages in the Alhambra palace where the massacre happened",
+          "The Abencerrages went from being the most powerful family to being almost completely wiped out",
+          "Stories about the Abencerrages have been told in Spanish history books for centuries",
+          "Legend says you can still see the blood stains of the Abencerrages on the marble floor",
+          "Their downfall was caused by court politics and rivalry with other powerful families",
+        ],
+      },
+    ],
+    pronunciation: "/æbenˈserɑːheɪz/",
+  },
+  abelicea: {
+    definitions: [
+      {
+        text: "A super rare tree that only grows on the island of Crete in Greece. It's endangered, meaning there aren't many left and scientists are trying to protect it. It's like that one unique thing that's on the edge of disappearing forever.",
+        examples: [
+          "The Abelicea is so rare that most tree experts have never seen one in real life",
+          "Researchers went all the way to Crete just to study the few Abelicea trees left",
+          "Finding that old record store was like finding an Abelicea - almost impossible",
+          "Local people in Crete use Abelicea wood to make traditional stuff",
+          "People are trying to save the Abelicea from dying out completely",
+        ],
+      },
+    ],
+    pronunciation: "/əˌbeɪlɪˈsiːə/",
+  },
+  abelite: {
+    definitions: [
+      {
+        text: "A group of religious people from North Africa way back in ancient times (around 400-500 AD) who had this weird belief that married couples shouldn't have kids. They thought they were following the example of Abel from the Bible, who they believed was married but didn't have children.",
+        examples: [
+          "The Abelites were like the first 'no kids by choice' movement but for religious reasons",
+          "Old history books show that other Christians thought the Abelites were pretty weird",
+          "Like the Abelites, some couples today choose to get married without having children",
+          "The Abelites disappeared pretty quickly, probably because, well, they didn't have kids",
+          "Some religions still debate the ideas that groups like the Abelites brought up",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪlaɪt/",
+  },
+  abelmoschus: {
+    definitions: [
+      {
+        text: "The science name for okra and related plants. It's in the same family as those colorful hibiscus flowers, but this branch is mostly known for food. Okra is that green veggie that gets super slimy when cooked, which some people love and others hate.",
+        examples: [
+          "Okra (or Abelmoschus) is what makes gumbo thick and slightly slimy",
+          "If you grow Abelmoschus in your garden, you can harvest fresh okra all summer",
+          "Some types of Abelmoschus are grown just for their pretty flowers, not for eating",
+          "The seeds from some Abelmoschus plants are used to make perfume",
+          "Farmers are working on growing types of Abelmoschus that can survive with less water",
+        ],
+      },
+    ],
+    pronunciation: "/əˌbɛlˈmɒskəs/",
+  },
+  abiezer: {
+    definitions: [
+      {
+        text: "A person mentioned in the Bible who was the head of an important family in ancient Israel. He was part of the tribe of Manasseh, and his family later became known as the Abiezrites.",
+        examples: [
+          "In the Bible, Abiezer's family became pretty important in their tribe",
+          "Gideon, who became a famous leader in the Bible, was from Abiezer's family",
+          "Some religious parents might name their kid Abiezer after this biblical figure",
+          "The story of Abiezer shows how family names were super important in ancient times",
+        ],
+      },
+      {
+        text: "As a name, it literally means 'my father is help' or 'father of help' in Hebrew, which was a common naming pattern in ancient times to show a connection to God or family strength.",
+        examples: [
+          "Names like Abiezer often had special meanings in ancient Hebrew culture",
+          "They named their son Abiezer because they believed God had helped them",
+          "Understanding names like Abiezer helps us understand ancient naming traditions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪ.iːzər/",
+  },
+  abigail: {
+    definitions: [
+      {
+        text: "A girl's name that comes from the Bible. In the Bible story, Abigail was a smart woman who later married King David. Today, many parents name their daughters Abigail.",
+        examples: [
+          "My friend named her baby Abigail.",
+          "Abigail often gets shortened to Abby.",
+          "In the Bible, Abigail was known for being wise.",
+          "Abigail has been a popular name for hundreds of years.",
+        ],
+      },
+      {
+        text: "In old-fashioned slang (especially in Britain), a term for a servant girl or maid.",
+        examples: [
+          "In some old books, you might read about 'the abigail' who helped the lady dress.",
+          "She worked as an abigail in the wealthy household.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.ɪ.ɡeɪl/",
+  },
+  abipon: {
+    definitions: [
+      {
+        text: "A group of native people who lived in what's now Argentina. They were known for being good on horses and for fighting skills. Today, there aren't many pure Abipon people left.",
+        examples: [
+          "The Abipon people had their own language and customs.",
+          "When Europeans came to South America, the Abipon way of life changed a lot.",
+          "The Abipon were known for being strong fighters on horseback.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæb.ɪˈpoʊn/",
+  },
+  abitibi: {
+    definitions: [
+      {
+        text: "A big area in Canada that sits between Ontario and Quebec. It has a lake and river with the same name.",
+        examples: [
+          "Many people go fishing in Lake Abitibi.",
+          "The Abitibi area is known for its forests and mines.",
+          "Native people lived in the Abitibi region long before Europeans came.",
+        ],
+      },
+      {
+        text: "The name of a big paper company in Canada (Abitibi Paper) that makes things like newspaper and cardboard.",
+        examples: [
+          "He works at the Abitibi paper mill.",
+          "Abitibi merged with another company to become one of the biggest paper makers.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæb.ɪˈtɪb.i/",
+  },
+  abkhaz: {
+    definitions: [
+      {
+        text: "The people who live in Abkhazia, which is a place near the Black Sea that broke away from Georgia (the country, not the US state).",
+        examples: [
+          "The Abkhaz people have their own language and culture.",
+          "She has Abkhaz roots through her grandmother.",
+        ],
+      },
+      {
+        text: "The language spoken by Abkhaz people. It's known for being hard to learn because it has lots of unusual sounds.",
+        examples: [
+          "He's studying the Abkhaz language at university.",
+          "Very few people outside the region can speak Abkhaz fluently.",
+        ],
+      },
+      {
+        text: "Anything that comes from or relates to Abkhazia.",
+        examples: [
+          "They serve Abkhaz food at that restaurant.",
+          "She collects Abkhaz music and traditional instruments.",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːbˈkɑːz/",
+  },
+  abkhasian: {
+    definitions: [
+      {
+        text: "Relating to Abkhazia (a region between Georgia and Russia), its people, language, or culture. It's basically how you describe anything from this place.",
+        examples: [
+          "We tried some delicious Abkhazian food during our trip.",
+          "She speaks the Abkhazian language fluently.",
+          "The museum has an exhibit on Abkhazian history and traditions.",
+          "Their family has Abkhazian roots going back many generations.",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːbˈkɑːziən/",
+  },
+  ablepharus: {
+    definitions: [
+      {
+        text: "A type of small lizard (also called 'snake-eyed skinks') that doesn't have normal eyelids. Instead, they have a clear scale covering their eyes, making them look like they're always staring.",
+        examples: [
+          "The kid found an Ablepharus lizard under a rock in the garden.",
+          "Ablepharus lizards are usually small, only a few inches long.",
+          "These lizards can't blink because they don't have eyelids.",
+          "Scientists study how Ablepharus lizards protect their eyes without eyelids.",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛfərəs/",
+  },
+  abnaki: {
+    definitions: [
+      {
+        text: "A group of Native American people who originally lived in parts of what's now Maine, New Hampshire, Vermont, and Quebec. Also spelled 'Abenaki'. They have their own language, traditions, and history going back thousands of years.",
+        examples: [
+          "Many rivers and lakes in New England have Abenaki names.",
+          "The Abenaki people used to make canoes from birch bark.",
+          "She's learning about Abenaki stories and history from community elders.",
+          "Several Abenaki communities still exist today in the northeastern US and Canada.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈnɑːki/",
+  },
+  abner: {
+    definitions: [
+      {
+        text: "A man's name that comes from the Bible. In the Bible stories, Abner was a military commander and the cousin of King Saul.",
+        examples: [
+          "My great-grandfather was named Abner.",
+          "In the Bible, Abner was killed by one of King David's men.",
+          "The name Abner isn't very common these days.",
+          "Abner was a popular name in America during the 1800s.",
+        ],
+      },
+      {
+        text: "In old slang (especially from early 1900s comics), sometimes used to refer to a country person or someone who's seen as simple or unsophisticated.",
+        examples: [
+          "The city folks called him an Abner because of his overalls and country accent.",
+          "The character Abner in the comic strip was always getting into trouble.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbnər/",
+  },
+  abo: {
+    definitions: [
+      {
+        text: "An offensive, shortened term for 'Aboriginal' that refers to Indigenous Australians. Most people see it as a slur or insult. Don't use this word - it's hurtful and disrespectful.",
+        examples: [
+          "That word is considered really offensive to Indigenous Australians.",
+          "People might get upset if you use that term instead of saying 'Aboriginal people'.",
+          "Historical books sometimes used this word, but we know better now.",
+          "The term shows up in some old Australian writings, but it's recognized as harmful today.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæboʊ/",
+  },
+  abobra: {
+    definitions: [
+      {
+        text: "A climbing plant from South America that grows small gourd-like fruits. It's not a common word unless you're into plants or gardening.",
+        examples: [
+          "She grew abobra in her garden because she liked how the fruits looked.",
+          "Abobra plants can climb up walls and fences using their curly tendrils.",
+          "The abobra fruits aren't usually eaten but look pretty in gardens.",
+          "You might find abobra seeds in specialty gardening stores.",
+        ],
+      },
+    ],
+    pronunciation: "/əˈboʊbrə/",
+  },
+  abongo: {
+    definitions: [
+      {
+        text: "A group of people who live in the forests of Gabon in Africa. They're traditionally hunter-gatherers, which means they hunt animals and gather plants for food rather than farming.",
+        examples: [
+          "The Abongo people have lived in these forests for thousands of years.",
+          "Cutting down forests threatens the Abongo's traditional way of life.",
+          "The Abongo know a lot about forest plants and which ones can be used as medicine.",
+          "Researchers sometimes study how the Abongo live in harmony with the forest.",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɒŋɡoʊ/",
+  },
+  abraham: {
+    definitions: [
+      {
+        text: "An important religious figure in Judaism, Christianity, and Islam. He's known for having strong faith in God and is seen as a father figure in all three religions.",
+        examples: [
+          "The story of Abraham almost sacrificing his son is famous in religious texts.",
+          "Many boys are named Abraham after this religious figure.",
+          "In Islam, Abraham is called Ibrahim but it's the same person.",
+          "Abraham is considered the father of many nations in religious traditions.",
+        ],
+      },
+      {
+        text: "A male first name that's been popular for centuries in many countries.",
+        examples: [
+          "Abraham Lincoln was the 16th president of the United States.",
+          "He named his son Abraham after his grandfather.",
+          "Abraham goes by 'Abe' with his close friends.",
+          "There are several famous Abrahams throughout history.",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪbrəhæm/",
+  },
+  abrahamic: {
+    definitions: [
+      {
+        text: "Related to Abraham, the ancient religious figure. Usually describes the three major religions that claim him as their founder: Judaism, Christianity, and Islam. It's just a way to group these religions together because they share some history.",
+        examples: [
+          "Judaism, Christianity, and Islam are the three main Abrahamic religions.",
+          "Many Abrahamic beliefs involve one God instead of many gods.",
+          "The Abrahamic holy books all mention Abraham as an important person.",
+          "Different Abrahamic religions pray in different ways but often to the same God.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbrəˈhæmɪk/",
+  },
+  abrahamidae: {
+    definitions: [
+      {
+        text: "This isn't actually a word people use in everyday talk. It looks like someone tried to create a scientific-sounding name for 'Abraham-related things' by adding '-idae' (which is how scientists name animal families). You probably won't need this word unless you're making up terms.",
+        examples: [
+          "There's no such scientific group as Abrahamidae in biology.",
+          "Someone might invent a term like Abrahamidae when trying to sound scientific.",
+          "The ending '-idae' is used in real scientific names like 'canidae' (the dog family).",
+          "Unlike real scientific terms, Abrahamidae isn't found in biology textbooks.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbrəˈhæmɪdiː/",
+  },
+  abrahamite: {
+    definitions: [
+      {
+        text: "A person who follows one of the religions connected to Abraham (Judaism, Christianity, or Islam). It's a simple way to talk about people from these three religions as one big group.",
+        examples: [
+          "Both Muslims and Christians are considered Abrahamites.",
+          "Abrahamites generally believe in one God who created everything.",
+          "As an Abrahamite, she follows religious traditions that go back thousands of years.",
+          "The three main Abrahamite groups sometimes disagree on religious details.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbrəˈhæmaɪt/",
+  },
+  abrahamitic: {
+    definitions: [
+      {
+        text: "Having to do with Abraham or the religions that trace back to him. It's basically the same as 'Abrahamic' but less commonly used. If you're talking about Jewish, Christian, or Islamic stuff together, you might call it Abrahamitic.",
+        examples: [
+          "The museum had stuff from all the Abrahamitic religions.",
+          "Their family celebrates several Abrahamitic holidays throughout the year.",
+          "Abrahamitic stories often include similar characters but with different details.",
+          "The three Abrahamitic groups all consider Jerusalem an important city.",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbrəˈhæmɪtɪk/",
+  },
   abram: {
     definitions: [
       {
@@ -2203,7 +2203,7 @@ abrahamitic: {
     ],
     pronunciation: "/əˌbʌnˈdæntiə/",
   },
-  
+
   acantholimon: {
     definitions: [
       {
@@ -2218,7 +2218,7 @@ abrahamitic: {
     ],
     pronunciation: "/əˌkænθəˈlɪmɒn/",
   },
-  
+
   acanthomeridae: {
     definitions: [
       {
@@ -2233,7 +2233,7 @@ abrahamitic: {
     ],
     pronunciation: "/əˌkænθəˈmɛrɪdiː/",
   },
-  
+
   acanthopanax: {
     definitions: [
       {
@@ -5017,7 +5017,7 @@ abrahamitic: {
     ],
     pronunciation: "/ɔːr/",
   },
-  
+
   be: {
     definitions: [
       {
@@ -5043,7 +5043,7 @@ abrahamitic: {
     ],
     pronunciation: "/biː/",
   },
-  
+
   are: {
     definitions: [
       {
@@ -5060,7 +5060,7 @@ abrahamitic: {
     ],
     pronunciation: "/ɑːr/",
   },
-  
+
   from: {
     definitions: [
       {
@@ -5086,7 +5086,7 @@ abrahamitic: {
     ],
     pronunciation: "/frʌm/",
   },
-  
+
   at: {
     definitions: [
       {
@@ -5111,7 +5111,7 @@ abrahamitic: {
     ],
     pronunciation: "/æt/",
   },
-  
+
   as: {
     definitions: [
       {
@@ -6183,7 +6183,7 @@ abrahamitic: {
     ],
     pronunciation: "/meɪl/",
   },
-  
+
   map: {
     definitions: [
       {
@@ -6214,7 +6214,7 @@ abrahamitic: {
     ],
     pronunciation: "/mæp/",
   },
-  
+
   reviews: {
     definitions: [
       {
@@ -6245,7 +6245,7 @@ abrahamitic: {
     ],
     pronunciation: "/rɪˈvjuːz/",
   },
-  
+
   program: {
     definitions: [
       {
@@ -6896,7 +6896,7 @@ abrahamitic: {
         text: "A group of things that are similar or related, like in science when they group animals or plants together.",
         examples: [
           "Lions belong to the cat family of animals",
-          "Maple is part of the hardwood family of trees"
+          "Maple is part of the hardwood family of trees",
         ],
       },
     ],
@@ -7800,5 +7800,1649 @@ abrahamitic: {
       },
     ],
     pronunciation: "/ˈtʃiːtɪŋ/",
+  },
+  history: {
+    definitions: [
+      {
+        text: "All the shit that happened in the past - like events, facts, and stories from before now. It's everything from what you did yesterday to what happened thousands of years ago.",
+        examples: [
+          "We learned about World War II in history class",
+          "She has a history of making bad decisions",
+          "Delete your browser history before someone sees it",
+          "The two countries have a long history of conflict",
+          "My credit card history shows I spent way too much last month",
+          "This building has a lot of history - it's over 200 years old",
+        ],
+      },
+      {
+        text: "The subject you study in school about past events and how they connect to each other. It's like learning about all the drama that happened before you were born.",
+        examples: [
+          "History was his favorite subject in school",
+          "She's studying ancient Roman history at university",
+          "The history teacher made us memorize all these dates",
+          "I'm terrible at history - I can never remember what happened when",
+        ],
+      },
+    ],
+    pronunciation: "/ˈhɪs.tər.i/",
+  },
+  pictures: {
+    definitions: [
+      {
+        text: "Images that show what something looks like - could be photos, drawings, paintings, or anything visual. They're like frozen moments or visual representations of things.",
+        examples: [
+          "She took pictures of everything on her vacation",
+          "The kids drew pictures with their crayons",
+          "Can you send me pictures of the apartment?",
+          "There were pictures of his family all over the walls",
+          "The magazine had beautiful pictures of food",
+        ],
+      },
+      {
+        text: "Movies, especially when talking about cinema or films in a fancy way. Like when someone's trying to sound professional about movies.",
+        examples: [
+          "She works in motion pictures in Hollywood",
+          "This year's Oscar for Best Picture went to...",
+          "He directed several successful pictures in the 90s",
+        ],
+      },
+    ],
+    pronunciation: "/ˈpɪk.tʃərz/",
+  },
+  size: {
+    definitions: [
+      {
+        text: "How big or small something is - could be talking about physical stuff like clothes and furniture, or abstract things like the scale of a problem or project.",
+        examples: [
+          "What size shoes do you wear?",
+          "The TV was too big - we got the wrong size",
+          "They underestimated the size of the project",
+          "He's twice the size of his brother",
+          "The size of their house is massive",
+          "I can't believe the size of that burger",
+        ],
+      },
+    ],
+    pronunciation: "/saɪz/",
+  },
+  art: {
+    definitions: [
+      {
+        text: "Creative stuff that people make to express themselves or look cool - like paintings, drawings, sculptures, or digital designs. Basically anything where someone's trying to make something that hits you in the feels or makes you think.",
+        examples: [
+          "Her art is displayed in galleries across the city",
+          "He studied art in college",
+          "The kids made some art for the refrigerator",
+          "Modern art sometimes looks like a toddler made it",
+          "They have amazing street art in that neighborhood",
+        ],
+      },
+      {
+        text: "The skill or ability to do something really well, especially when it takes creativity and practice. It's like when something's so well done it's basically poetry.",
+        examples: [
+          "The art of making perfect sushi takes years to master",
+          "There's an art to telling good jokes",
+          "She's perfected the art of getting out of awkward situations",
+          "Making coffee like this is more art than science",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːrt/",
+  },
+  personal: {
+    definitions: [
+      {
+        text: "Something that belongs to or relates to just you - your private stuff or business that's nobody else's concern. If it's personal, it's your shit to deal with.",
+        examples: [
+          "That's my personal phone - don't touch it",
+          "Can I ask you a personal question?",
+          "Keep your personal life separate from work",
+          "Those are her personal belongings",
+          "This is getting too personal - let's change the subject",
+        ],
+      },
+      {
+        text: "When something is done directly or in person, face to face, not through someone else or over the internet or phone.",
+        examples: [
+          "I need to deliver this message personally",
+          "The CEO made a personal appearance at the event",
+          "I'd rather have this conversation in personal",
+          "She gave me her personal guarantee it would work",
+        ],
+      },
+    ],
+    pronunciation: "/ˈpɜːr.sən.əl/",
+  },
+  unhinged: {
+    definitions: [
+      {
+        text: "When someone's acting completely crazy or out of control - like they've lost touch with reality or normal behavior. Think of a door that's fallen off its hinges and is just swinging wild.",
+        examples: [
+          "Her ex went totally unhinged and started spamming her with 100 texts",
+          "The crowd got unhinged when the concert was cancelled last minute",
+          "His unhinged rant on social media made everyone uncomfortable",
+          "She went unhinged after finding out about the betrayal",
+          "The customer became unhinged over a simple pricing mistake",
+        ],
+      },
+      {
+        text: "Literally means something (usually a door or gate) that's been removed from its hinges and isn't properly attached anymore.",
+        examples: [
+          "The storm left the garage door unhinged",
+          "The old gate was unhinged and lying on the ground",
+          "We found the cabinet door unhinged after the earthquake",
+        ],
+      },
+    ],
+    pronunciation: "/ʌnˈhɪndʒd/",
+  },
+  since: {
+    definitions: [
+      {
+        text: "Used to talk about time - specifically from a point in the past until now. It's like saying 'from that time until now' or 'after that happened'.",
+        examples: [
+          "I haven't seen him since last Tuesday",
+          "She's been working here since 2020",
+          "The car hasn't been working right since the accident",
+          "It's been hours since I ate anything",
+          "He's grown so much since I last saw him",
+        ],
+      },
+      {
+        text: "Used to explain why something happened - like saying 'because' or 'for the reason that'.",
+        examples: [
+          "Since you're already there, can you grab me a coffee?",
+          "I'll take the bus since my car is broken",
+          "Since it's raining, we should stay inside",
+          "Let's order pizza since nobody wants to cook",
+          "Since you asked so nicely, I'll help you out",
+        ],
+      },
+    ],
+    pronunciation: "/sɪns/",
+  },
+  including: {
+    definitions: [
+      {
+        text: "When you're adding something to a list or group, or saying something is part of a bigger thing. It's like saying 'and also this' or 'this is part of it too'.",
+        examples: [
+          "Everyone was there, including Sarah",
+          "The price is $50, including shipping",
+          "The package comes with everything, including batteries",
+          "There were five people, including me",
+          "All pets are welcome, including snakes",
+        ],
+      },
+    ],
+    pronunciation: "/ɪnˈkluːdɪŋ/",
+  },
+  guide: {
+    definitions: [
+      {
+        text: "A person who shows you around or helps you understand something new - like someone who leads you through a museum or helps you climb a mountain safely.",
+        examples: [
+          "Our tour guide knew everything about the city's history",
+          "We hired a local guide to help us through the jungle",
+          "The museum guide explained each painting",
+          "She works as a mountain guide in the Alps",
+          "The spiritual guide helped people understand meditation",
+        ],
+      },
+      {
+        text: "Something that gives you instructions or helps you learn how to do stuff - like a book, video, or website that explains things step by step.",
+        examples: [
+          "I bought a beginner's guide to gardening",
+          "The game has a helpful guide for new players",
+          "Check the TV guide to see what's on tonight",
+          "This style guide tells you how to format your paper",
+          "I'm following a guide to build my own computer",
+        ],
+      },
+      {
+        text: "To help someone by showing them the way or teaching them how to do something.",
+        examples: [
+          "Let me guide you to the nearest exit",
+          "She guided the students through the difficult math problem",
+          "The stars guided ancient sailors across the ocean",
+          "He guided the company through tough times",
+          "The app guides you through each workout",
+        ],
+      },
+    ],
+    pronunciation: "/ɡaɪd/",
+  },
+  shop: {
+    definitions: [
+      {
+        text: "A place where you can buy stuff - could be anything from clothes to food to whatever. It's like a store but usually smaller.",
+        examples: [
+          "There's a coffee shop on the corner",
+          "She owns a little gift shop downtown",
+          "The bike shop is closed on Sundays",
+          "Let's check out that new candy shop",
+          "The repair shop fixed my phone",
+        ],
+      },
+      {
+        text: "The act of going somewhere to buy things - basically when you're looking around to get stuff you want or need.",
+        examples: [
+          "I need to shop for new shoes",
+          "She loves to shop online",
+          "We're shopping for Christmas presents",
+          "He shops at thrift stores to save money",
+          "Let's shop around for better prices",
+        ],
+      },
+    ],
+    pronunciation: "/ʃɒp/",
+  },
+  directory: {
+    definitions: [
+      {
+        text: "A list or collection that organizes information so you can find stuff easily. Like a phone book or a list of stores in a mall - it tells you where to find what you're looking for.",
+        examples: [
+          "I looked up her number in the phone directory",
+          "The mall directory showed all the stores by category",
+          "He checked the business directory to find a plumber",
+          "The school directory lists all teachers and their contact info",
+          "There's a directory of local restaurants on the tourism website",
+        ],
+      },
+      {
+        text: "In computers, it's like a folder that holds files and other folders. It's how computers keep all your stuff organized instead of having everything just floating around.",
+        examples: [
+          "Save that file in the Documents directory",
+          "The downloads directory is getting pretty full",
+          "I can't find the directory where I saved my photos",
+          "The program created a new directory for its files",
+          "You need admin access to modify that directory",
+        ],
+      },
+    ],
+    pronunciation: "/dəˈrektəri/",
+  },
+  board: {
+    definitions: [
+      {
+        text: "A flat piece of sturdy material, usually wood or plastic, that you can put stuff on or use for different purposes. Think cutting board in your kitchen or a whiteboard in a classroom.",
+        examples: [
+          "He used a cutting board to chop vegetables",
+          "The teacher wrote the homework on the board",
+          "We need a board to put under the wobbly table",
+          "She pinned her photos to a cork board",
+          "The surfer grabbed his board and headed to the waves",
+        ],
+      },
+      {
+        text: "A group of people who make important decisions for a company or organization. Like the grown-up version of student council, but with way more power and responsibility.",
+        examples: [
+          "The board of directors voted against the merger",
+          "She sits on the school board",
+          "The board meets every month to discuss strategy",
+          "They elected three new members to the board",
+          "The decision has to be approved by the board",
+        ],
+      },
+      {
+        text: "When you get onto some kind of transport, like a plane or train. It's the act of going from not being on something to being on it.",
+        examples: [
+          "Please board the plane through Gate 3",
+          "All passengers must board the bus from the front",
+          "The captain allowed us to board the ship",
+          "Don't forget your passport when boarding",
+          "Boarding begins in 15 minutes",
+        ],
+      },
+    ],
+    pronunciation: "/bɔːrd/",
+  },
+  location: {
+    definitions: [
+      {
+        text: "The place where something is or where something happens. It's basically the 'where' of anything - could be an address, a spot on a map, or just a general area.",
+        examples: [
+          "What's the location of the party?",
+          "The store changed its location last month",
+          "Share your location with me so I can find you",
+          "This is the perfect location for a picnic",
+          "The app shows the current location of your delivery",
+        ],
+      },
+      {
+        text: "In movies and TV, it's a place where they film scenes outside of a studio. Any real place they use to shoot parts of a show or movie.",
+        examples: [
+          "They're shooting the movie on location in Paris",
+          "The crew spent three weeks filming on location in the desert",
+          "This cafe was used as a location in that famous rom-com",
+          "They're scouting locations for the next season",
+          "Bad weather delayed the location shoot",
+        ],
+      },
+    ],
+    pronunciation: "/ləʊˈkeɪʃn/",
+  },
+  change: {
+    definitions: [
+      {
+        text: "When something becomes different from what it was before. Could be big stuff like changing your life, or small stuff like changing your clothes.",
+        examples: [
+          "The weather changed suddenly from sunny to rainy",
+          "She changed her mind about going to the party",
+          "People can change if they really want to",
+          "The city has changed a lot since I was a kid",
+          "You need to change your password every month",
+        ],
+      },
+      {
+        text: "The money you get back when you pay more than something costs. Like when you give a $20 bill for a $15 thing, that $5 you get back is your change.",
+        examples: [
+          "Don't forget your change - it's five dollars",
+          "The vending machine ate my money and didn't give me change",
+          "He counted his change to make sure it was correct",
+          "I never have enough change for parking meters",
+          "Can you break a twenty? I need some change",
+        ],
+      },
+    ],
+    pronunciation: "/tʃeɪndʒ/",
+  },
+  swag: {
+    definitions: [
+      {
+        text: "Free stuff you get at events or from companies, usually with their logo on it. Think t-shirts, stickers, water bottles - basically promotional goodies they give away to make you remember them.",
+        examples: [
+          "The tech conference had awesome swag - I got three t-shirts",
+          "They gave out swag bags at the entrance",
+          "The company sends swag to all new employees",
+          "I love collecting conference swag",
+          "The YouTuber was selling merch and giving away free swag",
+        ],
+      },
+      {
+        text: "When someone's got style, confidence, and a cool way of carrying themselves. It's that 'they just got it' vibe that makes someone look effortlessly cool.",
+        examples: [
+          "Look at him walk in like he owns the place - that's swag",
+          "Her outfit has so much swag",
+          "The new player brought some serious swag to the team",
+          "You can't teach swag - you either have it or you don't",
+          "His confidence and swag make him stand out",
+        ],
+      },
+    ],
+    pronunciation: "/swæɡ/",
+  },
+  historically: {
+    definitions: [
+      {
+        text: "When you're talking about something that happened in the past or how things used to be. It's like saying 'back in the day' or 'the way things were before'.",
+        examples: [
+          "Historically, people used horses for transportation before cars were invented",
+          "This building is historically significant because famous people lived here",
+          "The company has historically been very successful",
+          "This is historically the worst season our team has ever had",
+          "Historically speaking, this is not the first time this has happened",
+        ],
+      },
+    ],
+    pronunciation: "/hɪˈstɔːrɪkli/",
+  },
+  rating: {
+    definitions: [
+      {
+        text: "A score or number that shows how good (or bad) something is. Think of it like a grade or review score, usually out of 5 stars or 10 points.",
+        examples: [
+          "The movie got a rating of 4 out of 5 stars",
+          "Her credit rating was too low to get a loan",
+          "The game has a high rating on Steam",
+          "The restaurant's health rating dropped after the inspection",
+          "What's your rating on chess.com?",
+        ],
+      },
+    ],
+    pronunciation: "/ˈreɪtɪŋ/",
+  },
+  rate: {
+    definitions: [
+      {
+        text: "To give something a score or judgment based on how good or bad you think it is. Like when you rate an app or give stars to a movie.",
+        examples: [
+          "Please rate your experience from 1 to 5 stars",
+          "How would you rate the service today?",
+          "Users can rate and review products on the website",
+          "She rated the restaurant highly despite the long wait",
+          "I'd rate this game a solid 9/10",
+        ],
+      },
+      {
+        text: "The speed or frequency that something happens. It's about how fast or how often something goes down.",
+        examples: [
+          "The heart rate increases during exercise",
+          "The crime rate has gone down in our city",
+          "Type at a rate of 60 words per minute",
+          "The rate of inflation is rising",
+          "Cars were passing by at an alarming rate",
+        ],
+      },
+      {
+        text: "The price or cost of something, especially when it's calculated by time or amount. Like how much you pay per hour or per unit.",
+        examples: [
+          "The hotel rate is $200 per night",
+          "What's your hourly rate for tutoring?",
+          "The exchange rate for dollars to euros",
+          "They charge a flat rate for shipping",
+          "Interest rates are going up again",
+        ],
+      },
+    ],
+    pronunciation: "/reɪt/",
+  },
+  government: {
+    definitions: [
+      {
+        text: "The group of people who run a country, state, or city. They're the ones who make and enforce the rules, collect taxes, and basically manage everything that keeps society running.",
+        examples: [
+          "The government raised taxes to pay for new roads",
+          "We'll vote for a new government in the next election",
+          "The local government is responsible for trash collection",
+          "The government passed a new law about smoking",
+          "She works for the government in the education department",
+          "People are protesting against the government's decisions",
+        ],
+      },
+    ],
+    pronunciation: "/ˈɡʌvənmənt/",
+  },
+  children: {
+    definitions: [
+      {
+        text: "More than one child - basically anyone who isn't grown up yet, usually under 18. They're the small humans who are still growing up and learning about life.",
+        examples: [
+          "The park was full of children playing on the swings",
+          "How many children do you have?",
+          "No children are allowed in this bar",
+          "The school bus picks up children every morning",
+          "Most children love ice cream and hate vegetables",
+          "Please supervise your children at all times",
+        ],
+      },
+      {
+        text: "Someone's sons and daughters, no matter how old they are. Even when they're grown up, they're still their parents' children.",
+        examples: [
+          "All of her children are now adults with their own families",
+          "The elderly couple's children visit them every Sunday",
+          "He left his fortune to his children in his will",
+          "Both my children graduated from college last year",
+          "The children gathered for their parents' anniversary",
+        ],
+      },
+    ],
+    pronunciation: "/ˈtʃɪldrən/",
+  },
+  return: {
+    definitions: [
+      {
+        text: "To go back to a place you were before, or to give something back to someone. Like when you return home after work, or return a borrowed book to your friend.",
+        examples: [
+          "I'll return home around 6 PM",
+          "Can you return my jacket when you're done?",
+          "The birds return to this area every spring",
+          "She had to return the dress because it didn't fit",
+          "When will you return from vacation?",
+          "Please return your seats to the upright position",
+        ],
+      },
+      {
+        text: "In computers and phones, it's that big key (usually marked with ↵ or ⏎) that you press to start a new line or submit something. It's like saying 'I'm done typing this line' or 'okay, do it now.'",
+        examples: [
+          "Press return to send your message",
+          "Hit return twice to create a blank line",
+          "Don't forget to press return after typing your password",
+        ],
+      },
+    ],
+    pronunciation: "/rɪˈtɜːrn/",
+  },
+  atrocious: {
+    definitions: [
+      {
+        text: "When something is so incredibly bad it's shocking or horrifying. It's way beyond just 'bad' - we're talking absolutely terrible, awful, or offensive. Like when someone does something so messed up it makes you sick, or when something is so poorly done it hurts to look at.",
+        examples: [
+          "The working conditions in that factory were atrocious",
+          "His behavior at the party was absolutely atrocious",
+          "The weather was atrocious - storms and flooding everywhere",
+          "That movie was atrocious, I couldn't even finish it",
+          "The food was so atrocious we had to send it back",
+          "Her atrocious spelling made the essay hard to read",
+        ],
+      },
+    ],
+    pronunciation: "/əˈtrəʊ.ʃəs/",
+  },
+  students: {
+    definitions: [
+      {
+        text: "People who are learning something, usually at a school, college, or university. They're the ones sitting in class, doing homework, and trying to figure shit out while probably surviving on coffee and instant noodles.",
+        examples: [
+          "The students were all cramming for their final exams",
+          "Most university students live away from home",
+          "She's a student at the local art school",
+          "The students protested against the new campus rules",
+          "Medical students spend years learning before becoming doctors",
+          "Online students take their classes through the internet",
+        ],
+      },
+    ],
+    pronunciation: "/ˈstjuː.dənts/",
+  },
+  shopping: {
+    definitions: [
+      {
+        text: "The activity of buying stuff you need (or sometimes just want). Could be food, clothes, whatever - either in actual stores or online. It's what you do when you need things or when you're bored and want to spend money.",
+        examples: [
+          "I'm going shopping for groceries later",
+          "She spent hours shopping online for the perfect dress",
+          "Let's go shopping at the mall this weekend",
+          "Black Friday shopping is absolute chaos",
+          "He does all his Christmas shopping in December",
+          "I hate grocery shopping when I'm hungry",
+        ],
+      },
+    ],
+    pronunciation: "/ˈʃɒp.ɪŋ/",
+  },
+  account: {
+    definitions: [
+      {
+        text: "A place where you store your stuff online - like your social media profile, email, or banking info. It usually needs a username and password to get in.",
+        examples: [
+          "I forgot the password to my Netflix account",
+          "You need to create an account to use this app",
+          "Someone hacked my Instagram account",
+          "Don't share your bank account details with strangers",
+          "I had to delete my old Twitter account",
+        ],
+      },
+      {
+        text: "A detailed story or report about something that happened. Like when you tell someone exactly how things went down.",
+        examples: [
+          "She gave a full account of the accident",
+          "According to his account, the party was wild",
+          "The news gave different accounts of what happened",
+          "I want to hear your account of the meeting",
+          "Historical accounts show this building is centuries old",
+        ],
+      },
+      {
+        text: "Money you keep in a bank or financial institution. It's where your cash lives when it's not in your wallet.",
+        examples: [
+          "I need to check my savings account balance",
+          "The company froze his account",
+          "She opened a new checking account",
+          "Make sure to deposit the check into the right account",
+          "They offer high interest rates on retirement accounts",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkaʊnt/",
+  },
+  times: {
+    definitions: [
+      {
+        text: "The plural of time, or multiple points or periods when things happen. Like when you're trying to coordinate when to meet up or talking about different occasions.",
+        examples: [
+          "I've told you three times already",
+          "What times are you free tomorrow?",
+          "The store is open at all times",
+          "Remember the good times we had last summer",
+          "She's failed her test several times",
+        ],
+      },
+      {
+        text: "When you multiply numbers together. Like when you say '5 times 3' you're basically saying '5 multiplied by 3'.",
+        examples: [
+          "Two times two equals four",
+          "The price is three times higher than last year",
+          "She earns five times more than I do",
+          "The population is now ten times what it was",
+        ],
+      },
+      {
+        text: "A period or era when certain things were happening. Like when people talk about 'modern times' or 'the good old times'.",
+        examples: [
+          "These are difficult times we're living in",
+          "In medieval times, people didn't have electricity",
+          "The company is struggling in these tough economic times",
+          "Things were different in my grandmother's times",
+        ],
+      },
+    ],
+    pronunciation: "/taɪmz/",
+  },
+  sites: {
+    definitions: [
+      {
+        text: "Places on the internet where you can find information or do things. Like websites, web pages, or online platforms.",
+        examples: [
+          "Social media sites are really popular",
+          "This site has the best prices for shoes",
+          "The website was one of the most visited sites last year",
+          "Be careful which sites you share your information with",
+        ],
+      },
+      {
+        text: "Physical places or locations where something is happening or exists. Often used for construction, historical places, or important locations.",
+        examples: [
+          "They're building a new mall at the construction site",
+          "Archaeologists discovered an ancient burial site",
+          "The camping site was perfect, right next to the lake",
+          "This is the site where the battle took place",
+        ],
+      },
+    ],
+    pronunciation: "/saɪts/",
+  },
+  level: {
+    definitions: [
+      {
+        text: "How high or advanced something is compared to other things. Like when you're talking about skill, difficulty, or progress in something.",
+        examples: [
+          "She's at an advanced level in piano",
+          "The game gets harder at each level",
+          "His stress levels are through the roof",
+          "We need someone with a high level of experience",
+        ],
+      },
+      {
+        text: "When something is flat and even, not tilted or sloped. Think of a bubble level tool that shows if something's perfectly straight.",
+        examples: [
+          "Make sure the picture frame is level before hanging it",
+          "The table wobbles because the floor isn't level",
+          "Use a level to check if the shelf is straight",
+          "The water level in the pool is too low",
+        ],
+      },
+      {
+        text: "A floor or story in a building. Like when you're in an elevator and someone asks which level you're going to.",
+        examples: [
+          "The restaurant is on the second level",
+          "Park your car on level 3",
+          "My apartment is on the top level",
+          "The meeting room is on the ground level",
+        ],
+      },
+    ],
+    pronunciation: "/ˈlev.əl/",
+  },
+  digital: {
+    definitions: [
+      {
+        text: "Anything that uses computer technology or exists in electronic form. Think smartphones, computers, or anything that uses ones and zeros instead of physical stuff.",
+        examples: [
+          "I prefer digital books over paper ones",
+          "She bought a digital camera for her trip",
+          "Everything is moving to digital these days",
+          "The company is going through a digital transformation",
+          "I paid using digital currency",
+        ],
+      },
+      {
+        text: "Using numbers instead of physical dials or hands to show information. Like when your clock shows 10:45 in numbers instead of with clock hands.",
+        examples: [
+          "My digital watch is more accurate than my old analog one",
+          "The digital thermometer shows the exact temperature",
+          "I can't read analog clocks, I only understand digital",
+        ],
+      },
+    ],
+    pronunciation: "/ˈdɪdʒ.ɪ.təl/",
+  },
+  profile: {
+    definitions: [
+      {
+        text: "Your page or account on social media or a website that shows information about you. Like your Facebook profile or dating app profile.",
+        examples: [
+          "Don't forget to update your LinkedIn profile",
+          "Her Instagram profile has thousands of followers",
+          "I created a new profile on the gaming platform",
+          "He set his dating profile to private",
+        ],
+      },
+      {
+        text: "A side view of something or someone, especially of a face. Like when you look at someone from the side instead of straight on.",
+        examples: [
+          "The artist drew her profile on the canvas",
+          "His profile looks just like his father's",
+          "The mountain's profile stood out against the sunset",
+          "They took photos of the car from every profile",
+        ],
+      },
+      {
+        text: "A short description that gives important information about someone or something. Like a summary of someone's background or characteristics.",
+        examples: [
+          "The magazine wrote a profile about the new CEO",
+          "The police created a profile of the suspect",
+          "Keep a low profile until this all blows over",
+          "The company profile shows their history and achievements",
+        ],
+      },
+    ],
+    pronunciation: "/ˈprəʊ.faɪl/",
+  },
+  previous: {
+    definitions: [
+      {
+        text: "Something that happened or existed before the current thing. Like when you're talking about the thing that came right before this one - whether it's time, place, or order.",
+        examples: [
+          "The previous owner of this house painted all the walls pink",
+          "I liked their previous album better than the new one",
+          "Can you go back to the previous page? I missed something",
+          "My previous job was at a coffee shop",
+          "In the previous chapter, the main character discovered the secret",
+          "She sat in her previous spot before someone took it",
+        ],
+      },
+    ],
+    pronunciation: "/ˈpriːviəs/",
+  },
+  form: {
+    definitions: [
+      {
+        text: "The shape or appearance of something - how it looks from the outside. Think of it like the outline or structure of anything, whether it's physical or not.",
+        examples: [
+          "The cloud took the form of a dragon",
+          "She was in top form at the competition",
+          "Water can take many forms: liquid, ice, or steam",
+          "The sculpture took form as the artist worked",
+          "His argument started to take form as he explained more",
+        ],
+      },
+      {
+        text: "A document with blank spaces that you need to fill out with information. Usually the boring kind that you get from offices, schools, or websites.",
+        examples: [
+          "Please fill out this form with your personal details",
+          "The tax forms are due next week",
+          "I had to complete ten different forms just to get my driver's license",
+          "The job application form asks for three references",
+          "Don't forget to sign at the bottom of the form",
+        ],
+      },
+      {
+        text: "To create or make something, especially by bringing different parts together.",
+        examples: [
+          "These two chemicals form a new compound when mixed",
+          "Let's form a study group for the exam",
+          "Ice crystals form when water freezes",
+          "They formed a band in high school",
+          "The kids formed a circle to play the game",
+        ],
+      },
+    ],
+    pronunciation: "/fɔːm/",
+  },
+  events: {
+    definitions: [
+      {
+        text: "Things that happen or take place, especially things that are planned or organized. Could be anything from a small party to a huge festival - basically any time something's going down that people planned.",
+        examples: [
+          "There are three major events happening this weekend",
+          "The wedding planner helps organize special events",
+          "Check the calendar for upcoming events",
+          "They host events in their backyard every summer",
+          "The school's events include sports day and graduation",
+          "Social media keeps track of all the events you're interested in",
+        ],
+      },
+      {
+        text: "Important things that happen, whether they were planned or not. Like when shit goes down that affects people or makes the news.",
+        examples: [
+          "Historical events shaped the world we live in today",
+          "Nobody could have predicted the events of last year",
+          "She told me about the events leading up to the accident",
+          "Current events are discussed in the morning news",
+          "The events of that night changed everything",
+        ],
+      },
+    ],
+    pronunciation: "/ɪˈvents/",
+  },
+  love: {
+    definitions: [
+      {
+        text: "A really strong feeling of caring about someone or something so much it makes your heart feel full. It's that deep emotional connection that makes you want to be with someone, protect them, or make them happy.",
+        examples: [
+          "The way she looks at her dog is pure love",
+          "Their love story started in high school",
+          "I love pizza more than any other food",
+          "Parents' love for their kids is unconditional",
+          "She fell in love with the city at first sight",
+          "Sometimes love hurts, but it's worth it",
+        ],
+      },
+      {
+        text: "In sports (especially tennis), when your score is zero. Yeah, weird as fuck, but that's what they call it.",
+        examples: [
+          "The score is 15-love",
+          "He's losing love-40 in the final set",
+          "They're tied at love-all",
+        ],
+      },
+    ],
+    pronunciation: "/lʌv/",
+  },
+  old: {
+    definitions: [
+      {
+        text: "Something or someone that has been around for a long time or isn't new anymore. Could be talking about age, time passed, or just how long something's existed.",
+        examples: [
+          "This car is getting old and needs lots of repairs",
+          "My grandpa is 90 years old",
+          "These leftovers are three days old",
+          "She lives in an old house from the 1800s",
+          "That's an old joke - everyone's heard it before",
+          "These shoes are too old and worn out",
+        ],
+      },
+      {
+        text: "When talking about something from before or from the past, especially something that used to be yours or that you used to know.",
+        examples: [
+          "I ran into my old roommate at the store",
+          "That's my old phone - I got a new one last week",
+          "She still keeps in touch with her old friends from school",
+          "The old version of the app worked better",
+          "Remember the old days when we had to use dial-up internet?",
+        ],
+      },
+    ],
+    pronunciation: "/əʊld/",
+  },
+  main: {
+    definitions: [
+      {
+        text: "The most important or biggest part of something. It's like the star of the show - the central or primary thing that matters most.",
+        examples: [
+          "The main reason I quit was the toxic boss",
+          "What's the main ingredient in this soup?",
+          "The main entrance is on the north side",
+          "She plays the main character in the movie",
+          "The main thing is to have fun",
+        ],
+      },
+    ],
+    pronunciation: "/meɪn/",
+  },
+  call: {
+    definitions: [
+      {
+        text: "To talk to someone using a phone or similar device. It's when you use your phone to have a conversation with someone who's not with you.",
+        examples: [
+          "I'll call you tomorrow",
+          "She called her mom every Sunday",
+          "Can you call me back later?",
+          "He's on a call with his boss",
+          "I missed your call earlier",
+        ],
+      },
+      {
+        text: "To yell or speak loudly to get someone's attention or to make them hear you from far away.",
+        examples: [
+          "She called out my name across the street",
+          "The teacher called the students into class",
+          "I heard someone calling for help",
+          "He called after me but I didn't hear him",
+        ],
+      },
+      {
+        text: "To give something a name or to refer to it as something.",
+        examples: [
+          "They called their new baby Emma",
+          "What do you call this type of food?",
+          "Don't call me that nickname anymore",
+          "Some people call it soccer, others call it football",
+        ],
+      },
+    ],
+    pronunciation: "/kɔːl/",
+  },
+  hours: {
+    definitions: [
+      {
+        text: "Units of time that make up a day - each hour is 60 minutes. It's how we measure bigger chunks of time, like how long something takes or when places are open.",
+        examples: [
+          "The movie is two hours long",
+          "I slept for eight hours last night",
+          "It takes three hours to drive there",
+          "She works forty hours per week",
+          "The store is open 24 hours",
+        ],
+      },
+      {
+        text: "The times when a business or place is open and you can go there. People often call these 'opening hours' or 'business hours'.",
+        examples: [
+          "What are your hours today?",
+          "The cafe's hours are 9 AM to 5 PM",
+          "They changed their hours during the holidays",
+          "The gym has different hours on weekends",
+        ],
+      },
+    ],
+    pronunciation: "/ˈaʊərz/",
+  },
+  image: {
+    definitions: [
+      {
+        text: "A picture of something - could be a photo, drawing, or any kind of visual representation. It's what you see when you look at a picture or photo.",
+        examples: [
+          "She posted an image of her new car online",
+          "The book has lots of colorful images",
+          "Can you send me that image from the party?",
+          "The security camera captured an image of the thief",
+          "Right-click to save the image",
+        ],
+      },
+      {
+        text: "The way other people see you or think about you. It's like the mental picture people have of you or something else.",
+        examples: [
+          "He tries to maintain a professional image at work",
+          "The company's image was damaged by the scandal",
+          "She wants to change her public image",
+          "That comment didn't help his image",
+        ],
+      },
+    ],
+    pronunciation: "/ˈɪmɪdʒ/",
+  },
+  department: {
+    definitions: [
+      {
+        text: "A specific section or area in a store that sells certain types of things. Like where all the shoes are, or where they keep all the toys.",
+        examples: [
+          "The shoe department is on the second floor",
+          "I'm heading to the electronics department",
+          "She works in the clothing department",
+          "Can you show me where the toy department is?",
+        ],
+      },
+      {
+        text: "A part of a big organization (like a company or government) that handles specific tasks or areas of work. Think of it like different teams each doing their own special job.",
+        examples: [
+          "The HR department handles all hiring",
+          "He works in the sales department",
+          "The fire department arrived quickly",
+          "Contact our customer service department for help",
+          "The police department is investigating",
+        ],
+      },
+    ],
+    pronunciation: "/dɪˈpɑːt.mənt/",
+  },
+  decentralized: {
+    definitions: [
+      {
+        text: "When something isn't controlled by just one person or group, but instead is spread out among many different people or places. Like when power or control is shared instead of having one boss making all the decisions.",
+        examples: [
+          "Bitcoin is decentralized because no single bank controls it",
+          "The company has a decentralized structure with teams working independently",
+          "The internet is decentralized - no one person or country owns it",
+          "They switched to a decentralized system where each office makes its own decisions",
+          "Social media is becoming more decentralized with new platforms popping up",
+        ],
+      },
+    ],
+    pronunciation: "/diːˈsen.trə.laɪzd/",
+  },
+title: {
+    definitions: [
+      {
+        text: "The name of something, like what you call a book, movie, or song. It's the main label that tells you what something is.",
+        examples: [
+          "The title of the movie is 'The Big Adventure'",
+          "I love the book but can't remember its title",
+          "She's still thinking of a good title for her essay",
+          "The title of the song came from a dream he had",
+          "What's the title of that show you were talking about?",
+        ],
+      },
+      {
+        text: "A word that shows someone's job or position, like Doctor, Professor, or CEO. It's the official name for what someone does or who they are.",
+        examples: [
+          "Her official title is Chief Marketing Officer",
+          "He earned the title of World Champion",
+          "Don't forget to include your job title on your resume",
+          "The queen gave him the title of Duke",
+          "She doesn't care about fancy titles, she just wants to do good work",
+        ],
+      },
+      {
+        text: "A legal document that proves you own something, usually property or a car. It's like an official paper that says 'this is yours'.",
+        examples: [
+          "The house title is in my name",
+          "We can't sell the car without the title",
+          "Make sure to transfer the title when you buy the property",
+          "The bank holds the title until you pay off your loan",
+          "They lost the title to their boat in the move",
+        ],
+      },
+    ],
+    pronunciation: "/ˈtaɪ.təl/",
+  },
+description: {
+    definitions: [
+      {
+        text: "When you use words to explain what something looks like, feels like, or is like. It's how you paint a picture with words so others can understand what you're talking about.",
+        examples: [
+          "Her description of the sunset made me feel like I was there",
+          "The job description tells you what you'll be doing at work",
+          "Can you give me a description of the person who took your bag?",
+          "The menu had mouth-watering descriptions of each dish",
+          "His description of the event was totally different from mine",
+          "The product description didn't mention it was so tiny",
+        ],
+      },
+    ],
+    pronunciation: "/dɪˈskrɪp.ʃən/",
+  },
+insurance: {
+    definitions: [
+      {
+        text: "A way to protect yourself by paying money regularly so that if something bad happens (like getting sick, crashing your car, or your house burning down), a company will help pay for it. It's like paying for a safety net just in case things go wrong.",
+        examples: [
+          "Car insurance helps pay for repairs if you get in an accident",
+          "Health insurance covers your doctor visits and medicine",
+          "You need home insurance in case something happens to your house",
+          "Her phone insurance replaced her screen when she dropped it",
+          "Travel insurance is worth it for long expensive trips",
+          "The insurance company paid for everything after the flood",
+        ],
+      },
+    ],
+    pronunciation: "/ɪnˈʃʊə.rəns/",
+  },
+another: {
+    definitions: [
+      {
+        text: "One more of something, or a different one. It's when you want something extra or want to switch to something else.",
+        examples: [
+          "Can I have another cookie?",
+          "Let's try another restaurant, this one's too crowded",
+          "She needs another day to finish the project",
+          "That shirt doesn't fit? Here's another one",
+          "We'll have to wait another hour for the bus",
+          "He got another job after quitting his first one",
+        ],
+      },
+    ],
+    pronunciation: "/əˈnʌð.ər/",
+  },
+  why: {
+    definitions: [
+      {
+        text: "Used when you want to know the reason for something. It's like asking 'what's the reason?' or 'how come?' when you want to understand why something happened or someone did something.",
+        examples: [
+          "Why is the sky blue?",
+          "Why did you choose that movie?",
+          "I don't know why he's always late",
+          "Why should I trust you?",
+          "That's why I never eat spicy food",
+          "There's no reason why we can't go to the party",
+        ],
+      },
+    ],
+    pronunciation: "/waɪ/",
+  },
+shall: {
+    definitions: [
+      {
+        text: "A fancy way of saying 'will' or asking if you should do something. It's like a more formal or proper way of talking about what's going to happen or asking for suggestions.",
+        examples: [
+          "Shall we go to lunch now?",
+          "What shall I wear to the party?",
+          "You shall not pass!",
+          "We shall see what happens",
+          "Shall I open the window?",
+        ],
+      },
+    ],
+    pronunciation: "/ʃæl/",
+  },
+property: {
+    definitions: [
+      {
+        text: "Something that belongs to you or that you own - like a house, car, phone, or anything else that's yours.",
+        examples: [
+          "Please respect other people's property",
+          "The dog destroyed my property",
+          "No personal property allowed in the locker room",
+          "She inherited the property from her grandmother",
+          "Someone stole my property while I was away",
+        ],
+      },
+      {
+        text: "A piece of land or a building that someone owns, especially houses or places people can live in.",
+        examples: [
+          "They bought a beautiful property by the beach",
+          "The property values in this area are going up",
+          "He owns multiple rental properties",
+          "This property has been in our family for generations",
+          "They're looking at properties in the city",
+        ],
+      },
+      {
+        text: "A special quality or characteristic that something has, like how water has the property of being wet or fire has the property of being hot.",
+        examples: [
+          "Diamonds have the property of being extremely hard",
+          "This material has magnetic properties",
+          "The chemical properties of the substance",
+          "One property of gold is that it doesn't rust",
+        ],
+      },
+    ],
+    pronunciation: "/ˈprɒpərti/",
+  },
+class: {
+    definitions: [
+      {
+        text: "A group of students who learn together, or the lesson they're taking. It's the time you spend learning something with other people and a teacher.",
+        examples: [
+          "I have math class first thing in the morning",
+          "She's taking a cooking class",
+          "The whole class failed the test",
+          "Don't be late for class",
+          "This is the best class I've ever taken",
+        ],
+      },
+      {
+        text: "A way of grouping people based on how much money they have or their social status - like upper class, middle class, or working class.",
+        examples: [
+          "They grew up in a middle-class neighborhood",
+          "The restaurant attracts a high-class clientele",
+          "Class differences are still a big deal in some countries",
+          "She came from a working-class family",
+        ],
+      },
+      {
+        text: "When something is really well done or shows great quality and style - basically meaning fancy or high quality.",
+        examples: [
+          "That restaurant has real class",
+          "She handled the situation with class",
+          "His new car is pure class",
+          "Now that's what I call class!",
+        ],
+      },
+    ],
+    pronunciation: "/klɑːs/",
+  },
+still: {
+    definitions: [
+      {
+        text: "When something continues to happen or remains the same way - like when a situation hasn't changed or something keeps going.",
+        examples: [
+          "Are you still watching TV?",
+          "I still can't believe she said that",
+          "The party is still going strong",
+          "He's still mad about what happened yesterday",
+          "We're still waiting for an answer",
+        ],
+      },
+      {
+        text: "Not moving at all - like when you're frozen in place or something isn't moving.",
+        examples: [
+          "Stand still while I take your picture",
+          "The lake was so still it looked like glass",
+          "Sit still, you're making me nervous",
+          "The air was completely still that morning",
+        ],
+      },
+      {
+        text: "Used to say 'despite that' or 'nevertheless' - when something happens even though something else might prevent it.",
+        examples: [
+          "It's expensive, but I still want to buy it",
+          "Even though it's raining, we're still going out",
+          "He was tired but still helped me move",
+          "The food was bad, but I still ate it",
+        ],
+      },
+    ],
+    pronunciation: "/stɪl/",
+  },
+  accomplish: {
+    definitions: [
+      {
+        text: "To finish or complete something successfully, especially something you've been working towards. It's like when you finally do that thing you've been trying to do.",
+        examples: [
+          "She accomplished her goal of running a marathon",
+          "We finally accomplished the project after months of work",
+          "It feels amazing to accomplish something you thought was impossible",
+          "He accomplished all his tasks for the day",
+          "The team accomplished what they set out to do",
+          "I can't believe we accomplished this in just one week",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkʌm.plɪʃ/",
+  },
+boating: {
+    definitions: [
+      {
+        text: "The activity of riding in or driving boats, usually for fun. It's when you spend time on the water in any kind of boat, whether it's a small rowboat or a fancy yacht.",
+        examples: [
+          "We went boating on the lake last weekend",
+          "Boating is their favorite summer activity",
+          "You need a license for some types of boating",
+          "The weather's perfect for boating today",
+          "They spend every Sunday boating with friends",
+          "Safety is super important when you're boating",
+        ],
+      },
+    ],
+    pronunciation: "/ˈbəʊtɪŋ/",
+  },
+drainage: {
+    definitions: [
+      {
+        text: "The way water or other liquids flow away from a place, or the system built to make this happen. Think of how water goes down your sink or how rain flows off your roof.",
+        examples: [
+          "The street floods when the drainage is blocked",
+          "Good drainage is important for healthy plants",
+          "They installed new drainage pipes in the basement",
+          "The yard needs better drainage to stop puddles forming",
+          "Poor drainage can cause mold problems",
+          "The city is fixing the drainage system on our street",
+        ],
+      },
+    ],
+    pronunciation: "/ˈdreɪnɪdʒ/",
+  },
+corners: {
+    definitions: [
+      {
+        text: "The places where two lines, walls, or edges meet, usually making an angle. It's like where two walls come together in a room or where the edges of a box meet.",
+        examples: [
+          "The cat is hiding in the corner of the room",
+          "Put the table in the corner to save space",
+          "There's a store on every corner in this city",
+          "The paper has bent corners from being in my pocket",
+          "Don't forget to check the corners when you're cleaning",
+        ],
+      },
+      {
+        text: "When you're in a difficult situation with limited options, like being 'backed into a corner.' Also used in phrases about being in specific situations.",
+        examples: [
+          "He felt cornered when they asked about the missing money",
+          "The team has really backed themselves into a corner with this decision",
+          "She's good at getting herself out of tight corners",
+          "We've cut corners to finish the project on time",
+          "The business is turning a corner after a rough year",
+        ],
+      },
+    ],
+    pronunciation: "/ˈkɔːnəz/",
+  },
+  broader: {
+    definitions: [
+      {
+        text: "When something covers more area or includes more things than before. Like when you start with a small idea and make it bigger to include more stuff.",
+        examples: [
+          "We need to take a broader look at this problem",
+          "The company is moving in a broader direction",
+          "She's interested in broader topics than just math",
+          "They're making broader changes to the whole system",
+          "The issue affects a broader range of people than we thought",
+        ],
+      },
+      {
+        text: "When something is physically wider or takes up more space than something else. Think of a broader street compared to a narrow one.",
+        examples: [
+          "The river gets broader as it reaches the ocean",
+          "This table is broader than the old one",
+          "We need a broader brush to paint the wall",
+          "The broader path is easier to walk on",
+        ],
+      },
+    ],
+    pronunciation: "/ˈbrɔːdə/",
+  },
+vegetarian: {
+    definitions: [
+      {
+        text: "Someone who doesn't eat meat but does eat stuff like eggs, cheese, and veggies. Different from vegans, who don't eat any animal products at all.",
+        examples: [
+          "She's been vegetarian for five years now",
+          "My brother became vegetarian for health reasons",
+          "Most vegetarians still eat dairy products",
+          "The restaurant has plenty of options for vegetarians",
+          "Being vegetarian doesn't mean you only eat salads",
+        ],
+      },
+      {
+        text: "Food or meals that don't contain any meat. Like when a menu marks items as 'vegetarian friendly' or 'vegetarian options.'",
+        examples: [
+          "They serve vegetarian lasagna at this restaurant",
+          "Is this pizza vegetarian?",
+          "The cafe has a vegetarian menu",
+          "These vegetarian burgers are made from beans",
+          "All the vegetarian options are marked with a green leaf",
+        ],
+      },
+    ],
+    pronunciation: "/ˌvedʒəˈteriən/",
+  },
+rouge: {
+    definitions: [
+      {
+        text: "Red makeup you put on your cheeks to make them look pink or rosy. It's like blush but sounds fancier because it's French.",
+        examples: [
+          "She added some rouge to give her cheeks more color",
+          "The makeup artist applied rouge to brighten up her face",
+          "Rouge was super popular in the 1950s",
+          "You can use cream or powder rouge",
+        ],
+      },
+      {
+        text: "A reddish color, usually with a bit of a dark or purple tone to it. It's basically fancy red.",
+        examples: [
+          "The sunset turned the clouds rouge",
+          "She painted her lips a deep rouge color",
+          "The wine had a nice rouge tint",
+          "Their team colors are rouge and gold",
+        ],
+      },
+      {
+        text: "In video games, a sneaky character type that's good at stealing stuff and moving quietly. Think ninja-like characters who are super stealthy.",
+        examples: [
+          "He plays as a rouge in World of Warcraft",
+          "The rouge class specializes in stealth attacks",
+          "You need a rouge to pick the lock in this game",
+          "Her rouge character can turn invisible",
+        ],
+      },
+    ],
+    pronunciation: "/ruːʒ/",
+  },
+yeast: {
+    definitions: [
+      {
+        text: "Tiny living things that make bread rise and beer fizzy. When you add it to dough, it eats the sugar and makes bubbles, which is why bread gets fluffy instead of flat.",
+        examples: [
+          "Don't forget to add yeast or your bread won't rise",
+          "Beer is made using yeast to create alcohol",
+          "The pizza dough needs fresh yeast to work properly",
+          "You can buy dry yeast at any grocery store",
+          "Without yeast, we wouldn't have fluffy bread or beer",
+        ],
+      },
+    ],
+    pronunciation: "/jiːst/",
+  },
+  anthem: {
+    definitions: [
+      {
+        text: "An important song that represents a country, group, or cause. Like how every country has their special song they play at sports events or ceremonies - that's their national anthem.",
+        examples: [
+          "Everyone stood up when they played the national anthem",
+          "That song became the anthem of the civil rights movement",
+          "The crowd sang the school anthem at graduation",
+          "Sweet Caroline is basically the anthem of Boston Red Sox fans",
+          "The band's hit single became the anthem of that summer",
+        ],
+      },
+      {
+        text: "A special type of religious song, usually sung by a choir in church. Think of those songs where a group of people in robes sing together in perfect harmony.",
+        examples: [
+          "The choir performed a beautiful anthem during the service",
+          "She wrote a new anthem for the church choir",
+          "The Christmas anthem filled the cathedral",
+        ],
+      },
+    ],
+    pronunciation: "/ˈænθəm/",
+  },
+tack: {
+    definitions: [
+      {
+        text: "A small, short nail with a flat head, used to pin things temporarily. Like those little nails you use to hang up posters or hold fabric in place.",
+        examples: [
+          "She used some tacks to put up the party decorations",
+          "I stepped on a tack and it hurt like hell",
+          "The map was held to the board with thumb tacks",
+          "He used carpet tacks to keep the rug from sliding",
+        ],
+      },
+      {
+        text: "To attach or add something quickly, usually temporarily. Like when you pin something up or add something as an afterthought.",
+        examples: [
+          "I'll just tack this note to the bulletin board",
+          "She tacked on an extra fee at the end",
+          "Can we tack that topic onto the end of the meeting?",
+          "He tacked the poster to his bedroom wall",
+        ],
+      },
+      {
+        text: "In sailing, it means to change your direction by turning the boat into the wind. Also used to talk about the direction a boat is sailing.",
+        examples: [
+          "The sailboat had to tack into the wind",
+          "We're on a different tack now",
+          "The captain decided to tack to avoid the storm",
+        ],
+      },
+    ],
+    pronunciation: "/tæk/",
+  },
+nowadays: {
+    definitions: [
+      {
+        text: "In current times or these days - used when talking about how things are now compared to how they were before. It's like saying 'these days' or 'in modern times.'",
+        examples: [
+          "Nowadays everyone has a smartphone",
+          "Kids nowadays spend too much time online",
+          "It's easier to work from home nowadays",
+          "Nowadays you can order anything for delivery",
+          "People don't write letters much nowadays",
+          "Nowadays most cars have backup cameras",
+        ],
+      },
+    ],
+    pronunciation: "/ˈnaʊ.ə.deɪz/",
+  },
+  money: {
+    definitions: [
+      {
+        text: "The stuff you use to buy things - could be physical cash like bills and coins, or digital money in your bank account. It's what you earn from work and use to pay for stuff you want or need.",
+        examples: [
+          "I need to save more money for vacation",
+          "Can I borrow some money for lunch?",
+          "She makes good money at her new job",
+          "The game is free to play but costs money if you want extra features",
+          "I'm trying to make money by selling stuff online",
+          "They're just in it for the money"
+        ]
+      }
+    ],
+    pronunciation: "/ˈmʌni/"
+  },
+quality: {
+    definitions: [
+      {
+        text: "How good or bad something is - like when you're checking if something is well-made or works the way it should.",
+        examples: [
+          "These shoes are really good quality - they'll last forever",
+          "The video quality on this stream is terrible",
+          "You get what you pay for - better quality usually costs more",
+          "The sound quality of these headphones is amazing",
+          "They only sell high-quality products in this store"
+        ]
+      },
+      {
+        text: "A specific thing about someone or something that makes them who or what they are - like being funny, smart, or strong.",
+        examples: [
+          "One of his best qualities is that he's always honest",
+          "The house has many good qualities, like lots of natural light",
+          "Leadership qualities are important in this job",
+          "What qualities do you look for in a friend?",
+          "Her best quality is her ability to make everyone feel welcome"
+        ]
+      }
+    ],
+    pronunciation: "/ˈkwɒləti/"
+  },
+every: {
+    definitions: [
+      {
+        text: "When you're talking about all things or people in a group, with no exceptions. It means each one, all of them, no matter what.",
+        examples: [
+          "Every student needs to bring a pencil",
+          "She goes to the gym every day",
+          "Every time I try to sleep, my phone rings",
+          "Not every person likes spicy food",
+          "The boss checks every email before it goes out",
+          "Every single cookie in the jar is gone"
+        ]
+      }
+    ],
+    pronunciation: "/ˈevri/"
+  },
+listing: {
+    definitions: [
+      {
+        text: "When you put something up for sale or rent, like a house or item online. It's the post or advertisement that shows what you're selling.",
+        examples: [
+          "I saw your house listing on Zillow",
+          "She posted a listing for her old phone on Facebook",
+          "The job listing says they need someone with experience",
+          "Check the new listings - they might have what you're looking for",
+          "I'll remove the listing once it's sold"
+        ]
+      },
+      {
+        text: "A list of items or information written down in order, like when you write down everything you need to do or buy.",
+        examples: [
+          "The listing shows all the ingredients we need",
+          "Can you make a listing of everyone who's coming?",
+          "The TV listing tells you what shows are on tonight",
+          "She made a listing of all her expenses",
+          "The listing includes prices for everything in the store"
+        ]
+      }
+    ],
+    pronunciation: "/ˈlɪstɪŋ/"
+  },
+content: {
+    definitions: [
+      {
+        text: "Feeling happy and satisfied with what you have or how things are. Like when you're chilling and everything feels just right.",
+        examples: [
+          "The cat looks so content sleeping in the sun",
+          "I'm content with my life right now",
+          "She seemed content to just watch TV all day",
+          "They were content living in their small apartment",
+          "Are you content with this decision?"
+        ]
+      },
+      {
+        text: "The stuff that's inside something or what something is made of - could be physical things or information like videos, articles, or posts.",
+        examples: [
+          "The content of this website is mostly videos",
+          "What's the content of this box?",
+          "She creates content for TikTok",
+          "The content of the email was shocking",
+          "This drink has high sugar content",
+          "They review the content before posting it online"
+        ]
+      }
+    ],
+    pronunciation: "/kənˈtent/"
+  },
+country: {
+    definitions: [
+      {
+        text: "A big piece of land with its own government, laws, and borders. It's like a giant area where people live under the same rules and usually share similar cultures.",
+        examples: [
+          "Japan is a country in Asia",
+          "Which country are you from?",
+          "They're traveling to different countries in Europe",
+          "This country has amazing food",
+          "She wants to move to another country",
+          "Every country has its own laws"
+        ]
+      },
+      {
+        text: "Areas away from cities where there's lots of open space, farms, and nature. People call it 'the country' when talking about rural places.",
+        examples: [
+          "They live out in the country, far from any cities",
+          "Let's go for a drive in the country",
+          "Country life is more peaceful than city life",
+          "She grew up in the country surrounded by farms",
+          "The country air is so fresh"
+        ]
+      }
+    ],
+    pronunciation: "/ˈkʌntri/"
+  },
+private: {
+    definitions: [
+      {
+        text: "When something is just for you or a specific group - not for everyone to see, use, or know about. Like stuff you want to keep to yourself or away from other people.",
+        examples: [
+          "This is my private account - I only let close friends follow it",
+          "Can we talk somewhere private?",
+          "Keep this information private",
+          "She goes to a private school",
+          "This is a private party - invitation only",
+          "My diary is private, don't read it"
+        ]
+      },
+      {
+        text: "In the military, it's the lowest rank of soldier - someone who just started their military service.",
+        examples: [
+          "He joined the army as a private",
+          "Private Johnson is on guard duty",
+          "The private is still in basic training",
+          "They promoted him from private to corporal",
+          "All privates must complete this course"
+        ]
+      }
+    ],
+    pronunciation: "/ˈpraɪvət/"
+  },
+little: {
+    definitions: [
+      {
+        text: "Small in size, amount, or importance. When something isn't big or there isn't much of it.",
+        examples: [
+          "There's only a little food left",
+          "The little dog fits in my purse",
+          "Can you wait a little while?",
+          "She only needs a little help",
+          "That's a little problem, nothing to worry about",
+          "There's too little time to finish everything"
+        ]
+      },
+      {
+        text: "When talking about young children or cute things in a friendly way.",
+        examples: [
+          "The little kids are playing in the park",
+          "What a cute little cat!",
+          "Her little sister just started school",
+          "The little shop on the corner sells great coffee",
+          "Look at those little birds in the nest"
+        ]
+      }
+    ],
+    pronunciation: "/ˈlɪtl/"
+  },
+visit: {
+    definitions: [
+      {
+        text: "To go see someone or something for a while - like when you drop by someone's house, check out a place, or spend time somewhere you don't usually go.",
+        examples: [
+          "I'm going to visit my grandparents this weekend",
+          "She visited Paris last summer",
+          "The doctor will visit you soon",
+          "Let's visit that new restaurant",
+          "They're visiting from Canada",
+          "I visited their website to check the prices"
+        ]
+      }
+    ],
+    pronunciation: "/ˈvɪzɪt/"
   },
 };

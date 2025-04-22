@@ -36,7 +36,7 @@ async function wordExists(word: string): Promise<boolean> {
 
 function handleSelectedWord(word: string, tabId: number) {
   const cleanWord = word.toLowerCase().trim();
-  chrome.tabs.update(tabId, {
+  chrome.tabs.create({
     url: `https://worddirectory.app/words/${encodeURIComponent(cleanWord)}`
   });
 }

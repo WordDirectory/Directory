@@ -68,3 +68,7 @@ scripts/lowercase_all_words.ts
 
 /apps/extension/dist
 /apps/extension/node_modules
+
+scripts/config.json
+scripts/node_modules
+scripts/types/node-wordnet.d.ts

@@ -43,7 +43,7 @@ export default function RoadmapPage() {
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Roadmap</h1>
           <p className="text-xl text-muted-foreground">
-            What's coming next for Word Directory
+            What's coming next for Word Directory (last updated: April 24, 2025)
           </p>
         </header>
 

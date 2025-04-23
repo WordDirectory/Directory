@@ -26,9 +26,9 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Company links */}
+          {/* Product links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Product</h4>
             <nav className="flex flex-col gap-2">
               <Link
                 href="/about"
@@ -36,6 +36,19 @@ export function Footer() {
               >
                 About
               </Link>
+              <Link
+                href="/roadmap"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+              >
+                Roadmap
+              </Link>
+            </nav>
+          </div>
+
+          {/* Legal & Support */}
+          <div>
+            <h4 className="font-semibold mb-4">Legal & Support</h4>
+            <nav className="flex flex-col gap-2">
               <Link
                 href="/contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
@@ -56,36 +69,31 @@ export function Footer() {
               </Link>
             </nav>
           </div>
-
-          {/* Connect links with icons */}
-          <div>
-            <h4 className="font-semibold mb-4">Connect</h4>
-            <div className="flex gap-4">
-              <Link
-                href="https://github.com/WordDirectory/Directory"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <FaGithub size={24} />
-              </Link>
-              <Link
-                href="https://x.com/WordDirectory"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-foreground transition-colors"
-              >
-                <FaXTwitter size={24} />
-              </Link>
-            </div>
-          </div>
         </div>
 
-        {/* Updated copyright */}
-        <div className="mt-6 pt-6 text-center md:text-left">
-          <p className="text-sm text-muted-foreground">
+        {/* Social and copyright */}
+        <div className="mt-8 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-muted-foreground order-2 md:order-1">
             &copy; Word Directory. All rights reserved.
           </p>
+          <div className="flex gap-4 order-1 md:order-2">
+            <Link
+              href="https://github.com/WordDirectory/Directory"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <FaGithub size={24} />
+            </Link>
+            <Link
+              href="https://x.com/WordDirectory"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <FaXTwitter size={24} />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>

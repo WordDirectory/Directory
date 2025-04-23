@@ -9628,4 +9628,9406 @@ reply: {
     ],
     pronunciation: "/wɜːdz/",
   },
+  aahed: {
+    definitions: [
+      {
+        text: "When someone made an 'aah' sound in the past. It's just the past tense of 'aah' - like when someone already made that sound of relief, satisfaction, or understanding.",
+        examples: [
+          "She aahed with pleasure when she tasted the chocolate",
+          "The audience aahed at the cute puppy pictures",
+          "He aahed in relief when he sat down",
+          "Everyone aahed when they saw the sunset",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːd/",
+  },
+  aahing: {
+    definitions: [
+      {
+        text: "Making 'aah' sounds right now or regularly. It's when someone is currently expressing those feelings of relief, satisfaction, or understanding with that sound.",
+        examples: [
+          "The crowd was aahing at the magic trick",
+          "Stop aahing and tell me what's wrong",
+          "The kids were oohing and aahing at the Christmas presents",
+          "She's been aahing over the baby pictures all day",
+        ],
+      },
+    ],
+    pronunciation: "/ˈɑːɪŋ/",
+  },
+  aahs: {
+    definitions: [
+      {
+        text: "More than one 'aah' sound. When multiple people are making that sound, or when someone makes that sound multiple times.",
+        examples: [
+          "The aahs and oohs from the crowd filled the stadium",
+          "There were aahs of delight when the cake arrived",
+          "Lots of aahs and sighs came from the massage room",
+          "The audience responded with appreciative aahs",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːz/",
+  },
+  aardvarks: {
+    definitions: [
+      {
+        text: "More than one aardvark (those weird pig-like animals from Africa that eat ants). When you're talking about a bunch of these long-nosed ant-eaters.",
+        examples: [
+          "The zoo has three aardvarks in their night exhibit",
+          "Aardvarks are getting harder to find in some parts of Africa",
+          "The mother and baby aardvarks dig together for food",
+          "Most aardvarks sleep during the day",
+          "Scientists study how aardvarks help control ant populations"
+        ]
+      }
+    ],
+    pronunciation: "/ˈɑːrdvɑːrks/"
+  },
+  aardwolf: {
+    definitions: [
+      {
+        text: "A small striped animal from Africa that looks kind of like a hyena but smaller and cuter. Despite having 'wolf' in its name, it mostly eats termites and bugs, not meat like regular wolves.",
+        examples: [
+          "The aardwolf comes out at night to hunt for termites",
+          "Unlike hyenas, an aardwolf is pretty shy and stays away from people",
+          "The aardwolf has stripes that help it hide in tall grass",
+          "We spotted an aardwolf using its tongue to catch insects",
+          "The aardwolf's diet is mostly termites, unlike its bigger hyena cousins"
+        ]
+      }
+    ],
+    pronunciation: "/ˈɑːrdwʊlf/"
+  },
+  aardwolves: {
+    definitions: [
+      {
+        text: "More than one aardwolf (those striped termite-eating animals from Africa that look like small hyenas). When you're talking about a group of these nocturnal bug-hunters.",
+        examples: [
+          "Aardwolves usually hunt alone, not in groups",
+          "The zoo has a pair of aardwolves in their African exhibit",
+          "Most aardwolves come out at night to find food",
+          "Scientists track aardwolves to study their behavior",
+          "Unlike regular wolves, aardwolves don't hunt in packs"
+        ]
+      }
+    ],
+    pronunciation: "/ˈɑːrdwʊlvz/"
+  },
+  aarrgh: {
+    definitions: [
+      {
+        text: "A longer, more dramatic version of 'aargh' - when you're REALLY frustrated or annoyed. The extra letters mean you're extra done with whatever's bugging you. Also used by pirates in movies and books.",
+        examples: [
+          "Aarrgh! The computer crashed and I lost everything!",
+          "The kids were screaming and I was like 'aarrgh!' in my head",
+          "Aarrgh! Why won't this thing work?",
+          "She yelled 'aarrgh!' when she saw the parking ticket",
+          "The pirate shouted 'aarrgh!' as he swung his sword"
+        ]
+      }
+    ],
+    pronunciation: "/ɑːr/"
+  },
+  aarrghh: {
+    definitions: [
+      {
+        text: "A sound you make when you're super frustrated, in pain, or just done with everything. It's like a longer, more dramatic version of 'argh' that people often write in messages or comics to show they're really annoyed or suffering.",
+        examples: [
+          "AARRGHH! I just deleted three hours of work!",
+          "She stubbed her toe and went 'aarrghh!'",
+          "Aarrghh, I can't believe I have to redo this entire thing",
+          "The character in the comic yelled 'AARRGHH!' when he saw his grades",
+          "Aarrghh, why won't this stupid printer work?",
+          "Monday morning meetings... aarrghh!",
+        ],
+      },
+    ],
+    pronunciation: "/ɑːrg/",
+  },
+  ab: {
+    definitions: [
+      {
+        text: "Short for 'abdominal muscles' - those muscles in your stomach area that can make a six-pack. It's mostly used when talking about working out or fitness.",
+        examples: [
+          "I need to work on my abs at the gym",
+          "He's got killer abs from all that planking",
+          "The fitness influencer was showing off her abs in every photo",
+          "My abs are sore from yesterday's workout",
+          "She does 100 crunches daily to strengthen her abs",
+        ],
+      },
+      {
+        text: "A prefix (part added to the start of a word) that means 'away from' or 'off of' something. You'll mostly see this as part of other words, not by itself.",
+        examples: [
+          "Abnormal means away from normal",
+          "Absent means being away",
+          "Absorb means to suck away or take in",
+          "Abstract means pulled away from something",
+        ],
+      },
+    ],
+    pronunciation: "/æb/",
+  },
+aba: {
+    definitions: [
+      {
+        text: "A loose, sleeveless robe or cloak that people wear in many Middle Eastern countries. It's like a simple, flowing outer garment that goes over other clothes.",
+        examples: [
+          "She wore a black aba over her dress",
+          "The traditional outfit included an aba made of wool",
+          "The merchant was selling colorful abas in the market",
+          "He threw on an aba to protect himself from the sun",
+          "The ceremonial aba was decorated with golden threads",
+        ],
+      },
+    ],
+    pronunciation: "/ˈɑːbə/",
+  },
+abaca: {
+    definitions: [
+      {
+        text: "A type of banana plant that's grown to make rope and fabric. The fibers from this plant are super strong and used in things like ship ropes and paper. Sometimes called Manila hemp.",
+        examples: [
+          "The bag was made from woven abaca fibers",
+          "Sailors prefer ropes made from abaca because they're so strong",
+          "The Philippines is famous for growing abaca",
+          "They used abaca to make the traditional clothing",
+          "The furniture store had chairs made with abaca rope",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɑːkə/",
+  },
+abacas: {
+    definitions: [
+      {
+        text: "More than one abacus - those counting tools with beads on rods that people used before calculators. It's just the plural way of saying abacus.",
+        examples: [
+          "The math classroom had several abacas for students to practice with",
+          "The antique shop displayed different types of abacas from around the world",
+          "Kids learned to count using wooden abacas",
+          "The museum had a collection of ancient abacas",
+          "They found old Chinese and Japanese abacas in the market",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəkəs/",
+  },
+  abaci: {
+    definitions: [
+      {
+        text: "More than one abacus - those counting tools with beads on rods that people used before calculators existed. Think of it like having multiple of those bead-counting frames that some stores still use today.",
+        examples: [
+          "The math museum had several ancient abaci on display",
+          "The shop owner kept two abaci at the counter for calculations",
+          "Children learned to count using wooden abaci in the classroom",
+          "The antique store had a collection of Chinese and Japanese abaci",
+          "Before digital calculators, merchants used abaci to track their sales",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.ə.saɪ/",
+  },
+  abacist: {
+    definitions: [
+      {
+        text: "Someone who's really good at using an abacus to do math. Like a calculator whiz, but with one of those bead-counting frames instead of a digital device.",
+        examples: [
+          "The skilled abacist could solve complex math problems faster than someone with a calculator",
+          "My grandfather was an amazing abacist in his shop before digital registers",
+          "The market vendor was known as the best abacist in the neighborhood",
+          "She learned from an old abacist how to use the counting frame properly",
+          "Modern abacists still compete in mental math competitions",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.ə.sɪst/",
+  },
+  aback: {
+    definitions: [
+      {
+        text: "When something surprises or shocks you so much that you physically move back a bit or feel stunned. Usually used in the phrase 'taken aback', like when something catches you off guard and makes you go 'whoa!'",
+        examples: [
+          "I was taken aback when she suddenly quit her job",
+          "The rude comment caught him aback",
+          "She was taken aback by how much the prices had gone up",
+          "The loud noise sent them aback",
+          "We were all taken aback by his sudden change in behavior",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæk/",
+  },
+  abacterial: {
+    definitions: [
+      {
+        text: "When something doesn't have any bacteria in it or isn't caused by bacteria. Like when you have a cold (which is caused by a virus, not bacteria) or when something is just really, really clean.",
+        examples: [
+          "The flu is an abacterial infection - it's caused by a virus",
+          "The water was completely abacterial after being boiled",
+          "Her symptoms suggested it was an abacterial condition",
+          "The lab needed abacterial samples for the test",
+          "They confirmed it was an abacterial infection",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbækˈtɪəriəl/",
+  },
+  abactinal: {
+    definitions: [
+      {
+        text: "The side or part of a sea animal (like a starfish) that's facing away from its mouth. It's basically just the top or back side of the animal.",
+        examples: [
+          "The starfish's abactinal surface was bright orange",
+          "Scientists studied the abactinal spines of the sea urchin",
+          "The abactinal side of the creature had unique markings",
+          "You can see the pattern better from the abactinal view",
+          "The damage was only on the abactinal surface",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈæktɪnəl/",
+  },
+  abaction: {
+    definitions: [
+      {
+        text: "When someone takes away your stuff by force or steals a bunch of things at once. It's basically a fancy legal word for theft, especially when someone takes a lot of things or animals.",
+        examples: [
+          "The farmer reported an abaction when his cattle went missing",
+          "The police investigated the abaction of goods from the warehouse",
+          "There was a series of abactions in the neighborhood",
+          "The insurance covered losses from abaction",
+          "They charged him with abaction after he stole multiple cars",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈækʃən/",
+  },
+  abactor: {
+    definitions: [
+      {
+        text: "Someone who steals cattle or other farm animals. Think of it as a cow thief or livestock rustler. It's an old-school legal term that's still used sometimes.",
+        examples: [
+          "The abactor made off with three cows in the night",
+          "Police were on the lookout for abactors in the farming region",
+          "The ranch installed cameras to catch any potential abactors",
+          "He was known as a notorious abactor in the county",
+          "The abactor left tracks leading to the highway",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈæktər/",
+  },
+  abaculus: {
+    definitions: [
+      {
+        text: "A small, colored tile used to make pictures in ancient art, like a tiny square piece in a mosaic. Think of it like one piece of a bigger picture made up of lots of little tiles.",
+        examples: [
+          "The ancient Roman floor was made up of thousands of colorful abaculi",
+          "Each abaculus in the mosaic was carefully placed to create the pattern",
+          "The artist used golden abaculi to make the sun shine in their mosaic",
+          "They found perfectly preserved abaculi in the ruins of the old building",
+          "The museum displayed a collection of original abaculi from ancient Greece",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbækjʊləs/",
+  },
+  abaculi: {
+    definitions: [
+      {
+        text: "More than one abaculus - these are the small, colored tiles used in ancient art to make mosaics. It's just the plural way of saying 'multiple small tiles' used in making pictures.",
+        examples: [
+          "The archaeologists found hundreds of abaculi scattered around the site",
+          "The ancient artists arranged the abaculi to form beautiful patterns",
+          "They carefully restored the missing abaculi in the mosaic",
+          "Different colored abaculi were used to create the detailed image",
+          "The floor was decorated with glass and stone abaculi",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbækjʊlaɪ/",
+  },
+  abacus: {
+    definitions: [
+      {
+        text: "A counting tool with beads or stones that slide on rods, used to do math. It's like an old-school calculator that helps you add and subtract by moving the beads up and down.",
+        examples: [
+          "The teacher showed the kids how to count using an abacus",
+          "Many Asian countries still teach kids to use an abacus",
+          "She could do complex math problems quickly on her abacus",
+          "The antique shop had a beautiful wooden abacus for sale",
+          "Before calculators, people used an abacus to do their math",
+        ],
+      },
+      {
+        text: "In architecture, it's the flat piece on top of a column that helps support what's above it. Think of it like a cap that sits on top of a pillar.",
+        examples: [
+          "The marble abacus on each column helped distribute the weight",
+          "The ancient temple's columns all had decorated abacuses",
+          "You can see the abacus clearly on top of each Greek column",
+          "The architect designed a modern take on the traditional abacus",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəkəs/",
+  },
+  abacuses: {
+    definitions: [
+      {
+        text: "More than one abacus - whether you're talking about multiple counting tools or the tops of columns. It's just the plural way of saying 'multiple abacus'.",
+        examples: [
+          "The math class had enough abacuses for every student",
+          "Ancient merchants often carried abacuses with them",
+          "The museum displayed abacuses from different time periods",
+          "The ruins showed that all the abacuses on the columns were carved from marble",
+          "They found several wooden abacuses in the old school house",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəkəsɪz/",
+  },
+  abaft: {
+    definitions: [
+      {
+        text: "A direction on a boat or ship meaning 'toward the back'. If you're standing at the front of a boat looking forward, abaft means anything behind you. It's like saying 'in back of' or 'behind' but specifically on a boat.",
+        examples: [
+          "The captain told me to move abaft the mast",
+          "The fishing gear is stored somewhere abaft",
+          "The storm clouds were gathering abaft of our ship",
+          "You'll find the bathroom abaft the kitchen area",
+          "The crew quarters are located abaft the bridge",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɑːft/",
+  },
+  abaka: {
+    definitions: [
+      {
+        text: "A type of plant fiber that comes from a banana-like tree in the Philippines, used to make ropes and other stuff. People often call it Manila hemp. It's super strong and doesn't rot easily when wet, which is why it's great for making things like ropes for ships.",
+        examples: [
+          "The ship's ropes were made from abaka because it's so durable",
+          "They used abaka fiber to weave the traditional bags",
+          "The local craftsmen prefer abaka for making strong rope",
+          "She bought a beautiful bag made from woven abaka fiber",
+          "The Philippines is famous for producing high-quality abaka"
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɑːkə/",
+  },
+  abalienating: {
+    definitions: [
+      {
+        text: "When you're giving away or transferring something that belongs to you to someone else, usually in a formal or legal way. It's like when you hand over ownership of something completely.",
+        examples: [
+          "He's abalienating his property to his children before retiring",
+          "The company is abalienating its assets to avoid bankruptcy",
+          "She's slowly abalienating her business interests to her partners",
+          "The process of abalienating land requires proper documentation",
+          "They're abalienating their rights to the patent"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbeɪliəneɪtɪŋ/"
+  },
+  abalienation: {
+    definitions: [
+      {
+        text: "The act of giving away or transferring ownership of something to someone else, usually through official or legal means. Think of it as the formal process of handing over your rights to something.",
+        examples: [
+          "The abalienation of the house to his son took several weeks",
+          "They completed the abalienation of the company's assets",
+          "The lawyer handled the abalienation of their property",
+          "This abalienation agreement needs both signatures",
+          "The abalienation of rights must be done in writing"
+        ]
+      }
+    ],
+    pronunciation: "/əˌbeɪliəˈneɪʃən/"
+  },
+  abalone: {
+    definitions: [
+      {
+        text: "A type of sea snail with a flat shell that has a shiny, colorful inside. People eat it as seafood and use the pretty shells for jewelry and decoration.",
+        examples: [
+          "We ordered grilled abalone at the seafood restaurant",
+          "She found a beautiful abalone shell on the beach",
+          "The necklace was made with pieces of abalone shell",
+          "Fresh abalone is considered a delicacy in many cultures",
+          "They farm abalone for food and jewelry"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbəˈloʊni/"
+  },
+  abalones: {
+    definitions: [
+      {
+        text: "More than one abalone (those sea snails with the pretty shells). When you're talking about multiple of them at once.",
+        examples: [
+          "The divers collected fresh abalones from the ocean",
+          "There were several abalones stuck to the rocks",
+          "The restaurant serves different types of abalones",
+          "Wild abalones are protected in some areas",
+          "She sells jewelry made from abalones shells"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbəˈloʊniz/"
+  },
+  abandon: {
+    definitions: [
+      {
+        text: "When you completely leave something or someone behind and don't plan to come back. It's like walking away from something and never looking back, whether it's a place, person, or thing you're responsible for.",
+        examples: [
+          "The owners abandoned their car on the side of the road",
+          "She felt abandoned when her friends stopped talking to her",
+          "The developers abandoned the project halfway through",
+          "We had to abandon our picnic plans when it started raining",
+          "The cat was abandoned at the shelter by its previous family",
+        ],
+      },
+      {
+        text: "To completely give up on something, usually because it seems too hard or hopeless. Like when you're just done trying and say 'fuck it'.",
+        examples: [
+          "He abandoned all hope of finishing the marathon",
+          "I'm about to abandon this diet - it's too hard",
+          "They abandoned their dreams of becoming rock stars",
+          "Don't abandon your goals just because things got tough",
+        ],
+      },
+      {
+        text: "To let go of all control or restraint - just letting yourself go wild without caring about the consequences.",
+        examples: [
+          "They abandoned themselves to the music and danced all night",
+          "She abandoned all pretense of being polite and told him exactly what she thought",
+          "The crowd abandoned their inhibitions at the festival",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən/",
+  },
+abandonable: {
+    definitions: [
+      {
+        text: "When something can be left behind or given up on without causing major problems. If you can walk away from it without everything falling apart, it's abandonable.",
+        examples: [
+          "The project was abandonable since we had a backup plan",
+          "These tasks are abandonable if we run out of time",
+          "The game is abandonable at any point - your progress gets saved",
+          "Not all commitments are abandonable - some you have to stick with",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.ə.bəl/",
+  },
+abandoned: {
+    definitions: [
+      {
+        text: "When something or someone has been left behind and forgotten about. It's used to describe things that are empty, neglected, or no longer cared for by anyone.",
+        examples: [
+          "We explored the abandoned house at the end of the street",
+          "The abandoned puppy was taken to the shelter",
+          "The mall has been abandoned since the 90s",
+          "There was an abandoned shopping cart in the parking lot",
+          "The abandoned project collected dust on his laptop",
+        ],
+      },
+      {
+        text: "When someone does something without holding back or worrying about what others think. Like they're just going all out and not giving a fuck.",
+        examples: [
+          "She danced with abandoned joy at the wedding",
+          "The kids played with abandoned enthusiasm in the snow",
+          "He laughed in an abandoned way, not caring who heard",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dənd/",
+  },
+abandoner: {
+    definitions: [
+      {
+        text: "Someone who walks away from their responsibilities or leaves things/people behind. Basically, a person who bails when they should stick around.",
+        examples: [
+          "The abandoner left their pet at the shelter without any explanation",
+          "He was labeled an abandoner after quitting the team mid-season",
+          "The project abandoner didn't even tell anyone they were leaving",
+          "She didn't want to be seen as an abandoner, but she had to quit",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.ər/",
+  },
+  abandoners: {
+    definitions: [
+      {
+        text: "People who leave something or someone behind and don't come back. Like when someone quits something they started or walks away from responsibilities they should handle.",
+        examples: [
+          "The abandoners of the project left everyone else to finish the work",
+          "These gym abandoners always quit after January",
+          "The house was cheap because the previous abandoners left it in bad shape",
+          "Social media is full of account abandoners who never post anymore",
+          "The team felt betrayed by the abandoners who quit mid-season",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.ərz/",
+  },
+abandoning: {
+    definitions: [
+      {
+        text: "The act of walking away from something or someone and not coming back. It's when you give up on or leave behind something you were responsible for.",
+        examples: [
+          "She's abandoning her plan to move to New York",
+          "The cat's owner was caught abandoning it at the park",
+          "He's thinking of abandoning the project because it's too hard",
+          "They're abandoning their old office for a new location",
+          "The team is abandoning their original strategy after losing",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.ɪŋ/",
+  },
+abandonment: {
+    definitions: [
+      {
+        text: "When someone or something gets left behind completely. It's that feeling or situation when someone who should be there just isn't anymore.",
+        examples: [
+          "The abandonment of the old factory left the town with fewer jobs",
+          "She's dealing with abandonment issues from her childhood",
+          "The abandonment of the project wasted months of work",
+          "Their sudden abandonment of the house left the neighbors worried",
+          "The dog showed signs of abandonment trauma from its previous owner",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.mənt/",
+  },
+abandonments: {
+    definitions: [
+      {
+        text: "Multiple cases of people or things being left behind. When there's more than one situation where someone or something gets abandoned.",
+        examples: [
+          "The shelter deals with pet abandonments every holiday season",
+          "The city has seen many house abandonments in this area",
+          "Recent abandonments of local businesses have hurt the economy",
+          "The therapist specializes in helping people cope with past abandonments",
+          "These project abandonments are costing the company millions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dən.mənts/",
+  },
+abandons: {
+    definitions: [
+      {
+        text: "When someone leaves something or someone behind right now. It's the present-tense way of saying someone is giving up on or walking away from something.",
+        examples: [
+          "He abandons every project as soon as it gets difficult",
+          "If the weather gets worse, the team abandons the climb",
+          "She never abandons her friends when they need help",
+          "The company abandons products that don't sell well",
+          "When it rains, everyone abandons the beach quickly",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæn.dənz/",
+  },
+  abanic: {
+    definitions: [
+      {
+        text: "Having to do with fans or the action of fanning something. It's like when you're waving something back and forth to create air movement, just like a fan does.",
+        examples: [
+          "The abanic motion of the leaves created a cool breeze",
+          "She made an abanic gesture with the paper to cool herself down",
+          "The dancer's abanic movements with the fan were graceful",
+          "The abanic device helped circulate air in the room",
+          "Birds create an abanic effect with their wings while flying",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbænɪk/",
+  },
+abannition: {
+    definitions: [
+      {
+        text: "When someone gets kicked out or banned from a place for a long time or forever. It's like being told you can never come back to somewhere, usually as a punishment.",
+        examples: [
+          "His abannition from the club meant he couldn't attend any more meetings",
+          "The student faced abannition from school after breaking major rules",
+          "Their abannition from the country forced them to start a new life elsewhere",
+          "The player's abannition from the league lasted three seasons",
+          "After the incident, he suffered abannition from all local bars",
+        ],
+      },
+    ],
+    pronunciation: "/æbəˈnɪʃən/",
+  },
+abapical: {
+    definitions: [
+      {
+        text: "When something is moving or pointing away from the tip or top of something. Think of it like going in the opposite direction of the pointy end.",
+        examples: [
+          "The plant's growth was abapical, spreading out from the tip",
+          "The design showed an abapical pattern, flowing away from the peak",
+          "The water flowed in an abapical direction down the mountain",
+          "The branches grew in an abapical manner from the tree's top",
+          "The paint strokes moved in an abapical way from the center",
+        ],
+      },
+    ],
+    pronunciation: "/æˈbæpɪkəl/",
+  },
+abaptiston: {
+    definitions: [
+      {
+        text: "An old-school medical tool that doctors used to drill into the skull without going too deep. It had a special guard on it to stop it from drilling too far - kind of like those things you put on drill bits today to control how deep they go.",
+        examples: [
+          "The surgeon used an abaptiston to safely operate on the patient's skull",
+          "Medical museums often display the abaptiston as an example of early surgical tools",
+          "The abaptiston was a major improvement in making skull surgery safer",
+          "They found an ancient abaptiston in the archaeological dig",
+          "Modern surgeons no longer use the abaptiston for operations",
+        ],
+      },
+    ],
+    pronunciation: "/æbæpˈtɪstən/",
+  },
+  abase: {
+    definitions: [
+      {
+        text: "To make someone feel small, worthless, or less important - usually by humiliating them or treating them like they're lower than you. It's like when someone tries to make themselves feel bigger by making others feel tiny.",
+        examples: [
+          "The boss tried to abase his employees by mocking their ideas in meetings",
+          "She refused to abase herself by begging for forgiveness",
+          "The bully would abase other kids to feel more powerful",
+          "He won't abase himself just to get a promotion",
+          "The teacher shouldn't abase students for making mistakes",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪs/",
+  },
+abased: {
+    definitions: [
+      {
+        text: "When someone has been made to feel small, worthless, or humiliated. It's like when your confidence has been crushed and you feel lower than dirt.",
+        examples: [
+          "He felt completely abased after being yelled at in front of everyone",
+          "The abased worker quietly left the meeting after being criticized",
+          "She stood there, abased and embarrassed, as they laughed at her mistake",
+          "The once-proud leader now looked abased and defeated",
+          "They left feeling abased after the harsh rejection",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪst/",
+  },
+  abasement: {
+    definitions: [
+      {
+        text: "When someone or something is brought down low or made to feel small and worthless. It's like when someone makes you feel really bad about yourself on purpose, or when you put yourself down in front of others.",
+        examples: [
+          "The public abasement of the politician after his scandal was hard to watch",
+          "She couldn't stand the abasement of having to beg for her job back",
+          "His constant abasement of himself made everyone uncomfortable",
+          "The king forced his enemies into abasement by making them bow before him",
+          "She suffered the abasement of being corrected in front of the whole class",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪsmənt/",
+  },
+abash: {
+    definitions: [
+      {
+        text: "To make someone feel really embarrassed, ashamed, or uncomfortable - usually so much that they don't know what to say or do. It's like when someone points out something that makes you want to hide or disappear.",
+        examples: [
+          "The teacher's harsh criticism abashed the student into silence",
+          "He was abashed by all the attention at his surprise party",
+          "The child's innocent question abashed the adults in the room",
+          "She wasn't easily abashed by their rude comments",
+          "The praise from his hero abashed him so much he could barely speak",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæʃ/",
+  },
+  abashedly: {
+    definitions: [
+      {
+        text: "When you do something in a way that shows you feel super uncomfortable or shy because you got caught doing something or made a mistake. Like when you're looking down at your feet and can't make eye contact after someone points out you have food in your teeth.",
+        examples: [
+          "He abashedly admitted he forgot to do his homework",
+          "She abashedly looked away when her crush caught her staring",
+          "The kid abashedly handed over the cookie he tried to steal",
+          "I abashedly fixed my open zipper when someone pointed it out",
+          "He abashedly mumbled an apology after walking into the wrong room",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæʃɪdli/",
+  },
+abashing: {
+    definitions: [
+      {
+        text: "Making someone feel super awkward, uncomfortable, or shy - usually by catching them doing something or pointing out their mistake. It's like when you make someone want to hide their face or disappear into thin air.",
+        examples: [
+          "The teacher was abashing the student who got caught cheating",
+          "Stop abashing your little brother just because he can't ride a bike yet",
+          "Her loud comment about my new haircut was totally abashing",
+          "The boss was abashing the whole team for missing the deadline",
+          "His mom kept abashing him by showing his baby photos to everyone",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæʃɪŋ/",
+  },
+abashlessly: {
+    definitions: [
+      {
+        text: "Doing something without feeling any shame or awkwardness, even when maybe you should. It's like when someone does something embarrassing but acts like it's totally normal and doesn't care what anyone thinks.",
+        examples: [
+          "He abashlessly walked into the meeting 30 minutes late",
+          "She abashlessly asked for a raise after being late all week",
+          "The kid abashlessly picked his nose in front of everyone",
+          "He abashlessly wore his pajamas to the grocery store",
+          "She abashlessly told everyone about her wild weekend",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæʃləsli/",
+  },
+abashment: {
+    definitions: [
+      {
+        text: "That feeling when you want to crawl into a hole and disappear because you're so uncomfortable or shy about something that just happened. It's like when you wave at someone who wasn't waving at you, and that feeling hits you right after.",
+        examples: [
+          "His face turned red with abashment when he realized his fly was open",
+          "She felt deep abashment after sending the email to the wrong person",
+          "The kid's abashment was clear when his mom kissed him in front of his friends",
+          "I was filled with abashment when I called my teacher 'mom'",
+          "His abashment showed as he tried to explain why he was late again",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæʃmənt/",
+  },
+  abasia: {
+    definitions: [
+      {
+        text: "When someone physically can't walk, usually because of a medical problem with their nerves or muscles. It's like your brain wants to walk but your legs just won't cooperate.",
+        examples: [
+          "The stroke left him with temporary abasia",
+          "She developed abasia after the accident",
+          "The doctors are treating his abasia with physical therapy",
+          "The condition caused complete abasia for several weeks",
+          "His abasia improved with regular exercise",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪziə/",
+  },
+  abasing: {
+    definitions: [
+      {
+        text: "Making someone feel small, worthless, or humiliated. It's like when you deliberately try to make someone feel like shit about themselves.",
+        examples: [
+          "He kept abasing himself in front of his boss",
+          "Stop abasing your sister - it's not cool",
+          "The bully spent all day abasing the new kid",
+          "She felt horrible after abasing herself at the meeting",
+          "Their constant abasing remarks made everyone uncomfortable",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪsɪŋ/",
+  },
+  abask: {
+    definitions: [
+      {
+        text: "Sitting or lying in the sun to enjoy its warmth. It's like when you're chilling outside soaking up the sunshine, kind of like what cats do in a sunny window.",
+        examples: [
+          "The lizards were lying abask on the hot rocks",
+          "She spent the afternoon abask in the garden",
+          "The cats love to sit abask by the window",
+          "We found him abask on the beach",
+          "The old dog was sleeping abask in the yard",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbæsk/",
+  },
+  abatable: {
+    definitions: [
+      {
+        text: "Something that can be reduced, decreased, or stopped. Like when a problem or situation can be fixed or made less severe.",
+        examples: [
+          "The noise from the construction site is abatable with proper soundproofing",
+          "These tax penalties are abatable if you file the right paperwork",
+          "The smell was abatable by opening all the windows",
+          "Most common allergic reactions are abatable with medication",
+          "The damage to the car was abatable through repairs",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪtəbl/",
+  },
+abate: {
+    definitions: [
+      {
+        text: "When something becomes less intense or decreases over time. It's like when something strong starts to calm down or fade away, like pain getting better or a storm getting weaker.",
+        examples: [
+          "The rain finally started to abate after hours of downpour",
+          "Her headache began to abate once she took the medicine",
+          "The crowd's anger slowly abated as they listened to the explanation",
+          "We waited for the traffic to abate before starting our trip",
+          "The strong winds should abate by tomorrow morning",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪt/",
+  },
+abated: {
+    definitions: [
+      {
+        text: "When something has become less strong or has decreased. It's used to describe when something that was intense has calmed down or reduced.",
+        examples: [
+          "The storm had finally abated by morning",
+          "His fever hasn't abated even with medicine",
+          "Once the excitement had abated, we could think clearly",
+          "The noise from next door has abated now",
+          "The pain had somewhat abated after icing it",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪtɪd/",
+  },
+abatement: {
+    definitions: [
+      {
+        text: "The process of something decreasing or becoming less intense. It's when something reduces or gets lower over time, like when noise gets quieter or pain gets better.",
+        examples: [
+          "There's been no abatement in the number of spam calls lately",
+          "We're seeing an abatement of the flood waters",
+          "The tax abatement helped them save money on their house",
+          "Doctors noticed an abatement in her symptoms",
+          "The noise abatement program helped reduce airport noise",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪtmənt/",
+  },
+abatements: {
+    definitions: [
+      {
+        text: "More than one reduction or decrease in something. Usually used when talking about multiple instances of things getting reduced, especially with taxes or fees.",
+        examples: [
+          "The city offered tax abatements to new businesses",
+          "Several noise abatements were put in place near the airport",
+          "The company received rent abatements during construction",
+          "Property tax abatements helped attract new homeowners",
+          "They applied for multiple fee abatements",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbeɪt.mənts/",
+  },
+abater: {
+    definitions: [
+      {
+        text: "Someone or something that makes something else decrease or become less intense. Think of it like the thing that helps calm or reduce something.",
+        examples: [
+          "The new sound barrier acts as a noise abater for the neighborhood",
+          "This medicine works as a pain abater",
+          "The fan is an effective heat abater in the summer",
+          "Time is often the best abater of anger",
+          "The police serve as an abater of crime in the community",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbeɪ.tər/",
+  },
+abaters: {
+    definitions: [
+      {
+        text: "More than one person or thing that reduces or decreases something. Used when talking about multiple things that help calm or lessen something.",
+        examples: [
+          "These pills work as pain abaters",
+          "The trees act as natural noise abaters along the highway",
+          "Several stress abaters were recommended by the therapist",
+          "Both fans work as heat abaters in the room",
+          "The new policies serve as crime abaters in the area",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbeɪ.tərz/",
+  },
+abates: {
+    definitions: [
+      {
+        text: "When something becomes less strong or intense right now. It's like saying something is currently getting weaker or calming down.",
+        examples: [
+          "The rain finally abates after hours of downpour",
+          "His anger slowly abates as he calms down",
+          "The pain usually abates after taking the medicine",
+          "The storm abates as it moves away from the coast",
+          "The traffic typically abates after rush hour",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbeɪts/",
+  },
+abating: {
+    definitions: [
+      {
+        text: "When something is in the process of becoming less intense or calming down. It's like watching something gradually decrease or get weaker.",
+        examples: [
+          "The storm shows no signs of abating",
+          "Her fever is finally abating",
+          "The crowd's excitement isn't abating at all",
+          "With prices abating, more people can afford homes",
+          "The noise from the party is slowly abating",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbeɪ.tɪŋ/",
+  },
+abatis: {
+    definitions: [
+      {
+        text: "A defensive barrier made by laying down cut trees with their branches pointing outward. Think of it like a wall of spiky tree branches used to slow down people trying to get through.",
+        examples: [
+          "The soldiers quickly built an abatis to protect their position",
+          "The medieval fort was surrounded by an abatis",
+          "They used an abatis to block the forest path",
+          "The defensive line included a series of abatis",
+          "An abatis was constructed using fallen trees from the storm",
+        ],
+      }
+    ],
+    pronunciation: "/ˈæb.ə.tɪs/",
+  },
+  abatises: {
+    definitions: [
+      {
+        text: "A wall or barrier made by cutting down trees and stacking them up with their branches pointing out. It's like making a spiky wall of trees to stop people from getting through - kind of like how you'd stack up chairs to block a door, but with whole trees.",
+        examples: [
+          "The soldiers built abatises to protect their camp",
+          "They used abatises to block the enemy's path through the forest",
+          "The defensive line included several abatises between the trenches",
+          "Historical forts often used abatises as their first line of defense",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætɪsɪz/",
+  },
+abatjour: {
+    definitions: [
+      {
+        text: "A thing that's designed to direct light downward, like a special window or cover for a light. Think of it as a fancy way to make light go down instead of everywhere.",
+        examples: [
+          "The abatjour on the window helped keep the sun out of their eyes",
+          "They installed an abatjour to better light the dining table",
+          "The room had several abatjours to control the natural light",
+          "The architect added abatjours to create the perfect lighting",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætʒʊər/",
+  },
+abatjours: {
+    definitions: [
+      {
+        text: "More than one abatjour (things that direct light downward). It's just the plural form when you're talking about multiple light-directing devices.",
+        examples: [
+          "The house had abatjours installed in every room",
+          "They replaced all the old abatjours with modern ones",
+          "The lighting store had different styles of abatjours",
+          "Medieval churches often had abatjours to control sunlight",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætʒʊərz/",
+  },
+abaton: {
+    definitions: [
+      {
+        text: "A special area in old temples that normal people weren't allowed to enter. It's like a VIP area but for religious stuff - totally off-limits unless you were super important.",
+        examples: [
+          "Only priests were allowed to enter the abaton",
+          "The temple's abaton contained sacred objects",
+          "They kept the most important religious items in the abaton",
+          "The ruins still showed where the abaton used to be",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətɒn/",
+  },
+abator: {
+    definitions: [
+      {
+        text: "Someone who goes into a property that doesn't belong to them after someone dies and before the right person takes over. It's like sneaking into an empty house and acting like you own it when you really don't.",
+        examples: [
+          "The police removed the abator from the abandoned property",
+          "He became an abator when he moved into his neighbor's empty house",
+          "The law has strict punishments for abators",
+          "They hired security to keep abators out of the estate",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪtər/",
+  },
+abators: {
+    definitions: [
+      {
+        text: "More than one abator (people who take over properties they don't own). It's just the plural form when you're talking about multiple people doing this.",
+        examples: [
+          "The neighborhood had problems with abators moving into empty houses",
+          "The police arrested several abators last month",
+          "Laws against abators became stricter after the housing crisis",
+          "They set up cameras to catch any abators trying to enter",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪtərz/",
+  },
+abattage: {
+    definitions: [
+      {
+        text: "The process of cutting down trees, especially when you're clearing a whole area. It's basically a fancy word for chopping down lots of trees at once.",
+        examples: [
+          "The company started the abattage process to clear land for the new building",
+          "Forest management sometimes requires controlled abattage",
+          "The workers completed the abattage in just two days",
+          "They needed special permits for the abattage project",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætɑːʒ/",
+  },
+abattis: {
+    definitions: [
+      {
+        text: "A defensive wall made from trees that have been cut down and arranged with their branches pointing outward. It's like making a spiky barrier out of trees to stop people from getting through.",
+        examples: [
+          "They quickly built an abattis to protect their position",
+          "The old fort still had remains of the abattis around it",
+          "Soldiers used an abattis to block the forest path",
+          "Building an abattis was a common defensive strategy",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætɪs/",
+  },
+  abattised: {
+    definitions: [
+      {
+        text: "When something is protected or blocked off using cut down trees and branches laid in a specific way. It's like making a wall or barrier out of tree stuff to keep people or things out.",
+        examples: [
+          "The soldiers abattised the camp entrance with fallen trees",
+          "The path was abattised to stop vehicles from getting through",
+          "They abattised the forest clearing for protection",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætɪst/",
+  },
+  abattises: {
+    definitions: [
+      {
+        text: "Barriers or walls made from piled up trees and branches, usually used for defense. Think of it like a messy fence made of trees that's meant to stop people from getting through.",
+        examples: [
+          "The army built abattises around their position",
+          "They used abattises to block the forest paths",
+          "The old fort was surrounded by abattises",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbætɪsɪz/",
+  },
+  abattoir: {
+    definitions: [
+      {
+        text: "A place where animals are killed for food. It's basically a slaughterhouse - where livestock gets turned into meat for food.",
+        examples: [
+          "The cattle are taken to the abattoir for processing",
+          "He works at the local abattoir",
+          "The town's abattoir supplies meat to all the local butcher shops",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətwɑːr/",
+  },
+  abattoirs: {
+    definitions: [
+      {
+        text: "Multiple buildings or places where animals are killed for food. It's the plural of abattoir - meaning more than one slaughterhouse.",
+        examples: [
+          "The company owns several abattoirs across the country",
+          "Local abattoirs have to follow strict health regulations",
+          "Many small abattoirs closed down when the big ones opened",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətwɑːrz/",
+  },
+  abattu: {
+    definitions: [
+      {
+        text: "When someone feels completely worn out, down, or discouraged. It's like when you're so tired or sad that you can barely function.",
+        examples: [
+          "After working for 12 hours straight, he looked totally abattu",
+          "She felt abattu after getting the bad news",
+          "The team seemed abattu after losing the championship",
+        ],
+      },
+    ],
+    pronunciation: "/æbəˈtuː/",
+  },
+  abature: {
+    definitions: [
+      {
+        text: "The trail or path that a deer makes when walking through grass or bushes. It's like the footprints and crushed plants that show where the deer went.",
+        examples: [
+          "The hunter followed the abature through the forest",
+          "Fresh abature showed deer had passed through recently",
+          "You can track deer by looking for abature in the grass",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətʃər/",
+  },
+  abaxial: {
+    definitions: [
+      {
+        text: "When something faces away from or points away from the center or main part. Like when a leaf grows pointing away from the stem it's attached to.",
+        examples: [
+          "The abaxial side of a leaf is usually darker than the upper side",
+          "The petals had tiny hairs on their abaxial surface",
+          "The bug was crawling on the abaxial part of the leaf",
+          "Scientists study the abaxial patterns of plant growth",
+          "The abaxial position of the flowers made them droop downward",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈæk.si.əl/",
+  },
+abaxile: {
+    definitions: [
+      {
+        text: "When something isn't lined up with the center or main axis. Think of it like when something's off-center or not in line with the middle.",
+        examples: [
+          "The plant had abaxile flowers that grew away from the main stem",
+          "The weird growth pattern created an abaxile structure",
+          "The seed pods developed in an abaxile position",
+          "The mutation caused abaxile leaf placement",
+          "The roots grew in an abaxile pattern",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈæk.saɪl/",
+  },
+abba: {
+    definitions: [
+      {
+        text: "A word for father, usually used as a religious or respectful title. It's like calling someone 'dad' but in a more formal or spiritual way.",
+        examples: [
+          "The children at the monastery called their leader Abba",
+          "Abba was a common term in ancient religious texts",
+          "He prayed, starting with 'Abba, Father'",
+          "The wise Abba gave advice to his followers",
+          "In some cultures, Abba is still used to show respect to father figures",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbə/",
+  },
+abbacy: {
+    definitions: [
+      {
+        text: "The job or position of being in charge of a monastery or abbey. It's like being the boss of a religious community.",
+        examples: [
+          "He held the abbacy for over twenty years",
+          "The new abbacy brought many changes to the monastery",
+          "During his abbacy, the monastery grew twice in size",
+          "She was elected to the abbacy by the other nuns",
+          "The abbacy came with a lot of responsibilities",
+        ],
+      },
+      {
+        text: "The actual place or building where an abbot (the boss of a monastery) lives and works. Like their official headquarters.",
+        examples: [
+          "The abbacy was located on top of the hill",
+          "They renovated the old abbacy last summer",
+          "Visitors weren't allowed inside the abbacy",
+          "The abbacy had beautiful stained glass windows",
+          "Fire damaged part of the historic abbacy",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəsi/",
+  },
+  abbacies: {
+    definitions: [
+      {
+        text: "The areas or buildings that an abbot (the head of a monastery) controls. It's like the territory or property that belongs to the monastery's leader.",
+        examples: [
+          "The medieval map showed several abbacies in the region",
+          "The abbot managed multiple abbacies across the country",
+          "The old abbacies have been turned into tourist attractions",
+          "He spent years studying the history of local abbacies",
+          "The abbacies included both the monasteries and their surrounding farms"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæbəsiz/"
+  },
+abbacomes: {
+    definitions: [
+      {
+        text: "A person who helps or accompanies an abbot (monastery leader). Think of them like an assistant or companion to the person in charge of a monastery.",
+        examples: [
+          "The young monk served as an abbacomes to the elderly abbot",
+          "Each important monastery had several abbacomes to help run things",
+          "He was promoted to abbacomes after years of service",
+          "The abbacomes helped manage the monastery's daily operations",
+          "As an abbacomes, he traveled with the abbot on important visits"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbækəmiz/"
+  },
+abbaye: {
+    definitions: [
+      {
+        text: "The French word for abbey - a place where monks or nuns live and pray together. It's basically just another way to say monastery or convent.",
+        examples: [
+          "We visited a beautiful abbaye in the French countryside",
+          "The old abbaye has been converted into a hotel",
+          "Tourists often stop to take pictures of the historic abbaye",
+          "The abbaye is famous for its handmade cheese",
+          "Monks have lived in this abbaye for hundreds of years"
+        ]
+      }
+    ],
+    pronunciation: "/aˈbeɪ/"
+  },
+abbandono: {
+    definitions: [
+      {
+        text: "A musical term that tells performers to play freely and emotionally, without strictly following the rhythm. It's like telling musicians to just go with the flow and express themselves.",
+        examples: [
+          "The composer wrote 'con abbandono' to tell players to be more expressive",
+          "She played the piano solo with perfect abbandono",
+          "The conductor asked for more abbandono in the emotional parts",
+          "The piece requires a sense of abbandono to sound right",
+          "Young musicians often struggle to play with true abbandono"
+        ]
+      }
+    ],
+    pronunciation: "/ˌɑbɑnˈdoʊnoʊ/"
+  },
+abbas: {
+    definitions: [
+      {
+        text: "An old word for the head of a monastery (now usually called an abbot). It's the person in charge of all the monks and the monastery's operations.",
+        examples: [
+          "The abbas led the morning prayers",
+          "They elected a new abbas after the old one retired",
+          "The abbas made all important decisions for the monastery",
+          "As abbas, he was responsible for everyone's wellbeing",
+          "The abbas lived in a separate building within the monastery"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbæs/"
+  },
+abbasi: {
+    definitions: [
+      {
+        text: "An old type of coin used in various Middle Eastern countries. Think of it like their version of dollars or euros back in the day.",
+        examples: [
+          "The merchant asked for five abbasi for the silk",
+          "They found a chest full of old abbasi coins",
+          "The museum has a collection of abbasi from different periods",
+          "Traders used abbasi for business along the Silk Road",
+          "The value of an abbasi varied between different regions"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɑːsi/"
+  },
+  abbate: {
+    definitions: [
+      {
+        text: "A religious leader in charge of a monastery or abbey - basically like a boss of a religious community. It's an old-fashioned word for what we usually call an abbot today.",
+        examples: [
+          "The abbate led the morning prayers for all the monks",
+          "As the new abbate, he was responsible for managing the monastery",
+          "The abbate made sure everyone followed the religious rules",
+          "They went to see the abbate for spiritual guidance",
+          "The abbate lived in a small room despite being the leader",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɑːteɪ/",
+  },
+abbatial: {
+    definitions: [
+      {
+        text: "Something that belongs to or relates to an abbey or its leader (the abbot). Think of it like saying something is 'church-related' but specifically for abbeys.",
+        examples: [
+          "The abbatial church was built in the 12th century",
+          "He lived in the abbatial house next to the monastery",
+          "The abbatial gardens were open to the public",
+          "They preserved many abbatial documents from medieval times",
+          "The abbatial seal was used on important papers",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪʃəl/",
+  },
+abbe: {
+    definitions: [
+      {
+        text: "A French word for a priest or religious leader, especially in the Catholic Church. It's like calling someone 'father' in a religious way, but with a French twist.",
+        examples: [
+          "The abbe gave a wonderful sermon on Sunday",
+          "They asked the abbe for his blessing",
+          "The abbe taught at the local religious school",
+          "Several abbes lived in the monastery",
+          "The abbe was known for helping the poor",
+        ],
+      },
+    ],
+    pronunciation: "/æˈbeɪ/",
+  },
+abbey: {
+    definitions: [
+      {
+        text: "A big religious building where monks or nuns live and pray together. Think of it like a mix between a church and a dormitory - it's both a place of worship and a home for religious people.",
+        examples: [
+          "Westminster Abbey is one of the most famous churches in London",
+          "The monks have lived in this abbey for hundreds of years",
+          "Tourists love visiting old abbeys to see their beautiful architecture",
+          "The abbey's bells ring every morning for prayer",
+          "She joined the abbey as a nun when she was twenty",
+        ],
+      },
+      {
+        text: "The group of religious people (like monks or nuns) who live and work together in an abbey building. It's like saying 'the whole community' rather than just the building.",
+        examples: [
+          "The entire abbey gathered for the special ceremony",
+          "The abbey voted to accept a new member",
+          "The abbey makes cheese to sell to local shops",
+          "He's been part of the abbey for thirty years",
+          "The abbey decided to renovate their living quarters",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbi/",
+  },
+  abbeys: {
+    definitions: [
+      {
+        text: "Big religious buildings where monks or nuns live and pray together. Think of it like a cross between a church and a house - people live there, but it's all about religion. Some famous ones are tourist spots now.",
+        examples: [
+          "Westminster Abbey is one of the most famous abbeys in England",
+          "The monks have lived in this abbey for hundreds of years",
+          "We visited some old abbeys during our trip to Europe",
+          "The abbey's walls are covered in beautiful artwork",
+          "They turned the old abbey into a museum",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.iz/",
+  },
+abbess: {
+    definitions: [
+      {
+        text: "The woman in charge of an abbey full of nuns. She's basically the boss of the abbey - like a principal, but for a religious community. She makes the rules and takes care of everything.",
+        examples: [
+          "The new abbess made some changes to the daily schedule",
+          "You need to ask the abbess for permission first",
+          "She's been the abbess of this community for twenty years",
+          "The abbess leads the prayers every morning",
+          "They elected a new abbess after the old one retired",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.əs/",
+  },
+abbesses: {
+    definitions: [
+      {
+        text: "More than one abbess - when you're talking about multiple women who are in charge of different abbeys. Each abbey has its own abbess, so when you're talking about several of them, you call them abbesses.",
+        examples: [
+          "The abbesses from different monasteries meet once a year",
+          "Medieval abbesses were often powerful and well-educated women",
+          "Three abbesses came to the ceremony",
+          "The abbesses discussed how to manage their communities",
+          "Different abbesses have different ways of running their abbeys",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.ə.sɪz/",
+  },
+  abboccato: {
+    definitions: [
+      {
+        text: "When wine is just a little bit sweet - not super sweet, but not completely dry either. It's like when you add just a tiny bit of sugar to your coffee.",
+        examples: [
+          "This Italian wine is abboccato - it has a hint of sweetness",
+          "If you don't like dry wines, try an abboccato one",
+          "The wine menu described the red as abboccato, perfect for beginners",
+          "She prefers abboccato wines over completely dry ones",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈkɑːtəʊ/",
+  },
+abbot: {
+    definitions: [
+      {
+        text: "The person in charge of a monastery - basically the boss of a place where monks live. Think of them like a principal, but for a religious community instead of a school.",
+        examples: [
+          "The abbot leads morning prayers every day",
+          "You need to ask the abbot's permission before entering the monastery",
+          "He served as abbot for over twenty years",
+          "The new abbot made some changes to the daily schedule",
+          "All the monks report to the abbot",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbət/",
+  },
+abbotcy: {
+    definitions: [
+      {
+        text: "The job or position of being an abbot - like how presidency is the job of being president, but for the person who runs a monastery.",
+        examples: [
+          "He held the abbotcy for three decades",
+          "The monks voted on who would take over the abbotcy",
+          "During his abbotcy, the monastery grew significantly",
+          "The responsibilities of the abbotcy include managing the monastery",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətsi/",
+  },
+abbotcies: {
+    definitions: [
+      {
+        text: "More than one abbotcy - when you're talking about multiple positions of being an abbot at different monasteries.",
+        examples: [
+          "There were several abbotcies available across the country",
+          "The church needed to fill three abbotcies that year",
+          "Medieval England had many powerful abbotcies",
+          "They studied the history of different abbotcies in Europe",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətsis/",
+  },
+  abbots: {
+    definitions: [
+      {
+        text: "The leaders or heads of monasteries (places where monks live). Think of them like the boss of a group of monks - they're in charge of running the place and making sure everyone follows the rules.",
+        examples: [
+          "The abbots gathered for their yearly meeting to discuss monastery business",
+          "He served as one of the most respected abbots in the country",
+          "The new abbot made some changes to the daily prayer schedule",
+          "Several abbots spoke out against the proposed changes",
+          "The monastery has had three different abbots in the past decade",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəts/",
+  },
+abbotship: {
+    definitions: [
+      {
+        text: "The job or position of being an abbot (leader of a monastery). It's like being the CEO of a monastery - you get the title, the responsibilities, and the authority that comes with running the place.",
+        examples: [
+          "He held the abbotship for over twenty years",
+          "The monks voted to give him the abbotship after the previous leader retired",
+          "Taking on an abbotship means being responsible for both spiritual and practical matters",
+          "The abbotship came with a lot of responsibilities he wasn't prepared for",
+          "Three people were considered for the abbotship",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbətʃɪp/",
+  },
+abbozzo: {
+    definitions: [
+      {
+        text: "A rough first sketch or outline of a painting. It's like when you quickly draw the basic shapes and ideas before adding all the details - just getting the main idea down on paper or canvas.",
+        examples: [
+          "The artist started with an abbozzo to plan out the composition",
+          "You can still see the original abbozzo under the finished painting",
+          "She likes to work from a detailed abbozzo before starting the final piece",
+          "The museum displayed both the abbozzo and the completed artwork",
+          "Making an abbozzo helps artists catch problems early in the process",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɒtsoʊ/",
+  },
+  abbreviatable: {
+    definitions: [
+      {
+        text: "When a word or phrase can be shortened into a smaller version. Like if something can be made shorter by cutting out some letters or parts.",
+        examples: [
+          "Most company names are abbreviatable - like 'Federal Express' to 'FedEx'",
+          "Long scientific terms are usually abbreviatable to make them easier to say",
+          "Not all words are abbreviatable - some are already too short",
+          "The project name was too long but fortunately abbreviatable",
+          "She wondered if the complicated title was abbreviatable for the form"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbriːviəˌteɪtəbl/"
+  },
+  abbreviate: {
+    definitions: [
+      {
+        text: "To make something shorter by cutting out some parts or letters. It's like creating a shorter version of a word or phrase that means the same thing.",
+        examples: [
+          "People often abbreviate 'television' to 'TV'",
+          "Can you abbreviate your presentation? It's too long",
+          "Students like to abbreviate their notes to write faster",
+          "Don't abbreviate important medical terms - it could be confusing",
+          "She had to abbreviate her name because it wouldn't fit on the form"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbriːviˌeɪt/"
+  },
+  abbreviated: {
+    definitions: [
+      {
+        text: "When something has been made shorter or cut down from its original length. It's the result of shortening something.",
+        examples: [
+          "USA is the abbreviated form of United States of America",
+          "He gave us the abbreviated version of what happened",
+          "The meeting was abbreviated due to time constraints",
+          "Dr. is an abbreviated way to write Doctor",
+          "She used abbreviated codes in her notes"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbriːviˌeɪtɪd/"
+  },
+  abbreviates: {
+    definitions: [
+      {
+        text: "When someone or something makes words or phrases shorter by cutting out parts. It's the present-tense action of shortening something.",
+        examples: [
+          "She always abbreviates people's names to nicknames",
+          "The computer program automatically abbreviates common phrases",
+          "The teacher abbreviates feedback comments to save time",
+          "The system abbreviates long web addresses into shorter links",
+          "He abbreviates everything in his text messages"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbriːviˌeɪts/"
+  },
+  abbreviating: {
+    definitions: [
+      {
+        text: "The act of making something shorter or cutting it down. It's what you're doing when you're in the process of shortening words or phrases.",
+        examples: [
+          "She's abbreviating her report to make it more concise",
+          "Abbreviating words too much can make them hard to understand",
+          "The editor is abbreviating all the long paragraphs",
+          "I'm abbreviating these instructions to save space",
+          "They're abbreviating the company name for the logo"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbriːviˌeɪtɪŋ/"
+  },
+  abbreviation: {
+    definitions: [
+      {
+        text: "A shortened version of a word or phrase. It's when you take a longer word or phrase and make it shorter by only using some of the letters.",
+        examples: [
+          "FBI is an abbreviation for Federal Bureau of Investigation",
+          "LOL is a common abbreviation in text messages",
+          "She couldn't understand all the abbreviations in the medical report",
+          "What's the abbreviation for your state?",
+          "The email was full of abbreviations I didn't know"
+        ]
+      }
+    ],
+    pronunciation: "/əˌbriːviˈeɪʃən/"
+  },
+  abbreviations: {
+    definitions: [
+      {
+        text: "Shortened versions of words or phrases. These are the shorter forms people use instead of writing or saying the full thing.",
+        examples: [
+          "Text messages are full of abbreviations like BTW and TBH",
+          "Medical documents use lots of abbreviations",
+          "I had to look up the meanings of all the abbreviations in the manual",
+          "The style guide has a list of common abbreviations",
+          "Some abbreviations are more well-known than others"
+        ]
+      }
+    ],
+    pronunciation: "/əˌbriːviˈeɪʃənz/"
+  },
+  abbreviator: {
+    definitions: [
+      {
+        text: "Someone or something that makes things shorter or creates shorter versions. Like a person who writes summaries or a computer program that shortens text.",
+        examples: [
+          "The abbreviator turned the long report into a one-page summary",
+          "This text abbreviator app can shorten your tweets automatically",
+          "She works as an abbreviator for academic papers",
+          "The news website uses an abbreviator to create short headlines",
+          "We need an abbreviator to make these instructions more concise",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbriːviˌeɪtər/",
+  },
+  abbreviatory: {
+    definitions: [
+      {
+        text: "Something that makes things shorter or is used for shortening. It's like when you're describing something that cuts down or summarizes other things.",
+        examples: [
+          "She used abbreviatory techniques to shorten the essay",
+          "The abbreviatory symbols helped save space in the notes",
+          "These abbreviatory methods will help you write faster",
+          "The book included some abbreviatory marks for common words",
+          "His abbreviatory style made the message easy to read",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbriːviəˌtɔri/",
+  },
+  abbreviators: {
+    definitions: [
+      {
+        text: "People or tools that make things shorter. It's just the plural form of abbreviator - meaning more than one person or thing that shortens stuff.",
+        examples: [
+          "The team of abbreviators turned the long book into a short summary",
+          "These abbreviators help students take notes faster",
+          "Professional abbreviators work to make legal documents more readable",
+          "The company uses several abbreviators to process their documents",
+          "Text abbreviators are popular tools for social media posts",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbriːviˌeɪtərz/",
+  },
+  abbreviature: {
+    definitions: [
+      {
+        text: "The shortened version of something, or the act of making something shorter. It's like the result you get after cutting down text or the process of doing it.",
+        examples: [
+          "The abbreviature of the company name became its popular nickname",
+          "Students created abbreviatures of their class notes",
+          "This abbreviature makes the long title easier to remember",
+          "The document showed common abbreviatures used in texting",
+          "Her abbreviature of the story kept all the important parts",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbriːviəˌtʃər/",
+  },
+  abc: {
+    definitions: [
+      {
+        text: "The basic or beginning parts of something. Just like how the alphabet starts with A, B, C, it's used to talk about the simplest or most fundamental stuff you need to know.",
+        examples: [
+          "You need to learn the ABCs of cooking before trying complex recipes",
+          "The tutorial covers the ABCs of using a smartphone",
+          "Let me teach you the ABCs of car maintenance",
+          "Every beginner should start with the ABCs of programming",
+          "She's still learning the ABCs of the job",
+        ],
+      },
+      {
+        text: "The actual alphabet letters A, B, and C, usually used when talking about the alphabet itself or teaching kids to read.",
+        examples: [
+          "The kids are learning their ABCs in kindergarten",
+          "She can sing the ABC song perfectly",
+          "The blocks had ABCs printed on them",
+          "He arranged the files in ABC order",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪ.biːˈsiː/",
+  },
+  abdicate: {
+    definitions: [
+      {
+        text: "When someone in power (usually a king or queen) decides to give up their position and step down from their role. It's like quitting, but specifically for people who have important leadership positions.",
+        examples: [
+          "The king abdicated the throne to marry the woman he loved",
+          "After the scandal, there was pressure on the CEO to abdicate his position",
+          "Rather than face more criticism, she chose to abdicate her role as team captain",
+          "The queen abdicated in favor of her son, making him the new king",
+          "He refused to abdicate despite the protests against his leadership",
+        ],
+      },
+      {
+        text: "To give up or walk away from a responsibility or duty that you're supposed to handle. Like when you just completely stop doing something you're meant to do.",
+        examples: [
+          "He abdicated all responsibility for the failed project",
+          "Parents who abdicate their duties to raise their kids",
+          "The manager abdicated his control over the department",
+          "She's basically abdicated her role as team leader by never showing up",
+          "Don't abdicate your responsibilities just because they're hard",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dɪ.keɪt/",
+  },
+  abdication: {
+    definitions: [
+      {
+        text: "When someone in power officially gives up their position or responsibility, usually by choice. Like when a king or queen steps down and lets someone else take over.",
+        examples: [
+          "The king's abdication shocked the entire country",
+          "Her abdication of responsibility left the project in chaos",
+          "After the scandal, everyone called for his abdication",
+          "The abdication was announced on national television",
+          "His abdication from the CEO position was unexpected",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæb.dɪˈkeɪ.ʃən/",
+  },
+abdications: {
+    definitions: [
+      {
+        text: "More than one instance of someone giving up their power or responsibility. It's just the plural form of abdication.",
+        examples: [
+          "History shows that forced abdications often lead to chaos",
+          "There were several abdications in the royal family that year",
+          "The company faced multiple abdications of senior management",
+          "Royal abdications are rare in modern times",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæb.dɪˈkeɪ.ʃənz/",
+  },
+abdicative: {
+    definitions: [
+      {
+        text: "Related to giving up power or responsibility. It describes something that involves stepping down from a position.",
+        examples: [
+          "The king's abdicative speech moved the entire nation",
+          "She showed abdicative tendencies long before quitting",
+          "The abdicative process took several months to complete",
+          "His abdicative behavior worried the board members",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dɪ.kə.tɪv/",
+  },
+abdicator: {
+    definitions: [
+      {
+        text: "Someone who gives up their power, position, or responsibility. It's what you call a person who steps down from their role.",
+        examples: [
+          "The former king became known as the reluctant abdicator",
+          "She was seen as a responsible abdicator for training her replacement",
+          "History remembers him as the first royal abdicator in the country",
+          "The CEO turned abdicator left the company in good hands",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dɪ.keɪ.tər/",
+  },
+abditive: {
+    definitions: [
+      {
+        text: "Something that can be hidden or kept secret. If you can tuck it away out of sight, it's abditive.",
+        examples: [
+          "The diary's abditive nature made it perfect for keeping secrets",
+          "She loved the jacket's abditive pockets for storing snacks",
+          "The document's abditive qualities made it ideal for sensitive information",
+          "The box had an abditive compartment for valuables",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dɪ.tɪv/",
+  },
+abditory: {
+    definitions: [
+      {
+        text: "A place where you can hide or store things. Think of it like a secret spot or hidden storage area.",
+        examples: [
+          "The old house had several abditory spaces behind the walls",
+          "She used the hollow book as an abditory for her jewelry",
+          "The castle's abditory protected valuable artifacts during the war",
+          "He discovered an abditory under the floorboards",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dɪ.tɔː.ri/",
+  },
+  abdomen: {
+    definitions: [
+      {
+        text: "The part of your body between your chest and your hips - basically your belly area. It's where your stomach and other important organs are. Think of it as the middle section of your body that gets bigger after a big meal.",
+        examples: [
+          "He felt a sharp pain in his abdomen after eating too fast",
+          "The doctor pressed on my abdomen to check for any problems",
+          "She did exercises to strengthen her abdomen",
+          "The punch to his abdomen knocked the wind out of him",
+          "Pregnant women often feel movement in their abdomen",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.də.mən/",
+  },
+  abdominal: {
+    definitions: [
+      {
+        text: "Related to your abdomen (belly area) or the muscles in that area. When people talk about 'abs', they're talking about abdominal muscles.",
+        examples: [
+          "He does abdominal exercises every morning to get a six-pack",
+          "The doctor said the abdominal pain might be from eating too much",
+          "She felt some abdominal cramping during her period",
+          "The workout focused on abdominal strength",
+          "The scan showed no issues in the abdominal region",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdɒm.ɪ.nəl/",
+  },
+  abdominals: {
+    definitions: [
+      {
+        text: "The muscles in your stomach area that make up your 'six-pack'. They're the muscles that help you sit up, bend over, and keep your body stable.",
+        examples: [
+          "He does 100 crunches every day to work on his abdominals",
+          "Your abdominals help protect your internal organs",
+          "Core exercises are great for strengthening your abdominals",
+          "She felt sore in her abdominals after the workout",
+          "The boxer took a hard hit to the abdominals",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdɒmɪnəlz/",
+  },
+abdominoanterior: {
+    definitions: [
+      {
+        text: "The front part of your belly area. It's basically when doctors need to be specific about the front of your stomach region, instead of the sides or back.",
+        examples: [
+          "The doctor checked the abdominoanterior region for any signs of injury",
+          "The ultrasound focused on the abdominoanterior area",
+          "She felt pain in the abdominoanterior region after eating",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊænˈtɪriər/",
+  },
+abdominocardiac: {
+    definitions: [
+      {
+        text: "When something involves both your belly area and your heart. It's used to describe symptoms or issues that affect both these parts of your body at the same time.",
+        examples: [
+          "The patient showed abdominocardiac symptoms after the meal",
+          "The doctor monitored his abdominocardiac reflexes",
+          "She experienced abdominocardiac pain during exercise",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊˈkɑːdiæk/",
+  },
+abdominocentesis: {
+    definitions: [
+      {
+        text: "A medical procedure where doctors use a needle to take fluid out of someone's belly area. Think of it like using a straw to take a sample of liquid from your stomach region, but way more medical and precise.",
+        examples: [
+          "The doctor performed an abdominocentesis to test for infection",
+          "She needed an abdominocentesis to reduce the fluid buildup",
+          "The abdominocentesis helped diagnose the cause of swelling",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊsenˈtiːsɪs/",
+  },
+abdominogenital: {
+    definitions: [
+      {
+        text: "Related to both the belly area and the private parts. It's used when talking about things that affect or connect both these areas of the body.",
+        examples: [
+          "The patient reported abdominogenital pain",
+          "The scan looked at the abdominogenital region",
+          "The doctor examined the abdominogenital area for signs of injury",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊˈdʒenɪtəl/",
+  },
+abdominohysterectomy: {
+    definitions: [
+      {
+        text: "A surgery where doctors remove the uterus through a cut in the belly. It's basically a type of surgery to take out the womb, but specifically doing it through the stomach area instead of other ways.",
+        examples: [
+          "She scheduled an abdominohysterectomy for next month",
+          "The doctor explained the abdominohysterectomy procedure step by step",
+          "Recovery from an abdominohysterectomy usually takes several weeks",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊhɪstəˈrektəmi/",
+  },
+abdominohysterotomy: {
+    definitions: [
+      {
+        text: "A surgery where doctors make a cut through the belly to reach the uterus. It's like making a temporary door through the stomach area to get to the womb, usually to deliver a baby or fix something.",
+        examples: [
+          "The doctor performed an abdominohysterotomy to deliver the baby",
+          "She needed an abdominohysterotomy due to complications",
+          "The abdominohysterotomy left a small scar on her lower belly",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊhɪstəˈrɒtəmi/",
+  },
+  abdominoposterior: {
+    definitions: [
+      {
+        text: "Related to both the belly area (abdomen) and the back part of something. It's like describing something that involves both your stomach area and your back at the same time.",
+        examples: [
+          "The doctor explained the pain was abdominoposterior, meaning it went from the front of the belly to the back",
+          "The scan showed an abdominoposterior view of the injury",
+          "The medical student had to learn about abdominoposterior relationships in anatomy class",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊpɒˈstɪəriər/",
+  },
+abdominoscope: {
+    definitions: [
+      {
+        text: "A medical tool doctors use to look inside someone's belly area. Think of it like a tiny camera on a tube that lets doctors see what's going on in there without having to make a big cut.",
+        examples: [
+          "The doctor used an abdominoscope to check for problems",
+          "Modern abdominoscopes have high-definition cameras",
+          "The hospital got a new abdominoscope for minimally invasive surgeries",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdɒmɪnəskoʊp/",
+  },
+abdominoscopy: {
+    definitions: [
+      {
+        text: "A medical procedure where doctors use a special camera tool to look inside someone's belly area through a tiny cut. It's like giving doctors a window to see what's happening inside without major surgery.",
+        examples: [
+          "The doctor recommended an abdominoscopy to find out what was causing the pain",
+          "She had an abdominoscopy done as an outpatient procedure",
+          "Modern abdominoscopy techniques only need small incisions",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪˈnɒskəpi/",
+  },
+abdominothoracic: {
+    definitions: [
+      {
+        text: "Related to both the belly area and the chest area. It's used to describe something that involves or affects both your stomach region and your chest region at the same time.",
+        examples: [
+          "The injury was abdominothoracic, affecting both his chest and stomach areas",
+          "The surgeon specialized in abdominothoracic procedures",
+          "The scan showed an abdominothoracic view of the organs",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊθɔːˈræsɪk/",
+  },
+abdominous: {
+    definitions: [
+      {
+        text: "Having a big belly or pot belly. When someone's stomach sticks out or is larger than usual.",
+        examples: [
+          "The abdominous man had trouble finding shirts that fit well",
+          "Years of beer drinking left him quite abdominous",
+          "The abdominous cat waddled across the room",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdɒmɪnəs/",
+  },
+abdominovaginal: {
+    definitions: [
+      {
+        text: "Related to both the belly area and the vagina. Used to describe something that involves or connects these two areas of the body.",
+        examples: [
+          "The doctor performed an abdominovaginal examination",
+          "She experienced abdominovaginal pain after the procedure",
+          "The ultrasound provided an abdominovaginal view",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊvəˈdʒaɪnəl/",
+  },
+abdominovesical: {
+    definitions: [
+      {
+        text: "Related to both the belly area and the bladder. Used when talking about something that involves or connects the stomach area and the bladder.",
+        examples: [
+          "The scan revealed an abdominovesical issue",
+          "The doctor explained the abdominovesical connection",
+          "She had an abdominovesical procedure scheduled",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdɒmɪnoʊˈvɛsɪkəl/",
+  },
+abduce: {
+    definitions: [
+      {
+        text: "To move a body part away from the center or middle of the body. Like when you move your arm out to the side away from your body.",
+        examples: [
+          "The physical therapist helped him abduce his injured arm",
+          "You abduce your legs when doing jumping jacks",
+          "The dancer had to abduce her arms for the next move",
+          "He couldn't abduce his shoulder after the accident",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːs/",
+  },
+  abduced: {
+    definitions: [
+      {
+        text: "When something was moved away from the center of the body. Like when you moved your arm out to the side.",
+        examples: [
+          "The dancer abduced her leg in a graceful movement",
+          "He abduced his arms to make a T-pose",
+          "The patient abduced their fingers as part of the exercise",
+          "She abduced her thumb to give a thumbs up",
+          "The bird abduced its wings before taking flight",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːst/",
+  },
+abducens: {
+    definitions: [
+      {
+        text: "A nerve in your head that controls the muscle that moves your eye to look sideways. It's basically the nerve that lets you look to the side without turning your head.",
+        examples: [
+          "The doctor tested her abducens nerve by having her look side to side",
+          "His abducens nerve was damaged in the accident",
+          "The medical student had to learn all about the abducens nerve",
+          "Problems with your abducens nerve can make it hard to look sideways",
+          "The test showed her abducens nerve was working perfectly",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːsənz/",
+  },
+abducent: {
+    definitions: [
+      {
+        text: "Something that moves or pulls away from the middle of the body. Think of it like when you spread your arms out wide - those muscles are abducent muscles.",
+        examples: [
+          "The abducent muscles help you move your legs apart",
+          "She felt pain in her abducent muscle after the workout",
+          "The physical therapist focused on strengthening the abducent muscles",
+          "Your abducent muscles let you spread your fingers apart",
+          "The dance move required strong abducent motion",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːsənt/",
+  },
+abducentes: {
+    definitions: [
+      {
+        text: "More than one abducens nerve. These are the nerves in your head that let both of your eyes look sideways.",
+        examples: [
+          "The surgeon had to be careful not to damage the abducentes during the operation",
+          "Both abducentes were working properly",
+          "The medical book had a chapter about abducentes",
+          "Testing the abducentes is part of a basic eye exam",
+          "Problems with the abducentes can cause double vision",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːsəntiːz/",
+  },
+abduces: {
+    definitions: [
+      {
+        text: "When someone or something moves away from the center of the body right now. Like when you're actively moving your arm away from your side.",
+        examples: [
+          "The trainer abduces his arm to show the proper form",
+          "When she abduces her leg, you can see the muscle working",
+          "The physical therapist abduces the patient's arm gently",
+          "He abduces his fingers to stretch them out",
+          "The dancer abduces her arms as part of the move",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːsɪz/",
+  },
+abducing: {
+    definitions: [
+      {
+        text: "In the process of moving something away from the middle of the body. Like when you're in the middle of spreading your arms out wide.",
+        examples: [
+          "She was abducing her legs in the exercise",
+          "By abducing his arms, he made himself look bigger",
+          "The patient was having trouble abducing their fingers",
+          "The bird was abducing its wings before takeoff",
+          "They were abducing their arms in sync during the dance",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdjuːsɪŋ/",
+  },
+abduct: {
+    definitions: [
+      {
+        text: "To take someone away by force or trick them into going somewhere. Usually means kidnapping or grabbing someone against their will.",
+        examples: [
+          "The movie was about aliens trying to abduct people",
+          "Someone tried to abduct a kid from the park",
+          "The criminals threatened to abduct his family",
+          "She was almost abducted while walking home",
+          "The hero stopped the villain from trying to abduct the president",
+        ],
+      },
+      {
+        text: "To move a body part away from the center of your body. Like spreading your arms or legs outward.",
+        examples: [
+          "The exercise requires you to abduct your legs",
+          "You abduct your arms when making a snow angel",
+          "The dancer had to abduct her leg for the move",
+          "He couldn't abduct his shoulder due to the injury",
+          "The physical therapist helped her abduct her arm",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌkt/",
+  },
+abducted: {
+    definitions: [
+      {
+        text: "When someone was taken away by force or tricked into going somewhere against their will. Past tense of abduct, like when someone got kidnapped.",
+        examples: [
+          "The missing person was abducted last night",
+          "She claimed she was abducted by aliens",
+          "The child was almost abducted but someone stepped in to help",
+          "The news reported that three people were abducted",
+          "He was abducted but managed to escape",
+        ],
+      },
+      {
+        text: "When something was moved away from the center of the body. Like after you've spread your arms out wide.",
+        examples: [
+          "Her abducted arm showed the proper exercise form",
+          "The dancer's abducted leg created a beautiful line",
+          "His abducted fingers were spread wide apart",
+          "The bird's abducted wings caught the wind perfectly",
+          "The patient's abducted shoulder showed improved mobility",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌktɪd/",
+  },
+  abducting: {
+    definitions: [
+      {
+        text: "Taking someone away by force or tricking them to go somewhere they don't want to. It's like when someone forces another person to go with them against their will.",
+        examples: [
+          "The news reported criminals abducting people from parking lots",
+          "She feared someone was abducting her cat when it went missing",
+          "The movie was about aliens abducting people from their homes",
+          "They caught the guy abducting dogs from backyards",
+          "Parents warn kids about strangers abducting children",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌktɪŋ/",
+  },
+abduction: {
+    definitions: [
+      {
+        text: "When someone takes a person or animal away by force or tricks. It's basically kidnapping - taking someone somewhere against their will.",
+        examples: [
+          "The abduction happened in broad daylight",
+          "Police are investigating the abduction of several pets",
+          "She reported her child's abduction immediately",
+          "The movie was about an alien abduction",
+          "There was an attempted abduction at the mall",
+        ],
+      },
+      {
+        text: "In body movement terms, it's when you move a body part away from the center of your body - like lifting your arm out to the side.",
+        examples: [
+          "The physical therapist showed me arm abduction exercises",
+          "Shoulder abduction is important for throwing a ball",
+          "The dancer performed a leg abduction movement",
+          "The exercise focuses on hip abduction",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌkʃən/",
+  },
+abductions: {
+    definitions: [
+      {
+        text: "More than one case of someone being taken away by force or tricks. When multiple kidnappings happen.",
+        examples: [
+          "There were several abductions in that area last month",
+          "The documentary covered famous alien abductions",
+          "Police noticed a pattern in the pet abductions",
+          "The news reported a series of abductions near the border",
+          "They're investigating multiple abductions in the city",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌkʃənz/",
+  },
+abductor: {
+    definitions: [
+      {
+        text: "Someone who takes another person or animal away by force or tricks. Basically, a kidnapper - someone who forces others to go with them against their will.",
+        examples: [
+          "The police are looking for the abductor",
+          "The abductor left no clues behind",
+          "They caught the pet abductor on security cameras",
+          "The child escaped from the abductor",
+          "Witnesses described the abductor's car",
+        ],
+      },
+      {
+        text: "A muscle that pulls a body part away from the center of your body - like the muscle that moves your arm out to the side.",
+        examples: [
+          "The hip abductor muscles help you walk sideways",
+          "She pulled her abductor muscle during dance practice",
+          "The exercise targets your thigh abductor",
+          "The physical therapist helped strengthen my abductor muscles",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌktər/",
+  },
+abductores: {
+    definitions: [
+      {
+        text: "The medical term for muscles that move parts of your body away from the middle. It's just the fancy Latin way of saying 'moving away' muscles.",
+        examples: [
+          "The doctor pointed to the abductores muscles in the hip",
+          "These exercises strengthen your abductores",
+          "The injury affected all the abductores in his leg",
+          "The anatomy book labeled all the abductores muscles",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌktɔːriːz/",
+  },
+abductors: {
+    definitions: [
+      {
+        text: "More than one person who takes others away by force or tricks. Multiple kidnappers.",
+        examples: [
+          "The abductors demanded a ransom",
+          "Police arrested all three abductors",
+          "The abductors were caught on security footage",
+          "They're searching for the pet abductors",
+        ],
+      },
+      {
+        text: "The muscles that move parts of your body away from the center, like the ones that lift your arms or legs to the side.",
+        examples: [
+          "The workout focuses on strengthening your abductors",
+          "My leg abductors are sore from exercise",
+          "The physical therapist massaged my hip abductors",
+          "Strong abductors help with balance",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌktərz/",
+  },
+abducts: {
+    definitions: [
+      {
+        text: "When someone takes another person or animal away by force or tricks right now. It's the present-tense way of saying someone is kidnapping or forcing others to go with them.",
+        examples: [
+          "If someone abducts your pet, call the police immediately",
+          "The movie shows how the alien abducts people",
+          "When a stranger abducts a child, every minute counts",
+          "The criminal abducts victims from parking lots",
+          "If anyone abducts your belongings, don't chase them",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʌkts/",
+  },
+  abeam: {
+    definitions: [
+      {
+        text: "When something is directly to the side of something else, making a right angle. Like if you're on a boat and see something exactly to your left or right, that thing is abeam of your boat. Same goes for planes - if you see something out the side window, it's abeam of you.",
+        examples: [
+          "The lighthouse was abeam of our boat as we sailed past",
+          "The pilot announced that New York City was now abeam on the left side",
+          "We spotted another ship abeam of us about a mile away",
+          "The rescue helicopter hovered abeam of the damaged vessel",
+          "The sun was abeam when we took that perfect side photo",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːm/",
+  },
+abecedarian: {
+    definitions: [
+      {
+        text: "Someone who's just starting to learn something, especially reading or writing. It's like calling someone a total newbie or beginner, but specifically about learning basic stuff like the alphabet.",
+        examples: [
+          "As an abecedarian in cooking, she started with learning how to boil water",
+          "The class was full of abecedarians learning their letters",
+          "Don't make fun of him, he's just an abecedarian at skateboarding",
+          "We were all abecedarians once when learning to code",
+          "She's teaching abecedarians how to read and write",
+        ],
+      },
+      {
+        text: "When something is arranged in alphabetical order, like how a dictionary lists words from A to Z.",
+        examples: [
+          "The contact list was in abecedarian order",
+          "The library uses an abecedarian system to organize books",
+          "She made an abecedarian list of party guests",
+          "The index is arranged in abecedarian sequence",
+          "Filing documents in abecedarian order makes them easier to find",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbiːsiːˈdɛəriən/",
+  },
+  abecedaries: {
+    definitions: [
+      {
+        text: "Books or lists that teach the alphabet, usually for kids learning their ABCs. Think of those picture books that go 'A is for Apple, B is for Ball' and so on.",
+        examples: [
+          "The teacher brought out some colorful abecedaries to help the kids learn their letters",
+          "My little sister loves her animal abecedaries where each letter shows a different creature",
+          "The library has a collection of historical abecedaries from different time periods",
+          "Parents often use abecedaries as their kid's first reading material",
+          "She made her own abecedaries using family photos for each letter",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbiːˈsiːdəriz/",
+  },
+abecedarium: {
+    definitions: [
+      {
+        text: "A book or guide that teaches the alphabet, usually with pictures or examples for each letter. It's like a fancy word for an ABC book.",
+        examples: [
+          "The museum had an ancient abecedarium carved in stone",
+          "She found a beautiful handmade abecedarium at the craft fair",
+          "Teachers used to carry an abecedarium to help teach reading",
+          "The old abecedarium had drawings next to each letter",
+          "He collected vintage abecedariums from different countries",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbiːˈsiːdəriəm/",
+  },
+abecedarius: {
+    definitions: [
+      {
+        text: "A poem or song where each line starts with a different letter of the alphabet in order. Like when you write a poem and the first line starts with A, second with B, and so on until Z.",
+        examples: [
+          "She wrote an abecedarius about her summer vacation",
+          "The ancient monks used to write religious abecedarius poems",
+          "Writing an abecedarius is a fun way to practice vocabulary",
+          "The kids made a funny abecedarius about their pet dog",
+          "His abecedarius told a story from A to Z",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbiːˈsiːdəriəs/",
+  },
+abed: {
+    definitions: [
+      {
+        text: "When you're in bed or lying down in bed. It's just a fancy way of saying 'in bed' that people used to use a lot more in the past.",
+        examples: [
+          "He was still abed at noon on Sunday",
+          "The sick child remained abed for several days",
+          "She likes to stay abed on cold winter mornings",
+          "The doctor told him to keep abed until his fever broke",
+          "They found him abed reading a book",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbed/",
+  },
+abedge: {
+    definitions: [
+      {
+        text: "To move away from or avoid the edge of something. It's like when you step back from a cliff or move away from the edge of anything.",
+        examples: [
+          "He quickly abedged when he realized how close he was to the drop",
+          "The cat abedged from the windowsill when it started to rain",
+          "She abedged from the platform as the train approached",
+          "The kids were told to abedge from the pool's deep end",
+          "It's smart to abedge when you're too close to danger",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbedʒ/",
+  },
+abey: {
+    definitions: [
+      {
+        text: "When something is temporarily stopped or put on hold. It's like pressing pause on something until later.",
+        examples: [
+          "The construction project fell into abey during the winter months",
+          "Their plans were held in abey until more funding came through",
+          "The court case remained in abey for several years",
+          "The decision was in abey pending further investigation",
+          "They put their travel plans in abey due to bad weather",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪ/",
+  },
+  abeyance: {
+    definitions: [
+      {
+        text: "When something is put on hold or paused, usually waiting for something else to happen first. Like when you put your plans on ice until you figure out what's going on. It's that limbo state where nothing's happening but you're not canceling it either.",
+        examples: [
+          "The project is in abeyance until we get more funding",
+          "She held her vacation plans in abeyance while waiting for her passport",
+          "The decision was held in abeyance pending further investigation",
+          "All parties kept their opinions in abeyance until the facts came out",
+          "The construction is in abeyance during the winter months",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪ.əns/",
+  },
+abeyant: {
+    definitions: [
+      {
+        text: "When something is temporarily stopped or suspended, just chilling there waiting for something to happen. It's like being on pause - not dead, just not active right now.",
+        examples: [
+          "The rules remained abeyant during the holiday season",
+          "His gym membership was abeyant while he recovered from surgery",
+          "The case stayed abeyant until new evidence showed up",
+          "Their friendship became abeyant after the big fight",
+          "The old traditions lay abeyant for many years",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪ.ənt/",
+  },
+abeigh: {
+    definitions: [
+      {
+        text: "An old-timey way of saying something or someone is being kept at a distance or held back. Think of it like keeping something at arm's length or making sure it doesn't get too close.",
+        examples: [
+          "The guards kept the crowd abeigh from the celebrity",
+          "She held her emotions abeigh during the meeting",
+          "The dogs kept the wolves abeigh from the sheep",
+          "He tried to keep his fears abeigh but they kept creeping back",
+          "The protesters were held abeigh by the police barrier",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪ/",
+  },
+abele: {
+    definitions: [
+      {
+        text: "A type of poplar tree with white-ish leaves that look silvery, especially on the bottom side. It's like a regular tree that decided to go all fancy and wear silver underneath.",
+        examples: [
+          "The wind made the abele leaves flash their silver undersides",
+          "They planted an abele in the park for its pretty silvery effect",
+          "The old abele tree provided perfect shade in summer",
+          "You can spot an abele by looking at the white underside of its leaves",
+          "The row of abele trees lined the driveway like silver guardians",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːl/",
+  },
+  abeles: {
+    definitions: [
+      {
+        text: "White poplar trees - those tall trees with silvery-white bark and leaves that look dark green on top but white and fuzzy underneath. They're the kind that make that rustling sound in the wind because their leaves shake super easily.",
+        examples: [
+          "The abeles in the park create a beautiful silver shimmer when it's windy",
+          "They planted a row of abeles along the street for shade",
+          "The abeles stand out in winter because of their white bark",
+          "You can spot abeles easily by looking at the underside of their leaves",
+          "The old abeles have been here longer than the neighborhood itself",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːlz/",
+  },
+abelmosk: {
+    definitions: [
+      {
+        text: "A tall plant that grows these weird-looking seed pods that smell like musk (kind of like perfume). People used to grow it to make perfume and medicine, and some still do. It's like nature's air freshener but in plant form.",
+        examples: [
+          "The abelmosk in her garden gives off a sweet scent in the evening",
+          "They used to make perfume from abelmosk seeds",
+          "The abelmosk grew taller than expected this year",
+          "You can spot an abelmosk by its musky-smelling pods",
+          "Traditional healers still use abelmosk in some medicines",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛlmɒsk/",
+  },
+abelmosks: {
+    definitions: [
+      {
+        text: "More than one abelmosk plant. These are those tall plants with the perfumey-smelling seed pods that people grow for their scent and sometimes for medicine.",
+        examples: [
+          "The garden was full of abelmosks releasing their sweet scent",
+          "She planted several abelmosks along the fence",
+          "The abelmosks all bloomed at the same time",
+          "You could smell the abelmosks from across the yard",
+          "Traditional gardens often had rows of abelmosks for their fragrance",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛlmɒsks/",
+  },
+  abelonian: {
+    definitions: [
+      {
+        text: "Something that works the same no matter what order you do it in. Like when you're adding numbers - 2+3 gives you the same result as 3+2. It's a math thing, but think of it like a recipe where the steps can be mixed up and you'll still get the same cake.",
+        examples: [
+          "Addition is abelonian because 5+3 is the same as 3+5",
+          "The way you arrange furniture in a box doesn't change how much space it takes up - that's abelonian",
+          "When mixing paint colors, it doesn't matter which color you add first - it's abelonian",
+          "The order of people high-fiving each other doesn't change the total number of high-fives",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːliən/",
+  },
+  abend: {
+    definitions: [
+      {
+        text: "When a computer program crashes or stops working suddenly without finishing what it was supposed to do. It's like when your game freezes and shuts down before you could save.",
+        examples: [
+          "The system had an abend right before I could submit my work",
+          "The IT team got called in to fix the abend in the banking software",
+          "My program kept having abends whenever I tried to process large files",
+          "The server experienced an abend during the update",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbend/",
+  },
+  abends: {
+    definitions: [
+      {
+        text: "More than one sudden computer crash or program failure. When multiple things are breaking down or stopping unexpectedly.",
+        examples: [
+          "The system was having multiple abends throughout the day",
+          "We need to fix these abends before launching the website",
+          "The developer documented all the abends to track the pattern",
+          "These random abends are driving the users crazy",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbendz/",
+  },
+  abenteric: {
+    definitions: [
+      {
+        text: "When something's away from or not connected to your gut or intestines. Think of it like being far from your stomach area.",
+        examples: [
+          "The pain was abenteric, coming from somewhere else in the body",
+          "The doctor confirmed the issue was abenteric and not related to digestion",
+          "The symptoms were abenteric, showing up in the arms instead of the belly",
+          "We're looking at abenteric causes for the discomfort",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈentərɪk/",
+  },
+  abepithymia: {
+    definitions: [
+      {
+        text: "When you completely lose your appetite and just don't feel like eating at all. It's like when you're so stressed or sick that food is the last thing on your mind.",
+        examples: [
+          "The flu gave me such bad abepithymia I didn't eat for two days",
+          "Depression can cause abepithymia in some people",
+          "She experienced abepithymia after getting some really bad news",
+          "The medication's side effects included temporary abepithymia",
+          "His anxiety led to periods of abepithymia where he'd skip meals",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌepɪˈθaɪmiə/",
+  },
+  aberdavine: {
+    definitions: [
+      {
+        text: "A small yellow and green bird that's part of the finch family. It's basically what bird nerds call a siskin - you know, those little birds that hang around pine trees and eat seeds.",
+        examples: [
+          "We spotted an aberdavine feeding at the bird feeder this morning",
+          "The aberdavine's yellow markings make it easy to spot in trees",
+          "A group of aberdavines were eating seeds from the pine cones",
+          "Bird watchers get excited when they see an aberdavine in their garden",
+          "The aberdavine is smaller than most backyard birds you usually see",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈdeɪvaɪn/",
+  },
+aberdonian: {
+    definitions: [
+      {
+        text: "Someone who's from Aberdeen, Scotland, or anything that has to do with Aberdeen. It's like how you'd call someone from New York a New Yorker, but for Aberdeen.",
+        examples: [
+          "My roommate is Aberdonian - she grew up in Aberdeen",
+          "The Aberdonian accent can be hard to understand if you're not used to it",
+          "She has that typical Aberdonian sense of humor",
+          "The restaurant serves traditional Aberdonian dishes",
+          "Many Aberdonians work in the oil industry",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈdəʊniən/",
+  },
+abernethy: {
+    definitions: [
+      {
+        text: "A simple, dry biscuit (or cookie if you're American) that's kind of like a fancy digestive. It's named after some doctor who came up with them, and they're usually round and have a slightly sweet taste.",
+        examples: [
+          "She always has Abernethy biscuits with her afternoon tea",
+          "The recipe for Abernethy biscuits is pretty simple - just flour, butter, and sugar mostly",
+          "My grandma loves dunking Abernethy biscuits in her coffee",
+          "The store sells traditional Scottish Abernethy biscuits",
+          "These Abernethy biscuits are perfect with cheese",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈnɛθi/",
+  },
+aberr: {
+    definitions: [
+      {
+        text: "To go off track or away from what's normal or expected. It's like when you're walking somewhere but end up taking a totally different path than usual.",
+        examples: [
+          "The conversation started about movies but quickly aberred into politics",
+          "His behavior started to aberr from his usual friendly self",
+          "The project aberred from its original goals",
+          "Scientists noticed the particles would sometimes aberr from their normal path",
+          "The story aberred so much from the truth, it was barely recognizable",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɜːr/",
+  },
+  aberrance: {
+    definitions: [
+      {
+        text: "When something or someone acts in a way that's really different from what's normal or expected. Like when something is weird or off from how it should be.",
+        examples: [
+          "The aberrance in his behavior made everyone worried - he's usually so cheerful",
+          "There was a clear aberrance in the test results compared to normal",
+          "The weather's aberrance this year has messed up all the plants",
+          "Scientists noticed an aberrance in the data that didn't make sense",
+          "The aberrance in her usually perfect handwriting showed she was nervous",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛrəns/",
+  },
+aberrancy: {
+    definitions: [
+      {
+        text: "When something keeps going away from what's normal or expected. It's like when things keep being weird or different from how they should be, but as an ongoing thing.",
+        examples: [
+          "The aberrancy in his sleeping pattern was making him tired all the time",
+          "There's a strange aberrancy in how the machine is working lately",
+          "The aberrancy of the results made them redo all the experiments",
+          "Doctors noticed an aberrancy in how his heart was beating",
+          "The aberrancy in student behavior during full moons was pretty obvious",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛrənsi/",
+  },
+aberrant: {
+    definitions: [
+      {
+        text: "When something or someone is way different from what's normal or expected. It's like when something stands out because it's not following the usual rules or patterns.",
+        examples: [
+          "His aberrant behavior at the party made everyone uncomfortable",
+          "The plant showed aberrant growth patterns in the new soil",
+          "That's pretty aberrant for a cat - they usually hate water",
+          "The stock market showed some aberrant movements this week",
+          "Her aberrant sleep schedule was messing with her health",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛrənt/",
+  },
+aberrantly: {
+    definitions: [
+      {
+        text: "When something is done in a way that's totally different from what's normal or expected. It's like when actions or behaviors are weird or off compared to how they usually are.",
+        examples: [
+          "The dog was acting aberrantly after eating something from the trash",
+          "The computer started behaving aberrantly after the update",
+          "The team performed aberrantly badly in today's game",
+          "The plants were growing aberrantly in the new environment",
+          "She's been responding aberrantly to normal situations lately",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɛrəntli/",
+  },
+aberrate: {
+    definitions: [
+      {
+        text: "To move away from what's normal or expected. It's when something starts going in a different direction or acting differently from how it usually does.",
+        examples: [
+          "His behavior started to aberrate from normal after the accident",
+          "The project began to aberrate from its original plan",
+          "Light can aberrate when it passes through different materials",
+          "The company's values started to aberrate from their founding principles",
+          "The experiment results began to aberrate from predictions",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəreɪt/",
+  },
+aberrated: {
+    definitions: [
+      {
+        text: "When something has gone off track or away from what's normal. It's like when something has already changed or moved away from how it should be.",
+        examples: [
+          "The aberrated test results showed something was wrong with the machine",
+          "His aberrated thinking led to some weird decisions",
+          "The aberrated growth pattern showed the plant was sick",
+          "The company's aberrated policies caused a lot of problems",
+          "The aberrated behavior patterns suggested something was wrong",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəreɪtɪd/",
+  },
+aberration: {
+    definitions: [
+      {
+        text: "When something weird or unusual happens that's totally different from what's normal. Like when your usually sweet cat suddenly decides to be a complete jerk for a day.",
+        examples: [
+          "His rude behavior was just an aberration - he's usually super nice",
+          "The snow in summer was a weather aberration",
+          "That terrible game was just an aberration in an otherwise great season",
+          "The spike in prices was an aberration in the market",
+          "Her sudden outburst was an aberration from her typical calm demeanor",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈreɪʃən/",
+  },
+aberrator: {
+    definitions: [
+      {
+        text: "Something or someone that goes against the normal way of doing things or breaks from what's expected. Like that one friend who always has to do everything differently from everyone else.",
+        examples: [
+          "He was known as the aberrator in the group, always choosing unusual solutions",
+          "The new policy was seen as an aberrator from traditional methods",
+          "The strange machine acted as an aberrator in the production line",
+          "She was proud to be an aberrator in the fashion industry",
+          "The virus acted as an aberrator in the cell's normal function",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbəreɪtər/",
+  },
+aberrometer: {
+    definitions: [
+      {
+        text: "A tool that measures how much light gets bent or distorted when it passes through something like your eye. It's like a super fancy camera that doctors use to check if your eyes are working right.",
+        examples: [
+          "The eye doctor used an aberrometer to check my vision",
+          "The lab's aberrometer helped design better contact lenses",
+          "Scientists calibrated the aberrometer before the eye exam",
+          "The new aberrometer gave more accurate readings than the old one",
+          "They installed an aberrometer to test the telescope's lenses",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈrɒmɪtər/",
+  },
+aberroscope: {
+    definitions: [
+      {
+        text: "A special tool that lets you see how light gets messed up when it goes through lenses or your eye. Think of it like a microscope but specifically for checking if glasses or contact lenses are working right.",
+        examples: [
+          "The optician used an aberroscope to test my new glasses",
+          "The lab's aberroscope showed problems with the lens design",
+          "They checked the contact lenses with an aberroscope",
+          "The old aberroscope needed to be replaced with a digital one",
+          "Students learned to use the aberroscope in their optics class",
+        ],
+      },
+    ],
+    pronunciation: "/əˈberəskəʊp/",
+  },
+  aberuncate: {
+    definitions: [
+      {
+        text: "To pull something completely out by its roots. Think of when you're gardening and you don't just cut a weed, but you grab it and yank the whole thing out, roots and all.",
+        examples: [
+          "She aberuncated all the dandelions from her lawn",
+          "The gardener spent all day aberuncating the invasive plants",
+          "Instead of just mowing over the weeds, you need to aberuncate them",
+          "The tree was completely aberuncated after the storm",
+          "They had to aberuncate the old stumps to clear the land",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbəˈrʌŋkeɪt/",
+  },
+abet: {
+    definitions: [
+      {
+        text: "To help or encourage someone do something wrong or illegal. Like when you're the lookout while your friend steals cookies from the cookie jar, or when you help cover up someone's mess.",
+        examples: [
+          "He abetted the robbery by driving the getaway car",
+          "Don't abet your brother's lies - just tell mom what really happened",
+          "She was charged with abetting tax fraud",
+          "The teacher caught them abetting each other during the test",
+          "His friends abetted his bad behavior by making excuses for him",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbet/",
+  },
+abetment: {
+    definitions: [
+      {
+        text: "When you help or encourage someone to do something wrong. It's like being the sidekick in a crime - you didn't do it yourself, but you helped make it happen.",
+        examples: [
+          "He was charged with abetment of theft for keeping watch",
+          "The abetment of cheating is just as bad as cheating itself",
+          "She faced charges of abetment in the fraud case",
+          "Their abetment of the prank got everyone in trouble",
+          "The court found him guilty of abetment in the scheme",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbet.mənt/",
+  },
+  abettal: {
+    definitions: [
+      {
+        text: "When you help or encourage someone to do something wrong or illegal. It's like being the sidekick to someone's bad behavior - you're not doing the bad thing directly, but you're helping it happen.",
+        examples: [
+          "He was charged with abettal for keeping watch while his friend robbed the store",
+          "Her abettal of the scheme made her just as responsible as the main perpetrator",
+          "The teacher's abettal of cheating got them fired",
+          "They got in trouble for abettal when they helped their friend sneak out",
+          "The court found him guilty of abettal in the fraud case",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbetəl/",
+  },
+abetted: {
+    definitions: [
+      {
+        text: "When you helped or encouraged someone to do something wrong in the past. It's the past tense way of saying you assisted in some sketchy shit.",
+        examples: [
+          "She abetted the crime by driving the getaway car",
+          "He abetted his friend's lie by backing up the fake story",
+          "The manager abetted the fraud by looking the other way",
+          "They abetted the prank by distracting the teacher",
+          "The corrupt cop abetted the criminals by giving them inside information",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbetɪd/",
+  },
+abetting: {
+    definitions: [
+      {
+        text: "When you're actively helping or encouraging someone to do something wrong. It's like being the person who says 'yeah do it!' or helps plan some shady business that's going down right now.",
+        examples: [
+          "She's abetting his bad habits by always making excuses for him",
+          "By keeping quiet about the cheating, you're basically abetting it",
+          "The security guard is abetting the thieves by letting them in after hours",
+          "Stop abetting his lies - just tell him to come clean",
+          "They're abetting the cover-up by deleting the evidence",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbetɪŋ/",
+  },
+abettor: {
+    definitions: [
+      {
+        text: "Someone who helps or encourages another person to do something wrong or illegal. Think of them as the backup dancer to someone else's crime or bad behavior - not the star of the show, but definitely part of making it happen.",
+        examples: [
+          "The abettor kept watch while the thief broke in",
+          "She was charged as an abettor in the fraud scheme",
+          "The corrupt banker acted as an abettor by laundering the money",
+          "Being an abettor to a crime can get you in just as much trouble",
+          "The police arrested both the main suspect and his abettor",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbetər/",
+  },
+  abevacuation: {
+    definitions: [
+      {
+        text: "When your body gets rid of stuff in a way that's not normal or healthy. It's like when your stomach or intestines aren't working the way they should.",
+        examples: [
+          "The doctor said his abevacuation was caused by food poisoning",
+          "She experienced abevacuation after taking those sketchy diet pills",
+          "The medication can cause abevacuation as a side effect",
+          "He went to the hospital when the abevacuation wouldn't stop",
+          "The nurse monitored his abevacuation patterns throughout the night",
+        ],
+      },
+    ],
+    pronunciation: "/æbɪvækjuˈeɪʃən/",
+  },
+abfarad: {
+    definitions: [
+      {
+        text: "A super old way to measure how much electrical charge something can hold. It's like measuring how much water a bucket can hold, but for electricity. Nobody really uses this anymore except in some really old science books.",
+        examples: [
+          "The ancient radio manual mentioned capacitance in abfarads",
+          "His grandfather's electrical textbook had measurements in abfarads",
+          "The museum display showed how they used abfarads in early electronics",
+          "She found an old calculator that still used abfarads",
+          "The antique meter displayed its readings in abfarads",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈfærəd/",
+  },
+abhenry: {
+    definitions: [
+      {
+        text: "An old-school unit for measuring electrical stuff, specifically how much a circuit resists changes in electrical current. Think of it like measuring how stubborn an electrical circuit is about changing - but it's so old, modern electricians don't use it anymore.",
+        examples: [
+          "The vintage electrical manual listed the measurements in abhenrys",
+          "They found old equipment that measured inductance in abhenrys",
+          "The history museum had a display explaining what an abhenry was",
+          "The professor mentioned abhenrys when teaching about the history of electronics",
+          "The ancient circuit diagram showed values in abhenrys",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈhɛnri/",
+  },
+abhinaya: {
+    definitions: [
+      {
+        text: "The art of telling stories through facial expressions and hand gestures in Indian dance and theater. It's like emoji in real life - where dancers use their face and hands to show emotions and tell stories without saying a word.",
+        examples: [
+          "Her abhinaya was so good, everyone could tell she was portraying love without her saying anything",
+          "The dance teacher spent hours teaching proper abhinaya techniques",
+          "Through abhinaya, she expressed joy, sadness, and anger in the performance",
+          "The audience was amazed by his mastery of abhinaya in the classical dance",
+          "She practiced abhinaya in front of the mirror to perfect her expressions",
+        ],
+      },
+    ],
+    pronunciation: "/əbhɪˈnʌjə/",
+  },
+abhiseka: {
+    definitions: [
+      {
+        text: "A special ceremony in Hindu and Buddhist traditions where they pour holy water and other sacred stuff over statues, people, or religious objects. It's like a spiritual bath that's supposed to bless or purify whatever's getting the sacred shower.",
+        examples: [
+          "The temple performed an abhiseka for the new Buddha statue",
+          "During the festival, thousands gathered to witness the abhiseka ceremony",
+          "The priest prepared the sacred water for the abhiseka ritual",
+          "They conducted an abhiseka to bless the new temple",
+          "The annual abhiseka ceremony marks the beginning of the festival",
+        ],
+      },
+    ],
+    pronunciation: "/əbhɪˈseɪkə/",
+  },
+  abhor: {
+    definitions: [
+      {
+        text: "When you really, really hate something or someone - like, not just dislike, but feel sick to your stomach about it. It's that feeling when something is so awful to you that you can't even stand being around it.",
+        examples: [
+          "I abhor the smell of durian - it makes me want to run away",
+          "She abhors violence in any form",
+          "He abhors people who are mean to animals",
+          "Most kids abhor eating vegetables",
+          "I abhor having to wake up early on weekends",
+          "She abhors the idea of public speaking"
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɔːr/",
+  },
+abhorrence: {
+    definitions: [
+      {
+        text: "A deep hatred or disgust for something that's so strong it makes you feel sick. It's like when you absolutely can't stand something and the very thought of it makes you want to get away from it.",
+        examples: [
+          "She has a total abhorrence for spiders",
+          "His abhorrence of loud chewing makes family dinners difficult",
+          "The group showed their abhorrence of the new policy by protesting",
+          "My abhorrence for morning meetings is well known in the office",
+          "She expressed her abhorrence of bullying in any form"
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɒrəns/",
+  },
+abhorrent: {
+    definitions: [
+      {
+        text: "When something is so awful, disgusting, or morally wrong that it makes you feel sick. It's like when you see or hear about something that's completely unacceptable and makes you want to scream 'hell no!'",
+        examples: [
+          "The way they treated their employees was absolutely abhorrent",
+          "His racist comments were abhorrent to everyone in the room",
+          "The conditions in the animal shelter were abhorrent",
+          "She found the idea of cheating abhorrent",
+          "The smell coming from the fridge was abhorrent",
+          "Their behavior at the party was completely abhorrent"
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɒrənt/",
+  },
+  abhorrer: {
+    definitions: [
+      {
+        text: "Someone who really fucking hates something or finds it totally disgusting. Like when someone absolutely can't stand something and makes it known.",
+        examples: [
+          "He's a known abhorrer of reality TV shows",
+          "As an abhorrer of spicy food, she always checks the menu carefully",
+          "The cat was a strong abhorrer of water and would fight anyone trying to give it a bath",
+          "Being an abhorrer of early mornings, she struggled with the new work schedule",
+          "She's a passionate abhorrer of social media and refuses to use any of it",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɔːrə/",
+  },
+abhorrers: {
+    definitions: [
+      {
+        text: "More than one person who really hates or can't stand something. It's just the plural way of saying 'abhorrer' - like when you're talking about a whole group of people who all hate the same thing.",
+        examples: [
+          "The abhorrers of the new policy formed a protest group",
+          "Social media abhorrers often meet in real life instead",
+          "Vegetarians are natural abhorrers of meat products",
+          "The abhorrers of modern art preferred classical paintings",
+          "These loud music abhorrers keep complaining about the neighborhood concerts",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɔːrəz/",
+  },
+abhorrible: {
+    definitions: [
+      {
+        text: "When something is so awful or disgusting that it deserves to be hated. It's like when something is just completely and totally hate-worthy.",
+        examples: [
+          "The smell in the locker room was absolutely abhorrible",
+          "His behavior at the party was completely abhorrible",
+          "The working conditions at the factory were abhorrible",
+          "That movie was so bad it was abhorrible",
+          "The taste of the expired milk was abhorrible",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɒrəbl/",
+  },
+abhorring: {
+    definitions: [
+      {
+        text: "When you're actively hating or being totally disgusted by something right now. It's the act of really not being able to stand something in the present moment.",
+        examples: [
+          "She sat there abhorring every minute of the boring meeting",
+          "The cat was abhorring the vet visit with every fiber of its being",
+          "He's currently abhorring his decision to try that super spicy sauce",
+          "The teenagers were abhorring their parents' choice of vacation spot",
+          "I'm abhorring this new phone update that changed everything",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɔːrɪŋ/",
+  },
+abhors: {
+    definitions: [
+      {
+        text: "When someone really fucking hates something or finds it completely disgusting. It's like when you have such a strong dislike for something that you can't even deal with it.",
+        examples: [
+          "He abhors getting up early in the morning",
+          "She abhors the smell of cigarette smoke",
+          "The teacher abhors it when students use their phones in class",
+          "My cat abhors water so much she won't even go near the bathroom",
+          "He abhors any kind of public speaking",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈhɔːz/",
+  },
+aby: {
+    definitions: [
+      {
+        text: "To deal with the consequences of something you did or to pay the price for it. It's like when karma comes back to bite you in the ass.",
+        examples: [
+          "You'll aby for that prank when your sister finds out",
+          "He had to aby for skipping work by doing double shifts",
+          "They'll aby for their mistakes sooner or later",
+          "She knew she would aby for lying to her friends",
+          "The team had to aby for their overconfidence in the final match",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪ/",
+  },
+  abidance: {
+    definitions: [
+      {
+        text: "When you stick to rules or agreements and actually follow them. It's like when you promise to do something and you actually do it, or when you follow the rules even if you don't really want to.",
+        examples: [
+          "The company requires strict abidance to safety protocols",
+          "Your continued abidance of the house rules is appreciated",
+          "The contract demands full abidance from both parties",
+          "Students must show abidance to the dress code",
+          "Her abidance to the diet plan helped her reach her goals",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdəns/",
+  },
+abide: {
+    definitions: [
+      {
+        text: "When you really can't stand something or someone - like it drives you absolutely crazy and you just can't deal with it. It's a stronger way of saying you hate something.",
+        examples: [
+          "I can't abide people who chew with their mouth open",
+          "She couldn't abide his constant complaining",
+          "I cannot abide rudeness to service workers",
+          "He couldn't abide the thought of moving away from his hometown",
+          "My mom can't abide messy rooms",
+        ],
+      },
+      {
+        text: "To follow rules or accept something, even if you don't like it. Like when you have to go along with something because those are the rules.",
+        examples: [
+          "All students must abide by the school rules",
+          "We have to abide by the terms of the contract",
+          "If you want to live here, you'll have to abide by our house rules",
+          "She agreed to abide by the court's decision",
+          "Everyone has to abide by traffic laws",
+        ],
+      },
+      {
+        text: "To stay somewhere or stick around, usually for a long time. It's like when you hang out or live somewhere and don't leave.",
+        examples: [
+          "The smell of garlic abides in the kitchen for days",
+          "Memories of that summer still abide with me",
+          "He couldn't abide in one place for too long",
+          "The old traditions abide in this small town",
+          "Their friendship has abided for over thirty years",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪd/",
+  },
+  abiders: {
+    definitions: [
+      {
+        text: "People who stick to and follow rules, agreements, or beliefs. Like those friends who always do what they say they'll do and never break the rules.",
+        examples: [
+          "The abiders in the group always showed up on time",
+          "They're strict abiders of the 'no phones at dinner' rule",
+          "Most abiders in the community follow the recycling guidelines",
+          "The club is full of rule abiders - no one ever breaks protocol",
+          "She's one of those law abiders who won't even jaywalk",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdərz/",
+  },
+  abides: {
+    definitions: [
+      {
+        text: "When someone accepts or follows rules or deals without fighting them. It's like when you agree to do something and actually stick to it.",
+        examples: [
+          "He abides by his parents' curfew rules",
+          "Everyone who lives here abides by the building's rules",
+          "She always abides by her promises",
+          "The company abides by strict safety standards",
+          "If you want to stay here, you gotta abide by our house rules",
+        ],
+      },
+      {
+        text: "When something continues to exist or stay the same over time. Like when feelings or situations just keep going and don't change.",
+        examples: [
+          "Their friendship abides despite living in different countries",
+          "Her love for pizza abides no matter how many times she eats it",
+          "The old traditions still abide in this town",
+          "His fear of spiders abides even after years of therapy",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdz/",
+  },
+  abiding: {
+    definitions: [
+      {
+        text: "When something lasts for a really long time and doesn't go away. It's like having a feeling or belief that sticks with you forever.",
+        examples: [
+          "She has an abiding love for chocolate",
+          "His abiding interest in space started when he was a kid",
+          "They share an abiding friendship that's lasted 20 years",
+          "The town has an abiding tradition of fireworks on New Year's",
+          "My abiding fear of heights never went away",
+        ],
+      },
+      {
+        text: "Following rules or agreements right now, in the present. Like when you're currently doing what you're supposed to do.",
+        examples: [
+          "I'm abiding by the speed limit",
+          "She's abiding by the terms of the contract",
+          "They're abiding by their parents' wishes",
+          "We're abiding by the doctor's orders",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdɪŋ/",
+  },
+  abidingly: {
+    definitions: [
+      {
+        text: "Doing something in a way that lasts or continues forever. When you do stuff with total commitment and stick to it no matter what.",
+        examples: [
+          "He remained abidingly loyal to his friends",
+          "She's abidingly committed to her workout routine",
+          "The couple is abidingly faithful to each other",
+          "Their family is abidingly grateful for the help they received",
+          "The community stays abidingly supportive of local businesses",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdɪŋli/",
+  },
+  abidingness: {
+    definitions: [
+      {
+        text: "The quality of sticking around or lasting for a long time. It's like when something just won't go away or change, but in a good way.",
+        examples: [
+          "The abidingness of their friendship amazed everyone",
+          "There's an abidingness to family traditions that keeps us connected",
+          "The abidingness of his passion for music never faded",
+          "She admired the abidingness of their commitment to each other",
+          "The abidingness of these old buildings shows how well they were built",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪdɪŋnəs/",
+  },
+  abie: {
+    definitions: [
+      {
+        text: "An old word that means to pay for something or face the consequences of your actions. It's like when you have to deal with the fallout of what you did.",
+        examples: [
+          "You'll abie for breaking the rules",
+          "They had to abie their mistakes",
+          "She'll make him abie for his actions",
+          "The company will abie for their negligence",
+          "You'll have to abie the cost of repairs",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪ/",
+  },
+  abiegh: {
+    definitions: [
+      {
+        text: "To pay for something or make up for it. It's like when you need to deal with the consequences of something by paying money or making things right.",
+        examples: [
+          "He had to abiegh the damage he caused to his neighbor's fence",
+          "The company will abiegh all travel expenses",
+          "You'll need to abiegh your mistakes somehow",
+          "They offered to abiegh the cost of repairs",
+          "She had to abiegh her debt before moving out",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbeɪ/",
+  },
+abience: {
+    definitions: [
+      {
+        text: "When you naturally want to stay away from or avoid things that bother you or make you uncomfortable. Like how you might automatically step back from a hot stove or dodge a ball coming at your face.",
+        examples: [
+          "Cats often show abience when strangers try to pet them",
+          "His abience to loud noises makes concerts difficult",
+          "She developed an abience to spicy food after getting sick once",
+          "The dog's abience to the vacuum cleaner was pretty obvious",
+          "Some people have a natural abience to confrontation",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbiəns/",
+  },
+abient: {
+    definitions: [
+      {
+        text: "Moving away from things that bug you or make you uncomfortable. It's like your natural instinct to back away from stuff you don't like or that might hurt you.",
+        examples: [
+          "She was abient around large crowds",
+          "The mouse showed abient behavior when it saw the cat",
+          "Most people are abient towards danger",
+          "He became abient to loud noises after the accident",
+          "The child was abient around strangers",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbiənt/",
+  },
+abietate: {
+    definitions: [
+      {
+        text: "A chemical that comes from pine tree sap. It's what gives pine trees that strong, fresh smell and is used in making things like soap and paint.",
+        examples: [
+          "The lab was extracting abietate from pine resin",
+          "They use abietate in some cleaning products",
+          "The natural soap contains abietate for a pine scent",
+          "Scientists study abietate for its useful properties",
+          "You can smell the abietate when you crush pine needles",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbiəteɪt/",
+  },
+abietene: {
+    definitions: [
+      {
+        text: "A clear liquid that comes from pine trees. It's like the tree's natural oil that you can get from its sap, and it smells exactly how you'd expect a pine tree to smell.",
+        examples: [
+          "They extracted abietene from the pine resin",
+          "The perfume contains natural abietene",
+          "You can smell abietene when you break open a pine needle",
+          "Scientists use abietene in various chemical processes",
+          "The pure abietene had a strong pine scent",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbiətiːn/",
+  },
+abietic: {
+    definitions: [
+      {
+        text: "Related to the stuff that comes from pine trees, especially their sap. When something is abietic, it means it's got something to do with pine resin or the chemicals that come from it.",
+        examples: [
+          "The soap contains abietic acid from pine trees",
+          "Scientists study abietic compounds in their lab",
+          "The natural cleaner uses abietic ingredients",
+          "You can find abietic substances in most pine trees",
+          "The perfume has abietic notes that smell like a forest",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbiˈetɪk/",
+  },
+  abietin: {
+    definitions: [
+      {
+        text: "A type of stuff you get from pine trees, specifically from their sticky sap or resin. It's like when you touch a pine tree and get that super sticky stuff on your hands - that contains abietin.",
+        examples: [
+          "Scientists extract abietin from pine trees to study it",
+          "The pine resin was rich in abietin",
+          "They use abietin in some chemical processes",
+          "You can find abietin in most pine tree species",
+          "The sticky residue contained traces of abietin"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbaɪətɪn/"
+  },
+  abietineae: {
+    definitions: [
+      {
+        text: "A group of trees that includes pines, firs, and other similar evergreen trees - you know, the ones that stay green all year and often get used as Christmas trees. Think of it as the pine tree family.",
+        examples: [
+          "The forest was full of trees from the abietineae group",
+          "Christmas tree farms mainly grow trees from the abietineae family",
+          "These trees are typical abietineae - they keep their needles all year",
+          "Scientists study abietineae to understand how pine trees evolved",
+          "Most trees in this mountain range belong to abietineae"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbiəˈtɪniː/"
+  },
+  abietineous: {
+    definitions: [
+      {
+        text: "When something is related to or similar to pine or fir trees. Like if something smells like pine trees or has features that remind you of them.",
+        examples: [
+          "The wood had that typical abietineous smell of pine",
+          "The forest had that strong abietineous scent after the rain",
+          "These leaves show abietineous characteristics",
+          "The extract had an abietineous quality to it",
+          "You could smell the abietineous fragrance from the Christmas tree"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbiəˈtɪniəs/"
+  },
+  abietinic: {
+    definitions: [
+      {
+        text: "A type of acid that comes from pine tree resin. It's like the sour component that makes pine sap do its thing - you can't see it, but it's what makes pine products work the way they do.",
+        examples: [
+          "They found abietinic acid in the tree samples",
+          "The lab was studying the abietinic compounds",
+          "Pine resin is rich in abietinic substances",
+          "They use abietinic acid in some industrial processes",
+          "The research focused on abietinic properties of the sap"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbiəˈtɪnɪk/"
+  },
+  abietite: {
+    definitions: [
+      {
+        text: "A sweet substance that comes from fir tree needles. It's basically tree sugar, but specifically from fir trees - like how maple syrup comes from maple trees, this is a sweet thing that comes from fir trees.",
+        examples: [
+          "Scientists extracted abietite from the fir needles",
+          "The study showed high levels of abietite in young fir trees",
+          "They found abietite while analyzing the tree samples",
+          "The needles contained natural abietite",
+          "Researchers studied how trees produce abietite"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbaɪətaɪt/"
+  },
+  abigails: {
+    definitions: [
+      {
+        text: "More than one abigail - meaning multiple personal maids who helped wealthy women with their daily routines in historical times. Like a group of personal assistants for fancy ladies back in the day.",
+        examples: [
+          "The mansion employed several abigails for the ladies of the house",
+          "The abigails gathered in the servants' quarters",
+          "Rich families often had multiple abigails",
+          "The abigails shared tips about handling their ladies' requests",
+          "Training new abigails was an important task"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæbɪɡeɪlz/"
+  },
+  abigailship: {
+    definitions: [
+      {
+        text: "Being a lady's maid or personal servant - basically like being someone's personal helper who takes care of their clothes, appearance, and daily needs. Think of it like being a personal assistant but back in the old days.",
+        examples: [
+          "She worked in abigailship for the wealthy family for twenty years",
+          "The role of abigailship required her to wake up before her mistress every day",
+          "Many young women found work through abigailship in rich households",
+          "Her duties in abigailship included helping with dressing and doing hair",
+          "The position of abigailship paid better than most servant jobs",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbɪɡeɪlʃɪp/",
+  },
+  abigeat: {
+    definitions: [
+      {
+        text: "The crime of stealing cattle or other farm animals. It's like regular theft, but specifically when someone takes animals that aren't theirs from farms or ranches.",
+        examples: [
+          "The rancher reported a case of abigeat when his cows went missing",
+          "The police were investigating several cases of abigeat in the farming community",
+          "Abigeat was a serious problem for farmers in the area",
+          "They installed security cameras to prevent abigeat on their ranch",
+          "The old laws had harsh punishments for abigeat",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbɪdʒiːæt/",
+  },
+  abigei: {
+    definitions: [
+      {
+        text: "People who steal cattle or farm animals - basically cattle rustlers or livestock thieves. It's the plural form, so it means more than one person who does this.",
+        examples: [
+          "The abigei struck three farms in one night",
+          "Local farmers formed patrols to catch the abigei",
+          "The sheriff posted warnings about abigei in the area",
+          "Modern abigei use trucks instead of horses to steal livestock",
+          "The ranch lost dozens of sheep to abigei last year",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbɪdʒiːaɪ/",
+  },
+  abigeus: {
+    definitions: [
+      {
+        text: "Someone who steals cattle or farm animals - like a cattle rustler or livestock thief. Think of them as the old-school version of car thieves, but for farm animals instead of vehicles.",
+        examples: [
+          "The abigeus made off with ten sheep in the night",
+          "They finally caught the abigeus who'd been targeting local farms",
+          "An abigeus needs transportation and somewhere to hide the stolen animals",
+          "The farmer spotted an abigeus trying to lead away his horses",
+          "Being an abigeus was considered a serious crime in farming communities",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪdʒiːəs/",
+  },
+  abying: {
+    definitions: [
+      {
+        text: "An old way of saying 'buying' - it means the same thing as buying stuff or purchasing things, just written in an old-fashioned way.",
+        examples: [
+          "He was abying goods at the market",
+          "The merchant spent the day abying spices for his shop",
+          "After abying the cloth, she started making dresses",
+          "They were abying and selling goods along the trade route",
+          "The old document mentioned abying land from local farmers",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbaɪɪŋ/",
+  },
+  abiliment: {
+    definitions: [
+      {
+        text: "Old-fashioned word for clothes or outfit - especially fancy or decorative ones. It's just a fancy way to say what someone's wearing or their gear and accessories.",
+        examples: [
+          "The knight wore his finest abiliment to the ceremony",
+          "She packed her best abiliment for the journey",
+          "The actor's abiliment included a fancy hat and coat",
+          "Their abiliment showed they were wealthy merchants",
+          "The museum displayed the traditional abiliment of ancient warriors",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪlɪmənt/",
+  },
+  abilitable: {
+    definitions: [
+      {
+        text: "When something can be given ability or power to do stuff. It's like saying something has the potential to be made capable of doing things.",
+        examples: [
+          "The robot was abilitable, meaning we could program it to do new tasks",
+          "The software was abilitable, allowing users to add new features",
+          "His mind was abilitable - ready to learn and grow",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪlɪtəbəl/",
+  },
+ability: {
+    definitions: [
+      {
+        text: "Being able to do something - like having the skill, power, or smarts to make it happen. It's what you can do, whether you're born with it or learned it.",
+        examples: [
+          "She has the ability to speak three languages",
+          "His ability to fix cars is amazing",
+          "I doubt my ability to climb that mountain",
+          "The ability to fly would be a cool superpower",
+          "She showed great ability in math",
+        ],
+      },
+      {
+        text: "When someone's really good at something specific - like a natural talent or skill they've developed. Think of it as their strong point or special power.",
+        examples: [
+          "Her artistic ability impressed everyone",
+          "He has a natural ability for making friends",
+          "The player's ability to score under pressure is incredible",
+          "My cat's ability to always land on its feet is wild",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪləti/",
+  },
+abilities: {
+    definitions: [
+      {
+        text: "All the different things someone can do or is good at - their collection of skills, talents, or powers. It's like a personal toolbox of what they're capable of.",
+        examples: [
+          "The job requires various abilities like coding and teamwork",
+          "Her abilities include singing, dancing, and acting",
+          "The superhero discovered new abilities",
+          "We need to test the candidate's abilities",
+          "The game lets you unlock different abilities as you level up",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪlətiz/",
+  },
+abime: {
+    definitions: [
+      {
+        text: "A super deep hole or gap that seems to go on forever. Think of it like a bottomless pit or a crazy deep canyon that makes you dizzy just looking at it.",
+        examples: [
+          "The cave opened into a dark abime that seemed endless",
+          "She felt like she was staring into an abime when looking down from the cliff",
+          "The underwater abime was too deep for divers to explore",
+          "The canyon created a massive abime between the mountains",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbiːm/",
+  },
+abintestate: {
+    definitions: [
+      {
+        text: "When someone dies without leaving a will - basically they didn't write down who gets their stuff. It's like leaving the game without saving - now everyone else has to figure out what happens next.",
+        examples: [
+          "He died abintestate so the court had to decide who got his house",
+          "Going abintestate can cause family drama over who gets what",
+          "She didn't want to die abintestate so she finally wrote her will",
+          "The lawyer explained what happens in abintestate cases",
+        ],
+      },
+    ],
+    pronunciation: "/æbɪnˈtestət/",
+  },
+abiogeneses: {
+    definitions: [
+      {
+        text: "When life pops up from stuff that isn't alive - like how the first living things on Earth came from non-living chemicals. Think of it as life starting from scratch, without any other life around to make it.",
+        examples: [
+          "Scientists study abiogeneses to understand how life began on Earth",
+          "The theory of abiogeneses tries to explain life's origins",
+          "Some people wonder if abiogeneses could happen on other planets",
+          "The experiment aimed to recreate conditions for abiogeneses",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪoʊˈdʒenəsiːz/",
+  },
+  abiogenesis: {
+    definitions: [
+      {
+        text: "When life comes from stuff that isn't alive. Like if rocks and chemicals somehow turned into living things without any other life being involved. Scientists use this word when talking about how life might have started on Earth way back when there was nothing alive yet.",
+        examples: [
+          "Scientists study abiogenesis to figure out how life began on Earth",
+          "The soup of chemicals in ancient oceans might have led to abiogenesis",
+          "Some people don't believe abiogenesis is possible",
+          "The lab is doing experiments to understand how abiogenesis might work",
+          "Early Earth conditions might have made abiogenesis possible",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪoʊˈdʒɛnəsɪs/",
+  },
+abiogenesist: {
+    definitions: [
+      {
+        text: "Someone who studies or believes that life can come from non-living things. Think of them like scientists trying to figure out how the first living things appeared on Earth when there was nothing alive yet.",
+        examples: [
+          "As an abiogenesist, she spends her time studying how chemicals could turn into life",
+          "The abiogenesist ran experiments to test their theories",
+          "Not every scientist is an abiogenesist, some have different ideas about how life started",
+          "He became an abiogenesist after learning about early Earth chemistry",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪoʊˈdʒɛnəsɪst/",
+  },
+abiogenetic: {
+    definitions: [
+      {
+        text: "Related to how life might come from non-living stuff. It's used to describe anything that has to do with life forming from things that aren't alive, like chemicals or rocks.",
+        examples: [
+          "The lab focuses on abiogenetic processes in early Earth conditions",
+          "They found some abiogenetic reactions that might explain how life started",
+          "The experiment showed some interesting abiogenetic patterns",
+          "She's writing a paper about abiogenetic chemistry",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪoʊdʒəˈnɛtɪk/",
+  },
+abiogenetically: {
+    definitions: [
+      {
+        text: "When something happens in a way where life comes from non-living things. It's how you'd describe the process of non-living stuff turning into living things without any other life being involved.",
+        examples: [
+          "The molecules might have come together abiogenetically to form the first cells",
+          "These compounds could have formed abiogenetically in ancient oceans",
+          "The structures appeared abiogenetically in the experiment",
+          "Life might have started abiogenetically on other planets too",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪoʊdʒəˈnɛtɪkli/",
+  },
+abiogenist: {
+    definitions: [
+      {
+        text: "Someone who believes or studies how life can start from non-living things. They're basically scientists trying to figure out how we got from a bunch of chemicals to actual living things.",
+        examples: [
+          "The abiogenist spent years studying chemical reactions that might create life",
+          "As an abiogenist, she believes life could have started from simple chemicals",
+          "The abiogenist team made a breakthrough in their research",
+          "He's a well-known abiogenist in the field of origin of life studies",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪˈbaɪədʒənɪst/",
+  },
+abiogenous: {
+    definitions: [
+      {
+        text: "Something that's produced or created without any living things being involved. It's used to describe stuff that forms all by itself from non-living materials.",
+        examples: [
+          "They found abiogenous compounds in the lab experiment",
+          "The crystals were abiogenous, forming naturally from minerals",
+          "Scientists look for abiogenous processes that might explain life's origins",
+          "These molecules formed through abiogenous reactions",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪˈɒdʒənəs/",
+  },
+  abiological: {
+    definitions: [
+      {
+        text: "When something has nothing to do with living things or biology. Like when you're talking about rocks, chemicals, or machines - stuff that was never alive in the first place.",
+        examples: [
+          "The moon is completely abiological - there's no life up there",
+          "The chemical reaction was purely abiological, no living things involved",
+          "They studied the abiological factors that affect plant growth, like sunlight and soil type",
+          "Computer processes are abiological - they're just machines doing their thing",
+          "The formation of crystals is an abiological process",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbaɪəˈlɒdʒɪkəl/",
+  },
+abiologically: {
+    definitions: [
+      {
+        text: "When something happens or works in a way that doesn't involve life or living things. It's like describing how non-living stuff does its thing without any help from living creatures.",
+        examples: [
+          "The rocks were formed abiologically, just pressure and heat doing their thing",
+          "The metal rusted abiologically - no bacteria needed",
+          "The computer processes data abiologically, unlike how our brains work",
+          "These crystals grow abiologically in caves",
+          "The chemical reaction happened abiologically in the lab",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbaɪəˈlɒdʒɪkəli/",
+  },
+abiosis: {
+    definitions: [
+      {
+        text: "When something is completely without life or living processes. Think of a place or state where nothing's alive - like the surface of the moon or a completely sterile environment.",
+        examples: [
+          "The scientists created abiosis in the lab to test the chemicals",
+          "The extreme heat created a state of abiosis in the test tube",
+          "They needed abiosis for the experiment - not even a single microbe could be there",
+          "The harsh conditions on Mars mean most of the planet is in abiosis",
+          "The sterilized tools were kept in abiosis until the surgery",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbaɪˈəʊsɪs/",
+  },
+abiotic: {
+    definitions: [
+      {
+        text: "Stuff in nature that isn't alive and never was - like rocks, water, or sunlight. It's all the non-living parts of the environment that affect living things.",
+        examples: [
+          "Soil, water, and air are all abiotic factors that plants need",
+          "The abiotic parts of the ocean include salt, temperature, and pressure",
+          "Climate change affects both living things and abiotic factors",
+          "Temperature is an abiotic factor that influences where animals can live",
+          "The abiotic elements in the desert make it hard for things to survive there",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbaɪˈɒtɪk/",
+  },
+abiotically: {
+    definitions: [
+      {
+        text: "When something happens without any living things being involved. It's like when nature does its thing all by itself, no life required.",
+        examples: [
+          "The minerals in the cave formed abiotically over thousands of years",
+          "The chemicals combined abiotically in the atmosphere",
+          "Some rocks are created abiotically through heat and pressure",
+          "The water cycle works abiotically - it doesn't need living things to function",
+          "The metal corroded abiotically due to the salty air",
+        ],
+      },
+    ],
+    pronunciation: "/eɪbaɪˈɒtɪkli/",
+  },
+  abiotrophy: {
+    definitions: [
+      {
+        text: "When parts of your body start breaking down or not working right because of problems with how they're getting their nutrients. Think of it like a plant slowly dying because it can't get what it needs from the soil, but this happens in your body.",
+        examples: [
+          "The doctor explained that his muscle weakness was caused by abiotrophy",
+          "The condition leads to abiotrophy in certain nerve cells",
+          "Early signs of abiotrophy include difficulty with balance",
+          "The genetic disorder resulted in abiotrophy of the cerebellum",
+          "Researchers are studying ways to prevent abiotrophy in aging patients",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪˈɒtrəfi/",
+  },
+  abiotrophic: {
+    definitions: [
+      {
+        text: "When something relates to or causes parts of the body to break down because they're not getting proper nutrients. It's like describing a process that makes things in your body slowly stop working right.",
+        examples: [
+          "The disease causes abiotrophic changes in the nervous system",
+          "They discovered an abiotrophic condition affecting the muscles",
+          "The symptoms showed classic signs of abiotrophic degeneration",
+          "The genetic mutation led to abiotrophic effects in the brain",
+          "Doctors identified the abiotrophic pattern early in the diagnosis",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪbaɪəˈtrɒfɪk/",
+  },
+  abir: {
+    definitions: [
+      {
+        text: "Colored powder that people throw at each other during celebrations, especially in Indian festivals like Holi. It's like having a paint fight, but with dry, bright-colored powder that gets everywhere.",
+        examples: [
+          "Everyone was covered in rainbow colors after throwing abir during the festival",
+          "She bought packets of abir to celebrate Holi with her friends",
+          "The streets were painted with abir after the celebrations",
+          "Kids were running around throwing handfuls of abir at each other",
+          "The red and yellow abir created beautiful patterns in the air",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪər/",
+  },
+  abirritant: {
+    definitions: [
+      {
+        text: "Something that helps calm down irritation or inflammation in your body. Think of it like a chill pill for angry tissues - it helps them relax and stop being so pissy.",
+        examples: [
+          "The cream works as an abirritant for itchy skin",
+          "The doctor prescribed an abirritant to help with the rash",
+          "Some natural oils have abirritant properties",
+          "The medicine acts as an abirritant for sore throats",
+          "They're testing new abirritant compounds for allergic reactions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪrɪtənt/",
+  },
+  abirritate: {
+    definitions: [
+      {
+        text: "To make something less irritated or inflamed. It's like telling your angry body parts to calm down and chill out.",
+        examples: [
+          "The medication helps abirritate the swollen joints",
+          "These herbs can help abirritate sensitive skin",
+          "The doctor used special drops to abirritate the red eyes",
+          "The treatment should abirritate the inflammation",
+          "Natural remedies can help abirritate minor skin reactions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪrɪteɪt/",
+  },
+  abirritating: {
+    definitions: [
+      {
+        text: "In the process of making something less irritated or inflamed. Like when you're actively trying to get your angry skin or other body parts to chill out and stop being so mad.",
+        examples: [
+          "The cream is abirritating the rash as we speak",
+          "The cooling gel was abirritating her sunburn",
+          "The medicine is slowly abirritating the swelling",
+          "These drops are abirritating my sore throat",
+          "The natural remedy was abirritating her irritated skin",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪrɪteɪtɪŋ/",
+  },
+  abirritated: {
+    definitions: [
+      {
+        text: "When something that was irritated or inflamed has been calmed down. It's like when your angry body parts finally got the message to relax and stopped being so dramatic.",
+        examples: [
+          "After the treatment, the skin was finally abirritated",
+          "The swelling had abirritated by morning",
+          "Once abirritated, the rash started to fade",
+          "Her throat was completely abirritated after the medicine",
+          "The inflammation had abirritated thanks to the cream",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪrɪteɪtɪd/",
+  },
+  abysmal: {
+    definitions: [
+      {
+        text: "When something is so incredibly bad it's like rock bottom - the absolute worst it could be. Like when you fail a test so hard you get a 2%, or when your team loses by 50 points.",
+        examples: [
+          "The service at that restaurant was abysmal - we waited two hours for cold food",
+          "His grades this semester were abysmal because he never studied",
+          "The weather was abysmal all week - rain, wind, and freezing cold",
+          "The team's performance was abysmal - they didn't score a single point",
+          "The internet connection here is abysmal, I can barely load a webpage",
+          "The movie had abysmal reviews - everyone said it was a complete waste of time",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪz.məl/",
+  },
+abysmally: {
+    definitions: [
+      {
+        text: "When something is done or happens in a terribly bad way. It's like doing something so poorly that it couldn't possibly be worse. Think of it as failing spectacularly at something.",
+        examples: [
+          "The project was abysmally managed - nobody knew what they were supposed to do",
+          "He did abysmally on the test because he fell asleep halfway through",
+          "The new phone performed abysmally - it kept crashing every five minutes",
+          "The team played abysmally, missing even the easiest shots",
+          "The speech went abysmally wrong when he forgot all his lines",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪz.məl.i/",
+  },
+abyss: {
+    definitions: [
+      {
+        text: "A super deep hole or space that seems to go on forever - like it has no bottom. Think of looking down from a really tall building or into the deepest part of the ocean where it's just endless darkness.",
+        examples: [
+          "The cave was so deep it felt like staring into an abyss",
+          "The submarine descended into the abyss of the ocean",
+          "She felt like she was standing at the edge of an abyss looking down",
+          "The canyon was like an abyss between the mountains",
+          "The night sky looked like a black abyss filled with stars",
+        ],
+      },
+      {
+        text: "When you're in a really dark place mentally or emotionally, like you're stuck in a hole you can't get out of. It's that feeling when everything seems hopeless and endless.",
+        examples: [
+          "After losing his job, he fell into an abyss of depression",
+          "She stared into the abyss of her empty social media feed",
+          "The breakup sent him into an abyss of sadness",
+          "Sometimes social media feels like scrolling into an endless abyss",
+          "He pulled himself out of the abyss by focusing on his health",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbɪs/",
+  },
+  abyssa: {
+    definitions: [
+      {
+        text: "A fancy way of saying multiple deep holes or bottomless pits. It's like saying 'abysses' but trying to sound extra smart about it.",
+        examples: [
+          "The ocean floor is full of abyssa where light never reaches",
+          "The caves had several abyssa that seemed to go on forever",
+          "Scientists discovered new abyssa in the deep sea trenches",
+          "The movie showed alien creatures emerging from the abyssa",
+          "Explorers mapped several abyssa in the underground cave system"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪsə/"
+  },
+abyssal: {
+    definitions: [
+      {
+        text: "Something that's super deep in the ocean - we're talking way down where it's pitch black and weird fish live. Like, so deep you couldn't swim there if you tried.",
+        examples: [
+          "Abyssal creatures don't need eyes because it's completely dark down there",
+          "The submarine was built to handle abyssal pressures",
+          "They found new species living in the abyssal zone",
+          "The abyssal plains cover most of the ocean floor",
+          "Those fish can only survive in abyssal conditions"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪsəl/"
+  },
+abysses: {
+    definitions: [
+      {
+        text: "More than one super deep hole or gap that seems to go on forever. Think multiple bottomless pits or really deep ocean trenches.",
+        examples: [
+          "The game had several abysses you had to jump over",
+          "The ocean floor is covered in deep abysses",
+          "The mountain range was split by dark abysses",
+          "The spaceship flew over countless abysses on the alien planet",
+          "The cave system had dangerous abysses everywhere"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪsɪz/"
+  },
+abyssobenthonic: {
+    definitions: [
+      {
+        text: "Stuff that lives or exists at the very bottom of the deepest parts of the ocean. It's where you find those crazy-looking fish with their own headlights because it's darker than dark down there.",
+        examples: [
+          "They discovered new abyssobenthonic species that glow in the dark",
+          "These creatures have adapted to abyssobenthonic conditions",
+          "The research focused on abyssobenthonic ecosystems",
+          "Abyssobenthonic animals can handle extreme pressure",
+          "The documentary showed rare abyssobenthonic life forms"
+        ]
+      }
+    ],
+    pronunciation: "/əˌbɪsoʊbenˈθɒnɪk/"
+  },
+abyssolith: {
+    definitions: [
+      {
+        text: "A huge rock formation that forms in the deepest parts of the ocean. Think of it like an underwater mountain, but one that's chilling in the darkest, deepest parts where barely anyone's ever seen it.",
+        examples: [
+          "The submarine's sonar detected a massive abyssolith",
+          "Scientists studied the unique minerals in the abyssolith",
+          "Deep-sea creatures made homes around the abyssolith",
+          "The mapping revealed several abyssoliths in the trench",
+          "Underwater currents shaped the ancient abyssolith"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪsəlɪθ/"
+  },
+  abyssopelagic: {
+    definitions: [
+      {
+        text: "Super deep ocean zones, like way deeper than where most sea life lives - we're talking more than 13,000 feet down where it's pitch black and cold as hell. It's basically the ocean's basement.",
+        examples: [
+          "Scientists found weird glowing fish in the abyssopelagic zone",
+          "The submarine couldn't handle the pressure in the abyssopelagic depths",
+          "Most of the abyssopelagic zone hasn't been explored yet",
+          "The creatures in the abyssopelagic zone don't need eyes because it's completely dark",
+          "Research ships use special equipment to study the abyssopelagic environment"
+        ]
+      }
+    ],
+    pronunciation: "/əˌbɪsoʊpəˈlædʒɪk/"
+  },
+abyssus: {
+    definitions: [
+      {
+        text: "A super deep hole or gap that seems to go on forever. Think of the deepest, darkest pit you can imagine - that's an abyssus. It's like nature's version of a bottomless pit.",
+        examples: [
+          "The cave explorer shined their light down the abyssus but couldn't see the bottom",
+          "The ancient myths talked about monsters living in the abyssus",
+          "Looking down the abyssus made me feel dizzy",
+          "The earthquake created an abyssus in the middle of the field",
+          "They couldn't measure how deep the abyssus went"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪsəs/"
+  },
+abiston: {
+    definitions: [
+      {
+        text: "An ancient type of stone that people used to think couldn't be destroyed by fire. Like asbestos, but way older and more mysterious. People don't really use this word anymore except when talking about old stories.",
+        examples: [
+          "The old texts described abiston as a magical fireproof stone",
+          "Ancient builders supposedly used abiston in important buildings",
+          "Nobody's sure if abiston was real or just a myth",
+          "The temple walls were said to be made of abiston",
+          "Historians debate what material abiston actually was"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbɪstən/"
+  },
+abiuret: {
+    definitions: [
+      {
+        text: "When something doesn't react to a specific test that scientists use to find proteins. It's like when you're looking for something specific but get zero results - in this case, no purple color shows up when you do the test.",
+        examples: [
+          "The sample came back abiuret, meaning no proteins were detected",
+          "Scientists use the abiuret result to rule out certain compounds",
+          "The test showed an abiuret reaction, surprising the researchers",
+          "If it's abiuret, we know it doesn't have the proteins we're looking for",
+          "The solution remained clear, confirming it was abiuret"
+        ]
+      }
+    ],
+    pronunciation: "/eɪˈbaɪjʊret/"
+  },
+abject: {
+    definitions: [
+      {
+        text: "When something is so bad it couldn't possibly get worse - like rock bottom terrible. Think total misery or complete hopelessness.",
+        examples: [
+          "They lived in abject poverty, not even having enough food to eat",
+          "His face showed abject misery after losing the championship",
+          "The prisoners were kept in abject conditions",
+          "She felt abject horror when she saw the accident",
+          "The team's performance was an abject failure"
+        ]
+      },
+      {
+        text: "When someone's totally given up and lost all their pride or self-respect. Like when you're so desperate you'll do literally anything.",
+        examples: [
+          "He made an abject apology, begging for forgiveness on his knees",
+          "The scandal left him in abject humiliation",
+          "She showed abject submission to her boss's demands",
+          "His behavior was absolutely abject - he had no dignity left",
+          "The politician's abject surrender surprised everyone"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæbdʒekt/"
+  },
+abjectedness: {
+    definitions: [
+      {
+        text: "The state of being completely miserable or without hope - like when you've hit rock bottom and can't see any way up. It's that feeling when everything in your life is totally fucked.",
+        examples: [
+          "The abjectedness in her eyes made everyone feel uncomfortable",
+          "His abjectedness was clear from how he carried himself",
+          "The whole town was in a state of abjectedness after the factory closed",
+          "You could feel the abjectedness in the air at the funeral",
+          "She fought against the abjectedness that threatened to overwhelm her"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæbdʒektɪdnəs/"
+  },
+  abjection: {
+    definitions: [
+      {
+        text: "When you're in such a miserable and low state that you feel completely worthless or humiliated. It's like hitting rock bottom and feeling like total shit about yourself or your situation.",
+        examples: [
+          "He lived in complete abjection after losing everything to gambling",
+          "The homeless people were living in a state of abjection on the streets",
+          "Her abjection was clear from how she couldn't even look people in the eye anymore",
+          "The prisoners were kept in conditions of total abjection",
+          "After the scandal, he fell into abjection and rarely left his house",
+        ],
+      },
+    ],
+    pronunciation: "/abˈdʒek.ʃən/",
+  },
+  abjective: {
+    definitions: [
+      {
+        text: "When something makes you feel totally worthless or degraded. It's like when something or someone strips away your dignity or self-respect completely.",
+        examples: [
+          "The abjective conditions in the slums were hard to witness",
+          "Her abjective behavior showed how broken her spirit had become",
+          "The treatment of workers was completely abjective",
+          "Living in such abjective poverty affected their mental health",
+          "The abjective state of the building made it unfit for living",
+        ],
+      },
+    ],
+    pronunciation: "/abˈdʒek.tɪv/",
+  },
+  abjectly: {
+    definitions: [
+      {
+        text: "Doing something in a way that shows complete hopelessness or lack of pride. When you do something while feeling totally defeated or worthless.",
+        examples: [
+          "He abjectly apologized for his massive screw-up",
+          "She abjectly accepted her punishment, knowing she was wrong",
+          "The team abjectly surrendered after losing their star player",
+          "He abjectly begged for forgiveness on his knees",
+          "The politician abjectly admitted to lying to everyone",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dʒekt.li/",
+  },
+  abjectness: {
+    definitions: [
+      {
+        text: "The state of feeling completely worthless or without any pride or dignity. It's like when you're at your lowest point and can't see any way up.",
+        examples: [
+          "The abjectness in his voice showed how defeated he felt",
+          "Her abjectness was clear from her slumped shoulders and dead eyes",
+          "The abjectness of their living conditions was shocking",
+          "There was total abjectness in how he accepted his fate",
+          "The abjectness of his apology made everyone uncomfortable",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæb.dʒekt.nəs/",
+  },
+  abjoint: {
+    definitions: [
+      {
+        text: "When you separate or disconnect something that was joined together. It's like taking apart two things that were connected, usually in math or technical stuff.",
+        examples: [
+          "They had to abjoint the broken pieces to fix the machine",
+          "The mathematician needed to abjoint the equations to solve the problem",
+          "You'll need to abjoint these components before replacing them",
+          "The process requires us to abjoint the matrix",
+          "They had to abjoint the sections before rebuilding",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒɔɪnt/",
+  },
+  abjudge: {
+    definitions: [
+      {
+        text: "When someone in authority (like a judge) officially takes something away from you that you used to have. It's like when the court says 'nope, that's not yours anymore'.",
+        examples: [
+          "The court had to abjudge the property from the fraudulent owner",
+          "They might abjudge his right to practice law after the scandal",
+          "The judge could abjudge the inheritance if the will was fake",
+          "They threatened to abjudge his custody rights",
+          "The committee voted to abjudge his membership privileges",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒʌdʒ/",
+  },
+  abjudging: {
+    definitions: [
+      {
+        text: "When you make a decision that goes against someone or something. It's like being a judge and saying 'nope, you're wrong' or deciding something isn't good enough.",
+        examples: [
+          "The court ended up abjudging the case in favor of the other side",
+          "After abjudging his work as subpar, they had to hire someone else",
+          "She was tired of people abjudging her choices without knowing the full story",
+          "The committee kept abjudging every proposal we submitted",
+          "Instead of abjudging everything I do, maybe try to understand my perspective",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒʌdʒɪŋ/",
+  },
+abjudicate: {
+    definitions: [
+      {
+        text: "To make an official decision against something or someone, usually in a formal way. It's like being the final boss who gets to say 'nah, that's not gonna work' after looking at all the facts.",
+        examples: [
+          "The panel will abjudicate the dispute between the two companies",
+          "They had to abjudicate whether the rules were broken",
+          "The referee will abjudicate any disagreements during the game",
+          "She was chosen to abjudicate the competition entries",
+          "We need someone neutral to abjudicate this mess",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒuːdɪkeɪt/",
+  },
+abjudicated: {
+    definitions: [
+      {
+        text: "When someone has already made an official decision against something. It's the past tense of abjudicate - like when the judgment has already been handed down and it's a done deal.",
+        examples: [
+          "They abjudicated the case last week, and we lost",
+          "Once it's been abjudicated, there's not much you can do",
+          "The committee abjudicated all the complaints at yesterday's meeting",
+          "He abjudicated the matter without hearing both sides",
+          "The dispute was finally abjudicated after months of debate",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒuːdɪkeɪtɪd/",
+  },
+abjudicating: {
+    definitions: [
+      {
+        text: "In the process of making an official decision against something. It's when you're in the middle of figuring out if something or someone should get a 'nope' verdict.",
+        examples: [
+          "They're still abjudicating the claims from last month",
+          "The judge is abjudicating the case as we speak",
+          "Abjudicating these complaints is taking forever",
+          "She's been abjudicating contests for years",
+          "The board is currently abjudicating the appeal",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒuːdɪkeɪtɪŋ/",
+  },
+abjudication: {
+    definitions: [
+      {
+        text: "The whole process of officially deciding against something. It's all the stuff that happens when someone with authority has to make a formal 'yes or no' call on something.",
+        examples: [
+          "The abjudication of the case took several months",
+          "We're waiting for the final abjudication of our claim",
+          "The abjudication process seems to be taking forever",
+          "After careful abjudication, they rejected the proposal",
+          "The rules for abjudication were pretty strict",
+        ],
+      },
+    ],
+    pronunciation: "/æbˌdʒuːdɪˈkeɪʃən/",
+  },
+abjudicator: {
+    definitions: [
+      {
+        text: "The person who gets to make the official decision against something. They're like the boss who has the power to say 'nope' after looking at all the evidence.",
+        examples: [
+          "The abjudicator ruled against us in the end",
+          "They hired an independent abjudicator to settle the dispute",
+          "As the abjudicator, she had to stay neutral",
+          "The abjudicator listened to both sides before making a decision",
+          "We need a fair abjudicator for this competition",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈdʒuːdɪkeɪtər/",
+  },
+abjugate: {
+    definitions: [
+      {
+        text: "To disconnect or separate things that were joined together. It's like hitting the 'undo' button on things that were paired up or connected.",
+        examples: [
+          "They had to abjugate the two companies after the failed merger",
+          "The process will abjugate the connected systems",
+          "Sometimes you need to abjugate yourself from toxic relationships",
+          "The scientist worked to abjugate the combined chemicals",
+          "They decided to abjugate the partnership after disagreements",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbdʒʊɡeɪt/",
+  },
+abjunct: {
+    definitions: [
+      {
+        text: "Something that's been removed or separated from the main thing it was part of. Like when you take one piece away from a bigger group and now it's doing its own thing.",
+        examples: [
+          "The project became an abjunct from the main research",
+          "That weird little shop is an abjunct from the main mall",
+          "The team worked as an abjunct from the larger department",
+          "The story is an abjunct from the original series",
+          "They treated the new office like an abjunct instead of part of the company",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbdʒʌŋkt/",
+  },
+  abjure: {
+    definitions: [
+      {
+        text: "When you publicly and strongly say you're done with something - like completely rejecting or giving up on a belief, idea, or way of living. It's like making a serious promise to yourself and others that you're walking away from something for good.",
+        examples: [
+          "He stood up in court and had to abjure his previous statements",
+          "After getting scammed, she abjured all get-rich-quick schemes",
+          "The former cult member abjured their old beliefs",
+          "She abjured her citizenship to become a citizen of another country",
+          "The politician abjured his former party's values",
+          "After nearly drowning, he abjured swimming in the ocean"
+        ],
+      }
+    ],
+    pronunciation: "/əbˈdʒʊər/"
+  },
+abjunction: {
+    definitions: [
+      {
+        text: "When something gets separated or pulled apart from something it was attached to. Think of it like when you separate two things that were stuck together.",
+        examples: [
+          "The abjunction of the two train cars happened during the emergency stop",
+          "Scientists studied the abjunction of cells during division",
+          "The sudden abjunction of the rocket stages was caught on camera",
+          "The abjunction of the two companies happened after years of partnership",
+          "The natural abjunction of leaves from trees happens in fall"
+        ],
+      }
+    ],
+    pronunciation: "/æbˈdʒʌŋkʃən/"
+  },
+abjunctive: {
+    definitions: [
+      {
+        text: "Something that has to do with separating or pulling things apart. It's like when something is meant to help split or break things away from each other.",
+        examples: [
+          "The abjunctive force of the machine pulled the parts apart",
+          "They used an abjunctive tool to separate the stuck pieces",
+          "The chemical had an abjunctive effect on the materials",
+          "The contract had an abjunctive clause that could split up the partnership",
+          "The process had an abjunctive phase where components were separated"
+        ],
+      }
+    ],
+    pronunciation: "/æbˈdʒʌŋktɪv/"
+  },
+  abjurer: {
+    definitions: [
+      {
+        text: "Someone who quits or walks away from something they used to believe in or be part of. Like when someone leaves a religion, group, or belief system and completely cuts ties with it. Think of it as a fancy way to say 'someone who nopes the fuck out of something they used to be into.'",
+        examples: [
+          "He became an abjurer of his old political party after discovering their corruption",
+          "The abjurer left the cult and warned others about their practices",
+          "She's now an abjurer of social media after realizing how toxic it was for her",
+          "Many abjurers of their old beliefs found it hard to face their former friends",
+          "As an abjurer of his past lifestyle, he completely changed how he lived",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈdʒʊərər/",
+  },
+abkari: {
+    definitions: [
+      {
+        text: "The business of making and selling alcohol, specifically in India. It's like being a liquor dealer, but it's the old-school Indian government term for it. Think of it as the official way of saying 'alcohol business' in certain parts of India.",
+        examples: [
+          "The local abkari shop was the only place licensed to sell spirits",
+          "His family had been in the abkari trade for generations",
+          "The government changed the abkari laws to control alcohol sales",
+          "The abkari license was hard to get but worth a lot of money",
+          "Many villages had their own abkari contractors managing local sales",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈkɑːri/",
+  },
+  ablach: {
+    definitions: [
+      {
+        text: "A short, little person - but said in an old-timey Scottish way. It's like calling someone a 'wee one' or 'tiny person', usually in a teasing but not mean way.",
+        examples: [
+          "Look at that ablach trying to reach the top shelf",
+          "He's a funny little ablach, always making people laugh",
+          "The old woman called all the children 'my dear ablachs'",
+          "Stop being such an ablach and ask for help",
+          "The ablach couldn't see over the counter",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæblæx/",
+  },
+ablactate: {
+    definitions: [
+      {
+        text: "To stop breastfeeding a baby and switch them to other food. It's basically the fancy way of saying 'weaning a baby off milk'.",
+        examples: [
+          "The doctor suggested it was time to ablactate the baby",
+          "She decided to ablactate when her child turned one",
+          "Many mothers gradually ablactate their babies over several weeks",
+          "The process to ablactate can be different for every baby",
+          "They started to ablactate by introducing solid foods",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈlækteɪt/",
+  },
+ablactated: {
+    definitions: [
+      {
+        text: "When a baby has been fully weaned off breast milk and onto other foods. It's like saying 'they're done with breastfeeding now'.",
+        examples: [
+          "The baby was fully ablactated by their first birthday",
+          "Once ablactated, they started eating more solid foods",
+          "She knew her child was properly ablactated when they stopped asking for milk",
+          "The twins were ablactated at different times",
+          "Most babies are ablactated by age two",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈlækteɪtɪd/",
+  },
+ablactating: {
+    definitions: [
+      {
+        text: "In the process of stopping breastfeeding and switching a baby to other foods. It's the ongoing action of weaning a baby off milk.",
+        examples: [
+          "She's currently ablactating her youngest child",
+          "The ablactating process is going smoothly",
+          "While ablactating, they introduced more solid foods",
+          "Ablactating can be emotional for both mother and baby",
+          "They found ablactating easier with their second child",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈlækteɪtɪŋ/",
+  },
+ablactation: {
+    definitions: [
+      {
+        text: "The whole process of stopping breastfeeding and getting a baby used to other foods. It's basically the journey of switching from milk to regular food.",
+        examples: [
+          "The ablactation process took about three months",
+          "Their pediatrician gave them tips for smooth ablactation",
+          "Natural ablactation happens when the baby loses interest in milk",
+          "Every family's ablactation experience is different",
+          "They wrote a blog about their ablactation journey",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæblækˈteɪʃən/",
+  },
+ablaqueate: {
+    definitions: [
+      {
+        text: "To dig around the base of a tree to expose its roots. It's like giving a tree a little dirt necklace so you can check on its roots or add stuff to help it grow.",
+        examples: [
+          "The gardener had to ablaqueate the apple tree to check for root rot",
+          "They ablaqueate their fruit trees every spring",
+          "Don't ablaqueate too deeply or you might damage the roots",
+          "The old farming manual suggested to ablaqueate before adding fertilizer",
+          "She learned how to properly ablaqueate from her grandfather",
+        ],
+      },
+    ],
+    pronunciation: "/əbˈlækwieɪt/",
+  },
+  ablare: {
+    definitions: [
+      {
+        text: "When something is making a really loud, usually annoying noise. Think of a car alarm going off at 3 AM or speakers turned up way too high. It's like when something's not just loud, but aggressively, in-your-face loud.",
+        examples: [
+          "The fire alarm was ablare throughout the building",
+          "His music was ablare from his car speakers",
+          "The sirens were ablare as emergency vehicles rushed past",
+          "The TV was ablare in the middle of the night",
+          "The stadium speakers were ablare with rock music",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbleər/",
+  },
+ablate: {
+    definitions: [
+      {
+        text: "When something gets worn away or removed, usually bit by bit. Like when ice melts off a glacier, or when the heat shield on a spaceship gets worn down during reentry. It's basically a fancy way of saying something's getting eaten away gradually.",
+        examples: [
+          "The spacecraft's shield started to ablate as it entered the atmosphere",
+          "The coastline slowly ablates due to wave action",
+          "The ice cream cone began to ablate in the hot sun",
+          "Years of rain had ablated the stone steps",
+          "The metal surface started to ablate under the intense heat",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbleɪt/",
+  },
+  ablation: {
+    definitions: [
+      {
+        text: "When something gets removed or worn away, usually by melting or evaporation. Like when ice melts off a glacier, or when a spacecraft's heat shield wears away during reentry.",
+        examples: [
+          "The ablation of the ice caps is happening faster due to global warming",
+          "The spacecraft's heat shield undergoes ablation during reentry",
+          "Doctors used ablation to remove the problematic tissue",
+          "The constant rain caused ablation of the rock face",
+          "Laser ablation is used to remove tattoos"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbleɪʃən/"
+  },
+  ablatitious: {
+    definitions: [
+      {
+        text: "When something is taken away or removed from where it was. It's like when you take something off or away from its original spot.",
+        examples: [
+          "The ablatitious process of removing old wallpaper took hours",
+          "The paint had an ablatitious effect on the old finish",
+          "The cleaning was ablatitious, taking off layers of dirt",
+          "The wind had an ablatitious effect on the loose soil",
+          "The chemical had an ablatitious reaction with the metal surface"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbləˈtɪʃəs/"
+  },
+  ablatival: {
+    definitions: [
+      {
+        text: "Related to showing how something is taken away or removed. It's like when you're talking about the way something gets moved from one place to another.",
+        examples: [
+          "The ablatival words in the sentence showed how the package was delivered",
+          "She used ablatival expressions to describe how the paint came off",
+          "The story had an ablatival theme about leaving home",
+          "The instructions used ablatival terms to explain the removal process",
+          "His writing style often uses ablatival phrases"
+        ]
+      }
+    ],
+    pronunciation: "/ˌæbləˈtaɪvəl/"
+  },
+  ablative: {
+    definitions: [
+      {
+        text: "Something that's designed to wear away or be removed over time for protection. Like a spacecraft's outer layer that burns up to protect what's inside.",
+        examples: [
+          "The rocket has an ablative shield to protect it from the heat",
+          "The coating is ablative, meaning it wears away slowly to protect the surface",
+          "They used ablative materials to protect the building from fire",
+          "The ablative paint job sacrifices itself to prevent rust",
+          "The ablative armor takes the damage instead of what's underneath"
+        ]
+      },
+      {
+        text: "In grammar, it's about showing how something is taken away or where it comes from. But honestly, you'll probably only see this in really old books or if you're studying Latin.",
+        examples: [
+          "The ablative case in Latin shows where something comes from",
+          "She struggled with the ablative forms in her Latin homework",
+          "The teacher explained the ablative usage in the sentence",
+          "Ancient texts often use ablative expressions",
+          "The poem used ablative phrases to show movement away"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæblətɪv/"
+  },
+  ablatively: {
+    definitions: [
+      {
+        text: "Doing something in a way that involves wearing away or being removed. It's like when something works by gradually disappearing or being taken off.",
+        examples: [
+          "The coating works ablatively, wearing away to protect what's underneath",
+          "The material behaves ablatively in extreme heat",
+          "The paint was designed to work ablatively over time",
+          "The shield functions ablatively during reentry",
+          "The surface reacts ablatively to protect the inner layers"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæblətɪvli/"
+  },
+  ablator: {
+    definitions: [
+      {
+        text: "Something that's specifically designed to wear away or be removed to protect what's underneath. Think of it like a sacrificial shield that takes damage so other stuff doesn't have to.",
+        examples: [
+          "The spacecraft's ablator protected it during reentry",
+          "They installed a new ablator on the heat shield",
+          "The ablator slowly wore away as it did its job",
+          "The building's ablator protected it from the fire",
+          "Scientists developed a new type of ablator for extreme conditions"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbleɪtər/"
+  },
+  ablaut: {
+    definitions: [
+      {
+        text: "When a vowel sound changes in related words to show different meanings. Like how 'sing' becomes 'sang' in the past tense, or 'sung' when it's already happened. It's just a fancy way of saying the vowel sound shifts to mean something slightly different.",
+        examples: [
+          "The word 'sing' changes to 'sang' - that's an ablaut",
+          "English has lots of these changes, like 'drink/drank/drunk'",
+          "The ablaut in 'rise' and 'rose' shows different time periods",
+          "Some languages use ablauts more than others to change word meanings",
+          "Learning these vowel changes can be tricky for new English speakers",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæblaʊt/",
+  },
+ablauts: {
+    definitions: [
+      {
+        text: "More than one ablaut (when vowels change in words to show different meanings). It's just the plural form, like when you're talking about multiple examples of these vowel changes.",
+        examples: [
+          "English has many ablauts like 'swim/swam' and 'ring/rang'",
+          "Students often struggle with learning all the ablauts",
+          "Different languages have different patterns of ablauts",
+          "The teacher listed several ablauts on the board",
+          "Some ablauts are more common than others",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæblaʊts/",
+  },
+ablaze: {
+    definitions: [
+      {
+        text: "When something's on fire or burning really bright. Think of flames everywhere or something lit up like crazy.",
+        examples: [
+          "The whole building was ablaze after the lightning strike",
+          "The forest was ablaze with fall colors",
+          "Someone left the stove on and set the kitchen ablaze",
+          "The sky was ablaze with fireworks",
+          "The candles set the room ablaze with warm light",
+        ],
+      },
+      {
+        text: "When someone's super excited or fired up about something - like they're burning with emotion or energy.",
+        examples: [
+          "Her eyes were ablaze with anger",
+          "The crowd was ablaze with excitement",
+          "The rumors set social media ablaze",
+          "His mind was ablaze with new ideas",
+          "The fans were ablaze with joy after their team won",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbleɪz/",
+  },
+able: {
+    definitions: [
+      {
+        text: "When you can do something because you have the skills, strength, or what it takes to make it happen. It's like having the power to get shit done.",
+        examples: [
+          "Are you able to help me move this weekend?",
+          "She's able to speak three languages",
+          "I'm not able to lift that heavy box by myself",
+          "The car wasn't able to start in the cold",
+          "He's finally able to ride a bike without training wheels",
+          "I'll be able to pay you back next week",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪbəl/",
+  },
+abled: {
+    definitions: [
+      {
+        text: "Having the physical or mental ability to do things. Usually used when talking about disability stuff, like saying 'differently abled' or comparing 'abled and disabled' people.",
+        examples: [
+          "The gym needs to be accessible to both abled and disabled members",
+          "Being abled doesn't mean life is always easy",
+          "Some jobs discriminate against non-abled people",
+          "The term 'differently abled' is sometimes used instead of disabled",
+          "Abled people often take their abilities for granted",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪbəld/",
+  },
+ablegate: {
+    definitions: [
+      {
+        text: "Someone the Pope sends as his representative to handle church business somewhere else. Think of them as the Pope's messenger or deputy who delivers important news or handles special tasks.",
+        examples: [
+          "The Pope sent an ablegate to discuss church matters in another country",
+          "The ablegate delivered the Pope's message to the local church",
+          "As an ablegate, he had the authority to speak on behalf of the Vatican",
+          "The church welcomed the ablegate with a special ceremony",
+          "The ablegate traveled between different churches delivering important news",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbləɡeɪt/",
+  },
+ablegates: {
+    definitions: [
+      {
+        text: "More than one ablegate (Pope's representatives). When you're talking about multiple people who the Pope sends out to handle church business.",
+        examples: [
+          "Several ablegates were sent to different countries",
+          "The ablegates gathered for a meeting at the Vatican",
+          "The church hosted two ablegates from Rome",
+          "Different ablegates handle different regions",
+          "The Pope appointed new ablegates to help with church matters",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæbləɡeɪts/",
+  },
+  ablegation: {
+    definitions: [
+      {
+        text: "When you send someone or something away, usually in an official way. Like when your parents ship you off to summer camp or when a company sends an employee to work in another country.",
+        examples: [
+          "His ablegation to the company's Tokyo office was for three years",
+          "The kid's ablegation to boarding school was his parents' last resort",
+          "The government's ablegation of refugees to various cities caused controversy",
+          "Her ablegation from the main office meant a fresh start",
+          "The coach's ablegation of players to different teams helped balance the league",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæbləˈɡeɪʃən/",
+  },
+  ablend: {
+    definitions: [
+      {
+        text: "An old-timey way of saying 'to make blind' or 'to blind someone'. It's like putting a blindfold on someone or blocking their vision, but you'll mostly only see this word in really old books.",
+        examples: [
+          "The bright flash of light ablended him for a few seconds",
+          "The snow's reflection ablended the hikers temporarily",
+          "The darkness ablended everyone until their eyes adjusted",
+          "The spotlight ablended the audience members in the front row",
+          "The sun ablended her as she drove west at sunset",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛnd/",
+  },
+  ableness: {
+    definitions: [
+      {
+        text: "Being able to do something - basically having the power, skill, or means to make shit happen. It's like when you've got what it takes to get something done.",
+        examples: [
+          "Her ableness to solve problems quickly made her perfect for the job",
+          "I questioned my ableness to climb the mountain after seeing how steep it was",
+          "His ableness to make friends anywhere impressed everyone",
+          "The team's ableness to work under pressure saved the project",
+          "She doubted her ableness to learn a new language at first",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪbəlnəs/",
+  },
+  ablepharia: {
+    definitions: [
+      {
+        text: "When someone is born without eyelids - yeah, it's a real thing. It's a super rare medical condition where your eyes don't have those important flaps that keep them protected and moist.",
+        examples: [
+          "The doctor diagnosed the baby with ablepharia right after birth",
+          "People with ablepharia need special eye care to protect their eyes",
+          "The surgery helped manage some complications of her ablepharia",
+          "The documentary featured stories of people living with ablepharia",
+          "Scientists are studying genetic causes of ablepharia",
+        ],
+      },
+    ],
+    pronunciation: "/æbləˈfɛəriə/",
+  },
+  ablepharon: {
+    definitions: [
+      {
+        text: "Another way to say ablepharia - when someone doesn't have eyelids. It's the same thing, just a slightly different way of saying it, like how you can say 'phone' or 'telephone'.",
+        examples: [
+          "The medical textbook listed ablepharon as a rare birth condition",
+          "The specialist had only seen one case of ablepharon in their career",
+          "Treatment for ablepharon focuses on protecting the eyes",
+          "The support group connected families dealing with ablepharon",
+          "Research on ablepharon is helping develop new treatments",
+        ],
+      },
+    ],
+    pronunciation: "/æˈblɛfərɒn/",
+  },
+  ablepharous: {
+    definitions: [
+      {
+        text: "Not having eyelids. It's the adjective form - so instead of saying 'someone with ablepharia', you'd say they're ablepharous. Some lizards are naturally like this, but in humans, it's a medical condition.",
+        examples: [
+          "Some desert lizards are naturally ablepharous to deal with sandy environments",
+          "The ablepharous condition requires constant eye care",
+          "Being ablepharous means you need special protection for your eyes",
+          "The ablepharous patient needed regular eye drops",
+          "Certain gecko species are ablepharous and use special scales instead of eyelids",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛfərəs/",
+  },
+  ablepsy: {
+    definitions: [
+      {
+        text: "When you can't see shit - it's just another word for blindness. Think of it like your eyes are taking a permanent vacation from working.",
+        examples: [
+          "His ablepsy didn't stop him from becoming a successful musician",
+          "The accident resulted in temporary ablepsy",
+          "She developed ablepsy later in life",
+          "The old injury caused partial ablepsy in his left eye",
+          "Despite his ablepsy, he navigated the city like a pro",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛpsi/",
+  },
+  ablepsia: {
+    definitions: [
+      {
+        text: "When someone can't see at all - it's the medical word for blindness. Like when your eyes don't work and you can't see anything.",
+        examples: [
+          "The accident resulted in temporary ablepsia",
+          "The doctor diagnosed him with complete ablepsia in his left eye",
+          "She developed ablepsia as a complication from the disease",
+          "The study focused on patients with sudden onset ablepsia",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛpsiə/",
+  },
+ableptical: {
+    definitions: [
+      {
+        text: "When something has to do with not being able to see or being blind. It's like describing stuff that's connected to blindness.",
+        examples: [
+          "The study focused on ableptical conditions in older patients",
+          "They discussed the ableptical symptoms he was experiencing",
+          "The doctor noted several ableptical signs during the exam",
+          "Her ableptical issues started getting worse over time",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛptɪkəl/",
+  },
+ableptically: {
+    definitions: [
+      {
+        text: "Doing something in a way that relates to blindness or not being able to see. Like when you're talking about how blindness affects something.",
+        examples: [
+          "The condition was ableptically similar to what his father had",
+          "She was ableptically affected after the accident",
+          "The symptoms were ableptically progressing",
+          "The disease ableptically impaired his vision",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛptɪkəli/",
+  },
+abler: {
+    definitions: [
+      {
+        text: "When someone or something is more capable or better at doing things than someone or something else. It's like saying 'more able' - they can handle stuff better.",
+        examples: [
+          "She's abler at math than I am",
+          "The abler students finished the test quickly",
+          "He's much abler to handle stress now than before",
+          "The newer model is abler to handle rough terrain",
+          "With practice, I'm abler to play the guitar than last year",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪblər/",
+  },
+ablesse: {
+    definitions: [
+      {
+        text: "An old-timey word for being noble or having class. It's like when someone acts all fancy and proper, like they're royalty or something.",
+        examples: [
+          "The queen carried herself with ablesse at all times",
+          "His ablesse was obvious in how he treated others",
+          "She showed great ablesse in handling the awkward situation",
+          "The character's ablesse made him stand out in the historical novel",
+        ],
+      },
+    ],
+    pronunciation: "/əˈblɛs/",
+  },
+ablest: {
+    definitions: [
+      {
+        text: "The most capable or skilled out of everyone. When someone's the best at handling something or doing a particular thing.",
+        examples: [
+          "She's the ablest programmer in our team",
+          "They sent their ablest soldiers on the mission",
+          "He's the ablest student in the class when it comes to public speaking",
+          "The ablest climbers made it to the summit first",
+          "They chose their ablest worker for the difficult project",
+        ],
+      },
+    ],
+    pronunciation: "/ˈeɪblɪst/",
+  },
+ablet: {
+    definitions: [
+      {
+        text: "A small fish that lives in fresh water. Think of it like a tiny fish you might find in rivers or lakes in Europe.",
+        examples: [
+          "The fisherman caught several ablets in the stream",
+          "Ablets are common in some European rivers",
+          "The kids watched the ablets swimming near the shore",
+          "The pond was full of tiny ablets darting around",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæblət/",
+},
+ablewhackets: {
+  definitions: [
+    {
+      text: "An old sailor punishment where someone gets hit with a rope. It's like getting spanked, but with a rope and on a ship. Not really used anymore except in old stories about sailing.",
+      examples: [
+        "The captain threatened the crew with ablewhackets if they didn't shape up",
+        "Back in the old sailing days, ablewhackets was a common punishment",
+        "He read stories about sailors getting ablewhackets for breaking rules",
+        "The museum display explained how ablewhackets was used in naval discipline",
+        "Nobody uses ablewhackets anymore, thank god",
+      ],
+    },
+  ],
+  pronunciation: "/ˈeɪbəlwækɪts/",
+},
+ably: {
+  definitions: [
+    {
+      text: "When you do something really well and know what you're doing. It's like when someone handles a situation like a pro - they're not just doing it, they're crushing it.",
+      examples: [
+        "She ably managed the crisis without breaking a sweat",
+        "The new chef ably handled the dinner rush on his first day",
+        "He ably defended himself against all the accusations",
+        "The student ably answered all the tough questions",
+        "The team ably dealt with all the technical problems",
+      ],
+    },
+  ],
+  pronunciation: "/ˈeɪbli/",
+},
+ablings: {
+  definitions: [
+    {
+      text: "An old Scottish way of saying 'maybe' or 'possibly'. It's like when you're not totally sure about something but think it might happen.",
+      examples: [
+        "Ablings I'll come to the party, but don't count on it",
+        "She said ablings she'd help us move next weekend",
+        "Ablings it'll rain tomorrow, you never know",
+        "He ablings forgot about our meeting",
+        "The old man said ablings he'd seen a ghost",
+      ],
+    },
+  ],
+  pronunciation: "/ˈeɪblɪŋz/",
+},
+ablock: {
+  definitions: [
+    {
+      text: "When things are stuck together or moving as one big chunk. Like when a group of people all walk together and take up the whole sidewalk, or when a bunch of things are clumped up together.",
+      examples: [
+        "The tourists walked ablock down the street",
+        "The ice floated ablock down the river",
+        "The sheep moved ablock across the field",
+        "The protesters marched ablock through downtown",
+        "The leaves fell ablock from the tree",
+      ],
+    },
+  ],
+  pronunciation: "/əˈblɒk/",
+},
+abloom: {
+  definitions: [
+    {
+      text: "When flowers are blooming or something's covered in flowers. It's like when your garden is exploding with color and everything's flowering at once.",
+      examples: [
+        "The cherry trees were all abloom in the park",
+        "Her backyard was abloom with roses",
+        "The desert comes abloom after it rains",
+        "The whole meadow was abloom with wildflowers",
+        "Spring hit and everything was suddenly abloom",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbluːm/",
+},
+ablow: {
+  definitions: [
+    {
+      text: "When something's being blown around or is in the middle of blowing. Think of your hair going crazy on a windy day or leaves swirling around in the air.",
+      examples: [
+        "The flags were all ablow in the strong wind",
+        "Her dress was ablow as she stood on the cliff",
+        "The autumn leaves were ablow across the yard",
+        "The curtains were ablow from the open window",
+        "Everything was ablow during the storm",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbləʊ/",
+},
+abluent: {
+  definitions: [
+    {
+      text: "Something that washes or cleans stuff. Think of it like soap or any cleaning product that helps get rid of dirt or stains. It's basically anything that helps you clean things up.",
+      examples: [
+        "The doctor used an abluent to clean the wound",
+        "This special abluent is designed to remove tough stains",
+        "The lab needed a strong abluent to clean their equipment",
+        "She mixed up a natural abluent using lemon and vinegar",
+        "The instructions said to use a gentle abluent on the delicate fabric",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbluənt/",
+},
+ablush: {
+  definitions: [
+    {
+      text: "When your face turns red from being embarrassed, excited, or just feeling a bit awkward. It's like when someone compliments you and your cheeks get all warm and pink.",
+      examples: [
+        "She was ablush after he asked her out",
+        "The teenager went ablush when their crush walked by",
+        "His face was ablush from running in the cold",
+        "I was ablush with embarrassment after tripping in front of everyone",
+        "The bride stood ablush as everyone complimented her dress",
+      ],
+    },
+  ],
+  pronunciation: "/əˈblʌʃ/",
+},
+ablute: {
+  definitions: [
+    {
+      text: "To wash yourself or something else really thoroughly. It's just a fancy way of saying 'clean up' or 'wash up' - like when you're getting all squeaky clean.",
+      examples: [
+        "He needed to ablute before the ceremony",
+        "She took time to ablute her face before bed",
+        "The kids were told to ablute their hands before dinner",
+        "You should ablute the cut with clean water",
+        "They had to ablute the floors after the party",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbluːt/",
+},
+ablution: {
+  definitions: [
+    {
+      text: "The act of washing yourself or something else, usually as part of a routine or ceremony. It's like when you're doing your morning cleanup or getting ready for something important.",
+      examples: [
+        "He performed his morning ablutions in the bathroom",
+        "The religious ceremony started with an ablution ritual",
+        "She went through her nightly ablution routine",
+        "The gym has special rooms for ablution",
+        "The doctor recommended regular ablution of the wound",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbluːʃən/",
+},
+ablutionary: {
+  definitions: [
+    {
+      text: "Anything that's related to washing or cleaning up. If it's got something to do with getting clean or washing, it's ablutionary. Think of it like stuff you'd find in a bathroom or cleaning routine.",
+      examples: [
+        "The hotel provided all the ablutionary supplies we needed",
+        "The spa has special ablutionary rooms for guests",
+        "She followed her ablutionary routine every morning",
+        "The temple had ablutionary fountains for visitors",
+        "All the ablutionary products were organized in the cabinet",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbluːʃəneri/",
+},
+abluvion: {
+  definitions: [
+    {
+      text: "When something gets washed away by water or other liquids. Think of when rain washes away dirt from your driveway or when waves slowly wash away the beach sand.",
+      examples: [
+        "The heavy rain caused abluvion of the garden's topsoil",
+        "Years of waves created abluvion along the coastline",
+        "The river's abluvion carved out the canyon over millions of years",
+        "Spring cleaning turned into accidental abluvion when he used too much water pressure",
+        "The mudslide caused serious abluvion of the hillside"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈluːviən/"
+},
+abmho: {
+  definitions: [
+    {
+      text: "A unit that measures how well electricity flows through something, basically the opposite of resistance (ohm). It's like measuring how easily water flows through a pipe, but for electricity.",
+      examples: [
+        "The engineer measured the wire's conductance in abmhos",
+        "Higher abmho readings mean electricity flows more easily",
+        "The old wiring showed lower abmho values than the new ones",
+        "They needed specific abmho measurements for the circuit design",
+        "The material's abmho rating determined if it would work as a conductor"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈmoʊ/"
+},
+abmodality: {
+  definitions: [
+    {
+      text: "When something doesn't follow the normal or expected pattern. It's like when things go off-script or don't fit the usual way of doing stuff.",
+      examples: [
+        "The weird glitch in the game was due to abmodality in the code",
+        "Her unique art style showed clear abmodality from traditional techniques",
+        "The experiment's results showed significant abmodality",
+        "The teacher noticed abmodality in the student's behavior",
+        "Scientists discovered abmodality in the virus's mutation pattern"
+      ]
+    }
+  ],
+  pronunciation: "/æbmoʊˈdæləti/"
+},
+abnegate: {
+  definitions: [
+    {
+      text: "When you choose to give up something you want or deny yourself something you'd normally have. It's like putting yourself on voluntary restriction or saying 'nah, I'm good' to stuff you actually want.",
+      examples: [
+        "He decided to abnegate social media for a month to focus on studying",
+        "She abnegated her usual morning coffee as part of a health kick",
+        "The monk abnegated all worldly possessions",
+        "I'm trying to abnegate junk food but it's hard af",
+        "They abnegated their weekend plans to help their friend move"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæbnɪɡeɪt/"
+},
+abnegated: {
+  definitions: [
+    {
+      text: "When you give up something you want or have a right to, usually to help others or because you think it's the right thing to do. It's like when you sacrifice something important to you on purpose.",
+      examples: [
+        "She abnegated her claim to the family business so her sister could run it",
+        "The politician abnegated his power and stepped down",
+        "He abnegated his personal life to focus on his career",
+        "They abnegated their weekend plans to help their friend move",
+        "The team captain abnegated his position to let a younger player lead",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbnɪɡeɪtɪd/",
+},
+abnegation: {
+  definitions: [
+    {
+      text: "When you completely give up or deny yourself something, usually for a bigger cause or moral reason. It's like next-level self-sacrifice where you're choosing to go without something you could have.",
+      examples: [
+        "His abnegation of all luxury showed how serious he was about living simply",
+        "The monk's life of abnegation included giving up all possessions",
+        "Her abnegation of fame surprised everyone in Hollywood",
+        "Total abnegation of social media helped him focus on real life",
+        "The leader's abnegation of power impressed everyone",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbnɪˈɡeɪʃən/",
+},
+abnegative: {
+  definitions: [
+    {
+      text: "Being the type of person who's always ready to give things up or deny yourself stuff. It's like being super self-sacrificing as part of your personality.",
+      examples: [
+        "Her abnegative nature meant she always put others first",
+        "The abnegative lifestyle of monks involves giving up worldly pleasures",
+        "His abnegative approach to leadership meant sharing credit with the team",
+        "She was too abnegative for her own good, never taking credit for her work",
+        "The abnegative parent always gave the best food to their kids",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈneɡətɪv/",
+},
+abneural: {
+  definitions: [
+    {
+      text: "When something has no nerves or nerve-related parts. It's like having a body part or area that's completely missing any connection to your nervous system - no feeling, no control, nothing.",
+      examples: [
+        "Some tumors are abneural, meaning they don't have any nerve tissue in them",
+        "The artificial skin was abneural, so it couldn't feel anything",
+        "Scientists found an abneural region in the damaged tissue",
+        "The synthetic material was completely abneural - no nerve connections at all",
+        "Some simple organisms have abneural parts that don't need nerve connections",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnjʊərəl/",
+},
+abnormal: {
+  definitions: [
+    {
+      text: "When something's different from what's usually expected or considered normal. It's like when something stands out because it's not following the usual pattern or rules.",
+      examples: [
+        "The weather's been abnormal lately - snow in summer is definitely not normal",
+        "Her cat's been acting abnormal, sleeping all day and not eating",
+        "The test results showed abnormal levels of sugar in his blood",
+        "There was abnormal traffic on the highway this morning",
+        "The plant's growth was abnormal - it grew three times faster than usual",
+        "The machine made an abnormal sound before it broke down",
+      ],
+    },
+    {
+      text: "In medical terms, when something in your body or mind isn't working the way it should. It's when test results or behaviors are outside the healthy or typical range.",
+      examples: [
+        "The scan showed abnormal cell growth in his lung",
+        "She noticed abnormal changes in her skin color",
+        "The doctor found abnormal heart rhythms during the checkup",
+        "His abnormal behavior made his friends worry about his mental health",
+        "The lab reported abnormal protein levels in her blood",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːrməl/",
+},
+abnormalcy: {
+  definitions: [
+    {
+      text: "The state of things being not normal or weird for a long time. It's when being different from usual becomes the new usual - like when crazy shit keeps happening so much that it starts feeling normal, even though it's not.",
+      examples: [
+        "Living through the pandemic created a sense of abnormalcy in everyone's daily life",
+        "The constant power outages led to a state of abnormalcy in the city",
+        "Working night shifts for years created an abnormalcy in his sleep patterns",
+        "The political situation brought a new abnormalcy to the country",
+        "After the accident, their family adjusted to their new abnormalcy",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːrməlsi/",
+},
+abnormalised: {
+  definitions: [
+    {
+      text: "When something has been made different from what's usual or expected. It's like when something normal gets changed into something that doesn't fit the usual pattern.",
+      examples: [
+        "The data was abnormalised to show the extreme cases",
+        "The test results were abnormalised by the faulty equipment",
+        "The photos were abnormalised to create a weird effect",
+        "Their behavior was abnormalised by the stress of the situation",
+        "The experiment was abnormalised by unexpected factors",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlaɪzd/",
+},
+abnormalising: {
+  definitions: [
+    {
+      text: "The act of making something different from what's normal or expected. It's like when you're in the process of changing something from its usual state to something unusual.",
+      examples: [
+        "They're abnormalising the data to highlight the unusual patterns",
+        "The artist was abnormalising the images for their exhibition",
+        "The stress was abnormalising their daily routine",
+        "The company was abnormalising their work hours during the crisis",
+        "She was abnormalising her speech patterns to sound more dramatic",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlaɪzɪŋ/",
+},
+abnormalism: {
+  definitions: [
+    {
+      text: "A way of thinking or behaving that goes against what most people consider normal. It's like when someone deliberately chooses to be different from the usual way of doing things.",
+      examples: [
+        "His abnormalism made him stand out in the conservative office",
+        "The art movement celebrated abnormalism as a form of expression",
+        "Their abnormalism in approaching problems led to unique solutions",
+        "She embraced abnormalism in her fashion choices",
+        "The group's abnormalism helped them create revolutionary ideas",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlɪzəm/",
+},
+abnormalist: {
+  definitions: [
+    {
+      text: "Someone who goes against normal ways of thinking or doing things. It's like a person who chooses to be different and doesn't follow the crowd.",
+      examples: [
+        "She's known as an abnormalist in the art world for her unique style",
+        "The abnormalist refused to follow traditional business practices",
+        "He was proud to be called an abnormalist in his conservative town",
+        "The abnormalist chef created weird but delicious food combinations",
+        "As an abnormalist, she always found new ways to solve old problems",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlɪst/",
+},
+abnormality: {
+  definitions: [
+    {
+      text: "Something that's different from what's normal or expected. It's like when you notice something that doesn't fit the usual pattern or way things should be.",
+      examples: [
+        "The doctors spotted an abnormality in the test results",
+        "There was an abnormality in how the machine was working",
+        "The weather showed some abnormality this summer",
+        "They noticed an abnormality in his behavior",
+        "The data showed an abnormality that needed investigation",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbnɔːˈmælɪti/",
+},
+abnormalities: {
+  definitions: [
+    {
+      text: "Multiple things that are different from what's normal or expected. It's when you find several unusual or odd things that don't fit the regular pattern.",
+      examples: [
+        "The scan showed several abnormalities in the system",
+        "They found abnormalities in the way the money was being spent",
+        "The building had structural abnormalities that needed fixing",
+        "The report listed various abnormalities in student behavior",
+        "There were abnormalities in how the experiment turned out",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbnɔːˈmælɪtiz/",
+},
+abnormalize: {
+  definitions: [
+    {
+      text: "To make something different from what's normal or expected. It's when you deliberately change something to make it unusual or not follow the regular pattern.",
+      examples: [
+        "They decided to abnormalize the testing process to find edge cases",
+        "The artist likes to abnormalize everyday objects in their work",
+        "Don't abnormalize the situation - it's not as weird as you think",
+        "They had to abnormalize the data to show the extreme cases",
+        "She tends to abnormalize simple things to make them more interesting",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlaɪz/",
+},
+abnormalized: {
+  definitions: [
+    {
+      text: "When something has been changed to be different from what's normal. It's like when something regular has been made unusual on purpose.",
+      examples: [
+        "The abnormalized test results showed the worst-case scenario",
+        "The photos were abnormalized to create a spooky effect",
+        "The data was abnormalized to highlight the problems",
+        "Their schedule was abnormalized due to the emergency",
+        "The experiment used abnormalized conditions to test the limits",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈnɔːməlaɪzd/",
+},
+abnormally: {
+  definitions: [
+    {
+      text: "When something happens or is done in a way that's not normal or expected - it's like when things are weirdly different from how they usually are.",
+      examples: [
+        "It's been abnormally hot this winter",
+        "The dog was acting abnormally quiet before we found out he ate my shoes",
+        "The prices have been abnormally high lately",
+        "She's been abnormally tired since starting her new job",
+        "The traffic is abnormally light for a Monday morning",
+        "The plants are growing abnormally fast after using that new fertilizer"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈnɔːrməli/"
+},
+abnormity: {
+  definitions: [
+    {
+      text: "Something that's really weird or different from what's normal - like a thing or situation that sticks out because it's just not right or usual.",
+      examples: [
+        "The two-headed snake was an abnormity that drew crowds to the zoo",
+        "The huge price difference was an abnormity in the market",
+        "Everyone noticed the abnormity in his story - the details just didn't add up",
+        "The building's weird shape was an abnormity in the neighborhood",
+        "Scientists studied the abnormity in the test results"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈnɔːrmɪti/"
+},
+aboard: {
+  definitions: [
+    {
+      text: "When you're physically on something that moves, like a ship, plane, or train. Like when the captain says 'everyone aboard!' they mean 'get your ass on this thing'.",
+      examples: [
+        "All passengers aboard the plane, we're ready for takeoff",
+        "Welcome aboard the cruise ship!",
+        "The train won't move until everyone is safely aboard",
+        "He stepped aboard the bus and found a seat",
+        "Get aboard quickly, we're running late",
+      ],
+    },
+    {
+      text: "When you join or become part of something, like a team or project. It's like saying you're 'on the team' now.",
+      examples: [
+        "We're excited to have you aboard our marketing team",
+        "Welcome aboard! Here's your employee handbook",
+        "She came aboard as the new manager last week",
+        "Are you aboard with this plan?",
+        "The new investors are officially aboard",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔːrd/",
+},
+aboardage: {
+  definitions: [
+    {
+      text: "The act of coming up to and boarding another ship, usually in a not-so-friendly way. Think pirates pulling up next to a ship to jump on it.",
+      examples: [
+        "The pirates attempted aboardage of the merchant vessel",
+        "The ship's defenses were designed to prevent aboardage",
+        "Historical records show many cases of aboardage during naval battles",
+        "The crew feared aboardage from the approaching ship",
+        "Naval tactics included strategies to avoid enemy aboardage",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔːrdɪdʒ/",
+},
+abococket: {
+  definitions: [
+    {
+      text: "An old word for a cap or head covering that was worn way back in the day. Think of those fancy hats people wore in medieval times.",
+      examples: [
+        "The nobleman wore an ornate abococket to the royal feast",
+        "Historical paintings show people wearing different styles of abococket",
+        "The museum displayed various types of abococket from the period",
+        "Craftsmen specialized in making decorated abococket for the wealthy",
+        "The traditional costume included a simple abococket",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒkəkɪt/",
+},
+abodah: {
+  definitions: [
+    {
+      text: "The religious service and work done in Jewish temples, especially the ancient Temple in Jerusalem. It's all the rituals, prayers, and duties that the priests would do.",
+      examples: [
+        "The priests performed the abodah with great care",
+        "Many prayers reference the ancient abodah service",
+        "Students study the details of temple abodah",
+        "The abodah included specific rituals for different occasions",
+        "Modern synagogue services remember aspects of the temple abodah",
+      ],
+    },
+  ],
+  pronunciation: "/əˈboʊdə/",
+},
+abode: {
+  definitions: [
+    {
+      text: "The place where you live - your home, house, apartment, or wherever you crash. It's just a fancier way of saying 'where you live'.",
+      examples: [
+        "Welcome to my humble abode!",
+        "She made her abode in a cozy apartment downtown",
+        "The witch's abode was deep in the forest",
+        "This tiny studio is my current abode",
+        "They transformed the old warehouse into a stylish abode",
+      ],
+    },
+    {
+      text: "When you stay or live somewhere for a while. It's the verb form, like when you're hanging out or living in a place.",
+      examples: [
+        "He abode in the mountain cabin for several months",
+        "They abode with their relatives until finding a new home",
+        "The spirit abode in the haunted house",
+        "She abode by the seaside during summer",
+        "The travelers abode in the village for many days",
+      ],
+    },
+  ],
+  pronunciation: "/əˈboʊd/",
+},
+aboded: {
+  definitions: [
+    {
+      text: "The past tense of abode - means you stayed or lived somewhere in the past. It's like saying 'lived' or 'stayed' but in a more formal way.",
+      examples: [
+        "He aboded in the city for many years before moving",
+        "They aboded with friends while their house was being built",
+        "The family aboded in that old mansion for generations",
+        "She aboded by the rules of the house",
+        "The hermit aboded in solitude for decades",
+      ],
+    },
+  ],
+  pronunciation: "/əˈboʊdɪd/",
+},
+abodement: {
+  definitions: [
+    {
+      text: "When you get a feeling that something bad is going to happen. It's like that gut feeling you get when things just don't feel right and you think something's about to go wrong.",
+      examples: [
+        "I had an abodement that the meeting wasn't going to go well",
+        "Her abodement about the weather turned out to be right when the storm hit",
+        "He ignored the abodement and went hiking anyway",
+        "That weird abodement I had last week makes sense now",
+        "She couldn't shake the abodement that something was wrong at home",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbəʊdmənt/",
+},
+abodes: {
+  definitions: [
+    {
+      text: "Places where people live - like homes, houses, or apartments. It's just a fancier way of saying 'homes'.",
+      examples: [
+        "The neighborhood had many beautiful abodes",
+        "They visited several abodes before choosing their new home",
+        "The street was lined with humble abodes",
+        "Rich people often have multiple abodes",
+        "The realtor showed us three different abodes today",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbəʊdz/",
+},
+abohm: {
+  definitions: [
+    {
+      text: "A unit used to measure how well electricity flows through something underwater. Think of it like measuring how easily electricity can move through water or wet stuff.",
+      examples: [
+        "The scientists measured the conductance in abohms",
+        "The reading came out to 5 abohms",
+        "They needed special equipment to measure abohms in the ocean",
+        "The test showed different abohm readings at various depths",
+        "The manual specified the conductance should be under 2 abohms",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbəʊm/",
+},
+abohms: {
+  definitions: [
+    {
+      text: "More than one abohm (which measures how well electricity flows through stuff underwater). It's just the plural way of saying abohm.",
+      examples: [
+        "The readings were in abohms",
+        "They recorded several abohms of conductance",
+        "The device could measure up to 100 abohms",
+        "Different materials showed varying abohms",
+        "The results ranged from 2 to 5 abohms",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbəʊmz/",
+},
+aboideau: {
+  definitions: [
+    {
+      text: "A dam or barrier with a gate that lets water flow one way but blocks it from coming back. Think of it like a one-way door for water - farmers use these near the ocean to keep salty water from flooding their fields when the tide comes in.",
+      examples: [
+        "The farmers built an aboideau to protect their crops from the sea water",
+        "The old aboideau needs repairs before the spring tides",
+        "Without the aboideau, the fields would be flooded with salt water",
+        "They installed a new aboideau system to manage the water levels",
+        "The aboideau has been keeping the farmland safe for generations",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbɔɪˈdoʊ/",
+},
+aboil: {
+  definitions: [
+    {
+      text: "When something's bubbling and boiling like crazy. It's that moment when your pot of water is going full blast with bubbles everywhere.",
+      examples: [
+        "The pasta water was aboil on the stove",
+        "Keep the soup aboil for five more minutes",
+        "The hot tub was all aboil when they turned on the jets",
+        "Wait until the water's aboil before adding the noodles",
+        "The witch's cauldron was aboil with some weird potion",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔɪl/",
+},
+abolete: {
+  definitions: [
+    {
+      text: "When something's been completely gotten rid of or thrown out - like it doesn't exist anymore. It's an old-timey way of saying abolished or deleted.",
+      examples: [
+        "The old rules were abolete after the new system came in",
+        "They wanted to abolete the unfair practices",
+        "Those traditions became abolete as times changed",
+        "The council voted to abolete the outdated laws",
+        "The ancient customs were abolete by the new generation",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbəʊliːt/",
+},
+abolish: {
+  definitions: [
+    {
+      text: "To completely get rid of something official or formal, usually a law, rule, or system. It's like hitting the delete button on something that's been around for a while, saying 'this thing is done, we're not doing it anymore.'",
+      examples: [
+        "They finally abolished that stupid rule about no phones in class",
+        "Many countries have abolished the death penalty",
+        "The new manager abolished all the old dress code requirements",
+        "Students want to abolish homework forever",
+        "The government abolished that tax last year",
+        "They're trying to abolish the old system and start fresh"
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒl.ɪʃ/",
+},
+abolishable: {
+  definitions: [
+    {
+      text: "When something can be gotten rid of or ended completely. If you can abolish it, it's abolishable. Like when a rule or system isn't set in stone and could be removed if enough people wanted it gone.",
+      examples: [
+        "That old dress code is totally abolishable - we just need enough signatures",
+        "The committee decided these rules were abolishable if they didn't work out",
+        "Some laws are abolishable, but others are protected by the constitution",
+        "The new policy is abolishable after a six-month trial period",
+        "They're checking which old regulations are abolishable"
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒl.ɪʃ.ə.bəl/",
+},
+abolisher: {
+  definitions: [
+    {
+      text: "Someone who gets rid of or ends something official, like a rule or system. Think of them as the person who says 'nope, we're not doing this anymore' and has the power to make it happen.",
+      examples: [
+        "He became known as the abolisher of unfair workplace rules",
+        "The new president was an abolisher of old, outdated laws",
+        "They called her the abolisher because she got rid of all the unnecessary meetings",
+        "The abolisher of that stupid policy got a standing ovation",
+        "Everyone loved the abolisher of the 'no phones during break' rule"
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒl.ɪʃ.ər/",
+},
+abolishers: {
+  definitions: [
+    {
+      text: "People who get rid of or end something official. It's just the plural of abolisher - when you've got more than one person working to get rid of rules or systems they don't like.",
+      examples: [
+        "The abolishers of slavery fought for many years",
+        "These abolishers are working to end unfair practices",
+        "A group of abolishers came together to fight the old system",
+        "The abolishers won their fight to end the outdated rules",
+        "They called themselves the abolishers of unnecessary bureaucracy"
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒl.ɪʃ.ərz/",
+},
+abolishment: {
+  definitions: [
+    {
+      text: "The act of completely getting rid of something official, or when that thing is actually gone. It's like the whole process and result of saying 'this thing is done' and making it happen.",
+      examples: [
+        "The abolishment of that dress code made everyone happy",
+        "They celebrated the abolishment of the old rules",
+        "The abolishment of mandatory overtime improved worker morale",
+        "After the abolishment of the tax, prices went down",
+        "Everyone supported the abolishment of those pointless meetings"
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒl.ɪʃ.mənt/",
+},
+abolishments: {
+  definitions: [
+    {
+      text: "When you completely get rid of or end something officially. It's the actual acts or instances of ending something for good.",
+      examples: [
+        "The abolishments of unfair rules made the workplace better",
+        "These abolishments of old traditions upset some people",
+        "The gradual abolishments of harmful practices took many years",
+        "Several abolishments were needed to fix the broken system",
+        "The abolishments happened one by one until the whole system changed",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒlɪʃmənts/",
+},
+abolition: {
+  definitions: [
+    {
+      text: "When you officially end or get rid of something completely - like a law, system, or practice. It's like hitting the permanent delete button on something that society decided needs to go.",
+      examples: [
+        "The abolition of school uniforms made students happy",
+        "They called for the abolition of unfair parking fees",
+        "The abolition of that old rule changed everything",
+        "People celebrated the abolition of the strict dress code",
+        "The abolition of weekend work improved everyone's life balance",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃən/",
+},
+abolitionary: {
+  definitions: [
+    {
+      text: "Related to getting rid of or ending something completely. When something helps or has to do with removing a system, law, or practice.",
+      examples: [
+        "The group took abolitionary steps to end the unfair rules",
+        "Her abolitionary ideas helped change the old system",
+        "The abolitionary movement grew stronger each day",
+        "They wrote abolitionary articles about changing the rules",
+        "The abolitionary process took several months to complete",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃəneri/",
+},
+abolitionise: {
+  definitions: [
+    {
+      text: "To work towards getting rid of something completely, usually a system or practice you think is wrong. It's like being on a mission to end something for good.",
+      examples: [
+        "They wanted to abolitionise the strict dress code at work",
+        "The group tried to abolitionise unfair parking rules",
+        "Students worked to abolitionise the no-phones policy",
+        "She helped abolitionise the outdated system",
+        "They continued to abolitionise harmful practices",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃənaɪz/",
+},
+abolitionised: {
+  definitions: [
+    {
+      text: "When someone has worked to get rid of something completely. It's the past tense of working to end a system or practice.",
+      examples: [
+        "They abolitionised the old rules last year",
+        "The team abolitionised the unfair policies",
+        "She abolitionised the outdated dress code",
+        "The group abolitionised several harmful practices",
+        "They successfully abolitionised the strict system",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃənaɪzd/",
+},
+abolitionising: {
+  definitions: [
+    {
+      text: "Currently working to get rid of something completely. When you're in the process of trying to end a system or practice you think should go.",
+      examples: [
+        "They're abolitionising the old payment system",
+        "She's abolitionising unfair workplace rules",
+        "The group is abolitionising outdated practices",
+        "We're abolitionising these strict policies",
+        "They're busy abolitionising the entire structure",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃənaɪzɪŋ/",
+},
+abolitionism: {
+  definitions: [
+    {
+      text: "When people come together as a movement to end something they think is wrong. It's the whole belief system and actions around getting rid of something completely.",
+      examples: [
+        "Their abolitionism focused on ending unfair rules",
+        "The spirit of abolitionism spread through the company",
+        "Modern abolitionism fights against many different issues",
+        "Her abolitionism inspired others to join the cause",
+        "The group's abolitionism led to real changes",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃəˌnɪzəm/",
+},
+abolitionist: {
+  definitions: [
+    {
+      text: "Someone who works to end something they believe is wrong. It's like being a person who fights to get rid of unfair systems or practices completely.",
+      examples: [
+        "She became an abolitionist after seeing how unfair the rules were",
+        "The abolitionists fought to change the old system",
+        "Modern abolitionists work to end many different problems",
+        "He was known as an abolitionist in the company",
+        "The abolitionists finally succeeded in changing the policy",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈlɪʃənɪst/",
+},
+abolitionists: {
+  definitions: [
+    {
+      text: "People who fought to end slavery and the slave trade, especially in America during the 1800s. They were basically the good guys who said 'this shit needs to stop' and worked to free enslaved people.",
+      examples: [
+        "Frederick Douglass was a famous abolitionist who escaped slavery and fought to end it",
+        "The abolitionists helped escaped slaves through the Underground Railroad",
+        "She learned about the abolitionists in her history class",
+        "The abolitionists faced a lot of pushback from slave owners",
+        "Many abolitionists were willing to break unjust laws to help free people"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæb.əˈlɪʃ.ən.ɪsts/"
+},
+abolitionize: {
+  definitions: [
+    {
+      text: "To convert someone to believe in or support ending something bad, usually talking about slavery historically. It's like when you convince someone to join your side in fighting against something wrong.",
+      examples: [
+        "The speakers tried to abolitionize the crowd with their powerful speeches",
+        "Many newspapers worked to abolitionize public opinion against slavery",
+        "She spent years trying to abolitionize her conservative relatives",
+        "The movement worked to abolitionize the whole country",
+        "They used stories and facts to abolitionize more people to their cause"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæb.əˈlɪʃ.ən.aɪz/"
+},
+abolitionized: {
+  definitions: [
+    {
+      text: "When someone was convinced to support ending something bad (usually talking about slavery historically). It's the past tense of abolitionize - like saying someone was converted to the cause.",
+      examples: [
+        "After reading about the horrors of slavery, he was completely abolitionized",
+        "The whole town was abolitionized by the powerful speaker",
+        "She became abolitionized after attending the meetings",
+        "Many people were abolitionized by reading first-hand accounts",
+        "Once abolitionized, they joined the movement to end slavery"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæb.əˈlɪʃ.ən.aɪzd/"
+},
+abolitionizing: {
+  definitions: [
+    {
+      text: "The act of converting people to support ending something bad (usually about slavery historically). It's when you're actively trying to get people to join your cause.",
+      examples: [
+        "They spent years abolitionizing the public about the evils of slavery",
+        "The newspaper was abolitionizing its readers with weekly articles",
+        "She was abolitionizing her community through educational meetings",
+        "The speakers traveled the country abolitionizing new supporters",
+        "Their abolitionizing efforts were making real change"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæb.əˈlɪʃ.ən.aɪz.ɪŋ/"
+},
+abolla: {
+  definitions: [
+    {
+      text: "A thick woolen cloak that ancient Romans wore, kind of like a fancy winter coat. Think of it as the Roman version of a warm wrap-around blanket you'd wear outside.",
+      examples: [
+        "The senator wrapped his abolla tightly against the cold wind",
+        "Rich Romans often had abollas made from expensive dyed wool",
+        "Soldiers would wear an abolla to keep warm during winter campaigns",
+        "He traded his thin toga for a warm abolla",
+        "The museum had an ancient abolla on display"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɒl.ə/"
+},
+abollae: {
+  definitions: [
+    {
+      text: "More than one abolla (those thick woolen cloaks that ancient Romans wore). It's just the plural way of saying abolla.",
+      examples: [
+        "The shop had several abollae for sale",
+        "The soldiers hung their wet abollae by the fire",
+        "Rich Romans often owned multiple abollae for different occasions",
+        "The museum displayed abollae from different time periods",
+        "They found well-preserved abollae in the ruins"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɒl.aɪ/"
+},
+aboma: {
+  definitions: [
+    {
+      text: "A type of snake from South America that's like a smaller version of a boa constrictor. It's basically a chunky snake that wraps around its prey but isn't as massive as its bigger cousins.",
+      examples: [
+        "The aboma slithered through the rainforest undergrowth",
+        "They spotted an aboma wrapped around a tree branch",
+        "The zoo had several abomas in their reptile house",
+        "Unlike bigger snakes, the aboma usually hunts smaller prey",
+        "She studied abomas in their natural habitat"
+      ]
+    }
+  ],
+  pronunciation: "/əˈboʊ.mə/"
+},
+abomas: {
+  definitions: [
+    {
+      text: "More than one aboma snake. It's just the plural way of saying aboma (those South American snakes that are like mini boa constrictors).",
+      examples: [
+        "The researcher photographed several abomas in the wild",
+        "The pet store had two abomas for sale",
+        "Abomas are common in certain parts of the rainforest",
+        "She wrote a paper about how abomas hunt",
+        "The documentary showed abomas in their natural habitat"
+      ]
+    }
+  ],
+  pronunciation: "/əˈboʊ.məz/"
+},
+abomasa: {
+  definitions: [
+    {
+      text: "The plural form of abomasum - basically means more than one of the fourth stomach chamber that cows, sheep, and similar animals have. It's where these animals do their final digestion after food passes through their other stomach parts.",
+      examples: [
+        "The vet had to check the abomasa of several cows in the herd",
+        "Students had to identify the abomasa in their animal anatomy class",
+        "The farmer noticed problems with the abomasa of his sheep",
+        "Scientists study how abomasa work to better understand animal digestion",
+        "The textbook had diagrams showing different abomasa"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈmeɪsə/"
+},
+abomasal: {
+  definitions: [
+    {
+      text: "When something's related to the abomasum (that last stomach chamber in cows and sheep). It's like saying 'stomach-related' but specifically for this part of these animals' digestive system.",
+      examples: [
+        "The cow had an abomasal ulcer that needed treatment",
+        "The vet found an abomasal blockage in the sheep",
+        "Students learned about abomasal functions in their farm animal class",
+        "The medicine helps with abomasal problems in cattle",
+        "They did an abomasal exam on the sick goat"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈmeɪsəl/"
+},
+abomasi: {
+  definitions: [
+    {
+      text: "Another way to say more than one abomasum (that special stomach part in cows and sheep). It means the same thing as abomasa - it's just another way to make it plural.",
+      examples: [
+        "The researcher compared the abomasi of different farm animals",
+        "They found parasites in the abomasi of the infected sheep",
+        "The diagram showed healthy versus unhealthy abomasi",
+        "Students had to label the abomasi in their anatomy test",
+        "The farm's cattle all had healthy abomasi"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈmeɪsaɪ/"
+},
+abomasum: {
+  definitions: [
+    {
+      text: "The fourth and final stomach chamber in animals like cows, sheep, and goats. It's where they do their last bit of digestion after food goes through their other stomach parts. Think of it as their 'true stomach' - it works kind of like our single stomach does.",
+      examples: [
+        "The cow's abomasum helps break down grass into nutrients it can use",
+        "The vet found a problem in the sheep's abomasum",
+        "Baby cows mainly use their abomasum when they're drinking milk",
+        "The goat needed surgery on its abomasum",
+        "Students learned how the abomasum helps digest food"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈmeɪsəm/"
+},
+abomasus: {
+  definitions: [
+    {
+      text: "Just another name for abomasum - that last stomach chamber in cows, sheep, and similar animals. It's the same thing, just a different way to say it.",
+      examples: [
+        "The vet checked the abomasus during the cow's checkup",
+        "Problems in the abomasus can make farm animals sick",
+        "The textbook used both 'abomasum' and 'abomasus' to mean the same thing",
+        "They treated the sheep's abomasus infection",
+        "The diagram showed where the abomasus is located"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈmeɪsəs/"
+},
+abominability: {
+  definitions: [
+    {
+      text: "When something is so awful or horrible that it makes you feel sick or disgusted. It's like the quality of being completely terrible or unacceptable.",
+      examples: [
+        "The abominability of his actions shocked everyone in town",
+        "People couldn't ignore the abominability of the working conditions",
+        "The abominability of the smell made it impossible to stay in the room",
+        "Critics noted the abominability of the restaurant's hygiene standards",
+        "The abominability of his behavior got him kicked out of school"
+      ]
+    }
+  ],
+  pronunciation: "/əˌbɒmɪnəˈbɪlɪti/"
+},
+abominable: {
+  definitions: [
+    {
+      text: "When something is so horrible, disgusting, or awful that it makes you want to run away or throw up. It's like next-level terrible - way beyond just 'bad'.",
+      examples: [
+        "The bathroom was in an abominable state after the party",
+        "His cooking skills are abominable - he burned water somehow",
+        "The smell coming from the trash was absolutely abominable",
+        "Their treatment of employees was abominable",
+        "The weather was abominable - freezing rain and strong winds"
+      ]
+    },
+    {
+      text: "Used to describe something really unpleasant or super bad, often in a dramatic or funny way. Like when you're being extra about how bad something is.",
+      examples: [
+        "This coffee tastes abominable - who made this?",
+        "His singing is abominable, but he doesn't care",
+        "The movie was so abominable we left halfway through",
+        "That outfit is absolutely abominable",
+        "The service at that restaurant was abominable"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɒmɪnəbl/"
+},
+abominate: {
+  definitions: [
+    {
+      text: "When you hate something so much it makes you feel sick. It's like when something is so awful or disgusting that you can't even stand to think about it - way beyond just disliking it.",
+      examples: [
+        "He absolutely abominates the smell of durian fruit",
+        "I abominate having to wake up super early for work",
+        "She abominates people who are mean to animals",
+        "The way they treated their employees made everyone abominate the company",
+        "Most kids abominate the taste of bitter vegetables",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒmɪneɪt/",
+},
+abomination: {
+  definitions: [
+    {
+      text: "Something that's so horrible or disgusting it makes you want to run away screaming. It's when something is just plain wrong and shouldn't exist - like putting pineapple on pizza (if you're Italian).",
+      examples: [
+        "That movie remake was an abomination of the original",
+        "His attempt at cooking was a complete abomination",
+        "Mixing orange juice with milk? That's an abomination",
+        "The new building design was called an abomination by local residents",
+        "What they did to that classic car was an abomination",
+      ],
+    },
+    {
+      text: "When something goes against what people think is right or normal - like breaking a really important rule or tradition that everyone follows.",
+      examples: [
+        "Some people think wearing socks with sandals is an abomination",
+        "The way they changed the story was an abomination of the original book",
+        "Eating dessert before dinner was considered an abomination in his strict household",
+        "The new policy was an abomination of workers' rights",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbɒmɪˈneɪʃən/",
+},
+abominator: {
+  definitions: [
+    {
+      text: "Someone who really fucking hates something or finds it totally disgusting. Like that person who absolutely can't stand and despises a certain thing.",
+      examples: [
+        "He's such an abominator of reality TV shows - he leaves the room when they're on",
+        "As an abominator of spicy food, she won't even try mild salsa",
+        "The cat was a known abominator of water and bath time",
+        "She's a total abominator of early morning meetings",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbɒmɪneɪtər/"
+},
+abominators: {
+  definitions: [
+    {
+      text: "More than one person who really hates or can't stand something. It's the plural of abominator - like when you've got a whole group of people who all hate the same thing.",
+      examples: [
+        "The abominators of the new school rules started a petition",
+        "Social media abominators often talk about how life was better before phones",
+        "These pineapple pizza abominators need to chill out",
+        "The abominators of the new update kept complaining in the comments",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbɒmɪneɪtərz/"
+},
+abomine: {
+  definitions: [
+    {
+      text: "An old-school way of saying you hate something or find it super gross. It's like 'abominate' but from way back in the day - you probably won't hear anyone use this unless they're reading really old books.",
+      examples: [
+        "The ancient text said 'I do abomine such evil deeds'",
+        "In old poetry, they would write 'I abomine thy presence'",
+        "The priest did abomine the sinful behavior",
+        "She doth abomine the taste of bitter herbs",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbɒmɪn/"
+},
+aboon: {
+  definitions: [
+    {
+      text: "An old Scottish way of saying 'above' or 'up there'. It's like when your grandparents use words that nobody uses anymore - you might find this in old Scottish poems or stories.",
+      examples: [
+        "The stars aboon were shining bright",
+        "He lived in the cottage aboon the hill",
+        "The birds flying aboon caught her attention",
+        "There's a light on aboon in the attic",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbuːn/"
+},
+aboral: {
+  definitions: [
+    {
+      text: "When something is on the opposite side from where the mouth is. Think of it like this: if you draw a line from head to toe on an animal, the back side (away from the mouth) is the aboral side. It's mostly used when talking about sea creatures and other animals.",
+      examples: [
+        "The starfish's aboral surface is the top part where you don't see its mouth",
+        "The scientist was studying the aboral region of the sea urchin",
+        "The jellyfish has different patterns on its aboral side",
+        "You can see spikes on the aboral part of this creature",
+        "The aboral side of the sand dollar is darker than its oral side",
+      ],
+    },
+  ],
+  pronunciation: "/æˈbɔːrəl/",
+},
+aboriginal: {
+  definitions: [
+    {
+      text: "The first people who lived in a place, way before others showed up. Like the original locals who've been there since ancient times. When people say Aboriginal (with a capital A), they're usually talking about the first peoples of Australia specifically.",
+      examples: [
+        "The aboriginal peoples of Canada have lived there for thousands of years",
+        "We learned about aboriginal art in class today",
+        "The museum has a collection of aboriginal tools and artifacts",
+        "Many aboriginal cultures have deep connections to the land",
+        "They're working to preserve aboriginal languages",
+      ],
+    },
+    {
+      text: "When something has been around since the very beginning or is original to a place. It's like saying something is the OG version, not a copy or newcomer.",
+      examples: [
+        "These plants are aboriginal to the Amazon rainforest",
+        "The aboriginal forest remained untouched for centuries",
+        "They discovered some aboriginal rock formations",
+        "This is an aboriginal species of butterfly",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbəˈrɪdʒɪnəl/",
+},
+aboriginary: {
+  definitions: [
+    {
+      text: "Related to the original people who lived in a place before others came. Like when you're talking about stuff that belongs to or is about native peoples who were somewhere first.",
+      examples: [
+        "The museum has an aboriginary art collection from ancient Australia",
+        "They're studying aboriginary cultures of North America",
+        "The tribe maintains many of their aboriginary traditions",
+        "These plants are aboriginary to this region",
+        "The festival celebrates aboriginary music and dance"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈrɪdʒɪneri/"
+},
+aborigine: {
+  definitions: [
+    {
+      text: "Someone who was born in a place or whose people have lived there since the beginning, way before others showed up. Usually talks about the first peoples of places like Australia or other lands before colonization.",
+      examples: [
+        "The Aborigines have lived in Australia for over 65,000 years",
+        "He learned hunting techniques from an Aborigine guide",
+        "The museum works with Aborigine communities to preserve their history",
+        "Many Aborigine stories have been passed down through generations",
+        "The government finally apologized to the Aborigine peoples"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbəˈrɪdʒɪni/"
+},
+aborning: {
+  definitions: [
+    {
+      text: "When something is just starting to happen or being created right now. It's like catching something right as it's being born or coming into existence.",
+      examples: [
+        "The idea was aborning in her mind during the meeting",
+        "We watched the new business aborning from just a small shop",
+        "Their love was aborning during that summer vacation",
+        "A new style of music was aborning in the underground clubs",
+        "The revolution was aborning in the streets"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrnɪŋ/"
+},
+abort: {
+  definitions: [
+    {
+      text: "To stop something before it's finished, usually because something's wrong or it's not safe to continue. Like hitting the emergency stop button or canceling a mission.",
+      examples: [
+        "We had to abort the launch due to bad weather",
+        "Quick, abort the download - it looks like a virus!",
+        "The pilot decided to abort the landing",
+        "They had to abort the mission when their cover was blown",
+        "Just abort the program if it starts acting weird"
+      ]
+    },
+    {
+      text: "When a pregnancy is ended early, either by choice or because of medical reasons.",
+      examples: [
+        "Some people choose to abort for personal or health reasons",
+        "The doctor said the pregnancy might self-abort",
+        "They had to abort due to serious medical complications",
+        "The law gives people the right to abort in the first trimester"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrt/"
+},
+aborted: {
+  definitions: [
+    {
+      text: "When something was stopped or canceled before it could finish. It's like when plans get shut down halfway through or something gets cut off before the end.",
+      examples: [
+        "The aborted mission cost millions of dollars",
+        "The game crashed and left me with an aborted save file",
+        "Their aborted vacation plans really bummed everyone out",
+        "The system showed an aborted connection error",
+        "The aborted launch meant they had to reschedule everything"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrtɪd/"
+},
+abortifacient: {
+  definitions: [
+    {
+      text: "A medicine or substance that can end a pregnancy. It's basically any drug or chemical that's specifically made to terminate a pregnancy - like certain prescription medications used in medical settings.",
+      examples: [
+        "The doctor prescribed an abortifacient medication",
+        "Some herbs were historically used as natural abortifacients",
+        "The clinic provides FDA-approved abortifacient drugs",
+        "She discussed abortifacient options with her healthcare provider",
+        "The study examined the effects of various abortifacient medications"
+      ]
+    }
+  ],
+  pronunciation: "/əˌbɔːrtəˈfeɪʃənt/"
+},
+abortion: {
+  definitions: [
+    {
+      text: "When a pregnancy is ended early, either by choice (like a medical procedure) or naturally (like a miscarriage). In everyday talk, it usually means choosing to end a pregnancy through medical help.",
+      examples: [
+        "She had to travel to another state to get an abortion",
+        "The clinic provides abortion services and counseling",
+        "They discussed their abortion options with the doctor",
+        "The law allows abortions up to a certain number of weeks",
+        "She had a spontaneous abortion, which is the medical term for a miscarriage"
+      ]
+    },
+    {
+      text: "When something gets stopped or cut short before it's finished - like when a mission or project gets cancelled halfway through.",
+      examples: [
+        "They had to call for an abortion of the space launch due to bad weather",
+        "The military ordered an abortion of the mission when things got too risky",
+        "The system performed an abortion of the file transfer when it detected errors",
+        "They announced an abortion of the construction project due to funding issues"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrʃn/"
+},
+abortional: {
+  definitions: [
+    {
+      text: "Related to or having to do with abortion. It's basically an adjective used to describe things connected to the medical procedure of ending a pregnancy.",
+      examples: [
+        "The clinic provides abortional services",
+        "They were discussing abortional rights",
+        "The doctor specializes in abortional care",
+        "There's been a lot of debate about abortional laws",
+        "The group focuses on abortional healthcare access"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrʃənəl/"
+},
+abortionist: {
+  definitions: [
+    {
+      text: "A doctor or medical person who performs abortions. While it's technically just means someone who does this medical procedure, heads up - this word is often used in a negative way by people who are against abortion.",
+      examples: [
+        "The protesters called the doctor an abortionist",
+        "She worked as an abortionist in the women's clinic",
+        "The documentary interviewed former abortionists",
+        "The law restricted what abortionists could do",
+        "He was known as an abortionist in the 1960s"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrʃənɪst/"
+},
+abortive: {
+  definitions: [
+    {
+      text: "When something fails or gets cut short before it's finished - like when plans fall apart before they even really get started. Think of it as something that dies before it has a chance to succeed.",
+      examples: [
+        "They made an abortive attempt to climb the mountain",
+        "The robbery turned into an abortive effort when the alarm went off",
+        "Their vacation plans were abortive due to bad weather",
+        "The startup made several abortive attempts to launch their app",
+        "The revolution ended in an abortive uprising"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrtɪv/"
+},
+abortively: {
+  definitions: [
+    {
+      text: "When something is done in a way that fails or stops before it's complete. It's like when you try to do something but it just fizzles out or crashes and burns before you can finish it.",
+      examples: [
+        "The car started abortively before dying completely",
+        "He abortively tried to explain his way out of trouble",
+        "The meeting ended abortively when the power went out",
+        "The plane took off abortively before returning to the gate",
+        "She abortively attempted to change the subject"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrtɪvli/"
+},
+abortiveness: {
+  definitions: [
+    {
+      text: "The quality of something being likely to fail or end before it's done. It's basically how much something tends to crash and burn before reaching its goal.",
+      examples: [
+        "The abortiveness of their plans was obvious from the start",
+        "Everyone could see the abortiveness of his attempts to cook",
+        "The abortiveness of the project led to its cancellation",
+        "There was a certain abortiveness to all their relationships",
+        "The abortiveness of the mission became clear pretty quickly"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbɔːrtɪvnəs/"
+},
+abortogenic: {
+  definitions: [
+    {
+      text: "Something that can cause a pregnancy to end early or not continue. Usually used to describe drugs or chemicals that might make someone lose a pregnancy.",
+      examples: [
+        "Some medications have abortogenic effects",
+        "The doctor warned her about abortogenic substances",
+        "They tested the chemical for abortogenic properties",
+        "Certain herbs are known to be abortogenic",
+        "The study looked at potentially abortogenic compounds"
+      ]
+    }
+  ],
+  pronunciation: "/əˌbɔːrtəˈdʒɛnɪk/"
+},
+aborts: {
+  definitions: [
+    {
+      text: "When you stop something before it's finished, usually because something's wrong or it's not working out. Like hitting the emergency stop button or quitting halfway through.",
+      examples: [
+        "The rocket launch aborts seconds before takeoff",
+        "She aborts the download when she sees it's taking too long",
+        "The pilot aborts the landing due to bad weather",
+        "The team aborts the mission when things get too dangerous",
+        "He aborts the transaction before it goes through",
+      ],
+    },
+    {
+      text: "When a computer or program stops running suddenly because of an error. It's like when your game crashes and kicks you out.",
+      examples: [
+        "The program aborts unexpectedly during the update",
+        "The system aborts all running processes",
+        "The installation aborts halfway through",
+        "The app aborts every time I try to open that file",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔːts/",
+},
+abortus: {
+  definitions: [
+    {
+      text: "The stuff that comes out during a miscarriage or abortion. It's a medical word doctors use when they need to be specific about what they're talking about.",
+      examples: [
+        "The doctor examines the abortus to understand what went wrong",
+        "The lab needs to test the abortus for abnormalities",
+        "They keep the abortus for medical research",
+        "The pathologist studies the abortus to determine the cause",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔːtəs/",
+},
+abortuses: {
+  definitions: [
+    {
+      text: "More than one abortus - it's just the plural form that doctors use when they're talking about multiple cases of tissue from miscarriages or abortions.",
+      examples: [
+        "The lab stores abortuses for research purposes",
+        "They compare different abortuses to study patterns",
+        "The hospital keeps records of all abortuses",
+        "Scientists examine abortuses to understand pregnancy complications",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɔːtəsɪz/",
+},
+abouchement: {
+  definitions: [
+    {
+      text: "When two things join or connect together, usually talking about parts of the body or medical stuff. Think of it like when two tubes or passages meet up and form a connection.",
+      examples: [
+        "The surgeon checks the abouchement of the blood vessels",
+        "The abouchement of the intestines needs to be fixed",
+        "They study the natural abouchement of the nerves",
+        "The doctor explains where the abouchement should occur",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuʃmɒ̃/",
+},
+aboulia: {
+  definitions: [
+    {
+      text: "When someone has trouble making decisions or taking action - like their 'get up and go' button is broken. It's when you know you should do something but just can't get yourself to do it, way beyond regular procrastination.",
+      examples: [
+        "His aboulia made it hard for him to even choose what to eat for breakfast",
+        "She knew she needed help when her aboulia kept her from leaving the house",
+        "Depression can sometimes cause aboulia, making simple decisions feel impossible",
+        "The accident left him with aboulia, struggling to make even basic choices",
+        "My aboulia was so bad I couldn't even pick which show to watch",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːliə/",
+},
+aboulic: {
+  definitions: [
+    {
+      text: "When someone's stuck in a state where they can't make decisions or take action. It's like being permanently stuck in 'I can't decide' mode, where even tiny choices feel impossible.",
+      examples: [
+        "He's been aboulic since the breakup, unable to decide what to do next",
+        "The aboulic patient just sat there, not responding to any suggestions",
+        "Her aboulic state meant someone else had to make all the decisions",
+        "The medication helped reduce his aboulic symptoms",
+        "Being aboulic made job hunting impossible - he couldn't even choose which jobs to apply for",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːlɪk/",
+},
+abound: {
+  definitions: [
+    {
+      text: "When there's a ton of something everywhere - like it's all over the place. Think of it like when your friend's house is completely overrun with cats, or when there are so many options you don't know what to pick.",
+      examples: [
+        "Rumors about the new iPhone abound on social media",
+        "Opportunities abound for anyone willing to learn coding",
+        "Mistakes abound in the first draft of any book",
+        "Food trucks abound in this part of the city",
+        "Theories abound about why the show ended that way",
+        "Tourist traps abound in every major city",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbaʊnd/",
+},
+abounds: {
+  definitions: [
+    {
+      text: "When there's a ton of something everywhere. Like when you can't walk two steps without running into it because there's just so much of it around.",
+      examples: [
+        "Wildlife abounds in this forest - there are animals everywhere",
+        "Opportunities abound in the tech industry right now",
+        "The garden abounds with flowers in spring",
+        "Rumors abound about why he suddenly quit",
+        "The city abounds with great restaurants",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbaʊndz/",
+},
+about: {
+  definitions: [
+    {
+      text: "When you're talking about the general idea or topic of something. Like when you want to tell someone what the main point or subject is.",
+      examples: [
+        "This movie is about dragons",
+        "What's this meeting about?",
+        "Let's talk about your plans for next year",
+        "The book is about a girl who can talk to cats",
+        "What are you talking about?",
+      ],
+    },
+    {
+      text: "When something is close to a number or time, but not exact. It's like saying 'around' or 'roughly' when you're estimating.",
+      examples: [
+        "I'll be there in about an hour",
+        "The concert lasted about two hours",
+        "This phone costs about $500",
+        "There were about fifty people at the party",
+      ],
+    },
+    {
+      text: "When something or someone is moving around in a particular area. Like when you're just hanging around somewhere with no specific direction.",
+      examples: [
+        "Stop running about the house",
+        "There's a weird smell floating about",
+        "The kids were playing about in the yard",
+        "She's somewhere about the office",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbaʊt/",
+},
+above: {
+  definitions: [
+    {
+      text: "When something is higher up or over something else. Like when your head is higher than your feet, or when birds are flying over trees.",
+      examples: [
+        "The stars are above us in the sky",
+        "Put the picture above the couch",
+        "The temperature is above freezing",
+        "Keep your head above water when swimming",
+        "The apartment above mine is really noisy",
+      ],
+    },
+    {
+      text: "When something is more than a number or amount. It's like saying something is higher than a certain point.",
+      examples: [
+        "The price is above $100",
+        "Her score was above average",
+        "Don't turn the volume above 50",
+        "Anyone above 18 can vote",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌv/",
+},
+aboveboard: {
+  definitions: [
+    {
+      text: "When someone or something is completely honest and follows the rules - no sneaky business or shady stuff going on. It's like having nothing to hide because everything's legit.",
+      examples: [
+        "The business deal was completely aboveboard - everything was legal and clear",
+        "He keeps all his transactions aboveboard to avoid any problems",
+        "The election was conducted in an aboveboard manner",
+        "Make sure everything's aboveboard when filing your taxes",
+        "Their methods weren't exactly aboveboard",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈbɔːrd/",
+},
+abovedeck: {
+  definitions: [
+    {
+      text: "When something is on or above the main floor of a ship (the deck). It's basically anything that's not in the lower parts of the boat where you can't see the sky.",
+      examples: [
+        "The passengers stayed abovedeck to watch the sunset",
+        "All the lifeboats are stored abovedeck",
+        "The crew moved the cargo abovedeck before the storm",
+        "The dining area is located abovedeck",
+        "Keep your luggage abovedeck during the journey",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈdek/",
+},
+aboveground: {
+  definitions: [
+    {
+      text: "When something is on top of or higher than the ground - basically anything you can see without digging. Like how trees and houses are aboveground but subway tunnels aren't.",
+      examples: [
+        "Most houses have their garage aboveground",
+        "The plants grow aboveground while the roots stay below",
+        "They built an aboveground pool in their backyard",
+        "The train switched from underground to aboveground tracks",
+      ],
+    },
+    {
+      text: "When something is open and public instead of secret or hidden. Like when a business or group operates where everyone can see what they're doing.",
+      examples: [
+        "The organization went aboveground after years of secret operations",
+        "They only do aboveground work now - nothing sketchy",
+        "The band played mostly aboveground venues",
+        "Keep everything aboveground so we don't get in trouble",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈɡraʊnd/",
+},
+abovementioned: {
+  definitions: [
+    {
+      text: "When you're referring back to something that was already talked about earlier. It's like saying 'that thing I just told you about' but in a more formal way.",
+      examples: [
+        "Please review the abovementioned points before the meeting",
+        "The abovementioned rules must be followed at all times",
+        "Sign all the abovementioned forms",
+        "Contact any of the abovementioned people for help",
+        "The abovementioned issues need to be fixed ASAP",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈmenʃənd/",
+},
+aboveproof: {
+  definitions: [
+    {
+      text: "When alcohol is stronger than the standard strength (proof). Like when someone made the drink extra strong, with more alcohol than usual.",
+      examples: [
+        "This moonshine is definitely aboveproof - it'll knock you on your ass",
+        "The bartender warned us that the rum was aboveproof",
+        "They had to water down the aboveproof whiskey to make it drinkable",
+        "Be careful with that aboveproof vodka, it's way stronger than normal",
+        "The aboveproof spirits are kept in a separate cabinet",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈpruːf/",
+},
+aboves: {
+  definitions: [
+    {
+      text: "More than one 'above' - like when you're talking about multiple things that were mentioned earlier in a text or document. It's pretty formal and old-school.",
+      examples: [
+        "Please refer to all of the aboves mentioned in the email",
+        "The aboves listed are required for the application",
+        "Check the aboves before continuing",
+        "None of the aboves apply to this situation",
+        "Circle all of the aboves that match",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌvz/",
+},
+abovesaid: {
+  definitions: [
+    {
+      text: "Referring to something that was mentioned before, usually in formal writing. It's like saying 'what I just talked about' but in a fancy way.",
+      examples: [
+        "The abovesaid rules must be followed at all times",
+        "Please review the abovesaid information carefully",
+        "All of the abovesaid points are important",
+        "The abovesaid agreement is now in effect",
+        "Based on the abovesaid evidence, we can conclude...",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈsed/",
+},
+abovestairs: {
+  definitions: [
+    {
+      text: "Old-fashioned way of saying upstairs or on the floor above. It's what people used to say instead of just saying 'upstairs'.",
+      examples: [
+        "The kids are playing abovestairs in their room",
+        "I heard footsteps coming from abovestairs",
+        "She keeps all her old clothes abovestairs",
+        "The ghost supposedly only appears abovestairs",
+        "There's a weird noise coming from abovestairs",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbʌvˈsteəz/",
+},
+abox: {
+  definitions: [
+    {
+      text: "When something is inside or contained in a box. It's like saying 'in a box' but as one word.",
+      examples: [
+        "The new TV came abox and ready to set up",
+        "Keep the decorations abox until Christmas",
+        "The collectibles are worth more if they're still abox",
+        "All the moving stuff is abox in the garage",
+        "The cats love playing with anything that's abox",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɒks/",
+},
+abp: {
+  definitions: [
+    {
+      text: "Short for Archbishop - basically a high-ranking church leader who's in charge of other bishops. It's like a boss bishop.",
+      examples: [
+        "The Abp of Canterbury leads the Church of England",
+        "Abp Smith will be speaking at the ceremony",
+        "The Abp visited our church last Sunday",
+        "They're waiting for the Abp to approve the changes",
+        "The Abp's office released a statement",
+      ],
+    },
+  ],
+  pronunciation: "/ˌeɪbiːˈpiː/",
+},
+abr: {
+  definitions: [
+    {
+      text: "Short for 'abridged' - means something's been made shorter or cut down. Like when they take a long book and make it shorter by cutting out parts.",
+      examples: [
+        "This is the abr version of War and Peace",
+        "The abr dictionary fits in your pocket",
+        "I prefer the abr version for quick reading",
+        "The abr notes helped me study faster",
+        "They released an abr edition for younger readers",
+      ],
+    },
+  ],
+  pronunciation: "/ˌeɪbiːˈɑː/",
+},
+abracadabra: {
+  definitions: [
+    {
+      text: "A magic word that people say when doing magic tricks or pretending to cast spells. It's like the universal word for 'watch this magical thing happen!' that every kid with a magic wand knows.",
+      examples: [
+        "The magician waved his wand and said 'abracadabra!' before pulling a rabbit out of his hat",
+        "The kids were running around with sticks yelling 'abracadabra!' at each other",
+        "She said 'abracadabra!' as she revealed the surprise birthday cake",
+        "I wish I could just say 'abracadabra' and make all my problems disappear",
+        "The street performer shouted 'abracadabra!' before his big finale",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.rəˈkæd.æb.rə/",
+},
+abrachia: {
+  definitions: [
+    {
+      text: "When someone is born without arms. It's a medical word doctors use to describe this specific condition where a person's arms didn't develop before birth.",
+      examples: [
+        "The doctor explained that the baby was born with abrachia",
+        "Despite having abrachia, she learned to do everything with her feet",
+        "The support group helps families of children with abrachia",
+        "He wrote a book about living with abrachia to inspire others",
+        "The school made special accommodations for students with abrachia",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪkiə/",
+},
+abradable: {
+  definitions: [
+    {
+      text: "Something that can be worn down or scraped away over time. Think of it like an eraser - you can rub it and bits come off.",
+      examples: [
+        "The chalk is abradable, so you can easily wipe it off the board",
+        "The soft rubber soles are abradable and will wear down with use",
+        "They used an abradable coating that wears away slowly to protect the metal underneath",
+        "The pencil marks were abradable and could be removed with an eraser",
+        "The sandpaper worked well because the wood was abradable",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdəbl/",
+},
+abradant: {
+  definitions: [
+    {
+      text: "Something that scrapes or wears down other things, like sandpaper or a nail file. It's any material that's rough enough to scratch or rub away at surfaces.",
+      examples: [
+        "Sandpaper is a common abradant used for smoothing wood",
+        "The toothpaste contains tiny abradant particles to clean your teeth",
+        "They used an abradant powder to polish the metal surface",
+        "The rock acts as a natural abradant, smoothing the pebbles in the river",
+        "Be careful with that abradant cleaner - it might scratch the counter",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdənt/",
+},
+abrade: {
+  definitions: [
+    {
+      text: "To wear something down by rubbing or scraping it. Like when you rub sandpaper on wood or when your shoes scrape against the sidewalk.",
+      examples: [
+        "The rough carpet started to abrade the bottom of the door",
+        "Don't abrade your skin by scratching too hard",
+        "The waves slowly abrade the rocks on the beach",
+        "These jeans will abrade if you wash them too much",
+        "The metal tools started to abrade after months of heavy use",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪd/",
+},
+abrader: {
+  definitions: [
+    {
+      text: "Something that scrapes or wears down other stuff - like sandpaper or any tool used to rub things away. Think of it like an eraser but for harder materials.",
+      examples: [
+        "He used an abrader to smooth out the rough edges of the wood",
+        "The metal abrader helped remove the rust from the old bike",
+        "You'll need a stronger abrader to get that paint off",
+        "The stone abrader was perfect for shaping the sculpture",
+        "She picked up an abrader at the hardware store to fix the scratches",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdər/",
+},
+abraders: {
+  definitions: [
+    {
+      text: "More than one tool used for scraping or wearing things down. It's just the plural of abrader - like when you're talking about multiple things that scrape stuff away.",
+      examples: [
+        "The workshop had different abraders for various materials",
+        "She kept her abraders organized in separate drawers",
+        "The store sells abraders of all sizes",
+        "You'll need different abraders depending on what you're working on",
+        "All the abraders were worn out and needed replacing",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdərz/",
+},
+abrades: {
+  definitions: [
+    {
+      text: "When something scrapes or wears away at something else. Like when your shoes rub against your heel and wear away your skin, or when sandpaper scratches away at wood.",
+      examples: [
+        "The rough carpet abrades the bottom of the door",
+        "The sand abrades the paint off the beach chairs over time",
+        "Her new shoes abrades her heel when she walks",
+        "The cleaning brush abrades the dirt off the tiles",
+        "The machine slowly abrades the metal surface until it's smooth",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdz/",
+},
+abrading: {
+  definitions: [
+    {
+      text: "The act of scraping or wearing something down. It's when you're in the process of rubbing or scratching away at something to wear it down or make it smooth.",
+      examples: [
+        "She spent hours abrading the old paint off the furniture",
+        "The constant abrading of the waves shapes the rocks over time",
+        "He was abrading the rough edges of the metal piece",
+        "The machine keeps abrading the surface until it's perfectly flat",
+        "Stop abrading your skin by scratching that mosquito bite",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪdɪŋ/",
+},
+abray: {
+  definitions: [
+    {
+      text: "To suddenly wake someone up or startle them - like when your alarm scares the shit out of you in the morning. It's an old-school word that people used way back when.",
+      examples: [
+        "The loud thunder abrayed me from my sleep",
+        "The cat abrayed from its nap when the door slammed",
+        "He was abrayed by the sudden noise",
+        "The phone ringing abrayed her from her daydream",
+        "The kids were abrayed when their dad jumped out to surprise them",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪ/",
+},
+abraid: {
+  definitions: [
+    {
+      text: "An old way of saying 'to weave or braid something together'. Think of it like when you're braiding hair or weaving threads, but it's the ancient version of saying it.",
+      examples: [
+        "She abraided the flowers into a crown",
+        "The craftsman abraided the leather strips together",
+        "They abraided their hair before the ceremony",
+        "The rope was abraided from three smaller cords",
+        "She watched as her grandmother abraided the wheat stalks",
+      ],
+    },
+    {
+      text: "Another old way of saying 'to scold or criticize someone'. Like when someone's giving you shit for something you did wrong.",
+      examples: [
+        "The teacher abraided the student for not doing homework",
+        "He was abraided for being late again",
+        "She abraided herself for making such a simple mistake",
+        "The coach abraided the team for their poor performance",
+        "Parents would abraid their kids for staying out too late",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪd/",
+},
+abranchial: {
+  definitions: [
+    {
+      text: "When an animal doesn't have gills. It's like how we breathe with lungs instead of gills - we're abranchial. Scientists use this word when they're talking about animals that don't breathe underwater.",
+      examples: [
+        "Mammals are abranchial animals",
+        "The evolution from branchial to abranchial breathing",
+        "Adult frogs become abranchial as they develop",
+        "The creature was classified as an abranchial species",
+        "Scientists studied the abranchial respiratory system",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈbræŋkiəl/",
+},
+abranchialism: {
+  definitions: [
+    {
+      text: "The state of not having gills. It's when an animal's body is built to breathe without gills - like how humans and other land animals are just naturally built without them.",
+      examples: [
+        "Abranchialism is common in land-dwelling vertebrates",
+        "The species developed abranchialism over millions of years",
+        "The textbook had a chapter on abranchialism in mammals",
+        "Abranchialism allowed animals to fully adapt to life on land",
+        "The research focused on the evolution of abranchialism",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈbræŋkiəˌlɪzəm/",
+},
+abranchian: {
+  definitions: [
+    {
+      text: "Another way of saying an animal has no gills. It's basically the same as abranchial - scientists just love having different ways to say the same thing.",
+      examples: [
+        "Humans are abranchian creatures",
+        "The abranchian lifestyle requires different adaptations",
+        "Most land animals are abranchian",
+        "The fossil showed signs of being an abranchian species",
+        "They studied the abranchian characteristics of the animal",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈbræŋkiən/",
+},
+abranchiate: {
+  definitions: [
+    {
+      text: "When an animal doesn't have gills or special breathing parts. It's like saying something breathes the simple way - through its skin or body surface - instead of having fancy breathing equipment like gills or lungs.",
+      examples: [
+        "Some sea creatures are abranchiate, breathing right through their skin",
+        "The tiny worm is abranchiate, no gills needed",
+        "These simple animals are abranchiate - they don't have any special breathing parts",
+        "Being abranchiate works fine for small creatures",
+        "The species evolved to be abranchiate over time"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbræŋkiət/"
+},
+abranchious: {
+  definitions: [
+    {
+      text: "Not having gills or special breathing parts. It's another way to say something breathes simply through its skin or body surface instead of using specific breathing organs.",
+      examples: [
+        "The creature is abranchious, getting oxygen straight through its skin",
+        "Many simple animals are abranchious",
+        "Being abranchious is common in tiny water creatures",
+        "The species remained abranchious throughout evolution",
+        "Scientists discovered a new abranchious species in the deep ocean"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbræŋkiəs/"
+},
+abrase: {
+  definitions: [
+    {
+      text: "To scrape or rub something until it wears away. Like when you keep rubbing the same spot until it gets thinner or disappears completely.",
+      examples: [
+        "The sandpaper will abrase the wood's rough surface",
+        "Years of foot traffic abraded the stone steps",
+        "Don't abrase the paint off by scrubbing too hard",
+        "The rough waves slowly abrase the cliff face",
+        "The machine works by abrading the metal surface until it's smooth"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbreɪz/"
+},
+abrased: {
+  definitions: [
+    {
+      text: "When something's been scraped or rubbed away. It's what happens after something gets worn down from too much rubbing or scraping.",
+      examples: [
+        "The abrased carpet showed where the furniture had been dragged",
+        "His jeans were abrased at the knees from falling",
+        "The wall paint was abrased from years of people touching it",
+        "The metal surface was carefully abrased to create texture",
+        "The rock faces were abrased by centuries of wind and sand"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbreɪzd/"
+},
+abraser: {
+  definitions: [
+    {
+      text: "Something that scrapes or wears other things down. Think of it like any tool or thing that's meant to rub away at surfaces.",
+      examples: [
+        "Sandpaper is a common abraser for woodworking",
+        "The machine uses a metal abraser to smooth rough edges",
+        "They needed a stronger abraser to remove the old paint",
+        "The abraser attachment helps clean tough stains",
+        "Natural abrasers like sand and wind shaped these rocks"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbreɪzər/"
+},
+abrash: {
+  definitions: [
+    {
+      text: "When colors or patterns in fabric (especially carpets and rugs) change slightly in an unplanned way. It's like those natural color shifts you see in handmade rugs where the color isn't perfectly matched throughout.",
+      examples: [
+        "The handwoven rug has a beautiful abrash that makes each section unique",
+        "The abrash in the carpet shows it's genuinely handmade",
+        "Some people pay extra for rugs with abrash effects",
+        "The wool's natural abrash gives the fabric character",
+        "Modern machines try to copy the abrash effect of traditional rugs"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbræʃ/"
+},
+abrasion: {
+  definitions: [
+    {
+      text: "When something gets scraped or rubbed raw - like when you fall and scrape your knee on the sidewalk. It's that annoying surface damage that stings but isn't deep enough to need stitches.",
+      examples: [
+        "I got an abrasion on my elbow from wiping out on my skateboard",
+        "The carpet gave me abrasions on my knees while I was crawling around looking for my contact lens",
+        "She got rope abrasions on her hands from rock climbing without gloves",
+        "The cat got an abrasion on its nose from trying to squeeze under the fence",
+        "My new shoes gave me an abrasion on my heel",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbreɪ.ʒən/",
+},
+abrasive: {
+  definitions: [
+    {
+      text: "When someone's personality is rough and harsh in a way that rubs people the wrong way - like sandpaper for your feelings. They say things without caring if it hurts or annoys others.",
+      examples: [
+        "His abrasive personality made it hard for anyone to work with him",
+        "She can be pretty abrasive when she's stressed out",
+        "The new manager's abrasive style is making everyone want to quit",
+        "I know he means well, but his abrasive comments are pushing people away",
+        "Her abrasive attitude at the meeting didn't help win anyone over",
+      ],
+    },
+    {
+      text: "Something that's rough and scratchy enough to wear other things down - like sandpaper, steel wool, or those scrubby sides of kitchen sponges.",
+      examples: [
+        "Use the abrasive side of the sponge to scrub off the burnt food",
+        "This abrasive cleaner will help remove the rust stains",
+        "Don't use anything abrasive on non-stick pans or you'll ruin them",
+        "The abrasive sand in my shoes was wearing holes in my socks",
+        "You need an abrasive pad to clean that grill properly",
+      ],
+    }
+  ],
+  pronunciation: "/əˈbreɪ.sɪv/",
+},
+abrastol: {
+  definitions: [
+    {
+      text: "A chemical that used to be added to wine to make it last longer. It's not used anymore because it turned out to be bad for people's health.",
+      examples: [
+        "The old wine-making book mentioned abrastol as a preservative",
+        "Scientists found that abrastol wasn't safe to use in drinks",
+        "Before modern methods, some winemakers used abrastol to keep wine fresh",
+        "The use of abrastol in beverages is now banned in most countries",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbræstɒl/",
+},
+abraum: {
+  definitions: [
+    {
+      text: "All the useless dirt and rock you have to dig through to get to the good stuff in mining. It's like when you have to eat through all the boring parts of an orange to get to the juicy bits.",
+      examples: [
+        "The miners had to clear tons of abraum before reaching the coal",
+        "There's a huge pile of abraum outside the mine entrance",
+        "They're trying to figure out what to do with all the abraum from the dig site",
+        "The company uses special trucks to move the abraum away",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbraʊm/",
+},
+abraxas: {
+  definitions: [
+    {
+      text: "An ancient magical word that people used to think had special powers. Kind of like 'abracadabra' but people took it way more seriously back in the day.",
+      examples: [
+        "The old jewelry had abraxas carved into it for protection",
+        "Ancient people would write abraxas on stuff thinking it would bring good luck",
+        "They found abraxas written all over the walls of the temple",
+        "The museum has several stones with abraxas symbols on them",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbræksəs/",
+},
+abrazite: {
+  definitions: [
+    {
+      text: "A type of crystal that's white or gray and looks kind of glassy. It's basically a fancy rock that mineral nerds get excited about.",
+      examples: [
+        "The collector added a rare piece of abrazite to their collection",
+        "They found some abrazite crystals in the mountain cave",
+        "The geology student was stoked to find abrazite during the field trip",
+        "The museum has a display of abrazite specimens",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbreɪzaɪt/",
+},
+abrazo: {
+  definitions: [
+    {
+      text: "A warm, friendly hug or embrace - it's the Spanish word for hug that's made its way into English. Think of it as not just any hug, but one of those big, heartfelt ones you give someone you're really happy to see.",
+      examples: [
+        "She gave me a big abrazo when I finally visited after years away",
+        "The family welcomed us with abrazos and kisses",
+        "Nothing beats an abrazo from your grandma",
+        "They shared a tearful abrazo at the airport",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɑːzoʊ/",
+},
+abrazos: {
+  definitions: [
+    {
+      text: "More than one abrazo (friendly hug). It's just the plural version - when there's lots of warm, friendly hugs going around.",
+      examples: [
+        "There were abrazos all around at the family reunion",
+        "The team celebrated their win with abrazos and high fives",
+        "The wedding ended with everyone giving abrazos to the happy couple",
+        "Holiday gatherings always involve lots of abrazos",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɑːzoʊs/",
+},
+abreact: {
+  definitions: [
+    {
+      text: "When you finally let out all those bottled-up feelings and emotional shit you've been holding onto. It's like emotional vomiting - getting it all out so you can feel better.",
+      examples: [
+        "He needed to abreact after keeping his feelings inside for so long",
+        "Sometimes you just need to cry and abreact to feel better",
+        "The therapy session helped her abreact years of built-up stress",
+        "Writing in his journal helped him abreact his anger",
+        "She finally got to abreact during the emotional conversation with her friend",
+      ],
+    },
+  ],
+  pronunciation: "/æbriˈækt/",
+},
+abreaction: {
+  definitions: [
+    {
+      text: "When you let out strong emotions that you've been holding in, usually by talking about or reliving a stressful experience. It's like emotional pressure release - think of it as finally letting out all the built-up feelings you've kept bottled up inside.",
+      examples: [
+        "During therapy, he experienced an abreaction when talking about his accident",
+        "She had an abreaction while watching a movie that reminded her of her past",
+        "The support group helped him achieve abreaction by sharing his story",
+        "Writing in her journal led to an abreaction of her buried feelings",
+        "Sometimes crying can be a form of abreaction when you've been holding in stress",
+      ],
+    },
+  ],
+  pronunciation: "/æbriˈækʃən/",
+},
+abreast: {
+  definitions: [
+    {
+      text: "When people or things are side by side in a line. Like when you're walking next to your friends on the sidewalk, all in a row.",
+      examples: [
+        "The five runners were running abreast at the start of the race",
+        "The kids walked abreast down the hallway, blocking everyone else",
+        "The boats sailed abreast as they approached the finish line",
+        "Please don't walk four abreast on the bike path",
+        "The soldiers marched abreast in perfect formation",
+      ],
+    },
+    {
+      text: "When you're up to date with something or keeping up with what's happening. Like when you're all caught up on the latest news or trends.",
+      examples: [
+        "I try to keep abreast of what's happening in tech",
+        "She keeps abreast of fashion trends through social media",
+        "It's hard to keep abreast of all the changes in this industry",
+        "He reads the news daily to stay abreast of current events",
+        "The team meets weekly to keep everyone abreast of the project",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrest/",
+},
+abreid: {
+  definitions: [
+    {
+      text: "To spread something out or around. Think of when you spread butter on bread, but like, doing it really wide and all over the place.",
+      examples: [
+        "She abreid the blanket across the entire grass field",
+        "The news quickly abreid throughout the town",
+        "The paint abreid across the canvas as water was added",
+        "They watched as the fire abreid through the forest",
+        "The rumors abreid faster than anyone expected"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbreɪd/"
+},
+abrenounce: {
+  definitions: [
+    {
+      text: "To completely give up or reject something with absolute certainty. It's like when you're not just saying no to something - you're saying 'hell no' and meaning it forever.",
+      examples: [
+        "He abrenounced his claim to the family fortune",
+        "She abrenounced all her old toxic habits",
+        "The group abrenounced violence as a solution",
+        "They abrenounced their former beliefs completely",
+        "He had to abrenounce his citizenship to get the new one"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbrɪˈnaʊns/"
+},
+abrenunciate: {
+  definitions: [
+    {
+      text: "To formally and totally reject or give up something. It's like hitting the ultimate 'nope' button on something and making it official.",
+      examples: [
+        "She had to abrenunciate her rights to the property",
+        "The leader abrenunciated his position of power",
+        "They abrenunciated their old way of doing things",
+        "He chose to abrenunciate his membership in the club",
+        "The company abrenunciated responsibility for the accident"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbrɪˈnʌnsɪeɪt/"
+},
+abrenunciation: {
+  definitions: [
+    {
+      text: "The act of completely and formally rejecting or giving up something. It's like when you make a big deal about saying 'I'm done with this' and really mean it.",
+      examples: [
+        "His abrenunciation of his old lifestyle shocked everyone",
+        "The abrenunciation of the contract left both parties free",
+        "Her public abrenunciation of the group made headlines",
+        "The abrenunciation ceremony was very formal",
+        "Their abrenunciation of violence was a turning point"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbrɪˌnʌnsɪˈeɪʃən/"
+},
+abreption: {
+  definitions: [
+    {
+      text: "When someone or something is suddenly snatched or taken away. Like when your pizza disappears from the break room fridge - that's abreption in action.",
+      examples: [
+        "The abreption of her phone happened so fast she barely saw it",
+        "The sudden abreption of power left the city in darkness",
+        "The dog's abreption of the sandwich was lightning quick",
+        "Everyone witnessed the abreption of the flag by the wind",
+        "The abreption of his keys meant he was stuck outside"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbrɛpʃən/"
+},
+abret: {
+  definitions: [
+    {
+      text: "Out and about or away from home. It's like when you're just out there doing your thing, not at your usual spot.",
+      examples: [
+        "He's been abret since morning",
+        "They went abret to explore the city",
+        "She's always abret on adventures",
+        "The cat was abret all night",
+        "We'll be abret until dinner time"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbrɛt/"
+},
+abreuvoir: {
+  definitions: [
+    {
+      text: "A place where animals can drink water, like a trough or pond. Think of it as a water fountain but for horses and other animals.",
+      examples: [
+        "The horses gathered around the abreuvoir for a drink",
+        "They built an abreuvoir near the barn",
+        "The old stone abreuvoir was still in use",
+        "Birds often visited the small abreuvoir in the garden",
+        "The farm had several abreuvoirs scattered around"
+      ]
+    },
+    {
+      text: "In building stuff, it's a gap or space left between stones or bricks that gets filled with mortar. Like leaving room for the glue that holds the blocks together.",
+      examples: [
+        "The mason carefully measured each abreuvoir",
+        "The abreuvoir was too wide and needed adjustment",
+        "They filled every abreuvoir with fresh mortar",
+        "The old wall had visible abreuvoirs between the stones",
+        "Proper abreuvoirs are crucial for strong walls"
+      ]
+    }
+  ],
+  pronunciation: "/ˌæbrəˈvwɑːr/"
+},
+abri: {
+  definitions: [
+    {
+      text: "A shelter that protects you from danger or bad weather, especially one that's dug into the ground or built into something else. Think of it like a bunker or a really solid hideout.",
+      examples: [
+        "They found an old abri from the war in the hillside",
+        "The hikers took shelter in a natural abri during the storm",
+        "The abri provided protection from the bombing",
+        "They built an abri in the backyard as a storm shelter",
+        "The archaeological team discovered several ancient abris"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæbri/"
+},
+abrico: {
+  definitions: [
+    {
+      text: "An old way of saying 'apricot' - that orange-colored fruit that's kind of like a small peach. This spelling isn't used anymore, but you might see it in really old books.",
+      examples: [
+        "In the ancient cookbook, they spelled apricot as 'abrico'",
+        "The medieval market sold fruits like abrico and figs",
+        "She found the word 'abrico' in her great-grandmother's recipe",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbriːkəʊ/",
+},
+abricock: {
+  definitions: [
+    {
+      text: "Another old way of writing 'apricot'. Like 'abrico', this is an outdated spelling you might find in really old English texts.",
+      examples: [
+        "The old poem mentioned picking abricocks from the garden",
+        "Shakespeare used the word 'abricock' in his plays",
+        "The historical document listed prices for abricocks and plums",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbriːkɒk/",
+},
+abricot: {
+  definitions: [
+    {
+      text: "An old spelling of 'apricot' that comes from French. You might still see this spelling in old books or French texts.",
+      examples: [
+        "The French recipe called for fresh abricots",
+        "She found the word 'abricot' in an old English-French dictionary",
+        "The medieval text described the sweet taste of abricots",
+      ],
+    },
+  ],
+  pronunciation: "/æbriːˈkoʊ/",
+},
+abridge: {
+  definitions: [
+    {
+      text: "To make something shorter by cutting out parts while keeping the main ideas. Like when you tell your friend the short version of a long story, or when they make a shorter version of a big book.",
+      examples: [
+        "Can you abridge your speech? It's way too long",
+        "They abridged the novel so kids could read it easier",
+        "Let me abridge this story - basically, he got the job",
+        "The teacher asked us to abridge our essays to just two pages",
+        "Don't abridge the movie too much or it won't make sense",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪdʒ/",
+},
+abridgeable: {
+  definitions: [
+    {
+      text: "When something can be made shorter without losing its main point. If you can cut it down and still have it make sense, it's abridgeable.",
+      examples: [
+        "This long book is totally abridgeable - we could cut half the descriptions",
+        "The movie isn't really abridgeable - every scene is important",
+        "Most textbooks are abridgeable for younger students",
+        "His rambling stories are definitely abridgeable",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪdʒəbl/",
+},
+abridged: {
+  definitions: [
+    {
+      text: "When something has been cut down to a shorter version. It's like getting the highlight reel instead of watching the whole game, or reading the short version of a book instead of the full thing.",
+      examples: [
+        "I read the abridged version of Moby Dick",
+        "The abridged meeting notes fit on one page",
+        "She gave us the abridged version of what happened last night",
+        "This is the abridged history of the company",
+        "Don't buy the abridged dictionary - it's missing too many words",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪdʒd/",
+},
+abridgedly: {
+  definitions: [
+    {
+      text: "When you say or do something in a shortened or cut-down way. It's like giving someone the quick version instead of the full story.",
+      examples: [
+        "He explained the situation abridgedly to save time",
+        "The teacher abridgedly covered the chapter before the bell",
+        "She abridgedly told us about her vacation - just the highlights",
+        "The news report abridgedly mentioned the event",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪdʒɪdli/",
+},
+abridgement: {
+  definitions: [
+    {
+      text: "A shorter version of something that keeps the main points but cuts out all the extra stuff. Like when you watch a 2-minute YouTube summary instead of the full 20-minute video, or read the cliff notes instead of the whole book.",
+      examples: [
+        "I read an abridgement of War and Peace because the full book is way too long",
+        "The teacher gave us an abridgement of the history lesson to save time",
+        "The podcast is an abridgement of his 3-hour interview",
+        "This movie is an abridgement of the original 6-hour miniseries",
+        "She made an abridgement of her presentation for the short meeting slot"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbrɪdʒ.mənt/"
+},
+abridger: {
+  definitions: [
+    {
+      text: "Someone who takes long stuff and makes it shorter while keeping the important parts. Think of them like a person who's really good at turning long stories into quick summaries without losing the main point.",
+      examples: [
+        "The abridger turned the 500-page book into a 100-page version",
+        "She works as an abridger for a publishing company that makes shorter versions of classics",
+        "The best abridger knows what to keep and what to cut",
+        "They hired an abridger to make their training manual more digestible",
+        "As an abridger, his job is to make long content more accessible"
+      ]
+    }
+  ],
+  pronunciation: "/əˈbrɪdʒ.ər/"
+},
+abrim: {
+  definitions: [
+    {
+      text: "When something is so full it's about to overflow - like when you fill your coffee cup right to the edge and have to walk super carefully so it doesn't spill everywhere.",
+      examples: [
+        "The bathtub was abrim with bubbles",
+        "His eyes were abrim with tears",
+        "The stadium was abrim with excited fans",
+        "She filled the glass abrim with wine",
+        "The bucket was abrim with water after the rain",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪm/",
+},
+abristle: {
+  definitions: [
+    {
+      text: "When something is standing up straight and pointy - like when a cat's fur puffs up when it's scared, or when you get goosebumps and all your arm hair stands up.",
+      examples: [
+        "The cat's tail was abristle with anger",
+        "His hair was abristle with static electricity",
+        "The crowd was abristle with excitement",
+        "The dog's back went abristle when it saw the stranger",
+        "My arm hair went abristle in the cold",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɪsəl/",
+},
+abroach: {
+  definitions: [
+    {
+      text: "When you start using or open something up for the first time - like cracking open a new bottle of wine or starting a new project.",
+      examples: [
+        "He set abroach the barrel of beer",
+        "The topic was set abroach during dinner",
+        "Once the rumor was set abroach, it spread quickly",
+        "They set abroach the last bottle of champagne",
+        "The discussion was set abroach by her question",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbroʊtʃ/",
+},
+abroad: {
+  definitions: [
+    {
+      text: "When you're in a different country from your home country - like when you go on vacation to another country or study in a foreign school.",
+      examples: [
+        "She's studying abroad in Spain for a year",
+        "We're going abroad for our honeymoon",
+        "He's been living abroad since college",
+        "Working abroad can be a great experience",
+        "They moved abroad to start a new life",
+      ],
+    },
+    {
+      text: "When something spreads out widely or all over the place - like when a rumor gets around or news spreads everywhere.",
+      examples: [
+        "The news spread abroad quickly",
+        "There are rumors abroad about the company closing",
+        "His fame went abroad after the viral video",
+        "The smell of fresh bread was abroad in the street",
+        "Word got abroad about their secret wedding",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɔːd/",
+},
+abrocome: {
+  definitions: [
+    {
+      text: "A type of small furry rodent (like a mouse) found in South America. It's basically a little animal that scientists gave a fancy name to.",
+      examples: [
+        "The researchers found a new species of abrocome in the mountains",
+        "Abrocomes are related to chinchillas but smaller",
+        "The abrocome made its nest in the rocky areas",
+        "Scientists study abrocomes to learn about rodent evolution",
+        "The abrocome looks kind of like a mix between a mouse and a hamster",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrəʊkəm/",
+},
+abrogable: {
+  definitions: [
+    {
+      text: "When something (usually a law or rule) can be cancelled or thrown out officially. If you can get rid of it through proper channels, it's abrogable.",
+      examples: [
+        "The contract was abrogable if both parties agreed",
+        "Some parts of the agreement were abrogable, but others were permanent",
+        "The old law was abrogable through a simple majority vote",
+        "Not all rules are abrogable - some are set in stone",
+        "They checked if the policy was abrogable before trying to change it",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrəʊɡəbl/",
+},
+abrogate: {
+  definitions: [
+    {
+      text: "To officially cancel or get rid of something, usually a law, agreement, or right. It's like when someone in charge says 'nope, this isn't a thing anymore' and makes it officially dead.",
+      examples: [
+        "The new government decided to abrogate the old treaty",
+        "They had to abrogate the rule because it wasn't fair",
+        "The company tried to abrogate their responsibility for the accident",
+        "You can't just abrogate promises whenever you feel like it",
+        "The court's decision will abrogate the previous ruling",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbrəʊɡeɪt/",
+},
+abrogation: {
+  definitions: [
+    {
+      text: "When something gets officially cancelled or thrown out, especially a law or agreement. It's the fancy way of saying 'yeah, we're killing this rule for good.'",
+      examples: [
+        "The abrogation of the treaty caused a lot of drama",
+        "They called for the abrogation of unfair housing laws",
+        "The abrogation of their rights made everyone angry",
+        "After the abrogation, the old rules didn't apply anymore",
+        "The sudden abrogation of the deal surprised everyone",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbrəˈɡeɪʃən/",
+},
+abrogations: {
+  definitions: [
+    {
+      text: "Multiple instances of officially cancelling or throwing out laws, agreements, or rights. When a bunch of things get killed off officially at once or over time.",
+      examples: [
+        "The new leader made several abrogations in their first week",
+        "The history book listed all the abrogations of civil rights",
+        "These abrogations of the old laws changed everything",
+        "The company faced multiple abrogations of their contracts",
+        "All these abrogations are making it hard to keep track of what rules still exist",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbrəˈɡeɪʃənz/",
+},
+abrogative: {
+  definitions: [
+    {
+      text: "When something has the power or purpose of canceling or getting rid of something else, usually a law or rule. It's like having a special eraser that can remove official stuff.",
+      examples: [
+        "The new law had an abrogative effect on the old regulations",
+        "They used abrogative powers to cancel the outdated rules",
+        "The court's abrogative decision wiped out the previous agreement",
+        "These changes have an abrogative impact on the old system",
+        "The committee used their abrogative authority to end the program",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɒɡətɪv/",
+},
+abrogator: {
+  definitions: [
+    {
+      text: "Someone who cancels or gets rid of rules, laws, or agreements. Think of them like the person with the power to hit the delete button on official stuff.",
+      examples: [
+        "The new president acted as an abrogator of the old policies",
+        "She became known as the abrogator of outdated traditions",
+        "The court served as the abrogator of discriminatory laws",
+        "He was seen as the abrogator of peace when he canceled the treaty",
+        "The committee acted as the abrogator of the previous agreement",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbrəˌɡeɪtər/",
+},
+abrogators: {
+  definitions: [
+    {
+      text: "More than one person who cancels or gets rid of rules, laws, or agreements. It's like a group of people with the power to erase official stuff.",
+      examples: [
+        "The abrogators met to discuss which old laws to remove",
+        "These abrogators are changing how the system works",
+        "The council of abrogators voted to end several outdated policies",
+        "The abrogators faced criticism for canceling the agreement",
+        "They were called the abrogators of change",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbrəˌɡeɪtərz/",
+},
+abrood: {
+  definitions: [
+    {
+      text: "To sit on eggs to keep them warm until they hatch, like what birds do. It's an old-timey word that basically means the same as brooding.",
+      examples: [
+        "The hen was abrood on her nest of eggs",
+        "The birds stayed abrood during the storm",
+        "She found the duck abrood in the garden",
+        "The chicken remained abrood for several weeks",
+        "Many birds were abrood in the springtime",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbruːd/",
+},
+abrook: {
+  definitions: [
+    {
+      text: "To put up with something or deal with it, even if you don't like it. It's an old word that means the same as tolerate or endure - like when you have to deal with your annoying cousin at family dinners.",
+      examples: [
+        "He couldn't abrook the constant noise from his neighbors",
+        "She had to abrook the long wait at the doctor's office",
+        "They learned to abrook the harsh weather conditions",
+        "I can't abrook this situation any longer",
+        "He tried to abrook the criticism with patience",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrʊk/",
+},
+abrosia: {
+  definitions: [
+    {
+      text: "When you completely lose your appetite and don't feel hungry at all. It's like when you're so stressed or sick that the thought of food just doesn't interest you.",
+      examples: [
+        "His abrosia lasted for days after the bad news",
+        "The medication caused temporary abrosia",
+        "She experienced abrosia during her illness",
+        "The doctor was concerned about his patient's abrosia",
+        "Stress can sometimes lead to abrosia",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbroʊʒə/",
+},
+abrosias: {
+  definitions: [
+    {
+      text: "A type of plant that doesn't die or wither easily. Think of it like a super tough plant that keeps on living even when other plants would give up.",
+      examples: [
+        "These abrosias plants survived the whole drought without any water",
+        "The garden was filled with abrosias, making it look alive all year round",
+        "She chose abrosias for her garden because they're basically impossible to kill",
+        "The abrosias kept growing despite the harsh conditions",
+        "Even a complete beginner can keep abrosias alive",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbroʊziəs/",
+},
+abrotanum: {
+  definitions: [
+    {
+      text: "A strong-smelling plant with tiny yellow flowers and feathery leaves. People used to plant it in their gardens because it smells like lemon and pine mixed together. Some folks call it southernwood.",
+      examples: [
+        "My grandma always had abrotanum growing by her back door",
+        "The abrotanum's lemony smell kept the bugs away from the garden",
+        "She planted abrotanum next to the roses to keep pests away",
+        "The abrotanum's yellow flowers brightened up the herb garden",
+        "You can smell the abrotanum before you even see it",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrɒtənəm/",
+},
+abrotin: {
+  definitions: [
+    {
+      text: "A natural compound found in certain plants that has a really bitter taste. It's like that super bitter taste you get from some herbs, but way stronger.",
+      examples: [
+        "The tea was too bitter because it had too much abrotin in it",
+        "Scientists found abrotin in several medicinal plants",
+        "The abrotin made the medicine taste awful",
+        "You can taste the abrotin in traditional herbal remedies",
+        "The plant's high abrotin content keeps animals from eating it",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbroʊtɪn/",
+},
+abrotine: {
+  definitions: [
+    {
+      text: "A substance that comes from certain plants and has a super bitter taste. It's basically nature's way of saying 'don't eat this' because it tastes so bad.",
+      examples: [
+        "The herb contains abrotine, which makes it taste super bitter",
+        "You can tell there's abrotine in it from that awful taste",
+        "The abrotine in the plant keeps insects away",
+        "Scientists use abrotine to study how bitter tastes work",
+        "The medicine's abrotine content makes it hard to swallow",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbroʊtiːn/",
+},
+abrupt: {
+  definitions: [
+    {
+      text: "When something happens suddenly and unexpectedly, with zero warning. Like when someone just stops talking mid-sentence or when your mom walks into your room without knocking.",
+      examples: [
+        "The movie had such an abrupt ending that everyone was confused",
+        "He made an abrupt turn and almost crashed into me",
+        "The power went out with no warning - it was totally abrupt",
+        "Their relationship came to an abrupt end after the fight",
+        "The abrupt change in weather ruined our beach plans",
+      ],
+    },
+    {
+      text: "When someone's way too direct or rude in how they talk or act, without caring about being polite. It's like having zero chill in social situations.",
+      examples: [
+        "His abrupt way of talking makes people uncomfortable",
+        "She was very abrupt with the waiter, not even saying please",
+        "The boss's abrupt email pissed everyone off",
+        "Don't be so abrupt - you could say it nicer",
+        "His abrupt personality doesn't work well in customer service",
+      ],
+    },
+    {
+      text: "When something changes or drops off suddenly, like a cliff face that goes straight down instead of sloping gradually. Think of it as nature's version of a sudden drop.",
+      examples: [
+        "The hiking trail ended at an abrupt cliff",
+        "The mountain had an abrupt drop on its north side",
+        "The road came to an abrupt end at the canyon",
+        "The land had an abrupt change in elevation",
+        "The cave wall made an abrupt turn to the left",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrʌpt/",
+},
+abruptly: {
+  definitions: [
+    {
+      text: "When something happens suddenly and unexpectedly, often in a way that feels jarring or uncomfortable. Like when someone stops talking mid-sentence or when a car slams on its brakes without warning.",
+      examples: [
+        "He abruptly left the meeting without saying goodbye",
+        "The music stopped abruptly in the middle of the song",
+        "She abruptly changed the subject when her ex came up",
+        "The car abruptly swerved to avoid hitting a dog",
+        "Our vacation ended abruptly when we got called back to work",
+        "He abruptly woke up from his nap when the door slammed",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrʌpt.li/",
+},
+abruptness: {
+  definitions: [
+    {
+      text: "The quality of being sudden and unexpected, usually in an unpleasant or awkward way. It's like when something is too quick or harsh and catches people off guard.",
+      examples: [
+        "The abruptness of his resignation shocked everyone",
+        "There was an abruptness to her tone that made me worry",
+        "The abruptness of the temperature change gave everyone a cold",
+        "People complained about the abruptness of the new rules",
+        "The movie's ending had an abruptness that left viewers confused",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbrʌpt.nəs/",
+},
+abs: {
+  definitions: [
+    {
+      text: "The muscles in your stomach area that people try really hard to make visible by doing a million crunches. You know, that six-pack everyone wants but few people have.",
+      examples: [
+        "He's been working on his abs at the gym every day",
+        "The workout video promised amazing abs in just 30 days",
+        "Her abs were showing through her crop top",
+        "I'm so sore from doing all those ab exercises",
+        "He's got a solid six-pack abs from years of training",
+      ],
+    },
+    {
+      text: "Short for 'absolute value' in math - it's the distance of a number from zero, ignoring whether it's positive or negative. Like, if you're 5 steps away from something, it doesn't matter if you went forward or backward.",
+      examples: [
+        "The abs of -5 is 5",
+        "In the equation, you need to find the abs of x",
+        "Temperature difference is measured in abs",
+        "The abs of any number is always positive",
+        "When dealing with distance, we use abs values",
+      ],
+    },
+  ],
+  pronunciation: "/æbz/",
+},
+absampere: {
+  definitions: [
+    {
+      text: "A really old way to measure electrical current - like how much electricity is flowing through something. It's basically the grandpa version of the regular ampere that we use today. You'll probably only see this in super old science books.",
+      examples: [
+        "The ancient electrical meter measured current in absamperes",
+        "Scientists used absamperes before they came up with better units",
+        "This old textbook still uses absamperes instead of modern units",
+        "The vintage equipment displays readings in absamperes",
+        "Engineers had to convert from absamperes to regular amperes",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsæmpɪər/",
+},
+absarokite: {
+  definitions: [
+    {
+      text: "A dark-colored volcanic rock that's named after where it was first found. Think of it like nature's version of dark chocolate - it's rich in certain minerals that give it that dark color.",
+      examples: [
+        "The geologist found absarokite samples in the mountain range",
+        "The dark absarokite rocks stood out against the lighter stones",
+        "They used absarokite in the museum's volcanic rock display",
+        "The mountain contained large deposits of absarokite",
+        "Students learned to identify absarokite by its dark appearance",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsærəkaɪt/",
+},
+abscess: {
+  definitions: [
+    {
+      text: "A painful, swollen bump under your skin that's full of pus. It's like a really angry pimple's bigger, meaner cousin that usually needs a doctor to deal with it.",
+      examples: [
+        "The dentist said I had an abscess in my tooth that needed treatment",
+        "He got an abscess after getting a splinter that got infected",
+        "The cat had an abscess from a fight with another cat",
+        "You should see a doctor if you think you have an abscess",
+        "The abscess was so painful she couldn't sleep",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbses/",
+},
+abscessing: {
+  definitions: [
+    {
+      text: "When your body is in the process of forming an abscess - that painful, pus-filled bump under your skin. It's like watching a tiny, unwanted balloon of infection slowly growing.",
+      examples: [
+        "The wound was abscessing and needed immediate medical attention",
+        "The vet noticed the cat's bite wound was abscessing",
+        "His tooth was abscessing, making his whole face hurt",
+        "The doctor said the infection was abscessing and prescribed antibiotics",
+        "She could feel the injury abscessing under her skin",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsesɪŋ/",
+},
+abscession: {
+  definitions: [
+    {
+      text: "When your body creates a pocket of nasty stuff (pus) under your skin to fight off an infection. It's like your body making a tiny garbage bag to trap all the bad stuff in one place.",
+      examples: [
+        "The doctor said the pain in my tooth was due to abscession",
+        "She needed antibiotics to treat the abscession in her gum",
+        "The wound showed signs of abscession and needed immediate treatment",
+        "Without proper cleaning, small cuts can lead to abscession",
+        "The vet noticed signs of abscession around the cat's bite wound",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈseʃən/",
+},
+abscind: {
+  definitions: [
+    {
+      text: "To cut something off completely or separate it from the rest. Think of it like using scissors to cut something off in one clean cut - no going back.",
+      examples: [
+        "He had to abscind all ties with his old business partners",
+        "The company decided to abscind the failing department",
+        "She chose to abscind contact with toxic friends",
+        "The surgeon had to abscind the damaged tissue",
+        "They voted to abscind that part of the agreement",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsɪnd/",
+},
+abscise: {
+  definitions: [
+    {
+      text: "When plants naturally drop parts like leaves or fruits by breaking them off. It's like trees giving their leaves a pink slip in autumn.",
+      examples: [
+        "The tree will abscise its leaves before winter",
+        "Plants abscise damaged leaves to save energy",
+        "The fruit will naturally abscise when it's ripe",
+        "Some plants abscise their petals after pollination",
+        "The process helps trees abscise dead branches",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsaɪz/",
+},
+abscisins: {
+  definitions: [
+    {
+      text: "Natural chemicals in plants that tell parts like leaves when it's time to fall off. Think of them as tiny messengers that tell leaves 'okay, time to peace out!'",
+      examples: [
+        "Abscisins help trees know when to drop their leaves in fall",
+        "Scientists study abscisins to understand how plants control growth",
+        "The plant produces more abscisins during drought",
+        "Abscisins play a big role in how fruits ripen and drop",
+        "Too many abscisins can make plants drop their leaves too early",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsaɪsɪnz/",
+},
+abscissa: {
+  definitions: [
+    {
+      text: "The distance from left to right on a graph - that horizontal line that goes from left to right (the x-axis). It's like if you're giving directions and say 'walk 5 steps to the right' - that 5 steps is the abscissa.",
+      examples: [
+        "The abscissa of this point is 5, meaning it's 5 units to the right",
+        "To find the abscissa, just count how far the point is from the left",
+        "The ball's position had an abscissa of 10 meters from the starting point",
+        "When plotting the graph, first look at the abscissa to know where to go left or right",
+        "The abscissa tells you how far along the x-axis you need to go",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈsɪsə/"
+},
+abscission: {
+  definitions: [
+    {
+      text: "When plants naturally drop their leaves, flowers, or fruit - like how trees lose their leaves in fall. It's the plant's way of saying 'I'm done with this part, time to let it go.'",
+      examples: [
+        "Leaf abscission happens every autumn when trees shed their leaves",
+        "The flower's petals went through abscission after it was done blooming",
+        "The apple underwent abscission and fell from the tree when it was ripe",
+        "Plants use abscission to get rid of damaged or old parts",
+        "The process of abscission helps trees survive winter by dropping unnecessary leaves",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈsɪʒən/"
+},
+abscond: {
+  definitions: [
+    {
+      text: "To run away or disappear suddenly, usually to avoid getting caught or dealing with responsibilities. It's like when someone takes off without telling anyone, especially if they're trying to avoid trouble or skip out on something they should do.",
+      examples: [
+        "The bank robber absconded with millions of dollars",
+        "She absconded from her wedding, leaving everyone at the altar",
+        "The employee absconded with the company's money",
+        "He absconded in the middle of the night to avoid paying rent",
+        "The teenagers absconded from summer camp after three days",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒnd/",
+},
+absconder: {
+  definitions: [
+    {
+      text: "Someone who runs away or disappears to avoid getting caught or dealing with their responsibilities. Like someone who takes off with money they stole or skips town to dodge paying their debts.",
+      examples: [
+        "The police put up wanted posters for the absconder",
+        "He became an absconder after stealing from his workplace",
+        "The loan absconder left the country before anyone noticed",
+        "They hired a detective to track down the tax absconder",
+        "The absconder left nothing but a empty apartment and unpaid bills",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒndər/",
+},
+absconders: {
+  definitions: [
+    {
+      text: "Multiple people who have run away or disappeared to avoid getting caught or dealing with their responsibilities. It's used when talking about a group of people who've taken off to escape trouble or dodge what they should be doing.",
+      examples: [
+        "The police released a list of known tax absconders",
+        "The jail break left the guards searching for multiple absconders",
+        "The company published photos of loan absconders in the newspaper",
+        "Most absconders eventually get caught and face consequences",
+        "The number of debt absconders has increased this year",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒndərz/",
+},
+absconding: {
+  definitions: [
+    {
+      text: "When someone sneaks away or runs off, usually to avoid getting caught or dealing with something. Like when you bail on your responsibilities or ditch a situation you don't want to be in.",
+      examples: [
+        "The thief ended up absconding with all the stolen money",
+        "She was caught absconding from work during her lunch break",
+        "The teenager was found after absconding from home for three days",
+        "He's known for absconding whenever it's his turn to pay the bill",
+        "The CEO was caught absconding with company funds",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒndɪŋ/",
+},
+absconds: {
+  definitions: [
+    {
+      text: "When someone runs away or disappears suddenly, usually to avoid trouble or responsibility. It's like when someone takes off without telling anyone, often with something they shouldn't have.",
+      examples: [
+        "He absconds every time someone mentions paying back the money",
+        "The suspect absconds before the police can catch them",
+        "She regularly absconds from boring meetings",
+        "The cat absconds with the fish whenever we're not looking",
+        "He absconds to his room whenever there's housework to do",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒndz/",
+},
+absconsa: {
+  definitions: [
+    {
+      text: "A hidden or secret compartment, usually built into furniture or walls. Think of those cool secret drawers in old desks or hidden spaces where people used to stash their valuable stuff.",
+      examples: [
+        "The old desk had an absconsa where they found the missing letters",
+        "She kept her diary in the absconsa behind the bookshelf",
+        "The mansion was famous for its many absconsa hidden throughout",
+        "They discovered an absconsa full of old coins in the wall",
+        "The antique cabinet maker specialized in creating clever absconsa",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskɒnsə/",
+},
+abscoulomb: {
+  definitions: [
+    {
+      text: "A unit used to measure electric charge in a system that's not commonly used anymore. It's like measuring distance in leagues instead of miles - it works, but nobody really uses it these days.",
+      examples: [
+        "The old textbook still listed measurements in abscoulombs",
+        "Scientists used to measure electrical charge in abscoulombs before switching to coulombs",
+        "The vintage equipment displayed readings in abscoulombs",
+        "They had to convert from abscoulombs to modern units",
+        "The professor explained how abscoulombs related to current units",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbskuːlɒm/",
+},
+abseil: {
+  definitions: [
+    {
+      text: "When you use ropes to climb down something steep like a cliff or building. It's basically controlled sliding down a rope while facing the wall - what rock climbers do when they're coming back down.",
+      examples: [
+        "The firefighters had to abseil down the building to rescue the cat",
+        "We learned how to abseil during our rock climbing class",
+        "She abseiled down the cliff face like a pro",
+        "The window cleaners abseil down skyscrapers every day",
+        "They practiced how to abseil safely before trying it on real mountains",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbseɪl/",
+},
+absence: {
+  definitions: [
+    {
+      text: "When someone or something isn't there or is missing. It's like when you're expecting something to be there but it's not - like an empty seat where your friend usually sits or when your favorite snack is gone from the pantry.",
+      examples: [
+        "Her absence at the meeting was noticed by everyone",
+        "The absence of traffic made the morning drive super quick",
+        "In the absence of coffee, I can barely function",
+        "The teacher marked my absence when I was sick",
+        "The absence of background music made the scene really creepy",
+        "There was a noticeable absence of kids at the park today"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæb.səns/"
+},
+absent: {
+  definitions: [
+    {
+      text: "When you're not where you're supposed to be or expected to be. Like when you skip school or don't show up to work.",
+      examples: [
+        "He was absent from school because he had the flu",
+        "Half the team was absent for practice",
+        "She's been absent from work for three days",
+        "The star player was absent for the big game",
+        "I was absent when they took the class photo"
+      ]
+    },
+    {
+      text: "When your mind is somewhere else and you're not paying attention to what's happening around you. Like when you're daydreaming in class or thinking about food during a meeting.",
+      examples: [
+        "He had that absent look on his face during the whole movie",
+        "She was physically there but mentally absent",
+        "Sorry, I was a bit absent - what did you say?",
+        "The driver seemed absent-minded and almost missed the turn",
+        "I get really absent when I'm super tired"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæb.sənt/"
+},
+absentee: {
+  definitions: [
+    {
+      text: "Someone who's not there when they're supposed to be. Like when you skip class, don't show up to vote, or bail on plans - you're the absentee. It's basically a fancy way of saying 'no-show'.",
+      examples: [
+        "He was marked as an absentee after missing three classes in a row",
+        "The election had a lot of absentee voters who mailed in their ballots",
+        "She's become a regular absentee at team meetings",
+        "The party was full, but there were some notable absentees",
+        "As an absentee landlord, he never actually visits the property",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.sənˈtiː/",
+},
+absenter: {
+  definitions: [
+    {
+      text: "Someone who makes themselves scarce or stays away from where they should be. It's like calling someone a professional disappearing artist - they're really good at not being there.",
+      examples: [
+        "He's a chronic absenter from Monday morning meetings",
+        "The teacher keeps a list of regular absenters",
+        "She's becoming quite the absenter since she got that new boyfriend",
+        "The boss noticed he was the main absenter from team events",
+        "As a frequent absenter, he missed most of the important announcements",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɛntər/",
+},
+absentia: {
+  definitions: [
+    {
+      text: "When something happens without you being there, especially in legal stuff. It's mostly used in the phrase 'in absentia', like when you're tried in court but you're not actually in the courtroom. Think of it as fancy legal talk for 'while you're not here'.",
+      examples: [
+        "The court found him guilty in absentia because he fled the country",
+        "She graduated in absentia because she was sick on graduation day",
+        "The committee made the decision in absentia when he couldn't attend",
+        "They awarded him the medal in absentia as he was deployed overseas",
+        "The divorce was finalized in absentia after he disappeared",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɛnʃiə/",
+},
+absenting: {
+  definitions: [
+    {
+      text: "The act of removing yourself or staying away from somewhere you're supposed to be. It's like when you deliberately make yourself scarce or ghost a situation.",
+      examples: [
+        "He kept absenting himself from difficult conversations",
+        "She's been absenting herself from family gatherings lately",
+        "By absenting himself from the meeting, he avoided the drama",
+        "The student was caught absenting himself from class to play video games",
+        "They noticed him absenting himself whenever work got tough",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɛntɪŋ/",
+},
+absently: {
+  definitions: [
+    {
+      text: "When you're doing something without really paying attention to it, like you're on autopilot. It's when your body is doing one thing but your mind is somewhere else completely.",
+      examples: [
+        "She absently stirred her coffee while staring out the window",
+        "He was absently scrolling through his phone during the meeting",
+        "I absently pet my cat while watching TV",
+        "She absently nodded along while thinking about something else",
+        "He absently drummed his fingers on the table during class",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.sənt.li/",
+},
+absentminded: {
+  definitions: [
+    {
+      text: "When someone's always forgetting stuff or not paying attention because their head's in the clouds. It's like their brain is always somewhere else instead of focusing on what's happening right now.",
+      examples: [
+        "My absentminded professor walked into the wrong classroom again",
+        "I'm so absentminded I put my keys in the fridge this morning",
+        "She's really smart but super absentminded - always losing her phone",
+        "His absentminded nature means he often forgets important dates",
+        "The absentminded scientist was brilliant but couldn't remember where he parked",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.səntˈmaɪn.dɪd/",
+},
+absentmindedly: {
+  definitions: [
+    {
+      text: "When you do something without thinking about it because your mind is somewhere else. Like when you're so lost in thought you don't realize what your body is doing.",
+      examples: [
+        "He absentmindedly walked past his house while daydreaming",
+        "She absentmindedly put salt in her coffee instead of sugar",
+        "I was absentmindedly chewing on my pen during the lecture",
+        "He absentmindedly liked his ex's Instagram post from three years ago",
+        "She absentmindedly picked at her food while worrying about the test",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.səntˈmaɪn.dɪd.li/",
+},
+absentmindedness: {
+  definitions: [
+    {
+      text: "The habit of being forgetful and not paying attention to what's happening around you. It's when your brain seems to be permanently on vacation while your body's trying to handle daily life.",
+      examples: [
+        "His absentmindedness got worse after working night shifts",
+        "Her absentmindedness meant she always had to double-check everything",
+        "The professor was famous for his absentmindedness",
+        "My absentmindedness drives my roommate crazy",
+        "She blamed her absentmindedness on lack of sleep",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.səntˈmaɪn.dɪd.nəs/",
+},
+absents: {
+  definitions: [
+    {
+      text: "When someone removes themselves or stays away from a place or situation. It's like when you decide to not be somewhere on purpose.",
+      examples: [
+        "He absents himself from meetings he finds boring",
+        "She often absents herself from family gatherings",
+        "The student absents themselves whenever there's a math test",
+        "He absents himself from social events to avoid his ex",
+        "She absents herself from drama by staying offline",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsents/",
+},
+absfarad: {
+  definitions: [
+    {
+      text: "A super huge unit for measuring electrical stuff, specifically how much electrical charge something can hold. It's like measuring how much water a container can hold, but for electricity, and we're talking about a container the size of an ocean.",
+      examples: [
+        "The absfarad is way too big for measuring normal electronic components",
+        "Scientists use the absfarad when dealing with massive electrical systems",
+        "Nobody uses absfarads in everyday electronics because it's like using light-years to measure your height",
+        "The capacitor's capacity was a tiny fraction of an absfarad",
+        "Engineering students learn about absfarads but rarely use them in practice",
+      ],
+    },
+  ],
+  pronunciation: "/æbsˈfær.æd/",
+},
+absinthe: {
+  definitions: [
+    {
+      text: "A super strong green alcoholic drink that was famous in the 1800s. It's made with herbs and was known for supposedly making people hallucinate (see weird stuff that's not there). Think of it as that mysterious drink that artists and writers used to get crazy inspiration from.",
+      examples: [
+        "The old bar started serving absinthe the traditional way, with water dripping over a sugar cube",
+        "She collected vintage absinthe posters from Paris",
+        "The cocktail uses just a tiny bit of absinthe for flavor",
+        "Artists in the 1800s would drink absinthe while painting",
+        "The bottle of absinthe glowed a bright green color",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsɪnθ/",
+},
+absinthial: {
+  definitions: [
+    {
+      text: "When something tastes super bitter and kind of like absinthe. It's that intense, herb-like bitterness that makes you scrunch up your face.",
+      examples: [
+        "The medicine had an absinthial taste that made him gag",
+        "The bitter, absinthial flavor of the herb ruined the soup",
+        "She couldn't handle the absinthial taste of the health tonic",
+        "The cocktail had subtle absinthial notes from the herbs",
+        "The tea turned out way too absinthial to drink",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪnθiəl/",
+},
+absinthian: {
+  definitions: [
+    {
+      text: "Just like absinthial - when something has that strong, bitter taste like absinthe. It's that intense herbal bitterness that hits the back of your tongue.",
+      examples: [
+        "The drink had an absinthian flavor that wasn't for everyone",
+        "He made a face at the absinthian taste of the herbal medicine",
+        "The bitter, absinthian herbs were used in traditional remedies",
+        "The cocktail had subtle absinthian notes that gave it character",
+        "She couldn't stand the absinthian bitterness of the green juice",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪnθiən/",
+},
+absinthiate: {
+  definitions: [
+    {
+      text: "To make something taste bitter by adding absinthe or similar bitter herbs to it. It's like when you accidentally put way too much of a strong herb in your food and now it's all you can taste.",
+      examples: [
+        "The bartender absinthiated the cocktail with just a few drops",
+        "She accidentally absinthiated the sauce by adding too many bitter herbs",
+        "The recipe said to lightly absinthiate the drink for extra flavor",
+        "He ruined the punch by absinthiating it too strongly",
+        "The chef carefully absinthiated the dish with fresh herbs",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪnθieɪt/",
+},
+absinthiated: {
+  definitions: [
+    {
+      text: "When someone is drunk or messed up from drinking absinthe (a strong green alcoholic drink). It's like being drunk, but specifically from absinthe.",
+      examples: [
+        "The old poets would get absinthiated in Paris cafes",
+        "He was clearly absinthiated after drinking at the speakeasy",
+        "The party got wild once everyone got absinthiated",
+        "She wrote her best poems while absinthiated",
+        "The artist was known for painting while absinthiated"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθiˌeɪtɪd/"
+},
+absinthiating: {
+  definitions: [
+    {
+      text: "The act of getting drunk or high from drinking absinthe. It's like the process of getting wasted, but specifically from drinking that strong green alcohol called absinthe.",
+      examples: [
+        "The writers spent their evenings absinthiating at the bar",
+        "He's absinthiating himself again with that green bottle",
+        "The group was slowly absinthiating as the night went on",
+        "She found herself absinthiating in a Parisian cafe",
+        "They made a habit of absinthiating every Friday night"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθiˌeɪtɪŋ/"
+},
+absinthic: {
+  definitions: [
+    {
+      text: "Something that's related to or tastes like absinthe (that strong green alcohol). If something has that specific absinthe flavor or vibe, it's absinthic.",
+      examples: [
+        "The cocktail had a strong absinthic taste",
+        "The candy had a weird absinthic flavor to it",
+        "That perfume has absinthic notes in it",
+        "The herb mixture gave off an absinthic smell",
+        "The drink left an absinthic aftertaste"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθɪk/"
+},
+absinthiin: {
+  definitions: [
+    {
+      text: "A bitter chemical that's found in absinthe and wormwood plants. It's one of the things that makes absinthe taste super bitter and intense.",
+      examples: [
+        "The absinthiin in the drink made his face pucker",
+        "Scientists studied the absinthiin levels in different absinthe brands",
+        "The wormwood plant is full of absinthiin",
+        "Too much absinthiin can make you sick",
+        "The bitter taste comes from the absinthiin in it"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθiɪn/"
+},
+absinthin: {
+  definitions: [
+    {
+      text: "A super bitter chemical found in absinthe. It's basically what makes absinthe taste like absinthe - that intense, bitter kick you get when you drink it.",
+      examples: [
+        "The absinthin made the drink almost too bitter to handle",
+        "You can taste the absinthin in real absinthe",
+        "Fake absinthe doesn't have natural absinthin",
+        "The absinthin gives it that classic bitter taste",
+        "Some people love the absinthin flavor, others hate it"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθɪn/"
+},
+absinthine: {
+  definitions: [
+    {
+      text: "When something has qualities similar to absinthe - like being super bitter or having that specific absinthe-like taste or smell. Think of it as 'absinthe-ish'.",
+      examples: [
+        "The tea had an absinthine bitterness to it",
+        "She noticed the absinthine aroma in the bar",
+        "The herb mixture had an absinthine quality",
+        "The cocktail had subtle absinthine notes",
+        "The perfume gave off an absinthine scent"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθaɪn/"
+},
+absinthism: {
+  definitions: [
+    {
+      text: "A nasty health condition you get from drinking way too much absinthe for a long time. It's like your body and brain getting messed up specifically from absinthe abuse.",
+      examples: [
+        "Many artists in the 1800s suffered from absinthism",
+        "The doctor diagnosed him with chronic absinthism",
+        "Absinthism was common in Paris during that era",
+        "His absinthism led to some weird hallucinations",
+        "She wrote about her recovery from absinthism"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθɪzəm/"
+},
+absinthismic: {
+  definitions: [
+    {
+      text: "Related to absinthism - the health problems that come from drinking too much absinthe. If something's connected to absinthe addiction or its effects, it's absinthismic.",
+      examples: [
+        "He showed typical absinthismic symptoms",
+        "The doctor studied absinthismic effects in patients",
+        "The writer's absinthismic behavior worried his friends",
+        "They documented absinthismic cases in the hospital",
+        "His tremors were clearly absinthismic"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsɪnθɪzmɪk/"
+},
+absinths: {
+  definitions: [
+    {
+      text: "More than one bottle or serving of absinthe - a strong green alcoholic drink that was super popular in the 1800s. It's known for being really strong and having a taste like black licorice.",
+      examples: [
+        "The bar had various absinths from different European countries",
+        "She collected rare absinths from around the world",
+        "The old cafe menu listed several absinths they used to serve",
+        "Different absinths have different levels of strength",
+        "They displayed vintage absinths in the museum's alcohol exhibit",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsɪnθs/",
+},
+absinthium: {
+  definitions: [
+    {
+      text: "The plant that's used to make absinthe - also called wormwood. It's a bitter herb that looks kind of like a small bush with silvery-green leaves.",
+      examples: [
+        "They grew absinthium in their herb garden",
+        "The bitter taste of absinthium makes it perfect for strong drinks",
+        "Absinthium has been used in medicine for hundreds of years",
+        "You can spot absinthium by its silvery leaves",
+        "The recipe called for fresh absinthium leaves",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪnθiəm/",
+},
+absinthol: {
+  definitions: [
+    {
+      text: "A chemical that gives absinthe its special taste and smell. It's one of the main things that makes absinthe taste like it does.",
+      examples: [
+        "The absinthol gives the drink its signature flavor",
+        "Scientists can measure the amount of absinthol in different drinks",
+        "Pure absinthol has a really strong smell",
+        "The recipe needs just a tiny bit of absinthol",
+        "Different brands have different levels of absinthol",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪnθɒl/",
+},
+absist: {
+  definitions: [
+    {
+      text: "An old-timey way of saying 'stop' or 'give up' on something. It's like when you decide to quit doing something and walk away from it.",
+      examples: [
+        "He decided to absist from the challenge when it got too hard",
+        "The old letter asked them to absist from making noise",
+        "She had to absist from the project due to health issues",
+        "The judge ordered them to absist from their actions",
+        "They agreed to absist from the argument",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪst/",
+},
+absis: {
+  definitions: [
+    {
+      text: "The horizontal distance in math - like when you're plotting points on a graph and need to say how far right or left something is. It's basically just an old-school way of saying 'x-coordinate'.",
+      examples: [
+        "The absis of the point was 5 units to the right",
+        "You need to measure the absis to find where it sits on the graph",
+        "The teacher asked us to mark the absis of each point",
+        "The absis shows how far the dot moved sideways",
+        "They had to calculate the absis before plotting the line",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsɪs/",
+},
+absit: {
+  definitions: [
+    {
+      text: "A fancy Latin way of saying 'get that shit away from me' or 'hell no, not happening.' It's like when you want to push away a bad idea or situation really strongly.",
+      examples: [
+        "Absit that I would ever eat pineapple on pizza",
+        "Absit the thought of working on weekends",
+        "When they suggested camping in winter, I was like 'absit!'",
+        "Absit all that negative energy",
+        "The very thought of failing made him say 'absit'",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɪt/",
+},
+absmho: {
+  definitions: [
+    {
+      text: "A super old unit for measuring how well electricity flows through something. Think of it like measuring how easily water flows through a pipe, but for electricity. It's the opposite of an absohm.",
+      examples: [
+        "The old textbook listed conductance in absmhos",
+        "Scientists used to measure electrical flow in absmhos before newer units came along",
+        "The wire's conductance was 5 absmhos",
+        "They converted the measurements from absmhos to modern units",
+      ],
+    },
+  ],
+  pronunciation: "/æbzˈmoʊ/",
+},
+absohm: {
+  definitions: [
+    {
+      text: "An old-school unit for measuring how much something fights against electrical flow. Like when your charger cable is getting worn out and doesn't charge as well - that resistance would be measured in absohms.",
+      examples: [
+        "The old circuit had a resistance of 10 absohms",
+        "They used absohms to measure how much the wire resisted electricity",
+        "The textbook had a conversion chart from absohms to modern ohms",
+        "Back in the day, engineers would calculate resistance in absohms",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsoʊm/",
+},
+absoil: {
+  definitions: [
+    {
+      text: "To make something completely dirty or stained, like when you totally mess something up with dirt or marks. It's not just a little dirty - we're talking full-on, no-going-back mess.",
+      examples: [
+        "The kids managed to absoil their new clothes in the mud",
+        "Don't absoil the carpet with your muddy shoes",
+        "The paint spill absoiled the entire floor",
+        "She absoiled her dress with red wine",
+        "The mechanic's hands were absoiled with engine grease",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɔɪl/",
+},
+absolent: {
+  definitions: [
+    {
+      text: "When something's on its way out, becoming old news or outdated. It's like watching something slowly become irrelevant or not useful anymore, like what happened to flip phones or VHS tapes.",
+      examples: [
+        "These old computer skills are becoming absolent in the tech industry",
+        "The factory's machinery was absolent and needed updating",
+        "Their business model was absolent in the digital age",
+        "The software is becoming absolent as newer versions come out",
+        "Those marketing strategies are absolent now",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsələnt/",
+},
+absolute: {
+  definitions: [
+    {
+      text: "When something is complete, total, or 100% with no exceptions or wiggle room. It's like when there's zero doubt or questions about it - it just is what it is, period.",
+      examples: [
+        "The king had absolute power over his kingdom",
+        "I have absolute confidence that we'll win",
+        "There was absolute silence in the room",
+        "She needs absolute darkness to sleep",
+        "The rules are absolute - no exceptions",
+      ],
+    },
+    {
+      text: "When something exists or works on its own, without depending on or comparing to anything else. Like when something is just true by itself, no questions asked.",
+      examples: [
+        "Zero degrees Kelvin is an absolute temperature",
+        "Some people believe in absolute truth",
+        "The law sets absolute limits on speed",
+        "She had absolute perfect pitch in music",
+        "These are absolute values, not relative ones",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.sə.luːt/",
+},
+absoluteness: {
+  definitions: [
+    {
+      text: "The state of being total, complete, or without any limits or exceptions. It's like when something is so definite and final that there's no room for debate or change.",
+      examples: [
+        "The absoluteness of his decision left no room for argument",
+        "She spoke with such absoluteness that nobody dared question her",
+        "The absoluteness of the rule meant zero exceptions",
+        "There's an absoluteness to mathematical facts",
+        "He couldn't accept the absoluteness of the situation",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.sə.luːt.nəs/",
+},
+absolution: {
+  definitions: [
+    {
+      text: "When someone officially forgives you for doing something wrong, usually in a religious way. It's like getting a clean slate after you've messed up. Think of it as the ultimate 'we're cool now' from a higher power.",
+      examples: [
+        "The priest gave him absolution after he confessed",
+        "She finally found absolution for her past mistakes",
+        "He couldn't rest until he received absolution from his family",
+        "The church offers absolution to those who truly regret their actions",
+        "She sought absolution through years of making up for what she did",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæb.səˈluː.ʃən/",
+},
+absolutism: {
+  definitions: [
+    {
+      text: "When someone thinks their way is the only right way and won't even consider other viewpoints. It's like being so stuck in your beliefs that you refuse to see any gray areas - everything's either black or white to you.",
+      examples: [
+        "His moral absolutism made it impossible to have a real discussion",
+        "She rejected her parents' religious absolutism and chose her own path",
+        "The teacher's absolutism about grammar rules drove everyone crazy",
+        "Political absolutism usually leads to conflict",
+        "He grew out of his teenage absolutism and learned to see different perspectives",
+      ],
+    },
+    {
+      text: "A system where one person or group has total power and control over everything. Think of those old-school kings who could do whatever they wanted and nobody could say shit about it.",
+      examples: [
+        "The country suffered under years of royal absolutism",
+        "The revolution ended centuries of absolutism",
+        "The dictator's absolutism crushed any hope of democracy",
+        "History shows that absolutism usually ends badly",
+        "The people finally rose up against the monarch's absolutism",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.sə.luː.tɪ.zəm/",
+},
+absolutist: {
+  definitions: [
+    {
+      text: "Someone who sees everything as totally black and white, with no room for maybes or in-betweens. They're the type who thinks there's only one right way to do things and everyone else is wrong.",
+      examples: [
+        "Don't be such an absolutist - sometimes there isn't a clear right answer",
+        "My brother's an absolutist when it comes to music - if it's not metal, it's trash",
+        "She's an absolutist about recycling - everything must be sorted perfectly",
+        "Being an absolutist makes it hard to compromise",
+        "The debate turned ugly when both absolutists refused to consider other views",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.sə.luː.tɪst/",
+},
+absolutistic: {
+  definitions: [
+    {
+      text: "When someone or something deals in total extremes - it's either all or nothing, black or white, with zero room for middle ground or exceptions. Like that friend who thinks everything is either perfect or terrible with no in-between.",
+      examples: [
+        "His absolutistic view on politics makes it impossible to have a normal conversation",
+        "She has an absolutistic approach to dieting - one cookie and she thinks the whole day is ruined",
+        "The teacher's absolutistic grading system only gave As or Fs",
+        "Their absolutistic thinking made them believe everyone was either friend or enemy",
+        "He takes an absolutistic stance on everything - you're either with him or against him",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbsəluːˈtɪstɪk/",
+},
+absolutists: {
+  definitions: [
+    {
+      text: "People who believe there's only one right way to do things and everyone else is wrong. They're like those stubborn folks who won't budge on their beliefs no matter what and think everything is either right or wrong with no gray areas.",
+      examples: [
+        "The absolutists in the group refused to consider any compromise",
+        "She's such an absolutist about grammar - one typo and she loses her mind",
+        "The absolutists in the debate wouldn't even listen to other viewpoints",
+        "His parents were moral absolutists who saw everything as either good or evil",
+        "The absolutists in government wanted total control over everything",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbsəluːtɪsts/",
+},
+absolvable: {
+  definitions: [
+    {
+      text: "When something bad you did can be forgiven or pardoned. It's like when you mess up, but it's not so terrible that you can't be let off the hook for it.",
+      examples: [
+        "Forgetting to text back is totally absolvable - we all do it sometimes",
+        "The minor mistake was absolvable, unlike the major fraud he committed",
+        "Being late because of traffic is usually absolvable",
+        "The priest said her sins were absolvable through confession",
+        "Making honest mistakes at work is absolvable, but lying about them isn't",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɒlvəbl/",
+},
+absolve: {
+  definitions: [
+    {
+      text: "To tell someone they're not responsible or to blame for something bad - basically letting them off the hook. It's like officially saying 'hey, this wasn't your fault' and clearing them of guilt.",
+      examples: [
+        "The judge absolved him of all charges when new evidence came out",
+        "She finally absolved herself of the guilt she felt about quitting her job",
+        "The teacher absolved the whole class from having to take the test",
+        "Don't try to absolve yourself of responsibility - we all saw what happened",
+        "The confession absolved his brother of any involvement in the crime",
+        "The company was absolved of wrongdoing after the investigation"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɒlv/"
+},
+absolver: {
+  definitions: [
+    {
+      text: "Someone who frees another person from blame or responsibility. Think of them as the person who has the power to say 'you're not guilty' or 'you're off the hook.'",
+      examples: [
+        "The priest acted as an absolver during confession",
+        "She became her own absolver when she learned to forgive herself",
+        "The judge was the final absolver in the controversial case",
+        "He looked to his friend as an absolver after making a huge mistake",
+        "Sometimes time is the best absolver of guilt"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɒlvər/"
+},
+absolvers: {
+  definitions: [
+    {
+      text: "More than one person who frees others from blame or responsibility. These are the people who can tell others 'you're not guilty' or 'it wasn't your fault.'",
+      examples: [
+        "The jury members acted as absolvers when they cleared his name",
+        "Parents often become absolvers of their children's minor mistakes",
+        "The committee of absolvers reviewed each case carefully",
+        "We can't always wait for absolvers - sometimes we need to forgive ourselves",
+        "The religious leaders saw themselves as absolvers of their followers' sins"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɒlvərz/"
+},
+absonant: {
+  definitions: [
+    {
+      text: "When something just doesn't make sense or feels totally off, like it doesn't fit with everything else. It's like when someone's story has parts that just don't add up.",
+      examples: [
+        "His excuse for being late was completely absonant with the facts",
+        "The happy ending felt absonant with the dark tone of the movie",
+        "Her cheerful mood seemed absonant with the sad news she just got",
+        "The bright pink walls were absonant with the formal office setting",
+        "His casual outfit was absonant with the black-tie dress code"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈsəʊnənt/"
+},
+absonous: {
+  definitions: [
+    {
+      text: "When something sounds harsh, unpleasant, or just plain wrong to your ears. Like when someone's singing is way off-key or when two sounds really don't go well together.",
+      examples: [
+        "The beginner's violin practice was pretty absonous",
+        "That weird mix of jazz and heavy metal was totally absonous",
+        "The squeaky brakes made an absonous sound that hurt my ears",
+        "His attempt at speaking French was rather absonous to native speakers",
+        "The absonous alarm clock jolted everyone awake"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈsəʊnəs/"
+},
+absorb: {
+  definitions: [
+    {
+      text: "When something soaks up or takes in liquid or other stuff - like a sponge sucking up water or paper towels cleaning up a spill.",
+      examples: [
+        "The paper towel quickly absorbed the spilled coffee",
+        "Plants absorb water through their roots",
+        "My new jacket doesn't absorb water - it just rolls right off",
+        "The soil was too dry to absorb the rain",
+        "These gym towels absorb sweat really well"
+      ]
+    },
+    {
+      text: "When you're so focused on something that you don't notice anything else around you. Like when you're super into a book or game and someone has to wave their hand in front of your face to get your attention.",
+      examples: [
+        "She was completely absorbed in her new video game",
+        "He was so absorbed in his phone that he missed his bus stop",
+        "The kids were totally absorbed in building their Lego castle",
+        "I got so absorbed in work that I forgot to eat lunch",
+        "She absorbs herself in painting whenever she's stressed"
+      ]
+    },
+    {
+      text: "When you take in and understand new information or ideas, like learning stuff in class or picking up a new skill.",
+      examples: [
+        "It takes time to absorb all this new information",
+        "Kids absorb languages much faster than adults",
+        "I need a break - my brain can't absorb any more facts",
+        "She quickly absorbed the basics of coding",
+        "Let me take a minute to absorb what you just said"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrb/"
+},
+absorbable: {
+  definitions: [
+    {
+      text: "When something can be soaked up or taken in easily. Think of how a paper towel can soak up water, but plastic can't.",
+      examples: [
+        "These vitamins are easily absorbable by your body",
+        "The new fabric is more absorbable than the old one",
+        "Not all nutrients are readily absorbable from food",
+        "The liquid soap is more absorbable than the bar soap",
+        "These cleaning pads are highly absorbable for spills"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrbəbl/"
+},
+absorbance: {
+  definitions: [
+    {
+      text: "How much stuff (usually light) something can soak up instead of letting it pass through. Like how dark sunglasses absorb more light than clear ones, or how some windows block more sunlight than others.",
+      examples: [
+        "The sunscreen has high UV absorbance to protect your skin",
+        "The tinted windows have greater light absorbance than clear ones",
+        "Scientists measure the absorbance to see how much chemical is in a solution",
+        "The plant's leaves have different levels of light absorbance",
+        "The material's high absorbance makes it perfect for soundproofing"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrbəns/"
+},
+absorbed: {
+  definitions: [
+    {
+      text: "When something gets soaked up or taken in completely - like when a paper towel soaks up water or your skin takes in lotion. Think of it like when something becomes part of something else.",
+      examples: [
+        "The sponge absorbed all the water from the spill",
+        "The plants absorbed the nutrients from the soil",
+        "My black shirt absorbed all the heat from the sun",
+        "The paper towel absorbed the coffee I spilled",
+        "The medicine gets absorbed into your bloodstream"
+      ]
+    },
+    {
+      text: "When you're so focused on something that you don't notice anything else around you. Like when you're deep into a good book or game and someone has to wave their hand in front of your face to get your attention.",
+      examples: [
+        "She was so absorbed in her book that she missed her bus stop",
+        "He gets completely absorbed in his video games",
+        "I was too absorbed in my work to notice it was getting dark",
+        "The kids were absorbed in their coloring books",
+        "She was absorbed in thought and didn't hear me calling"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːbd/"
+},
+absorbedly: {
+  definitions: [
+    {
+      text: "When you're doing something with total focus and attention, like you're in your own little world. It's how you act when you're super into what you're doing and everything else just fades away.",
+      examples: [
+        "He was absorbedly playing his guitar for hours",
+        "She stared absorbedly at her phone screen",
+        "The artist worked absorbedly on her painting all day",
+        "The cat watched absorbedly as birds flew past the window",
+        "He listened absorbedly to every word of the story"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːb.ɪd.li/"
+},
+absorbency: {
+  definitions: [
+    {
+      text: "How good something is at soaking up liquid or moisture. Like how some paper towels are better at cleaning up spills than others, or how some fabrics soak up sweat better than others.",
+      examples: [
+        "This brand of paper towels has better absorbency than the cheap ones",
+        "The towel's absorbency wasn't great - it just pushed the water around",
+        "Cotton has high absorbency, which makes it good for bath towels",
+        "The diaper's absorbency lasted all night",
+        "The sponge lost its absorbency after a few months of use"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːb.ən.si/"
+},
+absorbent: {
+  definitions: [
+    {
+      text: "Something that's really good at soaking up liquid or moisture - like a paper towel or a sponge. It's the opposite of waterproof stuff - instead of keeping liquid out, it sucks it all up.",
+      examples: [
+        "Paper towels are super absorbent - great for cleaning up spills",
+        "You need absorbent workout clothes when you're gonna sweat a lot",
+        "The new diaper brand is more absorbent than the old one",
+        "Put some absorbent material down to soak up the oil spill",
+        "These kitchen towels aren't very absorbent - they just push the water around",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɔːr.bənt/",
+},
+absorber: {
+  definitions: [
+    {
+      text: "Something that takes in or soaks up energy, shock, sound, or substances. Think of it like a sponge but for all kinds of things - not just water. Like those things in cars that eat up the bumps in the road or materials that suck up sound in a recording studio.",
+      examples: [
+        "The shock absorbers on my bike make the ride way smoother",
+        "They installed sound absorbers in the walls to keep the noise down",
+        "The carbon absorbers in the air filter clean the air",
+        "My new mattress has shock absorbers that make it super comfy",
+        "They used oil absorbers to clean up the spill",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɔːr.bər/",
+},
+absorbing: {
+  definitions: [
+    {
+      text: "When something is so interesting that it completely grabs your attention and you can't think about anything else. Like when you're so into a book or game that you forget to eat or check your phone.",
+      examples: [
+        "The movie was so absorbing I didn't even notice three hours had passed",
+        "She found the lecture surprisingly absorbing",
+        "I got lost in an absorbing conversation with my friend",
+        "The game is super absorbing - I can't put it down",
+        "He has an absorbing hobby of collecting weird facts",
+      ],
+    },
+    {
+      text: "In the process of soaking up or taking in something like liquid, light, or sound. It's the active version of being absorbent.",
+      examples: [
+        "The towel is absorbing all the water from the spill",
+        "The plants are absorbing sunlight to grow",
+        "The sponge is slowly absorbing the soup",
+        "Dark colors are good at absorbing heat",
+        "The foam panels are absorbing the echo in the room",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɔːr.bɪŋ/",
+},
+absorbingly: {
+  definitions: [
+    {
+      text: "When you're doing something in a way that completely captures your attention and makes you forget about everything else. It's like being in your own little bubble where nothing else matters except what you're focused on.",
+      examples: [
+        "She was absorbingly engaged in her painting for hours",
+        "The kids were playing absorbingly with their new toys",
+        "He worked absorbingly on the puzzle all afternoon",
+        "They talked absorbingly about their travel plans",
+        "She read absorbingly, not hearing anyone call her name",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɔːr.bɪŋ.li/",
+},
+absorption: {
+  definitions: [
+    {
+      text: "When something sucks up or takes in another thing, like a sponge soaking up water or your skin taking in lotion. It's basically when one thing completely takes in another thing.",
+      examples: [
+        "The paper towel's absorption of the spilled juice was super quick",
+        "My skin's absorption of sunscreen helps protect me from burns",
+        "The plant's roots help with water absorption from the soil",
+        "Sound absorption panels help keep the room quiet",
+        "The absorption of vitamin D happens when you're in the sun",
+        "The sponge's absorption of the mess made cleanup easy"
+      ]
+    },
+    {
+      text: "When you're so focused on something that you completely tune out everything else. Like when you're reading a really good book and don't hear someone calling your name.",
+      examples: [
+        "His absorption in the video game meant he didn't hear the doorbell",
+        "She was in complete absorption while painting",
+        "The kid's absorption in building blocks lasted for hours",
+        "My absorption in work made me forget about lunch",
+        "Deep absorption in meditation helps clear your mind"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrpʃən/"
+},
+absorptions: {
+  definitions: [
+    {
+      text: "When multiple things are being soaked up or taken in at the same time. It's just the plural form of absorption, like when you're talking about more than one thing being absorbed.",
+      examples: [
+        "The different absorptions of nutrients happen throughout your digestive system",
+        "The lab tested the absorptions of various chemicals",
+        "Multiple absorptions of sound waves help reduce echo",
+        "The plant's various absorptions of minerals keep it healthy",
+        "Different absorptions of light create the colors we see"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrpʃənz/"
+},
+absorptance: {
+  definitions: [
+    {
+      text: "How good something is at soaking up or taking in other stuff. Like rating how well a paper towel can soak up spills or how much sunlight solar panels can take in.",
+      examples: [
+        "This fabric has high absorptance, making it great for gym towels",
+        "The absorptance of these solar panels is really good",
+        "Low absorptance means the raincoat keeps water out well",
+        "They tested the absorptance of different materials",
+        "Higher absorptance means better sound-proofing"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrptəns/"
+},
+absorptiometer: {
+  definitions: [
+    {
+      text: "A tool that measures how well something soaks up or takes in other stuff. Think of it like a special measuring device that tells you how absorbent something is.",
+      examples: [
+        "The lab uses an absorptiometer to test new paper towel designs",
+        "The absorptiometer showed which sunscreen worked better",
+        "Scientists use an absorptiometer to study plant nutrients",
+        "The absorptiometer helps compare different materials",
+        "They tested the soil with an absorptiometer"
+      ]
+    }
+  ],
+  pronunciation: "/əbˌzɔːrptiˈɒmɪtər/"
+},
+absorptiometric: {
+  definitions: [
+    {
+      text: "Related to measuring how well things soak up or absorb other things. It's about the ways we test and measure absorption.",
+      examples: [
+        "The absorptiometric testing showed which material was better",
+        "They used absorptiometric methods to check the sunscreen",
+        "The absorptiometric results helped improve the design",
+        "New absorptiometric techniques made testing faster",
+        "The absorptiometric data was really clear"
+      ]
+    }
+  ],
+  pronunciation: "/əbˌzɔːrptiəˈmetrɪk/"
+},
+absorptional: {
+  definitions: [
+    {
+      text: "Related to soaking up or taking in other stuff. It's just a fancy way to say something has to do with absorption.",
+      examples: [
+        "The absorptional properties of the new sponge were amazing",
+        "Absorptional issues caused the plant to die",
+        "The material's absorptional qualities make it perfect for cleaning",
+        "They studied the absorptional patterns of different fabrics",
+        "The absorptional process takes about an hour"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrpʃənəl/"
+},
+absorpt: {
+  definitions: [
+    {
+      text: "An old-school way of saying absorbed or soaked up. It's basically the same as absorbed, but people don't really use it anymore except in some really formal or old writing.",
+      examples: [
+        "The ancient text described how the medicine was absorpt into the body",
+        "The old poem talked about light being absorpt by clouds",
+        "Scientists once wrote about energy being absorpt by atoms",
+        "The historical document mentioned water being absorpt by soil",
+        "Heat was absorpt by the ancient building materials"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrpt/"
+},
+absorbtion: {
+  definitions: [
+    {
+      text: "This is actually just a common misspelling of 'absorption' - when people accidentally put a 't' instead of just 'p'. It's not technically correct, but lots of people write it this way by mistake.",
+      examples: [
+        "The student wrote 'absorbtion' in their essay, but the correct spelling is 'absorption'",
+        "Many websites show 'absorbtion' even though it's wrong",
+        "People often confuse 'absorption' and write 'absorbtion' instead",
+        "The spell-checker caught the word 'absorbtion' as an error",
+        "You'll see 'absorbtion' a lot online, but remember it should be 'absorption'"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈzɔːrpʃən/"
+},
+absorptive: {
+  definitions: [
+    {
+      text: "Really good at soaking up or taking in stuff, like a sponge. Think of a paper towel that quickly sucks up spilled water, or your brain when you're super into learning something new.",
+      examples: [
+        "This new towel is super absorptive - it soaked up the whole spill",
+        "The soil here is really absorptive, perfect for gardening",
+        "My kid's mind is so absorptive, they pick up new words like crazy",
+        "These workout clothes are absorptive, keeping you dry during exercise",
+        "The charcoal mask is absorptive, pulling out all the gunk from your pores",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈzɔːrptɪv/",
+},
+absquatulate: {
+  definitions: [
+    {
+      text: "To get the hell out of somewhere suddenly, usually in a sneaky or funny way. It's like 'skedaddle' but even more dramatic - when you just up and leave without warning, often to avoid something or someone.",
+      examples: [
+        "When the bill came, he absquatulated through the back door",
+        "I absquatulated from the party before they could make me sing karaoke",
+        "She absquatulated with all her stuff while her roommate was at work",
+        "Time to absquatulate before they rope me into another boring meeting",
+        "The cat absquatulated as soon as it saw the vacuum cleaner",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈskwɒtjʊleɪt/",
+},
+abstain: {
+  definitions: [
+    {
+      text: "When you choose not to do something on purpose, usually because you think it's better not to. Like when you skip dessert because you're on a diet, or don't vote because you don't like any of the options.",
+      examples: [
+        "I'm abstaining from coffee this month to help me sleep better",
+        "Three people voted yes, two voted no, and one person abstained",
+        "She's abstaining from social media during exam week",
+        "The doctor told me to abstain from heavy lifting after surgery",
+        "Some religions ask people to abstain from certain foods",
+        "He decided to abstain from the debate since he was biased",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsteɪn/",
+},
+abstainer: {
+  definitions: [
+    {
+      text: "Someone who chooses not to do something, especially not drinking alcohol. Like when your friend doesn't drink at parties, they're an abstainer. Can also be someone who chooses not to vote or take part in something.",
+      examples: [
+        "He's been an abstainer from alcohol for five years now",
+        "Three members voted yes, two voted no, and one abstainer didn't vote",
+        "She's a coffee abstainer - doesn't touch the stuff",
+        "The abstainer sat quietly while everyone else joined the debate",
+        "Many abstainers choose not to drink for health reasons",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsteɪnə/",
+},
+abstaining: {
+  definitions: [
+    {
+      text: "The act of choosing not to do something or take part in something. It's like when you decide 'nah, I'm gonna sit this one out' whether it's drinking, voting, or doing any other activity.",
+      examples: [
+        "I'm abstaining from sugar this month",
+        "Several members were abstaining from the vote",
+        "She's abstaining from social media during exam week",
+        "By abstaining from the debate, he stayed neutral",
+        "The doctor recommended abstaining from fatty foods",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsteɪnɪŋ/",
+},
+abstemious: {
+  definitions: [
+    {
+      text: "When someone doesn't go overboard with food, drink, or other pleasures. It's like having really good self-control with the fun stuff in life - not totally avoiding it, just being careful about how much you enjoy.",
+      examples: [
+        "His abstemious lifestyle means he never overeats",
+        "She's pretty abstemious at parties, usually just having one drink",
+        "The abstemious monk lived on simple foods",
+        "Being abstemious with your spending can help you save money",
+        "Their abstemious habits kept them healthy into old age",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈstiːmiəs/",
+},
 };

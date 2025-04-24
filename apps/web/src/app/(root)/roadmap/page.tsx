@@ -77,7 +77,7 @@ export default function RoadmapPage() {
                       <h3 className="font-medium">{item.title}</h3>
                       <Badge className={cn(
                         "shadow-none",
-                        item.status.complete ? "bg-green-500" : "bg-foreground/5 text-accent-foreground"
+                        item.status.complete ? "!bg-green-500" : "!bg-foreground/5 text-accent-foreground"
                       )}>
                         {item.status.text}
                       </Badge>

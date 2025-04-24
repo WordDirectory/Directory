@@ -6,7 +6,6 @@ export type TWordDefinition = {
 
 export type TWord = {
   definitions: Array<TWordDefinition>;
-  pronunciation: string;
 };
 
 export type TDictionary = Record<string, TWord>;

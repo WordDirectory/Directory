@@ -30,6 +30,38 @@ const roadmapItems: {
     },
   },
   {
+    title: "Community feedback",
+    description: "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through community feedback.",
+    status: {
+      text: "Not started",
+      complete: false
+    },
+  },
+  {
+    title: "Word of the day",
+    description: "Daily featured words with their definitions, delivered through the website and social media. Will include weekly, monthly, and yearly special features.",
+    status: {
+      text: "Not started",
+      complete: false
+    },
+  },
+  {
+    title: "Twitter bot",
+    description: "An automated Twitter bot that shares Word of the Day, interesting definitions, and engages with the community.",
+    status: {
+      text: "Not started",
+      complete: false
+    },
+  },
+  {
+    title: "AI integration",
+    description: "Advanced features powered by AI including sentence definitions and multi-language support.",
+    status: {
+      text: "Not started",
+      complete: false
+    },
+  },
+  {
     title: "Scaling up",
     description: "As we add more words, we'll need to handle things a little differently",
     status: {

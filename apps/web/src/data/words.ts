@@ -2203,93 +2203,6 @@ export const words: TDictionary = {
     ],
     pronunciation: "/əˌbʌnˈdæntiə/",
   },
-
-  acantholimon: {
-    definitions: [
-      {
-        text: "A small, tough plant that grows in dry, rocky places. It looks like a spiky cushion and has sharp, needle-like leaves. These plants are found mostly around the Mediterranean and in parts of Asia.",
-        examples: [
-          "Be careful when you touch that acantholimon - its leaves are really pointy!",
-          "Acantholimon plants don't need much water to survive.",
-          "The rock garden was filled with different types of acantholimon.",
-          "These plants look soft from far away, but acantholimon is actually quite prickly.",
-        ],
-      },
-    ],
-    pronunciation: "/əˌkænθəˈlɪmɒn/",
-  },
-
-  acanthomeridae: {
-    definitions: [
-      {
-        text: "Really old sea bugs that lived millions of years ago. They're now extinct, and we only know about them from fossils. They had bodies with sections and spiny legs. Think of them as ancient underwater bugs with armor.",
-        examples: [
-          "The museum has fossils of acanthomeridae from 500 million years ago.",
-          "Scientists study acanthomeridae to understand how sea creatures evolved.",
-          "The acanthomeridae fossil showed its many body segments clearly.",
-          "Before fish were common, creatures like acanthomeridae ruled the oceans.",
-        ],
-      },
-    ],
-    pronunciation: "/əˌkænθəˈmɛrɪdiː/",
-  },
-
-  acanthopanax: {
-    definitions: [
-      {
-        text: "A type of bush or small tree with prickly stems. It's related to ginseng and is used in Asian medicine to boost energy and health. Some people call it 'spiny ginseng' because of its sharp parts.",
-        examples: [
-          "My grandma drinks acanthopanax tea when she feels tired.",
-          "Watch out for the thorns when you're trimming the acanthopanax.",
-          "In Korea, acanthopanax has been used as medicine for hundreds of years.",
-          "The garden shop sells acanthopanax plants for both looks and health benefits.",
-        ],
-      },
-    ],
-    pronunciation: "/əˌkænθəˈpænæks/",
-  },
-  acanthophis: {
-    definitions: [
-      {
-        text: "A type of very poisonous snake found in Australia and New Guinea, also called death adders. They have short, fat bodies with a thin tail tip they wiggle to trick animals into coming closer. They're super dangerous and their bite can kill without treatment.",
-        examples: [
-          "Watch out for the acanthophis when hiking in Australia.",
-          "The acanthophis strikes so fast you might not see it coming.",
-          "If an acanthophis bites you, get to a hospital immediately.",
-          "The acanthophis uses its tail like a worm to attract small animals.",
-        ],
-      },
-    ],
-    pronunciation: "/əˈkænθəfɪs/",
-  },
-  acanthopteri: {
-    definitions: [
-      {
-        text: "An old name scientists used for a big group of fish that have sharp, pointy parts in their fins. This term isn't really used much anymore, but it covered fish like bass and perch. Think of regular fish with spiky fins - they were probably called this back in the day.",
-        examples: [
-          "In old science books, you might see perch listed under acanthopteri.",
-          "The acanthopteri group included most fish with spiky fins.",
-          "Scientists don't use the term acanthopteri much anymore.",
-          "Back then, acanthopteri was a catch-all term for spiny-finned fish.",
-        ],
-      },
-    ],
-    pronunciation: "/əˌkænθɒpˈtɛraɪ/",
-  },
-  acanthopterygii: {
-    definitions: [
-      {
-        text: "A big group of fish that have spines (sharp pointy parts) in their fins. This includes common fish like tuna, bass, perch and even weird ones like seahorses and pufferfish. It's basically most of the 'normal-looking' fish you'd think of.",
-        examples: [
-          "Most fish you eat, like tuna and bass, are acanthopterygii.",
-          "The acanthopterygii group covers thousands of different fish types.",
-          "You can tell a fish is acanthopterygii by the spines in its fins.",
-          "Even the seahorse, despite its strange shape, is part of acanthopterygii.",
-        ],
-      },
-    ],
-    pronunciation: "/əˌkænθɒptəˈrɪdʒiˌaɪ/",
-  },
   acanthuridae: {
     definitions: [
       {
@@ -2359,34 +2272,6 @@ export const words: TDictionary = {
       },
     ],
     pronunciation: "/ˌækəˈrɪdiə/",
-  },
-  acarina: {
-    definitions: [
-      {
-        text: "An older scientific name for the group containing all mites and ticks. Scientists now usually use the name 'Acarida' instead, but you'll still see 'Acarina' in older books and some scientific papers.",
-        examples: [
-          "The textbook refers to mites and ticks as Acarina.",
-          "Researchers studying Acarina are investigating tiny bugs that affect both humans and animals.",
-          "In modern classification, Acarina has been replaced with other terms.",
-          "Many diseases are spread by members of Acarina.",
-        ],
-      },
-    ],
-    pronunciation: "/ˌækəˈraɪnə/",
-  },
-  acarus: {
-    definitions: [
-      {
-        text: "A tiny bug (mite) that likes to live in food like flour and old grains. They're super small - those white specks you might see in really old flour. They're gross but not dangerous to most people.",
-        examples: [
-          "I found acarus mites in that bag of flour I forgot about for months.",
-          "Check your pantry for acarus if you spot tiny white dots moving in your food.",
-          "The reason they tell you to store flour in sealed containers is to keep acarus mites out.",
-          "If you have allergies, acarus in your home might make them worse.",
-        ],
-      },
-    ],
-    pronunciation: "/ˈækərəs/",
   },
   acastus: {
     definitions: [
@@ -7582,28 +7467,6 @@ export const words: TDictionary = {
       },
     ],
     pronunciation: "/ˈdaʊnloʊd/",
-  },
-  access: {
-    definitions: [
-      {
-        text: "Being able to use, get to, or reach something. It's like having the key to a door or the password to an account.",
-        examples: [
-          "You need a password to access your email",
-          "The building has wheelchair access",
-          "Sorry, you don't have access to this file",
-          "The library gives you access to thousands of books",
-        ],
-      },
-      {
-        text: "When you actually use or get to something - like opening a file or entering a building.",
-        examples: [
-          "I can't access the internet right now",
-          "She accessed her bank account online",
-          "You can access the beach through this path",
-        ],
-      },
-    ],
-    pronunciation: "/ˈækses/",
   },
   resource: {
     definitions: [
@@ -19030,4 +18893,7401 @@ abstemious: {
   ],
   pronunciation: "/əbˈstiːmiəs/",
 },
+abstention: {
+  definitions: [
+    {
+      text: "When you officially decide not to do something everyone else is doing, especially not voting. It's like saying 'nah, I'm sitting this one out' but in a formal way.",
+      examples: [
+        "His abstention from the vote was noted in the meeting minutes",
+        "She showed her protest through abstention from the ceremony",
+        "The council member's abstention meant they neither supported nor opposed the motion",
+        "Many young people's abstention from voting worried the politicians",
+        "His abstention from drinking at parties was due to health reasons",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsten.ʃən/",
+},
+abstentionism: {
+  definitions: [
+    {
+      text: "When you make it a point to stay away from something as a way of protest or principle. It's like having a personal rule of 'I don't do that' and sticking to it.",
+      examples: [
+        "Their political abstentionism meant they refused to participate in any elections",
+        "The group practiced abstentionism by boycotting all corporate products",
+        "His abstentionism from social media was his way of protesting data collection",
+        "The party's abstentionism in parliament was their way of refusing to recognize its authority",
+        "She practiced abstentionism from fast food as part of her healthy lifestyle",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsten.ʃəˌnɪz.əm/",
+},
+abstentionist: {
+  definitions: [
+    {
+      text: "Someone who makes a habit of not participating in something, usually as a form of protest. Think of it like that friend who refuses to use Facebook because they don't trust it.",
+      examples: [
+        "He's an abstentionist when it comes to social media - won't touch any of it",
+        "The abstentionist politicians refused to take their seats in parliament",
+        "She's an abstentionist voter who believes the whole system needs to change",
+        "The abstentionist movement gained more followers after the scandal",
+        "As an abstentionist, he hasn't eaten meat in twenty years",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsten.ʃən.ɪst/",
+},
+absterge: {
+  definitions: [
+    {
+      text: "To clean something thoroughly by wiping or washing it. It's like when you really need to get something completely clean, not just a quick wipe-down.",
+      examples: [
+        "She used special soap to absterge the stains from the carpet",
+        "The surgeon had to absterge the wound before starting the procedure",
+        "He tried to absterge the graffiti from the wall",
+        "The cleaning crew will absterge the entire kitchen after the fire",
+        "You'll need strong chemicals to absterge that kind of dirt",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstɜːdʒ/",
+},
+abstergent: {
+  definitions: [
+    {
+      text: "Something that's really good at cleaning or washing stuff away. Think of it like a super-powered cleaning product that doesn't just clean but really gets in there and scrubs things out.",
+      examples: [
+        "The abstergent soap cut through the grease like it was nothing",
+        "They needed a strong abstergent cleaner to remove the stains",
+        "The new abstergent formula works better than the old one",
+        "This abstergent solution will clean the wound properly",
+        "The mechanic used an abstergent to remove the oil buildup",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstɜː.dʒənt/",
+},
+abstinence: {
+  definitions: [
+    {
+      text: "When you completely stop yourself from doing something, usually because you think it's bad for you or against your beliefs. Like when someone quits drinking, stops eating meat, or decides not to have sex.",
+      examples: [
+        "He practiced abstinence from alcohol after realizing it was messing up his life",
+        "Some religions encourage abstinence from certain foods",
+        "She chose abstinence until marriage because of her beliefs",
+        "During the diet, there was complete abstinence from sugar and junk food",
+        "His doctor recommended abstinence from caffeine to help with anxiety",
+        "The program promotes abstinence from drugs as the best path to recovery",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæb.stɪ.nəns/",
+},
+abstinency: {
+  definitions: [
+    {
+      text: "When you choose not to do something, usually because you think it's bad for you or against your beliefs. Like when someone decides to completely stay away from alcohol or sex.",
+      examples: [
+        "His abstinency from social media helped him focus on his studies",
+        "She practiced abstinency from junk food during her training",
+        "Their religious beliefs led them to practice abstinency before marriage",
+        "Total abstinency from sugar helped him lose weight",
+        "The monk's abstinency from worldly pleasures was part of his practice",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbstɪnənsi/",
+},
+abstinent: {
+  definitions: [
+    {
+      text: "When someone chooses not to do something, especially not drinking alcohol or having sex. It's like saying 'nope, not doing that' and sticking to it.",
+      examples: [
+        "He's been abstinent from alcohol for two years now",
+        "They decided to be abstinent until marriage",
+        "Being abstinent from caffeine helped her sleep better",
+        "The recovery program encouraged members to stay abstinent",
+        "She remained abstinent from gambling after losing too much money",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbstɪnənt/",
+},
+abstort: {
+  definitions: [
+    {
+      text: "To twist or pull something away from its normal position. Think of when you yank something away really hard or when something gets all twisted up.",
+      examples: [
+        "The wind abstorted the flag from its pole",
+        "He abstorted his body away from the punch",
+        "The metal abstorted under the intense heat",
+        "The tree branches abstorted in the strong storm",
+        "She abstorted her face in disgust at the smell",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstɔːrt/",
+},
+abstract: {
+  definitions: [
+    {
+      text: "When something isn't physical or concrete - it's just an idea or concept in your head. Like love or justice - you can't touch them, but you know what they are.",
+      examples: [
+        "Freedom is an abstract concept that means different things to different people",
+        "The math problem was too abstract for me to understand",
+        "They had some abstract ideas about how to fix society",
+        "Time is an abstract concept that scientists still debate about",
+        "The discussion got too abstract and nobody knew what we were talking about anymore",
+      ],
+    },
+    {
+      text: "Art that doesn't show real things but uses shapes, colors, and forms to express ideas or feelings. Like when a painting doesn't look like anything specific but still makes you feel something.",
+      examples: [
+        "She painted abstract art using just squares and circles",
+        "The museum's modern wing was full of abstract paintings",
+        "His abstract sculpture looked different from every angle",
+        "I don't get abstract art - it just looks like random splashes to me",
+        "The walls were decorated with colorful abstract patterns",
+      ],
+    },
+    {
+      text: "A short summary that gives you the main points of something longer, like a quick overview of a research paper or article.",
+      examples: [
+        "I only read the abstract of the scientific paper",
+        "The abstract should tell you if the article is worth reading",
+        "She wrote an abstract of her thesis in simple terms",
+        "The conference requires a 250-word abstract for each presentation",
+        "The book's abstract gave me the main idea without all the details",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbstrækt/",
+},
+abstractable: {
+  definitions: [
+    {
+      text: "When something can be simplified or summarized into a shorter version or a basic idea. Like when you can take a complicated thing and break it down into its main points.",
+      examples: [
+        "The complex process was abstractable into three main steps",
+        "Not every story is abstractable - some are too detailed to simplify",
+        "The research findings were abstractable enough for a quick presentation",
+        "These cooking instructions are easily abstractable into a simple guide",
+        "The concept wasn't abstractable enough to explain in one sentence",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstræktəbl/",
+},
+abstracted: {
+  definitions: [
+    {
+      text: "When your mind is somewhere else completely - like you're physically there but your thoughts are a million miles away. It's that spaced-out feeling when you're lost in your own head.",
+      examples: [
+        "He was so abstracted during the meeting that he didn't hear his name being called",
+        "She had that abstracted look on her face while staring out the window",
+        "I was feeling pretty abstracted after pulling an all-nighter",
+        "The teacher noticed his abstracted behavior and asked if he was okay",
+        "Sorry, I was a bit abstracted - what did you say?",
+      ],
+    },
+    {
+      text: "When you take something complicated and strip it down to its basic idea or concept. Like taking all the messy details out and just keeping the main point.",
+      examples: [
+        "The artist abstracted the landscape into simple shapes and colors",
+        "The complex data was abstracted into a simple graph",
+        "They abstracted the problem down to its core issues",
+        "The logo is an abstracted version of a mountain",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈstræk.tɪd/",
+},
+abstractedly: {
+  definitions: [
+    {
+      text: "When you do something while your mind is totally elsewhere - like you're running on autopilot while your brain is off in its own world. It's how you act when you're super deep in thought and barely paying attention to what's around you.",
+      examples: [
+        "He abstractedly stirred his coffee while thinking about the big meeting",
+        "She nodded abstractedly while scrolling through her phone",
+        "I was walking abstractedly down the street when I almost hit a pole",
+        "The artist abstractedly doodled on her notepad during the call",
+        "He abstractedly pet the cat while trying to solve the puzzle",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈstræk.tɪd.li/",
+},
+abstraction: {
+  definitions: [
+    {
+      text: "When you take something real or complicated and simplify it down to its basic idea - like taking all the messy details out until you just have the main concept. Think of how a stick figure is an abstraction of a real person.",
+      examples: [
+        "Modern art is often an abstraction of real things",
+        "The app's interface is an abstraction of complex code underneath",
+        "Math is basically an abstraction of real-world problems",
+        "The company logo is an abstraction of their original building",
+        "Sometimes too much abstraction makes things harder to understand",
+      ],
+    },
+    {
+      text: "The state of being lost in thought or not paying attention to what's happening around you - when your mind is off in the clouds somewhere.",
+      examples: [
+        "His abstraction was obvious as he walked into the wrong room",
+        "She snapped out of her abstraction when the phone rang",
+        "Moments of abstraction can lead to great ideas",
+        "The teacher noticed his abstraction during class",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈstræk.ʃən/",
+},
+abstractional: {
+  definitions: [
+    {
+      text: "When something deals with ideas or concepts instead of real, physical things. Like when you're thinking about love or justice - you can't touch them, but they're still real ideas.",
+      examples: [
+        "The professor's abstractional thinking was hard to follow - he kept talking about ideas instead of real examples",
+        "Her art became more abstractional as she focused on emotions rather than objects",
+        "The meeting got too abstractional when we stopped talking about actual problems and started discussing theoretical scenarios",
+        "Kids usually struggle with abstractional concepts until they're older",
+        "The book was too abstractional for me - I prefer stories about real people and events",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstrækʃənəl/",
+},
+abstractionism: {
+  definitions: [
+    {
+      text: "A style of art where artists don't try to show things exactly as they look in real life. Instead, they use shapes, colors, and forms to express ideas or feelings. Think of when a kid draws their feelings - that's kind of like abstractionism.",
+      examples: [
+        "The gallery was full of abstractionism - lots of squares and swirls that didn't look like anything specific",
+        "She got into abstractionism because she wanted to paint emotions instead of objects",
+        "Most people don't get abstractionism at first because they're looking for recognizable things",
+        "His abstractionism phase resulted in paintings that were just splashes of bright colors",
+        "The museum had a whole room dedicated to abstractionism from the 1950s",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstrækʃənɪzəm/",
+},
+abstractionist: {
+  definitions: [
+    {
+      text: "An artist who makes art that doesn't show things as they really look. Instead of painting a tree that looks exactly like a tree, they might use colors and shapes to show how the tree makes them feel.",
+      examples: [
+        "As an abstractionist, she never paints things exactly as they appear",
+        "The famous abstractionist used only three colors in all his paintings",
+        "My friend became an abstractionist after getting tired of realistic painting",
+        "The abstractionist explained that the red squares represented anger",
+        "Not everyone understands what abstractionist artists are trying to show",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstrækʃənɪst/",
+},
+abstractions: {
+  definitions: [
+    {
+      text: "When you take complicated things and simplify them by focusing on the main ideas instead of all the little details. Like when you describe a car as 'a thing that gets you places' instead of explaining every part of the engine.",
+      examples: [
+        "The teacher used abstractions to explain quantum physics to kids",
+        "Programming is full of abstractions - you don't need to know how the computer works inside",
+        "These abstractions make the complex topic easier to understand",
+        "Sometimes abstractions can oversimplify things too much",
+        "We use abstractions every day when we talk about big ideas",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstrækʃənz/",
+},
+abstractitious: {
+  definitions: [
+    {
+      text: "When something is really far removed from real, concrete things and deals purely with ideas or theories. It's like when someone's thinking is so 'out there' that it's hard to connect it to anything real or practical.",
+      examples: [
+        "His abstractitious reasoning made it hard for anyone to follow his point",
+        "The philosophy paper was too abstractitious for beginners to understand",
+        "She preferred hands-on learning to abstractitious concepts",
+        "The debate got too abstractitious when they stopped talking about real problems",
+        "Most people find abstractitious thinking difficult to grasp",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstrækˈtɪʃəs/",
+},
+abstractive: {
+  definitions: [
+    {
+      text: "Being able to take messy, complicated stuff and boil it down to the most important parts. Like when you can take a long story and sum it up in one sentence, keeping just the key points.",
+      examples: [
+        "Her abstractive thinking helps her solve complex problems quickly",
+        "The student showed good abstractive skills by summarizing the whole book in one paragraph",
+        "Being abstractive is super useful when you need to explain complicated things simply",
+        "His abstractive abilities made him great at writing short summaries",
+        "Some people are naturally more abstractive in their thinking than others",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstræktɪv/",
+},
+abstractively: {
+  definitions: [
+    {
+      text: "When you do or think about something by focusing on the main ideas and ignoring the small details. It's like looking at the big picture instead of getting caught up in all the tiny parts.",
+      examples: [
+        "She abstractively described her job as 'helping people feel better' instead of listing all her daily tasks",
+        "The teacher abstractively explained how the internet works without getting into technical details",
+        "Thinking abstractively helps when planning big projects",
+        "He abstractively summed up the movie in just a few words",
+        "Sometimes it's better to look at problems abstractively to find solutions",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstræktɪvli/",
+},
+abstractedness: {
+  definitions: [
+    {
+      text: "That state of being completely zoned out or lost in your thoughts - when your body is here but your mind is definitely somewhere else.",
+      examples: [
+        "Her abstractedness during class was getting worse as finals approached",
+        "The writer's abstractedness helped with creativity but made him miss a lot of meetings",
+        "His abstractedness while driving made everyone nervous",
+        "The medication caused periods of abstractedness throughout the day",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈstræk.tɪd.nəs/",
+},
+abstracter: {
+  definitions: [
+    {
+      text: "Someone who takes complicated stuff and makes it simpler by pulling out the main ideas - like turning a 500-page book into a one-page summary.",
+      examples: [
+        "She works as an abstracter for legal documents, making them easier to understand",
+        "The abstracter turned the complex research paper into a simple summary",
+        "We need an abstracter to help simplify these technical manuals",
+        "As an abstracter, his job is to break down complex ideas into basic concepts",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈstræk.tər/",
+},
+abstracting: {
+  definitions: [
+    {
+      text: "The process of taking something complicated and making it simpler by focusing on the main points and ignoring the extra details.",
+      examples: [
+        "She's good at abstracting complex ideas into simple diagrams",
+        "The team spent hours abstracting the data into a clear report",
+        "By abstracting the problem, we can see what's really important",
+        "Abstracting the code made it more reusable",
+      ],
+    }
+  ],
+  pronunciation: "/æbˈstræk.tɪŋ/",
+},
+abstractiveness: {
+  definitions: [
+    {
+      text: "When something is really unclear or hard to understand because it's not about real, physical things. Like when someone's talking about big ideas that you can't touch or see.",
+      examples: [
+        "The abstractiveness of modern art makes some people say 'what the hell am I looking at?'",
+        "The abstractiveness of his explanation left everyone confused",
+        "Philosophy class is full of abstractiveness - it's all ideas with no concrete examples",
+        "The abstractiveness of quantum physics makes my head hurt",
+        "She complained about the abstractiveness of the feedback - she wanted specific points"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstræktɪvnəs/"
+},
+abstractly: {
+  definitions: [
+    {
+      text: "When you talk about or think about something in a general way, without getting into the real details or specific examples. It's like looking at the big picture while ignoring all the little parts.",
+      examples: [
+        "He was talking abstractly about love without mentioning any real relationships",
+        "The professor discussed the theory very abstractly, making it hard to understand",
+        "Let's think about this abstractly first before getting into the details",
+        "She only described the project abstractly, without any actual numbers or dates",
+        "Kids often think abstractly about their future careers"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstræktli/"
+},
+abstractness: {
+  definitions: [
+    {
+      text: "When something is really vague or not connected to real things you can see or touch. It's like when an idea is floating around in your head but you can't grab it or point to it.",
+      examples: [
+        "The abstractness of his poetry makes it hard to know what he's talking about",
+        "There's too much abstractness in this plan - we need actual steps",
+        "The abstractness of math scared her until she saw how it worked in real life",
+        "His writing has an abstractness that makes you think but also confuses you",
+        "The abstractness of the discussion made everyone zone out"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstræktnəs/"
+},
+abstractor: {
+  definitions: [
+    {
+      text: "Someone whose job is to take long, complicated information and make a shorter, simpler version of it. Like a person who reads through a bunch of stuff and picks out the important parts.",
+      examples: [
+        "The abstractor summarized the 100-page legal document into two pages",
+        "She works as an abstractor for a law firm, making sense of property records",
+        "The news abstractor turns long articles into quick summaries",
+        "We hired an abstractor to review all the old contracts",
+        "The abstractor pulled out the key points from the research paper"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstræktər/"
+},
+abstractors: {
+  definitions: [
+    {
+      text: "People who take long, complicated information and make shorter, simpler versions of it. They're like the human highlight reels of documents and information.",
+      examples: [
+        "The company hired three abstractors to go through their old files",
+        "Legal abstractors spend their days summarizing court documents",
+        "The news website employs abstractors to write their article summaries",
+        "Abstractors are busy during tax season, condensing financial reports",
+        "The team of abstractors worked through the pile of documents"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstræktərz/"
+},
+abstracts: {
+  definitions: [
+    {
+      text: "Takes complicated stuff and makes it simpler by pulling out the main points. It's like when you grab the important bits and leave the rest behind.",
+      examples: [
+        "She abstracts the key ideas from every meeting",
+        "The software abstracts all the complex data into simple charts",
+        "He abstracts the main points from each chapter for his study notes",
+        "The system abstracts user behavior into useful patterns",
+        "The AI abstracts meaning from long conversations"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstrækts/"
+},
+abstrahent: {
+  definitions: [
+    {
+      text: "Something that pulls away or takes something out from somewhere else. Think of it like a magnet that draws stuff away from where it was.",
+      examples: [
+        "The chemical works as an abstrahent, pulling the color out of the fabric",
+        "The medicine acts as an abstrahent to remove excess fluid",
+        "They used an abstrahent solution to separate the minerals",
+        "The process works like an abstrahent, drawing out the impurities",
+        "The abstrahent properties of the compound make it useful in cleaning"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstreɪhənt/"
+},
+abstrict: {
+  definitions: [
+    {
+      text: "To set something free or release it from being tied down or bound. It's like untying a knot or letting something loose that was stuck.",
+      examples: [
+        "The scientist had to abstrict the sample from the surrounding tissue",
+        "You need to abstrict the rope before moving the equipment",
+        "The process will abstrict the molecules from their bonds",
+        "They worked to abstrict the trapped animal from the net",
+        "The ceremony was meant to abstrict the spirit from earthly ties"
+      ]
+    }
+  ],
+  pronunciation: "/æbˈstrɪkt/"
+},
+abstrude: {
+  definitions: [
+    {
+      text: "To push something away forcefully or reject it. It's like when you physically or mentally shove something aside because you don't want to deal with it.",
+      examples: [
+        "He abstruded all thoughts of failure before the big game",
+        "She abstruded the unwanted gift across the table",
+        "The bouncer abstruded the drunk guy from the club",
+        "I had to abstrude those negative thoughts from my mind",
+        "The cat abstruded the new toy I bought it",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstruːd/",
+},
+abstruse: {
+  definitions: [
+    {
+      text: "When something is so complicated or hard to understand that it makes your brain hurt. Like when someone explains something but uses such complex ideas that you're left scratching your head wondering what the hell they just said.",
+      examples: [
+        "The physics textbook was so abstruse I had no clue what I was reading",
+        "He gave such an abstruse explanation that nobody in the room got it",
+        "The art critic's review was too abstruse for regular people to understand",
+        "The philosopher's writings were deliberately abstruse",
+        "Instead of using abstruse language, just say what you mean simply",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstruːs/",
+},
+abstrusely: {
+  definitions: [
+    {
+      text: "When someone explains or does something in a super complicated way that makes it hard for others to understand. It's like when someone could just say something simply but chooses to make it confusing as hell instead.",
+      examples: [
+        "The professor abstrusely explained what could have been a simple concept",
+        "He wrote so abstrusely that even experts had trouble following along",
+        "Instead of speaking abstrusely, just get to the point",
+        "The politician answered questions abstrusely to avoid giving real answers",
+        "The manual was written so abstrusely that nobody could follow the instructions",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstruːsli/",
+},
+abstruseness: {
+  definitions: [
+    {
+      text: "The quality of being super complicated and hard to understand. It's when something is so complex that it feels like you need a special decoder ring just to figure out what's going on.",
+      examples: [
+        "The abstruseness of his writing made it impossible for beginners to learn from",
+        "The movie's abstruseness left everyone confused about the plot",
+        "Teachers should avoid abstruseness when explaining things to students",
+        "The abstruseness of the legal document required a lawyer to explain it",
+        "The poem's abstruseness made it more frustrating than enjoyable",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈstruːsnəs/",
+},
+abstrusenesses: {
+  definitions: [
+    {
+      text: "When something is super hard to understand, but like, in a really intense way. It's the quality of being so complicated or unclear that it makes your brain hurt trying to figure it out.",
+      examples: [
+        "The abstrusenesses of quantum physics make my head spin",
+        "The professor is famous for the abstrusenesses of his lectures - nobody ever knows what he's talking about",
+        "The legal document was full of abstrusenesses that even lawyers struggled with",
+        "The poem's abstrusenesses made everyone in class feel stupid",
+        "He has a talent for turning simple ideas into complete abstrusenesses"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈstruːsnəsɪz/"
+},
+abstruser: {
+  definitions: [
+    {
+      text: "When something is even harder to understand than something that's already hard to understand. Like when you think something's confusing, and then it gets even worse.",
+      examples: [
+        "The second chapter was even abstruser than the first one",
+        "His explanations somehow got abstruser as he tried to simplify things",
+        "The deeper you go into philosophy, the abstruser it gets",
+        "Today's math problems were abstruser than yesterday's",
+        "She has a way of making simple things abstruser than they need to be"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈstruːsər/"
+},
+abstrusest: {
+  definitions: [
+    {
+      text: "The absolute peak of being hard to understand. When something is so complicated or unclear that it's basically impossible to figure out - like the final boss of confusion.",
+      examples: [
+        "This has to be the abstrusest explanation I've ever heard",
+        "That was the abstrusest chapter in the whole book",
+        "Of all his weird theories, this is the abstrusest one yet",
+        "The abstrusest part of the code made even senior developers scratch their heads",
+        "These instructions are the abstrusest thing I've ever tried to follow"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈstruːsɪst/"
+},
+abstrusion: {
+  definitions: [
+    {
+      text: "The act of making something way more complicated or harder to understand than it needs to be. It's like when someone takes a simple idea and turns it into a big confusing mess on purpose.",
+      examples: [
+        "His abstrusion of the simple concept left everyone confused",
+        "The writer's constant abstrusion made the book almost unreadable",
+        "There's no need for such abstrusion - just say what you mean",
+        "The professor was known for his tendency toward abstrusion in his lectures",
+        "The document's deliberate abstrusion seemed designed to confuse people"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈstruːʒən/"
+},
+abstrusity: {
+  definitions: [
+    {
+      text: "Something that's so complex or unclear it makes absolutely no sense. It's like when someone says or writes something so complicated that you wonder if they're just making stuff up.",
+      examples: [
+        "The philosopher's latest paper was pure abstrusity",
+        "I couldn't follow a single word of that abstrusity he calls an explanation",
+        "The contract was full of legal abstrusity",
+        "She has a talent for turning simple ideas into complete abstrusity",
+        "The poem was praised for its abstrusity, which probably means nobody understood it"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈstruːsɪti/"
+},
+absume: {
+  definitions: [
+    {
+      text: "To completely use up or take away something until there's nothing left. It's like when something gets totally consumed or disappears.",
+      examples: [
+        "The fire absumed everything in its path",
+        "His savings were absumed by medical bills",
+        "The drought absumed all the water from the lake",
+        "Time slowly absumed her memories of that day",
+        "The darkness absumed all the light in the room"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsjuːm/"
+},
+absumption: {
+  definitions: [
+    {
+      text: "The act of completely using up or taking away something until it's gone. It's when something gets totally consumed or wiped out.",
+      examples: [
+        "The absumption of resources left nothing for future generations",
+        "We watched the absumption of our savings by endless bills",
+        "The forest's absumption by the wildfire was complete",
+        "The absumption of small businesses during the recession was devastating",
+        "The total absumption of the ice cream took less than five minutes"
+      ]
+    }
+  ],
+  pronunciation: "/əbˈsʌmpʃən/"
+},
+absurd: {
+  definitions: [
+    {
+      text: "When something is so ridiculous or unreasonable that it makes zero sense. Like when something is so stupid or crazy that you can't help but laugh at how it doesn't make any logical sense.",
+      examples: [
+        "The price of that sandwich is absurd - $50 for bread and cheese?",
+        "It's absurd that we have to work on Christmas Day",
+        "The plot of that movie was completely absurd - nothing made any sense",
+        "The idea of teaching cats to speak French is absurd",
+        "These new company rules are absurd - we can't even drink water at our desks",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrd/",
+},
+absurder: {
+  definitions: [
+    {
+      text: "When something is even more ridiculous or makes even less sense than something else that's already absurd. It's like taking something that's already stupid and making it even stupider.",
+      examples: [
+        "The sequel was even absurder than the first movie",
+        "His new excuse was even absurder than the last one",
+        "The prices keep getting absurder every year",
+        "Each new rule they make is absurder than the last",
+        "The situation just keeps getting absurder and absurder",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdər/",
+},
+absurdest: {
+  definitions: [
+    {
+      text: "The most ridiculous or nonsensical thing you can imagine. When something is the absolute peak of not making any sense at all.",
+      examples: [
+        "That's the absurdest thing I've ever heard in my life",
+        "Of all his crazy ideas, this one is the absurdest",
+        "The absurdest part was when he tried to blame it on his pet goldfish",
+        "These have to be the absurdest rules ever made",
+        "That's the absurdest excuse anyone's ever given me",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdɪst/",
+},
+absurdism: {
+  definitions: [
+    {
+      text: "The idea that life makes no sense and trying to find meaning in it is pointless - but instead of being sad about it, you just accept it and maybe even laugh about it. It's like saying 'yeah, nothing makes sense, might as well have fun with it.'",
+      examples: [
+        "The show uses absurdism to make fun of everyday life",
+        "His art is full of absurdism - nothing is supposed to make sense",
+        "She deals with stress through absurdism, finding humor in life's chaos",
+        "The book is a perfect example of absurdism in modern literature",
+        "Memes are basically modern day absurdism",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdɪzəm/",
+},
+absurdist: {
+  definitions: [
+    {
+      text: "Someone or something that embraces the idea that life is meaningless and makes no sense, often in a funny or artistic way. Think of it like someone who creates weird art or stories that aren't supposed to make sense on purpose.",
+      examples: [
+        "He's an absurdist comedian who tells jokes that don't have punchlines",
+        "The play was an absurdist take on modern office life",
+        "Her absurdist paintings show cats doing taxes and dogs driving buses",
+        "That's some absurdist humor right there - it's funny because it makes no sense",
+        "The movie is an absurdist commentary on social media",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdɪst/",
+},
+absurdity: {
+  definitions: [
+    {
+      text: "A situation or thing that's so ridiculous it makes you want to laugh or facepalm. It's when reality gets so weird or stupid that it feels like you're living in a comedy show.",
+      examples: [
+        "The absurdity of paying for air at gas stations",
+        "She couldn't help but laugh at the absurdity of the situation",
+        "The whole meeting was an exercise in absurdity",
+        "There's a certain absurdity in having to show ID to buy scissors",
+        "The absurdity of modern life sometimes gets to me",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdəti/",
+},
+absurdities: {
+  definitions: [
+    {
+      text: "A bunch of things or situations that are completely ridiculous or make no sense. It's like when you have multiple wtf moments all piled up together.",
+      examples: [
+        "The daily absurdities of working in customer service",
+        "She wrote a book about the absurdities of dating apps",
+        "Life is full of little absurdities that make you question everything",
+        "The new policies were just a list of absurdities",
+        "We couldn't stop laughing at all the absurdities we witnessed",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdətiz/",
+},
+absurdly: {
+  definitions: [
+    {
+      text: "When something is done or happens in a way that makes absolutely no sense or is totally over the top. It's like when things go way beyond what's normal or reasonable.",
+      examples: [
+        "The tickets were absurdly expensive",
+        "He was dressed absurdly for the weather, wearing a winter coat in summer",
+        "The rules were absurdly complicated for no reason",
+        "The meeting ran absurdly late - we were there until midnight",
+        "She was being absurdly careful with the bubble wrap",
+      ],
+    }
+  ],
+  pronunciation: "/əbˈsɜːrdli/",
+},
+absurdness: {
+  definitions: [
+    {
+      text: "When something is so ridiculous or silly that it makes absolutely no sense. It's like the quality of being completely bonkers or totally illogical.",
+      examples: [
+        "The absurdness of wearing a winter coat to the beach in summer made everyone stare",
+        "We couldn't stop laughing at the absurdness of the situation",
+        "The absurdness of their excuse was obvious - nobody's homework gets eaten by a dragon",
+        "There's a certain absurdness to putting pineapple on pizza that starts huge arguments",
+        "The movie's absurdness is what makes it so entertaining",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsɜːrdnəs/",
+},
+absurds: {
+  definitions: [
+    {
+      text: "Things that are so ridiculous or crazy that they make zero sense. When you've got multiple things that are just completely bonkers.",
+      examples: [
+        "The news these days is full of absurds - it's like living in a weird movie",
+        "Looking back at my teenage fashion choices, they were all absurds",
+        "Reality TV shows are basically just a collection of absurds",
+        "The teacher had heard all kinds of absurds as excuses for missing homework",
+        "Social media is full of absurds that somehow become trends",
+      ],
+    },
+  ],
+  pronunciation: "/əbˈsɜːrdz/",
+},
+absurdum: {
+  definitions: [
+    {
+      text: "When you prove something by showing how stupid and impossible the opposite would be. Like when you say 'if that were true, then cats would be able to fly' to show why something doesn't make sense.",
+      examples: [
+        "He proved his point by absurdum - if money grew on trees, everyone would be rich",
+        "Using absurdum, she showed why the flat earth theory makes no sense",
+        "The lawyer used absurdum to show how ridiculous the other side's argument was",
+        "Sometimes the best way to prove something is by absurdum - showing how crazy the alternative would be",
+        "Parents often use absurdum to teach kids logic: 'Well if everyone jumped off a bridge...'",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈsɜːrdəm/",
+},
+absvolt: {
+  definitions: [
+    {
+      text: "A super old unit for measuring electrical stuff in science, kind of like volts but in a different system. It's like using Fahrenheit instead of Celsius - same idea, different numbers.",
+      examples: [
+        "The old science textbook still had measurements in absvolts",
+        "Scientists used to measure electrical potential in absvolts before switching to volts",
+        "Converting from absvolts to volts requires some math",
+        "Nobody really uses absvolts anymore except in some old physics papers",
+        "The experiment's results were recorded in absvolts back in the 1800s",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbzvolt/",
+},
+abterminal: {
+  definitions: [
+    {
+      text: "When something's moving or pointing away from an end point or terminal. Think of it like an arrow showing which way something's going - in this case, away from where it started.",
+      examples: [
+        "The abterminal flow of traffic leaving the airport was heavy",
+        "The roots grew in an abterminal direction from the plant",
+        "The signal gets weaker in its abterminal path from the tower",
+        "Students made an abterminal rush away from school when the bell rang",
+        "The abterminal movement of people leaving the concert created traffic",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈtɜːrmɪnəl/",
+},
+abthain: {
+  definitions: [
+    {
+      text: "An old Scottish church boss who was kind of like a mix between a priest and a landlord. Think of them as the person who ran both the church stuff and took care of the land around it back in old-timey Scotland.",
+      examples: [
+        "The abthain collected rent from the farmers on church lands",
+        "Medieval Scottish documents mention the abthain's duties to both church and community",
+        "The local abthain was responsible for maintaining order in the region",
+        "Stories about the generous abthain who helped the poor were passed down generations",
+        "The role of abthain disappeared as Scotland's religious system changed",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbθeɪn/",
+},
+abthainry: {
+  definitions: [
+    {
+      text: "The land and area that an abthain (old Scottish church boss) was in charge of. Like a territory or region where they called the shots, both for church stuff and regular business.",
+      examples: [
+        "The abthainry included several villages and farming areas",
+        "Maps from medieval Scotland show the boundaries of different abthainries",
+        "Living within the abthainry meant following both religious and local rules",
+        "The size of an abthainry could vary from small areas to large territories",
+        "Historical records describe the wealth of certain abthainries in Scotland",
+      ],
+    },
+  ],
+  pronunciation: "/ˈæbθeɪnri/",
+},
+abthainrie: {
+  definitions: [
+    {
+      text: "An old-timey word for the position or role of being in charge of a monastery or church lands in Scotland. Think of it like being the boss of a bunch of church property back in the day.",
+      examples: [
+        "The monk was promoted to abthainrie after years of service",
+        "The abthainrie came with a lot of responsibilities and land management",
+        "Historical records show the abthainrie was a powerful position in medieval Scotland",
+        "He inherited the abthainrie from his predecessor",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈθeɪnri/",
+},
+abthanage: {
+  definitions: [
+    {
+      text: "The land and property owned by a church official (called an abthane) in old Scotland. It's like the territory that came with the job of being a religious leader back then.",
+      examples: [
+        "The abthanage included several farms and a small village",
+        "The documents showed the exact boundaries of the abthanage",
+        "The church lost control of the abthanage during the reforms",
+        "The abthanage provided income for the monastery",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈθeɪnɪdʒ/",
+},
+abtruse: {
+  definitions: [
+    {
+      text: "Hard to understand or figure out, usually because it's super complicated or unclear. It's when something makes your brain hurt trying to get what it means.",
+      examples: [
+        "The professor's explanation was so abtruse that nobody got it",
+        "The legal document was full of abtruse language",
+        "She tried to simplify the abtruse concept for the class",
+        "The poem's meaning was too abtruse for most readers",
+      ],
+    },
+  ],
+  pronunciation: "/æbˈtruːs/",
+},
+abubble: {
+  definitions: [
+    {
+      text: "When something is bubbling or full of bubbles. Like when your soda is fizzing or water is starting to boil.",
+      examples: [
+        "The pot was abubble with hot soup",
+        "The champagne was abubble with tiny fizzy bubbles",
+        "The hot spring was abubble with volcanic gases",
+        "The kids' bubble bath was abubble with foam",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌbəl/",
+},
+abucco: {
+  definitions: [
+    {
+      text: "A part of a column in old buildings, specifically the top part that's like a cap or crown. Think of it as the fancy hat that sits on top of a pillar.",
+      examples: [
+        "The marble abucco was carved with intricate designs",
+        "The restoration team had to repair the damaged abucco",
+        "Each column in the temple had a matching abucco",
+        "The architect specified gold leaf for the abucco decoration",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌkoʊ/",
+},
+abuilding: {
+  definitions: [
+    {
+      text: "When something is in the process of being built or created. It's like saying 'under construction' but in a fancier, older way.",
+      examples: [
+        "The new mall has been abuilding for months now",
+        "There's excitement in the air with the new stadium abuilding",
+        "The house was abuilding all summer long",
+        "Plans have been abuilding for the city's new park",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɪldɪŋ/",
+},
+abuleia: {
+  definitions: [
+    {
+      text: "When you lose your motivation or willpower to do things, even stuff you usually care about. It's like your 'get up and go' got up and went.",
+      examples: [
+        "His abuleia made it hard to even get out of bed some days",
+        "Depression can cause abuleia, making simple tasks feel impossible",
+        "She struggled with abuleia after the loss of her job",
+        "The doctor explained that abuleia was a common symptom",
+      ],
+    },
+  ],
+  pronunciation: "/æbjuːˈlaɪə/",
+},
+abulia: {
+  definitions: [
+    {
+      text: "When someone has zero motivation or willpower to make decisions or do things. It's like being stuck in permanent 'meh' mode where you just can't bring yourself to do anything or choose anything.",
+      examples: [
+        "His abulia got so bad he couldn't even decide what to eat for lunch",
+        "Depression often comes with abulia, making simple choices feel impossible",
+        "She recognized her abulia was getting worse when she spent three hours staring at Netflix without picking a show",
+        "The medication helped reduce his abulia, making it easier to get through daily tasks",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːliə/",
+},
+abulias: {
+  definitions: [
+    {
+      text: "More than one case of abulia (when multiple people have no motivation or willpower to make decisions). It's like when you've got a bunch of people all stuck in that can't-decide-anything state.",
+      examples: [
+        "The doctor noticed several abulias among their patients during the winter months",
+        "Different types of abulias can affect people in various ways",
+        "The study focused on abulias in teenagers during exam season",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːliəz/",
+},
+abulic: {
+  definitions: [
+    {
+      text: "When someone's showing signs of having no motivation or willpower. It's like being in a permanent state of 'whatever' and not being able to make choices or take action.",
+      examples: [
+        "He's been really abulic lately, can't even choose what to wear in the morning",
+        "The abulic behavior started after they lost their job",
+        "Her normally decisive friend became abulic after the breakup",
+        "The abulic patient just sat there, unable to decide on treatment options",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːlɪk/",
+},
+abulyeit: {
+  definitions: [
+    {
+      text: "An old spelling variant of abulia - when someone has no motivation or willpower to make decisions. It's the same as being stuck in permanent 'can't decide' mode.",
+      examples: [
+        "In old medical texts, they spelled it abulyeit instead of abulia",
+        "The historical document described the patient's abulyeit symptoms",
+        "Doctors used to diagnose abulyeit in people who couldn't make decisions",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːliˌeɪt/",
+},
+abulomania: {
+  definitions: [
+    {
+      text: "When someone is so ridiculously indecisive it's actually a problem. It's like being pathologically unable to make any decisions - way beyond just being bad at choosing what to eat.",
+      examples: [
+        "His abulomania was so bad he missed his flight because he couldn't decide what to pack",
+        "She knew it was abulomania when she spent four hours choosing a toothbrush",
+        "The therapist specialized in treating people with abulomania",
+        "His abulomania made grocery shopping a three-hour ordeal",
+      ],
+    },
+  ],
+  pronunciation: "/ˌæbjuːləʊˈmeɪniə/",
+},
+abumbral: {
+  definitions: [
+    {
+      text: "Away from or outside of shadows. It's like being in the spots where the sun hits directly, with no shade in sight.",
+      examples: [
+        "The plants needed to be in the abumbral area to get full sunlight",
+        "The photographer positioned the model in the abumbral part of the scene",
+        "The sundial only works properly in the abumbral space",
+      ],
+    },
+  ],
+  pronunciation: "/æˈbʌmbrəl/",
+},
+abumbrellar: {
+  definitions: [
+    {
+      text: "Not shaped like an umbrella. It's when something doesn't have that typical umbrella-like dome or canopy shape.",
+      examples: [
+        "The weird mushroom was abumbrellar, growing more like a stick than a typical mushroom",
+        "The new building design was completely abumbrellar, with sharp angles instead of curves",
+        "The plant's leaves were abumbrellar, growing straight up instead of spreading out",
+      ],
+    },
+  ],
+  pronunciation: "/æˈbʌmbrɛlər/",
+},
+abuna: {
+  definitions: [
+    {
+      text: "A title for the head bishop in Ethiopian and Egyptian Christian churches. It's like saying 'our father' or 'the boss' of the church.",
+      examples: [
+        "The new abuna was chosen after months of careful consideration",
+        "Everyone stood when the abuna entered the church",
+        "The abuna leads all the most important ceremonies",
+        "They needed the abuna's blessing before starting the new project",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːnə/",
+},
+abundance: {
+  definitions: [
+    {
+      text: "When you have way more of something than you need - like when your garden grows so many tomatoes you're giving them away to everyone you know. It's basically having so much of something that you're swimming in it.",
+      examples: [
+        "There was an abundance of food at the party - we couldn't eat it all",
+        "The spring brought an abundance of flowers to the meadow",
+        "She has an abundance of energy even after working all day",
+        "There's an abundance of parking spots at the mall today",
+        "The kitchen had such an abundance of snacks, we didn't know where to start",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌn.dəns/",
+},
+abundances: {
+  definitions: [
+    {
+      text: "More than one type or instance of having too much of something. Like when you've got tons of different things all at once - maybe loads of time, money, and food all at the same time.",
+      examples: [
+        "The market had abundances of fruits and vegetables from different seasons",
+        "The rich neighborhood showed abundances of luxury cars and huge houses",
+        "Nature provides abundances of resources in different regions",
+        "The festival celebrated the abundances of various cultures",
+        "Their garden produced abundances of different vegetables all summer",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌn.dən.sɪz/",
+},
+abundancy: {
+  definitions: [
+    {
+      text: "Another way of saying abundance - when you've got loads of something. It's like abundance's cousin that shows up at family reunions but doesn't visit much otherwise.",
+      examples: [
+        "The abundancy of rainfall made everything super green",
+        "Their kitchen showed an abundancy of cooking tools",
+        "There was such an abundancy of love in that family",
+        "The forest's abundancy of wildlife amazed the visitors",
+        "An abundancy of sunshine made everyone happy that summer",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌn.dən.si/",
+},
+abundant: {
+  definitions: [
+    {
+      text: "When there's so much of something it's everywhere you look. Like when your neighbor's garden is spitting out zucchinis faster than they can give them away, or when there's so much rain you think you might need to build a boat.",
+      examples: [
+        "Wild berries were abundant in the forest",
+        "Parking spots are abundant at the mall on weekdays",
+        "The buffet had abundant options for everyone",
+        "Mosquitoes are abundant during summer evenings",
+        "Her garden was abundant with colorful flowers",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌn.dənt/",
+},
+abundantly: {
+  definitions: [
+    {
+      text: "When something happens or exists in huge amounts - like way more than needed. Think of it as the 'extra extra' version of doing or having something.",
+      examples: [
+        "It became abundantly clear that he had no idea what he was doing",
+        "The garden grew abundantly after all that rain",
+        "She made it abundantly obvious that she wasn't interested",
+        "The chef seasoned the food abundantly with spices",
+        "Nature provided abundantly for the wildlife that year",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʌn.dənt.li/",
+},
+abune: {
+  definitions: [
+    {
+      text: "Old Scottish way of saying 'above' or 'up there.' It's like when your grandpa uses old-timey words that make you go 'huh?'",
+      examples: [
+        "The bird's nest was abune the window",
+        "He looked abune to check the weather",
+        "The stars were shining abune in the night sky",
+        "There's a weird noise coming from abune the ceiling",
+        "The clouds floating abune looked like cotton balls",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbuːn/",
+},
+abura: {
+  definitions: [
+    {
+      text: "A type of African tree that's used for its wood. Think of it like the IKEA of African forests - its wood is used to make all sorts of furniture and stuff.",
+      examples: [
+        "The carpenter preferred abura wood for making cabinets",
+        "The abura trees grew tall in the tropical forest",
+        "They used abura to build the new shelves",
+        "The furniture maker loved working with abura wood",
+        "The abura lumber was perfect for the project",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbʊərə/",
+},
+aburst: {
+  definitions: [
+    {
+      text: "When something suddenly bursts out or happens really quickly - like an explosion or sudden release. Think of a balloon popping or someone suddenly bursting into tears.",
+      examples: [
+        "The crowd went aburst with excitement when the band came on stage",
+        "Her emotions came aburst after holding them in all day",
+        "The dam broke and the water came aburst through the wall",
+        "The fireworks went aburst in the night sky",
+        "His anger came aburst after weeks of frustration",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbɜːrst/",
+},
+abusable: {
+  definitions: [
+    {
+      text: "When something can be used in the wrong way or taken advantage of. Like when there's a loophole that people can exploit or something that's easy to misuse.",
+      examples: [
+        "The return policy was too abusable - people kept buying clothes, wearing them once, and returning them",
+        "The game's mechanics were so abusable that players found ways to get infinite money",
+        "The new sick leave policy was too abusable, so they had to change it",
+        "Free trials are often abusable if you keep making new email addresses",
+        "The discount code was abusable because it had no usage limit",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːzəbəl/",
+},
+abusage: {
+  definitions: [
+    {
+      text: "When you use something in the wrong way or mess up how you're supposed to use it. It's like when people keep saying 'literally' when they don't actually mean literally - they're doing an abusage of the word.",
+      examples: [
+        "The abusage of 'your' instead of 'you're' drives grammar nerds crazy",
+        "His abusage of the office printer for personal stuff got him in trouble",
+        "The constant abusage of the break room microwave made it all gross",
+        "Teachers often point out common abusage of punctuation marks",
+        "The abusage of hashtags by putting them on every single word is annoying",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːsɪdʒ/",
+},
+abuse: {
+  definitions: [
+    {
+      text: "When someone treats another person or animal badly on purpose, either physically or mentally. It's when someone uses their power or strength to hurt, control, or scare others.",
+      examples: [
+        "The shelter takes in animals that have suffered abuse",
+        "She finally left after years of emotional abuse",
+        "The company was fined for worker abuse",
+        "There's a hotline for reporting child abuse",
+        "He got fired for abuse of power at work",
+      ],
+    },
+    {
+      text: "When you use something in a really wrong or excessive way - like taking advantage of something or using it way more than you should.",
+      examples: [
+        "The abuse of the free coffee machine led to new office rules",
+        "Drug abuse can seriously mess up your life",
+        "Their abuse of the honor system ruined it for everyone",
+        "The abuse of natural resources is causing environmental problems",
+        "He got banned for abuse of the refund policy",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːs/",
+},
+abused: {
+  definitions: [
+    {
+      text: "When someone or something has been treated really badly or wrongly. It's the past tense of abuse, like when someone's been hurt, taken advantage of, or misused.",
+      examples: [
+        "The abused dog was finally rescued and given a loving home",
+        "She felt abused by her boss's constant criticism and bullying",
+        "The old car had been abused by its previous owner",
+        "The abused password was shared with way too many people",
+        "He was emotionally abused in his last relationship",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːzd/",
+},
+abusedly: {
+  definitions: [
+    {
+      text: "When something is done in a way that shows abuse or mistreatment. It's like when something happens in a really messed up or harmful way.",
+      examples: [
+        "He spoke abusedly about his ex-employer",
+        "The machine was running abusedly, making weird noises",
+        "She looked at him abusedly, still hurt from his actions",
+        "The system was being used abusedly by hackers",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːzɪdli/",
+},
+abusee: {
+  definitions: [
+    {
+      text: "The person who gets abused or treated badly. It's like saying 'the victim' but specifically about abuse situations.",
+      examples: [
+        "The counselor worked with both abusers and abusees",
+        "As an abusee, she found it hard to trust people again",
+        "The support group was created for abusees of domestic violence",
+        "The abusee finally found the courage to speak up",
+      ],
+    },
+  ],
+  pronunciation: "/əˌbjuːˈziː/",
+},
+abuseful: {
+  definitions: [
+    {
+      text: "When something or someone is full of abuse or tends to cause harm. It's like saying something is harmful or nasty, but specifically about abuse.",
+      examples: [
+        "His abuseful behavior made everyone uncomfortable",
+        "The relationship turned abuseful over time",
+        "She left the abuseful environment of her workplace",
+        "The game chat was getting too abuseful",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːsfʊl/",
+},
+abusefully: {
+  definitions: [
+    {
+      text: "Doing something in a way that's full of abuse or harm. When actions are done with the intention to hurt or mistreat.",
+      examples: [
+        "He abusefully criticized everything she did",
+        "The power was being used abusefully to control others",
+        "She abusefully manipulated the situation",
+        "The rules were being abusefully enforced",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːsfʊli/",
+},
+abusefulness: {
+  definitions: [
+    {
+      text: "The state of being abusive or harmful. It's like measuring how much abuse or bad treatment is happening in a situation.",
+      examples: [
+        "The abusefulness of the situation was getting worse",
+        "There was a growing abusefulness in their conversations",
+        "The report measured the abusefulness of different workplace environments",
+        "The abusefulness of his comments shocked everyone",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːsfʊlnəs/",
+},
+abuser: {
+  definitions: [
+    {
+      text: "Someone who treats others or things badly on purpose. It's the person doing the hurting or misusing, whether that's physically, emotionally, or with substances.",
+      examples: [
+        "She finally got away from her abuser and started a new life",
+        "The animal abuser was banned from owning pets",
+        "Drug abusers often need professional help to recover",
+        "The system abuser got banned from the platform",
+        "Known abusers aren't allowed in the support group",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːzər/",
+},
+abusers: {
+  definitions: [
+    {
+      text: "More than one person who treats others or things badly on purpose. It's the plural form of abuser - when you're talking about multiple people who hurt or misuse others or things.",
+      examples: [
+        "The shelter helps protect victims from their abusers",
+        "Substance abusers often struggle to maintain jobs",
+        "The website banned multiple abusers from the platform",
+        "Known abusers are tracked in the system",
+        "The program helps reform abusers through therapy",
+      ],
+    },
+  ],
+  pronunciation: "/əˈbjuːzərz/",
+},
+abuses: {
+    definitions: [
+      {
+        text: "When someone treats others badly or uses something in the wrong way. It's like when someone takes advantage of their power or position to hurt others, or when they use something in a way that wasn't intended.",
+        examples: [
+          "The manager abuses their power by making employees work unpaid overtime",
+          "She abuses her sister's kindness by always asking for money",
+          "The company abuses customer data by selling it without permission",
+          "He abuses the free refill policy by sharing his cup with friends",
+          "There were several abuses of power reported in the government",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːsɪz/",
+  },
+abush: {
+    definitions: [
+      {
+        text: "An old way of saying 'ambush' - when you hide and wait to attack or surprise someone. Think of it like setting up a trap or lying in wait for someone.",
+        examples: [
+          "The soldiers lay in abush behind the trees",
+          "They planned to abush the travelers on the road",
+          "The cat was in abush, waiting to pounce on the mouse",
+          "They set up an abush near the forest path",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbʊʃ/",
+  },
+abusing: {
+    definitions: [
+      {
+        text: "When someone is actively mistreating others or using something wrongly right now. It's the ongoing act of taking advantage of someone or something in a harmful way.",
+        examples: [
+          "He's abusing his position to get special treatment",
+          "The landlord is abusing the rental agreement by not fixing anything",
+          "She's abusing the return policy by buying clothes, wearing them once, and returning them",
+          "They're abusing the free WiFi by downloading huge files all day",
+          "The coach is abusing his authority by making kids practice in dangerous heat",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːzɪŋ/",
+  },
+abusion: {
+    definitions: [
+      {
+        text: "When someone uses something in totally the wrong way or treats it badly. It's like when you completely mess up how something should be used or handled.",
+        examples: [
+          "The abusion of the English language in that essay was painful to read",
+          "Their abusion of the rules ruined the game for everyone",
+          "The abusion of the new furniture made it fall apart quickly",
+          "His abusion of trust made everyone stop believing him",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːʒən/",
+  },
+abusious: {
+    definitions: [
+      {
+        text: "When something or someone tends to be abusive or harmful. It's like saying they're naturally inclined to treat others badly or misuse things.",
+        examples: [
+          "His abusious behavior made everyone avoid him",
+          "The system had abusious tendencies built into it",
+          "Their abusious management style caused many workers to quit",
+          "The rules were abusious and unfair to new players",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːsiəs/",
+  },
+abusive: {
+    definitions: [
+      {
+        text: "When someone or something is cruel, violent, or uses harsh words to hurt others. It's like when someone constantly puts others down, hits them, or treats them like trash.",
+        examples: [
+          "His abusive messages made her block him on all social media",
+          "The boss was fired for being abusive to employees",
+          "She left her abusive relationship and never looked back",
+          "The crowd got abusive when their team started losing",
+          "His abusive language made everyone uncomfortable",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːsɪv/",
+  },
+abusively: {
+    definitions: [
+      {
+        text: "When someone does things in a mean or harmful way. It's how you'd describe actions that are meant to hurt or take advantage of others.",
+        examples: [
+          "He spoke abusively to customer service workers",
+          "The manager treated the interns abusively",
+          "She acted abusively towards anyone who disagreed with her",
+          "The rules were being applied abusively to certain groups",
+          "He responded abusively to any criticism",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːsɪvli/",
+  },
+abusiveness: {
+    definitions: [
+      {
+        text: "The quality of being cruel or harmful to others. It's like measuring how mean or hurtful someone's behavior is.",
+        examples: [
+          "The abusiveness in his texts kept getting worse",
+          "Her abusiveness drove away all her friends",
+          "The abusiveness of the comments section made them disable it",
+          "The coach was fired due to his abusiveness towards players",
+          "The abusiveness of the policy caused many people to complain",
+        ],
+      }
+    ],
+    pronunciation: "/əˈbjuːsɪvnəs/",
+  },
+  abut: {
+    definitions: [
+      {
+        text: "When something touches or borders right up against something else, like when two properties share a fence line. Think of it like when you push two puzzle pieces together and they touch perfectly.",
+        examples: [
+          "Their backyard abuts the forest",
+          "The garage abuts the main house",
+          "My property abuts three different neighbors",
+          "The two buildings abut each other, sharing a wall",
+          "The deck abuts the swimming pool",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbʌt/",
+  },
+abutment: {
+    definitions: [
+      {
+        text: "A solid structure that holds up or supports something heavy, usually at the end of a bridge or arch. It's like the strong shoulders that carry all the weight and pressure of what's above it.",
+        examples: [
+          "The bridge needs new abutments after the flood damage",
+          "They're reinforcing the abutments before adding the second floor",
+          "The arch is supported by stone abutments on both sides",
+          "The deck's abutment keeps it from collapsing",
+          "Without proper abutments, the whole structure could fail",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbʌtmənt/",
+  },
+abutments: {
+    definitions: [
+      {
+        text: "More than one abutment - those solid structures that hold up heavy stuff like bridges or arches. When you need multiple support points to keep something standing strong.",
+        examples: [
+          "The long bridge needs abutments every fifty feet",
+          "They're inspecting all the abutments after the earthquake",
+          "The old castle's abutments are still holding strong",
+          "New abutments were added to support the extension",
+          "The highway's abutments need regular maintenance",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbʌtmənts/",
+  },
+abuts: {
+    definitions: [
+      {
+        text: "When something is currently touching or bordering against something else. It's the present-tense way of saying two things are right up against each other, like when your couch abuts the wall.",
+        examples: [
+          "The fence abuts our neighbor's garden",
+          "His land abuts the national park",
+          "The new extension abuts the old building perfectly",
+          "Where the patio abuts the house, there's a small gap",
+          "The shelf abuts the ceiling, making it hard to reach",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbʌts/",
+  },
+abuttal: {
+    definitions: [
+      {
+        text: "The act or state of something touching or bordering against something else. It's like when you're describing how two things come together or share a boundary.",
+        examples: [
+          "The abuttal of their properties caused a dispute",
+          "The perfect abuttal of the tiles makes the pattern look seamless",
+          "They checked the abuttal points before starting construction",
+          "The abuttal line between the two rooms needs fixing",
+          "There's an issue with the abuttal of the new extension",
+        ],
+      },
+    ],
+    pronunciation: "/əˈbʌtəl/",
+  },
+  abuttals: {
+    definitions: [
+      {
+        text: "The places where different pieces of land or property touch each other. Like when your backyard meets your neighbor's backyard - that line where they touch is an abuttal.",
+        examples: [
+          "The survey showed the abuttals of our property weren't marked correctly",
+          "We had to check the abuttals before building the fence",
+          "The dispute was about the abuttals between their farms",
+          "The deed lists all the abuttals of the property",
+          "They needed to verify the abuttals before selling the land"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌtəlz/"
+  },
+abutted: {
+    definitions: [
+      {
+        text: "When something touched or was right next to something else. It's like when you push your bed right up against the wall - the bed abutted the wall.",
+        examples: [
+          "The garage abutted the house on one side",
+          "Their garden abutted our driveway",
+          "The two buildings abutted each other perfectly",
+          "His desk abutted the window",
+          "The fence abutted the neighbor's property line"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌtɪd/"
+  },
+abutter: {
+    definitions: [
+      {
+        text: "Someone who owns land or property that touches someone else's property. Basically, your next-door neighbor is your abutter because their property touches yours.",
+        examples: [
+          "All the abutters got notified about the new construction",
+          "As an abutter, she had the right to complain about the noise",
+          "The town sent letters to all abutters about the zoning change",
+          "Being an abutter means you share at least one property line",
+          "The abutter's permission was needed to build the shared fence"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌtər/"
+  },
+abutters: {
+    definitions: [
+      {
+        text: "More than one person who owns property that touches someone else's property. Like when you're talking about all your next-door neighbors whose land touches yours.",
+        examples: [
+          "The abutters all showed up to protest the new development",
+          "We had to get signatures from all the abutters",
+          "The abutters shared the cost of the new fence",
+          "They sent notices to all the abutters about the yard sale",
+          "The abutters met to discuss the drainage problem"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌtərz/"
+  },
+abutting: {
+    definitions: [
+      {
+        text: "When something is touching or right next to something else. It's like when two puzzle pieces are fitting together - they're abutting each other.",
+        examples: [
+          "The two rooms are abutting each other with just a wall between them",
+          "Their yard is abutting ours in the back",
+          "The abutting properties share the same fence",
+          "The store is abutting the coffee shop next door",
+          "The two countries have abutting borders"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌtɪŋ/"
+  },
+abuzz: {
+    definitions: [
+      {
+        text: "When a place is super busy and noisy with lots of activity and excitement. Like when everyone's talking and moving around at a party, or when big news hits and everyone's freaking out about it.",
+        examples: [
+          "The office was abuzz with rumors about layoffs",
+          "The school was abuzz with excitement before the big game",
+          "Social media was abuzz with the celebrity gossip",
+          "The mall was abuzz with holiday shoppers",
+          "The neighborhood was abuzz after the lottery winner was announced"
+        ]
+      }
+    ],
+    pronunciation: "/əˈbʌz/"
+  },
+abv: {
+    definitions: [
+      {
+        text: "Short for 'alcohol by volume' - it tells you how much alcohol is in your drink as a percentage. Like when a beer says '5% ABV', it means 5% of what's in that can is pure alcohol.",
+        examples: [
+          "This craft beer has an ABV of 7.5%",
+          "Light beers usually have a lower ABV",
+          "Always check the ABV before drinking something new",
+          "The wine had an ABV of 13%",
+          "They make some crazy strong beers with like 15% ABV"
+        ]
+      }
+    ],
+    pronunciation: "/eɪ biː viː/"
+  },
+abvolt: {
+    definitions: [
+      {
+        text: "A super old way to measure electrical stuff that nobody really uses anymore except in some science labs. It's like the great-grandparent of modern electrical measurements.",
+        examples: [
+          "The old textbook still had measurements in abvolts",
+          "Scientists used to measure electricity in abvolts before better units came along",
+          "The antique meter showed readings in abvolts",
+          "Nobody uses abvolts anymore except in historical contexts",
+          "They had to convert the abvolts to modern units"
+        ]
+      }
+    ],
+    pronunciation: "/ˈæbvoʊlt/"
+  },
+  abvolts: {
+    definitions: [
+      {
+        text: "A super old way to measure electrical stuff - like how we use volts today, but a billion times smaller. It's so tiny and outdated that only hardcore science nerds in labs might ever talk about it.",
+        examples: [
+          "The old science paper measured electricity in abvolts instead of regular volts",
+          "You'd need a billion abvolts to equal one normal volt",
+          "Scientists used to measure tiny electrical signals in abvolts before better tools came along",
+          "The antique measuring device still shows readings in abvolts",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈvoʊlts/",
+  },
+abwab: {
+    definitions: [
+      {
+        text: "Extra taxes or fees that people had to pay on top of regular taxes in old-school India and some Islamic countries. Think of it like when your landlord suddenly adds random new fees to your rent - but this was done by tax collectors back in the day.",
+        examples: [
+          "The farmers complained about all the abwab they had to pay besides their regular taxes",
+          "The ruler promised to stop collecting abwab to make life easier for the people",
+          "Historical records show that abwab was a big burden on common folks",
+          "The tax reforms finally got rid of all those extra abwab charges",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈwɑːb/",
+  },
+abwatt: {
+    definitions: [
+      {
+        text: "An old-school way to measure electrical power, kind of like today's watt but a billion times smaller. It's so tiny that you'd pretty much only see it in really old science books or super precise lab equipment.",
+        examples: [
+          "The ancient electrical device measured power in abwatts",
+          "Modern equipment uses watts instead of abwatts because they're more practical",
+          "You'd need a billion abwatts to equal one regular watt",
+          "The physics lab still has some tools that measure in abwatts",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈwɒt/",
+  },
+abwatts: {
+    definitions: [
+      {
+        text: "More than one abwatt (which is that tiny old electrical measurement). It's just the plural form, like how 'cats' means more than one cat.",
+        examples: [
+          "The old machine showed its readings in abwatts",
+          "Scientists used to measure really small amounts of power in abwatts",
+          "The textbook had a conversion table from abwatts to modern watts",
+          "These ancient instruments display power in abwatts instead of watts",
+        ],
+      },
+    ],
+    pronunciation: "/æbˈwɒts/",
+  },
+ac: {
+    definitions: [
+      {
+        text: "Short for 'alternating current' - the type of electricity that powers stuff in your house. It's called that because the electrical flow keeps switching directions super fast, like a really quick back-and-forth motion.",
+        examples: [
+          "Most home appliances run on AC power",
+          "Make sure your laptop charger can handle AC input",
+          "The electrician explained that the house uses AC, not DC",
+          "Your phone charger converts AC from the wall into DC for your phone",
+        ],
+      },
+      {
+        text: "Short for air conditioning - the magical machine that keeps you from melting in summer.",
+        examples: [
+          "Can you turn on the AC? It's hot as hell in here",
+          "The AC broke right in the middle of the heatwave",
+          "I can't sleep without the AC running",
+          "The office AC is always set way too cold",
+        ],
+      },
+    ],
+    pronunciation: "/ˌeɪˈsiː/",
+  },
+acacatechin: {
+    definitions: [
+      {
+        text: "A natural chemical found in some plants. It's one of those complicated-sounding science words for something that plants make naturally, kind of like how trees make sap but way more specific.",
+        examples: [
+          "The researchers found acacatechin in the plant samples",
+          "This type of tree produces acacatechin in its bark",
+          "Scientists study acacatechin to understand how plants work",
+          "The lab tested the leaves for acacatechin content",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkækəˈtiːtʃɪn/",
+  },
+acacatechol: {
+    definitions: [
+      {
+        text: "Another natural chemical that plants make. It's like a building block that plants use, similar to how we use ingredients to make food, but on a tiny molecular level.",
+        examples: [
+          "The plant produces acacatechol as part of its natural processes",
+          "Scientists discovered acacatechol while studying plant chemistry",
+          "The research paper mentioned high levels of acacatechol in the samples",
+          "They extracted acacatechol from the tree bark",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkækəˈtiːtʃɒl/",
+  },
+acacetin: {
+    definitions: [
+      {
+        text: "A natural compound found in some plants that scientists get excited about because it might have health benefits. It's like one of those good-for-you plant chemicals, similar to how green tea has helpful stuff in it.",
+        examples: [
+          "The herb contains high amounts of acacetin",
+          "Researchers studied acacetin for its potential health effects",
+          "The plant extract was rich in acacetin",
+          "Scientists found acacetin in several types of flowers",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæsətɪn/",
+  },
+acacias: {
+    definitions: [
+      {
+        text: "More than one acacia tree or bush. When you're talking about a bunch of these thorny trees with the little leaves and flowers, not just one.",
+        examples: [
+          "The savanna was dotted with acacias as far as we could see",
+          "They planted several acacias along the driveway",
+          "The elephants were feeding on the acacias in the distance",
+          "The garden center had different types of acacias for sale",
+        ],
+      }
+    ],
+    pronunciation: "/əˈkeɪʃəz/"
+  },
+acaciin: {
+    definitions: [
+      {
+        text: "A natural chemical that comes from acacia trees. It's one of those science-y things found in the tree's bark and leaves - you won't run into this word unless you're doing some serious plant chemistry.",
+        examples: [
+          "The researchers extracted acaciin from the tree bark",
+          "The study showed that acaciin has some interesting properties",
+          "They tested the amount of acaciin in different acacia species",
+        ],
+      }
+    ],
+    pronunciation: "/əˈkeɪsiɪn/"
+  },
+acacin: {
+    definitions: [
+      {
+        text: "Another natural chemical found in acacia trees. Like its cousin acaciin, it's one of those compounds that scientists get excited about when studying these trees.",
+        examples: [
+          "The lab analyzed the acacin content in the samples",
+          "They discovered that acacin levels vary between different acacia species",
+          "The research paper discussed the properties of acacin",
+        ],
+      }
+    ],
+    pronunciation: "/əˈkeɪsɪn/"
+  },
+acacine: {
+    definitions: [
+      {
+        text: "Having qualities similar to or characteristic of acacia trees. When something reminds you of or has properties like an acacia tree.",
+        examples: [
+          "The perfume had subtle acacine notes",
+          "The wood showed typical acacine patterns",
+          "The extract had a distinct acacine quality to it",
+        ],
+      }
+    ],
+    pronunciation: "/əˈkeɪsaɪn/"
+  },
+academe: {
+    definitions: [
+      {
+        text: "The world of schools, colleges, and universities - basically everything to do with formal education and learning. It's what people mean when they talk about 'academic life' but trying to sound fancy about it.",
+        examples: [
+          "After twenty years in academe, she was ready for something different",
+          "His brother never left academe - went straight from student to professor",
+          "The politics of academe can be more dramatic than high school",
+          "She found the slow pace of academe frustrating after working in tech",
+        ],
+      }
+    ],
+    pronunciation: "/ˈækədiːm/"
+  },
+  academes: {
+    definitions: [
+      {
+        text: "Places where people study and do research, like universities and colleges. It's basically the plural way of saying 'academe', which is just a fancy way to talk about the world of schools and learning.",
+        examples: [
+          "The academes of Europe are known for their old buildings and traditions",
+          "She spent years studying in various academes before becoming a professor",
+          "The city is home to several prestigious academes",
+          "These old academes have been around for hundreds of years",
+          "Students from different academes came together for the conference",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækədiːmz/",
+  },
+  academy: {
+    definitions: [
+      {
+        text: "A special school or training place where you learn specific things. Think of it like a focused school - could be for anything from dance to police training to math.",
+        examples: [
+          "She goes to a dance academy after school",
+          "The police academy trains new officers",
+          "He enrolled in an online coding academy",
+          "The military academy prepares students to become officers",
+          "Their kids attend a private academy instead of public school",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkædəmi/",
+  },
+  academia: {
+    definitions: [
+      {
+        text: "The whole world of universities, research, and higher education. It's like this bubble where professors, researchers, and college people live in, doing research and writing papers and stuff.",
+        examples: [
+          "After 10 years in academia, she decided to get a regular job",
+          "His parents are both in academia - they teach at the university",
+          "Academia can feel really different from the real working world",
+          "She left academia to start her own business",
+          "People in academia spend a lot of time doing research and writing papers",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdiːmiə/",
+  },
+  academial: {
+    definitions: [
+      {
+        text: "Related to schools and universities. It's just another way of saying 'academic' - like when something has to do with education and learning stuff.",
+        examples: [
+          "The building has that typical academial look with ivy on the walls",
+          "She's pursuing an academial career",
+          "The conference had an academial focus",
+          "His whole life has been spent in academial pursuits",
+          "The paper was written in a very academial style",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdiːmiəl/",
+  },
+  academian: {
+    definitions: [
+      {
+        text: "Someone who works or lives in the world of universities and research. Like a professor, researcher, or scholar - basically anyone who makes their living in higher education.",
+        examples: [
+          "As an academian, she spends most of her time doing research",
+          "The conference was full of academians from around the world",
+          "He's been an academian for twenty years, teaching at various universities",
+          "Most academians have to publish research papers regularly",
+          "She didn't want to become an academian like her parents",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdiːmiən/",
+  },
+  academias: {
+    definitions: [
+      {
+        text: "More than one academia - like when you're talking about different university systems or educational environments. It's just the plural way of saying 'academia'.",
+        examples: [
+          "The academias of different countries can be very different",
+          "She's studied in the academias of both Europe and America",
+          "Different academias have different ways of doing research",
+          "The conference brought together people from academias worldwide",
+          "The academias of the East and West have different approaches",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdiːmiəz/",
+  },
+  academical: {
+    definitions: [
+      {
+        text: "Just another way of saying 'academic' - it means the same thing. It's about school, education, or theoretical stuff that might not matter in real life.",
+        examples: [
+          "The discussion took an academical turn",
+          "She has high academical standards",
+          "His writing style is very academical",
+          "The school focuses on academical excellence",
+          "It's an academical question that doesn't affect daily life",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdemɪkəl/",
+  },
+  academically: {
+    definitions: [
+      {
+        text: "Doing something in a way that's related to school or formal education. Like when you're writing or thinking in the way teachers want you to, instead of how you'd normally do it.",
+        examples: [
+          "She's doing really well academically this semester",
+          "The paper wasn't written academically enough for college",
+          "He might struggle socially, but academically he's crushing it",
+          "You need to phrase this more academically for your thesis",
+          "They judge students purely academically, not considering other skills",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdemɪkli/",
+  },
+academicals: {
+    definitions: [
+      {
+        text: "The fancy clothes that students and teachers wear at special university events like graduation. You know, those long black robes and weird square hats that make everyone look like they're in a Harry Potter movie.",
+        examples: [
+          "Don't forget to pick up your academicals before the graduation ceremony",
+          "The professors all wore their academicals for the formal event",
+          "She tripped on her academicals walking across the stage",
+          "The rental shop was running out of academicals before graduation",
+          "Everyone looks the same in their academicals at commencement",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdemɪkəlz/",
+  },
+academician: {
+    definitions: [
+      {
+        text: "Someone who's officially part of a special group of experts, usually in art, science, or other fancy fields. Think of it like being in an exclusive club for really smart people who are recognized as experts in what they do.",
+        examples: [
+          "She became an academician after years of research in physics",
+          "The museum hired an academician to verify the painting's authenticity",
+          "Being chosen as an academician is a huge honor",
+          "The old academician spent his life studying ancient languages",
+          "Three academicians reviewed the new scientific theory",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkædəˈmɪʃən/",
+  },
+academicians: {
+    definitions: [
+      {
+        text: "More than one person who's part of those exclusive expert groups. It's just the plural of academician - when you're talking about multiple people who are in these fancy expert clubs.",
+        examples: [
+          "The academicians gathered for their annual meeting",
+          "Several academicians disagreed with the new theory",
+          "The committee of academicians reviewed the research proposals",
+          "Famous academicians from around the world attended the conference",
+          "The university invited academicians to speak at the symposium",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkædəˈmɪʃənz/",
+  },
+academicianship: {
+    definitions: [
+      {
+        text: "The job or position of being an academician. It's like having a VIP pass in the world of experts - the status you get when you're officially recognized as part of these special academic groups.",
+        examples: [
+          "She was awarded an academicianship after decades of research",
+          "The academicianship came with special privileges at the university",
+          "He worked his whole career hoping to earn an academicianship",
+          "The requirements for academicianship are super strict",
+          "Her academicianship allowed her to vote on new members",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkædəˈmɪʃənʃɪp/",
+  },
+academicism: {
+    definitions: [
+      {
+        text: "When someone or something follows all the formal rules and traditional ways of doing things, especially in art or education, sometimes to the point where it gets boring or stops being creative. It's like when you're so focused on doing things 'the right way' that you forget to think outside the box.",
+        examples: [
+          "His paintings showed too much academicism and lacked personal style",
+          "The school's strict academicism was killing students' creativity",
+          "She rejected academicism in favor of a more experimental approach",
+          "The article was criticized for its dry academicism",
+          "Modern artists often rebel against traditional academicism",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdemɪsɪzəm/",
+  },
+academics: {
+    definitions: [
+      {
+        text: "The subjects you study in school or college, like math, science, or history. It's all the learning and brain stuff, not the fun extra activities.",
+        examples: [
+          "She's great at sports but struggles with academics",
+          "The school focuses more on academics than arts",
+          "His parents only care about his academics, not his happiness",
+          "The tutor helps students with their academics after school",
+          "They had to maintain good academics to stay on the team",
+        ],
+      },
+      {
+        text: "People who work as teachers or researchers at colleges and universities. These are the folks who spend their lives studying, teaching, and writing super long papers about specific subjects.",
+        examples: [
+          "The academics gathered for a conference about climate change",
+          "Most academics in the department supported the new policy",
+          "She's one of the leading academics in robot science",
+          "The academics debated the theory for hours",
+          "Some academics never leave the university world",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækəˈdemɪks/",
+  },
+  academies: {
+    definitions: [
+      {
+        text: "Places where people go to learn special skills or subjects, usually more fancy or specialized than regular schools. Think art academies, military academies, or dance academies - they're like schools but focused on specific things.",
+        examples: [
+          "She studied at one of the top military academies in the country",
+          "The art academy teaches everything from painting to sculpture",
+          "There are several police academies in the city",
+          "The dance academy puts on amazing shows every year",
+          "He graduated from the culinary academy and became a chef",
+        ],
+      },
+      {
+        text: "Groups of experts who come together to promote and develop their field, like science or art. They're like exclusive clubs for really smart or talented people in specific areas.",
+        examples: [
+          "The Academy of Motion Picture Arts gives out the Oscar awards",
+          "She was elected to the National Academy of Sciences",
+          "The academy meets once a year to discuss new discoveries",
+          "The French Academy decides official rules for the French language",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.miz/",
+  },
+  academise: {
+    definitions: [
+      {
+        text: "To make something more academic or scholarly, usually by making it more complicated or theoretical than it needs to be. It's like when someone takes something simple and makes it sound super fancy and complex.",
+        examples: [
+          "They tried to academise cooking by turning it into a science",
+          "Stop trying to academise everything - just explain it simply",
+          "The paper academised basic concepts to sound more impressive",
+          "They academised street dance by creating formal techniques",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.maɪz/",
+  },
+  academised: {
+    definitions: [
+      {
+        text: "When something has been made more academic or scholarly than it used to be. It's like when something fun or simple gets turned into something more serious and formal.",
+        examples: [
+          "Street art has become too academised these days",
+          "The once simple hobby has become completely academised",
+          "They've academised what used to be casual gatherings",
+          "The subject has become so academised that nobody understands it anymore",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.maɪzd/",
+  },
+  academising: {
+    definitions: [
+      {
+        text: "The act of making something more academic or scholarly while it's happening. Like watching someone turn something simple into something unnecessarily complex in real time.",
+        examples: [
+          "They're academising skateboarding by creating theoretical frameworks",
+          "Stop academising everything and just get to the point",
+          "She's academising the discussion with big words",
+          "By academising the sport, they're making it less fun",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.maɪ.zɪŋ/",
+  },
+  academism: {
+    definitions: [
+      {
+        text: "When people stick super strictly to academic rules and traditions, often caring more about following these rules than being practical or creative. It's like being a stickler for doing things the 'proper' academic way.",
+        examples: [
+          "His work suffers from too much academism - it's technically perfect but boring",
+          "The school's strict academism is killing students' creativity",
+          "She rejected academism and developed her own style",
+          "Pure academism isn't always the best approach to solving real problems",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.mɪ.zəm/",
+  },
+  academist: {
+    definitions: [
+      {
+        text: "Someone who's really into following academic rules and traditions, sometimes too much. Like that person who always has to do everything by the book and quote famous scholars.",
+        examples: [
+          "He's such an academist, he can't write anything without citing ten sources",
+          "The old academist refused to consider new teaching methods",
+          "She's more of a practical teacher than an academist",
+          "The academists at the university opposed any changes to the curriculum",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.mɪst/",
+  },
+  academite: {
+    definitions: [
+      {
+        text: "A person who's part of an academy or academic institution. Basically just a fancy way to say 'student' or 'scholar'.",
+        examples: [
+          "The young academite spent all his time in the library",
+          "A group of academites protested the new school policies",
+          "She was a dedicated academite, always first to class",
+          "The academites gathered for their graduation ceremony",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæd.ə.maɪt/",
+  },
+  academization: {
+    definitions: [
+      {
+        text: "The process of making something more academic or scholarly than it was before. It's like watching something casual or practical slowly turn into something more formal and theoretical.",
+        examples: [
+          "The academization of yoga has turned it from spiritual practice into a research field",
+          "People are worried about the academization of trade skills",
+          "The academization of cooking has led to molecular gastronomy",
+          "Some resist the academization of traditional arts",
+          "The academization of sports has created new career paths",
+        ],
+      },
+    ],
+    pronunciation: "/əˌkæd.ə.maɪˈzeɪ.ʃən/",
+  },
+  academize: {
+    definitions: [
+      {
+        text: "To make something more academic or scholarly, usually by making it more formal or complicated than it needs to be. It's like when someone takes a simple idea and makes it sound super fancy and complex just to seem smart.",
+        examples: [
+          "The writer tried to academize their blog post by adding big words nobody uses",
+          "Stop trying to academize everything - just say what you mean",
+          "They academized the training manual so much that nobody could understand it",
+          "She has a habit of academizing casual conversations",
+          "The committee academized the simple proposal into a 50-page document",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkædəmaɪz/",
+  },
+academized: {
+    definitions: [
+      {
+        text: "When something was made more academic or scholarly than it needed to be. It's the result of taking normal stuff and making it sound fancy and complex.",
+        examples: [
+          "The academized version of the report put everyone to sleep",
+          "What started as a simple guide became an academized mess",
+          "He took one look at the academized instructions and gave up",
+          "The once-fun discussion got academized into boring theory",
+          "The academized language made the article hard to read",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkædəmaɪzd/",
+  },
+academizing: {
+    definitions: [
+      {
+        text: "In the process of making something more academic or scholarly than it needs to be. Like when someone's actively turning simple ideas into complicated academic-sounding stuff.",
+        examples: [
+          "Stop academizing everything - we need this to be readable",
+          "She's academizing her writing style for the thesis",
+          "By academizing the presentation, they lost their audience's interest",
+          "The professor keeps academizing every class discussion",
+          "They're academizing the whole project just to sound smart",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkædəmaɪzɪŋ/",
+  },
+acadialite: {
+    definitions: [
+      {
+        text: "A type of reddish mineral that's found in rocks. It's like a fancy red crystal that geologists get excited about.",
+        examples: [
+          "The rock collector found some acadialite in the mountains",
+          "She showed us the acadialite specimens in her collection",
+          "The reddish glow of acadialite caught their attention",
+          "They discovered a new deposit of acadialite while hiking",
+          "The museum has a beautiful display of acadialite crystals",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkeɪdiəlaɪt/",
+  },
+acajou: {
+    definitions: [
+      {
+        text: "A reddish-brown wood that comes from tropical trees, especially the cashew tree. People use it to make fancy furniture and stuff because it looks really nice.",
+        examples: [
+          "The dining table was made from solid acajou wood",
+          "She loved the rich color of the acajou cabinet",
+          "Acajou furniture costs a lot because the wood is hard to get",
+          "The guitar maker used acajou for the instrument's body",
+          "You can tell it's real acajou by the deep red color",
+        ],
+      },
+      {
+        text: "Another name for the cashew tree - you know, the tree that grows those curved nuts we eat.",
+        examples: [
+          "The acajou trees were full of cashews",
+          "They planted rows of acajou in the orchard",
+          "Wild acajou trees grow all over this region",
+          "The farmers harvest nuts from the acajou grove every year",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəʒuː/",
+  },
+acajous: {
+    definitions: [
+      {
+        text: "More than one acajou tree or pieces of acajou wood. It's just the plural way of saying acajou.",
+        examples: [
+          "The forest was full of ancient acajous",
+          "They imported several acajous for the furniture workshop",
+          "The carpenter collected different types of acajous",
+          "Wild acajous covered the hillside",
+          "They used various acajous to make the cabinets",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəʒuːz/",
+  },
+acalculia: {
+    definitions: [
+      {
+        text: "When your brain has trouble doing math - like really basic stuff. It's not about being bad at math, it's when your brain literally can't process numbers properly, like forgetting how to add or count money.",
+        examples: [
+          "After his stroke, he developed acalculia and couldn't count his change",
+          "The teacher noticed the student might have acalculia when they couldn't recognize numbers",
+          "People with acalculia often struggle with shopping because they can't work with prices",
+          "Her acalculia made it hard to tell time on analog clocks",
+          "The doctor tested for acalculia by asking him to do simple calculations",
+        ],
+      },
+    ],
+    pronunciation: "/eɪkælˈkjuːliə/",
+  },
+acale: {
+    definitions: [
+      {
+        text: "An old-timey word that means to freeze or get super cold. Think of when your fingers go numb from the cold - that's what it means to acale.",
+        examples: [
+          "His hands began to acale in the winter wind",
+          "The poor guy was acaling in the snow without gloves",
+          "The water in the pond started to acale overnight",
+          "Their feet were acaling after standing in the cold for hours",
+          "The metal pipes would acale during the harsh winter nights",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkeɪl/",
+  },
+acaleph: {
+    definitions: [
+      {
+        text: "A fancy word for jellyfish and similar sea creatures that float around and can sting you. It's like calling a cat a feline - same thing, just more scientific.",
+        examples: [
+          "The beach was closed because of acaleph in the water",
+          "Scientists study how acaleph move through the ocean",
+          "Kids at the aquarium learned about different types of acaleph",
+          "The water was full of glowing acaleph at night",
+          "She got stung by an acaleph while swimming",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəlef/",
+  },
+  acalephan: {
+    definitions: [
+      {
+        text: "A type of sea creature that's like a jellyfish. It's basically a soft, see-through animal that floats around in the ocean and can sting you.",
+        examples: [
+          "The beach was closed because there were too many acalephans in the water",
+          "Scientists study acalephans to understand how sea creatures evolved",
+          "Kids at the aquarium loved watching the acalephans float around",
+          "Be careful swimming here - I saw some acalephans in the water",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæləfən/",
+  },
+acalephe: {
+    definitions: [
+      {
+        text: "Another word for a jellyfish-like sea animal. It's those floating, clear creatures in the ocean that might sting you if you get too close.",
+        examples: [
+          "The aquarium has a whole tank full of acalephes",
+          "Watch out for acalephes when you're swimming",
+          "The tide brought in several acalephes onto the beach",
+          "Marine biologists are tracking the movement of acalephes in the Pacific",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæləfi/",
+  },
+acalephes: {
+    definitions: [
+      {
+        text: "More than one acalephe (jellyfish-like sea creature). When you're talking about a bunch of these floating, stinging ocean animals at once.",
+        examples: [
+          "The warm water was full of acalephes this summer",
+          "We saw tons of acalephes washing up on the shore",
+          "The documentary showed how acalephes move through the ocean",
+          "Swimmers were warned about the large group of acalephes",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæləfiz/",
+  },
+acalephoid: {
+    definitions: [
+      {
+        text: "Something that looks or acts like a jellyfish. When something reminds you of those floating, stinging sea creatures, even if it's not actually one.",
+        examples: [
+          "The floating plastic bag had an acalephoid appearance in the water",
+          "The robot was designed with acalephoid movements to swim better",
+          "The art installation used acalephoid shapes to create an underwater feel",
+          "The alien creatures in the movie had an acalephoid way of moving",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæləfɔɪd/",
+  },
+acalephs: {
+    definitions: [
+      {
+        text: "A group of jellyfish-like sea animals. It's just another way to say there's more than one of these floating, stinging ocean creatures.",
+        examples: [
+          "The tide pool was filled with tiny acalephs",
+          "Divers spotted several acalephs near the reef",
+          "The storm brought hundreds of acalephs to the surface",
+          "Kids learned about acalephs during their marine biology lesson",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækələfs/",
+  },
+acalycal: {
+    definitions: [
+      {
+        text: "When a flower doesn't have those small green leaves (called a calyx) at its base. It's like when someone's wearing a shirt but forgot to put on a collar.",
+        examples: [
+          "The rare plant had acalycal flowers",
+          "Botanists identified the species by its acalycal structure",
+          "Some garden flowers are naturally acalycal",
+          "The mutation caused the plant to produce acalycal blooms",
+        ],
+      },
+    ],
+    pronunciation: "/eɪˈkælɪkəl/",
+  },
+acalycine: {
+    definitions: [
+      {
+        text: "Another way to say a flower doesn't have those protective green leaves at its base. Think of it like a flower missing its natural collar.",
+        examples: [
+          "The acalycine flower looked different from its relatives",
+          "Some desert plants are acalycine to save water",
+          "The researcher studied why certain flowers become acalycine",
+          "The garden had a mix of normal and acalycine flowers",
+        ],
+      },
+    ],
+    pronunciation: "/eɪˈkælɪsaɪn/",
+  },
+acalycinous: {
+    definitions: [
+      {
+        text: "When a flower is born without those little green leaves that usually protect its base. Like if you had a cupcake without the paper wrapper around it.",
+        examples: [
+          "The mutation resulted in acalycinous flowers",
+          "Some species are naturally acalycinous",
+          "The plant produced only acalycinous blooms that year",
+          "Scientists studied why these flowers were acalycinous",
+        ],
+      },
+    ],
+    pronunciation: "/eɪkəˈlɪsɪnəs/",
+  },
+  acalyculate: {
+    definitions: [
+      {
+        text: "When a flower is missing its outer protective parts (the green leafy bits that usually wrap around the flower bud). It's like when someone shows up without their jacket - the main part is there, but the protective covering isn't.",
+        examples: [
+          "This flower species is acalyculate, growing without any protective covering",
+          "The mutation caused the plant to produce acalyculate flowers",
+          "Some flowers naturally grow acalyculate, while others need their protective parts",
+          "The botanist noticed the flower was acalyculate, missing its usual green wrapper",
+          "These garden varieties are acalyculate, showing their petals right away without any covering",
+        ],
+      },
+    ],
+    pronunciation: "/eɪˈkælɪkjʊleɪt/",
+  },
+acalyptrate: {
+    definitions: [
+      {
+        text: "A type of fly that doesn't have a little cap or covering over its wings when it's young. Think of it like a kid running around without their hat on - nothing's protecting their head.",
+        examples: [
+          "House flies are acalyptrate flies, they don't have wing covers",
+          "The researcher studied acalyptrate fly species in the garden",
+          "Most fruit flies are acalyptrate, lacking the wing cap",
+          "These acalyptrate flies are common in kitchens and around fruit",
+          "The bug expert explained how to identify acalyptrate flies by looking at their backs",
+        ],
+      },
+    ],
+    pronunciation: "/eɪˈkælɪptreɪt/",
+  },
+acampsia: {
+    definitions: [
+      {
+        text: "When your joints are super stiff and won't bend properly. It's like when you've been sitting in one position for way too long and feel like the Tin Man from Wizard of Oz - everything's just stuck and won't move right.",
+        examples: [
+          "After the accident, he developed acampsia in his knee",
+          "The doctor diagnosed her with acampsia when she couldn't bend her elbow",
+          "Physical therapy can help reduce acampsia in stiff joints",
+          "She noticed signs of acampsia after keeping her arm in a cast for months",
+          "The condition caused acampsia in all his finger joints",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkæmpsiə/",
+  },
+  acana: {
+    definitions: [
+      {
+        text: "A pointy part on a plant, like a thorn or spine. It's basically nature's version of a needle that grows on some plants.",
+        examples: [
+          "The rose's acana pricked my finger when I tried to pick it",
+          "The cactus was covered in tiny acana for protection",
+          "Be careful handling that plant - its acana are super sharp",
+          "The desert plants evolved acana to keep animals from eating them",
+          "She carefully removed the acana before handling the plant",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkeɪnə/",
+  },
+acanaceous: {
+    definitions: [
+      {
+        text: "When something's covered in thorns or spikes. Think of a cactus or a rose bush - if it's got those pointy bits all over it, it's acanaceous.",
+        examples: [
+          "The acanaceous plants in the desert are hard to handle",
+          "Be careful with that acanaceous bush - it'll scratch you",
+          "The garden was full of acanaceous plants that needed careful pruning",
+          "The rose's acanaceous stems made it difficult to make a bouquet",
+          "Many desert plants are acanaceous to protect themselves from animals",
+        ],
+      },
+    ],
+    pronunciation: "/ækəˈneɪʃəs/",
+  },
+acanonical: {
+    definitions: [
+      {
+        text: "When something doesn't follow the normal rules or standards that everyone usually follows. It's like when you make pasta but completely ignore the traditional Italian recipe - you're doing it your own way.",
+        examples: [
+          "His acanonical teaching methods were weird but effective",
+          "The movie was an acanonical take on the classic fairy tale",
+          "She wrote an acanonical version of the story that broke all the usual rules",
+          "The chef's acanonical approach to sushi shocked traditional experts",
+          "Their acanonical business model ignored all the industry standards",
+        ],
+      },
+    ],
+    pronunciation: "/eɪkəˈnɒnɪkəl/",
+  },
+acanth: {
+    definitions: [
+      {
+        text: "A spiky or thorny part of something, usually on a plant. It's like nature's version of a safety pin that grows on plants.",
+        examples: [
+          "The plant's acanth kept pricking my fingers while gardening",
+          "The desert plant used its acanth to protect itself",
+          "She carefully avoided the acanth while picking the flower",
+          "The bush was covered in sharp acanth all over",
+          "The plant's defensive acanth kept animals from eating it",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθ/",
+  },
+acantha: {
+    definitions: [
+      {
+        text: "A sharp, pointy thing that grows on plants, like a thorn or spine. It's nature's way of saying 'don't touch me!'",
+        examples: [
+          "The rose's acantha poked through my gardening gloves",
+          "The cactus was covered in protective acantha",
+          "She carefully trimmed the acantha from the stems",
+          "The plant uses its acantha to keep animals away",
+          "Watch out for the acantha when handling that plant",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθə/",
+  },
+acanthaceae: {
+    definitions: [
+      {
+        text: "A big family of plants that includes things like bear's breeches and shrimp plants. Think of it like a plant family reunion where most of the members have pretty flowers and some have spiky parts.",
+        examples: [
+          "The garden had several plants from the acanthaceae family",
+          "She specialized in growing different types of acanthaceae",
+          "Many acanthaceae plants have beautiful flowers",
+          "The acanthaceae section of the botanical garden was in full bloom",
+          "These tropical acanthaceae plants need lots of sunlight",
+        ],
+      },
+    ],
+    pronunciation: "/ækənˈθeɪsiː/",
+  },
+acanthaceous: {
+    definitions: [
+      {
+        text: "When something belongs to or looks like plants from the acanthaceae family. It's like being part of a specific plant gang that often has spiky parts and pretty flowers.",
+        examples: [
+          "The acanthaceous plants in her garden were blooming",
+          "This acanthaceous flower looks great in the front yard",
+          "She collected different acanthaceous species for her greenhouse",
+          "The acanthaceous characteristics made the plant easy to identify",
+          "Many acanthaceous plants grow well in warm climates",
+        ],
+      },
+    ],
+    pronunciation: "/ækənˈθeɪʃəs/",
+  },
+acanthad: {
+    definitions: [
+      {
+        text: "Any living thing that has spines or thorns on it. If it's spiky and it's alive, you can call it an acanthad.",
+        examples: [
+          "The hedgehog is a classic example of an acanthad",
+          "Many desert acanthad plants use their spines for protection",
+          "The acanthad fish used its spines to scare off predators",
+          "She studied different types of acanthad organisms",
+          "The aquarium had several acanthad species on display",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθæd/",
+  },
+  acantharia: {
+    definitions: [
+      {
+        text: "A tiny sea creature that looks like a spiky ball under a microscope. It's like a microscopic porcupine that floats around in the ocean, with a skeleton made of special crystals.",
+        examples: [
+          "Scientists study acantharia to understand how tiny ocean life affects the environment",
+          "Under the microscope, the acantharia looked like a beautiful star with spikes",
+          "The ocean is full of acantharia, even though they're too small to see with your eyes",
+          "These little spiky acantharia help move minerals around in the ocean",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækənˈθɛəriə/",
+  },
+acanthi: {
+    definitions: [
+      {
+        text: "More than one acanthus - those curly, leafy designs you see on old buildings and fancy furniture. It's like when you're talking about multiple of those decorative leaf patterns that look like they're from ancient Greek stuff.",
+        examples: [
+          "The old church had beautiful acanthi carved into its columns",
+          "The designer used acanthi patterns all over the wallpaper",
+          "Ancient Greek temples often had acanthi decorating their tops",
+          "The furniture maker carved acanthi into the wooden chair backs",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθaɪ/",
+  },
+acanthia: {
+    definitions: [
+      {
+        text: "A group of bugs that includes things like bedbugs. Think of it like a family name for certain types of insects that are usually flat and kind of oval-shaped.",
+        examples: [
+          "The scientist specialized in studying different types of acanthia",
+          "They found a new species belonging to the acanthia group",
+          "Bedbugs are probably the most infamous members of acanthia",
+          "Some acanthia can be found living on plants",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθiə/",
+  },
+acanthial: {
+    definitions: [
+      {
+        text: "Related to a specific point on your skull where your nose bones meet. It's like when doctors or scientists need to talk about that exact spot where the nasal bones come together.",
+        examples: [
+          "The doctor measured the acanthial angle to plan the nose surgery",
+          "Scientists use the acanthial point as a reference when studying skull shapes",
+          "The injury was right at the acanthial region of his nose",
+          "Researchers compared the acanthial measurements of different species",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθiəl/",
+  },
+acanthin: {
+    definitions: [
+      {
+        text: "A special protein found in some tiny sea creatures that helps make their spiky parts. It's like the building material these microscopic organisms use to create their skeleton.",
+        examples: [
+          "The sea creature uses acanthin to build its spiky shell",
+          "Scientists studied how acanthin helps these organisms survive",
+          "The microscope revealed the acanthin structure clearly",
+          "Different species produce different types of acanthin",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθɪn/",
+  },
+acanthine: {
+    definitions: [
+      {
+        text: "Something that looks like or reminds you of thorns or spines. When something's all spiky or prickly-looking, like a thistle or a hedgehog.",
+        examples: [
+          "The plant had acanthine leaves that could prick you",
+          "Her sculpture had an acanthine texture all over it",
+          "The monster in the game had acanthine armor",
+          "The fence had acanthine decorations on top to keep people from climbing it",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθaɪn/",
+  },
+acanthion: {
+    definitions: [
+      {
+        text: "A specific point on your skull where your nose bones meet at the top. It's like that spot you can feel if you run your finger up the bridge of your nose to where it meets your forehead.",
+        examples: [
+          "The doctor touched my acanthion to check if it was aligned properly",
+          "She broke her nose right at the acanthion",
+          "Skull measurements always include the position of the acanthion",
+          "The forensic team used the acanthion as a reference point",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθiən/",
+  },
+acanthite: {
+    definitions: [
+      {
+        text: "A dark gray or black mineral that contains silver. It's like nature's way of hiding silver in rocks, and miners get pretty excited when they find it because it means there's silver to be dug up.",
+        examples: [
+          "The miners struck a rich vein of acanthite in the mountain",
+          "You can sometimes find acanthite crystals in old silver mines",
+          "The rock collection included some shiny pieces of acanthite",
+          "Silver miners learn to recognize acanthite because it's valuable",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkænθaɪt/",
+  },
+  acanthocarpous: {
+    definitions: [
+      {
+        text: "When a plant or fruit has spines or thorns on it. Think of a fruit that's all spiky and prickly on the outside, like some wild berries or certain tropical fruits.",
+        examples: [
+          "The acanthocarpous fruit was too prickly to pick up with bare hands",
+          "Some desert plants have acanthocarpous fruits to protect their seeds",
+          "The botanist specialized in studying acanthocarpous plant species",
+          "You need thick gloves to handle these acanthocarpous berries",
+          "The cactus produced small, acanthocarpous fruits in the summer"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈkɑːrpəs/"
+},
+acanthocephala: {
+    definitions: [
+      {
+        text: "A group of parasitic worms that have spiny, hook-covered heads they use to attach to their hosts' guts. They're basically like tiny worms with a head full of hooks - pretty nasty little creatures that live inside other animals.",
+        examples: [
+          "The fish was infected with acanthocephala in its intestines",
+          "Scientists study acanthocephala to understand how parasites evolve",
+          "The vet found acanthocephala when examining the sick dog",
+          "These parasites belong to the acanthocephala group",
+          "Acanthocephala can affect both water and land animals"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈsefələ/"
+},
+acanthocephalan: {
+    definitions: [
+      {
+        text: "Any single worm from the acanthocephala group - those parasites with the spiky, hooked heads. It's like saying 'one of those hook-headed worms' instead of talking about the whole group.",
+        examples: [
+          "They found an acanthocephalan parasite in the fish's stomach",
+          "The researcher was studying a new species of acanthocephalan",
+          "This acanthocephalan uses its hooks to stay attached to its host",
+          "Each acanthocephalan can live for several months inside its host",
+          "The microscope revealed a tiny acanthocephalan moving around"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈsefələn/"
+},
+acanthocephali: {
+    definitions: [
+      {
+        text: "More than one acanthocephalan worm - basically when you're talking about multiple of these spiny-headed parasites at once. It's just the plural way of saying acanthocephalan.",
+        examples: [
+          "The sample contained several acanthocephali of different sizes",
+          "Acanthocephali were found in multiple fish from the same lake",
+          "The lab keeps different species of acanthocephali for research",
+          "These acanthocephali can survive in various host animals",
+          "The infection spread as the acanthocephali multiplied"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈsefəlaɪ/"
+},
+acanthocephalous: {
+    definitions: [
+      {
+        text: "Having a spiny or thorny head. Usually used to describe animals or organisms that have spikes, hooks, or thorns on their head part. Think of something with a head that looks like a porcupine.",
+        examples: [
+          "The parasite was acanthocephalous, with hooks covering its head",
+          "Several acanthocephalous creatures live in deep ocean waters",
+          "The specimen showed typical acanthocephalous features",
+          "These acanthocephalous organisms use their spiny heads to attach to surfaces",
+          "The worm's acanthocephalous structure helps it survive"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈsefələs/"
+},
+acanthocereus: {
+    definitions: [
+      {
+        text: "A type of spiny cactus that usually grows tall and has multiple branches. Think of it like a tree-sized cactus that looks like it's reaching out with several arms, all covered in spines.",
+        examples: [
+          "The acanthocereus grew tall enough to reach the second floor",
+          "Desert gardens often feature different types of acanthocereus",
+          "The acanthocereus blooms with large white flowers at night",
+          "They planted an acanthocereus as a natural fence",
+          "The old acanthocereus has been growing here for decades"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈsɪriəs/"
+},
+acanthocladous: {
+    definitions: [
+      {
+        text: "When a plant has spiny or thorny branches. It's like when a bush or tree has branches covered in thorns or spikes, making it really hard to touch or get through.",
+        examples: [
+          "The acanthocladous shrub makes a great security barrier",
+          "Be careful trimming that acanthocladous plant - it's super thorny",
+          "Many desert plants are acanthocladous to protect themselves",
+          "The garden path was blocked by acanthocladous bushes",
+          "This acanthocladous species evolved to defend against animals"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈkleɪdəs/"
+},
+acanthodea: {
+    definitions: [
+      {
+        text: "A group of extinct fish that lived millions of years ago. These ancient fish were covered in tiny spines and were some of the first fish to have jaws - think of them as the great-great-grandparents of modern fish, but spikier.",
+        examples: [
+          "They found acanthodea fossils in the rock formation",
+          "Acanthodea were common in ancient oceans",
+          "Scientists study acanthodea to understand how fish evolved",
+          "The museum has a collection of acanthodea specimens",
+          "These acanthodea fossils are over 400 million years old"
+        ]
+    }],
+    pronunciation: "/əˌkænθəˈdiːə/"
+},
+acanthodean: {
+  definitions: [
+    {
+      text: "A type of ancient fish that lived millions of years ago, known for having lots of spines. Think of it like a fish covered in spiky armor - like a swimming porcupine from way back in time.",
+      examples: [
+        "Scientists found acanthodean fossils in the rocky cliffs",
+        "The acanthodean used its spines for protection against bigger fish",
+        "These ancient acanthodean remains show us how fish evolved",
+        "The museum has a well-preserved acanthodean specimen",
+        "Kids love learning about acanthodeans because they look like spiky underwater warriors",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθədiən/",
+},
+acanthodes: {
+  definitions: [
+    {
+      text: "An ancient type of spiny fish that swam around about 400 million years ago. Picture a fish that looked like it was wearing a jacket made of tiny spears - that's an acanthodes for you.",
+      examples: [
+        "The acanthodes fossil shows all its spines perfectly preserved",
+        "Acanthodes were some of the earliest fish with jaws",
+        "They found a new acanthodes specimen in the limestone",
+        "The acanthodes used its spines to scare off predators",
+        "Scientists study acanthodes to understand how modern fish evolved",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθədiːz/",
+},
+acanthoid: {
+  definitions: [
+    {
+      text: "Something that looks like or reminds you of a spine or thorn. Like when something's all pointy and sharp-looking, but doesn't have to actually be sharp - it just has that spiky vibe.",
+      examples: [
+        "The plant had acanthoid leaves that looked super spiky",
+        "Her hair gel made her mohawk look totally acanthoid",
+        "The building had an acanthoid design with lots of pointed features",
+        "The sculpture was covered in acanthoid patterns",
+        "Those acanthoid crystals looked like tiny daggers under the microscope",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθɔɪd/",
+},
+acantholimon: {
+  definitions: [
+    {
+      text: "A type of small, spiky plant that grows in dry areas. Think of it like a tiny bush with sharp leaves that looks like a pincushion. These tough little plants can handle really hot and dry places where other plants would die.",
+      examples: [
+        "The garden center had some acantholimon plants that looked like spiky green balls",
+        "These acantholimon flowers add a cool texture to rock gardens",
+        "The mountain slopes were covered with tiny acantholimon bushes",
+        "She picked an acantholimon for her desert-themed garden",
+        "The acantholimon's pink flowers stood out against its spiky leaves",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkænθəˈlaɪmən/",
+},
+acantholysis: {
+  definitions: [
+    {
+      text: "When skin cells that usually stick together start breaking apart. It's like when sticky notes in a stack lose their stickiness and start falling apart from each other. This happens in some skin conditions where the skin gets damaged or sick.",
+      examples: [
+        "The doctor noticed acantholysis in the skin sample under the microscope",
+        "The blisters formed because of acantholysis in the outer skin layer",
+        "The skin condition caused acantholysis, making the skin more fragile",
+        "Tests showed acantholysis was the reason for the peeling",
+        "The treatment aimed to stop the acantholysis from getting worse",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkænθəˈlaɪsɪs/",
+},
+acanthology: {
+  definitions: [
+    {
+      text: "The study of plants with thorns or spines, or animals with spiky parts. It's like being a scientist who's really into porcupines, cacti, and other pointy things in nature.",
+      examples: [
+        "She specialized in acanthology, studying desert plants with thorns",
+        "The acanthology research focused on how animals use their spines for protection",
+        "His acanthology collection included samples from spiky plants worldwide",
+        "The book on acanthology explained why some plants develop thorns",
+        "Students interested in acanthology often start by studying cacti",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækənˈθɒlədʒi/",
+},
+acanthological: {
+  definitions: [
+    {
+      text: "Related to the study of spiny or thorny things in nature. When something has to do with researching or learning about plants with thorns or animals with spikes.",
+      examples: [
+        "She wrote an acanthological paper about desert plants",
+        "The museum had an acanthological collection of preserved specimens",
+        "His acanthological research helped understand how thorns evolve",
+        "The acanthological society meets to discuss spiny plants and animals",
+        "They used acanthological methods to study porcupine quills",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækənθəˈlɒdʒɪkəl/",
+},
+acanthoma: {
+  definitions: [
+    {
+      text: "A type of skin growth made up of spiky-looking cells. It's like when skin cells grow into a bump that, when looked at under a microscope, has cells that look all pointy and prickly (but you can't feel it).",
+      examples: [
+        "The doctor removed the acanthoma and sent it for testing",
+        "The scan showed a small acanthoma on his shoulder",
+        "Most acanthomas are harmless but should be checked by a doctor",
+        "She noticed an acanthoma forming on her arm",
+        "The dermatologist explained that acanthomas are pretty common",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækənˈθoʊmə/",
+},
+acanthomas: {
+  definitions: [
+    {
+      text: "More than one acanthoma (those spiky-cell skin growths). When someone has multiple bumps made of prickly-looking skin cells.",
+      examples: [
+        "The patient had several acanthomas that needed to be removed",
+        "Acanthomas can appear in different places on the body",
+        "The doctor took pictures of the acanthomas to track their growth",
+        "She developed multiple acanthomas over the years",
+        "Some people are more likely to get acanthomas than others",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækənˈθoʊməz/",
+},
+acanthomeridae: {
+  definitions: [
+    {
+      text: "A family of big-ass flies found in South America. These aren't your regular house flies - they're huge flies that look pretty scary but actually don't do much harm to humans.",
+      examples: [
+        "The researcher collected acanthomeridae specimens in the rainforest",
+        "Acanthomeridae flies are some of the largest flies you'll ever see",
+        "She photographed an acanthomeridae resting on a tree trunk",
+        "The museum had a display of preserved acanthomeridae",
+        "Scientists study acanthomeridae to understand how flies evolved",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkænθoʊˈmɛrɪdiː/",
+},
+acanthon: {
+  definitions: [
+    {
+      text: "A type of plant part that's shaped like a thorn or spine. It's basically a pointy bit on certain plants that can prick you if you touch it.",
+      examples: [
+        "Be careful handling that plant, it's covered in acanthons",
+        "The rose's acanthons help protect it from being eaten by animals",
+        "She pricked her finger on one of the sharp acanthons",
+        "The plant uses its acanthons to climb up walls and other surfaces",
+        "You can identify this species by its distinctive curved acanthons"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkænθɒn/"
+},
+acanthopanax: {
+  definitions: [
+    {
+      text: "A type of shrub or small tree that's known for having spiky parts all over it. Think of it like a bush that really doesn't want to be touched. These plants are often used in gardens and medicine.",
+      examples: [
+        "The acanthopanax in our garden looks pretty but don't try to hug it",
+        "Traditional healers use acanthopanax to make medicine",
+        "We planted an acanthopanax to keep cats out of our garden",
+        "The acanthopanax's spiky branches make it a good natural fence",
+        "You can spot an acanthopanax by its star-shaped leaves and prickly stems"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθəˈpænæks/"
+},
+acanthophis: {
+  definitions: [
+    {
+      text: "A super dangerous snake from Australia and nearby places, also called a death adder. It's like a snake that took being deadly really seriously - it hides under leaves, waits for prey to come close, and has one of the fastest strikes in the snake world.",
+      examples: [
+        "The acanthophis is one of Australia's most dangerous snakes",
+        "Never try to pick up an acanthophis - they're quick and super venomous",
+        "The acanthophis uses its tail like a worm to trick animals into coming closer",
+        "If you see an acanthophis, just slowly back away and leave it alone",
+        "Hikers need to watch out for acanthophis hiding under leaves on the trail"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkænθəfɪs/"
+},
+acanthophorous: {
+  definitions: [
+    {
+      text: "When something has spines or thorns on it. It's like when a plant or animal is covered in spiky bits - think of a porcupine or a thorny rose, but it's the scientific way of saying it.",
+      examples: [
+        "The acanthophorous plant needs careful handling because of all its thorns",
+        "Many desert plants are acanthophorous to protect themselves from animals",
+        "The fish has acanthophorous fins that can prick you if you're not careful",
+        "Scientists describe roses as acanthophorous plants because of their thorns",
+        "The acanthophorous coating on the seed helps it stick to animal fur"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænˈθɒfərəs/"
+},
+acanthopod: {
+  definitions: [
+    {
+      text: "When an animal has spiny or thorny feet or legs. It's like their feet come with built-in spikes or thorns - nature's version of putting spikes on your shoes.",
+      examples: [
+        "This crab is an acanthopod, with spiky legs that help it defend itself",
+        "The acanthopod insect uses its spiny legs to grip onto surfaces",
+        "Scientists discovered a new acanthopod species in the deep ocean",
+        "The acanthopod creature left strange, spiky footprints in the sand",
+        "Being an acanthopod helps these animals climb rough surfaces"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkænθəpɒd/"
+},
+acanthopodous: {
+  definitions: [
+    {
+      text: "Having spiny or thorny feet or legs. It's exactly the same as acanthopod - just a different way of saying it. When an animal's got feet or legs covered in spikes or thorns.",
+      examples: [
+        "The acanthopodous beetle uses its spiky legs to defend itself",
+        "Many deep-sea creatures are acanthopodous to help them grab prey",
+        "The acanthopodous design of its feet helps it climb rough bark",
+        "Scientists describe this crab species as acanthopodous",
+        "The acanthopodous legs make it hard for predators to swallow them"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænˈθɒpədəs/"
+},
+acanthopomatous: {
+  definitions: [
+    {
+      text: "When a fish has spiny gill covers. It's like they've got armor with spikes protecting their gills - nature's way of saying 'don't mess with my breathing holes.'",
+      examples: [
+        "Bass are acanthopomatous fish, with spiky covers protecting their gills",
+        "The acanthopomatous structure helps defend against predator attacks",
+        "You can tell it's an acanthopomatous fish by the spines on its gill covers",
+        "Many reef fish are acanthopomatous to stay safe from bigger fish",
+        "Be careful handling acanthopomatous fish - their gill covers can prick you"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθəˈpɒmətəs/"
+},
+acanthopore: {
+  definitions: [
+    {
+      text: "A tiny hole or tube surrounded by spines in some sea creatures. Think of it like a microscopic fortress door with spikes all around it. These are found in tiny marine animals that build colonies together.",
+      examples: [
+        "The scientist used a microscope to study the acanthopores in the specimen",
+        "Each acanthopore helps protect the tiny animal living inside",
+        "You can see the acanthopores lined up along the colony's surface",
+        "The acanthopores give this sea creature its rough texture",
+        "New research shows how acanthopores help these animals filter food"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkænθəpɔːr/"
+},
+acanthopteran: {
+  definitions: [
+    {
+      text: "A type of fish that has spiky, hard fins - like a bass or perch. Think of regular fish but with fins that can poke you if you're not careful.",
+      examples: [
+        "Most fish you see in lakes are acanthopteran fish",
+        "The fisherman had to be careful handling the acanthopteran fish because of its spiny fins",
+        "Bass, perch, and tuna are all examples of acanthopteran fish",
+        "She learned that acanthopteran fish use their spiny fins for protection",
+        "The aquarium had a whole section dedicated to acanthopteran species"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθˈɒptərən/"
+},
+acanthopteri: {
+  definitions: [
+    {
+      text: "A group of fish that have sharp, spiny fins. It's basically the science name for a bunch of fish that can prick you with their fins if you grab them wrong.",
+      examples: [
+        "The biology textbook had a whole chapter on acanthopteri",
+        "Most of the fish in the market belonged to the acanthopteri group",
+        "She learned that acanthopteri evolved their spiny fins as a defense mechanism",
+        "The fish tank was full of different types of acanthopteri",
+        "Scientists study acanthopteri to understand how fish developed spiny fins"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθˈɒptəraɪ/"
+},
+acanthopterygian: {
+  definitions: [
+    {
+      text: "A fish with spiky fins that can stick you if you're not careful. Think of a bass or perch - those fins aren't soft and floppy, they're hard and pointy.",
+      examples: [
+        "Most fish you catch in the ocean are acanthopterygian fish",
+        "The kid learned not to grab acanthopterygian fish by their fins",
+        "Tuna and mackerel are common examples of acanthopterygian fish",
+        "The fish guide warned about handling acanthopterygian species",
+        "Scientists study how acanthopterygian fish use their spiny fins"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθɒpˈtɛrɪdʒiən/"
+},
+acanthopterygii: {
+  definitions: [
+    {
+      text: "The fancy science name for a huge group of fish that have spiky, hard fins. It's like a big family that includes most of the fish you know - bass, tuna, perch - basically any fish where the fins can poke you.",
+      examples: [
+        "The marine biology class learned about acanthopterygii first",
+        "Most fish in the seafood market belong to acanthopterygii",
+        "She discovered that acanthopterygii make up most modern fish species",
+        "The book explained how acanthopterygii evolved their spiny fins",
+        "Scientists use acanthopterygii to study fish evolution"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænθɒpˈtɛrɪdʒiaɪ/"
+},
+acanthopterous: {
+  definitions: [
+    {
+      text: "Having spiny fins or wings. It's when something (usually a fish or insect) has parts that stick out and are sharp or spiky, like built-in defense spikes.",
+      examples: [
+        "The fish's acanthopterous fins help protect it from predators",
+        "Some insects have acanthopterous wings with tiny spines",
+        "The creature's acanthopterous features make it hard to catch",
+        "Scientists study acanthopterous animals to understand defense mechanisms",
+        "The museum had models showing acanthopterous structures in nature"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkænˈθɒptərəs/"
+},
+acanthoses: {
+  definitions: [
+    {
+      text: "When you have multiple patches of thick, dark skin. It's the plural form of acanthosis - like when you have this skin condition in more than one place on your body.",
+      examples: [
+        "The doctor noticed acanthoses on both sides of her neck",
+        "People with diabetes sometimes develop acanthoses in different areas",
+        "The dermatologist documented all the acanthoses on the patient's body",
+        "The skin condition caused acanthoses to appear on his elbows and knees",
+        "Treatment for acanthoses often involves addressing the underlying cause"
+      ]
+    }
+  ],
+  pronunciation: "/ˌækənˈθoʊsiːz/"
+},
+acanthosis: {
+  definitions: [
+    {
+      text: "A skin condition where parts of your skin get thicker and darker than normal, usually looking like velvet. It's like having patches of skin that are darker and feel different from the rest.",
+      examples: [
+        "The doctor noticed acanthosis on the back of his neck",
+        "She developed acanthosis as a side effect of her medication",
+        "People with diabetes sometimes get acanthosis in their skin folds",
+        "The dermatologist explained that acanthosis can be a sign of other health issues",
+        "The dark patches were diagnosed as acanthosis by the skin doctor"
+      ]
+    }
+  ],
+  pronunciation: "/ˌækənˈθoʊsɪs/"
+},
+acanthotic: {
+  definitions: [
+    {
+      text: "When skin has become thick and dark due to a condition called acanthosis. It's like describing skin that's gone through changes to become darker and thicker than it should be.",
+      examples: [
+        "The doctor noticed acanthotic patches on her skin",
+        "The skin biopsy showed acanthotic changes",
+        "His neck had developed an acanthotic appearance",
+        "The dermatologist documented the acanthotic areas for monitoring",
+        "The treatment helped reduce the acanthotic skin changes"
+      ]
+    }
+  ],
+  pronunciation: "/ˌækənˈθɒtɪk/"
+},
+acanthous: {
+  definitions: [
+    {
+      text: "When something is spiky or has thorns, like a rose stem or cactus. Think of anything that's pointy and could prick you if you touched it.",
+      examples: [
+        "Be careful handling that plant, its acanthous leaves can hurt",
+        "The fence had acanthous wire on top to keep people from climbing over",
+        "The hedgehog's acanthous spines protect it from predators",
+        "The bush's acanthous branches made it hard to get through",
+        "She pricked her finger on the acanthous thorns while gardening",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθəs/",
+},
+acanthus: {
+  definitions: [
+    {
+      text: "A type of plant with big, spiky leaves that's been around forever. You might not know the plant, but you've probably seen its leaf pattern - it's super popular in fancy building decorations, especially on top of columns.",
+      examples: [
+        "The old building had acanthus leaves carved into all its columns",
+        "She planted acanthus in her garden because she loves classical style",
+        "The wedding cake was decorated with acanthus patterns",
+        "Ancient Greek artists loved using acanthus designs in their work",
+        "The spiky acanthus leaves add drama to the garden",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθəs/",
+},
+acanthuses: {
+  definitions: [
+    {
+      text: "More than one acanthus plant or design. When you're talking about multiple of those spiky-leaved plants or their decorative patterns used in art and architecture.",
+      examples: [
+        "The garden was full of acanthuses growing wild",
+        "The artist carved acanthuses into each corner of the frame",
+        "Different types of acanthuses grow all around the Mediterranean",
+        "The wallpaper had repeating patterns of acanthuses",
+        "She collected pictures of acanthuses for her design project",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkænθəsɪz/",
+},
+acapnia: {
+  definitions: [
+    {
+      text: "When there's not enough carbon dioxide in your blood. It's like your body's CO2 levels are too low, which can happen when you're breathing too fast or too deep.",
+      examples: [
+        "The doctor said his dizziness was caused by acapnia from hyperventilating",
+        "Swimmers can get acapnia if they take too many deep breaths before diving",
+        "She developed acapnia from breathing too quickly during her panic attack",
+        "The medical test showed signs of acapnia in his blood",
+        "Deep breathing exercises can sometimes lead to temporary acapnia",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkæpniə/",
+},
+acapnial: {
+  definitions: [
+    {
+      text: "Related to having low carbon dioxide in your blood. When something has to do with acapnia - that condition where you don't have enough CO2 in your system.",
+      examples: [
+        "The patient showed acapnial symptoms after breathing too fast",
+        "The doctor noticed acapnial changes in the blood test results",
+        "His acapnial state was caused by anxiety-induced hyperventilation",
+        "The nurse monitored him for acapnial effects",
+        "The research paper discussed acapnial conditions in athletes",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkæpniəl/",
+},
+acapnias: {
+  definitions: [
+    {
+      text: "When something has no smoke or isn't affected by smoke. It's like when you have a super clean burning fire or a space that's completely smoke-free.",
+      examples: [
+        "The new ventilation system made the room completely acapnias",
+        "They designed an acapnias fireplace that doesn't produce any visible smoke",
+        "The lab needs to be acapnias for these sensitive experiments",
+        "The ancient temple used acapnias wood that burned without smoke",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkæpniəs/",
+},
+acappella: {
+  definitions: [
+    {
+      text: "When people sing without any music or instruments backing them up - just voices. Think of a group of singers making all the sounds with their mouths, including the drum beats and bass lines.",
+      examples: [
+        "The choir performed an acappella version of the song",
+        "They started singing acappella when the power went out at the concert",
+        "Her acappella cover of the hit song went viral",
+        "The group makes all their music acappella - even the beat-boxing",
+        "We practiced singing acappella in the car when the radio broke",
+      ],
+    },
+  ],
+  pronunciation: "/ˌɑːkəˈpɛlə/",
+},
+acapsular: {
+  definitions: [
+    {
+      text: "When something doesn't have a protective outer layer or shell. Like when a cell or organism is missing its usual covering that would normally protect it.",
+      examples: [
+        "The mutation made the bacteria acapsular, making them easier to kill",
+        "The acapsular form of the organism was less harmful",
+        "Scientists studied the acapsular version to understand how the shell forms",
+        "The cell became acapsular after exposure to the chemical",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkæpsjʊlər/",
+},
+acapu: {
+  definitions: [
+    {
+      text: "A type of super hard, dark brown wood from South America that people use to make fancy furniture and buildings. It's like the tank of woods - really strong and heavy.",
+      examples: [
+        "The antique table was made from solid acapu wood",
+        "Builders used acapu for the floor because it lasts forever",
+        "The expensive chess set was carved from acapu",
+        "They chose acapu for the deck because it's so tough against weather",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækəpuː/",
+},
+acara: {
+  definitions: [
+    {
+      text: "A type of colorful fish from South America that people often keep in fish tanks. They're like the friendly neighbors of the fish world - generally peaceful and fun to watch.",
+      examples: [
+        "She added a pair of acara to her aquarium",
+        "The acara changed colors when it was ready to mate",
+        "My favorite fish in the tank is the blue acara",
+        "Acaras are good starter fish for new aquarium owners",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkɑːrə/",
+},
+acarari: {
+  definitions: [
+    {
+      text: "A type of fish found in South American rivers, especially in the Amazon. It's like a cousin to the acara but with its own unique look.",
+      examples: [
+        "The fisherman caught an acarari in the Amazon river",
+        "Acarari are known for their distinctive stripes",
+        "The local people often fish for acarari in the tributaries",
+        "We spotted several acarari swimming near the riverbank",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækəˈrɑːri/",
+},
+acari: {
+  definitions: [
+    {
+      text: "Tiny bugs that you can barely see - they're like super small spiders. Think of the little creatures that live in dust or on plants. They're basically nature's microscopic creepy crawlies.",
+      examples: [
+        "The scientist found acari living in the old mattress",
+        "My allergies are acting up because of all the acari in the carpet",
+        "You can't see them, but acari are everywhere in house dust",
+        "The plant was infected with acari that were eating the leaves",
+        "Regular cleaning helps reduce the number of acari in your home"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkɛəraɪ/"
+},
+acarian: {
+  definitions: [
+    {
+      text: "Related to or having to do with tiny bugs called mites. It's like saying something is 'mite-like' or connected to these super small creatures that you can barely see.",
+      examples: [
+        "The plant had some kind of acarian infection",
+        "The doctor identified acarian bites on her skin",
+        "They used special soap to treat the acarian problem",
+        "The microscope revealed acarian activity in the soil",
+        "She developed an allergy to acarian particles in the air"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkɛəriən/"
+},
+acardia: {
+  definitions: [
+    {
+      text: "When someone is born without a heart - super rare but it can happen. Usually only happens with twins where one twin's heart ends up doing the work for both of them.",
+      examples: [
+        "The doctors diagnosed acardia in one of the twins during the ultrasound",
+        "She was studying rare cases of acardia in medical school",
+        "The baby survived despite having acardia because of their twin",
+        "Acardia is one of the rarest conditions a baby can have",
+        "The medical journal had an article about surviving acardia"
+      ]
+    }
+  ],
+  pronunciation: "/eɪˈkɑːrdiə/"
+},
+acardiac: {
+  definitions: [
+    {
+      text: "Born without a working heart. It's usually used when talking about twins where one develops without a heart and depends on their twin's heart to survive.",
+      examples: [
+        "The acardiac twin was completely dependent on their sibling",
+        "The ultrasound showed one baby was acardiac",
+        "Doctors closely monitor pregnancies with an acardiac twin",
+        "Being acardiac is extremely rare in single births",
+        "They studied how acardiac babies can survive in the womb"
+      ]
+    }
+  ],
+  pronunciation: "/eɪˈkɑːrdiæk/"
+},
+acariasis: {
+  definitions: [
+    {
+      text: "A skin problem caused by super tiny bugs called mites getting under your skin or on it. It's like when you get itchy and rashy because these microscopic creatures decided to make your skin their new home.",
+      examples: [
+        "The rash turned out to be acariasis from working in the garden",
+        "The doctor prescribed cream to treat his acariasis",
+        "Pets can sometimes get acariasis from playing outside",
+        "She got acariasis from handling old, dusty furniture",
+        "Regular washing helps prevent acariasis in bed sheets"
+      ]
+    }
+  ],
+  pronunciation: "/ækəˈraɪəsɪs/"
+},
+acaricidal: {
+  definitions: [
+    {
+      text: "Something that kills mites (those tiny bugs you can barely see). It's like bug spray, but specifically for these super small creatures that can live in dust or on plants.",
+      examples: [
+        "The vet recommended an acaricidal shampoo for the dog",
+        "They sprayed acaricidal solution on the plants to kill the mites",
+        "This soap has acaricidal properties to help with dust mites",
+        "The new mattress cover has an acaricidal coating",
+        "They used acaricidal spray to treat the carpet"
+      ]
+    }
+  ],
+  pronunciation: "/ækərɪˈsaɪdəl/"
+},
+acardite: {
+  definitions: [
+    {
+      text: "When the area where the heart should be gets all swollen and inflamed. It's like when any other body part gets irritated and puffy, but specifically in the chest where the heart would normally be.",
+      examples: [
+        "The scan showed signs of acardite in the chest cavity",
+        "The doctor was monitoring the acardite closely",
+        "The inflammation from acardite made it uncomfortable to breathe",
+        "They gave medicine to reduce the acardite",
+        "Regular checkups help track if the acardite is getting better"
+      ]
+    }
+  ],
+  pronunciation: "/eɪˈkɑːrdaɪt/"
+},
+acaricide: {
+  definitions: [
+    {
+      text: "A poison specifically made to kill mites and ticks. It's like bug spray, but designed just for those tiny spider-like pests that can harm plants, animals, or humans.",
+      examples: [
+        "The vet recommended using an acaricide on the dog to get rid of ticks",
+        "Farmers often use acaricides to protect their crops from mite infestations",
+        "The plant was dying until we sprayed it with acaricide to kill the spider mites",
+        "Many pet shampoos contain acaricides to prevent tick problems",
+        "They had to apply acaricide to the whole garden to control the mite outbreak",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkærəˌsaɪd/",
+},
+acarid: {
+  definitions: [
+    {
+      text: "A type of tiny creature related to spiders - basically a mite or tick. They're so small you usually need a microscope to see them properly.",
+      examples: [
+        "The scientist found several acarid species living in the soil sample",
+        "That itchy rash might be caused by acarid mites",
+        "The cheese had some acarid creatures living in it",
+        "Dust allergies are often triggered by acarid organisms in your bed",
+        "They studied how acarid populations affect plant health",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækəˌrɪd/",
+},
+acaridae: {
+  definitions: [
+    {
+      text: "A specific family of mites that includes common ones like dust mites and food mites. Think of it as one branch of the bigger mite family tree.",
+      examples: [
+        "The cheese mites causing problems in the warehouse belong to Acaridae",
+        "Dust mites from the Acaridae family are common in every home",
+        "The lab tested for Acaridae mites in the flour samples",
+        "Many allergies are caused by members of the Acaridae family",
+        "They found several Acaridae species living in the old grain",
+      ],
+    },
+  ],
+  pronunciation: "/ækəˈraɪdi/",
+},
+acaridan: {
+  definitions: [
+    {
+      text: "Another word for a mite or tick - it's just a fancier way of saying 'mite'. These are those tiny spider-like creatures that can live pretty much anywhere.",
+      examples: [
+        "The researcher discovered a new acaridan species in the rainforest",
+        "That microscope lets you see acaridan creatures up close",
+        "The soil sample was full of different acaridan types",
+        "Some acaridan species help break down dead plants",
+        "They found an unusual acaridan living in the deep ocean",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkærɪdən/",
+},
+acaridans: {
+  definitions: [
+    {
+      text: "The plural form of acaridan - basically means 'multiple mites or ticks'. When you're talking about more than one of these tiny creatures at once.",
+      examples: [
+        "The sample contained hundreds of different acaridans",
+        "These acaridans help keep the soil healthy",
+        "The scientist collected acaridans from various locations",
+        "Harmful acaridans can damage crops and gardens",
+        "There are thousands of different types of acaridans in the world",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkærɪdənz/",
+},
+acaridean: {
+  definitions: [
+    {
+      text: "Anything related to or looking like a mite. If something has to do with mites or shares characteristics with them, you can call it acaridean.",
+      examples: [
+        "The creature showed typical acaridean features",
+        "She's an expert in acaridean biology",
+        "The fossil had acaridean characteristics",
+        "They studied the acaridean movement patterns",
+        "The lab focuses on acaridean research",
+      ],
+    },
+  ],
+  pronunciation: "/ækəˈrɪdiən/",
+},
+acaridomatia: {
+  definitions: [
+    {
+      text: "Little homes or pockets that some plants make where tiny bugs called mites can live. It's like when you build a birdhouse, but these are natural spots in plants where these super small creatures can hang out.",
+      examples: [
+        "The leaves had tiny acaridomatia where the mites could hide",
+        "Scientists found new types of acaridomatia on tropical plants",
+        "The plant and mites help each other out - the plant provides acaridomatia for shelter",
+        "You need a microscope to see these acaridomatia clearly",
+        "Different plants have different shapes of acaridomatia",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærɪdəʊˈmeɪʃiə/",
+},
+acaridomatium: {
+  definitions: [
+    {
+      text: "A special little pocket or house that forms naturally on a plant where tiny bugs called mites can live. Think of it as a tiny apartment that a plant grows to give these super small creatures a place to stay.",
+      examples: [
+        "Each leaf had an acaridomatium where mites could live safely",
+        "The acaridomatium provides perfect shelter for the tiny mites",
+        "You can find an acaridomatium at the base of some leaves",
+        "This type of plant is known for having a special acaridomatium structure",
+        "The mites moved into their new acaridomatium right away",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærɪdəʊˈmeɪʃiəm/",
+},
+acarids: {
+  definitions: [
+    {
+      text: "Tiny bugs like mites and ticks that are so small you usually need a microscope to see them properly. They're like super tiny spiders - some are helpful, some are pests, and some just do their own thing.",
+      examples: [
+        "The garden was full of helpful acarids that eat plant-damaging bugs",
+        "Dust mites are common acarids found in most homes",
+        "Scientists study acarids to understand how these tiny creatures live",
+        "Some acarids can cause allergies in people",
+        "The soil is full of different types of acarids",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækərɪdz/",
+},
+acariform: {
+  definitions: [
+    {
+      text: "Shaped like a mite or tick - basically when something looks like these tiny bugs. It's like when you say something is heart-shaped, but instead it's shaped like these super small creatures.",
+      examples: [
+        "The robot was designed to be acariform to explore tiny spaces",
+        "Under the microscope, the organism had an acariform body",
+        "The jewelry designer created acariform pendants inspired by nature",
+        "Scientists discovered new acariform creatures in the soil",
+        "The tiny robot's acariform shape helped it move through small gaps",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkærɪfɔːm/",
+},
+acarina: {
+  definitions: [
+    {
+      text: "The fancy science name for the group of tiny creatures that includes mites and ticks. It's like a family name for all these super small bugs that are related to spiders.",
+      examples: [
+        "Acarina can be found in almost every habitat on Earth",
+        "She studies Acarina to learn more about these tiny creatures",
+        "Some Acarina are so small you need a microscope to see them",
+        "The garden soil was rich with beneficial Acarina",
+        "Not all Acarina are pests - many help break down dead plants",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækəˈraɪnə/",
+},
+acarine: {
+  definitions: [
+    {
+      text: "Anything related to or looking like mites and ticks. If something has to do with these tiny bugs, you can call it acarine.",
+      examples: [
+        "The vet diagnosed the dog with an acarine infection",
+        "She's an expert in acarine biology",
+        "The plant showed signs of acarine damage",
+        "They developed a new acarine treatment for pets",
+        "The researcher specialized in acarine behavior patterns",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækəraɪn/",
+},
+acarines: {
+  definitions: [
+    {
+      text: "Another word for mites and ticks - those tiny bugs that are related to spiders. It's just a fancier way to talk about these super small creatures.",
+      examples: [
+        "The soil was full of helpful acarines breaking down dead leaves",
+        "Some acarines can live in your carpet or bed",
+        "The scientist collected different acarines for her research",
+        "Not all acarines are harmful - many help keep nature balanced",
+        "The microscope revealed dozens of tiny acarines in the sample",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækəraɪnz/",
+},
+acarinosis: {
+  definitions: [
+    {
+      text: "A skin problem caused by tiny mites getting under your skin or biting you. It's like when you get itchy and irritated because these super small bugs decided to make your skin their new home.",
+      examples: [
+        "The doctor diagnosed him with acarinosis after he couldn't stop scratching",
+        "Pets can get acarinosis from tiny mites in their fur",
+        "She developed acarinosis after working in the old dusty basement",
+        "The cream helps treat the itching caused by acarinosis",
+        "Regular cleaning can help prevent acarinosis in your home",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærɪˈnəʊsɪs/",
+},
+acarocecidia: {
+  definitions: [
+    {
+      text: "Swellings or bumps that show up on plants because tiny bugs called mites are living in them. It's like when you get a mosquito bite and it swells up, but for plants - except these swellings become the mites' homes.",
+      examples: [
+        "The maple leaves were covered in acarocecidia from all the mites living in them",
+        "Scientists study acarocecidia to understand how mites affect plants",
+        "The gardener noticed acarocecidia forming on the new rose bushes",
+        "You can spot acarocecidia as weird-looking bumps on leaves and stems",
+        "The plant pathologist documented different types of acarocecidia in her research",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærəʊsɪˈsɪdiə/",
+},
+acarocecidium: {
+  definitions: [
+    {
+      text: "A single swelling or bump on a plant caused by mites living in it. Think of it like a tiny house that a mite builds by making the plant grow weird - kind of like how your skin forms a bump when you get a mosquito bite.",
+      examples: [
+        "Each acarocecidium on the leaf contained a family of mites",
+        "The researcher carefully cut open an acarocecidium to study the mites inside",
+        "You could see a fresh acarocecidium forming on the plant stem",
+        "The tiny bump turned out to be an acarocecidium housing several mites",
+        "She photographed the acarocecidium to document its development",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærəʊsɪˈsɪdiəm/",
+},
+acarodermatitis: {
+  definitions: [
+    {
+      text: "When your skin gets all red, itchy, and irritated because of mites. It's like having a really bad rash that's caused by these tiny bugs getting under your skin - literally.",
+      examples: [
+        "The doctor diagnosed him with acarodermatitis after he spent time in that old barn",
+        "She got acarodermatitis from her pet hamster's mites",
+        "The rash turned out to be acarodermatitis from dust mites",
+        "People working with hay often get acarodermatitis if they're not careful",
+        "The itching from acarodermatitis was driving him crazy",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærəʊˌdɜːməˈtaɪtɪs/",
+},
+acaroid: {
+  definitions: [
+    {
+      text: "When something looks like or reminds you of a mite. It's like saying something is mite-like, whether it's the shape, size, or how it moves.",
+      examples: [
+        "The tiny robot had an acaroid design to help it explore small spaces",
+        "Under the microscope, the particles had an acaroid appearance",
+        "The artist's creatures had an acaroid quality that made them look creepy",
+        "The bug's acaroid features helped it hide among actual mites",
+        "Scientists described the new species as having acaroid characteristics",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækərɔɪd/",
+},
+acarol: {
+  definitions: [
+    {
+      text: "The study of mites and ticks - basically everything about these tiny bugs, from how they live to what they do. It's like being a detective who specializes in really small crawly things.",
+      examples: [
+        "She's taking an acarol course to learn more about spider mites in gardens",
+        "The professor wrote an acarol textbook about common household mites",
+        "His acarol research helped farmers deal with crop-damaging mites",
+        "The lab focuses on acarol studies to develop better pest control",
+        "You need to understand acarol basics to work in pest management",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækərɒl/",
+},
+acarology: {
+  definitions: [
+    {
+      text: "The science of studying mites and ticks - everything from what they eat to how they live and affect other things. Think of it as being a super detective who specializes in tiny eight-legged creatures.",
+      examples: [
+        "She got into acarology after finding weird mites in her garden",
+        "The university has a whole department dedicated to acarology",
+        "His work in acarology helped farmers protect their crops from mites",
+        "The acarology conference brought together experts from around the world",
+        "You need to study acarology to understand how dust mites affect allergies",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækəˈrɒlədʒi/",
+},
+acarologist: {
+  definitions: [
+    {
+      text: "Someone who studies mites and ticks for a living. Like a bug scientist, but they specifically focus on these tiny eight-legged creatures. Think of them as detectives who solve mysteries about super small bugs.",
+      examples: [
+        "The acarologist discovered a new species of mite in the Amazon",
+        "She became an acarologist after realizing how much damage mites do to crops",
+        "The museum hired an acarologist to deal with their dust mite problem",
+        "As an acarologist, he spends most days looking through microscopes",
+        "The acarologist explained why the plants were getting weird bumps",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækəˈrɒlədʒɪst/",
+},
+acarophilous: {
+  definitions: [
+    {
+      text: "When something or someone really likes hanging out with mites or living near them. It's like being a mite's best friend - usually talking about other bugs or plants that don't mind having mites around.",
+      examples: [
+        "Some mushrooms are acarophilous and actually benefit from having mites around",
+        "The acarophilous beetles always have tiny mites living on them",
+        "These plants are acarophilous, which means they attract beneficial mites",
+        "Scientists discovered an acarophilous relationship between the bugs",
+        "Being acarophilous helps these insects spread mites to new areas",
+      ],
+    },
+  ],
+  pronunciation: "/ˌækəˈrɒfɪləs/",
+},
+acarophobia: {
+  definitions: [
+    {
+      text: "When you're super scared of itching sensations or tiny bugs crawling on you. It's like having a total freakout when you feel the slightest itch or when you think about insects touching your skin.",
+      examples: [
+        "Her acarophobia made her check her bed for bugs every single night",
+        "He couldn't go camping because his acarophobia was too intense",
+        "The doctor helped treat my acarophobia with therapy",
+        "Her acarophobia started after finding a spider in her shoe",
+        "The itchy sweater triggered his acarophobia badly",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærəˈfəʊbiə/",
+},
+acarotoxic: {
+  definitions: [
+    {
+      text: "When something is poisonous because of toxins from tiny bugs like mites. It's like when something makes you sick because of chemicals that come from these super small creatures.",
+      examples: [
+        "The old grain became acarotoxic after mites infested it",
+        "They tested the food to check if it was acarotoxic",
+        "The doctor said his rash was from acarotoxic substances",
+        "The warehouse had to throw out the acarotoxic materials",
+        "Scientists study acarotoxic effects on crops",
+      ],
+    },
+  ],
+  pronunciation: "/əˌkærəˈtɒksɪk/",
+},
+acarpellous: {
+  definitions: [
+    {
+      text: "When a flower doesn't have the female parts that usually make seeds. It's like having a flower that's missing some of its baby-making bits.",
+      examples: [
+        "The mutant flower was acarpellous and couldn't make seeds",
+        "Scientists created acarpellous plants for their research",
+        "Some garden flowers are acarpellous by design",
+        "The acarpellous mutation meant the plant couldn't reproduce normally",
+        "They studied why some flowers turn out acarpellous",
+      ],
+    },
+  ],
+  pronunciation: "/eɪkɑːrˈpeləs/",
+},
+acarpelous: {
+  definitions: [
+    {
+      text: "When a flower doesn't have the female parts that usually make seeds. It's like having a flower that's missing some of its baby-making bits.",
+      examples: [
+        "The mutant flower was acarpelous and couldn't make seeds",
+        "Scientists created acarpelous plants for their research",
+        "Some garden flowers are acarpelous by design",
+        "The acarpelous mutation meant the plant couldn't reproduce normally",
+        "They studied why some flowers turn out acarpelous",
+      ],
+    },
+  ],
+  pronunciation: "/eɪkɑːrˈpeləs/",
+},
+acarpous: {
+  definitions: [
+    {
+      text: "When a plant doesn't make any fruit or seeds. It's like having a fruit tree that just refuses to give you any fruit, no matter what you do.",
+      examples: [
+        "The apple tree turned out to be acarpous this year",
+        "Some ornamental plants are deliberately acarpous",
+        "The acarpous plants were useless for farming",
+        "Their garden was full of beautiful but acarpous flowers",
+        "The plant disease made all the trees acarpous",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkɑːrpəs/",
+},
+acarus: {
+  definitions: [
+    {
+      text: "A tiny bug that's basically a mite or tick - those super small creatures that can live in dust, on plants, or sometimes on skin. They're so small you usually need a microscope to see them properly.",
+      examples: [
+        "The acarus in house dust can cause allergies",
+        "They found an acarus living on the cheese",
+        "The microscope showed the acarus crawling around",
+        "The plant was infected with some kind of acarus",
+        "Doctors checked for an acarus that might be causing the rash",
+      ],
+    },
+  ],
+  pronunciation: "/ˈækərəs/",
+},
+acatalectic: {
+  definitions: [
+    {
+      text: "When a line of poetry has exactly the right number of syllables - not missing any at the end. It's like when you're singing and the line ends perfectly on beat instead of cutting off early.",
+      examples: [
+        "Most nursery rhymes use acatalectic lines so they sound complete",
+        "The poem's acatalectic verses made it perfect for singing",
+        "She wrote all her songs with acatalectic lines to keep the rhythm smooth",
+        "The rap verse was acatalectic, hitting every beat perfectly",
+        "Teachers often start kids with acatalectic poems because they're easier to remember",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˌkætəˈlɛktɪk/",
+},
+acatalepsy: {
+  definitions: [
+    {
+      text: "When it's impossible to fully understand or know something for sure. It's like when you're trying to figure something out but there's always some part that stays confusing no matter how hard you try.",
+      examples: [
+        "The mystery of consciousness gives scientists acatalepsy - they just can't fully crack it",
+        "Trying to understand infinity gives most people acatalepsy",
+        "The more he studied quantum physics, the more he faced acatalepsy",
+        "Some philosophical questions cause acatalepsy - we just can't know for sure",
+        "The complex case left detectives with acatalepsy about what really happened",
+      ],
+    },
+  ],
+  pronunciation: "/ˌeɪkəˈtæləpsi/",
+},
+acatalepsia: {
+  definitions: [
+    {
+      text: "Another way to say acatalepsy - when something is impossible to fully understand or know completely. It's that feeling when your brain just can't grasp something entirely, no matter how much you study it.",
+      examples: [
+        "The concept of time travel causes acatalepsia in most people",
+        "She experienced acatalepsia trying to understand how the universe could be infinite",
+        "The complex math problem left students in a state of acatalepsia",
+        "Some ancient mysteries still cause acatalepsia among historians",
+        "The weird dream left him in acatalepsia about what was real",
+      ],
+    },
+  ],
+  pronunciation: "/ˌeɪkætəˈlɛpsiə/",
+},
+acataleptic: {
+  definitions: [
+    {
+      text: "When something is impossible to fully understand or figure out completely. It's like when something is so complex or mysterious that no one can really get their head around it 100%.",
+      examples: [
+        "The nature of reality itself is kind of acataleptic",
+        "The ancient text remained acataleptic even to expert translators",
+        "Some people think true love is acataleptic - you can't fully explain it",
+        "The artist's work was intentionally acataleptic to make people think",
+        "The ending of that movie was totally acataleptic - nobody really gets what happened",
+      ],
+    },
+  ],
+  pronunciation: "/ˌeɪkætəˈlɛptɪk/",
+},
+acatallactic: {
+  definitions: [
+    {
+      text: "When people or things can't be exchanged or traded fairly. It's like when you're trying to trade something but there's no way to make it an even swap that makes both sides happy.",
+      examples: [
+        "Their skills were acatallactic - you can't really compare a painter to a programmer",
+        "The two currencies were acatallactic due to the weird exchange rules",
+        "Some things are acatallactic - you can't put a price on memories",
+        "The barter system failed because the items were acatallactic",
+        "Their work styles were acatallactic - they couldn't find a fair way to split tasks",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˌkætəˈlæktɪk/",
+},
+acatamathesia: {
+  definitions: [
+    {
+      text: "When your brain can't understand what your senses are telling you. It's like when you see, hear, or feel something but can't make sense of what it actually means.",
+      examples: [
+        "After the concussion, he had temporary acatamathesia and couldn't tell hot from cold",
+        "Her acatamathesia made it hard to recognize faces she saw",
+        "The condition causes acatamathesia that makes reading difficult",
+        "People with certain brain injuries might experience acatamathesia",
+        "The drug's side effects included brief periods of acatamathesia",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˌkætəməˈθiːziə/",
+},
+acataphasia: {
+  definitions: [
+    {
+      text: "When someone can't put words together to make proper sentences. It's like when the words are all there in your head, but they come out jumbled or don't make sense when you try to speak or write.",
+      examples: [
+        "His acataphasia made it hard to tell stories in the right order",
+        "After the stroke, she dealt with temporary acataphasia",
+        "The student's acataphasia made writing essays really tough",
+        "People with acataphasia often know what they want to say but can't organize the words",
+        "The brain injury caused acataphasia that improved with therapy",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˌkætəˈfeɪziə/",
+},
+acataposis: {
+  definitions: [
+    {
+      text: "When someone has trouble swallowing. It's like when your throat just won't cooperate with getting food or drinks down properly.",
+      examples: [
+        "His acataposis meant he had to be careful eating solid foods",
+        "The condition caused temporary acataposis that made drinking difficult",
+        "People with acataposis often need their food specially prepared",
+        "Her acataposis got worse when she was stressed out",
+        "The doctor prescribed exercises to help with the acataposis",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˌkætəˈpoʊsɪs/",
+},
+acatastasia: {
+  definitions: [
+    {
+      text: "When your body's functions are all messed up and not working like they should. It's like when your whole system is out of whack and everything feels off or irregular.",
+      examples: [
+        "The patient's symptoms showed acatastasia - nothing in their body seemed to be working normally",
+        "After the accident, his nervous system showed signs of acatastasia",
+        "The doctor noted acatastasia in her patient's vital signs",
+        "His recovery was slow due to general acatastasia",
+        "The condition caused acatastasia in his digestive system"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkætəˈsteɪʒə/"
+},
+acatastatic: {
+  definitions: [
+    {
+      text: "When something is super unpredictable and keeps changing randomly without any pattern. Like when you can't figure out what's gonna happen next because it's all over the place.",
+      examples: [
+        "The weather this week has been totally acatastatic - sunny one minute, stormy the next",
+        "His mood swings were acatastatic, making it hard to know how he'd react",
+        "The stock market was acatastatic all month",
+        "The team's performance was acatastatic throughout the season",
+        "The readings from the broken sensor were completely acatastatic"
+      ]
+    }
+  ],
+  pronunciation: "/əˌkætəˈstætɪk/"
+},
+acategorical: {
+  definitions: [
+    {
+      text: "When something doesn't fit into any clear group or category - it's like that one thing that refuses to be labeled or put in a box. Think of it as being category-less or impossible to classify.",
+      examples: [
+        "His art style is so unique it's almost acategorical - you can't really call it modern or classical",
+        "The new movie was acategorical, mixing too many genres to fit any one type",
+        "Her fashion sense was completely acategorical - it didn't follow any known style",
+        "The strange creature seemed acategorical, not fitting into any known species",
+        "Their music was acategorical, blending elements from every possible genre"
+      ]
+    }
+  ],
+  pronunciation: "/eɪˌkætəˈɡɒrɪkəl/"
+},
+acatery: {
+  definitions: [
+    {
+      text: "A room or place where food and supplies are stored, kind of like a fancy old-school pantry. Think of it as the original version of a storage room for food and drinks.",
+      examples: [
+        "The castle's acatery was filled with barrels of wine and dried meats",
+        "They kept all the feast supplies in the acatery",
+        "The servants would visit the acatery each morning to get ingredients",
+        "The old mansion still had its original acatery intact",
+        "They converted the acatery into a modern kitchen storage space"
+      ]
+    }
+  ],
+  pronunciation: "/ˈækətəri/"
+},
+acates: {
+  definitions: [
+    {
+      text: "Food supplies and provisions that people bought or stored up, especially in old times. It's like when you do a massive grocery run and stock up on everything you might need.",
+      examples: [
+        "The travelers gathered acates for their long journey",
+        "The ship was loaded with enough acates for months at sea",
+        "They stored winter acates in the cellar",
+        "The market was full of merchants selling acates",
+        "They checked their acates before starting the expedition"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkeɪts/"
+},
+acatharsy: {
+  definitions: [
+    {
+      text: "When your body isn't cleaning itself out properly or getting rid of stuff it should be. It's like when your system's cleanup crew is on strike and nothing's getting cleared out.",
+      examples: [
+        "The patient's acatharsy was causing them to feel bloated and uncomfortable",
+        "The doctor diagnosed acatharsy as the cause of the symptoms",
+        "His acatharsy led to other health issues",
+        "The medicine helped resolve the acatharsy",
+        "She experienced acatharsy after changing her diet"
+      ]
+    }
+  ],
+  pronunciation: "/əˈkæθərsi/"
+},
+acatharsia: {
+  definitions: [
+    {
+      text: "When something is really dirty or unclean, usually in a way that could make you sick. Think of a super gross bathroom that hasn't been cleaned in forever.",
+      examples: [
+        "The hospital shut down due to acatharsia in the operating rooms",
+        "The restaurant was cited for acatharsia in the kitchen",
+        "The dorm room's acatharsia was so bad even the roaches moved out",
+        "Health inspectors found serious acatharsia in the food prep area",
+        "The gym's acatharsia made everyone switch to a different location",
+      ],
+    },
+  ],
+  pronunciation: "/eɪkəˈθɑːrsiə/",
+},
+acatholic: {
+  definitions: [
+    {
+      text: "Someone who isn't Catholic or doesn't follow Catholic beliefs. It's like being the opposite of Catholic - either following a different religion or no religion at all.",
+      examples: [
+        "His family was acatholic but they still celebrated Christmas",
+        "The acatholic students had different holidays than their Catholic classmates",
+        "She grew up in an acatholic household but was curious about Catholic traditions",
+        "The neighborhood was mostly acatholic except for one church",
+        "Being acatholic in a Catholic school sometimes made him feel left out",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkæθəlɪk/",
+},
+acaudal: {
+  definitions: [
+    {
+      text: "Not having a tail or missing a tail. Like when you see those cats or dogs that are born without tails, or when something that usually has a tail doesn't.",
+      examples: [
+        "The acaudal puppy was just as cute as his tailed siblings",
+        "Some breeds of cats are naturally acaudal",
+        "The lizard became acaudal after dropping its tail to escape a predator",
+        "The acaudal monkey species stands out from other primates",
+        "Scientists studied why some animals are born acaudal",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkɔːdəl/",
+},
+acaudate: {
+  definitions: [
+    {
+      text: "Not having a tail or being tail-less. It's exactly the same as acaudal - when an animal or creature that usually has a tail doesn't have one.",
+      examples: [
+        "The acaudate frog species evolved differently from its tailed cousins",
+        "Her cat was acaudate from birth",
+        "The acaudate gecko couldn't regrow its tail after losing it",
+        "Some acaudate animals adapt different ways to balance",
+        "The vet treated several acaudate pets that week",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkɔːdeɪt/",
+},
+acaulescent: {
+  definitions: [
+    {
+      text: "When a plant grows without a visible stem or appears to not have one at all. Think of plants where the leaves seem to grow right from the ground, like dandelions or lettuce.",
+      examples: [
+        "The acaulescent plants in her garden spread out like green carpets",
+        "Dandelions are acaulescent, with their leaves forming a circle on the ground",
+        "The acaulescent growth pattern helps these plants survive in tough conditions",
+        "She preferred acaulescent plants for ground cover in her garden",
+        "The plant guide identified several acaulescent species in the area",
+      ],
+    },
+  ],
+  pronunciation: "/eɪkɔːˈlesənt/",
+},
+acauline: {
+  definitions: [
+    {
+      text: "When a plant doesn't have a stem at all. It's like when all the leaves and flowers seem to pop right out of the ground with nothing holding them up.",
+      examples: [
+        "The acauline plants spread across the garden like a living carpet",
+        "She chose acauline flowers for the rock garden",
+        "The acauline growth pattern helps these plants survive harsh winds",
+        "Most succulents aren't acauline, but some species are",
+        "The botanist specialized in studying acauline plant adaptations",
+      ],
+    },
+  ],
+  pronunciation: "/eɪˈkɔːlaɪn/",
+},
+acaulose: {
+  definitions: [
+    {
+      text: "When a plant doesn't have a stem or stalk - it's like it's just sitting right on the ground. Think of a dandelion before it grows its flower stalk, when it's just a bunch of leaves flat on the ground.",
+      examples: [
+        "The small plant was acaulose, growing its leaves directly from the ground",
+        "Some desert plants are acaulose to stay close to the soil and conserve water",
+        "The gardener pointed out the acaulose growth pattern of the young seedlings",
+        "Many alpine plants are acaulose to protect themselves from strong winds",
+        "The acaulose nature of these plants makes them perfect ground cover",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkɔːləʊs/",
+},
+acaulous: {
+  definitions: [
+    {
+      text: "When a plant doesn't have a stem or stalk - it's like it's just sitting right on the ground. Think of a dandelion before it grows its flower stalk, when it's just a bunch of leaves flat on the ground.",
+      examples: [
+        "The small plant was acaulous, growing its leaves directly from the ground",
+        "Some desert plants are acaulous to stay close to the soil and conserve water",
+        "The gardener pointed out the acaulous growth pattern of the young seedlings",
+        "Many alpine plants are acaulous to protect themselves from strong winds",
+        "The acaulous nature of these plants makes them perfect ground cover",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkɔːləs/",
+},
+accable: {
+  definitions: [
+    {
+      text: "To completely overwhelm or crush someone with too much of something - like stress, work, or problems. It's when life throws so much shit at you that you feel totally buried under it all.",
+      examples: [
+        "The endless assignments and deadlines accabled the students",
+        "She felt accabled by all the responsibilities of being a new parent",
+        "The constant bad news accabled his spirit",
+        "Don't let the pressure of work accable you - take breaks when needed",
+        "The weight of their expectations accabled him into silence",
+      ],
+    },
+  ],
+  pronunciation: "/əˈkeɪbəl/",
+},
+accede: {
+  definitions: [
+    {
+      text: "To say yes to something or accept it, usually after initially not wanting to. It's like when you finally give in and agree to something after people keep asking you.",
+      examples: [
+        "After hours of begging, she finally acceded to her kids' request for a puppy",
+        "The company acceded to the workers' demands for better pay",
+        "He didn't want to go at first, but eventually acceded to join us",
+        "The government acceded to public pressure and changed the law",
+        "After much discussion, I acceded to my partner's choice of restaurant",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːd/",
+},
+acceded: {
+  definitions: [
+    {
+      text: "Past tense of accede - when someone already said yes to or accepted something they initially didn't want to do.",
+      examples: [
+        "He finally acceded to our request last week",
+        "The boss acceded to giving everyone a day off",
+        "She reluctantly acceded to her parents' wishes",
+        "The committee acceded to the changes yesterday",
+        "They acceded to our demands after the protest",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdɪd/",
+},
+accedence: {
+  definitions: [
+    {
+      text: "The act of agreeing to or accepting something. It's like when you give your okay or permission for something to happen.",
+      examples: [
+        "His accedence to the plan made everything possible",
+        "The project needed her accedence before moving forward",
+        "Their accedence to the rules was required to join the club",
+        "The team's accedence to the new schedule took some time",
+        "Without your accedence, we can't make any changes",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdəns/",
+},
+acceder: {
+  definitions: [
+    {
+      text: "Someone who agrees to or accepts something. It's like being the person who says yes or gives in to a request.",
+      examples: [
+        "As the main acceder to the proposal, she had to sign first",
+        "They needed at least one acceder before moving forward",
+        "The acceder to the throne would be next in line",
+        "Being an acceder isn't always easy - sometimes you have to make tough choices",
+        "He was the first acceder to the new company policy",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdər/",
+},
+acceders: {
+  definitions: [
+    {
+      text: "More than one person who agrees to or accepts something. These are the people who say yes or give in to requests.",
+      examples: [
+        "The acceders to the treaty all signed on the same day",
+        "We need more acceders before we can start the project",
+        "The acceders to the new rules got special privileges",
+        "All acceders must submit their paperwork by Friday",
+        "The group of acceders grew larger each day",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdərz/",
+},
+accedes: {
+  definitions: [
+    {
+      text: "When someone agrees to or accepts something right now. It's the present-tense way of saying someone is giving in or saying yes to something.",
+      examples: [
+        "Whenever she accedes to their requests, they ask for more",
+        "If he accedes to the deal, we can start tomorrow",
+        "The boss usually accedes to reasonable requests",
+        "When someone accedes too quickly, people get suspicious",
+        "She rarely accedes to pressure from others",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdz/",
+},
+acceding: {
+  definitions: [
+    {
+      text: "In the process of agreeing to or accepting something. It's like when you're in the middle of giving in or saying yes to something.",
+      examples: [
+        "By acceding to their demands, we're setting a precedent",
+        "She's acceding to the pressure bit by bit",
+        "I'm not acceding to that request without some conditions",
+        "They're slowly acceding to the changes we proposed",
+        "He's acceding to the idea of moving out",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsiːdɪŋ/",
+},
+accel: {
+  definitions: [
+    {
+      text: "Short for acceleration - when something speeds up or goes faster. It's like when you press the gas pedal in a car and feel yourself pushed back into the seat.",
+      examples: [
+        "The car has great accel when you need to pass someone",
+        "Hit the accel to make it through the yellow light",
+        "The game's accel settings control how fast you move",
+        "The bike's accel is impressive for its size",
+        "You can feel the accel kick in when the roller coaster starts",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel/",
+},
+accelerable: {
+  definitions: [
+    {
+      text: "Something that can be made to go faster. Like when you can speed something up or make it move quicker than before.",
+      examples: [
+        "The process is accelerable if we add more workers",
+        "The car's speed is accelerable up to 120 mph",
+        "Some chemical reactions are accelerable with heat",
+        "The game's difficulty is accelerable based on player performance",
+        "Not all processes are accelerable - some take a fixed time no matter what",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ər.ə.bəl/",
+},
+accelerando: {
+  definitions: [
+    {
+      text: "When music gradually gets faster and faster. It's like starting slow and picking up speed, like a train leaving the station.",
+      examples: [
+        "The song had an accelerando part that made everyone dance faster",
+        "The drummer led the accelerando by speeding up the beat",
+        "The piano piece ends with a dramatic accelerando",
+        "Students practiced playing the accelerando section of the song",
+        "The DJ used an accelerando to build up excitement in the crowd",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌsel.əˈræn.doʊ/",
+},
+accelerant: {
+  definitions: [
+    {
+      text: "Something that makes things happen faster, usually in chemistry or fire. Like when you pour gasoline on a fire to make it bigger quickly.",
+      examples: [
+        "Gasoline is a dangerous accelerant that can make fires spread fast",
+        "The scientists added an accelerant to speed up the chemical reaction",
+        "The fire investigators found traces of accelerant at the scene",
+        "Using an accelerant in the garden helps compost break down faster",
+        "Some cleaning products contain accelerants to make them work better",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ər.ənt/",
+},
+accelerate: {
+  definitions: [
+    {
+      text: "To go faster or speed up. Like when you press the gas pedal in a car to make it go faster.",
+      examples: [
+        "The car started to accelerate on the highway",
+        "You need to accelerate your studying if you want to pass the test",
+        "The company had to accelerate their plans due to competition",
+        "Don't accelerate too quickly on wet roads",
+        "The ball will accelerate as it rolls down the hill",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ə.reɪt/",
+},
+accelerated: {
+  definitions: [
+    {
+      text: "When something is moving or happening faster than normal. Like when you're in a special class that moves through material quicker than regular classes.",
+      examples: [
+        "She's in an accelerated learning program",
+        "The project is on an accelerated timeline",
+        "His heart rate was accelerated after running",
+        "The company showed accelerated growth this year",
+        "They took an accelerated course to graduate early",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ə.reɪ.tɪd/",
+},
+acceleratedly: {
+  definitions: [
+    {
+      text: "Doing something in a faster or sped-up way. When you're moving or working at a quicker pace than usual.",
+      examples: [
+        "She acceleratedly packed her bags to catch the early flight",
+        "The team worked acceleratedly to meet the deadline",
+        "His heart was beating acceleratedly after the race",
+        "The machine was running acceleratedly to catch up on production",
+        "Things started happening acceleratedly once the news broke",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ə.reɪ.tɪd.li/",
+},
+accelerates: {
+  definitions: [
+    {
+      text: "When something or someone speeds up right now. It's the present-tense way of saying something is getting faster.",
+      examples: [
+        "The car accelerates smoothly on the highway",
+        "His heart rate accelerates when he gets nervous",
+        "The ball accelerates as it falls",
+        "She accelerates her pace when she's late",
+        "The fan accelerates until it reaches full speed",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ə.reɪts/",
+},
+accelerating: {
+  definitions: [
+    {
+      text: "In the process of speeding up or going faster. Like when you're pressing the gas pedal and your car is still getting faster and faster.",
+      examples: [
+        "The car was accelerating down the highway",
+        "Prices are accelerating faster than wages",
+        "The ball was accelerating as it rolled down the hill",
+        "Her career is accelerating after the promotion",
+        "The spread of the virus is accelerating in some areas",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsel.ə.reɪ.tɪŋ/",
+},
+acceleratingly: {
+  definitions: [
+    {
+      text: "When something happens in a way that keeps getting faster and faster. Like when you're running and each step gets quicker than the last one.",
+      examples: [
+        "The car moved acceleratingly down the hill",
+        "His heart was beating acceleratingly as he approached the stage",
+        "The snowball grew acceleratingly bigger as it rolled down",
+        "She spoke acceleratingly faster as she got more excited",
+        "The music tempo increased acceleratingly throughout the song",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləreɪtɪŋli/",
+},
+acceleration: {
+  definitions: [
+    {
+      text: "When something speeds up or gets faster over time. Like when you press the gas pedal in a car and it goes from slow to fast.",
+      examples: [
+        "The acceleration of the car pushed me back in my seat",
+        "His acceleration from walking to running was impressive",
+        "The roller coaster's acceleration made everyone scream",
+        "There's been an acceleration in how fast technology changes",
+        "The acceleration of the ball as it fell was pretty cool",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌseləˈreɪʃən/",
+},
+accelerations: {
+  definitions: [
+    {
+      text: "More than one instance of something speeding up. Like when you're driving and have to speed up multiple times.",
+      examples: [
+        "The race had several quick accelerations",
+        "The rocket goes through multiple accelerations during launch",
+        "The driver made smooth accelerations at each green light",
+        "The game features realistic car accelerations",
+        "The workout involved short bursts of accelerations",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌseləˈreɪʃənz/",
+},
+accelerative: {
+  definitions: [
+    {
+      text: "Something that has the quality of speeding up or making things go faster. Like when you're describing how something increases speed.",
+      examples: [
+        "The car has good accelerative power",
+        "The accelerative force of gravity pulls things down faster",
+        "His running showed accelerative improvement",
+        "The drug had an accelerative effect on heart rate",
+        "The accelerative growth of social media has changed society",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləreɪtɪv/",
+},
+accelerator: {
+  definitions: [
+    {
+      text: "The pedal in your car that makes it go faster when you push it - you know, the gas pedal. It's the one on the right that makes you zoom.",
+      examples: [
+        "She slammed on the accelerator to pass the slow car",
+        "My foot slipped off the accelerator onto the brake",
+        "The accelerator got stuck, making the car speed up",
+        "He gently pressed the accelerator to move forward",
+        "Don't mix up the brake and accelerator pedals",
+      ],
+    },
+    {
+      text: "Anything that makes stuff happen faster or helps speed things up. Like a program that makes your computer run quicker or something that speeds up a chemical reaction.",
+      examples: [
+        "The business accelerator helped startups grow faster",
+        "They added an accelerator to make the chemical reaction happen quicker",
+        "The graphics accelerator made the game run smoother",
+        "This startup joined a tech accelerator program",
+        "The particle accelerator helps scientists study atoms",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləreɪtər/",
+},
+acceleratory: {
+  definitions: [
+    {
+      text: "When something helps make other things speed up or go faster. It's like describing something that gives things a boost in speed.",
+      examples: [
+        "The energy drink had an acceleratory effect on his heart rate",
+        "The new policy had an acceleratory impact on development",
+        "These exercises have an acceleratory effect on muscle growth",
+        "The medicine showed acceleratory properties in healing",
+        "Social media had an acceleratory influence on the trend",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləreɪtəri/",
+},
+accelerators: {
+  definitions: [
+    {
+      text: "More than one thing that makes stuff go faster or speed up. Like when you're talking about multiple gas pedals or different programs that speed things up.",
+      examples: [
+        "The lab had several particle accelerators",
+        "Tech accelerators help lots of new companies grow",
+        "They tested different chemical accelerators",
+        "Both cars had sticky accelerators",
+        "The computer had multiple graphics accelerators installed",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləreɪtərz/",
+},
+accelerograph: {
+  definitions: [
+    {
+      text: "A device that measures how fast something speeds up. Think of it like a speed-change detector - it tells you when and how much something's speed is changing.",
+      examples: [
+        "They used an accelerograph to measure the earthquake's motion",
+        "The accelerograph showed how quickly the car sped up",
+        "Scientists attached an accelerograph to the rocket",
+        "The accelerograph data helped improve the car's design",
+        "They installed accelerographs throughout the building to monitor vibrations",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈseləroʊɡræf/",
+},
+accelerometer: {
+  definitions: [
+    {
+      text: "A device that can tell when something's moving, how fast it's moving, and which way it's moving. It's like that thing in your phone that knows when you turn it sideways or count your steps - that's an accelerometer doing its job.",
+      examples: [
+        "Your phone uses an accelerometer to switch between portrait and landscape mode",
+        "The fitness tracker has an accelerometer to count your steps",
+        "Game controllers use accelerometers to detect motion when you swing them",
+        "Scientists put accelerometers in buildings to measure earthquake movements",
+        "The car's airbag system uses an accelerometer to detect sudden stops",
+        "My smartwatch's accelerometer knows when I'm running versus walking"
+      ]
+    }
+  ],
+  pronunciation: "/əkˌsel.əˈrɒm.ɪ.tər/"
+},
+accelerometers: {
+  definitions: [
+    {
+      text: "More than one accelerometer. When you're talking about multiple devices that measure movement and speed changes.",
+      examples: [
+        "Modern cars have several accelerometers to control safety features",
+        "The researchers placed accelerometers all over the bridge to study its movement",
+        "Cheap accelerometers are why motion controls in games became so popular",
+        "They installed accelerometers throughout the building to monitor structural health",
+        "Smartphones typically contain multiple accelerometers for better accuracy"
+      ]
+    }
+  ],
+  pronunciation: "/əkˌsel.əˈrɒm.ɪ.tərz/"
+},
+accend: {
+  definitions: [
+    {
+      text: "To set something on fire or light it up. It's an old-school way of saying 'ignite' or 'light something up'.",
+      examples: [
+        "The priest would accend the ceremonial candles",
+        "They would accend the beacon to warn of approaching danger",
+        "He tried to accend the wet wood but it wouldn't catch",
+        "The old ritual required them to accend the sacred flame",
+        "They would accend the street lamps at dusk"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsend/"
+},
+accendibility: {
+  definitions: [
+    {
+      text: "How easy it is to set something on fire. It's basically a fancy way of saying how flammable something is or how well it burns.",
+      examples: [
+        "The wood's accendibility depends on how dry it is",
+        "Scientists test the accendibility of different materials for safety",
+        "The high accendibility of gasoline makes it dangerous",
+        "They checked the accendibility of the fireworks before the show",
+        "Different types of wood have different levels of accendibility"
+      ]
+    }
+  ],
+  pronunciation: "/əkˌsend.əˈbɪl.ə.ti/"
+},
+accendible: {
+  definitions: [
+    {
+      text: "Something that can be set on fire or lit up. If you can light it on fire, it's accendible.",
+      examples: [
+        "Dry leaves are easily accendible in summer",
+        "The match head is made of accendible material",
+        "Not all types of wood are equally accendible",
+        "Keep accendible materials away from heat sources",
+        "The camping guide listed which plants were accendible for starting fires"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsen.də.bəl/"
+},
+accensed: {
+  definitions: [
+    {
+      text: "When something has been set on fire or lit up. It's the past tense of accend, meaning it's already been ignited.",
+      examples: [
+        "The accensed torch lit up the dark cave",
+        "Once accensed, the fire spread quickly through the dry grass",
+        "The newly accensed candles filled the room with light",
+        "The accensed signal fires warned the nearby villages",
+        "The ceremonial flame, once accensed, burned through the night"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsenst/"
+},
+accension: {
+  definitions: [
+    {
+      text: "The act of setting something on fire or lighting it up. It's like the moment when something starts burning or gets lit.",
+      examples: [
+        "The accension of the Olympic flame marks the start of the games",
+        "The ritual began with the accension of sacred candles",
+        "The accension of the bonfire signaled the start of the celebration",
+        "They watched the accension of the fireworks in the night sky",
+        "The accension of the beacon warned of approaching danger"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsen.ʃən/"
+},
+accensor: {
+  definitions: [
+    {
+      text: "A person whose job is to light or set things on fire (usually in a formal or ceremonial way). Think of them as the official fire starter.",
+      examples: [
+        "The temple's accensor lit the sacred flames each morning",
+        "As the official accensor, he was responsible for lighting the Olympic torch",
+        "The accensor carefully lit each candle in the ceremony",
+        "Medieval churches often had an accensor to maintain the altar candles",
+        "The festival began when the accensor lit the main bonfire"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsen.sər/"
+},
+accent: {
+  definitions: [
+    {
+      text: "The way someone speaks that shows where they're from. It's like their voice has a specific flavor based on their background - think British accent, Southern accent, etc. Everyone has one, even if they think they don't.",
+      examples: [
+        "She has a strong French accent when she speaks English",
+        "I can't place his accent - it's a mix of different places",
+        "My accent gets stronger when I'm tired or drunk",
+        "People always ask about my accent at restaurants",
+        "He tried to fake a British accent but it was terrible",
+        "After living abroad for years, my accent has changed a lot"
+      ]
+    },
+    {
+      text: "When you put extra stress or emphasis on a part of a word when speaking. Like how you say 'TO-day' instead of 'to-DAY', that difference in stress is the accent.",
+      examples: [
+        "In the word 'butter', the accent is on the first part: BUT-ter",
+        "She put the accent on the wrong part of the word",
+        "Different languages put accents on different parts of words",
+        "I always mess up where the accent goes in Spanish words",
+        "The teacher helped us learn where to put the accent in each word"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæk.sent/"
+},
+accented: {
+  definitions: [
+    {
+      text: "When something (usually speech or writing) has an accent or special mark on it. Like when you see é or ñ in words, or when someone speaks with a noticeable accent.",
+      examples: [
+        "Her heavily accented English was hard to understand at first",
+        "The word 'résumé' is accented on both e's",
+        "His slightly accented voice gave away that he wasn't from here",
+        "Spanish has many accented letters like á, é, í, ó, ú",
+        "The song had a beautifully accented melody"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæk.sen.tɪd/"
+},
+accenting: {
+  definitions: [
+    {
+      text: "The act of putting emphasis or stress on something, whether it's in speaking, writing, or even design. It's like highlighting or drawing attention to a specific part.",
+      examples: [
+        "She was accenting the wrong syllables when trying to pronounce the word",
+        "The designer kept accenting the wrong parts of the logo",
+        "They're accenting the walls with bright colors",
+        "He's always accenting the positive parts of the story",
+        "The music was accenting every third beat"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæk.sen.tɪŋ/"
+},
+accentless: {
+  definitions: [
+    {
+      text: "When speech has no noticeable accent or regional flavor to it. Think of someone who sounds so neutral you can't tell where they're from.",
+      examples: [
+        "News anchors often try to speak in an accentless way",
+        "After years of practice, his English was almost accentless",
+        "The teacher spoke in an accentless voice that was easy to understand",
+        "She had that accentless way of speaking that you hear in movies",
+        "His accentless speech made it hard to guess his background"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæk.sent.ləs/"
+},
+accents: {
+  definitions: [
+    {
+      text: "More than one accent - whether you're talking about different ways people speak or those little marks above letters (like é or à). It's the plural form of accent.",
+      examples: [
+        "I love hearing all the different accents in New York City",
+        "The keyboard has buttons for typing accents on letters",
+        "She can speak English in various British accents",
+        "The room had gold accents everywhere",
+        "Learning where to put accents in French is tricky"
+      ]
+    }
+  ],
+  pronunciation: "/ˈæk.sents/"
+},
+accentuable: {
+  definitions: [
+    {
+      text: "When something can be emphasized or stressed. Usually talking about parts of words or speech that you can put emphasis on.",
+      examples: [
+        "The second syllable is accentuable in this word",
+        "Not every part of a word is accentuable",
+        "The teacher explained which syllables were accentuable",
+        "Some languages have more accentuable parts than others",
+        "He wasn't sure which parts were accentuable in the sentence"
+      ]
+    }
+  ],
+  pronunciation: "/əkˈsen.tʃu.ə.bəl/"
+},
+accentual: {
+  definitions: [
+    {
+      text: "When something has to do with the way we stress or emphasize certain parts of words when speaking. Like how some parts of words are stronger than others when you say them.",
+      examples: [
+        "English has specific accentual patterns that make it sound different from Spanish",
+        "The accentual beat of the poem made it fun to read out loud",
+        "She was studying the accentual differences between British and American English",
+        "The song had a strong accentual pattern that made it catchy",
+        "Kids learn accentual patterns naturally just by listening to their parents talk",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.əl/",
+},
+accentuality: {
+  definitions: [
+    {
+      text: "The way something sounds when you look at which parts are stressed or emphasized. It's like the rhythm or pattern of strong and weak sounds in speech.",
+      examples: [
+        "The accentuality of his speech made it clear he wasn't a native speaker",
+        "Different languages have their own unique accentuality",
+        "The poem's accentuality gave it a singing quality",
+        "She studied the accentuality of different dialects",
+        "The weird accentuality of his words made everyone notice his fake accent",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌsen.tʃuˈæl.ə.ti/",
+},
+accentually: {
+  definitions: [
+    {
+      text: "When you do something in a way that focuses on the stress or emphasis of words. Like when you're paying attention to which parts of words are stronger when speaking.",
+      examples: [
+        "He spoke accentually different from everyone else in his family",
+        "The words were accentually similar despite being from different languages",
+        "She was teaching kids how to read poetry accentually",
+        "The two dialects were accentually distinct",
+        "The song was accentually structured to match the dance steps",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.ə.li/",
+},
+accentuate: {
+  definitions: [
+    {
+      text: "To make something more noticeable or obvious. Like when you really want to point something out or make it stand out more than usual.",
+      examples: [
+        "The dark eyeliner accentuates her blue eyes",
+        "The crisis will only accentuate the differences between rich and poor",
+        "She wore heels to accentuate her height",
+        "The bright paint color helps accentuate the room's natural light",
+        "His silence seemed to accentuate the tension in the room",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.eɪt/",
+},
+accentuated: {
+  definitions: [
+    {
+      text: "When something was made more obvious or noticeable. It's like when you've highlighted or drawn attention to something to make it stand out more.",
+      examples: [
+        "Her makeup accentuated her cheekbones perfectly",
+        "The problem was accentuated by the lack of communication",
+        "The dress accentuated her curves in all the right places",
+        "His accent became more accentuated when he was angry",
+        "The contrast was accentuated by the lighting",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.eɪ.tɪd/",
+},
+accentuates: {
+  definitions: [
+    {
+      text: "When something makes other things more noticeable or obvious right now. It's the present tense way of saying something is highlighting or emphasizing something else.",
+      examples: [
+        "This lighting accentuates the painting's colors",
+        "The new haircut accentuates his jawline",
+        "The white trim accentuates the windows nicely",
+        "Her smile accentuates her dimples",
+        "The black dress accentuates her figure",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.eɪts/",
+},
+accentuating: {
+  definitions: [
+    {
+      text: "In the process of making something more noticeable or stand out more. It's when you're actively trying to highlight or draw attention to something.",
+      examples: [
+        "She's accentuating her eyes with some mascara",
+        "The designer is accentuating the room's features with clever lighting",
+        "By accentuating the positive, he keeps everyone motivated",
+        "The artist is accentuating the shadows in the painting",
+        "They're accentuating the building's height with vertical lines",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.eɪ.tɪŋ/",
+},
+accentuation: {
+  definitions: [
+    {
+      text: "The act of making something more noticeable or obvious. It's when you do things to make certain features or parts stand out more.",
+      examples: [
+        "The accentuation of her curves made the dress perfect for her",
+        "His careful accentuation of certain words made the speech more powerful",
+        "The accentuation of the building's features with lighting made it look amazing at night",
+        "The makeup artist's accentuation of her cheekbones was subtle but effective",
+        "The accentuation of the bass in the song made everyone want to dance",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌsen.tʃuˈeɪ.ʃən/",
+},
+accentuator: {
+  definitions: [
+    {
+      text: "Something or someone that makes things stand out more or puts emphasis on them. Like when you use a highlighter to make important text pop out, or when someone keeps pointing out the same thing over and over.",
+      examples: [
+        "The bright lights were perfect accentuators for the artwork",
+        "She uses hand gestures as accentuators when she speaks",
+        "The dark eyeliner is an accentuator for her eyes",
+        "His loud voice acted as an accentuator in the quiet room",
+        "The spices are accentuators for the main flavors in the dish",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsen.tʃu.eɪ.tər/",
+},
+accept: {
+  definitions: [
+    {
+      text: "To say yes to something or take something that's offered to you. It's like when someone hands you a gift and you take it, or when you agree to do something someone asks.",
+      examples: [
+        "She finally accepted his apology",
+        "I accepted the job offer this morning",
+        "He couldn't accept that his team lost",
+        "Will you accept this credit card?",
+        "They accepted our invitation to dinner",
+      ],
+    },
+    {
+      text: "To deal with or come to terms with something that you can't change, even if you don't like it. Like when you have to accept that it's Monday and you gotta go to work.",
+      examples: [
+        "I've accepted that I'll never be a professional basketball player",
+        "You need to accept the fact that she's moved on",
+        "It took time to accept my new life in a different country",
+        "He couldn't accept his parents' divorce",
+        "Sometimes you just have to accept things as they are",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsept/",
+},
+acceptability: {
+  definitions: [
+    {
+      text: "When something is good enough or okay to use or do. It's about whether people think something is alright or meets the basic standards they expect.",
+      examples: [
+        "The acceptability of wearing jeans to work depends on your office",
+        "There's debate about the acceptability of using phones at the dinner table",
+        "The food's acceptability was tested before going to market",
+        "The acceptability of his behavior is questionable",
+        "Social media has changed the acceptability of sharing personal info online",
+      ],
+    },
+  ],
+  pronunciation: "/əkˌsep.təˈbɪl.ə.ti/",
+},
+acceptable: {
+  definitions: [
+    {
+      text: "When something's good enough or okay to use, even if it's not perfect. It's like when your mom says your room cleaning job isn't amazing but it'll do.",
+      examples: [
+        "The food wasn't great, but it was acceptable",
+        "Is it acceptable to wear sneakers to this restaurant?",
+        "Her grades were acceptable but not outstanding",
+        "This level of noise is barely acceptable",
+        "The quality was acceptable for the price we paid",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsep.tə.bəl/",
+},
+acceptableness: {
+  definitions: [
+    {
+      text: "How okay or good enough something is. It's just a fancier way of saying acceptability - like when you're trying to figure out if something meets the standards or if people will be cool with it.",
+      examples: [
+        "The acceptableness of his excuse was questionable",
+        "They had to judge the acceptableness of each candidate",
+        "There's debate about the acceptableness of this practice",
+        "The acceptableness of the solution depends on who you ask",
+        "She questioned the acceptableness of his behavior",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsep.tə.bəl.nəs/",
+},
+acceptably: {
+  definitions: [
+    {
+      text: "Doing something in a way that's good enough or okay - not amazing, but not terrible either. Like when you do an okay job at something and people are fine with it.",
+      examples: [
+        "He performed acceptably in the interview",
+        "The restaurant was acceptably clean",
+        "She dressed acceptably for the occasion",
+        "The team played acceptably despite losing",
+        "The project was completed acceptably but not brilliantly",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsep.tə.bli/",
+},
+acceptance: {
+  definitions: [
+    {
+      text: "When you finally say 'okay, fine' to something and stop fighting it or denying it. It's like making peace with a situation, even if you don't love it.",
+      examples: [
+        "His acceptance of the breakup took months",
+        "She showed acceptance of her new life situation",
+        "Getting acceptance from your peers feels good",
+        "The acceptance of change is part of growing up",
+        "It took time to reach acceptance about losing the game",
+      ],
+    },
+    {
+      text: "When someone officially says yes to something like an offer, invitation, or application. It's that moment when you get the thumbs up you were waiting for.",
+      examples: [
+        "I got my college acceptance letter today!",
+        "His acceptance of the job offer made everyone happy",
+        "The acceptance of your credit card might take a few seconds",
+        "She sent her acceptance to the party invitation",
+        "The project's acceptance by the committee was unanimous",
+      ],
+    },
+  ],
+  pronunciation: "/əkˈsep.təns/",
+},
+acceptances: {
+    definitions: [
+      {
+        text: "When multiple people or things say 'yes' or agree to something. It's like when a bunch of people RSVP 'yes' to your party, or when several colleges tell you they want you to come study there.",
+        examples: [
+          "She got three college acceptances in one day",
+          "The wedding invitations got more acceptances than we expected",
+          "All the job acceptances came at once, making it hard to choose",
+          "The club received too many membership acceptances and had to start a waitlist",
+          "The conference got hundreds of speaker acceptances",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.təns.ɪz/",
+  },
+  acceptancy: {
+    definitions: [
+      {
+        text: "When something or someone is willing to take or allow things as they are. It's like having an 'okay, whatever works' attitude about stuff.",
+        examples: [
+          "Her acceptancy of the situation made everything easier",
+          "The group showed total acceptancy of new members",
+          "His acceptancy of different viewpoints made him a great leader",
+          "There's a growing acceptancy of remote work in many companies",
+          "The community's acceptancy of changes helped the transition",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.tən.si/",
+  },
+  acceptancies: {
+    definitions: [
+      {
+        text: "Multiple instances of being cool with things as they are. Like when different people or groups are all being open and accepting about stuff.",
+        examples: [
+          "Different cultures have different acceptancies of certain behaviors",
+          "The various acceptancies in the workplace made it inclusive",
+          "Social acceptancies have changed a lot over the years",
+          "There were different levels of acceptancies among family members",
+          "Modern society shows new acceptancies that weren't there before",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.tən.siz/",
+  },
+  acceptant: {
+    definitions: [
+      {
+        text: "Someone who's willing to take or receive what's given or what happens. Like that friend who's always down for whatever plans you suggest.",
+        examples: [
+          "She was acceptant of all the changes in her life",
+          "Being acceptant of feedback helps you grow",
+          "He's very acceptant of new ideas and suggestions",
+          "The most acceptant people are usually the easiest to work with",
+          "An acceptant attitude makes life much easier",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.tənt/",
+  },
+  acceptation: {
+    definitions: [
+      {
+        text: "The way most people understand or use a word or phrase. It's like the meaning everyone agrees on, even if it's not the original or dictionary meaning.",
+        examples: [
+          "The common acceptation of 'cool' has nothing to do with temperature",
+          "In modern acceptation, 'viral' usually means popular on the internet",
+          "The acceptation of this emoji has changed over time",
+          "That word has a different acceptation in other countries",
+          "The general acceptation of success varies between cultures",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sepˈteɪ.ʃən/",
+  },
+  accepted: {
+    definitions: [
+      {
+        text: "When something is considered okay or normal by most people. It's like when everyone agrees 'yeah, that's fine' or 'that's how things are done.'",
+        examples: [
+          "It's now accepted to wear sneakers to work in many offices",
+          "The accepted way to greet someone is different in every culture",
+          "His weird ideas eventually became accepted by the scientific community",
+          "Texting has become an accepted form of professional communication",
+          "It's an accepted fact that the Earth is round",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.tɪd/",
+  },
+  acceptedly: {
+    definitions: [
+      {
+        text: "When you do something in a way that everyone agrees is okay or normal. Like following the rules that everyone knows and is cool with.",
+        examples: [
+          "He acceptedly followed the dress code for the wedding",
+          "The ceremony was conducted acceptedly according to tradition",
+          "She acceptedly took her shoes off before entering the house",
+          "The game was acceptedly played according to street rules",
+          "The contract was acceptedly signed by both parties",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsep.tɪd.li/",
+  },
+  acceptee: {
+    definitions: [
+        {
+          text: "Someone who gets accepted into something, like a school, club, or program. They're the person on the receiving end of being accepted.",
+          examples: [
+            "She was an acceptee at three different universities",
+            "The program sends welcome emails to all new acceptees",
+            "As an acceptee to the exclusive club, he felt pretty special",
+            "The acceptee list for the scholarship will be posted tomorrow",
+            "Being an acceptee means you got in - congrats!"
+          ]
+        }
+    ],
+    pronunciation: "/əkˌsepˈtiː/"
+  },
+  acceptees: {
+    definitions: [
+        {
+          text: "More than one person who's been accepted into something. It's just the plural of acceptee - like when you're talking about a bunch of people who all got accepted.",
+          examples: [
+            "The acceptees for the summer program all got their welcome packets",
+            "New acceptees must attend orientation next week",
+            "The club posted a list of this year's acceptees",
+            "All acceptees need to confirm their spot by Friday",
+            "The acceptees gathered in the main hall for the welcome speech"
+          ]
+        }
+    ],
+    pronunciation: "/əkˌsepˈtiːz/"
+  },
+  accepter: {
+    definitions: [
+        {
+          text: "Someone who takes or accepts something that's offered to them. They're the person saying 'yes' or agreeing to take something.",
+          examples: [
+            "He's always been a gracious accepter of gifts",
+            "The accepter of the award gave a short speech",
+            "As the accepter of the responsibility, you'll need to handle this",
+            "She's not a quick accepter of change",
+            "The accepter needs to sign here to receive the package"
+          ]
+        }
+    ],
+    pronunciation: "/əkˈseptər/"
+  },
+  accepters: {
+    definitions: [
+        {
+          text: "More than one person who accepts things. It's the plural version of accepter - when you're talking about multiple people who take or agree to something.",
+          examples: [
+            "The accepters of the terms and conditions can proceed",
+            "Early accepters of the new technology saw the biggest benefits",
+            "We need more accepters for these donated items",
+            "The accepters of the challenge lined up at the starting line",
+            "Not all accepters understood what they were getting into"
+          ]
+        }
+    ],
+    pronunciation: "/əkˈseptərz/"
+  },
+  acceptilate: {
+    definitions: [
+        {
+          text: "To let someone off the hook for owing you money by just saying it out loud - it's an old-school legal way of canceling a debt just by saying 'hey, we're good, you don't owe me anymore.' Kind of like verbally swiping away someone's debt.",
+          examples: [
+            "The lender decided to acceptilate the remaining balance",
+            "He offered to acceptilate the debt as a wedding gift",
+            "They used to acceptilate debts in ancient Rome",
+            "Rather than collect the money, she chose to acceptilate it",
+            "The bank refused to acceptilate the loan"
+          ]
+        }
+    ],
+    pronunciation: "/əkˈseptɪleɪt/"
+  },
+  acceptilated: {
+    definitions: [
+        {
+          text: "When someone already cancelled a debt just by saying it's cancelled. It's the past tense of acceptilate - like when the debt has already been verbally wiped clean.",
+          examples: [
+            "He acceptilated the debt last week, so we're all good now",
+            "The loan was acceptilated during the meeting",
+            "They acceptilated all outstanding balances",
+            "Once the debt was acceptilated, everyone felt relieved",
+            "She should have never acceptilated that huge amount"
+          ]
+        }
+    ],
+    pronunciation: "/əkˈseptɪleɪtɪd/"
+  },
+  acceptilating: {
+    definitions: [
+        {
+          text: "In the process of canceling someone's debt just by saying it's cancelled. When you're actively doing the verbal debt-canceling thing.",
+          examples: [
+            "They're acceptilating the debt as we speak",
+            "By acceptilating these loans, the company is losing money",
+            "She's in the office acceptilating several old accounts",
+            "The process of acceptilating debts isn't common anymore",
+            "They're acceptilating all overdue payments this week"
+          ]
+        }
+    ],
+    pronunciation: "/əkˈseptɪleɪtɪŋ/"
+  },
+  acceptilation: {
+    definitions: [
+        {
+          text: "The act of canceling a debt just by saying it's cancelled. It's like a verbal 'delete' button for money someone owes you - no paperwork needed, just words.",
+          examples: [
+            "The acceptilation was done in front of witnesses",
+            "Acceptilation isn't legally recognized in most modern courts",
+            "They used acceptilation to clear all the old debts",
+            "The ancient practice of acceptilation made debt forgiveness simple",
+            "Modern banks don't allow acceptilation anymore"
+          ]
+        }
+    ],
+    pronunciation: "/əkˌseptɪˈleɪʃən/"
+  },
+  accepting: {
+    definitions: [
+      {
+        text: "When you're okay with something or someone as they are, without trying to change them. Like when you're cool with your friend's weird habits or when you welcome new ideas without judgment.",
+        examples: [
+          "She's very accepting of people from all backgrounds",
+          "The community was accepting of their new neighbors",
+          "I'm finally accepting that I'll never be a morning person",
+          "They created an accepting environment where everyone felt welcome",
+          "He's accepting of his son's career choice, even though it wasn't what he expected",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptɪŋ/",
+  },
+acceptingly: {
+    definitions: [
+      {
+        text: "When you do something in a way that shows you're cool with it and not judging. It's like nodding and smiling when your friend tells you about their strange new hobby.",
+        examples: [
+          "She nodded acceptingly when I told her about my career change",
+          "He listened acceptingly to his daughter's wild stories",
+          "The teacher smiled acceptingly at the student's creative solution",
+          "They looked acceptingly at each other's fashion choices",
+          "The group responded acceptingly to the new rules",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptɪŋli/",
+  },
+acceptingness: {
+    definitions: [
+      {
+        text: "The quality of being open and welcoming to different things or people. It's like having a permanent 'come as you are' attitude.",
+        examples: [
+          "Her acceptingness made everyone feel comfortable being themselves",
+          "The school promotes acceptingness of all cultures",
+          "His acceptingness of new ideas made him a great team leader",
+          "The community's acceptingness helped newcomers feel at home",
+          "Their acceptingness of different viewpoints led to better discussions",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptɪŋnəs/",
+  },
+acception: {
+    definitions: [
+      {
+        text: "An old-school way of saying acceptance. It's basically the same as acceptance but you might see it in really old books or formal writing.",
+        examples: [
+          "The document used the word 'acception' instead of acceptance",
+          "In older texts, you might find acception used to mean receiving something",
+          "The ancient letter mentioned the acception of the gift",
+          "Some formal writers still use acception in their work",
+          "The acception of the terms was noted in the historical record",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsepʃən/",
+  },
+acceptive: {
+    definitions: [
+      {
+        text: "Ready or willing to accept things. It's like being a human sponge that soaks up new ideas, changes, or situations without freaking out.",
+        examples: [
+          "She has an acceptive attitude toward new technology",
+          "Being acceptive of feedback helps you grow faster",
+          "The acceptive nature of the group made newcomers feel welcome",
+          "You need to be more acceptive of changes at work",
+          "Their acceptive mindset made learning easier",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptɪv/",
+  },
+acceptor: {
+    definitions: [
+      {
+        text: "Someone or something that takes or receives something. Like being the person who gets the package or agrees to a deal.",
+        examples: [
+          "The acceptor of the gift sent a thank-you note",
+          "She was the acceptor of the job offer",
+          "The bank acted as the acceptor of the loan agreement",
+          "Who's the acceptor for this delivery?",
+          "The acceptor of the challenge had to complete all tasks",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptər/",
+  },
+acceptors: {
+    definitions: [
+      {
+        text: "More than one person or thing that accepts or receives something. Like when you have multiple people taking deliveries or agreeing to deals.",
+        examples: [
+          "The acceptors of the invitation all RSVP'd yes",
+          "They needed more acceptors for the volunteer program",
+          "The acceptors of the terms signed the agreement",
+          "All acceptors must show ID at pickup",
+          "The acceptors of the challenge formed teams",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptərz/",
+  },
+acceptress: {
+    definitions: [
+      {
+        text: "An old-fashioned word for a woman who accepts or receives something. It's like acceptor but specifically for women (though we don't really use this anymore because we don't need different words for different genders).",
+        examples: [
+          "In the old document, she was listed as the acceptress of the estate",
+          "Historical novels sometimes use acceptress instead of acceptor",
+          "The acceptress of the crown was mentioned in ancient texts",
+          "She was named as the acceptress of the donation",
+          "The role of acceptress was passed down through generations",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseptrəs/",
+  },
+  accepts: {
+    definitions: [
+      {
+        text: "When you say 'yes' to something that's offered or agree to take something. Like when you take a gift someone gives you or agree to an invitation.",
+        examples: [
+          "She accepts the job offer after thinking about it",
+          "The store accepts credit cards and cash",
+          "He finally accepted that he was wrong",
+          "The machine only accepts coins, not bills",
+          "I accept your apology",
+          "She couldn't accept the fact that she lost"
+        ]
+      },
+      {
+        text: "When you're cool with something or someone and don't judge them. Like when you're okay with people being different from you.",
+        examples: [
+          "The community accepts people from all backgrounds",
+          "It took time for her parents to accept her career choice",
+          "The team accepts new members all year round",
+          "Society is slowly accepting different ways of living",
+          "They accepted him despite his past mistakes"
+        ]
+      }
+    ],
+    pronunciation: "/əkˈsepts/"
+  },
+  accerse: {
+    definitions: [
+      {
+        text: "To call someone over or summon them to come to you. It's an old-school way of saying 'hey, come here' or 'bring that person to me.'",
+        examples: [
+          "The king accersed his advisors to the throne room",
+          "She accersed the children from their play",
+          "The judge accersed the witness to the stand",
+          "They accersed help from neighboring villages",
+          "The priest accersed the faithful to prayer"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkɜːrs/"
+  },
+  accersition: {
+    definitions: [
+      {
+        text: "The act of summoning or calling someone to come over. It's like when someone officially asks you to show up somewhere.",
+        examples: [
+          "The accersition of the council members took several days",
+          "Upon his accersition, he immediately went to the castle",
+          "The formal accersition was sent by messenger",
+          "They waited for the king's accersition before entering",
+          "The accersition came at midnight"
+        ]
+      }
+    ],
+    pronunciation: "/ækərˈsɪʃən/"
+  },
+  accersitor: {
+    definitions: [
+      {
+        text: "Someone whose job is to go get people and bring them somewhere. Think of them like an official messenger who brings people to where they need to be.",
+        examples: [
+          "The accersitor went to fetch the witnesses for court",
+          "As an accersitor, his main job was bringing people to the king",
+          "The temple's accersitor called everyone to prayer",
+          "They sent an accersitor to bring the doctor",
+          "The accersitor knocked on every door in the village"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkɜːsɪtər/"
+  },
+  access: {
+    definitions: [
+      {
+        text: "Being able to get to, use, or reach something. It's like having the key to a door or permission to use something.",
+        examples: [
+          "You need a password to access your email",
+          "The building has wheelchair access",
+          "Students get free access to the gym",
+          "I can't access the files on my broken phone",
+          "The library gives you access to thousands of books",
+          "Sorry, access denied - you're not allowed in here"
+        ]
+      },
+      {
+        text: "A way to get into or reach a place. Like an entrance or path that leads somewhere.",
+        examples: [
+          "The only access to the beach is through this path",
+          "They built a new access road to the mall",
+          "The back access is for employees only",
+          "There's no access to the roof from this floor",
+          "Emergency access must be kept clear"
+        ]
+      }
+    ],
+    pronunciation: "/ˈækses/"
+  },
+  accessary: {
+    definitions: [
+      {
+        text: "Someone who helps another person do something wrong or illegal, but isn't the main person doing it. Like being the lookout during a robbery or hiding evidence for someone.",
+        examples: [
+          "She became an accessary when she helped hide the stolen goods",
+          "The driver was charged as an accessary to the crime",
+          "Being an accessary can get you in just as much trouble",
+          "He denied being an accessary to the plan",
+          "They arrested everyone who was an accessary to the theft"
+        ]
+      }
+    ],
+    pronunciation: "/əkˈsesəri/"
+  },
+  accessaries: {
+    definitions: [
+      {
+        text: "People who help someone else commit a crime, but aren't there when it happens. Like someone who knows about a robbery plan and helps the robbers prepare, but doesn't actually rob the place.",
+        examples: [
+          "The getaway driver was charged as an accessary to the crime",
+          "She became an accessary when she helped hide the stolen goods",
+          "The police arrested several accessaries who helped plan the heist",
+          "Being an accessary to a crime is still illegal, even if you weren't there",
+          "He was found guilty of being an accessary before the fact",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i/",
+  },
+accessarily: {
+    definitions: [
+      {
+        text: "In a way that helps or supports something else, but isn't the main thing. It's like when you're not the star of the show, but you're helping make it happen from the sidelines.",
+        examples: [
+          "She was only accessarily involved in the project",
+          "The music accessarily added to the mood of the film",
+          "He contributed accessarily by providing some background research",
+          "The small details accessarily enhanced the overall design",
+          "The extra features accessarily improved the app's functionality",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.ə.li/",
+  },
+accessariness: {
+    definitions: [
+      {
+        text: "The state of being helpful or supporting but not being the main thing. It's like being the backup dancer instead of the lead singer - you're part of it, but not the star.",
+        examples: [
+          "The accessariness of her role didn't make it any less important",
+          "The decorations' accessariness added to the party's atmosphere",
+          "Despite its accessariness, the background music was essential",
+          "The accessariness of the side plot helped develop the main story",
+          "He understood the accessariness of his position in the company",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i.nəs/",
+  },
+accessaryship: {
+    definitions: [
+      {
+        text: "The role or position of being someone who helps with something but isn't the main person responsible. Think of it like being the person who helps the main character in a movie - you're important, but it's not your story.",
+        examples: [
+          "His accessaryship in the project meant he assisted but didn't lead",
+          "The accessaryship role came with less responsibility",
+          "She accepted the accessaryship knowing she'd be supporting the team",
+          "The position of accessaryship still required significant work",
+          "Their accessaryship in the business was more behind-the-scenes",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i.ʃɪp/",
+  },
+accessed: {
+    definitions: [
+      {
+        text: "When you got into or used something that was previously closed off or restricted. Like when you finally got into your account after remembering your password, or when you reached something that was hard to get to.",
+        examples: [
+          "I finally accessed my old email account",
+          "The files can't be accessed without permission",
+          "She accessed the building using her key card",
+          "The website can't be accessed right now - it's down",
+          "He accessed his savings account to pay for the car",
+          "The restricted area can only be accessed by employees",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsest/",
+  },
+accesses: {
+    definitions: [
+      {
+        text: "More than one way to get into or use something. Like all the different ways you can get into a building, or all the times you log into your accounts.",
+        examples: [
+          "The building has three different accesses",
+          "They monitored all accesses to the secure server",
+          "My phone tracks how many accesses each app gets",
+          "The system logs all accesses to the database",
+          "Multiple accesses from unknown devices triggered an alert",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.ses.ɪz/",
+  },
+accessibility: {
+    definitions: [
+      {
+        text: "How easy it is for everyone to use or get to something, especially people with disabilities. It's like making sure everyone can enjoy a place or thing, no matter what challenges they might have.",
+        examples: [
+          "The new building has great accessibility with ramps and elevators",
+          "The website improved its accessibility by adding screen reader support",
+          "Poor accessibility meant some people couldn't attend the event",
+          "The app's accessibility features help visually impaired users",
+          "They're working on accessibility upgrades to the public transit system",
+        ],
+      },
+    ],
+    pronunciation: "/əkˌses.əˈbɪl.ə.ti/",
+  },
+accessible: {
+    definitions: [
+      {
+        text: "When something is easy to reach, use, or understand by everyone. Like when a place has ramps for wheelchairs or when information is written in a way that makes sense to most people.",
+        examples: [
+          "The museum is accessible by bus and train",
+          "The website is accessible to people with visual impairments",
+          "They made the instructions more accessible by using simple language",
+          "The beach isn't accessible during high tide",
+          "The new app is more accessible than the old one",
+        ],
+      },
+      {
+        text: "When someone is friendly and easy to talk to. Like that cool teacher who always has time for questions, or a boss who actually listens when you need help.",
+        examples: [
+          "The professor is very accessible during office hours",
+          "She's the most accessible person in management",
+          "The celebrity remained accessible to their fans",
+          "Despite being CEO, he's surprisingly accessible",
+          "The doctor is accessible via email for quick questions",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ə.bəl/",
+  },
+  accessibleness: {
+    definitions: [
+      {
+        text: "How easy something is to get to, use, or understand. It's like a rating of how accessible something is - the more accessibleness it has, the easier it is for everyone to use it.",
+        examples: [
+          "The accessibleness of this building is great - anyone can get in easily",
+          "The website's accessibleness could be better - it's hard to read the small text",
+          "They improved the game's accessibleness by adding bigger buttons and clearer instructions",
+          "The book's accessibleness makes it perfect for beginners",
+          "The store's poor accessibleness means wheelchair users can't shop there",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsesəbəlnəs/",
+  },
+  accessibly: {
+    definitions: [
+      {
+        text: "Doing something in a way that makes it easy for everyone to use, reach, or understand. When you do stuff while thinking about how to make it work for all people.",
+        examples: [
+          "The website was designed accessibly so blind people could use it too",
+          "She wrote the instructions accessibly, using simple words everyone knows",
+          "The restaurant arranged their tables accessibly so wheelchairs could move around",
+          "He spoke accessibly about complex topics, making them easy to understand",
+          "The buttons were placed accessibly at a height everyone could reach",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsesəbli/",
+  },
+  accessing: {
+    definitions: [
+      {
+        text: "The act of getting into, reaching, or using something. It's what you're doing when you're in the process of getting to something or somewhere.",
+        examples: [
+          "I'm having trouble accessing my email right now",
+          "She's accessing the building through the side door",
+          "The computer is accessing the internet slowly today",
+          "They're accessing their savings to buy a house",
+          "He's accessing his old files from the backup drive",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsesɪŋ/",
+  },
+  accession: {
+    definitions: [
+      {
+        text: "When someone officially gets a powerful position, like becoming king or president. It's that moment when they take over the job.",
+        examples: [
+          "The prince's accession to the throne happened after the queen died",
+          "Her accession to CEO was celebrated by the whole company",
+          "The date of his accession to power was marked in history",
+          "The new leader's accession brought many changes",
+          "They planned a ceremony for the president's accession",
+        ],
+      },
+      {
+        text: "When a library or museum adds something new to their collection and records it. It's like giving a new item an official spot in the collection.",
+        examples: [
+          "The museum's accession of the ancient vase took several weeks",
+          "They gave each new book an accession number",
+          "The library's accession of rare documents was exciting news",
+          "The art gallery announced the accession of a famous painting",
+          "Each item's accession is carefully documented",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃən/",
+  },
+  accessional: {
+    definitions: [
+      {
+        text: "Related to when something gets added to a collection or when someone takes over a position of power. It's like an adjective for anything connected to an accession.",
+        examples: [
+          "The accessional ceremony was planned for the new king",
+          "They followed the accessional procedures for adding books to the library",
+          "The accessional records showed when each item joined the collection",
+          "The museum's accessional policies were very strict",
+          "All the accessional documents needed to be signed",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃənəl/",
+  },
+  accessioned: {
+    definitions: [
+      {
+        text: "When something has been officially added to a collection and recorded. It's like saying 'yep, this thing is now officially part of our stuff and we wrote it down.'",
+        examples: [
+          "The books were accessioned into the library last week",
+          "All new artifacts must be accessioned before going on display",
+          "They accessioned the paintings into the museum's collection",
+          "The documents haven't been accessioned yet",
+          "Once accessioned, items get a special number",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃənd/",
+  },
+  accessioner: {
+    definitions: [
+      {
+        text: "Someone whose job is to add new stuff to a collection and keep track of it. Like the person at a museum or library who handles all the paperwork when they get new things.",
+        examples: [
+          "The accessioner carefully recorded each new item",
+          "She worked as an accessioner at the national library",
+          "The museum's accessioner organized all the new artifacts",
+          "Being an accessioner requires attention to detail",
+          "The accessioner gave each item a unique number",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃənər/",
+  },
+  accessioning: {
+    definitions: [
+      {
+        text: "The process of officially adding stuff to a collection and recording it. It's all the steps involved in making something officially part of a library, museum, or other collection.",
+        examples: [
+          "The accessioning of new books takes time",
+          "They're still accessioning last month's donations",
+          "The museum's accessioning process is very thorough",
+          "She's in charge of accessioning all new items",
+          "The accessioning paperwork needs to be completed first",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃənɪŋ/",
+  },
+  accessions: {
+    definitions: [
+      {
+        text: "When you add new stuff to a collection or group of things. Like when you add more books to a library or new items to your collection.",
+        examples: [
+          "The museum got some cool new accessions this month",
+          "The library's latest accessions include rare comic books",
+          "She documented all the new accessions to her stamp collection",
+          "The gallery showed off its recent accessions in a special exhibit",
+          "Their wine cellar had several valuable new accessions",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈseʃ.ənz/",
+  },
+  accessit: {
+    definitions: [
+      {
+        text: "When you come in second place in a competition or contest, especially in school stuff. It's like being the runner-up - not quite first but still pretty damn good.",
+        examples: [
+          "She got the accessit award in the science fair",
+          "He was happy to receive accessit in the writing competition",
+          "The accessit winner got a silver medal",
+          "Being accessit still meant she qualified for the next round",
+          "The teacher announced the winner and accessit together",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ɪt/",
+  },
+  accessive: {
+    definitions: [
+      {
+        text: "When something is easy to get to or use. It's like when stuff is within reach or simple to access.",
+        examples: [
+          "The website had an accessive design that worked for everyone",
+          "The storage unit was accessive from both sides",
+          "They made the building more accessive by adding ramps",
+          "The information was written in an accessive way",
+          "The new app had an accessive interface that anyone could use",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ɪv/",
+  },
+  accessively: {
+    definitions: [
+      {
+        text: "Doing something in a way that's easy to reach or use. Like when you set things up so anyone can get to them without problems.",
+        examples: [
+          "They accessively arranged the books so kids could reach them",
+          "The menu was accessively designed for all customers",
+          "He accessively placed the tools where everyone could find them",
+          "The documents were accessively stored in labeled folders",
+          "She wrote the instructions accessively so everyone could understand",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ɪv.li/",
+  },
+  accessless: {
+    definitions: [
+      {
+        text: "When you can't get to or use something because there's no way in or no permission. Like when you're locked out or blocked from reaching something.",
+        examples: [
+          "The old files became accessless after we forgot the password",
+          "The building was accessless during the renovation",
+          "The website was accessless due to maintenance",
+          "The private area was accessless to regular visitors",
+          "The document became accessless when the system crashed",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.ses.ləs/",
+  },
+  accessor: {
+    definitions: [
+      {
+        text: "Someone or something that gets into or uses stuff. In computer talk, it's a piece of code that lets you get or change information.",
+        examples: [
+          "The accessor function helps get data from the database",
+          "She was the main accessor of the company files",
+          "The program uses an accessor to read the values",
+          "They needed a special accessor to view the private information",
+          "The accessor method made it easy to update the settings",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər/",
+  },
+  accessory: {
+    definitions: [
+      {
+        text: "Extra stuff you add to make something look better or work better. Like phone cases, jewelry, or car add-ons - they're not totally necessary but they make things cooler or more useful.",
+        examples: [
+          "She bought a new phone case and screen protector as accessories",
+          "The car came with lots of fancy accessories",
+          "He spent more on guitar accessories than the guitar itself",
+          "Fashion accessories can make a basic outfit look amazing",
+          "The store sells more accessories than actual clothes",
+        ],
+      },
+      {
+        text: "Someone who helps out with a crime or covers it up, even if they didn't do the main crime themselves. Like being the getaway driver or hiding stolen stuff.",
+        examples: [
+          "He was charged as an accessory to the robbery",
+          "She became an accessory when she helped hide the evidence",
+          "The police arrested everyone who was an accessory to the crime",
+          "Being an accessory to fraud is still illegal",
+          "They didn't commit the crime but were accessories by helping after",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i/",
+  },
+  accessorial: {
+    definitions: [
+      {
+        text: "Related to being an extra or additional part of something. When stuff is helping or supporting the main thing but isn't the main focus.",
+        examples: [
+          "The warranty covers accessorial parts of the machine",
+          "They charged extra for accessorial services",
+          "The manual listed all the accessorial features",
+          "Her accessorial role in the project was still important",
+          "The package included some accessorial items",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.səˈsɔːr.i.əl/",
+  },
+  accessories: {
+    definitions: [
+      {
+        text: "Extra items that you add to make something look better or work better. Like jewelry for your outfit, or add-ons for your phone - they're not the main thing, but they make it cooler or more useful.",
+        examples: [
+          "She bought some new accessories for her phone - a case and some stickers",
+          "The store sells fashion accessories like belts, scarves, and jewelry",
+          "My gaming setup needs more accessories like a better headset",
+          "Car accessories can include seat covers, air fresheners, and phone holders",
+          "The bathroom looks better with matching accessories like soap dispensers and towels",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.iz/",
+  },
+accessorii: {
+    definitions: [
+      {
+        text: "A fancy medical way of saying 'accessory' when talking about body parts or muscles. It's basically just the Latin version doctors use to sound smart.",
+        examples: [
+          "The doctor mentioned the nervus accessorii during the exam",
+          "Medical students have to learn terms like accessorii in anatomy class",
+          "The muscle accessorii helps with neck movement",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i.aɪ/",
+  },
+accessorily: {
+    definitions: [
+      {
+        text: "When something is done in a way that's not the main thing but helps or adds to it. Like when you throw on a necklace - it's not the main outfit, but it adds to the look.",
+        examples: [
+          "The phone case accessorily protects the screen too",
+          "She accessorily mentioned that she'd be late",
+          "The decorations accessorily brightened up the room",
+          "The feature was accessorily added to the app later",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.ə.li/",
+  },
+accessoriness: {
+    definitions: [
+      {
+        text: "The quality of being extra or additional - not the main thing but still part of it. It's like how a phone case isn't the main part of your phone, but it's still connected to it.",
+        examples: [
+          "The accessoriness of the feature made it optional to use",
+          "She understood the accessoriness of her role in the project",
+          "The accessoriness of the decorations meant they could be changed easily",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i.nəs/",
+  },
+accessorius: {
+    definitions: [
+      {
+        text: "Another medical term for 'accessory' - doctors use it when talking about extra or helping parts in your body, like certain nerves or muscles that assist the main ones.",
+        examples: [
+          "The accessorius nerve helps control neck movements",
+          "The doctor explained how the musculus accessorius works",
+          "Students learn about the nervus accessorius in medical school",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.i.əs/",
+  },
+accessorize: {
+    definitions: [
+      {
+        text: "To add extra stuff to make something look better or more complete. Like when you put on jewelry with an outfit, or add decorations to make something pop.",
+        examples: [
+          "She likes to accessorize her outfits with cool earrings and necklaces",
+          "Let's accessorize the living room with some throw pillows",
+          "He accessorized his car with LED lights and custom rims",
+          "You can accessorize your phone with stickers and charms",
+          "She knows how to accessorize without going overboard",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.aɪz/",
+  },
+accessorized: {
+    definitions: [
+      {
+        text: "When something has been decked out with extra stuff to make it look better or more complete. It's like when you've already added all the cool extras to something.",
+        examples: [
+          "Her perfectly accessorized outfit won the fashion contest",
+          "The newly accessorized room looked way more homey",
+          "He drove up in his fully accessorized truck",
+          "The accessorized phone stood out with its custom case and charms",
+          "She always looked well accessorized, even in casual clothes",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ər.aɪzd/",
+  },
+  accessorizing: {
+    definitions: [
+      {
+        text: "Adding extra stuff to make something look better or more stylish. Like when you're already dressed but then add jewelry, a belt, or other things to complete the look.",
+        examples: [
+          "She spent an hour accessorizing her outfit with necklaces and earrings",
+          "The room needs some accessorizing - maybe add some pillows and art",
+          "He's great at accessorizing his basic outfits to make them look fancy",
+          "I'm done with the main design, now I'm just accessorizing the space",
+          "She makes money by teaching people about accessorizing their wardrobes",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ə.raɪ.zɪŋ/",
+  },
+  accessors: {
+    definitions: [
+      {
+        text: "In computer programming, these are special functions that let you get or change values in a program. Think of them like designated doorways that let you safely peek inside or modify stuff in your code.",
+        examples: [
+          "The class needs accessors to read the private data",
+          "We use accessors to control how other code can interact with our objects",
+          "The getter and setter are both types of accessors",
+          "You should always use accessors instead of accessing data directly",
+          "The code won't work without proper accessors in place",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈses.ərz/",
+  },
+  acciaccatura: {
+    definitions: [
+      {
+        text: "In music, it's when you quickly play a note right before the main note you want to hit, kind of like a musical hiccup. It's super quick - like if you were playing piano and quickly tapped one key before landing on the one you really want.",
+        examples: [
+          "The piece has an acciaccatura that adds a nice sparkle to the melody",
+          "She played the acciaccatura so fast you could barely hear it",
+          "Adding an acciaccatura here makes the music sound more playful",
+          "The teacher showed us how to properly execute an acciaccatura",
+          "That little quick note before the main one? That's an acciaccatura",
+        ],
+      },
+    ],
+    pronunciation: "/ˌɑːtʃəˈkɑːtʊrə/",
+  },
+  acciaccaturas: {
+    definitions: [
+      {
+        text: "More than one acciaccatura - those quick little notes you play right before main notes in music. It's just the plural way of saying acciaccatura.",
+        examples: [
+          "This piece has too many acciaccaturas - it's getting messy",
+          "The composer loved using acciaccaturas throughout the song",
+          "She's practicing her acciaccaturas to make them cleaner",
+          "The sheet music is full of acciaccaturas",
+          "These acciaccaturas make the simple melody more interesting",
+        ],
+      },
+    ],
+    pronunciation: "/ˌɑːtʃəˈkɑːtʊrəz/",
+  },
+  acciaccature: {
+    definitions: [
+      {
+        text: "Another way of saying multiple acciaccaturas (those quick notes played right before main notes in music). It's just a fancier plural version that comes from Italian.",
+        examples: [
+          "The piece contains several acciaccature in the first movement",
+          "She's mastered all the acciaccature in the composition",
+          "These acciaccature add a special touch to the melody",
+          "The teacher marked all the acciaccature in red ink",
+          "Playing acciaccature correctly takes lots of practice",
+        ],
+      },
+    ],
+    pronunciation: "/ˌɑːtʃəˈkɑːtʊreɪ/",
+  },
+  accidence: {
+    definitions: [
+      {
+        text: "The part of grammar that deals with how words change their form - like when 'run' becomes 'running' or 'ran', or when 'cat' becomes 'cats'. It's all about how words shape-shift depending on how you use them.",
+        examples: [
+          "Learning English accidence is tricky with all its irregular verbs",
+          "The teacher focused on accidence in today's grammar lesson",
+          "Understanding accidence helps you use words correctly",
+          "Spanish accidence includes lots of verb conjugations",
+          "The book has a whole chapter on basic accidence",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.sɪ.dəns/",
+  },
+  accidency: {
+    definitions: [
+      {
+        text: "The quality of something happening by chance or accident - when stuff just happens randomly without being planned. It's like the universe's way of being messy and unpredictable.",
+        examples: [
+          "The accidency of their meeting made it feel like fate",
+          "There's a certain accidency to how paint splatters on canvas",
+          "He blamed the mistake's accidency, saying it wasn't on purpose",
+          "The beauty of nature often comes from its accidency",
+          "Some art relies on accidency to create unique effects",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.sɪ.dən.si/",
+  },
+  accidencies: {
+    definitions: [
+      {
+        text: "Multiple instances of things happening by chance or accident. It's when you're talking about more than one random, unplanned event or quality.",
+        examples: [
+          "The day was full of happy accidencies that led to their meeting",
+          "Artists sometimes rely on accidencies to create unique effects",
+          "Life is full of accidencies that shape our path",
+          "The experiment produced interesting accidencies worth studying",
+          "These accidencies turned out to be fortunate mistakes",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.sɪ.dən.siz/",
+  },
+  accident: {
+    definitions: [
+      {
+        text: "Something bad or unexpected that happens without anyone planning it. Like when you spill your drink or bump into something.",
+        examples: [
+          "I had an accident and spilled coffee all over my shirt",
+          "The car accident wasn't anyone's fault",
+          "It was an accident! I didn't mean to delete your file",
+          "There was an accident at work when someone slipped on the wet floor",
+          "Don't worry about the broken glass, accidents happen",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.sɪ.dənt/",
+  },
+accidental: {
+    definitions: [
+      {
+        text: "When something happens by chance or mistake, not on purpose. Like when you accidentally liked your ex's Instagram post from 3 years ago at 2am.",
+        examples: [
+          "The discovery was accidental - they weren't even looking for it",
+          "Sorry for the accidental text, it was meant for someone else",
+          "Their meeting was totally accidental - they just bumped into each other",
+          "The paint splash was accidental but it actually looks cool",
+          "That was an accidental click, I didn't mean to close the window",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təl/",
+  },
+accidentalism: {
+    definitions: [
+      {
+        text: "The belief that things happen by chance rather than for a reason. It's like thinking life is a series of random events instead of some big master plan.",
+        examples: [
+          "His philosophy of accidentalism means he doesn't believe in fate",
+          "The artist's accidentalism shows in how she lets paint splatter randomly",
+          "Some people find comfort in accidentalism - not everything needs a reason",
+          "The book explores themes of accidentalism in everyday life",
+          "Their belief in accidentalism shapes how they deal with unexpected events",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təl.ɪ.zəm/",
+  },
+accidentalist: {
+    definitions: [
+      {
+        text: "Someone who believes things happen by chance and not for any special reason. Like a person who thinks life is just a bunch of random stuff happening, not some planned-out destiny.",
+        examples: [
+          "As an accidentalist, she doesn't believe in fate or destiny",
+          "The accidentalist view is that success comes from luck more than planning",
+          "Most scientists are accidentalists when it comes to evolution",
+          "Being an accidentalist helps them cope with unexpected changes",
+          "The artist is an accidentalist who lets random elements shape their work",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təl.ɪst/",
+  },
+accidentality: {
+    definitions: [
+      {
+        text: "The quality of something being unplanned or happening by chance. It's like when you're trying to explain how random or unintentional something was.",
+        examples: [
+          "The accidentality of their meeting made it even more special",
+          "There's a certain accidentality to how the paint dripped on the canvas",
+          "The story's accidentality makes it hard to believe, but it's true",
+          "She emphasized the accidentality of the discovery",
+          "The accidentality of life is what makes it interesting",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪ.denˈtæl.ə.ti/",
+  },
+accidentally: {
+    definitions: [
+      {
+        text: "When you do something without meaning to or by mistake. Like when you send a text to the wrong person or like someone's old social media post while stalking them.",
+        examples: [
+          "I accidentally liked their post from 2015",
+          "She accidentally used salt instead of sugar in the cookies",
+          "We accidentally took the wrong turn and found this cool restaurant",
+          "He accidentally replied-all to the company email",
+          "I accidentally clicked the link and deleted everything",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təl.i/",
+  },
+accidentalness: {
+    definitions: [
+      {
+        text: "How unplanned or unintentional something is. It's like measuring how much of an accident something was.",
+        examples: [
+          "The accidentalness of the discovery made it even more amazing",
+          "You could tell by the accidentalness of his words that he didn't mean to hurt anyone",
+          "The accidentalness of their meeting became a funny story",
+          "There was a clear accidentalness to how the paint spilled",
+          "The accidentalness of the situation made everyone laugh",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təl.nəs/",
+  },
+accidentals: {
+    definitions: [
+      {
+        text: "In music, these are the sharp (♯) or flat (♭) symbols that change how a note sounds. They're like the spice that makes music more interesting.",
+        examples: [
+          "The song has lots of accidentals that make it tricky to play",
+          "She forgot to play the accidentals in the second measure",
+          "The jazz piece was full of accidentals",
+          "Remember to check for accidentals before playing",
+          "The composer used accidentals to create a unique sound",
+        ],
+      },
+      {
+        text: "More than one thing that happens by accident or chance. Like when a bunch of unplanned stuff happens all at once.",
+        examples: [
+          "There were too many accidentals in the lab to call it a coincidence",
+          "The painting's beauty came from the accidentals of how the paint mixed",
+          "Life is full of accidentals that end up changing our path",
+          "The day was filled with happy accidentals",
+        ],
+      },
+    ],
+    pronunciation: "/ˌæk.sɪˈden.təlz/",
+  },
+  accidents: {
+    definitions: [
+      {
+        text: "Bad shit that happens when you didn't mean for it to happen. Usually involves something going wrong or someone getting hurt when nobody planned for it.",
+        examples: [
+          "There were three car accidents on the highway this morning",
+          "Most kitchen accidents happen when people aren't paying attention",
+          "No accidents happened during the construction of the building",
+          "She's had so many accidents on her bike, she finally bought a helmet",
+          "Insurance covers you when accidents happen",
+          "Spilling coffee on your shirt before a meeting? That's the kind of accidents we're talking about",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæk.sɪ.dənts/",
+  },
+accidentary: {
+    definitions: [
+      {
+        text: "When something happens by chance or wasn't planned. It's like when stuff just happens randomly without anyone meaning for it to happen.",
+        examples: [
+          "The discovery was totally accidentary - he wasn't even looking for it",
+          "Their meeting was accidentary, but it led to them falling in love",
+          "The paint splatter effect was accidentary but looked cool",
+          "Most of life's best moments are accidentary",
+          "The photo bomb was completely accidentary but made the picture better",
+        ],
+      },
+    ],
+    pronunciation: "/ækˈsɪdənˌtɛri/",
+  },
+accidentarily: {
+    definitions: [
+      {
+        text: "When you do something by accident or without meaning to. Like when you bump into someone or click the wrong button - you didn't plan it, it just happened.",
+        examples: [
+          "I accidentarily liked my ex's photo from three years ago",
+          "She accidentarily sent the email to the whole company",
+          "He accidentarily walked into the wrong meeting room",
+          "The cat accidentarily knocked over the plant while chasing a fly",
+          "I accidentarily bought the wrong size shoes online",
+        ],
+      },
+    ],
+    pronunciation: "/ækˌsɪdənˈtɛrəli/",
+  },
+accidented: {
+    definitions: [
+      {
+        text: "When something's been in an accident or shows damage from accidents. Think of a car that's been in a few fender benders or a phone with a cracked screen.",
+        examples: [
+          "The accidented car was selling for half its normal price",
+          "His accidented phone still worked but looked rough",
+          "The accidented furniture couldn't be returned to the store",
+          "Their relationship was pretty accidented after all the drama",
+          "The accidented bike had a bent wheel and scratched paint",
+        ],
+      },
+    ],
+    pronunciation: "/ækˈsɪdəntɪd/",
+  },
+accidia: {
+    definitions: [
+      {
+        text: "When you just can't be bothered to do anything or care about stuff anymore. It's like next-level laziness mixed with not giving a shit about things you usually care about.",
+        examples: [
+          "After binge-watching shows all weekend, accidia hit hard on Monday",
+          "His accidia meant he hadn't cleaned his room in weeks",
+          "She fought through her accidia by forcing herself to go to the gym",
+          "Winter accidia had everyone feeling lazy and unmotivated",
+          "Social media scrolling can lead to serious accidia",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪdiə/",
+  },
+  accidie: {
+    definitions: [
+      {
+        text: "When you just can't give a fuck about anything anymore, especially spiritual or moral stuff. It's like a deep feeling of not caring and being completely unmotivated, but specifically about deeper life stuff rather than just being lazy.",
+        examples: [
+          "After months of meditation, he fell into accidie and stopped caring about his spiritual practice",
+          "The monk warned about accidie being the biggest challenge in spiritual life",
+          "She recognized her accidie when even her favorite religious texts stopped meaning anything to her",
+          "Depression is different from accidie - one's medical, the other's more about losing your spiritual drive",
+          "His accidie made him question if any of this spiritual stuff even mattered anymore",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæksɪdi/",
+  },
+accidies: {
+    definitions: [
+      {
+        text: "More than one case of not giving a fuck about spiritual or moral stuff. It's the plural form of accidie, used when talking about multiple people or instances of spiritual don't-give-a-fuck-ness.",
+        examples: [
+          "The monastery documented several accidies among new monks during winter",
+          "Throughout history, periods of accidies have affected religious communities",
+          "The teacher noticed accidies spreading through his meditation class",
+          "Different types of accidies can hit you at different points in your spiritual journey",
+        ],
+      },
+    ],
+    pronunciation: "/ˈæksɪdiz/",
+  },
+accinge: {
+    definitions: [
+      {
+        text: "To get your shit together and prepare for something. It's like when you psych yourself up and get ready to tackle something big.",
+        examples: [
+          "She had to accinge herself before giving the big presentation",
+          "The team took a moment to accinge before the championship game",
+          "He accinged himself for the difficult conversation ahead",
+          "Sometimes you just need to accinge and face your fears",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪndʒ/",
+  },
+accinged: {
+    definitions: [
+      {
+        text: "When someone already got their shit together and prepared themselves. It's the past tense of accinge - like saying they've already done the mental prep work.",
+        examples: [
+          "Once he accinged himself, nothing could stop him from achieving his goal",
+          "She accinged herself yesterday for today's challenge",
+          "The soldiers accinged themselves before the battle",
+          "Having accinged myself properly, I felt ready to face anything",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪndʒd/",
+  },
+accinging: {
+    definitions: [
+      {
+        text: "In the process of getting your shit together and preparing yourself. When you're actively psyching yourself up or getting ready for something.",
+        examples: [
+          "He's in his room accinging himself for the job interview",
+          "I found her accinging herself in front of the mirror before the date",
+          "The team was accinging themselves for the final match",
+          "Stop procrastinating and start accinging yourself for the exam",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪndʒɪŋ/",
+  },
+accipient: {
+    definitions: [
+      {
+        text: "When someone or something is on the receiving end of stuff. It's like being the person who gets things rather than gives them.",
+        examples: [
+          "As the accipient of the award, she had to give a speech",
+          "The charity was the accipient of multiple donations",
+          "Being the accipient of bad news is never fun",
+          "The student was the accipient of a full scholarship",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪpiənt/",
+  },
+  accipitrary: {
+    definitions: [
+      {
+        text: "Anything to do with hawks or falcons, especially when it comes to training them for hunting. It's like being a bird trainer, but specifically for badass hunting birds.",
+        examples: [
+          "She's studying accipitrary techniques to become a falconer",
+          "The medieval castle had an accipitrary area where they kept their hunting birds",
+          "His accipitrary skills let him train hawks to hunt rabbits",
+          "The book covers basic accipitrary methods for beginners",
+          "They built an accipitrary facility to rehabilitate injured hawks",
+        ],
+      },
+    ],
+    pronunciation: "/ækˈsɪpɪˌtreri/",
+  },
+accipitrine: {
+    definitions: [
+      {
+        text: "Looking or acting like a hawk. When something has hawk-like features or behavior - like sharp eyes, a hooked beak, or that intense predator vibe.",
+        examples: [
+          "The bird had those typical accipitrine features - curved beak and fierce eyes",
+          "His accipitrine nose reminded everyone of an eagle",
+          "The young falcon showed its accipitrine nature when hunting",
+          "She noticed the accipitrine shape of the bird's silhouette against the sky",
+          "The zoo's accipitrine section housed all the hawk-like birds",
+        ],
+      },
+    ],
+    pronunciation: "/ækˈsɪpɪtrɪn/",
+  },
+accipter: {
+    definitions: [
+      {
+        text: "A hawk or falcon - basically any of those fast, fierce birds that hunt other animals. They're like the fighter jets of the bird world, swooping down to catch their prey.",
+        examples: [
+          "An accipter swooped down and grabbed a mouse from the field",
+          "She watched the accipter glide gracefully through the air",
+          "The accipter built its nest high in the pine tree",
+          "Bird watchers love spotting different types of accipters",
+          "The small accipter chased away larger birds from its territory",
+        ],
+      },
+    ],
+    pronunciation: "/ækˈsɪptər/",
+  },
+accise: {
+    definitions: [
+      {
+        text: "A tax you have to pay on stuff like alcohol, tobacco, or other goods. It's like when the government is like 'oh you want that beer? That'll be extra, thanks!'",
+        examples: [
+          "The accise on cigarettes keeps going up every year",
+          "They had to pay extra accise on imported wine",
+          "The new accise laws made everything more expensive",
+          "Smugglers try to avoid paying accise on their goods",
+          "The government raised the accise on luxury items",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsaɪz/",
+  },
+accismus: {
+    definitions: [
+      {
+        text: "When you pretend you don't want something that you actually really do want. It's like when you're dying for a piece of cake but you're like 'oh no thanks, I couldn't possibly' while secretly hoping they'll insist.",
+        examples: [
+          "Her accismus was obvious when she declined the promotion while clearly wanting it",
+          "Stop with the accismus and just admit you want to go to the party",
+          "His accismus fooled no one - we all knew he wanted the last slice",
+          "She used accismus as a way to seem polite while still getting what she wanted",
+          "Classic accismus - saying no three times before finally accepting",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsɪzməs/",
+  },
+accite: {
+    definitions: [
+      {
+        text: "To call someone to come over or show up somewhere. It's like summoning someone, but in a formal or official way.",
+        examples: [
+          "The court will accite the witnesses next week",
+          "They had to accite experts to solve the problem",
+          "The boss accited everyone for an emergency meeting",
+          "The letter accited him to appear before the committee",
+          "They accited volunteers to help with the cleanup",
+        ],
+      },
+    ],
+    pronunciation: "/əkˈsaɪt/",
+  },
+acclaim: {
+    definitions: [
+      {
+        text: "When people are super enthusiastic about praising something or someone. It's like when everyone's going crazy with applause and cheering because something is just that awesome.",
+        examples: [
+          "The movie received widespread acclaim from critics",
+          "Her performance earned instant acclaim from the audience",
+          "The new restaurant has been getting lots of acclaim",
+          "His latest book met with universal acclaim",
+          "The team's victory was met with thunderous acclaim",
+        ],
+      },
+      {
+        text: "To shout or declare something with enthusiasm and approval. Like when you're so excited about something that you just have to let everyone know.",
+        examples: [
+          "The crowd acclaimed her as the winner",
+          "They acclaimed the hero's return with cheers",
+          "Everyone acclaimed the decision to give workers a bonus",
+          "The fans acclaimed their team's victory",
+          "Critics acclaimed it as the movie of the year",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪm/",
+  },
+  acclaimable: {
+    definitions: [
+      {
+        text: "When something is good enough to get a lot of praise or recognition. Like when a movie is so good that everyone's gonna talk about how amazing it is.",
+        examples: [
+          "Her performance was definitely acclaimable - everyone was blown away",
+          "The new restaurant's food is acclaimable, it's gonna get great reviews",
+          "His latest book is highly acclaimable, it's gonna win some awards for sure",
+          "That painting is acclaimable - even art critics are impressed",
+          "The game's graphics are acclaimable, they look better than anything else out there",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪməbl/",
+  },
+acclaimed: {
+    definitions: [
+      {
+        text: "When something or someone has already gotten tons of praise and recognition from people. It's like when everyone agrees that something is really fucking good.",
+        examples: [
+          "That movie was so acclaimed that it won like every award possible",
+          "She's the most acclaimed chef in the city - everyone loves her food",
+          "His critically acclaimed novel sold millions of copies",
+          "The band's most acclaimed album was their second one",
+          "The acclaimed photographer had exhibitions all over the world",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪmd/",
+  },
+acclaimer: {
+    definitions: [
+      {
+        text: "Someone who gives strong praise or approval to others. Like that friend who's always hyping everyone up and telling people how great they are.",
+        examples: [
+          "He's been a loyal acclaimer of indie music for years",
+          "The critic was a known acclaimer of experimental art",
+          "She's my biggest acclaimer - always telling everyone how good my cooking is",
+          "The professor was an acclaimer of innovative student projects",
+          "As an acclaimer of new talent, he helped many artists get noticed",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪmər/",
+  },
+acclaimers: {
+    definitions: [
+      {
+        text: "People who give strong praise or approval to others. Like those fans who are always talking about how amazing their favorite artists are.",
+        examples: [
+          "The movie had many acclaimers among film critics",
+          "Her acclaimers spread the word about her amazing bakery",
+          "The band's acclaimers helped them build a strong following",
+          "Social media acclaimers helped the book become popular",
+          "The artist's acclaimers were mostly other painters who understood her style",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪmərz/",
+  },
+acclaiming: {
+    definitions: [
+      {
+        text: "The act of giving strong praise or approval to someone or something right now. It's like when people are actively spreading the word about how good something is.",
+        examples: [
+          "Critics are acclaiming the new movie as the best of the year",
+          "Everyone's acclaiming her artwork on social media",
+          "The audience was acclaiming the performance with standing ovations",
+          "Reviewers are acclaiming the restaurant's unique dishes",
+          "People are acclaiming his bravery after he saved those kids",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪmɪŋ/",
+  },
+acclaims: {
+    definitions: [
+      {
+        text: "When someone strongly praises or shows approval for something. Like when someone's telling everyone how awesome something is.",
+        examples: [
+          "He acclaims every dish his mom makes as the best ever",
+          "The critic acclaims the show as groundbreaking",
+          "She acclaims local artists to help them get noticed",
+          "Everyone acclaims his ability to solve problems quickly",
+          "The magazine acclaims it as the gadget of the year",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkleɪmz/",
+  },
+acclamation: {
+    definitions: [
+      {
+        text: "When a big group of people show they really approve of something, usually by cheering, clapping, or saying nice things. Think of the loud cheering after an amazing performance.",
+        examples: [
+          "The crowd burst into acclamation when she finished singing",
+          "He won the award by acclamation - everyone agreed he deserved it",
+          "The team's victory was met with wild acclamation from their fans",
+          "The speech received thunderous acclamation from the audience",
+          "Her performance earned the acclamation of the entire theater",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækləˈmeɪʃən/",
+  },
+acclamations: {
+    definitions: [
+      {
+        text: "Multiple instances of loud approval or praise from groups of people. Like when people keep cheering and showing support over and over.",
+        examples: [
+          "The actor received acclamations throughout the entire show",
+          "Her speeches always draw acclamations from the crowd",
+          "The band was met with acclamations at every concert",
+          "The movie earned acclamations at film festivals worldwide",
+          "His jokes were met with acclamations of laughter",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækləˈmeɪʃənz/",
+  },
+  acclamator: {
+    definitions: [
+      {
+        text: "Someone who yells out praise or approval really loudly. Like that one friend who's always screaming 'WOOHOO!' and clapping super enthusiastically at everything.",
+        examples: [
+          "He was the main acclamator at his sister's graduation, cheering louder than anyone",
+          "The acclamator's shouts of praise could be heard over the whole crowd",
+          "Every performer needs an acclamator in the audience to get things hyped up",
+          "She's such an acclamator - always the first to cheer for everyone's success",
+          "The loyal fans acted as acclamators, showing their support with loud cheers",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækləˈmeɪtər/",
+  },
+acclamatory: {
+    definitions: [
+      {
+        text: "When something shows strong approval or praise. It's like when you're not just saying 'good job' but really showing you're super impressed and happy about something.",
+        examples: [
+          "The crowd's acclamatory response to the speech was overwhelming",
+          "She received acclamatory messages from all her friends after winning",
+          "His acclamatory review of the restaurant made everyone want to try it",
+          "The fans gave an acclamatory roar when their team scored",
+          "The article was full of acclamatory comments about the new movie",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklæmətəri/",
+  },
+acclimatable: {
+    definitions: [
+      {
+        text: "When something or someone can get used to new conditions or changes. Like how your body can eventually handle different weather, or how you can adjust to a new schedule.",
+        examples: [
+          "Humans are pretty acclimatable - we can live in hot or cold places",
+          "The plant is acclimatable to different soil types",
+          "Dogs are acclimatable pets - they can adjust to apartment life or farm life",
+          "Some people are more acclimatable to time zone changes than others",
+          "The new fish species proved acclimatable to the aquarium's conditions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətəbəl/",
+  },
+acclimatation: {
+    definitions: [
+      {
+        text: "The process of getting used to new conditions or changes in your environment. It's like when your body adjusts to living somewhere new or dealing with different weather.",
+        examples: [
+          "The acclimatation to the high altitude took about a week",
+          "Going through acclimatation at a new job can be tough at first",
+          "The zoo ensures proper acclimatation for all new animals",
+          "The acclimatation period for night shift work varies for each person",
+          "Plants need time for acclimatation when moved from inside to outside",
+        ],
+      },
+    ],
+    pronunciation: "/əˌklaɪməˈteɪʃən/",
+  },
+acclimate: {
+    definitions: [
+      {
+        text: "To get used to new conditions or changes in your environment. Like when you move somewhere with different weather and your body needs time to adjust.",
+        examples: [
+          "It took me a month to acclimate to the humidity in Florida",
+          "The new employee is starting to acclimate to our work culture",
+          "You need time to acclimate to high altitudes before climbing mountains",
+          "The fish need to acclimate to the water temperature before being released",
+          "It's normal to take time to acclimate to a new sleep schedule",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmeɪt/",
+  },
+acclimated: {
+    definitions: [
+      {
+        text: "When you've already gotten used to new conditions or changes. It's like when you've finally adjusted to a new place or situation and it feels normal now.",
+        examples: [
+          "After three months, I'm finally acclimated to the cold weather",
+          "The plants are fully acclimated to their new environment",
+          "She's acclimated to working from home now",
+          "The rescue dog is well acclimated to his new family",
+          "Once you're acclimated to spicy food, you can handle hotter dishes",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmeɪtɪd/",
+  },
+acclimatement: {
+    definitions: [
+      {
+        text: "The state of being completely adjusted to new conditions. It's when you've finished getting used to changes and you're totally comfortable with them now.",
+        examples: [
+          "His acclimatement to city life was surprisingly quick",
+          "Full acclimatement to the new time zone took about a week",
+          "The team's acclimatement to playing at high altitude helped them win",
+          "Her acclimatement to the new job was obvious in her confidence",
+          "The plants showed perfect acclimatement to the greenhouse conditions",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətmənt/",
+  },
+acclimates: {
+    definitions: [
+      {
+        text: "When someone or something is in the process of getting used to new conditions right now. It's the present-tense way of saying something is adjusting to changes.",
+        examples: [
+          "She quickly acclimates to new situations",
+          "The body naturally acclimates to different altitudes over time",
+          "This plant species acclimates well to indoor conditions",
+          "He acclimates to new time zones faster than most people",
+          "The team acclimates to different playing conditions during training",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmeɪts/",
+  },
+  acclimating: {
+    definitions: [
+      {
+        text: "Getting used to a new situation or environment over time. Like when you're slowly adjusting to a new place, weather, or way of doing things.",
+        examples: [
+          "She's still acclimating to her new job and all the different responsibilities",
+          "The plants are acclimating to their new spot in the garden",
+          "It took me weeks of acclimating to the altitude before I could hike without getting winded",
+          "The new fish are acclimating to the tank's temperature",
+          "He's slowly acclimating to life in a big city after growing up in a small town",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmeɪtɪŋ/",
+  },
+acclimatisation: {
+    definitions: [
+      {
+        text: "The process of getting your body and mind used to new conditions, like different weather, altitude, or surroundings. It's what happens when you give yourself time to adjust to big changes.",
+        examples: [
+          "The acclimatisation period for moving to a high-altitude city can take several weeks",
+          "The zoo has an acclimatisation area for new animals",
+          "Proper acclimatisation is important before climbing mountains",
+          "The team needed a week of acclimatisation before playing in the tropical climate",
+          "The exchange student went through a period of acclimatisation to the new culture",
+        ],
+      },
+    ],
+    pronunciation: "/əˌklaɪmətaɪˈzeɪʃən/",
+  },
+acclimatise: {
+    definitions: [
+      {
+        text: "To slowly get used to new conditions or a different environment. It's when you give yourself time to adjust until something new starts feeling normal.",
+        examples: [
+          "It took me a month to acclimatise to the time difference",
+          "You need to let indoor plants acclimatise before repotting them",
+          "The team flew in early to acclimatise to the weather",
+          "It takes time to acclimatise to working night shifts",
+          "The new puppy is starting to acclimatise to its forever home",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪz/",
+  },
+acclimatised: {
+    definitions: [
+      {
+        text: "When you've fully adjusted to new conditions or surroundings. It means you're now comfortable with changes that were once challenging.",
+        examples: [
+          "After six months, I'm finally acclimatised to living in this cold country",
+          "The mountain climbers were properly acclimatised before attempting the summit",
+          "The rescued cat has acclimatised well to indoor life",
+          "Once acclimatised to the new schedule, she stopped feeling tired all the time",
+          "The plants have acclimatised to their new environment",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzd/",
+  },
+acclimatiser: {
+    definitions: [
+      {
+        text: "Someone or something that helps others get used to new conditions. Like a person who guides others through changes, or a device that helps things adjust to new environments.",
+        examples: [
+          "She works as an acclimatiser for new employees at the company",
+          "The greenhouse has an acclimatiser to help tropical plants adjust",
+          "The experienced guide acted as an acclimatiser for tourists visiting high altitudes",
+          "The aquarium uses an acclimatiser to help new fish adjust to the water",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzər/",
+  },
+acclimatising: {
+    definitions: [
+      {
+        text: "In the process of getting used to new conditions or surroundings. When you're still adjusting and haven't fully settled in yet.",
+        examples: [
+          "She's still acclimatising to the new work culture",
+          "The bears are acclimatising to their new habitat at the sanctuary",
+          "I'm slowly acclimatising to the spicy food here",
+          "The team is acclimatising to playing at high altitude",
+          "The plants are acclimatising to the outdoor temperature",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzɪŋ/",
+  },
+acclimatisable: {
+    definitions: [
+      {
+        text: "Something or someone that can get used to new conditions. If something is acclimatisable, it means it can adapt to changes in its environment given enough time.",
+        examples: [
+          "Humans are highly acclimatisable creatures - we can live almost anywhere",
+          "These plants are easily acclimatisable to indoor conditions",
+          "Not all animals are acclimatisable to captivity",
+          "The new species proved to be acclimatisable to the local climate",
+          "Some people are more acclimatisable to altitude changes than others",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzəbəl/",
+  },
+acclimation: {
+    definitions: [
+      {
+        text: "The process of getting used to new conditions, especially physical ones like temperature or altitude. It's your body's way of adapting to changes in your environment.",
+        examples: [
+          "The acclimation to the desert heat took about two weeks",
+          "Proper acclimation is important before high-altitude hiking",
+          "The fish need time for acclimation to their new tank",
+          "Athletes go through a period of acclimation when training in different climates",
+          "The gardener allowed time for acclimation before moving the plants outside",
+        ],
+      },
+    ],
+    pronunciation: "/ˌækləˈmeɪʃən/",
+  },
+  acclimatizable: {
+    definitions: [
+      {
+        text: "When something or someone can get used to a new place or situation. Like when you know your body will eventually adjust to living in a different climate or altitude.",
+        examples: [
+          "Humans are acclimatizable to high altitudes, but it takes time",
+          "These plants are acclimatizable to indoor conditions",
+          "The new fish species is acclimatizable to warmer water",
+          "Not all animals are acclimatizable to captivity",
+          "The team was acclimatizable to the new work schedule",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzəbəl/",
+  },
+acclimatization: {
+    definitions: [
+      {
+        text: "The process of getting used to a new place, situation, or environment. It's like when your body adjusts to living somewhere new, like moving from sea level to the mountains, or getting used to a new job or school.",
+        examples: [
+          "The acclimatization to high altitude took about two weeks",
+          "Going through acclimatization at a new job can be tough",
+          "The zoo has a special acclimatization period for new animals",
+          "The acclimatization to college life was harder than expected",
+          "Plants need time for acclimatization when moved outdoors",
+        ],
+      },
+    ],
+    pronunciation: "/əˌklaɪmətaɪˈzeɪʃən/",
+  },
+acclimatize: {
+    definitions: [
+      {
+        text: "To get used to a new place or situation that's different from what you're used to. Like when you move somewhere with different weather, or start a new job, and your body and mind need time to adjust.",
+        examples: [
+          "It took me weeks to acclimatize to the hot weather",
+          "The new employee is still trying to acclimatize to our work culture",
+          "You need time to acclimatize to the high altitude",
+          "The plants need to acclimatize before being moved outside",
+          "It's normal to take time to acclimatize to college life",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪz/",
+  },
+acclimatized: {
+    definitions: [
+      {
+        text: "When you've already gotten used to a new place or situation. It's like when you've finally adjusted to living somewhere different and it doesn't feel weird anymore.",
+        examples: [
+          "After a month, I'm finally acclimatized to the time zone",
+          "The plants are now fully acclimatized to their new environment",
+          "She's acclimatized to working night shifts now",
+          "The mountain climbers were acclimatized to the altitude",
+          "The new cat is acclimatized to living with dogs",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzd/",
+  },
+acclimatizer: {
+    definitions: [
+      {
+        text: "Someone or something that helps others get used to new conditions. Think of it like a friend who shows new students around school or helps new employees learn the ropes.",
+        examples: [
+          "The mentor acted as an acclimatizer for new team members",
+          "The greenhouse works as an acclimatizer for tropical plants",
+          "She's a natural acclimatizer, always helping new people adjust",
+          "The orientation leader was our acclimatizer during the first week",
+          "The device serves as an acclimatizer for fish in new tanks",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzər/",
+  },
+acclimatizes: {
+    definitions: [
+      {
+        text: "When someone or something is in the process of getting used to new conditions right now. It's the present-tense way of saying they're adjusting to changes.",
+        examples: [
+          "She quickly acclimatizes to new situations",
+          "The body naturally acclimatizes to higher altitudes",
+          "This plant species acclimatizes well to indoor conditions",
+          "He acclimatizes faster than most people to jet lag",
+          "The team acclimatizes to the new schedule gradually",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzɪz/",
+  },
+acclimatizing: {
+    definitions: [
+      {
+        text: "In the middle of getting used to something new. Like when you're still in that awkward phase of adjusting to a new place or situation, but you're not quite there yet.",
+        examples: [
+          "I'm still acclimatizing to the cold weather here",
+          "The new employee is acclimatizing to our company culture",
+          "The plants are acclimatizing to their outdoor environment",
+          "She's acclimatizing to life as a new parent",
+          "The team is acclimatizing to their new coach's style",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətaɪzɪŋ/",
+  },
+acclimature: {
+    definitions: [
+      {
+        text: "The state of being completely used to new conditions. It's like when you've fully adjusted to a new place or situation and it feels normal now.",
+        examples: [
+          "After six months, I've reached acclimature in my new city",
+          "The plants showed signs of acclimature in their new environment",
+          "It takes time to achieve acclimature when moving to high altitudes",
+          "The team's acclimature to the new system is complete",
+          "Full acclimature to a new culture can take years",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪmətʃər/",
+  },
+  acclinal: {
+    definitions: [
+      {
+        text: "When something slopes or tilts upward. Like when you're looking at a hill that goes up, the surface is acclinal. It's basically a fancy way to say something is going up at an angle.",
+        examples: [
+          "The acclinal rock layers in the cliff face all point upward",
+          "The road has an acclinal path that makes it harder to bike up",
+          "The architect designed the building with an acclinal roof that points to the sky",
+          "The garden has an acclinal layout that creates different levels",
+          "Scientists found acclinal rock formations that showed how the mountain formed",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪnəl/",
+  },
+  acclinate: {
+    definitions: [
+      {
+        text: "To slope or tilt upward. It's when something starts at one point and rises up as it goes along, like a ramp going up or a hill climbing toward the sky.",
+        examples: [
+          "The path acclinates gradually, making it an easy walk up",
+          "The roof acclinates toward the back of the house for better drainage",
+          "The terrain acclinates as you get closer to the mountain",
+          "They designed the stadium seats to acclinate so everyone could see better",
+          "The garden beds acclinate to create a terraced effect",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækləneɪt/",
+  },
+  acclivity: {
+    definitions: [
+      {
+        text: "An upward slope or climb, like a hill going up. Think of it as the uphill part of any surface - the kind that makes you wish you had taken the elevator instead of walking.",
+        examples: [
+          "The steep acclivity of the driveway made it hard to park in winter",
+          "Hikers struggled with the acclivity near the top of the trail",
+          "The road's gentle acclivity made it perfect for morning jogs",
+          "There's a sharp acclivity just before you reach the viewpoint",
+          "The wheelchair ramp needs a gradual acclivity to be accessible",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklɪvɪti/",
+  },
+  acclivities: {
+    definitions: [
+      {
+        text: "Multiple upward slopes or climbs. When you're talking about more than one uphill section, like all the different upward slopes on a hiking trail or in a hilly neighborhood.",
+        examples: [
+          "The mountain bike trail has several challenging acclivities",
+          "San Francisco is famous for its steep acclivities",
+          "The golf course features various acclivities that make it challenging",
+          "The garden's natural acclivities create different planting zones",
+          "The road has gentle acclivities all the way to the top",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklɪvɪtiz/",
+  },
+  acclivitous: {
+    definitions: [
+      {
+        text: "When something is really steep and slopes upward. It's like when you look at a hill and think 'damn, that's gonna be a workout to climb.' Usually steeper than just a regular slope.",
+        examples: [
+          "The acclivitous path to the lighthouse made everyone out of breath",
+          "Their house sits on an acclivitous lot with amazing views",
+          "The acclivitous streets of the city are a nightmare for parallel parking",
+          "Cyclists avoid the acclivitous route during summer heat",
+          "The goats easily climbed the acclivitous hillside",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklɪvɪtəs/",
+  },
+  acclivous: {
+    definitions: [
+      {
+        text: "Sloping upward or rising like a hill. When something goes up at an angle instead of being flat - like a slanted driveway or a tilted roof.",
+        examples: [
+          "The acclivous terrain made the hike more challenging than expected",
+          "Their backyard is acclivous, perfect for a sledding hill in winter",
+          "The acclivous design of the stadium gives everyone a good view",
+          "The road becomes more acclivous as you approach the summit",
+          "They built terraces to farm the acclivous land",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklaɪvəs/",
+  },
+  accloy: {
+    definitions: [
+      {
+        text: "To fill something up way too much, like when you stuff yourself so full of food you can barely move. It's basically overdoing it to the point where you've had way too much of something.",
+        examples: [
+          "Don't accloy yourself with junk food before dinner",
+          "The party accloyed everyone with too many sweets",
+          "She accloyed her schedule with too many appointments",
+          "The buffet accloyed even the hungriest guests",
+          "He accloyed his phone with so many apps it stopped working",
+        ],
+      },
+    ],
+    pronunciation: "/əˈklɔɪ/",
+  },
+  accoast: {
+    definitions: [
+      {
+        text: "To be right next to something or border it, especially along water. Like when your property runs right up against a lake or when two countries share a border.",
+        examples: [
+          "Their property accoasts the river for about a mile",
+          "The park accoasts the beach, making it perfect for picnics",
+          "Two forests accoast each other at the county line",
+          "The restaurant accoasts the marina, giving great water views",
+          "The hiking trail accoasts the lake the whole way",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkoʊst/",
+  },
+  accoy: {
+    definitions: [
+      {
+        text: "To calm someone or something down, like when you're trying to get a hyper dog to chill out or quiet an angry friend. It's basically getting something or someone to relax or settle down.",
+        examples: [
+          "She managed to accoy the excited puppy with some treats",
+          "The mom accoyed her crying baby by singing softly",
+          "He tried to accoy his friend's anger with some jokes",
+          "The trainer slowly accoyed the wild horse",
+          "They used soft music to accoy the crowd",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkɔɪ/",
+  },
+accoyed: {
+    definitions: [
+      {
+        text: "When you calmed something or someone down in the past. It's the past tense of accoy, like when you already got something to chill out or settle down.",
+        examples: [
+          "She accoyed the angry customer before things got worse",
+          "The teacher accoyed the rowdy class with a fun activity",
+          "He finally accoyed his nerves before the big presentation",
+          "They accoyed the situation before it turned into a fight",
+          "The music accoyed her racing thoughts",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkɔɪd/",
+  },
+accoying: {
+    definitions: [
+      {
+        text: "In the process of calming something or someone down. When you're actively trying to get something to chill out or settle down right now.",
+        examples: [
+          "She's accoying the kids before bedtime",
+          "He's accoying his friend's fears about the interview",
+          "The trainer is accoying the nervous horse",
+          "They're accoying the situation with some humor",
+          "I'm accoying my anxiety with deep breaths",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkɔɪɪŋ/",
+  },
+accoil: {
+    definitions: [
+      {
+        text: "When something wraps around or gathers together in a circle or spiral shape. Think of a snake coiling up or rope winding around something.",
+        examples: [
+          "The vine started to accoil around the tree trunk",
+          "The rope accoiled neatly in the corner",
+          "The snake accoiled itself before striking",
+          "Her hair accoiled into perfect ringlets",
+          "The smoke accoiled towards the ceiling",
+        ],
+      },
+    ],
+    pronunciation: "/əˈkɔɪl/",
+  },
+accolade: {
+    definitions: [
+      {
+        text: "When someone gives you praise or recognition for doing something awesome. It's like getting a pat on the back or special honor for your achievements, but make it fancy.",
+        examples: [
+          "She received many accolades for her groundbreaking research",
+          "The movie won several accolades at the film festival",
+          "His latest album earned accolades from music critics",
+          "The team's victory brought them numerous accolades",
+          "She doesn't work for accolades, but she appreciates them",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəleɪd/",
+  },
+accoladed: {
+    definitions: [
+      {
+        text: "When someone got praised or honored in the past. It's like saying they already received recognition or awards for their achievements.",
+        examples: [
+          "The writer was accoladed for her brilliant novel",
+          "The team was accoladed during the championship ceremony",
+          "She was accoladed by her peers for her innovative ideas",
+          "The film was accoladed at every festival it entered",
+          "He was accoladed for his service to the community",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəleɪdɪd/",
+  },
+accolades: {
+    definitions: [
+      {
+        text: "Multiple forms of praise, awards, or recognition. When you get lots of different honors or compliments for your achievements.",
+        examples: [
+          "The movie received countless accolades from critics",
+          "Her performance earned her accolades from around the world",
+          "The restaurant won accolades for its unique menu",
+          "Despite all the accolades, he stayed humble",
+          "The project brought them accolades from the entire industry",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəleɪdz/",
+  },
+accolated: {
+    definitions: [
+      {
+        text: "When someone or something has been given honors or special recognition. It's like saying they've been decorated with praise or awards.",
+        examples: [
+          "The highly accolated chef opened a new restaurant",
+          "She became the most accolated athlete in the team's history",
+          "The accolated film went on to win more awards",
+          "His accolated career spans over three decades",
+          "The accolated professor continued her research",
+        ],
+      },
+    ],
+    pronunciation: "/ˈækəleɪtɪd/",
+  },
+  accolent: {
+    definitions: [
+      {
+        text: "Someone who lives right next to something else, like a neighbor. Think of someone whose house is literally touching or leaning against yours.",
+        examples: [
+          "The accolent families shared a wall between their houses",
+          "Being accolent to the beach means you can hear the waves all day",
+          "The small shops were accolent to the main market building",
+          "Living accolent to a fire station means hearing lots of sirens",
+          "The trees grew accolent to the old stone wall"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkəʊlənt/"
+  },
+  accoll: {
+    definitions: [
+      {
+        text: "To hug or embrace someone around their neck. It's like when you throw your arms around someone's neck to give them a big hug.",
+        examples: [
+          "She accolled her mom as soon as she walked through the door",
+          "The kids accolled their dad when he came home from work",
+          "The lovers accolled each other under the moonlight",
+          "My cat likes to accoll me when I'm sitting at my desk",
+          "Friends accolled each other in celebration after winning the game"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkɒl/"
+  },
+  accolle: {
+    definitions: [
+      {
+        text: "Having been hugged or embraced around the neck. It's when someone has already given you that neck-hug thing.",
+        examples: [
+          "He stood there, accolle by his grandmother at the family reunion",
+          "The winner was quickly accolle by their teammates",
+          "The bride and groom accolle each other after saying 'I do'",
+          "The child wanted to be accolle by their parent after falling down",
+          "They hadn't accolle in years until that moment"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkɒli/"
+  },
+  accolled: {
+    definitions: [
+      {
+        text: "When someone has been hugged or embraced around the neck. It's like saying 'neck-hugged' but in a fancier way.",
+        examples: [
+          "The proud parents accolled their graduate",
+          "She accolled her best friend after hearing the good news",
+          "The teammates accolled each other after scoring the winning goal",
+          "The young couple accolled as they watched the sunset",
+          "He hadn't been accolled like that since he was a kid"
+        ]
+      }
+    ],
+    pronunciation: "/əˈkɒld/"
+  },
 };

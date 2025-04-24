@@ -23,7 +23,7 @@ const roadmapItems: {
   {
     title: "Chrome Extension", 
     description:
-      "Building a Chrome extension and getting it out to the public. [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
+      "Our Chrome extension is now live! [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
     status: {
       text: "Published",
       complete: true

@@ -7,7 +7,7 @@ const roadmapItems: {
   status: string;
 }[] = [
   {
-    title: "Adding words",
+    title: "Add 10.000 words",
     description:
       "Expect at least 10.000 words soon. We'll probably add more, but this is the minimum we'll start with.",
     status: "In progress",
@@ -43,7 +43,7 @@ export default function RoadmapPage() {
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Roadmap</h1>
           <p className="text-xl text-muted-foreground">
-            What's coming next for Word Directory (last updated: April 24, 2025)
+            What's coming next for Word Directory (last updated: April 25, 2025)
           </p>
         </header>
 

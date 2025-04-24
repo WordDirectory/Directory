@@ -1,32 +1,49 @@
 import { Metadata } from "next";
 import { Badge } from "@/components/ui/badge";
+import ReactMarkdown from "react-markdown";
+import { cn } from "@/lib/utils";
 
 const roadmapItems: {
   title: string;
   description: string;
-  status: string;
+  status: {
+    text: string;
+    complete: boolean;
+  };
 }[] = [
   {
     title: "Add 150.000 words",
     description:
       "Expect 150.000 words soon. Current count is around 20.000 but they're not live yet.",
-    status: "In progress",
+    status: {
+      text: "In progress",
+      complete: false
+    },
   },
   {
-    title: "Chrome Extension",
+    title: "Chrome Extension", 
     description:
-      "Building a Chrome extension and getting it out to the public.",
-    status: "In review",
+      "Building a Chrome extension and getting it out to the public. [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
+    status: {
+      text: "Published",
+      complete: true
+    },
   },
   {
     title: "Scaling up",
     description: "As we add more words, we'll need to handle things a little differently",
-    status: "Not started",
+    status: {
+      text: "Not started",
+      complete: false
+    },
   },
   {
     title: "API",
     description: "An API to get definitions for a word, finding words, etc.",
-    status: "Not started",
+    status: {
+      text: "Not started",
+      complete: false
+    },
   },
 ];
 
@@ -58,11 +75,34 @@ export default function RoadmapPage() {
                   <div className="flex-1 pt-[2px]">
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="font-medium">{item.title}</h3>
-                      <Badge variant={item.status === "Completed" ? "default" : "secondary"}>
-                        {item.status}
+                      <Badge className={cn(
+                        "shadow-none",
+                        item.status.complete ? "bg-green-500" : "bg-foreground/5 text-accent-foreground"
+                      )}>
+                        {item.status.text}
                       </Badge>
                     </div>
-                    <p className="text-foreground/70">{item.description}</p>
+                    <div className="text-foreground/70">
+                      <ReactMarkdown
+                        components={{
+                          a: ({ className, children, ...props }) => (
+                            <a
+                              className={cn(
+                                "text-blue-500 hover:underline",
+                                className
+                              )}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              {...props}
+                            >
+                              {children}
+                            </a>
+                          ),
+                        }}
+                      >
+                        {item.description}
+                      </ReactMarkdown>
+                    </div>
                   </div>
                 </div>
               </div>

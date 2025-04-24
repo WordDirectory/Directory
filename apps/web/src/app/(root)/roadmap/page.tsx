@@ -38,6 +38,14 @@ const roadmapItems: {
     },
   },
   {
+    title: "Twitter bot",
+    description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
+    status: {
+      text: "Not started",
+      complete: false
+    },
+  },
+  {
     title: "Community feedback",
     description: "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through community feedback.",
     status: {
@@ -64,14 +72,6 @@ const roadmapItems: {
   {
     title: "AI integration",
     description: "Advanced features powered by AI including sentence definitions and multi-language support.",
-    status: {
-      text: "Not started",
-      complete: false
-    },
-  },
-  {
-    title: "Twitter bot",
-    description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
     status: {
       text: "Not started",
       complete: false

@@ -42,6 +42,14 @@ export function Footer() {
               >
                 Roadmap
               </Link>
+              <Link
+                href="https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Chrome extension
+              </Link>
             </nav>
           </div>
 

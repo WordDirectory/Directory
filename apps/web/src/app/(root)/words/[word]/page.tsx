@@ -64,10 +64,6 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
         </div>
       )}
 
-      <div className="mb-8 text-xl text-muted-foreground">
-        /{details.pronunciation}/
-      </div>
-
       {details.definitions.length === 1 &&
         details.definitions[0].examples.length > 0 && (
           <>

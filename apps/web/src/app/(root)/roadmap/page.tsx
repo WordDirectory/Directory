@@ -47,7 +47,7 @@ const roadmapItems: {
   },
   {
     title: "Twitter bot",
-    description: "An automated Twitter bot that shares Word of the Day, interesting definitions, and engages with the community.",
+    description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
     status: {
       text: "Not started",
       complete: false

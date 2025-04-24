@@ -7,9 +7,9 @@ const roadmapItems: {
   status: string;
 }[] = [
   {
-    title: "Add 10.000 words",
+    title: "Add 150.000 words",
     description:
-      "Expect at least 10.000 words soon. We'll probably add more, but this is the minimum we'll start with.",
+      "Expect 150.000 words soon. Current count is around 20.000 but they're not live yet.",
     status: "In progress",
   },
   {

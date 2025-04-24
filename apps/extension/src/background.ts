@@ -64,4 +64,11 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
       }
     }
   }
+});
+
+// Handle extension icon clicks
+chrome.action.onClicked.addListener(() => {
+  chrome.tabs.create({
+    url: 'https://worddirectory.app'
+  });
 }); 

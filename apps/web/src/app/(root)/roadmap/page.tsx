@@ -83,6 +83,26 @@ export const metadata: Metadata = {
   title: "Roadmap | Word Directory",
   description:
     "See what's coming next for Word Directory - Making definitions human-readable",
+  openGraph: {
+    title: "What's next for WordDirectory",
+    description: "See what's coming next for Word Directory - Making definitions human-readable",
+    url: "https://worddirectory.app/roadmap",
+    siteName: "WordDirectory",
+    images: [
+      {
+        url: "https://worddirectory.app/og/roadmap.png",
+        width: 1200,
+        height: 630,
+        alt: "What's next for WordDirectory",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "What's next for WordDirectory",
+    description: "See what's coming next for Word Directory - Making definitions human-readable",
+    images: ["https://worddirectory.app/og/roadmap.png"],
+  },
 };
 
 export default function RoadmapPage() {

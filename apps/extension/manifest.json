@@ -7,9 +7,6 @@
     "webNavigation",
     "contextMenus"
   ],
-  "host_permissions": [
-    "https://worddirectory.app/*"
-  ],
   "background": {
     "service_worker": "dist/background.js",
     "type": "module"

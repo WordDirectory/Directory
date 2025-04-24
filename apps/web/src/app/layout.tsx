@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     title: "WordDirectory",
     description:
       "Words explained like a human would - definitions that actually make sense without using other complex words you don't know",
-    images: ["https://worddirectory.app/og-image.jpg"],
+    images: ["https://worddirectory.app/og/default.png"],
   },
   alternates: {
     canonical: "https://worddirectory.app",
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/og-image.jpg",
+    apple: "/og/default.png",
   },
   manifest: "/manifest.webmanifest",
 };

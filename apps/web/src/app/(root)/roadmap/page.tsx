@@ -12,6 +12,15 @@ const roadmapItems: {
   };
 }[] = [
   {
+    title: "Chrome Extension", 
+    description:
+      "Our Chrome extension is now live! [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
+    status: {
+      text: "Published",
+      complete: true
+    },
+  },
+  {
     title: "Add 150.000 words",
     description:
       "Expect 150.000 words soon. Current count is around 20.000 but they're not live yet.",
@@ -21,12 +30,11 @@ const roadmapItems: {
     },
   },
   {
-    title: "Chrome Extension", 
-    description:
-      "Our Chrome extension is now live! [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
+    title: "Scaling up",
+    description: "As we add more words, we'll need to handle things a little differently",
     status: {
-      text: "Published",
-      complete: true
+      text: "Not started",
+      complete: false
     },
   },
   {
@@ -46,8 +54,8 @@ const roadmapItems: {
     },
   },
   {
-    title: "Twitter bot",
-    description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
+    title: "API",
+    description: "An API to get definitions for a word, finding words, etc.",
     status: {
       text: "Not started",
       complete: false
@@ -62,16 +70,8 @@ const roadmapItems: {
     },
   },
   {
-    title: "Scaling up",
-    description: "As we add more words, we'll need to handle things a little differently",
-    status: {
-      text: "Not started",
-      complete: false
-    },
-  },
-  {
-    title: "API",
-    description: "An API to get definitions for a word, finding words, etc.",
+    title: "Twitter bot",
+    description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
     status: {
       text: "Not started",
       complete: false

@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "WordDirectory",
     images: [
       {
-        url: "https://worddirectory.app/og/default.png",
+        url: "https://worddirectory.app/og/primary.png",
         width: 1200,
         height: 630,
         alt: "WordDirectory - Words explained like a human would",
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
     title: "WordDirectory",
     description:
       "Words explained like a human would - definitions that actually make sense without using other complex words you don't know",
-    images: ["https://worddirectory.app/og/default.png"],
+    images: ["https://worddirectory.app/og/primary.png"],
   },
   alternates: {
     canonical: "https://worddirectory.app",
   },
   icons: {
     icon: "/favicon.ico",
-    apple: "/og/default.png",
+    apple: "/og/primary.png",
   },
   manifest: "/manifest.webmanifest",
 };

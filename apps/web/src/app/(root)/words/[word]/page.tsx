@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
 import { capitalize } from "@/lib/utils";
 import { getWord } from "@/lib/words";
@@ -12,6 +13,40 @@ interface WordPageProps {
   params: Promise<{
     word: string;
   }>;
+}
+
+// Generate metadata for each word page
+export async function generateMetadata({ params }: WordPageProps): Promise<Metadata> {
+  const { word: paramWord } = await params;
+  const result = await getWord(paramWord);
+
+  if (!result) {
+    return {
+      title: `${capitalize(paramWord)} - Word Not Found | WordDirectory`,
+      description: `Definition for "${paramWord}" not found. Explore our extensive dictionary for human-readable definitions of other words.`
+    };
+  }
+
+  const { word, details } = result;
+  const definition = details.definitions[0]?.text || '';
+
+  return {
+    title: `${capitalize(word)} Definition - Simple English Explanation | WordDirectory`,
+    description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? '...' : ''}`,
+    keywords: [
+      word,
+      `${word} definition`,
+      `${word} meaning`,
+      `what does ${word} mean`,
+      `define ${word}`,
+      'dictionary',
+      'definitions',
+      'word meanings'
+    ].join(', '),
+    alternates: {
+      canonical: `https://worddirectory.app/words/${encodeURIComponent(word)}`
+    }
+  };
 }
 
 export default async function WordPage({ params }: WordPageProps) {

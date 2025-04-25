@@ -1,23 +1,60 @@
 import type { MetadataRoute } from "next";
-import { words } from "@/data/words";
+import { supabase } from "@/lib/supabase/server";
 
-async function fetchWords() {
-  return Object.keys(words);
+// Helper to get words starting with a letter
+async function getWordsByLetter(letter: string) {
+  const { data, error } = await supabase
+    .from('words')
+    .select('word, updated_at')
+    .ilike('word', `${letter}%`)
+    .order('word');
+
+  if (error) throw error;
+  return data || [];
 }
 
-export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+// Get all unique first letters of words
+async function getUniqueFirstLetters() {
+  const { data, error } = await supabase
+    .from('words')
+    .select('word')
+
+  if (error) throw error;
+  
+  // Get unique first letters
+  const letters = new Set(data?.map(w => w.word[0].toLowerCase()) || []);
+  return Array.from(letters).sort();
+}
+
+export async function generateSitemaps() {
+  const letters = await getUniqueFirstLetters();
+  return letters.map(letter => ({ id: letter }));
+}
+
+export default async function sitemap({ id }: { id: string }): Promise<MetadataRoute.Sitemap> {
   const baseUrl = "https://worddirectory.app";
-  const staticLinks = [
-    { url: baseUrl, lastModified: new Date().toISOString() },
-  ];
 
-  const wordList = await fetchWords();
-  const currentDate = new Date().toISOString();
+  // If no ID, this is the main sitemap index request
+  if (!id) {
+    return [
+      { url: baseUrl, lastModified: new Date() },
+      { url: `${baseUrl}/about`, lastModified: new Date() },
+      { url: `${baseUrl}/contact`, lastModified: new Date() },
+      { url: `${baseUrl}/privacy`, lastModified: new Date() },
+      { url: `${baseUrl}/terms`, lastModified: new Date() },
+      { url: `${baseUrl}/roadmap`, lastModified: new Date() },
+    ];
+  }
 
-  const wordLinks = wordList.map((word) => ({
-    url: `${baseUrl}/words/${word}`,
-    lastModified: currentDate,
+  // Get all words starting with this letter
+  const words = await getWordsByLetter(id);
+  
+  return words.map((word) => ({
+    url: `${baseUrl}/words/${encodeURIComponent(word.word)}`,
+    lastModified: word.updated_at || new Date(),
+    // These pages change rarely
+    changeFrequency: 'monthly' as const,
+    // Dictionary entries are important content
+    priority: 0.8,
   }));
-
-  return [...staticLinks, ...wordLinks];
 }

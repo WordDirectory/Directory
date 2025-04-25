@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     siteName: "WordDirectory",
     images: [
       {
-        url: "https://worddirectory.app/og-image.jpg",
+        url: "https://worddirectory.app/og/default.png",
         width: 1200,
         height: 630,
         alt: "WordDirectory - Words explained like a human would",

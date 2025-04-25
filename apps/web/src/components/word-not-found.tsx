@@ -1,9 +1,10 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { getRandomWords } from "@/lib/utils";
+import { getRandomWords } from "@/lib/words";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
 
 interface WordNotFoundProps {
   word: string;
@@ -11,10 +12,20 @@ interface WordNotFoundProps {
 
 export function WordNotFound({ word }: WordNotFoundProps) {
   const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleRandomWord = () => {
-    const [randomWord] = getRandomWords({ maxCount: 1 });
-    router.push(`/words/${randomWord}`);
+  const handleRandomWord = async () => {
+    try {
+      setIsLoading(true);
+      const { words } = await getRandomWords(1);
+      if (words.length > 0) {
+        router.push(`/words/${words[0]}`);
+      }
+    } catch (error) {
+      console.error('Error getting random word:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -30,8 +41,12 @@ export function WordNotFound({ word }: WordNotFoundProps) {
         <Button asChild variant="default">
           <Link href="/">Go home</Link>
         </Button>
-        <Button variant="outline" onClick={handleRandomWord}>
-          Try a random word
+        <Button 
+          variant="outline" 
+          onClick={handleRandomWord}
+          disabled={isLoading}
+        >
+          {isLoading ? "Loading..." : "Try a random word"}
         </Button>
       </div>
     </div>

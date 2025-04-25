@@ -10,7 +10,7 @@ import { usePathname } from "next/navigation";
 
 const SIZES = {
   sm: {
-    input: "h-9 w-full md:w-72 text-sm",
+    input: "h-9 w-full md:w-72 text-sm rounded-full",
     container: "w-full md:w-auto",
     showSearchIcon: false,
   },
@@ -39,7 +39,7 @@ export function SearchInput({ size = "sm" }: SearchInputProps) {
 
   // Get the word from the pathname if we're on a word page
   const word = pathname.startsWith("/words/")
-    ? capitalize(pathname.split("/words/")[1])
+    ? capitalize(decodeURIComponent(pathname.split("/words/")[1]))
     : "";
 
   return (

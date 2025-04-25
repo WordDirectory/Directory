@@ -1,24 +1,26 @@
 import { NextResponse } from 'next/server';
-import { words } from '@/data/words';
-import { rateLimit } from '@/lib/rate-limit';
 import { headers } from 'next/headers';
+import { rateLimit } from '@/lib/rate-limit';
+import { getWord } from '@/lib/supabase/queries';
 
 export async function HEAD(
   request: Request,
-  { params }: { params: Promise<{ word: string }> }
+  { params }: { params: { word: string } }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
-    const headersList = await headers()
-    const forwardedFor = headersList.get('x-forwarded-for')
-    const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1'
+    const headersList = await headers();
+    const forwardedFor = headersList.get('x-forwarded-for');
+    const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1';
     
     // Apply rate limiting
-    await rateLimit(ip)
+    await rateLimit(ip);
     
-    const word = (await params).word.toLowerCase().trim();
+    // Decode the URL-encoded word parameter
+    const word = decodeURIComponent(params.word).trim();
+    const result = await getWord(word);
     
-    if (words[word]) {
+    if (result) {
       return new NextResponse(null, { status: 200 });
     }
     
@@ -38,7 +40,7 @@ export async function HEAD(
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ word: string }> }
+  { params }: { params: { word: string } }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -51,11 +53,14 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get('fallback');
-    const word = (await params).word.toLowerCase().trim();
+    // Decode the URL-encoded word parameter
+    const word = decodeURIComponent(params.word).trim();
 
-    // If word exists, redirect to the word page
-    if (words[word]) {
-      return NextResponse.redirect(`https://worddirectory.app/words/${encodeURIComponent(word)}`);
+    const result = await getWord(word);
+
+    // If word exists, return the data
+    if (result) {
+      return NextResponse.json(result);
     }
 
     // If word doesn't exist and we have a fallback URL, redirect there
@@ -63,13 +68,17 @@ export async function GET(
       return NextResponse.redirect(fallback);
     }
 
-    // If no fallback provided, redirect to 404 page
-    return NextResponse.redirect(`https://worddirectory.app/words/${encodeURIComponent(word)}`);
+    // If no fallback provided, return 404
+    return new NextResponse(null, { status: 404 });
   } catch (error: unknown) {
     if (error instanceof Error && error.message === 'Too many requests') {
-      return NextResponse.redirect('https://worddirectory.app/429');
+      return new NextResponse(null, { 
+        status: 429,
+        headers: {
+          'Retry-After': '60'
+        }
+      });
     }
-    // In case of any other errors, redirect to homepage
-    return NextResponse.redirect('https://worddirectory.app');
+    return new NextResponse(null, { status: 500 });
   }
 } 

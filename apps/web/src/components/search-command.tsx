@@ -1,7 +1,7 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { searchWords } from "@/lib/utils";
+import { searchWords, getRandomWords } from "@/lib/words";
 import {
   CommandDialog,
   CommandEmpty,
@@ -10,7 +10,45 @@ import {
   CommandItem,
   CommandList,
 } from "@/components/ui/command";
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+import { useDebounce } from "@/hooks/use-debounce";
+
+const CACHE_KEY = 'random-words-cache';
+const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
+
+interface CacheEntry {
+  words: string[];
+  timestamp: number;
+}
+
+function getCache(): string[] | null {
+  try {
+    const cached = localStorage.getItem(CACHE_KEY);
+    if (!cached) return null;
+
+    const { words, timestamp }: CacheEntry = JSON.parse(cached);
+    if (Date.now() - timestamp > CACHE_DURATION) {
+      localStorage.removeItem(CACHE_KEY);
+      return null;
+    }
+
+    return words;
+  } catch {
+    return null;
+  }
+}
+
+function setCache(words: string[]) {
+  try {
+    const entry: CacheEntry = {
+      words,
+      timestamp: Date.now()
+    };
+    localStorage.setItem(CACHE_KEY, JSON.stringify(entry));
+  } catch {
+    // Ignore cache failures
+  }
+}
 
 interface SearchCommandProps {
   open: boolean;
@@ -20,7 +58,58 @@ interface SearchCommandProps {
 export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const router = useRouter();
   const [query, setQuery] = useState("");
-  const { results: words, totalCount } = searchWords({ query });
+  const [words, setWords] = useState<string[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const debouncedQuery = useDebounce(query, 300);
+
+  const performSearch = useCallback(async (searchQuery: string) => {
+    if (!searchQuery) {
+      // Try to get cached random words first
+      const cached = getCache();
+      if (cached) {
+        setWords(cached);
+        return;
+      }
+
+      // If no cache, fetch and cache
+      try {
+        setIsLoading(true);
+        const results = await getRandomWords();
+        setCache(results.words);
+        setWords(results.words);
+      } catch (error) {
+        console.error('Failed to fetch random words:', error);
+      } finally {
+        setIsLoading(false);
+      }
+      return;
+    }
+
+    try {
+      setIsLoading(true);
+      const results = await searchWords(searchQuery);
+      setWords(results.words);
+    } catch (error) {
+      console.error('Search failed:', error);
+      setWords([]);
+    } finally {
+      setIsLoading(false);
+    }
+  }, []);
+
+  // Load words when opened
+  useEffect(() => {
+    if (open && !query) {
+      performSearch("");
+    }
+  }, [open, query, performSearch]);
+
+  // Handle search query changes
+  useEffect(() => {
+    if (debouncedQuery) {
+      performSearch(debouncedQuery);
+    }
+  }, [debouncedQuery, performSearch]);
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
@@ -30,20 +119,25 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         onValueChange={setQuery}
       />
       <CommandList>
-        <CommandEmpty>No results found.</CommandEmpty>
-        <CommandGroup heading={`${totalCount} words in total`}>
-          {words.map((word) => (
-            <CommandItem
-              key={word}
-              onSelect={() => {
-                router.push(`/words/${word}`);
-                onOpenChange(false);
-              }}
-            >
-              {word}
-            </CommandItem>
-          ))}
-        </CommandGroup>
+        {isLoading ? (
+          <CommandEmpty>Searching words...</CommandEmpty>
+        ) : words.length === 0 ? (
+          <CommandEmpty>No results found.</CommandEmpty>
+        ) : (
+          <CommandGroup>
+            {words.map((word) => (
+              <CommandItem
+                key={word}
+                onSelect={() => {
+                  router.push(`/words/${encodeURIComponent(word)}`);
+                  onOpenChange(false);
+                }}
+              >
+                {word}
+              </CommandItem>
+            ))}
+          </CommandGroup>
+        )}
       </CommandList>
     </CommandDialog>
   );

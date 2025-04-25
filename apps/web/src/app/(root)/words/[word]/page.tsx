@@ -1,5 +1,6 @@
 import { Separator } from "@/components/ui/separator";
-import { capitalize, getWord } from "@/lib/utils";
+import { capitalize } from "@/lib/utils";
+import { getWord } from "@/lib/words";
 import { TWord } from "@/types/word";
 import { Quote } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
@@ -17,7 +18,13 @@ export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
 
   try {
-    const { word, details } = await getWord(paramWord);
+    const result = await getWord(paramWord);
+    
+    if (!result) {
+      return <WordNotFound word={paramWord} />;
+    }
+
+    const { word, details } = result;
 
     return (
       <div className="mx-auto max-w-3xl py-16 px-6">
@@ -31,6 +38,7 @@ export default async function WordPage({ params }: WordPageProps) {
       </div>
     );
   } catch (error) {
+    console.error('Error fetching word:', error);
     return <WordNotFound word={paramWord} />;
   }
 }

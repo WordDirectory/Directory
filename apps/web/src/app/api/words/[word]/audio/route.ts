@@ -1,14 +1,14 @@
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
-import { words } from '@/data/words';
 import { audioRateLimit } from '@/lib/rate-limit';
+import { wordExists } from '@/lib/supabase/queries';
 
 // Default voice ID for a natural, clear voice from ElevenLabs
 const DEFAULT_VOICE_ID = 'TX3LPaxmHKxFdv7VOQHJ';
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ word: string }> }
+  { params }: { params: { word: string } }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -19,10 +19,12 @@ export async function GET(
     // Apply stricter rate limiting for audio requests
     await audioRateLimit(ip);
 
-    const word = (await params).word.toLowerCase().trim();
+    // Decode the URL-encoded word parameter
+    const word = decodeURIComponent(params.word).trim();
     
     // Check if word exists
-    if (!words[word]) {
+    const exists = await wordExists(word);
+    if (!exists) {
       return new NextResponse(null, { status: 404 });
     }
 

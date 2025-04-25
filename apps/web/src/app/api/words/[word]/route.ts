@@ -59,7 +59,9 @@ export async function GET(
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
 
+    console.log(`[Debug] Fetching word: ${decodedWord}`);
     const result = await getWord(decodedWord);
+    console.log(`[Debug] Word fetch result:`, result ? 'Found' : 'Not found');
 
     // If word exists, return the data
     if (result) {
@@ -74,6 +76,17 @@ export async function GET(
     // If no fallback provided, return 404
     return new NextResponse(null, { status: 404 });
   } catch (error: unknown) {
+    // Detailed error logging
+    console.error('[Word API Error] Details:', {
+      error: error instanceof Error ? {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      } : error,
+      word: params,
+      timestamp: new Date().toISOString()
+    });
+
     if (error instanceof Error && error.message === 'Too many requests') {
       return new NextResponse(null, { 
         status: 429,

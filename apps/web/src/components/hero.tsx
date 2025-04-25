@@ -8,7 +8,7 @@ export function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
-    <section className="relative w-full overflow-hidden px-4">
+    <section className="relative w-full overflow-hidden px-8">
       <div className="container mx-auto flex flex-col items-center justify-center gap-16 py-24 lg:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">

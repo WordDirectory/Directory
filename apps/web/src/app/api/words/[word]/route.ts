@@ -55,6 +55,7 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get('fallback');
+    const next = searchParams.get('next');
     
     // Decode the URL-encoded word parameter
     const { word } = await params;
@@ -64,6 +65,11 @@ export async function GET(
     console.log(`[Debug] Fetching word: ${capitalizedWord}`);
     const result = await getWord(capitalizedWord);
     console.log(`[Debug] Word fetch result:`, result ? 'Found' : 'Not found');
+
+    // If word exists and we have a next URL, redirect there
+    if (result && next) {
+      return NextResponse.redirect(next);
+    }
 
     // If word exists, return the data
     if (result) {

@@ -19,7 +19,7 @@ export async function HEAD(
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
-    const capitalizedWord = decodedWord.toUpperCase();
+    const capitalizedWord = decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1);
     const result = await getWord(capitalizedWord);
     
     if (result) {
@@ -59,7 +59,7 @@ export async function GET(
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
-    const capitalizedWord = decodedWord.toUpperCase();
+    const capitalizedWord = decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1);
 
     console.log(`[Debug] Fetching word: ${capitalizedWord}`);
     const result = await getWord(capitalizedWord);

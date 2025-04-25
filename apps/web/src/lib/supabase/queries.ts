@@ -14,40 +14,77 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
 }
 
 export async function getWord(word: string): Promise<{ word: string; details: TWord } | null> {
-  // First get the word
-  const { data: wordData, error: wordError } = await supabase
-    .from('words')
-    .select('id, word')
-    .eq('word', word)
-    .single()
+  try {
+    console.log(`[Supabase] Fetching word: ${word}`);
+    
+    // First get the word
+    const { data: wordData, error: wordError } = await supabase
+      .from('words')
+      .select('id, word')
+      .eq('word', word)
+      .single()
 
-  if (wordError || !wordData) return null
+    if (wordError) {
+      console.error('[Supabase] Word fetch error:', {
+        error: wordError,
+        word,
+        timestamp: new Date().toISOString()
+      });
+      return null;
+    }
 
-  // Then get all definitions for this word
-  const { data: definitionsData, error: definitionsError } = await supabase
-    .from('definitions')
-    .select(`
-      id,
-      text,
-      examples (
-        text
-      )
-    `)
-    .eq('word_id', wordData.id)
+    if (!wordData) {
+      console.log(`[Supabase] Word not found: ${word}`);
+      return null;
+    }
 
-  if (definitionsError) throw definitionsError
+    console.log(`[Supabase] Fetching definitions for word_id: ${wordData.id}`);
+    
+    // Then get all definitions for this word
+    const { data: definitionsData, error: definitionsError } = await supabase
+      .from('definitions')
+      .select(`
+        id,
+        text,
+        examples (
+          text
+        )
+      `)
+      .eq('word_id', wordData.id)
 
-  // Transform the data to match our TWord type
-  const details: TWord = {
-    definitions: definitionsData?.map((def) => ({
-      text: def.text,
-      examples: def.examples?.map(e => e.text) ?? []
-    })) ?? []
-  }
+    if (definitionsError) {
+      console.error('[Supabase] Definitions fetch error:', {
+        error: definitionsError,
+        wordId: wordData.id,
+        word,
+        timestamp: new Date().toISOString()
+      });
+      throw definitionsError;
+    }
 
-  return {
-    word: wordData.word,
-    details
+    // Transform the data to match our TWord type
+    const details: TWord = {
+      definitions: definitionsData?.map((def) => ({
+        text: def.text,
+        examples: def.examples?.map(e => e.text) ?? []
+      })) ?? []
+    }
+
+    return {
+      word: wordData.word,
+      details
+    }
+  } catch (error) {
+    console.error('[Supabase] Unexpected error in getWord:', {
+      error: error instanceof Error ? {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      } : error,
+      word,
+      timestamp: new Date().toISOString()
+    });
+    throw error;
   }
 }
 

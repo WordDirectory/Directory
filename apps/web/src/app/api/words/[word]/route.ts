@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { rateLimit } from '@/lib/rate-limit';
 import { getWord } from '@/lib/supabase/queries';
+import { APIError } from '@/types/api';
 
 export async function HEAD(
   request: Request,
@@ -81,8 +82,14 @@ export async function GET(
       return NextResponse.redirect(fallback);
     }
 
-    // If no fallback provided, return 404
-    return new NextResponse(null, { status: 404 });
+    // If no fallback provided, return structured 404 error
+    return NextResponse.json(
+      {
+        message: `Word "${capitalizedWord}" not found`,
+        status: 404
+      } satisfies APIError,
+      { status: 404 }
+    );
   } catch (error: unknown) {
     // Detailed error logging
     console.error('[Word API Error] Details:', {

@@ -33,8 +33,8 @@ const roadmapItems: {
     title: "Scaling up",
     description: "As we add more words, we'll need to handle things a little differently",
     status: {
-      text: "In progress",
-      complete: false
+      text: "Completed",
+      complete: true
     },
   },
   {

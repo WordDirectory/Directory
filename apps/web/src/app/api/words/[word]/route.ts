@@ -5,7 +5,7 @@ import { getWord } from '@/lib/supabase/queries';
 
 export async function HEAD(
   request: Request,
-  { params }: { params: { word: string } }
+  { params }: { params: Promise<{ word: string }> }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -17,8 +17,9 @@ export async function HEAD(
     await rateLimit(ip);
     
     // Decode the URL-encoded word parameter
-    const word = decodeURIComponent(params.word).trim();
-    const result = await getWord(word);
+    const { word } = await params;
+    const decodedWord = decodeURIComponent(word).trim();
+    const result = await getWord(decodedWord);
     
     if (result) {
       return new NextResponse(null, { status: 200 });
@@ -40,7 +41,7 @@ export async function HEAD(
 
 export async function GET(
   request: Request,
-  { params }: { params: { word: string } }
+  { params }: { params: Promise<{ word: string }> }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -53,10 +54,12 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get('fallback');
+    
     // Decode the URL-encoded word parameter
-    const word = decodeURIComponent(params.word).trim();
+    const { word } = await params;
+    const decodedWord = decodeURIComponent(word).trim();
 
-    const result = await getWord(word);
+    const result = await getWord(decodedWord);
 
     // If word exists, return the data
     if (result) {

@@ -8,9 +8,8 @@ const DEFAULT_VOICE_ID = 'TX3LPaxmHKxFdv7VOQHJ';
 
 export async function GET(
   request: Request,
-  context: Promise<{ params: { word: string } }>
+  { params }: { params: Promise<{ word: string }> }
 ) {
-  const { params } = await context;
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
     const headersList = await headers();
@@ -21,10 +20,11 @@ export async function GET(
     await audioRateLimit(ip);
 
     // Decode the URL-encoded word parameter
-    const word = decodeURIComponent(params.word).trim();
+    const { word } = await params;
+    const decodedWord = decodeURIComponent(word).trim();
     
     // Check if word exists
-    const exists = await wordExists(word);
+    const exists = await wordExists(decodedWord);
     if (!exists) {
       return new NextResponse(null, { status: 404 });
     }
@@ -40,7 +40,7 @@ export async function GET(
           'xi-api-key': process.env.ELEVEN_LABS_API_KEY!,
         },
         body: JSON.stringify({
-          text: word,
+          text: decodedWord,
           model_id: 'eleven_multilingual_v2',
           voice_settings: {
             stability: 0.75,

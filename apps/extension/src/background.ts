@@ -24,9 +24,10 @@ const extractWord = (query: string): string | null => {
 };
 
 function handleSelectedWord(word: string, tabId: number) {
-  const cleanWord = word.toLowerCase().trim();
+  const cleanWord = word.trim();
+  const capitalizedWord = cleanWord.charAt(0).toUpperCase() + cleanWord.slice(1).toLowerCase();
   chrome.tabs.create({
-    url: `https://worddirectory.app/api/words/${encodeURIComponent(cleanWord)}`
+    url: `https://worddirectory.app/api/words/${encodeURIComponent(capitalizedWord)}`
   });
 }
 
@@ -58,8 +59,10 @@ chrome.webNavigation.onBeforeNavigate.addListener((details) => {
     if (query) {
       const word = extractWord(query);
       if (word) {
+        const cleanWord = word.trim();
+        const capitalizedWord = cleanWord.charAt(0).toUpperCase() + cleanWord.slice(1).toLowerCase();
         chrome.tabs.update(details.tabId, {
-          url: `https://worddirectory.app/api/words/${encodeURIComponent(word)}?fallback=${encodeURIComponent(details.url)}`
+          url: `https://worddirectory.app/api/words/${encodeURIComponent(capitalizedWord)}?fallback=${encodeURIComponent(details.url)}`
         });
       }
     }

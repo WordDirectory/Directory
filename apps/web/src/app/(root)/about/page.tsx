@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <main className="relative w-full overflow-hidden px-4">
+    <main className="relative w-full overflow-hidden px-8">
       <div className="container mx-auto max-w-4xl py-20">
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">About Word Directory</h1>

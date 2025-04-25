@@ -8,7 +8,7 @@ const DEFAULT_VOICE_ID = 'TX3LPaxmHKxFdv7VOQHJ';
 
 export async function GET(
   request: Request,
-  { params }: { params: { word: string } }
+  context: { params: { word: string } }
 ) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
@@ -20,7 +20,7 @@ export async function GET(
     await audioRateLimit(ip);
 
     // Decode the URL-encoded word parameter
-    const word = decodeURIComponent(params.word).trim();
+    const word = decodeURIComponent(context.params.word).trim();
     
     // Check if word exists
     const exists = await wordExists(word);

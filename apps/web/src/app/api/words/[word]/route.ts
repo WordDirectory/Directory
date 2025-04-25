@@ -43,6 +43,8 @@ export async function GET(
   request: Request,
   { params }: { params: Promise<{ word: string }> }
 ) {
+  console.log('🚨 API ROUTE HIT - IF YOU SEE THIS, LOGGING IS WORKING 🚨');
+  
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
     const headersList = await headers();

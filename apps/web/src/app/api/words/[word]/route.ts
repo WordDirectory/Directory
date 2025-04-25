@@ -19,7 +19,8 @@ export async function HEAD(
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
-    const result = await getWord(decodedWord);
+    const capitalizedWord = decodedWord.toUpperCase();
+    const result = await getWord(capitalizedWord);
     
     if (result) {
       return new NextResponse(null, { status: 200 });
@@ -58,9 +59,10 @@ export async function GET(
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
+    const capitalizedWord = decodedWord.toUpperCase();
 
-    console.log(`[Debug] Fetching word: ${decodedWord}`);
-    const result = await getWord(decodedWord);
+    console.log(`[Debug] Fetching word: ${capitalizedWord}`);
+    const result = await getWord(capitalizedWord);
     console.log(`[Debug] Word fetch result:`, result ? 'Found' : 'Not found');
 
     // If word exists, return the data

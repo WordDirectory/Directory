@@ -62,8 +62,8 @@ const roadmapItems: {
     },
   },
   {
-    title: "API",
-    description: "An API to get definitions for a word, finding words, etc.",
+    title: "Public API",
+    description: "A public API to get definitions for a word, finding words, etc.",
     status: {
       text: "Not started",
       complete: false

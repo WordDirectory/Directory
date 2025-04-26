@@ -21,9 +21,13 @@ Type "[word] definition" in any search engine (Google, Bing, DuckDuckGo, Yahoo) 
 2. Run `npm run build`
 3. Install the extension locally
 4. Test everything works
-5. Commit your changes
-6. Push them to GitHub
-7. Go to [Developer Dashboard - Chrome](https://chrome.google.com/u/3/webstore/devconsole/69bbd504-9f67-4ea0-80b6-b195bfaea834/nmbecimflkmecigpnnflifohoghhgdah/edit/package)
-8. Update the package and submit review
+5. Make a `.zip` file containing:
+   - `icons/`
+   - `dist/`
+   - `manifest.json`
+6. Commit your changes
+7. Push them to GitHub
+8. Go to [Developer Dashboard - Chrome](https://chrome.google.com/u/3/webstore/devconsole/69bbd504-9f67-4ea0-80b6-b195bfaea834/nmbecimflkmecigpnnflifohoghhgdah/edit/package)
+9. Update the package and submit review
 
 That's it

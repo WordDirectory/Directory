@@ -39,7 +39,7 @@ const roadmapItems: {
   },
   {
     title: "Community feedback",
-    description: "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through community feedback.",
+    description: "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through the community.",
     status: {
       text: "Not started",
       complete: false

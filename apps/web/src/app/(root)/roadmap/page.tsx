@@ -41,7 +41,7 @@ const roadmapItems: {
     title: "Twitter bot",
     description: "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
     status: {
-      text: "Not started",
+      text: "In progress",
       complete: false
     },
   },

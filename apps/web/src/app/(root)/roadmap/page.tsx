@@ -23,7 +23,7 @@ const roadmapItems: {
   {
     title: "Add 150.000 words",
     description:
-      "Expect 150.000 words soon. Current count is around 60.000 but they're not live yet. Estimated completion date: May 4th, 2025.",
+      "Expect 150.000 words soon. Current count is around 70.000 but they're not live yet. Estimated completion date: May 4th, 2025.",
     status: {
       text: "In progress",
       complete: false

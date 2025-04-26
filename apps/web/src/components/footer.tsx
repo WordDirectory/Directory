@@ -12,21 +12,20 @@ export function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <Image
                 src="/logo.png"
-                alt="Word Directory Logo"
+                alt="WordDirectory Logo"
                 width={28}
                 height={28}
               />
-              <h3 className="font-bold text-lg">Word Directory</h3>
+              <h3 className="font-bold text-lg">WordDirectory</h3>
             </div>
             <p className="text-sm text-muted-foreground max-w-md">
-              A dictionary that actually makes sense.{" "}
-              <span className="font-medium">
-                No more looking up words to understand other words.
-              </span>
+              Words explained like a friend would - no complex terms, just
+              simple human explanations for everyday words, slang, and tricky
+              terms.
             </p>
           </div>
 
-          {/* Product links */}
+          {/* Quick Start */}
           <div>
             <h4 className="font-semibold mb-4">Product</h4>
             <nav className="flex flex-col gap-2">
@@ -37,32 +36,38 @@ export function Footer() {
                 About
               </Link>
               <Link
+                href="https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Install extension
+              </Link>
+              <Link
+                href="/docs"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+              >
+                Documentation
+              </Link>
+              <Link
                 href="/roadmap"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
               >
                 Roadmap
               </Link>
+            </nav>
+          </div>
+
+          {/* Support & Legal */}
+          <div>
+            <h4 className="font-semibold mb-4">Support & Legal</h4>
+            <nav className="flex flex-col gap-2">
               <Link
                 href="/faq"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
               >
                 FAQ
               </Link>
-              <Link
-                href="https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah"
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Chrome extension
-              </Link>
-            </nav>
-          </div>
-
-          {/* Legal & Support */}
-          <div>
-            <h4 className="font-semibold mb-4">Legal & Support</h4>
-            <nav className="flex flex-col gap-2">
               <Link
                 href="/contact"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
@@ -88,7 +93,7 @@ export function Footer() {
         {/* Social and copyright */}
         <div className="mt-8 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground order-2 md:order-1">
-            &copy; Word Directory. All rights reserved.
+            &copy; WordDirectory. All rights reserved.
           </p>
           <div className="flex gap-4 order-1 md:order-2">
             <Link

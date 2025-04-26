@@ -1,5 +1,9 @@
 # Word Directory
 
+Introducing an innovative, enterprise-grade linguistic comprehension platform leveraging cutting-edge...
+
+Just kidding.
+
 Words explained simply, because fuck complex definitions.
 
 ## What's the problem?

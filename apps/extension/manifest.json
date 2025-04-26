@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "WordDirectory",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Words explained simply, because fuck complex definitions. No more reading 10 definitions to understand one word.",
   "permissions": [
     "webNavigation",

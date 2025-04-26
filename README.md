@@ -36,6 +36,7 @@ We don't waste time on:
 
 ## Features
 
+- 📚 **60,000+ Words**: No, this is not the end. Anyways, let's add 150k words!
 - 🔍 **Stupid simple**: Every definition is written like a human would explain it
 - 🎯 **Hear it right**: Click the speaker and hear the word pronounced perfectly (powered by ElevenLabs AI)
 - 🚀 **Always Available**: 24/7 access to definitions that make sense (except if Vercel is down lmao)

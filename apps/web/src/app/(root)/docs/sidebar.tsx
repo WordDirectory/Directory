@@ -115,9 +115,14 @@ function SidebarItem({
 
 export function SidebarToggle() {
   const { isCollapsed, toggleCollapse } = useSidebarStore();
+  const isMobile = useIsMobile();
+
+  if (!isMobile) {
+    return null;
+  }
 
   return (
-    <Button variant="outline" onClick={toggleCollapse} size="icon">
+    <Button variant="outline" onClick={toggleCollapse} size="icon" className="absolute top-8 left-12">
       {isCollapsed ? <PanelLeft /> : <PanelRight />}
     </Button>
   );

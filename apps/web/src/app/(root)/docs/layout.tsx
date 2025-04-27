@@ -8,8 +8,8 @@ export default function DocsLayout({
   return (
     <div className="flex relative">
       <Sidebar />
-      <div className="relative w-full overflow-hidden px-8">
-        <div className="container mx-auto max-w-4xl py-8 space-y-12">
+      <div className="relative w-full overflow-hidden px-12">
+        <div className="container mx-auto max-w-4xl py-14 space-y-12">
           <SidebarToggle />
           <div className="flex-1">{children}</div>
         </div>

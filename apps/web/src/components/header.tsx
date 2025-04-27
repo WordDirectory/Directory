@@ -4,10 +4,19 @@ import { SearchInput } from "./search-input";
 import Link from "next/link";
 import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
+import { usePathname } from "next/navigation";
+import { cn } from "@/lib/utils";
 
 export function Header() {
+  const pathname = usePathname();
+
   return (
-    <header className="w-full px-4 border-b bg-background flex h-14 items-center justify-between">
+    <header
+      className={cn(
+        "w-full px-4 border-b bg-background flex h-14 items-center justify-between",
+        pathname.includes("/docs") && "sticky top-0 z-50"
+      )}
+    >
       <div className="mr-4 flex">
         <Link href="/" className="flex items-center space-x-3">
           <Image

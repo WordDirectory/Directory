@@ -44,10 +44,6 @@ const faqs = [
     answer: "Use them however you want - they're not copyrighted. Just don't do anything illegal with them because that's on you, not us. We're focused on explaining words, not policing how people use them."
   },
   {
-    question: "How accurate are your definitions?",
-    answer: "Look, we're not trying to sound like some stuck-up dictionary that makes you feel dumb. We explain shit how a friend would explain it to you. We try to get the meaning right, but we skip all that fancy linguistic jargon."
-  },
-  {
     question: "How often do you add new words?",
     answer: "We're adding words all the time, especially the ones people actually use and ask for. We're also planning a feature where people like you can request words to be added and the community can vote on them."
   },

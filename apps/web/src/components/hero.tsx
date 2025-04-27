@@ -9,16 +9,16 @@ export function Hero() {
   const wordCount = 70000;
 
   const formatNumber = (num: number) => {
-    return num.toLocaleString('en-US', {
+    return num.toLocaleString("en-US", {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0,
-      useGrouping: true
+      useGrouping: true,
     });
   };
 
   return (
     <section className="relative w-full overflow-hidden px-8">
-      <div className="container mx-auto flex flex-col items-center justify-center gap-16 py-24 lg:py-32">
+      <div className="container mx-auto flex flex-col items-center justify-center gap-16 py-20 md:py-24 lg:py-32">
         <div className="mx-auto max-w-4xl text-center">
           <h1 className="mb-6 text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl">
             Words explained simply

@@ -17,7 +17,9 @@ export function Sidebar() {
   const isActive = (path: string) => pathname === path;
 
   useEffect(() => {
-    setCollapsed(true);
+    if (isMobile) {
+      setCollapsed(true);
+    }
   }, [pathname]);
 
   // Set initial collapsed state based on mobile

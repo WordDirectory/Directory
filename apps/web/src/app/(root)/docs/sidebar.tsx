@@ -17,7 +17,6 @@ export function Sidebar() {
   const isActive = (path: string) => pathname === path;
 
   useEffect(() => {
-    console.log("pathname", pathname);
     setCollapsed(true);
   }, [pathname]);
 

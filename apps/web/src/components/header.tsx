@@ -7,6 +7,11 @@ import { ThemeToggle } from "./theme-toggle";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 
+/**
+ * Renders the site header with logo, title, search input, and theme toggle.
+ *
+ * The header becomes sticky with elevated z-index on documentation pages.
+ */
 export function Header() {
   const pathname = usePathname();
 

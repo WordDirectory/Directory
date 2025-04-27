@@ -1,5 +1,10 @@
 import { Sidebar, SidebarToggle } from "./sidebar";
 
+/**
+ * Provides a documentation page layout with a sidebar, toggle control, and main content area.
+ *
+ * @param children - The main content to display within the layout.
+ */
 export default function DocsLayout({
   children,
 }: {

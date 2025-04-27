@@ -3,6 +3,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { FaChrome } from "react-icons/fa6";
 
+/**
+ * Renders the main documentation and introduction page for WordDirectory, outlining its features, usage methods, and coverage.
+ *
+ * Displays sections on getting started, quick start options, unique aspects of the service, types of words explained, upcoming features, and support resources.
+ */
 export default function DocsPage() {
   return (
     <div className="space-y-12">

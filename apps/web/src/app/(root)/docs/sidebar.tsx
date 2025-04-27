@@ -10,6 +10,11 @@ import { PanelLeft, PanelRight } from "lucide-react";
 import { useIsMobile } from "@/hooks/use-mobile";
 import { useEffect } from "react";
 
+/**
+ * Renders a responsive sidebar navigation for documentation, with sections for consumers and developers.
+ *
+ * The sidebar automatically collapses on route changes and adapts its state based on device type. On mobile devices, an overlay appears when the sidebar is expanded, allowing users to collapse it by clicking outside.
+ */
 export function Sidebar() {
   const pathname = usePathname();
   const { isCollapsed, setCollapsed } = useSidebarStore();
@@ -90,6 +95,13 @@ export function Sidebar() {
   );
 }
 
+/**
+ * Renders a sidebar navigation link with active state styling.
+ *
+ * @param label - The text label to display for the navigation item.
+ * @param href - The destination URL for the navigation link.
+ * @param isActive - Whether the navigation item is currently active.
+ */
 function SidebarItem({
   label,
   href,
@@ -112,6 +124,11 @@ function SidebarItem({
   );
 }
 
+/**
+ * Renders a button that toggles the sidebar's collapsed state.
+ *
+ * Displays a left or right panel icon depending on whether the sidebar is currently collapsed.
+ */
 export function SidebarToggle() {
   const { isCollapsed, toggleCollapse } = useSidebarStore();
 

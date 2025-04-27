@@ -1,6 +1,11 @@
 import { Separator } from "@/components/ui/separator";
 import Link from "next/link";
 
+/**
+ * Renders the API documentation page for the WordDirectory application.
+ *
+ * Displays detailed information about available REST API endpoints, including their usage, parameters, response codes, rate limiting policies, and contact information for support.
+ */
 export default function DocsPage() {
   return (
     <div className="space-y-12">

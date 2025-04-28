@@ -59,8 +59,7 @@ scripts/decode-jwt.py
 .cursor/rules/add_words.mdc
 .cursor/rules/searching_words.mdc
 
-scripts/node_modules
-scripts/config.json
+scripts/
 
 /apps/extension/dist
 /apps/extension/node_modules

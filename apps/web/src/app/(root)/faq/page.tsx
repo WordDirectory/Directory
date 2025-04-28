@@ -46,10 +46,6 @@ const faqs = [
   {
     question: "How often do you add new words?",
     answer: "We're adding words all the time, especially the ones people actually use and ask for. We're also planning a feature where people like you can request words to be added and the community can vote on them."
-  },
-  {
-    question: "How are the definitions created?",
-    answer: "WordDirectory employs proprietary algorithmic frameworks to analyze and reconstruct dictionary entries. Through advanced computational processing and custom-built linguistic models, the system transforms traditional definitions into more accessible formats. Our methodology combines established lexicographical principles with modern data processing techniques to ensure accuracy while maintaining readability."
   }
 ];
 

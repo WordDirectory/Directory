@@ -6,10 +6,11 @@ import { ArrowUp, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { CustomPopover } from "./ui/custom-popover";
-
+import { usePathname } from "next/navigation";
 const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
 export function AskAI() {
+  const pathname = usePathname();
   const [message, setMessage] = useState("");
 
   // Load message from localStorage on mount
@@ -24,6 +25,11 @@ export function AskAI() {
   useEffect(() => {
     localStorage.setItem(MESSAGE_STORAGE_KEY, message);
   }, [message]);
+
+  // Don't render if not on a word page
+  if (!pathname?.includes("words/")) {
+    return null;
+  }
 
   return (
     <CustomPopover

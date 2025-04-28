@@ -6,6 +6,7 @@ import Image from "next/image";
 import { ThemeToggle } from "./theme-toggle";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
+import { AskAI } from "./ask-ai";
 
 export function Header() {
   const pathname = usePathname();
@@ -33,7 +34,10 @@ export function Header() {
 
       <div className="flex w-full items-center justify-between gap-4 md:w-auto md:flex-none">
         <SearchInput />
-        <ThemeToggle />
+        <div className="flex items-center gap-3">
+          <ThemeToggle />
+          <AskAI />
+        </div>
       </div>
     </header>
   );

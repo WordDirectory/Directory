@@ -3,6 +3,7 @@
 import React, { useEffect, useRef, useState, useLayoutEffect } from "react";
 import { createPortal } from "react-dom";
 import { cn } from "@/lib/utils";
+import { motion, AnimatePresence } from "motion/react";
 
 interface Props {
   children: React.ReactNode;
@@ -11,7 +12,10 @@ interface Props {
 }
 
 export function CustomPopover({ children, trigger, className }: Props) {
-  const [position, setPosition] = useState({ top: 0, left: 0 });
+  const [position, setPosition] = useState<{
+    top: number;
+    left: number;
+  } | null>(null);
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
@@ -40,19 +44,16 @@ export function CustomPopover({ children, trigger, className }: Props) {
     if (!isOpen) return;
 
     const handleMouseDown = (e: MouseEvent) => {
-      // If clicking trigger or inside content, ignore
       if (
         triggerRef.current?.contains(e.target as Node) ||
         contentRef.current?.contains(e.target as Node)
       )
         return;
 
-      // Store initial mouse position
       mouseStartPosRef.current = { x: e.clientX, y: e.clientY };
     };
 
     const handleMouseUp = (e: MouseEvent) => {
-      // If no start position or clicking trigger/content, ignore
       if (
         !mouseStartPosRef.current ||
         triggerRef.current?.contains(e.target as Node) ||
@@ -62,12 +63,10 @@ export function CustomPopover({ children, trigger, className }: Props) {
         return;
       }
 
-      // Calculate movement distance
       const dx = e.clientX - mouseStartPosRef.current.x;
       const dy = e.clientY - mouseStartPosRef.current.y;
       const distance = Math.sqrt(dx * dx + dy * dy);
 
-      // Only close if it was a click (minimal movement)
       if (distance <= 5) {
         setIsOpen(false);
       }
@@ -75,27 +74,55 @@ export function CustomPopover({ children, trigger, className }: Props) {
       mouseStartPosRef.current = null;
     };
 
+    const handleEscapeKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setIsOpen(false);
+      }
+    };
+
     document.addEventListener("mousedown", handleMouseDown);
     document.addEventListener("mouseup", handleMouseUp);
+    document.addEventListener("keydown", handleEscapeKey);
+
     return () => {
       document.removeEventListener("mousedown", handleMouseDown);
       document.removeEventListener("mouseup", handleMouseUp);
+      document.removeEventListener("keydown", handleEscapeKey);
     };
   }, [isOpen]);
 
-  // Initial position
+  // Initial position calculation
   useLayoutEffect(() => {
     if (!isMounted || !isOpen) return;
 
-    // Run on next frame to ensure DOM is ready
-    requestAnimationFrame(() => {
-      updatePosition();
-    });
-  }, [isMounted, isOpen]);
+    // Create a hidden div to measure dimensions
+    const tempDiv = document.createElement("div");
+    tempDiv.style.visibility = "hidden";
+    tempDiv.style.position = "fixed";
+    tempDiv.style.width = "18rem"; // w-72 = 18rem
+    tempDiv.className = cn(
+      "fixed z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none",
+      className
+    );
+    document.body.appendChild(tempDiv);
+
+    // Calculate initial position
+    const triggerRect = triggerRef.current?.getBoundingClientRect();
+    if (triggerRect) {
+      const contentWidth = tempDiv.getBoundingClientRect().width;
+      setPosition({
+        top: triggerRect.bottom + window.scrollY + 8,
+        left: Math.max(8, triggerRect.right - contentWidth + window.scrollX),
+      });
+    }
+
+    // Clean up
+    document.body.removeChild(tempDiv);
+  }, [isMounted, isOpen, className]);
 
   // Update position on scroll/resize
   useEffect(() => {
-    if (!isMounted || !isOpen) return;
+    if (!isMounted) return;
 
     window.addEventListener("scroll", updatePosition, true);
     window.addEventListener("resize", updatePosition);
@@ -104,7 +131,7 @@ export function CustomPopover({ children, trigger, className }: Props) {
       window.removeEventListener("scroll", updatePosition, true);
       window.removeEventListener("resize", updatePosition);
     };
-  }, [isMounted, isOpen]);
+  }, [isMounted]);
 
   if (!isMounted) return null;
 
@@ -117,21 +144,34 @@ export function CustomPopover({ children, trigger, className }: Props) {
       >
         {trigger}
       </div>
-      {isOpen &&
+      {position &&
         createPortal(
-          <div
-            ref={contentRef}
-            className={cn(
-              "fixed z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none animate-in fade-in-0 zoom-in-95",
-              className
+          <AnimatePresence mode="wait" onExitComplete={() => setPosition(null)}>
+            {isOpen && (
+              <motion.div
+                ref={contentRef}
+                className={cn(
+                  "fixed z-50 w-72 rounded-md border bg-popover p-4 text-popover-foreground shadow-md outline-none",
+                  className
+                )}
+                style={{
+                  top: position.top,
+                  left: position.left,
+                }}
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={{
+                  type: "spring",
+                  stiffness: 500,
+                  damping: 30,
+                  mass: 0.5,
+                }}
+              >
+                {children}
+              </motion.div>
             )}
-            style={{
-              top: position.top,
-              left: position.left,
-            }}
-          >
-            {children}
-          </div>,
+          </AnimatePresence>,
           document.body
         )}
     </>

@@ -1,14 +1,33 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ShineBorder } from "./shine-border";
-import { Sparkles } from "lucide-react";
+import { ArrowUp, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
-import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
+import { Textarea } from "./ui/textarea";
+import { CustomPopover } from "./ui/custom-popover";
+
+const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
 export function AskAI() {
+  const [message, setMessage] = useState("");
+
+  // Load message from localStorage on mount
+  useEffect(() => {
+    const savedMessage = localStorage.getItem(MESSAGE_STORAGE_KEY);
+    if (savedMessage) {
+      setMessage(savedMessage);
+    }
+  }, []);
+
+  // Save message to localStorage whenever it changes
+  useEffect(() => {
+    localStorage.setItem(MESSAGE_STORAGE_KEY, message);
+  }, [message]);
+
   return (
-    <Popover>
-      <PopoverTrigger asChild>
+    <CustomPopover
+      trigger={
         <div className="relative w-fit overflow-hidden rounded-full">
           <Button variant="outline" size="icon" className="rounded-full">
             <Sparkles strokeWidth={1.5} className="h-4 w-4 text-[#ff7893]" />
@@ -20,18 +39,24 @@ export function AskAI() {
             className="rounded-full"
           />
         </div>
-      </PopoverTrigger>
-      <PopoverContent className="p-5">
-        <div className="space-y-4">
-          <h4 className="font-bold leading-none">Ask AI</h4>
-          <p className="text-sm text-muted-foreground">
-            Get help understanding words and concepts with our AI assistant.
-          </p>
-          <div className="flex justify-end">
-            <Button size="sm" variant="outline">Coming Soon</Button>
-          </div>
+      }
+    >
+      <div className="space-y-4">
+        <div className="relative">
+          <Textarea
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            placeholder="Ask me anything..."
+            className="p-0 pr-6 min-h-[120px] resize-none !rounded-none !ring-0 border-none shadow-none"
+          />
+          <Button
+            size="icon"
+            className="rounded-full w-7 h-7 absolute bottom-1 right-1"
+          >
+            <ArrowUp className="h-4 w-4" />
+          </Button>
         </div>
-      </PopoverContent>
-    </Popover>
+      </div>
+    </CustomPopover>
   );
 }

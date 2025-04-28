@@ -59,14 +59,8 @@ scripts/decode-jwt.py
 .cursor/rules/add_words.mdc
 .cursor/rules/searching_words.mdc
 
-scripts/add_words.ts
-scripts/english_words.txt
-scripts/all_english_words.txt
-scripts/get_words.ts
-scripts/tsconfig.json
-scripts/lowercase_all_words.ts
+scripts/node_modules
+scripts/config.json
 
 /apps/extension/dist
 /apps/extension/node_modules
-
-scripts/

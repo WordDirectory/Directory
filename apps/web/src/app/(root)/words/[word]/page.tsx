@@ -16,36 +16,38 @@ interface WordPageProps {
 }
 
 // Generate metadata for each word page
-export async function generateMetadata({ params }: WordPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: WordPageProps): Promise<Metadata> {
   const { word: paramWord } = await params;
   const result = await getWord(paramWord);
 
   if (!result) {
     return {
       title: `${capitalize(paramWord)} - Word Not Found | WordDirectory`,
-      description: `Definition for "${paramWord}" not found. Explore our extensive dictionary for human-readable definitions of other words.`
+      description: `Definition for "${paramWord}" not found. Explore our extensive dictionary for human-readable definitions of other words.`,
     };
   }
 
   const { word, details } = result;
-  const definition = details.definitions[0]?.text || '';
+  const definition = details.definitions[0]?.text || "";
 
   return {
     title: `${capitalize(word)} Definition - Simple English Explanation | WordDirectory`,
-    description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? '...' : ''}`,
+    description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
     keywords: [
       word,
       `${word} definition`,
       `${word} meaning`,
       `what does ${word} mean`,
       `define ${word}`,
-      'dictionary',
-      'definitions',
-      'word meanings'
-    ].join(', '),
+      "dictionary",
+      "definitions",
+      "word meanings",
+    ].join(", "),
     alternates: {
-      canonical: `https://worddirectory.app/words/${encodeURIComponent(word)}`
-    }
+      canonical: `https://worddirectory.app/words/${encodeURIComponent(word)}`,
+    },
   };
 }
 
@@ -54,7 +56,7 @@ export default async function WordPage({ params }: WordPageProps) {
 
   try {
     const result = await getWord(paramWord);
-    
+
     if (!result) {
       return <WordNotFound word={paramWord} />;
     }
@@ -73,7 +75,7 @@ export default async function WordPage({ params }: WordPageProps) {
       </div>
     );
   } catch (error) {
-    console.error('Error fetching word:', error);
+    console.error("Error fetching word:", error);
     return <WordNotFound word={paramWord} />;
   }
 }
@@ -91,7 +93,7 @@ function WordHeader({ word, details }: { word: string; details: TWord }) {
             className="h-20 w-20 object-contain"
           />
         )}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
             {capitalize(word)}
           </h1>

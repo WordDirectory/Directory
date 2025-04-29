@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server'
 import { headers } from 'next/headers'
 import { rateLimit } from '@/lib/rate-limit'
-import { searchWords } from '@/lib/supabase/queries'
+import { searchWords } from '@/lib/supabase/server/queries'
 
 export async function GET(request: Request) {
   try {
@@ -9,7 +9,7 @@ export async function GET(request: Request) {
     const headersList = await headers()
     const forwardedFor = headersList.get('x-forwarded-for')
     const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1'
-    
+
     // Apply rate limiting
     await rateLimit(ip)
 
@@ -24,7 +24,7 @@ export async function GET(request: Request) {
   } catch (error: unknown) {
     if (error instanceof Error) {
       if (error.message === 'Too many requests') {
-        return new NextResponse(null, { 
+        return new NextResponse(null, {
           status: 429,
           headers: {
             'Retry-After': '60'
@@ -32,7 +32,7 @@ export async function GET(request: Request) {
         })
       }
     }
-    
+
     return new NextResponse(null, { status: 500 })
   }
 } 

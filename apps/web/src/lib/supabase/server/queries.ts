@@ -1,4 +1,4 @@
-import { supabase } from './server'
+import { supabase } from '.'
 import { TWord } from '@/types/word'
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
@@ -16,7 +16,7 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
 export async function getWord(word: string): Promise<{ word: string; details: TWord } | null> {
   try {
     console.log(`[Supabase] Fetching word: ${word}`);
-    
+
     // First get the word
     const { data: wordData, error: wordError } = await supabase
       .from('words')
@@ -39,7 +39,7 @@ export async function getWord(word: string): Promise<{ word: string; details: TW
     }
 
     console.log(`[Supabase] Fetching definitions for word_id: ${wordData.id}`);
-    
+
     // Then get all definitions for this word
     const { data: definitionsData, error: definitionsError } = await supabase
       .from('definitions')
@@ -108,7 +108,7 @@ export async function getRandomWords(limit: number = 50): Promise<string[]> {
   if (!count) return []
 
   // Generate random indexes
-  const randomIndexes = Array.from({ length: limit }, () => 
+  const randomIndexes = Array.from({ length: limit }, () =>
     Math.floor(Math.random() * count) + 1
   )
 

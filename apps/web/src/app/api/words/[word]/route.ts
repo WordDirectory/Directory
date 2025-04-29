@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 import { headers } from 'next/headers';
 import { rateLimit } from '@/lib/rate-limit';
-import { getWord } from '@/lib/supabase/queries';
+import { getWord } from '@/lib/supabase/server/queries';
 import { APIError } from '@/types/api';
 
 export async function HEAD(
@@ -13,24 +13,24 @@ export async function HEAD(
     const headersList = await headers();
     const forwardedFor = headersList.get('x-forwarded-for');
     const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1';
-    
+
     // Apply rate limiting
     await rateLimit(ip);
-    
+
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
     const capitalizedWord = decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
     const result = await getWord(capitalizedWord);
-    
+
     if (result) {
       return new NextResponse(null, { status: 200 });
     }
-    
+
     return new NextResponse(null, { status: 404 });
   } catch (error: unknown) {
     if (error instanceof Error && error.message === 'Too many requests') {
-      return new NextResponse(null, { 
+      return new NextResponse(null, {
         status: 429,
         headers: {
           'Retry-After': '60'
@@ -50,14 +50,14 @@ export async function GET(
     const headersList = await headers();
     const forwardedFor = headersList.get('x-forwarded-for');
     const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1';
-    
+
     // Apply rate limiting
     await rateLimit(ip);
 
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get('fallback');
     const next = searchParams.get('next');
-    
+
     // Decode the URL-encoded word parameter
     const { word } = await params;
     const decodedWord = decodeURIComponent(word).trim();
@@ -103,7 +103,7 @@ export async function GET(
     });
 
     if (error instanceof Error && error.message === 'Too many requests') {
-      return new NextResponse(null, { 
+      return new NextResponse(null, {
         status: 429,
         headers: {
           'Retry-After': '60'

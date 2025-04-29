@@ -20,7 +20,7 @@ async function getUniqueFirstLetters() {
     .select('word')
 
   if (error) throw error;
-  
+
   // Get unique first letters
   const letters = new Set(data?.map(w => w.word[0].toLowerCase()) || []);
   return Array.from(letters).sort();
@@ -42,7 +42,7 @@ export default async function sitemap({ id }: { id: string }): Promise<MetadataR
 
   // Get all words starting with this letter
   const words = await getWordsByLetter(id);
-  
+
   return words.map((word) => ({
     url: `${baseUrl}/words/${encodeURIComponent(word.word)}`,
     lastModified: word.updated_at || new Date(),

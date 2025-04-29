@@ -3,7 +3,7 @@ import { headers } from 'next/headers'
 import { aiRateLimit } from '@/lib/rate-limit'
 import { google } from '@ai-sdk/google'
 import { generateText } from 'ai'
-import { getWord } from '@/lib/supabase/queries'
+import { getWord } from '@/lib/supabase/server/queries'
 import { z } from 'zod'
 
 // Request validation schema
@@ -84,7 +84,7 @@ ${message}
 Response:`,
             temperature: 0.7,
             maxTokens: 500,
-            
+
         })
 
         return NextResponse.json({ response: text })

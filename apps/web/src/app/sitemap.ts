@@ -11,12 +11,12 @@ async function getUniqueFirstLetters(): Promise<string[]> {
     console.error('Error fetching unique first letters:', error);
     throw error;
   }
-  
+
   return data.map((item: { first_letter: string }) => item.first_letter);
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NODE_ENV === 'development' 
+  const baseUrl = process.env.NODE_ENV === 'development'
     ? `http://${process.env.NEXT_PUBLIC_SITE_URL}`
     : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
 
@@ -35,7 +35,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: `${baseUrl}/privacy`, lastModified: new Date() },
     { url: `${baseUrl}/terms`, lastModified: new Date() },
     { url: `${baseUrl}/roadmap`, lastModified: new Date() },
-    
+
     // Letter-based sitemaps
     ...letters.map((letter: string) => ({
       url: `${baseUrl}/words/sitemap/${letter}.xml`,

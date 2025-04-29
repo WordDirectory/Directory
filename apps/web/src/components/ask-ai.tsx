@@ -4,6 +4,7 @@ import { ShineBorder } from "./shine-border";
 import { ArrowUp, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
+import { AutoResizeTextarea } from "./auto-resize-textarea";
 import { CustomPopover } from "./ui/custom-popover";
 import { usePathname } from "next/navigation";
 import { Message as AIMessage } from "ai";
@@ -172,21 +173,16 @@ export function AskAI() {
             </div>
             <Separator />
             <div className="relative">
-              <Textarea
+              <AutoResizeTextarea
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Ask me anything..."
-                className="p-0 pr-6 min-h-[20px] h-auto resize-none rounded-none !ring-0 border-none shadow-none"
+                className="p-0 pr-6 resize-none rounded-none !ring-0 border-none shadow-none"
                 disabled={isLoading}
+                autoFocus
+                minRows={1}
+                maxRows={6}
               />
-              <Button
-                size="icon"
-                className="rounded-full w-7 h-7 absolute bottom-0 right-0 !pointer-events-auto disabled:hover:bg-primary"
-                disabled={message.length === 0 || isLoading}
-                onClick={handleSendMessage}
-              >
-                <ArrowUp className="h-4 w-4" />
-              </Button>
             </div>
           </div>
         )}

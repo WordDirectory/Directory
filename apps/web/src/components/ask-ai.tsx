@@ -10,6 +10,7 @@ import { Message as AIMessage } from "ai";
 import { cn } from "@/lib/utils";
 import { Separator } from "./ui/separator";
 import { toast } from "sonner";
+import { useTheme } from "next-themes";
 
 const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
@@ -20,6 +21,7 @@ export function AskAI() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const word = pathname?.split("/words/")[1]?.split("/")[0] || "";
+  const { theme } = useTheme();
 
   // Load message from localStorage on mount
   useEffect(() => {
@@ -124,7 +126,11 @@ export function AskAI() {
             <Sparkles strokeWidth={1.5} className="h-4 w-4 text-[#ff7893]" />
           </Button>
           <ShineBorder
-            shineColor={["#FFADF0", "#FFC3A3"]}
+            shineColor={
+              theme === "dark"
+                ? ["#FFADF050", "#FFC3A350"]
+                : ["#FFADF095", "#FFC3A395"]
+            }
             duration={12}
             borderWidth={2}
             className="rounded-full"

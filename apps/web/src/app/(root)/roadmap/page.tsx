@@ -139,7 +139,7 @@ export default function RoadmapPage() {
                         className={cn(
                           "shadow-none",
                           item.status.complete
-                            ? "!bg-green-500"
+                            ? "!bg-green-500 text-white"
                             : "!bg-foreground/5 text-accent-foreground"
                         )}
                       >

@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
-import { LogIn, LogOut, Moon, Settings, Sun } from "lucide-react";
+import { LogIn, LogOut, Moon, Settings, Sun, CreditCard } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { getFirstLetter } from "@/lib/utils";
@@ -67,6 +67,10 @@ export function UserDropdown() {
               <Settings className="h-4 w-4" />
               Settings
             </DropdownMenuItem>
+            <DropdownMenuItem>
+              <CreditCard className="h-4 w-4" />
+              Billing
+            </DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem
               variant="destructive"
@@ -75,10 +79,6 @@ export function UserDropdown() {
             >
               <LogOut className="h-4 w-4" />
               Log out
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <Settings className="h-4 w-4" />
-              Billing
             </DropdownMenuItem>
           </>
         )}

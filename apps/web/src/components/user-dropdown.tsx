@@ -44,7 +44,7 @@ export function UserDropdown() {
           </AvatarFallback>
         </Avatar>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="min-w-36 -mr-2" align="end">
+      <DropdownMenuContent className="min-w-40 -mr-2" align="end">
         <DropdownMenuItem
           onClick={() => setTheme(theme === "light" ? "dark" : "light")}
         >

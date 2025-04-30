@@ -89,6 +89,7 @@ export async function GET(
       {
         message: `Word "${capitalizedWord}" not found`,
         status: 404,
+        code: "WORD_NOT_FOUND",
       } satisfies APIError,
       { status: 404 }
     );

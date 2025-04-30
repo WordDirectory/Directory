@@ -56,7 +56,7 @@ export async function POST(request: Request) {
     const { message, word } = result.data;
 
     // Get word details from database
-    const wordDetails = await getWord(word);
+    const wordDetails = await getWord(decodeURIComponent(word));
     if (!wordDetails) {
       return NextResponse.json(
         { message: `Word "${word}" not found`, status: 404 },

@@ -44,6 +44,12 @@ export function Footer() {
                 Install extension
               </Link>
               <Link
+                href="/pricing"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
+              >
+                Pricing
+              </Link>
+              <Link
                 href="/docs"
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors w-fit"
               >

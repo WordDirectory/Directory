@@ -15,6 +15,20 @@
       "when": 1745949363987,
       "tag": "0001_jittery_starbolt",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1746029658694,
+      "tag": "0002_hot_secret_warriors",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1746032050244,
+      "tag": "0003_medical_kylun",
+      "breakpoints": true
     }
   ]
 }

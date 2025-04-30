@@ -1,6 +1,6 @@
 import { db } from "@/lib/db";
-import { words } from "@/lib/db/schema";
-import { eq, ilike, sql } from "drizzle-orm";
+import { aiUsage, words } from "@/lib/db/schema";
+import { desc, eq, ilike, sql } from "drizzle-orm";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
   const results = await db.transaction(async (tx) => {
@@ -93,4 +93,10 @@ export async function getUniqueFirstLetters() {
     .orderBy(sql`LOWER(LEFT(${words.word}, 1))`);
 
   return letters.map((l) => l.firstLetter);
+}
+export async function getAIUsage(userId: string) {
+  return db.query.aiUsage.findFirst({
+    where: eq(aiUsage.userId, userId),
+    orderBy: (aiUsage) => desc(aiUsage.createdAt),
+  });
 }

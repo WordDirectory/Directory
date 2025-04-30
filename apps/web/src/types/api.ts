@@ -22,10 +22,36 @@ export type SearchWordsResponse = {
   totalCount: number;
 };
 
-export type APIError = {
+export type AIUsageResponse = {
+  current: number;
+  limit: number;
+  plan: "free" | "plus";
+  nextReset: string;
+};
+
+// Base API error type
+export type APIErrorBase = {
   message: string;
   status: number;
 };
+
+// Specific error types
+export type AIError = APIErrorBase & {
+  code: "AUTH_REQUIRED" | "SUBSCRIPTION_LIMIT_REACHED" | "RATE_LIMIT_EXCEEDED";
+  usage?: AIUsageResponse;
+};
+
+export type WordError = APIErrorBase & {
+  code: "WORD_NOT_FOUND" | "INVALID_WORD";
+};
+
+export type ValidationError = APIErrorBase & {
+  code: "VALIDATION_ERROR";
+  errors: Record<string, string[]>;
+};
+
+// Union type for all possible API errors
+export type APIError = AIError | WordError | ValidationError;
 
 // Helper type for our internal use
 export type WordWithRelations = Word & {

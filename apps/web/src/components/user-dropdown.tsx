@@ -10,13 +10,13 @@ import {
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
 import { LogIn, LogOut, Moon, Settings, Sun, CreditCard } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { getFirstLetter } from "@/lib/utils";
 
 export function UserDropdown() {
-  const { theme, setTheme } = useTheme();
   const { data: session } = useSession();
+  const pathname = usePathname();
   const router = useRouter();
 
   const handleSignOut = async () => {
@@ -26,7 +26,9 @@ export function UserDropdown() {
       if (error) {
         throw new Error(error.message);
       }
-      router.push("/");
+      if (!pathname.includes("words/")) {
+        router.push("/");
+      }
     } catch (error) {
       toast.error("Error signing out", {
         description: error instanceof Error ? error.message : "Unknown error",
@@ -45,44 +47,57 @@ export function UserDropdown() {
         </Avatar>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-40 -mr-2" align="end">
-        <DropdownMenuItem
-          onClick={() => setTheme(theme === "light" ? "dark" : "light")}
-        >
-          {theme === "light" ? (
-            <Sun className="h-4 w-4 rotate-0 scale-100 transition-all" />
-          ) : (
-            <Moon className="h-4 w-4 rotate-0 scale-100 transition-all" />
+        <>
+          {session && (
+            <>
+              <DropdownMenuItem onClick={() => router.push("/settings")}>
+                <Settings className="h-4 w-4" />
+                Settings
+              </DropdownMenuItem>
+              <ThemeItem />
+              <DropdownMenuItem>
+                <CreditCard className="h-4 w-4" />
+                Billing
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              <DropdownMenuItem
+                variant="destructive"
+                className="focus:bg-red-500/10 focus:text-red-500"
+                onClick={handleSignOut}
+              >
+                <LogOut className="h-4 w-4" />
+                Log out
+              </DropdownMenuItem>
+            </>
           )}
-          {theme === "light" ? "Light" : "Dark"} theme
-        </DropdownMenuItem>
-        {!session && (
-          <DropdownMenuItem onClick={() => router.push("/auth/signup")}>
-            <LogIn className="h-4 w-4" />
-            Sign in
-          </DropdownMenuItem>
-        )}
-        {session && (
-          <>
-            <DropdownMenuItem onClick={() => router.push("/settings")}>
-              <Settings className="h-4 w-4" />
-              Settings
-            </DropdownMenuItem>
-            <DropdownMenuItem>
-              <CreditCard className="h-4 w-4" />
-              Billing
-            </DropdownMenuItem>
-            <DropdownMenuSeparator />
-            <DropdownMenuItem
-              variant="destructive"
-              className="focus:bg-red-500/10 focus:text-red-500"
-              onClick={handleSignOut}
-            >
-              <LogOut className="h-4 w-4" />
-              Log out
-            </DropdownMenuItem>
-          </>
-        )}
+          {!session && (
+            <>
+              <ThemeItem />
+              <DropdownMenuItem onClick={() => router.push("/auth/signup")}>
+                <LogIn className="h-4 w-4" />
+                Sign in
+              </DropdownMenuItem>
+            </>
+          )}
+        </>
       </DropdownMenuContent>
     </DropdownMenu>
+  );
+}
+
+function ThemeItem() {
+  const { theme, setTheme } = useTheme();
+
+  return (
+    <DropdownMenuItem
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+    >
+      {theme === "light" ? (
+        <Sun className="h-4 w-4 rotate-0 scale-100 transition-all" />
+      ) : (
+        <Moon className="h-4 w-4 rotate-0 scale-100 transition-all" />
+      )}
+      {theme === "light" ? "Light" : "Dark"} theme
+    </DropdownMenuItem>
   );
 }

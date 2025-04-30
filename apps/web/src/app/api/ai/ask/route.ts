@@ -1,10 +1,15 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
-import { aiRateLimit } from "@/lib/rate-limit";
+import { rateLimit } from "@/lib/rate-limit";
 import { google } from "@ai-sdk/google";
 import { generateText } from "ai";
-import { getWord } from "@/lib/db/queries";
+import { getAIUsage, getWord } from "@/lib/db/queries";
 import { z } from "zod";
+import { auth } from "@/lib/auth";
+import { db } from "@/lib/db";
+import { aiUsage, subscriptions } from "@/lib/db/schema";
+import { eq, sql } from "drizzle-orm";
+import { APIError, AIError, ValidationError } from "@/types/api";
 
 // Request validation schema
 const requestSchema = z.object({
@@ -36,21 +41,59 @@ export async function POST(request: Request) {
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
 
     // Apply rate limiting
-    await aiRateLimit(ip);
+    await rateLimit(ip);
 
     // Parse and validate request body
     const body = await request.json();
     const result = requestSchema.safeParse(body);
 
     if (!result.success) {
-      return NextResponse.json(
-        {
-          message: "Invalid request data",
-          errors: result.error.errors,
-          status: 400,
-        },
-        { status: 400 }
-      );
+      const error: ValidationError = {
+        message: "Invalid request data",
+        code: "VALIDATION_ERROR",
+        status: 400,
+        errors: result.error.flatten().fieldErrors,
+      };
+      return NextResponse.json(error, { status: 400 });
+    }
+
+    const session = await auth.api.getSession(request);
+
+    if (!session || !session.user.id) {
+      const error: AIError = {
+        message: "You must be logged in to use AI features",
+        status: 401,
+        code: "AUTH_REQUIRED",
+      };
+      return NextResponse.json(error, { status: 401 });
+    }
+
+    console.log("Fetching AI usage for user", session.user.id);
+    const [aiUsageData, subscriptionData] = await Promise.all([
+      getAIUsage(session.user.id),
+      db.query.subscriptions.findFirst({
+        where: eq(subscriptions.referenceId, session.user.id),
+      }),
+    ]);
+    console.log("AI usage", aiUsageData);
+
+    if (aiUsageData) {
+      // const limit = subscriptionData?.plan === "plus" ? 1000 : 10;
+      const limit = 200000;
+      if (aiUsageData.count >= limit) {
+        const error: AIError = {
+          message: "AI usage limit reached",
+          status: 429,
+          code: "SUBSCRIPTION_LIMIT_REACHED",
+          usage: {
+            current: aiUsageData.count,
+            limit,
+            plan: subscriptionData?.plan || "free",
+            nextReset: aiUsageData.resetAt.toISOString(),
+          },
+        };
+        return NextResponse.json(error, { status: 429 });
+      }
     }
 
     const { message, word } = result.data;
@@ -58,10 +101,12 @@ export async function POST(request: Request) {
     // Get word details from database
     const wordDetails = await getWord(decodeURIComponent(word));
     if (!wordDetails) {
-      return NextResponse.json(
-        { message: `Word "${word}" not found`, status: 404 },
-        { status: 404 }
-      );
+      const error: APIError = {
+        message: `Word "${word}" not found`,
+        status: 404,
+        code: "WORD_NOT_FOUND",
+      };
+      return NextResponse.json(error, { status: 404 });
     }
 
     // Generate response using Gemini
@@ -92,6 +137,18 @@ Response:`,
       maxTokens: 500,
     });
 
+    // After generating the Gemini response but before returning it
+    if (session && session.user.id) {
+      // Increment the usage count
+      await db
+        .update(aiUsage)
+        .set({
+          count: sql`${aiUsage.count} + 1`,
+          updatedAt: new Date(),
+        })
+        .where(eq(aiUsage.userId, session.user.id));
+    }
+
     return NextResponse.json({ response: text });
   } catch (error: unknown) {
     // First, log the full error details
@@ -114,19 +171,17 @@ Response:`,
 
     if (error instanceof Error) {
       if (error.message === "Too many AI requests") {
-        return NextResponse.json(
-          {
-            message:
-              "Daily AI request limit of 300 requests reached. Please try again tomorrow.",
-            status: 429,
+        const rateLimitError: AIError = {
+          message: "Too many requests. Please slow down.",
+          status: 429,
+          code: "RATE_LIMIT_EXCEEDED",
+        };
+        return NextResponse.json(rateLimitError, {
+          status: 429,
+          headers: {
+            "Retry-After": "60",
           },
-          {
-            status: 429,
-            headers: {
-              "Retry-After": "86400", // 24 hours
-            },
-          }
-        );
+        });
       }
 
       // Return the actual error message in development

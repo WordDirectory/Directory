@@ -1,6 +1,12 @@
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "./db";
+import { stripe } from "@better-auth/stripe";
+import Stripe from "stripe";
+
+const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+  apiVersion: "2025-02-24.acacia",
+});
 
 export const auth = betterAuth({
   database: drizzleAdapter(db, {
@@ -18,6 +24,31 @@ export const auth = betterAuth({
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
     },
   },
+  plugins: [
+    stripe({
+      stripeClient,
+      stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
+      createCustomerOnSignUp: true,
+      subscription: {
+        enabled: true,
+        plans: [
+          {
+            name: "free",
+            limits: {
+              aiUsage: 10,
+            },
+          },
+          {
+            name: "plus",
+            priceId: process.env.STRIPE_PLUS_PRICE_ID!,
+            limits: {
+              aiUsage: 1000,
+            },
+          },
+        ],
+      },
+    }),
+  ],
   appName: "WordDirectory",
 });
 

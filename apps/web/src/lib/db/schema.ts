@@ -8,6 +8,7 @@ import {
   serial,
   index,
   uniqueIndex,
+  integer,
 } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
@@ -18,6 +19,7 @@ export const users = pgTable("users", {
   image: text("image"),
   createdAt: timestamp("created_at").notNull(),
   updatedAt: timestamp("updated_at").notNull(),
+  stripeCustomerId: text("stripe_customer_id"),
 });
 
 export const sessions = pgTable("sessions", {
@@ -127,5 +129,51 @@ export const examplesRelations = relations(examples, ({ one }) => ({
   definition: one(definitions, {
     fields: [examples.definitionId],
     references: [definitions.id],
+  }),
+}));
+
+export const subscriptions = pgTable("subscriptions", {
+  id: text("id").primaryKey(),
+  plan: text("plan", { enum: ["free", "plus"] }).notNull(),
+  referenceId: text("reference_id").notNull(),
+  stripeCustomerId: text("stripe_customer_id"),
+  stripeSubscriptionId: text("stripe_subscription_id"),
+  status: text("status"),
+  periodStart: timestamp("period_start"),
+  periodEnd: timestamp("period_end"),
+  cancelAtPeriodEnd: boolean("cancel_at_period_end"),
+  seats: integer("seats"),
+});
+
+export const subscriptionsRelations = relations(subscriptions, ({ one }) => ({
+  user: one(users, {
+    fields: [subscriptions.referenceId],
+    references: [users.id],
+  }),
+}));
+
+export const aiUsage = pgTable(
+  "ai_usage",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    count: integer("count").notNull().default(0),
+    resetAt: timestamp("reset_at").notNull(), // When the counter resets
+    createdAt: timestamp("created_at").defaultNow(),
+    updatedAt: timestamp("updated_at").defaultNow(),
+  },
+  (table) => [
+    index("ai_usage_user_id_idx").on(table.userId),
+    index("ai_usage_reset_at_idx").on(table.resetAt),
+  ]
+);
+
+// Add the relation to users
+export const aiUsageRelations = relations(aiUsage, ({ one }) => ({
+  user: one(users, {
+    fields: [aiUsage.userId],
+    references: [users.id],
   }),
 }));

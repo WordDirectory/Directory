@@ -76,6 +76,10 @@ export function UserDropdown() {
               <LogOut className="h-4 w-4" />
               Log out
             </DropdownMenuItem>
+            <DropdownMenuItem>
+              <Settings className="h-4 w-4" />
+              Billing
+            </DropdownMenuItem>
           </>
         )}
       </DropdownMenuContent>

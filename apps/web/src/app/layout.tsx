@@ -4,6 +4,7 @@ import { ThemeProvider } from "next-themes";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -78,6 +79,7 @@ export default function RootLayout({
           <TooltipProvider>
             {children}
             <Analytics />
+            <Toaster />
           </TooltipProvider>
         </ThemeProvider>
       </body>

@@ -1,10 +1,10 @@
-import { NextResponse } from 'next/server';
-import { headers } from 'next/headers';
-import { audioRateLimit } from '@/lib/rate-limit';
-import { wordExists } from '@/lib/supabase/server/queries';
+import { NextResponse } from "next/server";
+import { headers } from "next/headers";
+import { audioRateLimit } from "@/lib/rate-limit";
+import { wordExists } from "@/lib/db/queries";
 
 // Default voice ID for a natural, clear voice from ElevenLabs
-const DEFAULT_VOICE_ID = 'TX3LPaxmHKxFdv7VOQHJ';
+const DEFAULT_VOICE_ID = "TX3LPaxmHKxFdv7VOQHJ";
 
 export async function GET(
   request: Request,
@@ -13,8 +13,8 @@ export async function GET(
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default
     const headersList = await headers();
-    const forwardedFor = headersList.get('x-forwarded-for');
-    const ip = forwardedFor ? forwardedFor.split(',')[0] : '127.0.0.1';
+    const forwardedFor = headersList.get("x-forwarded-for");
+    const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
 
     // Apply stricter rate limiting for audio requests
     await audioRateLimit(ip);
@@ -33,15 +33,15 @@ export async function GET(
     const response = await fetch(
       `https://api.elevenlabs.io/v1/text-to-speech/${DEFAULT_VOICE_ID}`,
       {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Accept': 'audio/mpeg',
-          'Content-Type': 'application/json',
-          'xi-api-key': process.env.ELEVEN_LABS_API_KEY!,
+          Accept: "audio/mpeg",
+          "Content-Type": "application/json",
+          "xi-api-key": process.env.ELEVEN_LABS_API_KEY!,
         },
         body: JSON.stringify({
           text: decodedWord,
-          model_id: 'eleven_multilingual_v2',
+          model_id: "eleven_multilingual_v2",
           voice_settings: {
             stability: 0.75,
             similarity_boost: 0.75,
@@ -51,7 +51,7 @@ export async function GET(
     );
 
     if (!response.ok) {
-      console.error('ElevenLabs API error:', await response.text());
+      console.error("ElevenLabs API error:", await response.text());
       return new NextResponse(null, { status: 500 });
     }
 
@@ -61,24 +61,24 @@ export async function GET(
     // Return the audio with appropriate headers
     return new NextResponse(audioData, {
       headers: {
-        'Content-Type': 'audio/mpeg',
-        'Cache-Control': 'public, max-age=31536000', // Cache for 1 year
+        "Content-Type": "audio/mpeg",
+        "Cache-Control": "public, max-age=31536000", // Cache for 1 year
       },
     });
   } catch (error: unknown) {
-    console.error('Error in audio generation:', error);
+    console.error("Error in audio generation:", error);
 
     if (error instanceof Error) {
-      if (error.message === 'Too many audio requests') {
+      if (error.message === "Too many audio requests") {
         return new NextResponse(null, {
           status: 429,
           headers: {
-            'Retry-After': '60'
-          }
+            "Retry-After": "60",
+          },
         });
       }
     }
 
     return new NextResponse(null, { status: 500 });
   }
-} 
+}

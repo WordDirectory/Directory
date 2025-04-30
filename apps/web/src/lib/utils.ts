@@ -10,3 +10,7 @@ export function cn(...inputs: ClassValue[]) {
 export function capitalize(text: string) {
   return text.charAt(0).toUpperCase() + text.slice(1);
 }
+
+export function getFirstLetter(text: string) {
+  return text.charAt(0).toUpperCase();
+}

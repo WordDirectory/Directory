@@ -57,6 +57,26 @@ export function UserDropdown() {
     }
   };
 
+  const handleBillingPortal = async () => {
+    try {
+      const response = await fetch("/api/stripe/portal", {
+        method: "POST",
+      });
+
+      const { url } = await response.json();
+
+      if (url) {
+        window.location.href = url;
+      } else {
+        throw new Error("No portal URL received");
+      }
+    } catch (error) {
+      toast.error("Error opening billing portal", {
+        description: error instanceof Error ? error.message : "Unknown error",
+      });
+    }
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -83,7 +103,7 @@ export function UserDropdown() {
                 Settings
               </DropdownMenuItem>
               <ThemeItem />
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={handleBillingPortal}>
                 <CreditCard className="h-4 w-4" />
                 Billing
               </DropdownMenuItem>

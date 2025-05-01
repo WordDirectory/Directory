@@ -15,10 +15,12 @@ import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { getFirstLetter } from "@/lib/utils";
 import { useEffect, useState } from "react";
+import { upgrade } from "./upgrade-button";
 
 export function UserDropdown() {
   const { data: session } = useSession();
   const [isPlus, setIsPlus] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -77,6 +79,19 @@ export function UserDropdown() {
     }
   };
 
+  const handleUpgrade = async () => {
+    setIsLoading(true);
+    try {
+      await upgrade();
+    } catch (error) {
+      toast.error("Failed to upgrade", {
+        description: error instanceof Error ? error.message : "Unknown error",
+      });
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
@@ -103,12 +118,24 @@ export function UserDropdown() {
                 Settings
               </DropdownMenuItem>
               <ThemeItem />
-              {isPlus && (
-                <DropdownMenuItem onClick={handleBillingPortal}>
-                  <CreditCard className="h-4 w-4" />
-                  Billing
-                </DropdownMenuItem>
-              )}
+
+              <DropdownMenuItem
+                onClick={isPlus ? handleBillingPortal : handleUpgrade}
+                disabled={isLoading}
+              >
+                {isPlus ? (
+                  <>
+                    <CreditCard className="h-4 w-4" />
+                    Billing
+                  </>
+                ) : (
+                  <>
+                    <CreditCard className="h-4 w-4" />
+                    Upgrade
+                  </>
+                )}
+              </DropdownMenuItem>
+
               <DropdownMenuSeparator />
               <DropdownMenuItem
                 variant="destructive"

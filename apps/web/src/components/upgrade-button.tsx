@@ -5,23 +5,26 @@ import { toast } from "sonner";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 
+export async function upgrade() {
+  const { error } = await authClient.subscription.upgrade({
+    plan: "plus",
+    successUrl: "/settings",
+    cancelUrl: "/settings",
+  });
+
+  if (error) {
+    throw new Error(error.message);
+  }
+}
+
 export function UpgradeButton() {
   const [isLoading, setIsLoading] = useState(false);
-  
+
   const handleUpgrade = async () => {
     setIsLoading(true);
     try {
-      const { error } = await authClient.subscription.upgrade({
-        plan: "plus",
-        successUrl: "/settings",
-        cancelUrl: "/settings",
-      });
-
-      if (error) {
-        throw new Error(error.message);
-      }
+      await upgrade();
     } catch (error) {
-      console.error("Upgrade error:", error);
       toast.error("Failed to upgrade", {
         description: error instanceof Error ? error.message : "Unknown error",
       });

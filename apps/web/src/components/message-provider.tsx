@@ -2,8 +2,9 @@
 import { useSearchParams } from "next/navigation";
 import { useEffect } from "react";
 import { toast } from "sonner";
+import { Suspense } from "react";
 
-export function MessageProvider() {
+function MessageProviderContent() {
   const searchParams = useSearchParams();
 
   useEffect(() => {
@@ -14,4 +15,12 @@ export function MessageProvider() {
   }, [searchParams]);
 
   return null;
+}
+
+export function MessageProvider() {
+  return (
+    <Suspense>
+      <MessageProviderContent />
+    </Suspense>
+  );
 }

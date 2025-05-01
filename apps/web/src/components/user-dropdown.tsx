@@ -103,10 +103,12 @@ export function UserDropdown() {
                 Settings
               </DropdownMenuItem>
               <ThemeItem />
-              <DropdownMenuItem onClick={handleBillingPortal}>
-                <CreditCard className="h-4 w-4" />
-                Billing
-              </DropdownMenuItem>
+              {isPlus && (
+                <DropdownMenuItem onClick={handleBillingPortal}>
+                  <CreditCard className="h-4 w-4" />
+                  Billing
+                </DropdownMenuItem>
+              )}
               <DropdownMenuSeparator />
               <DropdownMenuItem
                 variant="destructive"

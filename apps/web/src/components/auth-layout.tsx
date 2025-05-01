@@ -8,7 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import {
   Form,
   FormControl,
@@ -32,7 +32,7 @@ interface AuthLayoutProps {
   mode: "login" | "signup";
 }
 
-export function AuthLayout({ mode }: AuthLayoutProps) {
+function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const { theme, setTheme } = useTheme();
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -325,5 +325,19 @@ export function AuthLayout({ mode }: AuthLayoutProps) {
         </div>
       </div>
     </div>
+  );
+}
+
+export function AuthLayout(props: AuthLayoutProps) {
+  return (
+    <Suspense
+      fallback={
+        <div className="flex min-h-dvh items-center justify-center">
+          <Loader2 className="h-8 w-8 animate-spin" />
+        </div>
+      }
+    >
+      <AuthLayoutInner {...props} />
+    </Suspense>
   );
 }

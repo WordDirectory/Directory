@@ -106,6 +106,10 @@ export function AuthLayout({ mode }: AuthLayoutProps) {
         provider: "google",
       });
       if (error) throw error;
+
+      if (shouldSubscribe) {
+        await upgrade();
+      }
     } catch (error) {
       toast.error("Error signing in with Google", {
         description: error instanceof Error ? error.message : "Unknown error",

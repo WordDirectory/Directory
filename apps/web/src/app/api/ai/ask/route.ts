@@ -11,6 +11,12 @@ import { aiUsage, subscriptions } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
 import { APIError, AIError, ValidationError } from "@/types/api";
 
+// At the top of apps/web/src/app/api/ai/ask/route.ts
+console.log("[Build Debug] Environment variables:", {
+  hasApiKey: !!process.env.GOOGLE_GENERATIVE_AI_API_KEY,
+  envKeys: Object.keys(process.env).filter((key) => key.includes("GOOGLE")),
+});
+
 // Request validation schema
 const requestSchema = z.object({
   message: z
@@ -19,6 +25,9 @@ const requestSchema = z.object({
     .max(50000, "Message is too long"),
   word: z.string().min(1, "Word is required").max(100, "Word is too long"),
 });
+
+// Before model initialization
+console.log("[Build Debug] About to initialize model");
 
 // Initialize the Gemini model
 const model = google("gemini-2.0-flash", {
@@ -32,6 +41,8 @@ const model = google("gemini-2.0-flash", {
     { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "OFF" },
   ],
 });
+
+console.log("[Build Debug] Model initialized");
 
 export async function POST(request: Request) {
   try {

@@ -14,11 +14,31 @@ import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { getFirstLetter } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 export function UserDropdown() {
   const { data: session } = useSession();
+  const [isPlus, setIsPlus] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
+
+  useEffect(() => {
+    const getSubscriptions = async () => {
+      const { data: subscriptions } = await authClient.subscription.list();
+
+      if (subscriptions) {
+        const activeSubscription = subscriptions.find(
+          (sub) => sub.status === "active" || sub.status === "trialing"
+        );
+
+        if (activeSubscription) {
+          setIsPlus(true);
+        }
+      }
+    };
+
+    getSubscriptions();
+  }, []);
 
   const handleSignOut = async () => {
     try {
@@ -47,8 +67,10 @@ export function UserDropdown() {
               {getFirstLetter(session?.user?.name || "U")}
             </AvatarFallback>
           </Avatar>
-          {true && (
-            <Badge className="absolute -bottom-1 -right-1 p-0.5 px-1 text-[0.5rem] bg-background text-foreground pointer-events-none">Plus</Badge>
+          {isPlus && (
+            <Badge className="absolute -bottom-1 -right-1 p-0.5 px-1 text-[0.5rem] bg-background text-foreground pointer-events-none">
+              Plus
+            </Badge>
           )}
         </div>
       </DropdownMenuTrigger>

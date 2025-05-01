@@ -20,11 +20,40 @@ export default async function sitemap({
     throw new Error("NEXT_PUBLIC_SITE_URL is not set");
   }
 
-  const words = await getWordsByLetter(id);
+  const words = [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+  ];
 
   return words.map((word) => ({
-    url: `${baseUrl}/words/${encodeURIComponent(word.word)}`,
-    lastModified: word.updatedAt || new Date(),
+    // url: `${baseUrl}/words/${encodeURIComponent(word.word)}`,
+    url: `${baseUrl}/words/${encodeURIComponent(word)}`,
+    // lastModified: word.updatedAt || new Date(),
+    lastModified: new Date(),
     changeFrequency: "monthly" as const,
     priority: 0.8,
   }));

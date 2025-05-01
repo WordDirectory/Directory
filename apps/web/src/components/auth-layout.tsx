@@ -104,12 +104,9 @@ export function AuthLayout({ mode }: AuthLayoutProps) {
     try {
       const { error } = await authClient.signIn.social({
         provider: "google",
+        callbackURL: shouldSubscribe ? "/subscribe" : undefined, // Let it use the default callback if not subscribing
       });
       if (error) throw error;
-
-      if (shouldSubscribe) {
-        await upgrade();
-      }
     } catch (error) {
       toast.error("Error signing in with Google", {
         description: error instanceof Error ? error.message : "Unknown error",

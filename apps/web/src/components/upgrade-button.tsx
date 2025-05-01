@@ -34,7 +34,7 @@ export function UpgradeButton() {
           statusText: string;
         };
         if (betterAuthError.statusText === "UNAUTHORIZED") {
-          router.push("/auth/login?message=Let's log in first so we know where to send the pro features to!");
+          router.push("/auth/signup?message=Let's sign you up first so we know where to send the pro features to!&should_subscribe=true");
           return;
         }
       }

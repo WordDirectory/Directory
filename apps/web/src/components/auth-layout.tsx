@@ -1,7 +1,6 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { useTheme } from "next-themes";
 import { Eye, EyeOff, Loader2, Moon, Sun } from "lucide-react";
 import { FaGoogle } from "react-icons/fa6";
@@ -26,6 +25,8 @@ import {
 } from "@/lib/validation/auth-validation";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
+import { upgrade } from "./upgrade-button";
+import { useSearchParams } from "next/navigation";
 
 interface AuthLayoutProps {
   mode: "login" | "signup";
@@ -36,6 +37,8 @@ export function AuthLayout({ mode }: AuthLayoutProps) {
   const [showPassword, setShowPassword] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  const shouldSubscribe = searchParams.get("shouldSubscribe") === "true";
 
   const form = useForm<LoginValues | SignupValues>({
     resolver: zodResolver(mode === "signup" ? signupSchema : loginSchema),
@@ -72,6 +75,10 @@ export function AuthLayout({ mode }: AuthLayoutProps) {
 
         if (error) {
           throw new Error(error.message);
+        }
+
+        if (shouldSubscribe) {
+          await upgrade();
         }
       } else {
         const loginValues = values as LoginValues;

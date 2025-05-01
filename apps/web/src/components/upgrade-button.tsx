@@ -34,7 +34,7 @@ export function UpgradeButton() {
           status: number;
           statusText: string;
         };
-        if (betterAuthError.statusText === "UNAUTHORIZED") {
+        if (betterAuthError.status === 401) {
           router.push(
             "/auth/signup?message=Let's sign you up first so we know where to send the pro features to!&shouldSubscribe=true"
           );

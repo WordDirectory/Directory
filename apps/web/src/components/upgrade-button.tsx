@@ -14,6 +14,7 @@ export async function upgrade() {
   });
 
   if (error) {
+    console.error(error);
     throw new Error(error.message, { cause: error });
   }
 }

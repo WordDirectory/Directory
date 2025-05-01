@@ -12,10 +12,11 @@ import { cn } from "@/lib/utils";
 import { Separator } from "./ui/separator";
 import { toast } from "sonner";
 import { useTheme } from "next-themes";
-import { useSession } from "@/lib/auth-client";
+import { authClient, useSession } from "@/lib/auth-client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { APIError, AIError, AIUsageResponse } from "@/types/api";
+import { UpgradeButton } from "./upgrade-button";
 
 const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
@@ -286,7 +287,7 @@ function NotLoggedInUI({ router }: { router: any }) {
             className="mt-6 w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-colors"
             onClick={() => router.push("/auth/signup")}
           >
-            Create Free Account
+            Create free account
           </Button>
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Already have an account?{" "}
@@ -301,8 +302,6 @@ function NotLoggedInUI({ router }: { router: any }) {
 }
 
 function FreeTierLimitReachedUI({ usage }: { usage: AIUsageResponse }) {
-  const router = useRouter();
-
   return (
     <div className="space-y-6">
       <div className="relative overflow-hidden bg-primary-foreground p-6">
@@ -325,12 +324,7 @@ function FreeTierLimitReachedUI({ usage }: { usage: AIUsageResponse }) {
           </p>
         </div>
         <div className="mt-6 space-y-6">
-          <Button
-            className="w-full bg-primary hover:bg-primary/90 text-primary-foreground transition-colors"
-            onClick={() => router.push("/settings")}
-          >
-            Upgrade to Plus for $1/month
-          </Button>
+          <UpgradeButton />
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <div className="rounded-full bg-primary/10 p-1">

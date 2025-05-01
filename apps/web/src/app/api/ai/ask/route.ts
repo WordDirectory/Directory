@@ -63,8 +63,7 @@ export async function POST(request: Request) {
     console.log("AI usage", aiUsageData);
 
     if (aiUsageData) {
-      // const limit = subscriptionData?.plan === "plus" ? 1000 : 10;
-      const limit = 200000;
+      const limit = subscriptionData?.plan === "plus" ? 1000 : 10;
       if (aiUsageData.count >= limit) {
         const error: AIError = {
           message: "AI usage limit reached",

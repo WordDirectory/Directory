@@ -8,7 +8,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+import { UpgradeButton } from "@/components/upgrade-button";
 
 export const metadata: Metadata = {
   title: "Pricing | WordDirectory",
@@ -36,7 +36,6 @@ const plans = [
     description: "For power users who want more",
     price: "$1",
     interval: "per month",
-    href: "/settings",
     buttonText: "Upgrade now",
     buttonVariant: "primary" as const,
     features: [
@@ -105,15 +104,15 @@ export default function PricingPage() {
                 </ul>
               </div>
 
-              <Button
-                asChild
-                className={cn("mt-5 w-full", {
-                  "bg-primary hover:bg-primary/90":
-                    plan.buttonVariant === "primary",
-                })}
-              >
-                <Link href={plan.href}>{plan.buttonText}</Link>
-              </Button>
+              {plan.name === "Free" ? (
+                <Button asChild className="mt-5 w-full">
+                  <Link href="/">{plan.buttonText}</Link>
+                </Button>
+              ) : (
+                <div className="mt-5">
+                  <UpgradeButton />
+                </div>
+              )}
             </div>
           ))}
         </div>

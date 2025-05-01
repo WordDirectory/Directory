@@ -10,6 +10,7 @@ import {
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
 import { LogIn, LogOut, Moon, Settings, Sun, CreditCard } from "lucide-react";
+import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { getFirstLetter } from "@/lib/utils";
@@ -39,12 +40,17 @@ export function UserDropdown() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Avatar className="h-8 w-8 cursor-pointer">
-          <AvatarImage src={session?.user?.image || ""} alt="User avatar" />
-          <AvatarFallback className="">
-            {getFirstLetter(session?.user?.name || "U")}
-          </AvatarFallback>
-        </Avatar>
+        <div className="relative">
+          <Avatar className="h-8 w-8 cursor-pointer">
+            <AvatarImage src={session?.user?.image || ""} alt="User avatar" />
+            <AvatarFallback className="">
+              {getFirstLetter(session?.user?.name || "U")}
+            </AvatarFallback>
+          </Avatar>
+          {true && (
+            <Badge className="absolute -bottom-1 -right-1 p-0.5 px-1 text-[0.5rem] bg-background text-foreground pointer-events-none">Plus</Badge>
+          )}
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="min-w-40 -mr-2" align="end">
         <>

@@ -1,4 +1,5 @@
 import { createAuthClient } from "better-auth/react";
+import { stripeClient } from "@better-auth/stripe/client";
 
 const baseUrl =
   process.env.NODE_ENV === "development"
@@ -11,6 +12,11 @@ if (!baseUrl) {
 
 export const authClient = createAuthClient({
   baseURL: baseUrl,
+  plugins: [
+    stripeClient({
+      subscription: true,
+    }),
+  ],
 });
 
 export const { useSession } = authClient;

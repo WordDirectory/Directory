@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
+import { google } from "@ai-sdk/google";
+import { generateText } from "ai";
 import { getAIUsage, getWord } from "@/lib/db/queries";
 import { z } from "zod";
 import { auth } from "@/lib/auth";
@@ -16,6 +18,19 @@ const requestSchema = z.object({
     .min(1, "Message is required")
     .max(50000, "Message is too long"),
   word: z.string().min(1, "Word is required").max(100, "Word is too long"),
+});
+
+// Initialize the Gemini model
+const model = google("gemini-2.0-flash", {
+  safetySettings: [
+    { category: "HARM_CATEGORY_HATE_SPEECH", threshold: "OFF" },
+    {
+      category: "HARM_CATEGORY_DANGEROUS_CONTENT",
+      threshold: "BLOCK_LOW_AND_ABOVE",
+    },
+    { category: "HARM_CATEGORY_HARASSMENT", threshold: "BLOCK_LOW_AND_ABOVE" },
+    { category: "HARM_CATEGORY_SEXUALLY_EXPLICIT", threshold: "OFF" },
+  ],
 });
 
 export async function POST(request: Request) {
@@ -93,8 +108,37 @@ export async function POST(request: Request) {
       return NextResponse.json(error, { status: 404 });
     }
 
-    // After checking all conditions, increment usage count
+    // Generate response using Gemini
+    const { text } = await generateText({
+      model,
+      prompt: `
+<system>
+You are an AI assistant for WordDirectory, a website that provides simple, human-readable word definitions.
+
+The user is currently on a word page for ${word}.
+
+You must answer the user's question. It will not always be about the word, sometimes it will.
+
+Ensure your response is concise and to the point.
+</system>
+
+<context>
+Current word: ${word}
+Word details: ${JSON.stringify(wordDetails)}
+</context>
+
+<user_question>
+${message}
+</user_question>
+
+Response:`,
+      temperature: 0.7,
+      maxTokens: 500,
+    });
+
+    // After generating the Gemini response but before returning it
     if (session && session.user.id) {
+      // Increment the usage count
       await db
         .update(aiUsage)
         .set({
@@ -104,10 +148,7 @@ export async function POST(request: Request) {
         .where(eq(aiUsage.userId, session.user.id));
     }
 
-    // Return test response instead of AI
-    return NextResponse.json({
-      response: `Test response for word: ${word}. Database and usage tracking are working!`,
-    });
+    return NextResponse.json({ response: text });
   } catch (error: unknown) {
     // First, log the full error details
     const errorDetails = {

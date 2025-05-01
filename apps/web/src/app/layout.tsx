@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
+import { MessageProvider } from "@/components/message-provider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -80,6 +81,7 @@ export default function RootLayout({
             {children}
             <Analytics />
             <Toaster />
+            <MessageProvider />
           </TooltipProvider>
         </ThemeProvider>
       </body>

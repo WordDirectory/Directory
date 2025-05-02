@@ -43,15 +43,6 @@ const Logo = () => (
 );
 
 export default async function Image({ params }: { params: { word: string } }) {
-  // Load the fonts
-  const interRegular = await fetch(
-    new URL("../../../public/fonts/Inter-Regular.woff2", import.meta.url)
-  ).then((res) => res.arrayBuffer());
-
-  const interBold = await fetch(
-    new URL("../../../public/fonts/Inter-Bold.woff2", import.meta.url)
-  ).then((res) => res.arrayBuffer());
-
   const result = await getWord(params.word);
   if (!result)
     return new ImageResponse(
@@ -67,17 +58,19 @@ export default async function Image({ params }: { params: { word: string } }) {
             justifyContent: "center",
             padding: "213px 130px",
             gap: "52px",
-            fontFamily: "Inter",
+            fontFamily: "system-ui",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
             <Logo />
-            <b style={{ fontSize: "45px", color: "white" }}>WordDirectory</b>
+            <b style={{ fontSize: "45px", color: "white", fontWeight: 800 }}>
+              WordDirectory
+            </b>
           </div>
           <div
             style={{
               fontSize: "80px",
-              fontWeight: "bold",
+              fontWeight: 900,
               color: "white",
               textAlign: "center",
             }}
@@ -88,20 +81,6 @@ export default async function Image({ params }: { params: { word: string } }) {
       ),
       {
         ...size,
-        fonts: [
-          {
-            name: "Inter",
-            data: interRegular,
-            weight: 400,
-            style: "normal",
-          },
-          {
-            name: "Inter",
-            data: interBold,
-            weight: 700,
-            style: "normal",
-          },
-        ],
       }
     );
 
@@ -120,17 +99,19 @@ export default async function Image({ params }: { params: { word: string } }) {
           justifyContent: "center",
           padding: "213px 130px",
           gap: "52px",
-          fontFamily: "Inter",
+          fontFamily: "system-ui",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
           <Logo />
-          <b style={{ fontSize: "45px", color: "white" }}>WordDirectory</b>
+          <b style={{ fontSize: "45px", color: "white", fontWeight: 800 }}>
+            WordDirectory
+          </b>
         </div>
         <div
           style={{
             fontSize: "80px",
-            fontWeight: "bold",
+            fontWeight: 900,
             color: "white",
             textAlign: "center",
           }}
@@ -141,20 +122,6 @@ export default async function Image({ params }: { params: { word: string } }) {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: interRegular,
-          weight: 400,
-          style: "normal",
-        },
-        {
-          name: "Inter",
-          data: interBold,
-          weight: 700,
-          style: "normal",
-        },
-      ],
     }
   );
 }

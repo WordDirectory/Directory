@@ -77,6 +77,10 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
           throw new Error(error.message);
         }
 
+        toast.success("Check your inbox!", {
+          description: "We've sent you an email to verify your account.",
+        });
+
         if (shouldSubscribe) {
           await upgrade();
         }

@@ -43,6 +43,15 @@ const Logo = () => (
 );
 
 export default async function Image({ params }: { params: { word: string } }) {
+  // Load the fonts
+  const interRegular = await fetch(
+    new URL("../../../public/fonts/Inter-Regular.woff2", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
+  const interBold = await fetch(
+    new URL("../../../public/fonts/Inter-Bold.woff2", import.meta.url)
+  ).then((res) => res.arrayBuffer());
+
   const result = await getWord(params.word);
   if (!result)
     return new ImageResponse(
@@ -58,7 +67,7 @@ export default async function Image({ params }: { params: { word: string } }) {
             justifyContent: "center",
             padding: "213px 130px",
             gap: "52px",
-            fontFamily: "system-ui",
+            fontFamily: "Inter",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
@@ -79,6 +88,20 @@ export default async function Image({ params }: { params: { word: string } }) {
       ),
       {
         ...size,
+        fonts: [
+          {
+            name: "Inter",
+            data: interRegular,
+            weight: 400,
+            style: "normal",
+          },
+          {
+            name: "Inter",
+            data: interBold,
+            weight: 700,
+            style: "normal",
+          },
+        ],
       }
     );
 
@@ -97,7 +120,7 @@ export default async function Image({ params }: { params: { word: string } }) {
           justifyContent: "center",
           padding: "213px 130px",
           gap: "52px",
-          fontFamily: "system-ui",
+          fontFamily: "Inter",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
@@ -118,6 +141,20 @@ export default async function Image({ params }: { params: { word: string } }) {
     ),
     {
       ...size,
+      fonts: [
+        {
+          name: "Inter",
+          data: interRegular,
+          weight: 400,
+          style: "normal",
+        },
+        {
+          name: "Inter",
+          data: interBold,
+          weight: 700,
+          style: "normal",
+        },
+      ],
     }
   );
 }

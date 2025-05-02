@@ -69,13 +69,36 @@ export async function POST(request: Request) {
     }
 
     console.log("Fetching AI usage for user", session.user.id);
-    const [aiUsageData, subscriptionData] = await Promise.all([
+
+    // Debug the queries being made
+    let [aiUsageData, subscriptionData] = await Promise.all([
       getAIUsage(session.user.id),
       db.query.subscriptions.findFirst({
         where: eq(subscriptions.referenceId, session.user.id),
       }),
     ]);
-    console.log("AI usage", aiUsageData);
+
+    // Initialize AI usage if it doesn't exist
+    if (!aiUsageData) {
+      const resetAt = new Date();
+      resetAt.setMonth(resetAt.getMonth() + 1);
+      resetAt.setDate(1);
+      resetAt.setHours(0, 0, 0, 0);
+
+      try {
+        const newAiUsage = await db
+          .insert(aiUsage)
+          .values({
+            userId: session.user.id,
+            count: 0,
+            resetAt,
+          })
+          .returning();
+        aiUsageData = newAiUsage[0];
+      } catch (error) {
+        throw new Error("Failed to initialize AI usage");
+      }
+    }
 
     if (aiUsageData) {
       const limit = subscriptionData?.plan === "plus" ? 1000 : 10;

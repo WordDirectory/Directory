@@ -61,7 +61,7 @@ export default function SettingsPage() {
   }
 
   return (
-    <main className="relative w-full overflow-hidden px-8 py-12">
+    <main className="relative w-full overflow-hidden">
       <div className="container mx-auto max-w-4xl flex flex-col gap-16">
         <section className="flex flex-col gap-6">
           <h1 className="text-4xl font-bold">Account</h1>

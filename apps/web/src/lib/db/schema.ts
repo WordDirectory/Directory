@@ -112,9 +112,9 @@ export const examples = pgTable(
   ]
 );
 
-// Relations for better TypeScript inference
 export const wordsRelations = relations(words, ({ many }) => ({
   definitions: many(definitions),
+  votes: many(wordVotes),
 }));
 
 export const definitionsRelations = relations(definitions, ({ one, many }) => ({
@@ -176,4 +176,42 @@ export const aiUsageRelations = relations(aiUsage, ({ one }) => ({
     fields: [aiUsage.userId],
     references: [users.id],
   }),
+}));
+
+export const wordVotes = pgTable(
+  "word_votes",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    wordId: uuid("word_id")
+      .notNull()
+      .references(() => words.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at").defaultNow(),
+    updatedAt: timestamp("updated_at").defaultNow(),
+  },
+  (table) => [
+    // Index for looking up a user's vote on a specific word
+    uniqueIndex("word_votes_user_word_idx").on(table.userId, table.wordId),
+    // Index for getting all votes for a word
+    index("word_votes_word_id_idx").on(table.wordId),
+    // Index for getting all votes by a user
+    index("word_votes_user_id_idx").on(table.userId),
+  ]
+);
+
+export const wordVotesRelations = relations(wordVotes, ({ one }) => ({
+  user: one(users, {
+    fields: [wordVotes.userId],
+    references: [users.id],
+  }),
+  word: one(words, {
+    fields: [wordVotes.wordId],
+    references: [words.id],
+  }),
+}));
+
+export const userRelations = relations(users, ({ many }) => ({
+  votes: many(wordVotes),
 }));

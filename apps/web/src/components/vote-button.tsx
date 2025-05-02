@@ -1,0 +1,140 @@
+"use client";
+import { ThumbsUp } from "lucide-react";
+import { cn } from "@/lib/utils";
+import { useSession } from "@/lib/auth-client";
+import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import { motion, AnimatePresence } from "motion/react";
+
+interface VoteButtonProps {
+  word: string;
+}
+
+export function VoteButton({ word }: VoteButtonProps) {
+  const { data: session } = useSession();
+  const router = useRouter();
+  const [votes, setVotes] = useState(0);
+  const [hasVoted, setHasVoted] = useState(false);
+
+  // Fetch initial vote state
+  useEffect(() => {
+    fetch(`/api/words/${encodeURIComponent(word)}/vote`)
+      .then((res) => res.json())
+      .then((data) => {
+        setVotes(data.votes);
+        setHasVoted(data.hasVoted);
+      });
+  }, [word]);
+
+  const handleVote = async () => {
+    if (!session) {
+      router.push("/auth/login");
+      return;
+    }
+
+    // Optimistic update
+    const prevVoted = hasVoted;
+    const prevVotes = votes;
+    setHasVoted(!hasVoted);
+    setVotes(votes + (hasVoted ? -1 : 1));
+
+    try {
+      const res = await fetch(`/api/words/${encodeURIComponent(word)}/vote`, {
+        method: prevVoted ? "DELETE" : "POST",
+      });
+
+      if (!res.ok) {
+        // Revert on error
+        setHasVoted(prevVoted);
+        setVotes(prevVotes);
+      }
+    } catch (error) {
+      // Revert on error
+      setHasVoted(prevVoted);
+      setVotes(prevVotes);
+      console.error("Error voting:", error);
+    }
+  };
+
+  return (
+    <div className="flex items-center gap-2">
+      <motion.button
+        onClick={handleVote}
+        className={cn(
+          "relative flex items-center justify-center w-10 h-10 rounded-full",
+          hasVoted
+            ? "bg-gradient-to-br from-yellow-400 via-orange-400 to-pink-500"
+            : "bg-muted hover:bg-muted/80"
+        )}
+        whileTap={{ scale: 0.85 }}
+        transition={{ type: "spring", stiffness: 500, damping: 15 }}
+      >
+        <motion.div
+          animate={{
+            scale: hasVoted ? [1, 1.2, 1] : 1,
+            rotate: hasVoted ? [0, 10, -10, 0] : 0,
+            y: hasVoted ? [0, -2, 0] : 0,
+          }}
+          transition={{
+            duration: 0.5,
+            ease: "easeInOut",
+          }}
+        >
+          <ThumbsUp
+            className={cn(
+              "w-5 h-5",
+              hasVoted ? "fill-white stroke-white" : "stroke-foreground"
+            )}
+            strokeWidth={hasVoted ? 2.5 : 2}
+          />
+        </motion.div>
+
+        <AnimatePresence>
+          {hasVoted && (
+            <motion.div
+              className="absolute"
+              initial={{ scale: 0 }}
+              animate={{ scale: [0, 1.5, 0] }}
+              exit={{ scale: 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <div className="w-16 h-16 rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        <AnimatePresence>
+          {hasVoted && (
+            <>
+              {[...Array(6)].map((_, i) => (
+                <motion.div
+                  key={i}
+                  className="absolute w-1.5 h-1.5 rounded-full bg-white"
+                  initial={{ scale: 0, x: 0, y: 0, opacity: 1 }}
+                  animate={{
+                    scale: [0, 1, 0.5],
+                    x: [0, (i % 2 ? 1 : -1) * (15 + Math.random() * 15)],
+                    y: [0, -20 - Math.random() * 20],
+                    opacity: [1, 1, 0],
+                  }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.6, ease: "easeOut" }}
+                />
+              ))}
+            </>
+          )}
+        </AnimatePresence>
+      </motion.button>
+
+      <motion.div
+        key={votes}
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        className="min-w-[1.5rem] text-sm font-medium"
+      >
+        {votes}
+      </motion.div>
+    </div>
+  );
+}

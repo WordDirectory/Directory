@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { WordNotFound } from "@/components/word-not-found";
 import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
+import { VoteButton } from "@/components/vote-button";
 
 interface WordPageProps {
   params: Promise<{
@@ -103,7 +104,10 @@ function WordHeader({
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
             {capitalize(word)}
           </h1>
-          <WordAudioButton word={word} />
+          <div className="flex items-center gap-3">
+            <WordAudioButton word={word} />
+            <VoteButton word={word} />
+          </div>
         </div>
       </div>
 

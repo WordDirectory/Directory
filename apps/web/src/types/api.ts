@@ -37,7 +37,11 @@ export type APIErrorBase = {
 
 // Specific error types
 export type AIError = APIErrorBase & {
-  code: "AUTH_REQUIRED" | "SUBSCRIPTION_LIMIT_REACHED" | "RATE_LIMIT_EXCEEDED";
+  code:
+    | "AUTH_REQUIRED"
+    | "SUBSCRIPTION_LIMIT_REACHED"
+    | "RATE_LIMIT_EXCEEDED"
+    | "INTERNAL_SERVER_ERROR";
   usage?: AIUsageResponse;
 };
 

@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { aiUsage, words } from "@/lib/db/schema";
+import { aiUsage, words, wordVotes } from "@/lib/db/schema";
 import { desc, eq, ilike, sql } from "drizzle-orm";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
@@ -46,6 +46,7 @@ export async function getWord(word: string) {
   if (!result) return null;
 
   return {
+    id: result.id,
     word: result.word,
     details: {
       definitions: result.definitions.map((def) => ({
@@ -101,4 +102,42 @@ export async function getAIUsage(userId: string) {
     where: eq(aiUsage.userId, userId),
     orderBy: (aiUsage) => desc(aiUsage.createdAt),
   });
+}
+
+export async function getWordVotes(wordId: string) {
+  const result = await db
+    .select({
+      count: sql<number>`count(*)`,
+    })
+    .from(wordVotes)
+    .where(eq(wordVotes.wordId, wordId));
+
+  return Number(result[0].count);
+}
+
+export async function hasUserVotedWord(userId: string, wordId: string) {
+  const vote = await db.query.wordVotes.findFirst({
+    where: sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${wordId}`,
+  });
+
+  return !!vote;
+}
+
+export async function createWordVote(userId: string, wordId: string) {
+  return db
+    .insert(wordVotes)
+    .values({
+      userId,
+      wordId,
+    })
+    .onConflictDoNothing()
+    .returning();
+}
+
+export async function deleteWordVote(userId: string, wordId: string) {
+  return db
+    .delete(wordVotes)
+    .where(
+      sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${wordId}`
+    );
 }

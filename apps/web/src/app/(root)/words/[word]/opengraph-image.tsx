@@ -58,7 +58,7 @@ export default async function Image({ params }: { params: { word: string } }) {
             justifyContent: "center",
             padding: "213px 130px",
             gap: "52px",
-            fontFamily: "Inter",
+            fontFamily: "system-ui",
           }}
         >
           <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
@@ -79,30 +79,6 @@ export default async function Image({ params }: { params: { word: string } }) {
       ),
       {
         ...size,
-        fonts: [
-          {
-            name: "Inter",
-            data: await fetch(
-              new URL(
-                "https://rsms.me/inter/font-files/Inter-Regular.woff",
-                import.meta.url
-              )
-            ).then((res) => res.arrayBuffer()),
-            weight: 400,
-            style: "normal",
-          },
-          {
-            name: "Inter",
-            data: await fetch(
-              new URL(
-                "https://rsms.me/inter/font-files/Inter-Bold.woff",
-                import.meta.url
-              )
-            ).then((res) => res.arrayBuffer()),
-            weight: 700,
-            style: "normal",
-          },
-        ],
       }
     );
 
@@ -121,7 +97,7 @@ export default async function Image({ params }: { params: { word: string } }) {
           justifyContent: "center",
           padding: "213px 130px",
           gap: "52px",
-          fontFamily: "Inter",
+          fontFamily: "system-ui",
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
@@ -142,30 +118,6 @@ export default async function Image({ params }: { params: { word: string } }) {
     ),
     {
       ...size,
-      fonts: [
-        {
-          name: "Inter",
-          data: await fetch(
-            new URL(
-              "https://rsms.me/inter/font-files/Inter-Regular.woff",
-              import.meta.url
-            )
-          ).then((res) => res.arrayBuffer()),
-          weight: 400,
-          style: "normal",
-        },
-        {
-          name: "Inter",
-          data: await fetch(
-            new URL(
-              "https://rsms.me/inter/font-files/Inter-Bold.woff",
-              import.meta.url
-            )
-          ).then((res) => res.arrayBuffer()),
-          weight: 700,
-          style: "normal",
-        },
-      ],
     }
   );
 }

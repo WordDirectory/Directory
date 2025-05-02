@@ -10,12 +10,13 @@ import { UserDropdown } from "./user-dropdown";
 
 export function Header() {
   const pathname = usePathname();
+  const PATHS_WITH_SIDEBARS = ["/docs", "/settings"]
 
   return (
     <header
       className={cn(
         "w-full px-4 border-b bg-background flex h-14 items-center justify-between",
-        pathname.includes("/docs") && "sticky top-0 z-50"
+        PATHS_WITH_SIDEBARS.some(path => pathname.startsWith(path)) && "sticky top-0 z-50"
       )}
     >
       <div className="mr-4 flex">

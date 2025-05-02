@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Progress } from "@/components/ui/progress";
 import { useSession } from "@/lib/auth-client";
 
@@ -50,7 +49,7 @@ export default function AISettingsPage() {
 
   if (!session?.user) {
     return (
-      <main className="relative w-full overflow-hidden px-8 py-12">
+      <main className="relative w-full overflow-hidden">
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-4xl font-bold mb-4">AI Settings</h1>
           <p className="text-muted-foreground">
@@ -66,13 +65,11 @@ export default function AISettingsPage() {
       <div className="container mx-auto max-w-4xl">
         <h1 className="text-4xl font-bold mb-8">AI Settings</h1>
 
-        <Card className="bg-card">
-          <CardHeader>
-            <CardTitle>AI Credits Usage</CardTitle>
-          </CardHeader>
-          <CardContent>
-            {usage && (
-              <div className="space-y-6">
+        {usage && (
+          <div className="space-y-8">
+            <div>
+              <h2 className="text-lg font-semibold mb-4">Credits Usage</h2>
+              <div className="space-y-4">
                 <div className="space-y-2">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">
@@ -87,29 +84,29 @@ export default function AISettingsPage() {
                     className="h-2"
                   />
                 </div>
-
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">
-                      Current Plan
-                    </span>
-                    <span className="font-medium capitalize">{usage.plan}</span>
-                  </div>
-                  {usage.nextReset && (
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">
-                        Next Reset
-                      </span>
-                      <span className="font-medium">
-                        {new Date(usage.nextReset).toLocaleDateString()}
-                      </span>
-                    </div>
-                  )}
-                </div>
               </div>
-            )}
-          </CardContent>
-        </Card>
+            </div>
+
+            <div className="space-y-4 border-t pt-6">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-muted-foreground">
+                  Current Plan
+                </span>
+                <span className="font-medium capitalize">{usage.plan}</span>
+              </div>
+              {usage.nextReset && (
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">
+                    Next Reset
+                  </span>
+                  <span className="font-medium">
+                    {new Date(usage.nextReset).toLocaleDateString()}
+                  </span>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
       </div>
     </main>
   );

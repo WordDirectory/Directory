@@ -48,6 +48,17 @@ export async function generateMetadata({
     alternates: {
       canonical: `https://worddirectory.app/words/${encodeURIComponent(word)}`,
     },
+    openGraph: {
+      title: `${capitalize(word)} Definition - Simple English Explanation`,
+      description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
+      url: `https://worddirectory.app/words/${encodeURIComponent(word)}`,
+      siteName: "WordDirectory",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${capitalize(word)} Definition - Simple English Explanation`,
+      description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
+    },
   };
 }
 

@@ -83,6 +83,24 @@ const roadmapItems: {
       complete: false,
     },
   },
+  {
+    title: "Native Desktop App",
+    description:
+      "A native Windows and macOS app that provides quick access to definitions from your desktop.",
+    status: {
+      text: "Not started",
+      complete: false,
+    },
+  },
+  {
+    title: "Raycast Plugin",
+    description:
+      "A Raycast plugin that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
+    status: {
+      text: "Not started",
+      complete: false,
+    },
+  },
 ];
 
 export const metadata: Metadata = {

@@ -129,7 +129,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
               <CommandItem
                 key={word}
                 onSelect={() => {
-                  const url = `words/${encodeURIComponent(word)}`;
+                  const url = `/words/${encodeURIComponent(word)}`;
                   console.log("Redirecting...", url);
                   router.push(url);
                   onOpenChange(false);

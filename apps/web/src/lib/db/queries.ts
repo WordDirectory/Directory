@@ -29,8 +29,10 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
 }
 
 export async function getWord(word: string) {
+  console.log("Fetching word: ", word);
+
   const result = await db.query.words.findFirst({
-    where: eq(words.word, word),
+    where: ilike(words.word, word),
     with: {
       definitions: {
         with: {
@@ -56,7 +58,7 @@ export async function getWord(word: string) {
 
 export async function wordExists(word: string): Promise<boolean> {
   const result = await db.query.words.findFirst({
-    where: eq(words.word, word),
+    where: ilike(words.word, word),
   });
 
   return !!result;

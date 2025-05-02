@@ -19,10 +19,14 @@ export async function HEAD(
 
     // Decode the URL-encoded word parameter
     const { word } = await params;
+    console.log("Raw word parameter: ", word);
     const decodedWord = decodeURIComponent(word).trim();
+    console.log("Decoded word: ", decodedWord)
     const capitalizedWord =
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
+    console.log("Capitalized word: ", capitalizedWord);
     const result = await getWord(capitalizedWord);
+    console.log("Result", result)
 
     if (result) {
       return new NextResponse(null, { status: 200 });

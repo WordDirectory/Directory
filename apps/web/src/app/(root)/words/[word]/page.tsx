@@ -69,7 +69,7 @@ export default async function WordPage({ params }: WordPageProps) {
     const result = await getWord(paramWord);
 
     if (!result) {
-      return <WordNotFound word={paramWord} />;
+      return <WordNotFound word={decodeURI(paramWord)} />;
     }
 
     return (

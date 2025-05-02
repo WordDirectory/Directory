@@ -13,7 +13,7 @@ import {
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
 
-const CACHE_KEY = 'random-words-cache';
+const CACHE_KEY = "random-words-cache";
 const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
 
 interface CacheEntry {
@@ -42,7 +42,7 @@ function setCache(words: string[]) {
   try {
     const entry: CacheEntry = {
       words,
-      timestamp: Date.now()
+      timestamp: Date.now(),
     };
     localStorage.setItem(CACHE_KEY, JSON.stringify(entry));
   } catch {
@@ -78,7 +78,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         setCache(results.words);
         setWords(results.words);
       } catch (error) {
-        console.error('Failed to fetch random words:', error);
+        console.error("Failed to fetch random words:", error);
       } finally {
         setIsLoading(false);
       }
@@ -90,7 +90,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       const results = await searchWords(searchQuery);
       setWords(results.words);
     } catch (error) {
-      console.error('Search failed:', error);
+      console.error("Search failed:", error);
       setWords([]);
     } finally {
       setIsLoading(false);
@@ -129,7 +129,9 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
               <CommandItem
                 key={word}
                 onSelect={() => {
-                  router.push(`/words/${encodeURIComponent(word)}`);
+                  const url = `words/${encodeURIComponent(word)}`;
+                  console.log("Redirecting...", url);
+                  router.push(url);
                   onOpenChange(false);
                 }}
               >

@@ -321,6 +321,8 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
             src={theme === "dark" ? "/signup-dark.png" : "/signup-light.png"}
             alt={`${mode === "signup" ? "Signup" : "Login"} illustration`}
             className="object-cover w-full h-full"
+            width={1000}
+            height={1000}
             priority
           />
         </div>

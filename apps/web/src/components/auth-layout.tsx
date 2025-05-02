@@ -26,7 +26,7 @@ import {
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { upgrade } from "./upgrade-button";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 
 interface AuthLayoutProps {
   mode: "login" | "signup";
@@ -39,6 +39,8 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const [formError, setFormError] = useState<string | null>(null);
   const searchParams = useSearchParams();
   const shouldSubscribe = searchParams.get("shouldSubscribe") === "true";
+  const nextUrl = searchParams.get("next");
+  const router = useRouter();
 
   const form = useForm<LoginValues | SignupValues>({
     resolver: zodResolver(mode === "signup" ? signupSchema : loginSchema),
@@ -83,6 +85,8 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
 
         if (shouldSubscribe) {
           await upgrade();
+        } else if (nextUrl) {
+          router.push(nextUrl);
         }
       } else {
         const loginValues = values as LoginValues;
@@ -93,6 +97,10 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
 
         if (error) {
           throw new Error(error.message);
+        }
+
+        if (nextUrl) {
+          router.push(nextUrl);
         }
       }
     } catch (error) {
@@ -106,9 +114,19 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const handleGoogleSignIn = async () => {
     setIsLoading(true);
     try {
+      // Get the base URL
+      const baseUrl =
+        process.env.NODE_ENV === "development"
+          ? `http://${process.env.NEXT_PUBLIC_SITE_URL}`
+          : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
+
       const { error } = await authClient.signIn.social({
         provider: "google",
-        callbackURL: shouldSubscribe ? "/subscribe" : undefined, // Let it use the default callback if not subscribing
+        callbackURL: shouldSubscribe
+          ? `${baseUrl}/subscribe`
+          : nextUrl
+            ? `${baseUrl}${nextUrl}`
+            : undefined,
       });
       if (error) throw error;
     } catch (error) {

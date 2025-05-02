@@ -28,7 +28,9 @@ export function VoteButton({ word }: VoteButtonProps) {
 
   const handleVote = async () => {
     if (!session) {
-      router.push("/auth/login");
+      // Get the current URL and encode it
+      const currentUrl = encodeURIComponent(window.location.pathname);
+      router.push(`/auth/login?next=${currentUrl}`);
       return;
     }
 

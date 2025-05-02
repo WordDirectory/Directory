@@ -5,10 +5,11 @@ import { toast } from "sonner";
 import { useState } from "react";
 import { Loader2 } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { BillingInterval } from "./plan-selector";
 
-export async function upgrade() {
+export async function upgrade(interval: BillingInterval = "monthly") {
   const { error } = await authClient.subscription.upgrade({
-    plan: "plus",
+    plan: interval === "monthly" ? "plus" : "plus_annual",
     successUrl: "/settings",
     cancelUrl: "/settings",
   });
@@ -19,14 +20,18 @@ export async function upgrade() {
   }
 }
 
-export function UpgradeButton() {
+interface UpgradeButtonProps {
+  interval?: BillingInterval;
+}
+
+export function UpgradeButton({ interval = "monthly" }: UpgradeButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const router = useRouter();
 
   const handleUpgrade = async () => {
     setIsLoading(true);
     try {
-      await upgrade();
+      await upgrade(interval);
     } catch (error) {
       if (error instanceof Error) {
         const betterAuthError = error.cause as {

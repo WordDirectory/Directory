@@ -46,6 +46,13 @@ export const auth = betterAuth({
               aiUsage: 1000,
             },
           },
+          {
+            name: "plus_annual",
+            priceId: process.env.STRIPE_PLUS_ANNUAL_PRICE_ID!, // new annual price ID
+            limits: {
+              aiUsage: 1000, // same limits as monthly
+            },
+          },
         ],
       },
     }),

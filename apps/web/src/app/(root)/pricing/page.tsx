@@ -1,4 +1,5 @@
-import { Metadata } from "next";
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Check } from "lucide-react";
 import Link from "next/link";
@@ -9,12 +10,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { UpgradeButton } from "@/components/upgrade-button";
-
-export const metadata: Metadata = {
-  title: "Pricing | WordDirectory",
-  description:
-    "Simple, transparent pricing for WordDirectory - Words explained simply",
-};
+import { PlanSelector, BillingInterval } from "@/components/plan-selector";
+import { useState } from "react";
 
 const plans = [
   {
@@ -34,8 +31,8 @@ const plans = [
   {
     name: "Plus",
     description: "For power users who want more",
-    price: "$1",
-    interval: "per month",
+    monthlyPrice: "$1",
+    annualPrice: "$10",
     buttonText: "Upgrade now",
     buttonVariant: "primary" as const,
     features: [
@@ -70,6 +67,8 @@ const faqs = [
 ] as const;
 
 export default function PricingPage() {
+  const [interval, setInterval] = useState<BillingInterval>("monthly");
+
   return (
     <main className="relative w-full overflow-hidden px-8">
       <div className="container mx-auto max-w-4xl py-20">
@@ -80,6 +79,8 @@ export default function PricingPage() {
           </p>
         </header>
 
+        <PlanSelector interval={interval} onIntervalChange={setInterval} />
+
         <div className="grid gap-8 md:grid-cols-2">
           {plans.map((plan) => (
             <div key={plan.name} className="rounded-lg border bg-card p-8">
@@ -89,8 +90,20 @@ export default function PricingPage() {
               </div>
 
               <div className="mt-4">
-                <div className="text-4xl font-bold">{plan.price}</div>
-                <p className="text-sm text-muted-foreground">{plan.interval}</p>
+                <div className="text-4xl font-bold">
+                  {plan.name === "Free"
+                    ? plan.price
+                    : interval === "monthly"
+                      ? plan.monthlyPrice
+                      : plan.annualPrice}
+                </div>
+                <p className="text-sm text-muted-foreground">
+                  {plan.name === "Free"
+                    ? plan.interval
+                    : interval === "monthly"
+                      ? "per month"
+                      : "per year"}
+                </p>
               </div>
 
               <div className="mt-5 space-y-4">
@@ -110,7 +123,7 @@ export default function PricingPage() {
                 </Button>
               ) : (
                 <div className="mt-5">
-                  <UpgradeButton />
+                  <UpgradeButton interval={interval} />
                 </div>
               )}
             </div>

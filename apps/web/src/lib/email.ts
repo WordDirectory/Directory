@@ -26,7 +26,7 @@ export async function sendEmail({ to, subject, text, html }: SendEmailParams) {
   // In production, actually send the email
   try {
     const { data, error } = await resend.emails.send({
-      from: "WordDirectory <noreply@worddirectory.app>",
+      from: "WordDirectory <admin@worddirectory.app>",
       to,
       subject,
       text,

@@ -32,7 +32,7 @@ const plans = [
     name: "Plus",
     description: "For power users who want more",
     monthlyPrice: "$1",
-    annualPrice: "$2",
+    annualPrice: "$10",
     buttonText: "Upgrade now",
     buttonVariant: "primary" as const,
     features: [

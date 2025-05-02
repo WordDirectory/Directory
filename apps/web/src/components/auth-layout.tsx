@@ -317,10 +317,11 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
 
         {/* Right side - Image */}
         <div className="flex-1 relative hidden lg:block">
-          <img
+          <Image
             src={theme === "dark" ? "/signup-dark.png" : "/signup-light.png"}
             alt={`${mode === "signup" ? "Signup" : "Login"} illustration`}
             className="object-cover w-full h-full"
+            priority
           />
         </div>
       </div>

@@ -2,6 +2,7 @@ import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
 import { db } from "@/lib/db";
+import { getActiveSubscription } from "@/lib/db/queries";
 import { subscriptions } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 
@@ -23,9 +24,7 @@ export async function POST(req: Request) {
     }
 
     // Get subscription with Stripe customer ID from database
-    const subscription = await db.query.subscriptions.findFirst({
-      where: eq(subscriptions.referenceId, session.user.id),
-    });
+    const subscription = await getActiveSubscription(session.user.id);
     console.log("[STRIPE PORTAL] Found subscription:", {
       exists: !!subscription,
       stripeCustomerId: subscription?.stripeCustomerId,

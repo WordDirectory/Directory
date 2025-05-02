@@ -1,5 +1,5 @@
 import { db } from "@/lib/db";
-import { aiUsage, words, wordVotes } from "@/lib/db/schema";
+import { aiUsage, words, wordVotes, subscriptions } from "@/lib/db/schema";
 import { desc, eq, ilike, sql } from "drizzle-orm";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
@@ -140,4 +140,22 @@ export async function deleteWordVote(userId: string, wordId: string) {
     .where(
       sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${wordId}`
     );
+}
+
+/**
+ * Get the most relevant subscription for a user, prioritizing active and trialing subscriptions
+ * over incomplete ones.
+ */
+export async function getActiveSubscription(userId: string) {
+  return await db.query.subscriptions.findFirst({
+    where: eq(subscriptions.referenceId, userId),
+    orderBy: [
+      sql`CASE 
+        WHEN ${subscriptions.status} = 'active' THEN 1
+        WHEN ${subscriptions.status} = 'trialing' THEN 2
+        ELSE 3
+      END`,
+      desc(subscriptions.periodStart),
+    ],
+  });
 }

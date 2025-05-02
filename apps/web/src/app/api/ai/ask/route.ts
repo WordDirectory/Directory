@@ -3,11 +3,11 @@ import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { google } from "@ai-sdk/google";
 import { generateText } from "ai";
-import { getAIUsage, getWord } from "@/lib/db/queries";
+import { getAIUsage, getWord, getActiveSubscription } from "@/lib/db/queries";
 import { z } from "zod";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { aiUsage, subscriptions } from "@/lib/db/schema";
+import { aiUsage } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
 import { APIError, AIError, ValidationError } from "@/types/api";
 
@@ -73,9 +73,7 @@ export async function POST(request: Request) {
     // Debug the queries being made
     let [aiUsageData, subscriptionData] = await Promise.all([
       getAIUsage(session.user.id),
-      db.query.subscriptions.findFirst({
-        where: eq(subscriptions.referenceId, session.user.id),
-      }),
+      getActiveSubscription(session.user.id),
     ]);
 
     // Initialize AI usage if it doesn't exist

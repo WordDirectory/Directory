@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
-import { getAIUsage } from "@/lib/db/queries";
+import { getAIUsage, getActiveSubscription } from "@/lib/db/queries";
 import { subscriptions } from "@/lib/db/schema";
 import { eq } from "drizzle-orm";
 import { APIError } from "@/types/api";
@@ -22,9 +22,7 @@ export async function GET(request: Request) {
     // Get both AI usage and subscription data
     const [aiUsageData, subscriptionData] = await Promise.all([
       getAIUsage(session.user.id),
-      db.query.subscriptions.findFirst({
-        where: eq(subscriptions.referenceId, session.user.id),
-      }),
+      getActiveSubscription(session.user.id),
     ]);
 
     // Check if subscription is active and plan is plus

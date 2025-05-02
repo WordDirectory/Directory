@@ -72,7 +72,7 @@ export const auth = betterAuth({
                 .button {
                   background-color: #000000;
                   border-radius: 8px;
-                  color: #ffffff;
+                  color: #ffffff !important;
                   display: inline-block;
                   font-size: 16px;
                   font-weight: 600;
@@ -84,6 +84,7 @@ export const auth = betterAuth({
                 }
                 .button:hover {
                   background-color: #1a1a1a;
+                  color: #ffffff !important;
                 }
                 .footer {
                   color: #6b7280;
@@ -122,7 +123,7 @@ export const auth = betterAuth({
                   <h1 style="margin-bottom: 24px; font-size: 24px; font-weight: 700;">Verify your email address</h1>
                   <p style="margin-bottom: 24px;">Thanks for signing up for WordDirectory! We need to verify your email address to keep your account secure.</p>
                   <div style="text-align: center;">
-                    <a href="${url}" class="button">Verify Email Address</a>
+                    <a href="${url}" class="button" style="background-color: #000000; color: #ffffff; text-decoration: none;">Verify Email Address</a>
                   </div>
                 </div>
                 <div class="footer">

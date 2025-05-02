@@ -7,14 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuSeparator,
   DropdownMenuTrigger,
-  DropdownMenuSub,
-  DropdownMenuSubTrigger,
-  DropdownMenuSubContent,
-  DropdownMenuRadioGroup,
-  DropdownMenuRadioItem,
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
-import { LogIn, LogOut, Settings, CreditCard } from "lucide-react";
+import { LogIn, LogOut, Settings, CreditCard, Sun, Moon } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
@@ -171,14 +166,15 @@ function ThemeItem() {
   const { theme, setTheme } = useTheme();
 
   return (
-    <DropdownMenuSub>
-      <DropdownMenuSubTrigger>Theme</DropdownMenuSubTrigger>
-      <DropdownMenuSubContent>
-        <DropdownMenuRadioGroup value={theme} onValueChange={setTheme}>
-          <DropdownMenuRadioItem value="light">Light</DropdownMenuRadioItem>
-          <DropdownMenuRadioItem value="dark">Dark</DropdownMenuRadioItem>
-        </DropdownMenuRadioGroup>
-      </DropdownMenuSubContent>
-    </DropdownMenuSub>
+    <DropdownMenuItem
+      onClick={() => setTheme(theme === "light" ? "dark" : "light")}
+    >
+      {theme === "light" ? (
+        <Moon className="h-4 w-4" />
+      ) : (
+        <Sun className="h-4 w-4" />
+      )}
+      Theme
+    </DropdownMenuItem>
   );
 }

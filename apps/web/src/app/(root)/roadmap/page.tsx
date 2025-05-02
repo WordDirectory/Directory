@@ -101,6 +101,15 @@ const roadmapItems: {
       complete: false,
     },
   },
+  {
+    title: "Multiple Languages",
+    description:
+      "Support for multiple languages including Spanish, French, German, and more. Each word will have definitions in various languages while maintaining our simple, human-readable approach.",
+    status: {
+      text: "Not started",
+      complete: false,
+    },
+  },
 ];
 
 export const metadata: Metadata = {

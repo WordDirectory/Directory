@@ -41,7 +41,7 @@ export default function AISettingsPage() {
 
   if (isPending || isLoading) {
     return (
-      <main className="relative w-full overflow-hidden px-8 py-12 flex justify-center">
+      <main className="relative w-full overflow-hidden flex justify-center">
         <Loader2 className="h-6 w-6 animate-spin" />
       </main>
     );

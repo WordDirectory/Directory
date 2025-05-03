@@ -52,10 +52,10 @@ export function CustomPopover({
     const triggerRect = triggerRef.current.getBoundingClientRect();
     const contentRect = contentRef.current.getBoundingClientRect();
 
-    // Position below and align right edge with trigger
+    // Position below and align right edge with trigger, using viewport-relative positioning
     setPosition({
-      top: triggerRect.bottom + window.scrollY + 8, // 8px gap
-      left: Math.max(8, triggerRect.right - contentRect.width + window.scrollX),
+      top: triggerRect.bottom + 8, // 8px gap
+      left: Math.max(8, triggerRect.right - contentRect.width),
     });
   };
 
@@ -131,8 +131,8 @@ export function CustomPopover({
     if (triggerRect) {
       const contentWidth = tempDiv.getBoundingClientRect().width;
       setPosition({
-        top: triggerRect.bottom + window.scrollY + 8,
-        left: Math.max(8, triggerRect.right - contentWidth + window.scrollX),
+        top: triggerRect.bottom + 8,
+        left: Math.max(8, triggerRect.right - contentWidth),
       });
     }
 

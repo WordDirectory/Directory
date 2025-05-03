@@ -37,6 +37,7 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
 export async function getWord(word: string, userId?: string | null) {
   console.log("Fetching word: ", word);
 
+  // Single query to get everything we need
   const result = await db.query.words.findFirst({
     where: ilike(words.word, word),
     with: {
@@ -46,33 +47,23 @@ export async function getWord(word: string, userId?: string | null) {
         },
         orderBy: (def) => [def.order],
       },
+      votes: {
+        // Only get vote count and user's vote status
+        columns: {
+          userId: true,
+        },
+      },
+      savedBy: {
+        // Only get user's save status
+        where: userId ? eq(savedWords.userId, userId) : undefined,
+        columns: {
+          userId: true,
+        },
+      },
     },
   });
 
   if (!result) return null;
-
-  // Get vote count
-  const [{ count }] = await db
-    .select({
-      count: sql<number>`count(*)`,
-    })
-    .from(wordVotes)
-    .where(eq(wordVotes.wordId, result.id));
-
-  // Get user's vote status if userId is provided
-  let hasVoted = false;
-  let isSaved = false;
-  if (userId) {
-    const vote = await db.query.wordVotes.findFirst({
-      where: sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${result.id}`,
-    });
-    hasVoted = !!vote;
-
-    const saved = await db.query.savedWords.findFirst({
-      where: sql`${savedWords.userId} = ${userId} AND ${savedWords.wordId} = ${result.id}`,
-    });
-    isSaved = !!saved;
-  }
 
   return {
     id: result.id,
@@ -83,9 +74,11 @@ export async function getWord(word: string, userId?: string | null) {
         examples: def.examples.map((ex) => ex.text),
       })),
     },
-    votes: Number(count),
-    hasVoted,
-    isSaved,
+    votes: result.votes.length,
+    hasVoted: userId
+      ? result.votes.some((vote) => vote.userId === userId)
+      : false,
+    isSaved: userId ? result.savedBy.length > 0 : false,
   };
 }
 

@@ -20,7 +20,7 @@ export const users = pgTable("users", {
   createdAt: timestamp("created_at").notNull(),
   updatedAt: timestamp("updated_at").notNull(),
   stripeCustomerId: text("stripe_customer_id"),
-});
+}).enableRLS();
 
 export const sessions = pgTable("sessions", {
   id: text("id").primaryKey(),
@@ -33,7 +33,7 @@ export const sessions = pgTable("sessions", {
   userId: text("user_id")
     .notNull()
     .references(() => users.id, { onDelete: "cascade" }),
-});
+}).enableRLS();
 
 export const accounts = pgTable("accounts", {
   id: text("id").primaryKey(),
@@ -51,7 +51,7 @@ export const accounts = pgTable("accounts", {
   password: text("password"),
   createdAt: timestamp("created_at").notNull(),
   updatedAt: timestamp("updated_at").notNull(),
-});
+}).enableRLS();
 
 export const verifications = pgTable("verifications", {
   id: text("id").primaryKey(),
@@ -60,7 +60,7 @@ export const verifications = pgTable("verifications", {
   expiresAt: timestamp("expires_at").notNull(),
   createdAt: timestamp("created_at"),
   updatedAt: timestamp("updated_at"),
-});
+}).enableRLS();
 
 export const words = pgTable(
   "words",
@@ -75,7 +75,7 @@ export const words = pgTable(
     uniqueIndex("words_word_idx").on(table.word),
     index("idx_words_idx").on(table.idx),
   ]
-);
+).enableRLS();
 
 export const definitions = pgTable(
   "definitions",
@@ -93,7 +93,7 @@ export const definitions = pgTable(
     index("definitions_word_id_idx").on(table.wordId),
     index("definitions_order_idx").on(table.order),
   ]
-);
+).enableRLS();
 
 export const examples = pgTable(
   "examples",
@@ -110,7 +110,7 @@ export const examples = pgTable(
     index("examples_definition_id_idx").on(table.definitionId),
     index("examples_order_idx").on(table.order),
   ]
-);
+).enableRLS();
 
 export const savedWords = pgTable(
   "saved_words",
@@ -132,7 +132,7 @@ export const savedWords = pgTable(
     // Index for getting all users who saved a word
     index("saved_words_word_id_idx").on(table.wordId),
   ]
-);
+).enableRLS();
 
 export const savedWordsRelations = relations(savedWords, ({ one }) => ({
   user: one(users, {
@@ -178,7 +178,7 @@ export const subscriptions = pgTable("subscriptions", {
   periodEnd: timestamp("period_end"),
   cancelAtPeriodEnd: boolean("cancel_at_period_end"),
   seats: integer("seats"),
-});
+}).enableRLS();
 
 export const subscriptionsRelations = relations(subscriptions, ({ one }) => ({
   user: one(users, {
@@ -203,7 +203,7 @@ export const aiUsage = pgTable(
     index("ai_usage_user_id_idx").on(table.userId),
     index("ai_usage_reset_at_idx").on(table.resetAt),
   ]
-);
+).enableRLS();
 
 // Add the relation to users
 export const aiUsageRelations = relations(aiUsage, ({ one }) => ({
@@ -234,7 +234,7 @@ export const wordVotes = pgTable(
     // Index for getting all votes by a user
     index("word_votes_user_id_idx").on(table.userId),
   ]
-);
+).enableRLS();
 
 export const wordVotesRelations = relations(wordVotes, ({ one }) => ({
   user: one(users, {

@@ -75,7 +75,7 @@ export default async function WordPage({ params }: WordPageProps) {
     }
 
     return (
-      <div className="mx-auto max-w-3xl py-16 px-6">
+      <div className="mx-auto max-w-3xl py-12 md:py-20 px-6">
         <WordHeader word={result.word} details={result.details} />
         {result.details.definitions.length > 1 && (
           <>

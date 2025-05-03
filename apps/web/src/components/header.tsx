@@ -3,20 +3,15 @@
 import { SearchInput } from "./search-input";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { AskAI } from "./ask-ai";
 import { UserDropdown } from "./user-dropdown";
 
 export function Header() {
-  const pathname = usePathname();
-  const PATHS_WITH_SIDEBARS = ["/docs", "/settings"]
-
   return (
     <header
       className={cn(
-        "w-full px-4 border-b bg-background flex h-14 items-center justify-between",
-        PATHS_WITH_SIDEBARS.some(path => pathname.startsWith(path)) && "sticky top-0 z-50"
+        "w-full px-4 border-b bg-background flex h-14 items-center justify-between sticky top-0 z-50",
       )}
     >
       <div className="mr-4 flex">

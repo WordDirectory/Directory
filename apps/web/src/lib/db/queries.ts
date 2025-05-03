@@ -1,5 +1,11 @@
 import { db } from "@/lib/db";
-import { aiUsage, words, wordVotes, subscriptions } from "@/lib/db/schema";
+import {
+  aiUsage,
+  words,
+  wordVotes,
+  subscriptions,
+  savedWords,
+} from "@/lib/db/schema";
 import { desc, eq, ilike, sql } from "drizzle-orm";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
@@ -158,4 +164,63 @@ export async function getActiveSubscription(userId: string) {
       desc(subscriptions.periodStart),
     ],
   });
+}
+
+export async function getSavedWords(userId: string, limit = 50, offset = 0) {
+  const results = await db.transaction(async (tx) => {
+    // Get saved words with their save date
+    const savedWordsList = await tx.query.savedWords.findMany({
+      where: eq(savedWords.userId, userId),
+      limit,
+      offset,
+      orderBy: desc(savedWords.createdAt),
+      with: {
+        word: {
+          columns: {
+            word: true,
+          },
+        },
+      },
+    });
+
+    // Get total count
+    const [{ count }] = await tx
+      .select({ count: sql<number>`count(*)` })
+      .from(savedWords)
+      .where(eq(savedWords.userId, userId));
+
+    return {
+      words: savedWordsList.map((sw) => sw.word.word),
+      totalCount: Number(count),
+    };
+  });
+
+  return results;
+}
+
+export async function hasUserSavedWord(userId: string, wordId: string) {
+  const saved = await db.query.savedWords.findFirst({
+    where: sql`${savedWords.userId} = ${userId} AND ${savedWords.wordId} = ${wordId}`,
+  });
+
+  return !!saved;
+}
+
+export async function saveWord(userId: string, wordId: string) {
+  return db
+    .insert(savedWords)
+    .values({
+      userId,
+      wordId,
+    })
+    .onConflictDoNothing()
+    .returning();
+}
+
+export async function unsaveWord(userId: string, wordId: string) {
+  return db
+    .delete(savedWords)
+    .where(
+      sql`${savedWords.userId} = ${userId} AND ${savedWords.wordId} = ${wordId}`
+    );
 }

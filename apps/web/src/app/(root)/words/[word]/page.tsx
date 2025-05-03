@@ -9,6 +9,7 @@ import { WordNotFound } from "@/components/word-not-found";
 import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
 import { VoteButton } from "@/components/vote-button";
+import { SaveWord } from "@/components/save-word";
 
 interface WordPageProps {
   params: Promise<{
@@ -100,13 +101,18 @@ function WordHeader({
   return (
     <>
       <div className="mb-8 flex items-center gap-4">
-        <div className="flex items-center gap-5">
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
-            {capitalize(word)}
-          </h1>
-          <div className="flex items-center gap-3">
-            <WordAudioButton word={word} />
+        <div className="flex flex-col gap-6">
+          <div className="flex gap-5">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
+              {capitalize(word)}
+            </h1>
+            <div className="flex items-center gap-3">
+              <WordAudioButton word={word} />
+            </div>
+          </div>
+          <div className="flex gap-3">
             <VoteButton word={word} />
+            <SaveWord word={word} />
           </div>
         </div>
       </div>

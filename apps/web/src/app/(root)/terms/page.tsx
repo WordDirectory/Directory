@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function TermsPage() {
   return (
     <main className="relative w-full overflow-hidden px-8">
-      <div className="container mx-auto max-w-4xl py-20">
+      <div className="container mx-auto max-w-4xl py-12 md:py-20">
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Terms of Service</h1>
           <p className="text-muted-foreground">Last updated: April 2025</p>
@@ -35,10 +35,10 @@ export default function TermsPage() {
           <h2 className="text-2xl font-semibold">2. Using Our Service</h2>
           <p>
             Our service is provided "as is" without any warranties. While we
-            strive for accuracy in our definitions and examples, we cannot guarantee
-            that all content is 100% accurate. Some definitions or examples may contain
-            errors, and we strongly recommend verifying any important information from
-            authoritative sources.
+            strive for accuracy in our definitions and examples, we cannot
+            guarantee that all content is 100% accurate. Some definitions or
+            examples may contain errors, and we strongly recommend verifying any
+            important information from authoritative sources.
           </p>
           <p>
             You may use our service for personal, non-commercial purposes. You

@@ -71,7 +71,7 @@ export default function PricingPage() {
 
   return (
     <main className="relative w-full overflow-hidden px-8">
-      <div className="container mx-auto max-w-4xl py-20">
+      <div className="container mx-auto max-w-4xl py-12 md:py-20">
         <header className="mb-12 space-y-4 text-center">
           <h1 className="text-4xl font-bold">Simple, transparent pricing</h1>
           <p className="text-xl text-muted-foreground">

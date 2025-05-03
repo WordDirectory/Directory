@@ -9,7 +9,7 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
-import { LogIn, LogOut, Settings, CreditCard, Sun, Moon } from "lucide-react";
+import { LogIn, LogOut, Settings, CreditCard, Sun, Moon, Bookmark } from "lucide-react";
 import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
@@ -113,11 +113,15 @@ export function UserDropdown() {
         <>
           {session && (
             <>
+              <DropdownMenuItem onClick={() => router.push("/user/saved")}>
+                <Bookmark className="h-4 w-4" />
+                Saved words
+              </DropdownMenuItem>
+
               <DropdownMenuItem onClick={() => router.push("/settings")}>
                 <Settings className="h-4 w-4" />
                 Settings
               </DropdownMenuItem>
-              <ThemeItem />
 
               <DropdownMenuItem
                 onClick={isPlus ? handleBillingPortal : handleUpgrade}
@@ -135,6 +139,8 @@ export function UserDropdown() {
                   </>
                 )}
               </DropdownMenuItem>
+
+              <ThemeItem />
 
               <DropdownMenuSeparator />
               <DropdownMenuItem

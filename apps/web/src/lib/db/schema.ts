@@ -112,9 +112,44 @@ export const examples = pgTable(
   ]
 );
 
+export const savedWords = pgTable(
+  "saved_words",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    wordId: uuid("word_id")
+      .notNull()
+      .references(() => words.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at").defaultNow(),
+  },
+  (table) => [
+    // Index for looking up if a user has saved a specific word
+    uniqueIndex("saved_words_user_word_idx").on(table.userId, table.wordId),
+    // Index for getting all saved words for a user
+    index("saved_words_user_id_idx").on(table.userId),
+    // Index for getting all users who saved a word
+    index("saved_words_word_id_idx").on(table.wordId),
+  ]
+);
+
+export const savedWordsRelations = relations(savedWords, ({ one }) => ({
+  user: one(users, {
+    fields: [savedWords.userId],
+    references: [users.id],
+  }),
+  word: one(words, {
+    fields: [savedWords.wordId],
+    references: [words.id],
+  }),
+}));
+
+// Update word relations to include saved words
 export const wordsRelations = relations(words, ({ many }) => ({
   definitions: many(definitions),
   votes: many(wordVotes),
+  savedBy: many(savedWords),
 }));
 
 export const definitionsRelations = relations(definitions, ({ one, many }) => ({
@@ -212,6 +247,8 @@ export const wordVotesRelations = relations(wordVotes, ({ one }) => ({
   }),
 }));
 
+// Update user relations to include saved words
 export const userRelations = relations(users, ({ many }) => ({
   votes: many(wordVotes),
+  savedWords: many(savedWords),
 }));

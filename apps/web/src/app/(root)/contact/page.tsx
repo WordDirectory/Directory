@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <main className="relative w-full overflow-hidden 8">
-      <div className="container mx-auto max-w-4xl py-20">
+      <div className="container mx-auto max-w-4xl py-12 md:py-20py-12 md:py-20">
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Get in Touch</h1>
         </header>
@@ -27,8 +27,8 @@ export default function ContactPage() {
               </Button>
             </p>
             <p className="text-muted-foreground">
-              We try to respond within 24 hours, but sometimes we're busy adding new words
-              to make this dictionary even more awesome.
+              We try to respond within 24 hours, but sometimes we're busy adding
+              new words to make this dictionary even more awesome.
             </p>
           </div>
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Social Media</h2>
             <p>Find us on these platforms if email ain't your thing:</p>
-            
+
             <div className="flex gap-6">
               <Link
                 href="https://x.com/WordDirectory"
@@ -48,7 +48,7 @@ export default function ContactPage() {
                 <FaXTwitter size={24} />
                 <span>X</span>
               </Link>
-              
+
               <Link
                 href="https://github.com/WordDirectory/Directory"
                 target="_blank"
@@ -66,9 +66,9 @@ export default function ContactPage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold">Contributing</h2>
             <p>
-              Want to help make this dictionary even better? Our GitHub repo is open source
-              and we're always looking for contributors. Whether you're fixing typos or
-              adding new words, we'd love your help!
+              Want to help make this dictionary even better? Our GitHub repo is
+              open source and we're always looking for contributors. Whether
+              you're fixing typos or adding new words, we'd love your help!
             </p>
             <Button asChild>
               <Link
@@ -84,4 +84,4 @@ export default function ContactPage() {
       </div>
     </main>
   );
-} 
+}

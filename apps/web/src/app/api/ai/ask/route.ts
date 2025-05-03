@@ -17,7 +17,7 @@ const requestSchema = z.object({
     .string()
     .min(1, "Message is required")
     .max(50000, "Message is too long"),
-  word: z.string().min(1, "Word is required").max(100, "Word is too long"),
+  word: z.string().max(100, "Word is too long").nullish(),
 });
 
 // Initialize the Gemini model
@@ -54,6 +54,7 @@ export async function POST(request: Request) {
         status: 400,
         errors: result.error.flatten().fieldErrors,
       };
+      console.log("Invalid request data", result.error);
       return NextResponse.json(error, { status: 400 });
     }
 
@@ -119,23 +120,26 @@ export async function POST(request: Request) {
     const { message, word } = result.data;
 
     // Get word details from database
-    const wordDetails = await getWord(decodeURIComponent(word));
-    if (!wordDetails) {
-      // This error will only be shown if the user is on a word page
-      // Not when they search for a word and click the AI button
-      const error: APIError = {
-        message: `Word "${word}" not found`,
-        status: 404,
-        code: "WORD_NOT_FOUND",
-      };
-      return NextResponse.json(error, { status: 404 });
+    let wordDetails = null;
+    if (word) {
+      wordDetails = await getWord(decodeURIComponent(word));
+      if (!wordDetails) {
+        // This error will only be shown if the user is on a word page
+        // Not when they search for a word and click the AI button
+        const error: APIError = {
+          message: `Word "${word}" not found`,
+          status: 404,
+          code: "WORD_NOT_FOUND",
+        };
+        return NextResponse.json(error, { status: 404 });
+      }
     }
 
     const prompt = `
     <system>
 You are an AI assistant for WordDirectory, a website that provides simple, human-readable word definitions.
 
-The user is currently on a word page for ${word}.
+${word ? `The user is currently on a word page for ${word}.` : ""}
 
 You must answer the user's question. It will not always be about the word, sometimes it will.
 
@@ -148,10 +152,14 @@ Avoid using overly complex language at all times. Simplicity matters.
 You can talk about anything - daily life, movies, music, books, whatever.
 </system>
 
-<context>
+${
+  word
+    ? `<context>
 Current word: ${word}
 Word details: ${JSON.stringify(wordDetails)}
-</context>
+</context>`
+    : ""
+}
 
 <user_question>
 ${message}
@@ -159,6 +167,10 @@ ${message}
 
 Response:
     `;
+
+    console.log("Word", word);
+    console.log("Word details", wordDetails);
+    console.log("Message", message);
 
     // Generate response using Gemini
     const { text } = await generateText({

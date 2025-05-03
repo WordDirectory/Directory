@@ -121,6 +121,8 @@ export async function POST(request: Request) {
     // Get word details from database
     const wordDetails = await getWord(decodeURIComponent(word));
     if (!wordDetails) {
+      // This error will only be shown if the user is on a word page
+      // Not when they search for a word and click the AI button
       const error: APIError = {
         message: `Word "${word}" not found`,
         status: 404,

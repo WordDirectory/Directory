@@ -131,11 +131,8 @@ export async function POST(request: Request) {
       return NextResponse.json(error, { status: 404 });
     }
 
-    // Generate response using Gemini
-    const { text } = await generateText({
-      model,
-      prompt: `
-<system>
+    const prompt = `
+    <system>
 You are an AI assistant for WordDirectory, a website that provides simple, human-readable word definitions.
 
 The user is currently on a word page for ${word}.
@@ -160,7 +157,13 @@ Word details: ${JSON.stringify(wordDetails)}
 ${message}
 </user_question>
 
-Response:`,
+Response:
+    `;
+
+    // Generate response using Gemini
+    const { text } = await generateText({
+      model,
+      prompt,
       temperature: 0.7,
       maxTokens: 500,
     });

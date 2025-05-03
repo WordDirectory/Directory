@@ -12,9 +12,14 @@ import {
 } from "@/components/ui/command";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
+import { FileX2, Sparkles } from "lucide-react";
+import { Button } from "./ui/button";
+import { useAskAIStore } from "@/stores/ask-ai-store";
 
 const CACHE_KEY = "random-words-cache";
 const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
+const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
+const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
 
 interface CacheEntry {
   words: string[];
@@ -61,6 +66,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const [words, setWords] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
   const debouncedQuery = useDebounce(query, 300);
+  const { setIsOpen: setAIOpen, setInitialMessage } = useAskAIStore();
 
   const performSearch = useCallback(async (searchQuery: string) => {
     if (!searchQuery) {
@@ -111,6 +117,15 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
     }
   }, [debouncedQuery, performSearch]);
 
+  const handleAskAI = () => {
+    setAIOpen(true);
+    const savedMessage =
+      localStorage.getItem(AI_INITIAL_MESSAGE_KEY) || DEFAULT_INITIAL_MESSAGE;
+    const message = savedMessage.replace("{word}", query);
+    setInitialMessage(message);
+    onOpenChange(false);
+  };
+
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
       <CommandInput
@@ -121,8 +136,23 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       <CommandList>
         {isLoading ? (
           <CommandEmpty>Searching words...</CommandEmpty>
-        ) : words.length === 0 ? (
-          <CommandEmpty>No results found.</CommandEmpty>
+        ) : words.length === 0 && query ? (
+          <div className="py-6 text-center">
+            <div className="mb-4 flex justify-center">
+              <FileX2 className="h-12 w-12 text-muted-foreground/50" />
+            </div>
+            <p className="mb-4 text-sm text-muted-foreground">
+              No results found
+            </p>
+            <Button
+              variant="outline"
+              className="mx-auto flex items-center gap-2"
+              onClick={handleAskAI}
+            >
+              <Sparkles className="h-4 w-4" />
+              <span>Ask AI about &quot;{query}&quot;</span>
+            </Button>
+          </div>
         ) : (
           <CommandGroup>
             {words.map((word) => (

@@ -9,18 +9,38 @@ interface Props {
   children: React.ReactNode;
   trigger: React.ReactNode;
   className?: string;
+  open?: boolean;
+  onOpenChange?: (open: boolean) => void;
 }
 
-export function CustomPopover({ children, trigger, className }: Props) {
+export function CustomPopover({
+  children,
+  trigger,
+  className,
+  open: controlledOpen,
+  onOpenChange,
+}: Props) {
   const [position, setPosition] = useState<{
     top: number;
     left: number;
   } | null>(null);
-  const [isOpen, setIsOpen] = useState(false);
+  const [uncontrolledOpen, setUncontrolledOpen] = useState(false);
   const triggerRef = useRef<HTMLDivElement>(null);
   const contentRef = useRef<HTMLDivElement>(null);
   const [isMounted, setIsMounted] = useState(false);
   const mouseStartPosRef = useRef<{ x: number; y: number } | null>(null);
+
+  // Determine if we're in controlled or uncontrolled mode
+  const isControlled = controlledOpen !== undefined;
+  const isOpen = isControlled ? controlledOpen : uncontrolledOpen;
+
+  const setIsOpen = (newOpen: boolean) => {
+    if (isControlled) {
+      onOpenChange?.(newOpen);
+    } else {
+      setUncontrolledOpen(newOpen);
+    }
+  };
 
   useEffect(() => {
     setIsMounted(true);
@@ -89,7 +109,7 @@ export function CustomPopover({ children, trigger, className }: Props) {
       document.removeEventListener("mouseup", handleMouseUp);
       document.removeEventListener("keydown", handleEscapeKey);
     };
-  }, [isOpen]);
+  }, [isOpen, setIsOpen]);
 
   // Initial position calculation
   useLayoutEffect(() => {

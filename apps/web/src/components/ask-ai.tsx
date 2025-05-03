@@ -17,6 +17,7 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { APIError, AIError, AIUsageResponse } from "@/types/api";
 import { UpgradeButton } from "./upgrade-button";
+import { useAskAIStore } from "@/stores/ask-ai-store";
 
 const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
@@ -33,14 +34,20 @@ export function AskAI() {
   const { theme } = useTheme();
   const { data: session } = useSession();
   const router = useRouter();
+  const { isOpen, setIsOpen, initialMessage, setInitialMessage } =
+    useAskAIStore();
 
   // Load message from localStorage on mount
   useEffect(() => {
     const savedMessage = localStorage.getItem(MESSAGE_STORAGE_KEY);
-    if (savedMessage) {
+    if (initialMessage) {
+      setMessage(initialMessage);
+      // Clear the initial message after using it
+      setInitialMessage(null);
+    } else if (savedMessage) {
       setMessage(savedMessage);
     }
-  }, []);
+  }, [initialMessage, setInitialMessage]);
 
   // Save message to localStorage whenever it changes
   useEffect(() => {
@@ -138,14 +145,14 @@ export function AskAI() {
     }
   };
 
-  // Don't render if not on a word page
-  if (!pathname?.includes("words/")) {
-    return null;
-  }
-
   const triggerButton = (
     <div className="relative w-fit overflow-hidden rounded-full">
-      <Button variant="outline" size="icon" className="rounded-full">
+      <Button
+        variant="outline"
+        size="icon"
+        className="rounded-full"
+        onClick={() => setIsOpen(true)}
+      >
         <Sparkles strokeWidth={1.5} className="h-4 w-4 text-[#ff7893]" />
       </Button>
       <ShineBorder
@@ -167,6 +174,8 @@ export function AskAI() {
         <CustomPopover
           className="max-h-[380px] overflow-y-auto mt-2 p-0"
           trigger={triggerButton}
+          open={isOpen}
+          onOpenChange={setIsOpen}
         >
           <NotLoggedInUI router={router} />
         </CustomPopover>
@@ -174,6 +183,8 @@ export function AskAI() {
         <CustomPopover
           className="max-h-[380px] overflow-y-auto mt-2 p-0"
           trigger={triggerButton}
+          open={isOpen}
+          onOpenChange={setIsOpen}
         >
           <FreeTierLimitReachedUI usage={aiError.usage!} />
         </CustomPopover>
@@ -181,6 +192,8 @@ export function AskAI() {
         <CustomPopover
           className="max-h-[380px] overflow-y-auto mt-2"
           trigger={triggerButton}
+          open={isOpen}
+          onOpenChange={setIsOpen}
         >
           <div className="space-y-4">
             {messages.length === 0 && (

@@ -1,9 +1,8 @@
 "use client";
-
-import { useState, useRef } from 'react';
-import { Volume2 } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { cn } from '@/lib/utils';
+import { useState, useRef } from "react";
+import { Volume2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 interface WordAudioButtonProps {
   word: string;
@@ -24,10 +23,12 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
       setIsLoading(true);
 
       // Fetch the audio
-      const response = await fetch(`/api/words/${encodeURIComponent(word)}/audio`);
-      
+      const response = await fetch(
+        `/api/words/${encodeURIComponent(word)}/audio`
+      );
+
       if (!response.ok) {
-        throw new Error('Failed to load audio');
+        throw new Error("Failed to load audio");
       }
 
       // Get audio blob
@@ -39,7 +40,7 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
       audioRef.current = audio;
 
       // Clean up the blob URL when the audio is done
-      audio.addEventListener('ended', () => {
+      audio.addEventListener("ended", () => {
         URL.revokeObjectURL(audioUrl);
         audioRef.current = null;
       });
@@ -47,7 +48,7 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
       // Play the audio
       await audio.play();
     } catch (error) {
-      console.error('Failed to play audio:', error);
+      console.error("Failed to play audio:", error);
     } finally {
       setIsLoading(false);
     }
@@ -62,7 +63,7 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
       className="rounded-full !h-12 !w-12 p-0"
       aria-label="Play pronunciation"
     >
-      <Volume2 
+      <Volume2
         className={cn(
           "!h-6 !w-6 text-muted-foreground transition-opacity duration-200",
           isLoading && "text-foreground/40"
@@ -70,4 +71,4 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
       />
     </Button>
   );
-} 
+}

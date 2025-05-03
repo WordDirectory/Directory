@@ -8,6 +8,7 @@ type Example = InferSelectModel<typeof examples>;
 
 // The shape we return from our API
 export type WordResponse = {
+  id: string;
   word: string;
   details: {
     definitions: Array<{
@@ -15,6 +16,12 @@ export type WordResponse = {
       examples: string[];
     }>;
   };
+};
+
+export type WordSocialResponse = {
+  votes: number;
+  hasVoted: boolean;
+  isSaved: boolean;
 };
 
 export type SearchWordsResponse = {
@@ -41,7 +48,8 @@ export type AIError = APIErrorBase & {
     | "AUTH_REQUIRED"
     | "SUBSCRIPTION_LIMIT_REACHED"
     | "RATE_LIMIT_EXCEEDED"
-    | "INTERNAL_SERVER_ERROR";
+    | "INTERNAL_SERVER_ERROR"
+    | "ALREADY_VOTED";
   usage?: AIUsageResponse;
 };
 

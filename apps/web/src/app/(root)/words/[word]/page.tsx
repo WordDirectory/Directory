@@ -10,6 +10,13 @@ import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
 import { VoteButton } from "@/components/vote-button";
 import { SaveWord } from "@/components/save-word";
+import { auth } from "@/lib/auth";
+import {
+  getWordVotes,
+  hasUserVotedWord,
+  hasUserSavedWord,
+} from "@/lib/db/queries";
+import { headers } from "next/headers";
 
 interface WordPageProps {
   params: Promise<{
@@ -68,19 +75,37 @@ export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
 
   try {
-    const result = await getWord(paramWord);
-
-    if (!result) {
+    // Get word data
+    const wordResult = await getWord(paramWord);
+    if (!wordResult) {
       return <WordNotFound word={decodeURI(paramWord)} />;
     }
 
+    // Get session and vote data
+    const session = await auth.api.getSession({ headers: await headers() });
+    const [votes, hasVoted, isSaved] = await Promise.all([
+      getWordVotes(wordResult.id),
+      session?.user?.id
+        ? hasUserVotedWord(session.user.id, wordResult.id)
+        : false,
+      session?.user?.id
+        ? hasUserSavedWord(session.user.id, wordResult.id)
+        : false,
+    ]);
+
     return (
       <div className="mx-auto max-w-3xl py-12 md:py-20 px-6">
-        <WordHeader word={result.word} details={result.details} />
-        {result.details.definitions.length > 1 && (
+        <WordHeader
+          word={wordResult.word}
+          details={wordResult.details}
+          votes={votes}
+          hasVoted={hasVoted}
+          isSaved={isSaved}
+        />
+        {wordResult.details.definitions.length > 1 && (
           <>
             <Separator className="mb-8" />
-            <WordContent word={result.word} details={result.details} />
+            <WordContent word={wordResult.word} details={wordResult.details} />
           </>
         )}
       </div>
@@ -94,9 +119,15 @@ export default async function WordPage({ params }: WordPageProps) {
 function WordHeader({
   word,
   details,
+  votes,
+  hasVoted,
+  isSaved,
 }: {
   word: string;
   details: WordResponse["details"];
+  votes: number;
+  hasVoted: boolean;
+  isSaved: boolean;
 }) {
   return (
     <>
@@ -111,8 +142,12 @@ function WordHeader({
             </div>
           </div>
           <div className="flex gap-3">
-            <VoteButton word={word} />
-            <SaveWord word={word} />
+            <VoteButton
+              word={word}
+              initialVotes={votes}
+              initialHasVoted={hasVoted}
+            />
+            <SaveWord word={word} initialIsSaved={isSaved} />
           </div>
         </div>
       </div>

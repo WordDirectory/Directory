@@ -2,29 +2,26 @@
 import { ThumbsUp } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useSession } from "@/lib/auth-client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
 interface VoteButtonProps {
   word: string;
+  initialVotes: number;
+  initialHasVoted: boolean;
 }
 
-export function VoteButton({ word }: VoteButtonProps) {
+export function VoteButton({
+  word,
+  initialVotes,
+  initialHasVoted,
+}: VoteButtonProps) {
   const { data: session } = useSession();
   const router = useRouter();
-  const [votes, setVotes] = useState(0);
-  const [hasVoted, setHasVoted] = useState(false);
-
-  // Fetch initial vote state
-  useEffect(() => {
-    fetch(`/api/words/${encodeURIComponent(word)}/vote`)
-      .then((res) => res.json())
-      .then((data) => {
-        setVotes(data.votes);
-        setHasVoted(data.hasVoted);
-      });
-  }, [word]);
+  const [votes, setVotes] = useState(initialVotes);
+  const [hasVoted, setHasVoted] = useState(initialHasVoted);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleVote = async () => {
     if (!session) {
@@ -33,6 +30,8 @@ export function VoteButton({ word }: VoteButtonProps) {
       router.push(`/auth/login?next=${currentUrl}`);
       return;
     }
+
+    setIsAnimating(true);
 
     // Optimistic update
     const prevVoted = hasVoted;
@@ -49,13 +48,17 @@ export function VoteButton({ word }: VoteButtonProps) {
         // Revert on error
         setHasVoted(prevVoted);
         setVotes(prevVotes);
+        console.error("[Vote Button] API error:", await res.json());
       }
     } catch (error) {
       // Revert on error
       setHasVoted(prevVoted);
       setVotes(prevVotes);
-      console.error("Error voting:", error);
+      console.error("[Vote Button] Error:", error);
     }
+
+    // Reset animation state after a delay
+    setTimeout(() => setIsAnimating(false), 600);
   };
 
   return (
@@ -72,11 +75,15 @@ export function VoteButton({ word }: VoteButtonProps) {
         transition={{ type: "spring", stiffness: 500, damping: 15 }}
       >
         <motion.div
-          animate={{
-            scale: hasVoted ? [1, 1.2, 1] : 1,
-            rotate: hasVoted ? [0, 10, -10, 0] : 0,
-            y: hasVoted ? [0, -2, 0] : 0,
-          }}
+          animate={
+            isAnimating
+              ? {
+                  scale: [1, 1.2, 1],
+                  rotate: [0, 10, -10, 0],
+                  y: [0, -2, 0],
+                }
+              : {}
+          }
           transition={{
             duration: 0.5,
             ease: "easeInOut",
@@ -92,7 +99,7 @@ export function VoteButton({ word }: VoteButtonProps) {
         </motion.div>
 
         <AnimatePresence>
-          {hasVoted && (
+          {isAnimating && hasVoted && (
             <motion.div
               className="absolute"
               initial={{ scale: 0 }}
@@ -106,7 +113,7 @@ export function VoteButton({ word }: VoteButtonProps) {
         </AnimatePresence>
 
         <AnimatePresence>
-          {hasVoted && (
+          {isAnimating && hasVoted && (
             <>
               {[...Array(6)].map((_, i) => (
                 <motion.div
@@ -130,8 +137,15 @@ export function VoteButton({ word }: VoteButtonProps) {
 
       <motion.div
         key={votes}
-        initial={{ opacity: 0, y: -10 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 1, y: 0 }}
+        animate={
+          isAnimating
+            ? {
+                opacity: [0, 1],
+                y: [-10, 0],
+              }
+            : {}
+        }
         transition={{ duration: 0.2 }}
         className="min-w-[1.5rem] text-sm font-medium"
       >

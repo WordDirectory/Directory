@@ -89,6 +89,7 @@ export async function POST(
 
     // Check authentication
     const session = await auth.api.getSession(request);
+
     if (!session?.user?.id) {
       return NextResponse.json(
         {
@@ -103,6 +104,7 @@ export async function POST(
     // Get the word and check if it exists
     const { word } = await params;
     const wordData = await getWord(decodeURIComponent(word));
+
     if (!wordData) {
       return NextResponse.json(
         {
@@ -114,6 +116,20 @@ export async function POST(
       );
     }
 
+    // Check if user has already voted
+    const hasVoted = await hasUserVotedWord(session.user.id, wordData.id);
+
+    if (hasVoted) {
+      return NextResponse.json(
+        {
+          message: "You have already voted for this word",
+          status: 400,
+          code: "ALREADY_VOTED",
+        } satisfies APIError,
+        { status: 400 }
+      );
+    }
+
     // Create the vote
     await createWordVote(session.user.id, wordData.id);
 
@@ -122,6 +138,7 @@ export async function POST(
 
     return NextResponse.json({ votes, hasVoted: true });
   } catch (error) {
+    console.error("POST Vote - Error:", error);
     if (error instanceof Error && error.message === "Too many requests") {
       return NextResponse.json(
         {

@@ -21,12 +21,12 @@ export async function HEAD(
     const { word } = await params;
     console.log("Raw word parameter: ", word);
     const decodedWord = decodeURIComponent(word).trim();
-    console.log("Decoded word: ", decodedWord)
+    console.log("Decoded word: ", decodedWord);
     const capitalizedWord =
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
     console.log("Capitalized word: ", capitalizedWord);
     const result = await getWord(capitalizedWord);
-    console.log("Result", result)
+    console.log("Result", result);
 
     if (result) {
       return new NextResponse(null, { status: 200 });
@@ -70,6 +70,7 @@ export async function GET(
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
 
     console.log(`[Debug] Fetching word: ${capitalizedWord}`);
+    // Get only the word content without social data
     const result = await getWord(capitalizedWord);
     console.log(`[Debug] Word fetch result:`, result ? "Found" : "Not found");
 
@@ -78,9 +79,13 @@ export async function GET(
       return NextResponse.redirect(next);
     }
 
-    // If word exists, return the data
+    // If word exists, return only the word content
     if (result) {
-      return NextResponse.json(result);
+      return NextResponse.json({
+        id: result.id,
+        word: result.word,
+        details: result.details,
+      });
     }
 
     // If word doesn't exist and we have a fallback URL, redirect there

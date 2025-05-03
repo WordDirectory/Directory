@@ -2,29 +2,20 @@
 import { Bookmark } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useSession } from "@/lib/auth-client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
 interface SaveWordProps {
   word: string;
+  initialIsSaved: boolean;
 }
 
-export function SaveWord({ word }: SaveWordProps) {
+export function SaveWord({ word, initialIsSaved }: SaveWordProps) {
   const { data: session } = useSession();
   const router = useRouter();
-  const [isSaved, setIsSaved] = useState(false);
-
-  // Fetch initial save state
-  useEffect(() => {
-    if (!session) return;
-
-    fetch(`/api/words/${encodeURIComponent(word)}/save`)
-      .then((res) => res.json())
-      .then((data) => {
-        setIsSaved(data.isSaved);
-      });
-  }, [word, session]);
+  const [isSaved, setIsSaved] = useState(initialIsSaved);
+  const [isAnimating, setIsAnimating] = useState(false);
 
   const handleSave = async () => {
     if (!session) {
@@ -33,6 +24,8 @@ export function SaveWord({ word }: SaveWordProps) {
       router.push(`/auth/login?next=${currentUrl}`);
       return;
     }
+
+    setIsAnimating(true);
 
     // Optimistic update
     const prevSaved = isSaved;
@@ -52,6 +45,9 @@ export function SaveWord({ word }: SaveWordProps) {
       setIsSaved(prevSaved);
       console.error("Error saving word:", error);
     }
+
+    // Reset animation state after a delay
+    setTimeout(() => setIsAnimating(false), 600);
   };
 
   return (
@@ -67,11 +63,15 @@ export function SaveWord({ word }: SaveWordProps) {
       transition={{ type: "spring", stiffness: 500, damping: 15 }}
     >
       <motion.div
-        animate={{
-          scale: isSaved ? [1, 1.2, 1] : 1,
-          rotate: isSaved ? [0, 10, -10, 0] : 0,
-          y: isSaved ? [0, -2, 0] : 0,
-        }}
+        animate={
+          isAnimating
+            ? {
+                scale: [1, 1.2, 1],
+                rotate: [0, 10, -10, 0],
+                y: [0, -2, 0],
+              }
+            : {}
+        }
         transition={{
           duration: 0.5,
           ease: "easeInOut",
@@ -87,7 +87,7 @@ export function SaveWord({ word }: SaveWordProps) {
       </motion.div>
 
       <AnimatePresence>
-        {isSaved && (
+        {isAnimating && isSaved && (
           <motion.div
             className="absolute"
             initial={{ scale: 0 }}
@@ -101,7 +101,7 @@ export function SaveWord({ word }: SaveWordProps) {
       </AnimatePresence>
 
       <AnimatePresence>
-        {isSaved && (
+        {isAnimating && isSaved && (
           <>
             {[...Array(6)].map((_, i) => (
               <motion.div

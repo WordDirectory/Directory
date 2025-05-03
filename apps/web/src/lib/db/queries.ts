@@ -34,7 +34,7 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
   return results;
 }
 
-export async function getWord(word: string) {
+export async function getWord(word: string, userId?: string | null) {
   console.log("Fetching word: ", word);
 
   const result = await db.query.words.findFirst({
@@ -51,6 +51,29 @@ export async function getWord(word: string) {
 
   if (!result) return null;
 
+  // Get vote count
+  const [{ count }] = await db
+    .select({
+      count: sql<number>`count(*)`,
+    })
+    .from(wordVotes)
+    .where(eq(wordVotes.wordId, result.id));
+
+  // Get user's vote status if userId is provided
+  let hasVoted = false;
+  let isSaved = false;
+  if (userId) {
+    const vote = await db.query.wordVotes.findFirst({
+      where: sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${result.id}`,
+    });
+    hasVoted = !!vote;
+
+    const saved = await db.query.savedWords.findFirst({
+      where: sql`${savedWords.userId} = ${userId} AND ${savedWords.wordId} = ${result.id}`,
+    });
+    isSaved = !!saved;
+  }
+
   return {
     id: result.id,
     word: result.word,
@@ -60,6 +83,9 @@ export async function getWord(word: string) {
         examples: def.examples.map((ex) => ex.text),
       })),
     },
+    votes: Number(count),
+    hasVoted,
+    isSaved,
   };
 }
 
@@ -111,12 +137,22 @@ export async function getAIUsage(userId: string) {
 }
 
 export async function getWordVotes(wordId: string) {
+  console.log("Getting word votes for: ", wordId);
   const result = await db
     .select({
       count: sql<number>`count(*)`,
     })
     .from(wordVotes)
     .where(eq(wordVotes.wordId, wordId));
+
+  console.log("Result: ", result);
+
+  // Debug: Let's see what's in the votes table for this word
+  const allVotes = await db
+    .select()
+    .from(wordVotes)
+    .where(eq(wordVotes.wordId, wordId));
+  console.log("All votes for word:", allVotes);
 
   return Number(result[0].count);
 }
@@ -126,18 +162,29 @@ export async function hasUserVotedWord(userId: string, wordId: string) {
     where: sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${wordId}`,
   });
 
+  console.log("Checking if user voted:", { userId, wordId, hasVoted: !!vote });
   return !!vote;
 }
 
 export async function createWordVote(userId: string, wordId: string) {
-  return db
+  console.log("Creating vote:", { userId, wordId });
+
+  // Debug: Let's see if the vote already exists
+  const existingVote = await db.query.wordVotes.findFirst({
+    where: sql`${wordVotes.userId} = ${userId} AND ${wordVotes.wordId} = ${wordId}`,
+  });
+  console.log("Existing vote:", existingVote);
+
+  const result = await db
     .insert(wordVotes)
     .values({
       userId,
       wordId,
     })
-    .onConflictDoNothing()
     .returning();
+
+  console.log("Create vote result:", result);
+  return result;
 }
 
 export async function deleteWordVote(userId: string, wordId: string) {

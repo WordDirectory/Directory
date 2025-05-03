@@ -1,4 +1,7 @@
-import { SearchWordsResponse, WordResponse } from "@/types/api";
+import {
+  SearchWordsResponse,
+  WordResponse,
+} from "@/types/api";
 
 const API_BASE = "/api/words";
 

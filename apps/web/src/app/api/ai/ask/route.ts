@@ -168,10 +168,6 @@ ${message}
 Response:
     `;
 
-    console.log("Word", word);
-    console.log("Word details", wordDetails);
-    console.log("Message", message);
-
     // Generate response using Gemini
     const { text } = await generateText({
       model,

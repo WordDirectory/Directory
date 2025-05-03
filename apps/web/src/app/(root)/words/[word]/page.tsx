@@ -112,7 +112,11 @@ export default async function WordPage({ params }: WordPageProps) {
     );
   } catch (error) {
     console.error("Error fetching word:", error);
-    return <WordNotFound word={paramWord} />;
+    const isTimeout =
+      error instanceof Error &&
+      (error.message.includes("Connection terminated") ||
+        error.message.includes("connection timeout"));
+    return <WordNotFound word={paramWord} isTimeout={isTimeout} />;
   }
 }
 

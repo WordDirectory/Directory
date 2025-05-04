@@ -1,7 +1,4 @@
-import {
-  SearchWordsResponse,
-  WordResponse,
-} from "@/types/api";
+import { SearchWordsResponse, WordResponse } from "@/types/api";
 
 const API_BASE = "/api/words";
 
@@ -43,6 +40,19 @@ export async function getWord(
   const res = await fetch(url, CACHE_OPTIONS);
   if (!res.ok) {
     if (res.status === 404) return null;
+
+    // Handle lookup limit error
+    if (res.status === 429) {
+      const data = await res.json();
+      if (data.code === "LOOKUP_LIMIT_REACHED") {
+        throw Object.assign(new Error("Word lookup limit reached"), {
+          type: "LOOKUP_LIMIT_REACHED",
+          ...data,
+        });
+      }
+    }
+
+    console.error("Failed to fetch word:", res);
     throw new Error("Failed to fetch word");
   }
 

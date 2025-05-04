@@ -17,8 +17,6 @@ import {
   hasUserSavedWord,
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
-import { trackWordLookup, WordLookupError } from "@/lib/word-limits";
-import { WordLookupLimit } from "@/components/word-lookup-limit";
 
 interface WordPageProps {
   params: Promise<{
@@ -75,6 +73,7 @@ export async function generateMetadata({
 
 export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
+  const session = await auth.api.getSession({ headers: await headers() });
 
   try {
     // Get word data first to get the ID
@@ -83,8 +82,7 @@ export default async function WordPage({ params }: WordPageProps) {
       return <WordNotFound word={decodeURI(paramWord)} />;
     }
 
-    // Get session and vote data
-    const session = await auth.api.getSession({ headers: await headers() });
+    // Get vote data
     const [votes, hasVoted, isSaved] = await Promise.all([
       getWordVotes(wordResult.id),
       session?.user?.id

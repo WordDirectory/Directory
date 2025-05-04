@@ -3,7 +3,13 @@ import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { getWord } from "@/lib/db/queries";
 import { APIError } from "@/types/api";
-import { trackWordLookup, WordLookupError } from "@/lib/word-limits";
+import {
+  WordLookupError,
+  checkWordLookupLimit,
+  trackWordView,
+  incrementWordLookupCount,
+} from "@/lib/word-limits";
+import { auth } from "@/lib/auth";
 
 export async function HEAD(
   request: Request,
@@ -25,28 +31,16 @@ export async function HEAD(
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
     const result = await getWord(capitalizedWord);
 
-    if (result) {
-      // Only track lookup when word is found
-      await trackWordLookup(request, result.id);
-      return new NextResponse(null, { status: 200 });
-    }
-
-    return new NextResponse(null, { status: 404 });
+    // Just return if word exists or not, no tracking needed for HEAD requests
+    return new NextResponse(null, { status: result ? 200 : 404 });
   } catch (error: unknown) {
-    if (error instanceof Error) {
-      if (error.message === "Too many requests") {
-        return new NextResponse(null, {
-          status: 429,
-          headers: {
-            "Retry-After": "60",
-          },
-        });
-      }
-    }
-
-    // Handle word lookup limit error
-    if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
-      return NextResponse.json(error, { status: 429 });
+    if (error instanceof Error && error.message === "Too many requests") {
+      return new NextResponse(null, {
+        status: 429,
+        headers: {
+          "Retry-After": "60",
+        },
+      });
     }
 
     return new NextResponse(null, { status: 500 });
@@ -62,6 +56,8 @@ export async function GET(
     const headersList = await headers();
     const forwardedFor = headersList.get("x-forwarded-for");
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
+    const session = await auth.api.getSession(request);
+    const userId = session?.user?.id || null;
 
     // Apply rate limiting
     await rateLimit(ip);
@@ -81,20 +77,37 @@ export async function GET(
 
     // If word exists, track the lookup and return the content
     if (result) {
-      // Only track lookup when word is found
-      await trackWordLookup(request, result.id);
+      try {
+        // Check lookup limit first
+        await checkWordLookupLimit(userId, ip);
+        // Track the view and increment count
+        await trackWordView(request, result.id);
+        await incrementWordLookupCount(userId, ip);
 
-      // If we have a next URL, redirect there
-      if (next) {
-        return NextResponse.redirect(next);
+        // If we have a next URL, redirect there
+        if (next) {
+          return NextResponse.redirect(next);
+        }
+
+        // Otherwise return the word data
+        return NextResponse.json({
+          id: result.id,
+          word: result.word,
+          details: result.details,
+        });
+      } catch (error) {
+        console.log(error);
+        if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
+          const limitUrl = new URL("/word-limit-reached", request.url);
+          limitUrl.searchParams.set("word", capitalizedWord);
+          limitUrl.searchParams.set(
+            "usage",
+            JSON.stringify((error as WordLookupError).usage)
+          );
+          return NextResponse.redirect(limitUrl);
+        }
+        throw error;
       }
-
-      // Otherwise return the word data
-      return NextResponse.json({
-        id: result.id,
-        word: result.word,
-        details: result.details,
-      });
     }
 
     // If word doesn't exist and we have a fallback URL, redirect there
@@ -112,11 +125,6 @@ export async function GET(
       { status: 404 }
     );
   } catch (error: unknown) {
-    // Handle word lookup limit error
-    if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
-      return NextResponse.json(error, { status: 429 });
-    }
-
     if (error instanceof Error && error.message === "Too many requests") {
       return new NextResponse(null, {
         status: 429,

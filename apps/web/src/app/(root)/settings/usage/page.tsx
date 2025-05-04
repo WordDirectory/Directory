@@ -64,7 +64,7 @@ export default function AISettingsPage() {
     <main className="relative w-full overflow-hidden">
       <div className="flex flex-col gap-12">
         <section className="flex flex-col gap-8">
-          <h1 className="text-4xl font-bold">AI Settings</h1>
+          <h1 className="text-4xl font-bold">Usage</h1>
 
           {usage && (
             <>

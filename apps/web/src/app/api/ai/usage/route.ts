@@ -22,20 +22,29 @@ export async function GET(request: Request) {
       getActiveSubscription(session.user.id),
     ]);
 
-    // Check if subscription is active and plan is plus
-    const isActivePlus =
-      subscriptionData?.plan === "plus" &&
-      (subscriptionData.status === "active" ||
-        subscriptionData.status === "trialing");
+    // Default limit based on plan AND status
+    const limit =
+      subscriptionData?.plan === "plus" && subscriptionData?.status === "active"
+        ? 1000
+        : 10;
 
-    // Calculate limits based on subscription plan
-    const limit = isActivePlus ? 1000 : 10;
+    // If no usage data found, return default values
+    if (!aiUsageData) {
+      return NextResponse.json({
+        usage: {
+          current: 0,
+          limit,
+          plan: subscriptionData?.plan || "free",
+          nextReset: null,
+        },
+      });
+    }
 
     return NextResponse.json({
       usage: {
         current: aiUsageData?.count || 0,
         limit,
-        plan: isActivePlus ? "plus" : "free",
+        plan: subscriptionData?.plan || "free",
         nextReset: aiUsageData?.resetAt?.toISOString() || null,
       },
     });

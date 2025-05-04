@@ -100,7 +100,13 @@ export async function POST(request: Request) {
     }
 
     if (aiUsageData) {
-      const limit = subscriptionData?.plan === "plus" ? 1000 : 10;
+      // Check limits
+      const limit =
+        subscriptionData?.plan === "plus" &&
+        subscriptionData?.status === "active"
+          ? 1000
+          : 10;
+
       if (aiUsageData.count >= limit) {
         const error: AIError = {
           message: "AI usage limit reached",

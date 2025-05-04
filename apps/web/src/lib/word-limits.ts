@@ -75,8 +75,11 @@ export async function trackWordLookup(request: Request, wordId: string) {
     lookupData = newLookupData;
   }
 
-  // Check limits
-  const limit = subscriptionData?.plan === "plus" ? Infinity : 10;
+  // Default limit based on plan AND status
+  const limit =
+    subscriptionData?.plan === "plus" && subscriptionData?.status === "active"
+      ? Infinity
+      : 10;
 
   if (lookupData.count >= limit) {
     const error: WordLookupError = {

@@ -64,7 +64,7 @@ export default function SettingsPage() {
     <main className="relative w-full overflow-hidden">
       <div className="container mx-auto max-w-4xl flex flex-col gap-16">
         <section className="flex flex-col gap-6">
-          <h1 className="text-4xl font-bold">Account</h1>
+          <h1 className="text-4xl font-bold">General</h1>
           <div className="flex flex-row items-center gap-6">
             <Avatar className="h-24 w-24">
               <AvatarImage

@@ -29,7 +29,7 @@ export function Sidebar() {
 
   const items = [
     {
-      label: "Account",
+      label: "General",
       href: "/settings",
     },
     {

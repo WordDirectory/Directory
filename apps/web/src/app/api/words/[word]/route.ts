@@ -3,6 +3,7 @@ import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { getWord } from "@/lib/db/queries";
 import { APIError } from "@/types/api";
+import { trackWordLookup, WordLookupError } from "@/lib/word-limits";
 
 export async function HEAD(
   request: Request,
@@ -19,29 +20,35 @@ export async function HEAD(
 
     // Decode the URL-encoded word parameter
     const { word } = await params;
-    console.log("Raw word parameter: ", word);
     const decodedWord = decodeURIComponent(word).trim();
-    console.log("Decoded word: ", decodedWord);
     const capitalizedWord =
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
-    console.log("Capitalized word: ", capitalizedWord);
     const result = await getWord(capitalizedWord);
-    console.log("Result", result);
 
     if (result) {
+      // Only track lookup when word is found
+      await trackWordLookup(request, result.id);
       return new NextResponse(null, { status: 200 });
     }
 
     return new NextResponse(null, { status: 404 });
   } catch (error: unknown) {
-    if (error instanceof Error && error.message === "Too many requests") {
-      return new NextResponse(null, {
-        status: 429,
-        headers: {
-          "Retry-After": "60",
-        },
-      });
+    if (error instanceof Error) {
+      if (error.message === "Too many requests") {
+        return new NextResponse(null, {
+          status: 429,
+          headers: {
+            "Retry-After": "60",
+          },
+        });
+      }
     }
+
+    // Handle word lookup limit error
+    if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
+      return NextResponse.json(error, { status: 429 });
+    }
+
     return new NextResponse(null, { status: 500 });
   }
 }
@@ -69,18 +76,20 @@ export async function GET(
     const capitalizedWord =
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
 
-    console.log(`[Debug] Fetching word: ${capitalizedWord}`);
     // Get only the word content without social data
     const result = await getWord(capitalizedWord);
-    console.log(`[Debug] Word fetch result:`, result ? "Found" : "Not found");
 
-    // If word exists and we have a next URL, redirect there
-    if (result && next) {
-      return NextResponse.redirect(next);
-    }
-
-    // If word exists, return only the word content
+    // If word exists, track the lookup and return the content
     if (result) {
+      // Only track lookup when word is found
+      await trackWordLookup(request, result.id);
+
+      // If we have a next URL, redirect there
+      if (next) {
+        return NextResponse.redirect(next);
+      }
+
+      // Otherwise return the word data
       return NextResponse.json({
         id: result.id,
         word: result.word,
@@ -103,19 +112,10 @@ export async function GET(
       { status: 404 }
     );
   } catch (error: unknown) {
-    // Detailed error logging
-    console.error("[Word API Error] Details:", {
-      error:
-        error instanceof Error
-          ? {
-              message: error.message,
-              stack: error.stack,
-              name: error.name,
-            }
-          : error,
-      word: params,
-      timestamp: new Date().toISOString(),
-    });
+    // Handle word lookup limit error
+    if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
+      return NextResponse.json(error, { status: 429 });
+    }
 
     if (error instanceof Error && error.message === "Too many requests") {
       return new NextResponse(null, {
@@ -125,6 +125,7 @@ export async function GET(
         },
       });
     }
+
     return new NextResponse(null, { status: 500 });
   }
 }

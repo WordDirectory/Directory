@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "Will Word Directory always be free?",
     answer:
-      "Yes, the site itself is free forever and all the words. We won't ever charge to view definitions or make some 'premium word' nonsense. We might add MORE features on top though that we might charge for but that's totally up to you to use those features. We're talking being able to define entire sentences, follow-up questions with AI, etc. Just things that improve the experience but the basics stay free forever.",
+      "Yes, the core site remains free forever and all the words. We won't ever make up some 'premium word' nonsense. Free users get a limit of 10 word lookups per month, and subscribing is just $1/month. We might add MORE features on top though that we might charge for but that's totally up to you to use those features. We're talking being able to define entire sentences, follow-up questions with AI, etc. Just things that improve the experience but the basics stay free forever.",
   },
   {
     question: "What types of words do you include?",

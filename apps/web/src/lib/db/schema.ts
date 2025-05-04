@@ -251,4 +251,66 @@ export const wordVotesRelations = relations(wordVotes, ({ one }) => ({
 export const userRelations = relations(users, ({ many }) => ({
   votes: many(wordVotes),
   savedWords: many(savedWords),
+  wordLookups: many(wordLookups),
+  wordHistory: many(wordHistory),
+}));
+
+export const wordLookups = pgTable(
+  "word_lookups",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id").references(() => users.id, { onDelete: "cascade" }),
+    ipAddress: text("ip_address").notNull(),
+    count: integer("count").notNull().default(0),
+    resetAt: timestamp("reset_at").notNull(),
+    createdAt: timestamp("created_at").defaultNow(),
+    updatedAt: timestamp("updated_at").defaultNow(),
+  },
+  (table) => [
+    index("word_lookups_user_id_idx").on(table.userId),
+    index("word_lookups_ip_address_idx").on(table.ipAddress),
+    index("word_lookups_reset_at_idx").on(table.resetAt),
+  ]
+).enableRLS();
+
+export const wordLookupsRelations = relations(wordLookups, ({ one }) => ({
+  user: one(users, {
+    fields: [wordLookups.userId],
+    references: [users.id],
+  }),
+}));
+
+export const wordHistory = pgTable(
+  "word_history",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id").references(() => users.id, { onDelete: "cascade" }),
+    ipAddress: text("ip_address").notNull(),
+    wordId: uuid("word_id")
+      .notNull()
+      .references(() => words.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at").defaultNow(),
+  },
+  (table) => [
+    // Index for looking up if a user/IP has viewed a word
+    uniqueIndex("word_history_user_ip_word_idx").on(
+      table.userId,
+      table.ipAddress,
+      table.wordId
+    ),
+    // Index for getting all words viewed by a user/IP
+    index("word_history_user_id_idx").on(table.userId),
+    index("word_history_ip_address_idx").on(table.ipAddress),
+  ]
+).enableRLS();
+
+export const wordHistoryRelations = relations(wordHistory, ({ one }) => ({
+  user: one(users, {
+    fields: [wordHistory.userId],
+    references: [users.id],
+  }),
+  word: one(words, {
+    fields: [wordHistory.wordId],
+    references: [words.id],
+  }),
 }));

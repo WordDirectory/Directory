@@ -23,7 +23,7 @@ const plans = [
     buttonText: "Get started",
     buttonVariant: "default" as const,
     features: [
-      "Unlimited word lookups",
+      "10 word lookups per month",
       "Human-readable definitions",
       "10 AI requests per month",
     ],
@@ -36,6 +36,7 @@ const plans = [
     buttonText: "Upgrade now",
     buttonVariant: "primary" as const,
     features: [
+      "Unlimited word lookups",
       "Everything in Free",
       "1,000 AI requests per month",
       "Support development",
@@ -45,9 +46,14 @@ const plans = [
 
 const faqs = [
   {
+    question: "What counts as a word lookup?",
+    answer:
+      "A word lookup is when you search for a word's definition. Free users get 10 lookups per month, while Plus users get unlimited lookups. The counter resets on the first of each month.",
+  },
+  {
     question: "Will the free plan always be free?",
     answer:
-      "Yes! The core features of WordDirectory will always be free. We might add premium AI features in the future, but the basic dictionary will stay free forever.",
+      "Yes! The core features of WordDirectory will always be free. While there are some usage limits, you'll always be able to look up words without paying.",
   },
   {
     question: "Can I cancel anytime?",

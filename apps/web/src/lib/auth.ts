@@ -2,8 +2,11 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "./db";
 import { stripe } from "@better-auth/stripe";
+import { anonymous } from "better-auth/plugins";
 import Stripe from "stripe";
 import { sendEmail } from "./email";
+import { wordLookups } from "./db/schema";
+import { eq } from "drizzle-orm";
 
 const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-02-24.acacia",
@@ -165,6 +168,26 @@ export const auth = betterAuth({
     },
   },
   plugins: [
+    anonymous({
+      onLinkAccount: async ({ anonymousUser, newUser }) => {
+        // Transfer word lookup counts from IP-based to user-based
+        await db.transaction(async (tx) => {
+          const ipAddress = anonymousUser.session.ipAddress || "127.0.0.1";
+          const ipLookups = await tx.query.wordLookups.findFirst({
+            where: eq(wordLookups.ipAddress, ipAddress),
+          });
+
+          if (ipLookups) {
+            await tx.insert(wordLookups).values({
+              userId: newUser.user.id,
+              count: ipLookups.count,
+              resetAt: ipLookups.resetAt,
+              ipAddress: ipLookups.ipAddress,
+            });
+          }
+        });
+      },
+    }),
     stripe({
       stripeClient,
       stripeWebhookSecret: process.env.STRIPE_WEBHOOK_SECRET!,
@@ -176,6 +199,7 @@ export const auth = betterAuth({
             name: "free",
             limits: {
               aiUsage: 10,
+              wordLookups: 10,
             },
           },
           {
@@ -183,13 +207,15 @@ export const auth = betterAuth({
             priceId: process.env.STRIPE_PLUS_PRICE_ID!,
             limits: {
               aiUsage: 1000,
+              wordLookups: Infinity,
             },
           },
           {
             name: "plus_annual",
-            priceId: process.env.STRIPE_PLUS_ANNUAL_PRICE_ID!, // new annual price ID
+            priceId: process.env.STRIPE_PLUS_ANNUAL_PRICE_ID!,
             limits: {
-              aiUsage: 1000, // same limits as monthly
+              aiUsage: 1000,
+              wordLookups: Infinity,
             },
           },
         ],

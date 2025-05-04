@@ -4,38 +4,54 @@ import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { useSession } from "@/lib/auth-client";
+import { Separator } from "@/components/ui/separator";
 
-interface AIUsage {
+interface Usage {
   current: number;
   limit: number;
   plan: string;
   nextReset: string | null;
 }
 
-export default function AISettingsPage() {
+export default function SettingsUsagePage() {
   const { data: session, isPending } = useSession();
-  const [usage, setUsage] = useState<AIUsage | null>(null);
+  const [aiUsage, setAiUsage] = useState<Usage | null>(null);
+  const [wordUsage, setWordUsage] = useState<Usage | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const fetchUsage = async () => {
+    const fetchData = async () => {
       try {
-        const response = await fetch("/api/ai/usage");
-        const data = await response.json();
-        if (response.ok) {
-          setUsage(data.usage);
+        const [aiResponse, wordResponse] = await Promise.all([
+          fetch("/api/ai/usage"),
+          fetch("/api/words/usage"),
+        ]);
+
+        const aiData = await aiResponse.json();
+        const wordData = await wordResponse.json();
+
+        if (aiResponse.ok) {
+          setAiUsage(aiData.usage);
         } else {
-          console.error("Failed to fetch AI usage:", data);
+          console.error("Failed to fetch AI usage:", aiData);
+        }
+
+        if (wordResponse.ok) {
+          setWordUsage(wordData.usage);
+        } else {
+          console.error("Failed to fetch word lookup usage:", wordData);
         }
       } catch (error) {
-        console.error("Error fetching AI usage:", error);
+        console.error("Error fetching usage data:", error);
       } finally {
         setIsLoading(false);
       }
     };
 
     if (session?.user) {
-      fetchUsage();
+      fetchData();
+    } else {
+      setIsLoading(false);
     }
   }, [session]);
 
@@ -53,12 +69,17 @@ export default function AISettingsPage() {
         <div className="container mx-auto max-w-4xl">
           <h1 className="text-4xl font-bold mb-4">Usage</h1>
           <p className="text-muted-foreground">
-            Please sign in to view your AI usage.
+            Please sign in to view your usage statistics.
           </p>
         </div>
       </main>
     );
   }
+
+  const formatLimit = (limit: number | null) => {
+    if (limit === null) return "0";
+    return limit === Infinity ? "Unlimited" : limit.toString();
+  };
 
   return (
     <main className="relative w-full overflow-hidden">
@@ -66,49 +87,93 @@ export default function AISettingsPage() {
         <section className="flex flex-col gap-8">
           <h1 className="text-4xl font-bold">Usage</h1>
 
-          {usage && (
+          {wordUsage && (
+            <div className="flex flex-col gap-4">
+              <h2 className="text-2xl font-semibold">Word Lookups</h2>
+              <div className="flex flex-col gap-2">
+                <div className="flex justify-between text-sm">
+                  <span className="text-muted-foreground">
+                    {wordUsage.current} / {formatLimit(wordUsage.limit)} lookups
+                    used
+                  </span>
+                  {typeof wordUsage.limit === "number" &&
+                    wordUsage.limit !== Infinity && (
+                      <span className="font-medium">
+                        {Math.round(
+                          (wordUsage.current / wordUsage.limit) * 100
+                        )}
+                        %
+                      </span>
+                    )}
+                </div>
+                {typeof wordUsage.limit === "number" &&
+                wordUsage.limit !== Infinity ? (
+                  <Progress
+                    value={(wordUsage.current / wordUsage.limit) * 100}
+                    className="h-2"
+                  />
+                ) : (
+                  <Progress value={100} className="h-2 bg-primary/20" />
+                )}
+              </div>
+            </div>
+          )}
+
+          {aiUsage && (
             <>
+              <Separator className="my-2" />
               <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-semibold">Credits Usage</h2>
+                <h2 className="text-2xl font-semibold">AI Requests</h2>
                 <div className="flex flex-col gap-2">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">
-                      {usage.current} / {usage.limit} credits used
+                      {aiUsage.current} / {formatLimit(aiUsage.limit)} requests
+                      used
                     </span>
-                    <span className="font-medium">
-                      {Math.round((usage.current / usage.limit) * 100)}%
-                    </span>
-                  </div>
-                  <Progress
-                    value={(usage.current / usage.limit) * 100}
-                    className="h-2"
-                  />
-                </div>
-              </div>
-
-              <section className="flex flex-col gap-4 border-t pt-8">
-                <h2 className="text-2xl font-semibold">Plan Details</h2>
-                <div className="flex flex-col gap-4">
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm text-muted-foreground">
-                      Current Plan
-                    </span>
-                    <span className="font-medium capitalize">{usage.plan}</span>
-                  </div>
-                  {usage.nextReset && (
-                    <div className="flex items-center justify-between">
-                      <span className="text-sm text-muted-foreground">
-                        Next Reset
-                      </span>
+                    {isFinite(aiUsage.limit) && (
                       <span className="font-medium">
-                        {new Date(usage.nextReset).toLocaleDateString()}
+                        {Math.round((aiUsage.current / aiUsage.limit) * 100)}%
                       </span>
-                    </div>
+                    )}
+                  </div>
+                  {isFinite(aiUsage.limit) ? (
+                    <Progress
+                      value={(aiUsage.current / aiUsage.limit) * 100}
+                      className="h-2"
+                    />
+                  ) : (
+                    <Progress value={100} className="h-2 bg-primary/20" />
                   )}
                 </div>
-              </section>
+              </div>
             </>
           )}
+
+          <section className="flex flex-col gap-4 border-t pt-8">
+            <h2 className="text-2xl font-semibold">Plan Details</h2>
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center justify-between">
+                <span className="text-sm text-muted-foreground">
+                  Current Plan
+                </span>
+                <span className="font-medium capitalize">
+                  {aiUsage?.plan || wordUsage?.plan || "Free"}
+                </span>
+              </div>
+              {(aiUsage?.nextReset || wordUsage?.nextReset) && (
+                <div className="flex items-center justify-between">
+                  <span className="text-sm text-muted-foreground">
+                    Next Reset
+                  </span>
+                  <span className="font-medium">
+                    {new Date(
+                      aiUsage?.nextReset || wordUsage?.nextReset || ""
+                    ).toLocaleDateString()}
+                  </span>
+                </div>
+              )}
+            </div>
+          </section>
         </section>
       </div>
     </main>

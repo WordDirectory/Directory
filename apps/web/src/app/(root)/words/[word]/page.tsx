@@ -17,6 +17,8 @@ import {
   hasUserSavedWord,
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
+import { trackWordLookup, WordLookupError } from "@/lib/word-limits";
+import { WordLookupLimit } from "@/components/word-lookup-limit";
 
 interface WordPageProps {
   params: Promise<{
@@ -75,7 +77,7 @@ export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
 
   try {
-    // Get word data
+    // Get word data first to get the ID
     const wordResult = await getWord(paramWord);
     if (!wordResult) {
       return <WordNotFound word={decodeURI(paramWord)} />;

@@ -5,6 +5,8 @@ import {
   wordVotes,
   subscriptions,
   savedWords,
+  wordLookups,
+  wordHistory,
 } from "@/lib/db/schema";
 import { desc, eq, ilike, sql } from "drizzle-orm";
 
@@ -263,4 +265,95 @@ export async function unsaveWord(userId: string, wordId: string) {
     .where(
       sql`${savedWords.userId} = ${userId} AND ${savedWords.wordId} = ${wordId}`
     );
+}
+
+export async function getWordLookups(userId: string | null, ip: string) {
+  return await db.query.wordLookups.findFirst({
+    where: userId
+      ? eq(wordLookups.userId, userId)
+      : eq(wordLookups.ipAddress, ip),
+  });
+}
+
+export async function createWordLookups(data: {
+  userId: string | null;
+  ipAddress: string;
+  resetAt: Date;
+}) {
+  const [lookupData] = await db
+    .insert(wordLookups)
+    .values({
+      userId: data.userId,
+      ipAddress: data.ipAddress,
+      count: 0,
+      resetAt: data.resetAt,
+    })
+    .returning();
+
+  return lookupData;
+}
+
+export async function updateWordLookups(
+  userId: string | null,
+  ip: string,
+  data: {
+    count?: number;
+    resetAt?: Date;
+  }
+) {
+  const [updatedData] = await db
+    .update(wordLookups)
+    .set({
+      ...data,
+      updatedAt: new Date(),
+    })
+    .where(
+      userId ? eq(wordLookups.userId, userId) : eq(wordLookups.ipAddress, ip)
+    )
+    .returning();
+
+  return updatedData;
+}
+
+export async function incrementWordLookups(userId: string | null, ip: string) {
+  const [updatedData] = await db
+    .update(wordLookups)
+    .set({
+      count: sql`${wordLookups.count} + 1`,
+      updatedAt: new Date(),
+    })
+    .where(
+      userId ? eq(wordLookups.userId, userId) : eq(wordLookups.ipAddress, ip)
+    )
+    .returning();
+
+  return updatedData;
+}
+
+export async function hasUserViewedWord(
+  userId: string | null,
+  ip: string,
+  wordId: string
+) {
+  return await db.query.wordHistory.findFirst({
+    where: userId
+      ? sql`${wordHistory.userId} = ${userId} AND ${wordHistory.wordId} = ${wordId}`
+      : sql`${wordHistory.ipAddress} = ${ip} AND ${wordHistory.wordId} = ${wordId}`,
+  });
+}
+
+export async function trackWordView(
+  userId: string | null,
+  ip: string,
+  wordId: string
+) {
+  return await db
+    .insert(wordHistory)
+    .values({
+      userId,
+      ipAddress: ip,
+      wordId,
+    })
+    .onConflictDoNothing()
+    .returning();
 }

@@ -31,13 +31,6 @@ export async function GET(request: Request) {
     // Calculate limits based on subscription plan
     const limit = isActivePlus ? 1000 : 10;
 
-    console.log({
-      current: aiUsageData?.count || 0,
-      limit,
-      plan: isActivePlus ? "plus" : "free",
-      nextReset: aiUsageData?.resetAt?.toISOString() || null,
-    });
-
     return NextResponse.json({
       usage: {
         current: aiUsageData?.count || 0,

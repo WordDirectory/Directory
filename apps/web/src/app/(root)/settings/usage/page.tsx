@@ -4,10 +4,6 @@ import { useEffect, useState } from "react";
 import { Loader2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { useSession } from "@/lib/auth-client";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 
 interface AIUsage {
   current: number;
@@ -16,14 +12,10 @@ interface AIUsage {
   nextReset: string | null;
 }
 
-const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
-const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
-
 export default function AISettingsPage() {
   const { data: session, isPending } = useSession();
   const [usage, setUsage] = useState<AIUsage | null>(null);
   const [isLoading, setIsLoading] = useState(true);
-  const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
 
   useEffect(() => {
     const fetchUsage = async () => {
@@ -42,27 +34,10 @@ export default function AISettingsPage() {
       }
     };
 
-    // Load initial message from localStorage
-    const savedMessage = localStorage.getItem(AI_INITIAL_MESSAGE_KEY);
-    if (savedMessage) {
-      setInitialMessage(savedMessage);
-    }
-
     if (session?.user) {
       fetchUsage();
     }
   }, [session]);
-
-  const handleSaveMessage = () => {
-    localStorage.setItem(AI_INITIAL_MESSAGE_KEY, initialMessage);
-    toast.success("Initial message saved!");
-  };
-
-  const handleResetMessage = () => {
-    setInitialMessage(DEFAULT_INITIAL_MESSAGE);
-    localStorage.setItem(AI_INITIAL_MESSAGE_KEY, DEFAULT_INITIAL_MESSAGE);
-    toast.success("Initial message reset to default!");
-  };
 
   if (isPending || isLoading) {
     return (
@@ -76,7 +51,7 @@ export default function AISettingsPage() {
     return (
       <main className="relative w-full overflow-hidden">
         <div className="container mx-auto max-w-4xl">
-          <h1 className="text-4xl font-bold mb-4">AI Settings</h1>
+          <h1 className="text-4xl font-bold mb-4">Usage</h1>
           <p className="text-muted-foreground">
             Please sign in to view your AI usage.
           </p>
@@ -129,35 +104,6 @@ export default function AISettingsPage() {
                   </span>
                 </div>
               )}
-            </div>
-
-            <div className="space-y-4 border-t pt-6">
-              <h2 className="text-lg font-semibold">Initial AI Message</h2>
-              <p className="text-sm text-muted-foreground">
-                Customize the initial message that appears when you click "Ask
-                AI" in the search. Use {"{word}"} as a placeholder - it will be
-                replaced with the word you searched for.
-              </p>
-              <div className="space-y-2">
-                <Label htmlFor="initial-message">Message Template</Label>
-                <Input
-                  id="initial-message"
-                  value={initialMessage}
-                  onChange={(e) => setInitialMessage(e.target.value)}
-                  placeholder='Example: "Tell me about the word {word}"'
-                />
-                <p className="text-xs text-muted-foreground">
-                  Example: If you type "Tell me about {`word`}" and click "Ask
-                  AI" for the word "happy", the initial message will be "Tell me
-                  about happy"
-                </p>
-              </div>
-              <div className="flex gap-2">
-                <Button onClick={handleSaveMessage}>Save Message</Button>
-                <Button variant="outline" onClick={handleResetMessage}>
-                  Reset to Default
-                </Button>
-              </div>
             </div>
           </div>
         )}

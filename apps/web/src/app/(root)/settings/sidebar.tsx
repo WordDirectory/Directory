@@ -33,8 +33,8 @@ export function Sidebar() {
       href: "/settings",
     },
     {
-      label: "AI Settings",
-      href: "/settings/ai",
+      label: "Usage",
+      href: "/settings/usage",
     },
   ];
 

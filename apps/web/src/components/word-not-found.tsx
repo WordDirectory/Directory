@@ -37,7 +37,9 @@ export function WordNotFound({ word, isTimeout = false }: WordNotFoundProps) {
       <p className="text-xl text-muted-foreground mb-8">
         {isTimeout
           ? `Sorry, we're experiencing some connection issues. Please try again in a moment.`
-          : `Sorry, we couldn't find a definition for "${word}". This word might not be in our dictionary yet.`}
+          : `Sorry, we couldn't find a definition for "${decodeURIComponent(
+              word
+            )}". This word might not be in our dictionary yet.`}
       </p>
       <div className="flex flex-col sm:flex-row gap-4 justify-center">
         <Button asChild variant="default">

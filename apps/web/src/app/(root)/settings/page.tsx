@@ -85,8 +85,8 @@ export default function SettingsPage() {
 
   return (
     <main className="relative w-full overflow-hidden">
-      <div className="container mx-auto max-w-4xl flex flex-col gap-16">
-        <section className="flex flex-col gap-6">
+      <div className="flex flex-col gap-12">
+        <section className="flex flex-col gap-8">
           <h1 className="text-4xl font-bold">General</h1>
           <div className="flex flex-row items-center gap-6">
             <Avatar className="h-24 w-24">
@@ -132,14 +132,17 @@ export default function SettingsPage() {
           </Form>
         </section>
 
-        <section className="flex flex-col gap-6 border-t pt-6">
-          <h2 className="text-lg font-semibold">Initial AI Message</h2>
-          <p className="text-sm text-muted-foreground">
-            Customize the initial message that appears when you click "Ask AI"
-            in the search. Use {"{word}"} as a placeholder - it will be replaced
-            with the word you searched for.
-          </p>
-          <div className="space-y-2">
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-semibold">Initial AI Message</h2>
+            <p className="text-sm text-muted-foreground">
+              Customize the initial message that appears when you click "Ask AI"
+              in the search. Use {"{word}"} as a placeholder - it will be
+              replaced with the word you searched for.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
             <Label htmlFor="initial-message">Message Template</Label>
             <Input
               id="initial-message"
@@ -153,7 +156,8 @@ export default function SettingsPage() {
               happy"
             </p>
           </div>
-          <div className="flex gap-2">
+
+          <div className="flex gap-3">
             <Button onClick={handleSaveMessage}>Save Message</Button>
             <Button variant="outline" onClick={handleResetMessage}>
               Reset to Default

@@ -61,16 +61,16 @@ export default function AISettingsPage() {
   }
 
   return (
-    <main className="relative w-full overflow-hidden px-1">
-      <div className="container mx-auto max-w-4xl">
-        <h1 className="text-4xl font-bold mb-8">AI Settings</h1>
+    <main className="relative w-full overflow-hidden">
+      <div className="flex flex-col gap-12">
+        <section className="flex flex-col gap-8">
+          <h1 className="text-4xl font-bold">AI Settings</h1>
 
-        {usage && (
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-lg font-semibold mb-4">Credits Usage</h2>
-              <div className="space-y-4">
-                <div className="space-y-2">
+          {usage && (
+            <>
+              <div className="flex flex-col gap-4">
+                <h2 className="text-2xl font-semibold">Credits Usage</h2>
+                <div className="flex flex-col gap-2">
                   <div className="flex justify-between text-sm">
                     <span className="text-muted-foreground">
                       {usage.current} / {usage.limit} credits used
@@ -85,28 +85,31 @@ export default function AISettingsPage() {
                   />
                 </div>
               </div>
-            </div>
 
-            <div className="space-y-4 border-t pt-6">
-              <div className="flex items-center justify-between">
-                <span className="text-sm text-muted-foreground">
-                  Current Plan
-                </span>
-                <span className="font-medium capitalize">{usage.plan}</span>
-              </div>
-              {usage.nextReset && (
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-muted-foreground">
-                    Next Reset
-                  </span>
-                  <span className="font-medium">
-                    {new Date(usage.nextReset).toLocaleDateString()}
-                  </span>
+              <section className="flex flex-col gap-4 border-t pt-8">
+                <h2 className="text-2xl font-semibold">Plan Details</h2>
+                <div className="flex flex-col gap-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm text-muted-foreground">
+                      Current Plan
+                    </span>
+                    <span className="font-medium capitalize">{usage.plan}</span>
+                  </div>
+                  {usage.nextReset && (
+                    <div className="flex items-center justify-between">
+                      <span className="text-sm text-muted-foreground">
+                        Next Reset
+                      </span>
+                      <span className="font-medium">
+                        {new Date(usage.nextReset).toLocaleDateString()}
+                      </span>
+                    </div>
+                  )}
                 </div>
-              )}
-            </div>
-          </div>
-        )}
+              </section>
+            </>
+          )}
+        </section>
       </div>
     </main>
   );

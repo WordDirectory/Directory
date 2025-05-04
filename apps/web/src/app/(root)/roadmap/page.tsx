@@ -75,6 +75,15 @@ const roadmapItems: {
     },
   },
   {
+    title: "Word images",
+    description:
+      "Visual representation for words, especially useful for objects, animals, and concrete concepts. Each word will have a high-quality image to help with understanding.",
+    status: {
+      text: "Not started", 
+      complete: false,
+    },
+  },
+  {
     title: "Twitter bot",
     description:
       "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
@@ -105,6 +114,15 @@ const roadmapItems: {
     title: "Multiple Languages",
     description:
       "Support for multiple languages including Spanish, French, German, and more. Each word will have definitions in various languages while maintaining our simple, human-readable approach.",
+    status: {
+      text: "Not started",
+      complete: false,
+    },
+  },
+  {
+    title: "YouGlish Integration",
+    description:
+      "Integration with YouGlish to provide real-world pronunciation examples from YouTube videos, helping users understand how words are used in context and pronounced by native speakers.",
     status: {
       text: "Not started",
       complete: false,
@@ -147,7 +165,7 @@ export default function RoadmapPage() {
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Roadmap</h1>
           <p className="text-xl text-muted-foreground">
-            What's coming next for Word Directory (last updated: April 25, 2025)
+            What's coming next for Word Directory (last updated: May 4, 2025)
           </p>
         </header>
 

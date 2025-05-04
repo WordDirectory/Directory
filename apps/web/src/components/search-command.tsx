@@ -139,7 +139,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         ) : words.length === 0 && query ? (
           <div className="py-6 text-center">
             <div className="mb-4 flex justify-center">
-              <FileX2 className="h-12 w-12 text-muted-foreground/50" />
+              <FileX2 className="h-12 w-12 text-muted-foreground opacity-50" />
             </div>
             <p className="mb-4 text-sm text-muted-foreground">
               No results found

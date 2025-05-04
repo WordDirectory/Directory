@@ -37,14 +37,21 @@ export async function getWord(
     ? `http://${process.env.NEXT_PUBLIC_SITE_URL}${relativeUrl}`
     : relativeUrl;
 
+  console.log("[getWord] Fetching from URL:", url);
   const res = await fetch(url, CACHE_OPTIONS);
+  console.log("[getWord] Response status:", res.status);
+
   if (!res.ok) {
     if (res.status === 404) return null;
 
     // Handle lookup limit error
     if (res.status === 429) {
+      console.log("[getWord] Got 429 status, attempting to parse response");
       const data = await res.json();
+      console.log("[getWord] Response data:", data);
+
       if (data.code === "LOOKUP_LIMIT_REACHED") {
+        console.log("[getWord] Throwing lookup limit error");
         throw Object.assign(new Error("Word lookup limit reached"), {
           type: "LOOKUP_LIMIT_REACHED",
           ...data,
@@ -52,11 +59,13 @@ export async function getWord(
       }
     }
 
-    console.error("Failed to fetch word:", res);
+    console.error("[getWord] Failed to fetch word:", res);
     throw new Error("Failed to fetch word");
   }
 
-  return res.json();
+  const data = await res.json();
+  console.log("[getWord] Successfully fetched word data");
+  return data;
 }
 
 export async function checkWordExists(word: string): Promise<boolean> {

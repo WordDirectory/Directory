@@ -96,14 +96,16 @@ export async function GET(
           details: result.details,
         });
       } catch (error) {
-        console.log(error);
+        console.log("[Word API] Error in lookup:", error);
         if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
+          console.log("[Word API] Hit lookup limit, preparing redirect");
           const limitUrl = new URL("/word-limit-reached", request.url);
           limitUrl.searchParams.set("word", capitalizedWord);
           limitUrl.searchParams.set(
             "usage",
             JSON.stringify((error as WordLookupError).usage)
           );
+          console.log("[Word API] Redirecting to:", limitUrl.toString());
           return NextResponse.redirect(limitUrl);
         }
         throw error;

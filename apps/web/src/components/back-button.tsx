@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { useRouter } from "next/navigation";
 import { ChevronLeft } from "lucide-react";
 
-export function BackButton({ redirect }: { redirect?: string }) {
+export function BackButton({ redirect, text }: { redirect?: string, text?: string }) {
   const router = useRouter();
 
   return (
@@ -14,7 +14,7 @@ export function BackButton({ redirect }: { redirect?: string }) {
       className="flex items-center gap-2"
     >
       <ChevronLeft className="size-4" />
-      Back
+      {text || "Back"}
     </Button>
   );
 }

@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api"],
+      disallow: ["/api", "/word-limit-reached"],
     },
     sitemap: "https://worddirectory.app/sitemap.xml",
   };

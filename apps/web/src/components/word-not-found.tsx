@@ -1,5 +1,4 @@
 "use client";
-
 import { Button } from "@/components/ui/button";
 import { getRandomWords } from "@/lib/words";
 import Link from "next/link";

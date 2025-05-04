@@ -24,49 +24,39 @@ interface WordPageProps {
   }>;
 }
 
-// Generate metadata for each word page
 export async function generateMetadata({
   params,
 }: WordPageProps): Promise<Metadata> {
   const { word: paramWord } = await params;
-  const result = await getWord(paramWord);
-
-  if (!result) {
-    return {
-      title: `${capitalize(paramWord)} - Word Not Found | WordDirectory`,
-      description: `Definition for "${paramWord}" not found. Explore our extensive dictionary for human-readable definitions of other words.`,
-    };
-  }
-
-  const { word, details } = result;
-  const definition = details.definitions[0]?.text || "";
+  const decodedWord = decodeURI(paramWord);
+  const word = capitalize(decodedWord);
 
   return {
-    title: `${capitalize(word)} Definition - Simple English Explanation | WordDirectory`,
-    description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
+    title: `${word} Definition - WordDirectory`,
+    description: `Find out what "${word}" means in simple, human-readable terms. Get clear explanations without needing to look up five more words.`,
     keywords: [
-      word,
-      `${word} definition`,
-      `${word} meaning`,
-      `what does ${word} mean`,
-      `define ${word}`,
+      decodedWord,
+      `${decodedWord} definition`,
+      `${decodedWord} meaning`,
+      `what does ${decodedWord} mean`,
+      `define ${decodedWord}`,
       "dictionary",
       "definitions",
       "word meanings",
     ].join(", "),
     alternates: {
-      canonical: `https://worddirectory.app/words/${encodeURIComponent(word)}`,
+      canonical: `https://worddirectory.app/words/${encodeURIComponent(decodedWord)}`,
     },
     openGraph: {
-      title: `${capitalize(word)} Definition - Simple English Explanation`,
-      description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
-      url: `https://worddirectory.app/words/${encodeURIComponent(word)}`,
+      title: `${word} Definition - Simple English Explanation`,
+      description: `Looking for what "${word}" means? Get a clear, simple explanation that actually makes sense.`,
+      url: `https://worddirectory.app/words/${encodeURIComponent(decodedWord)}`,
       siteName: "WordDirectory",
     },
     twitter: {
       card: "summary_large_image",
-      title: `${capitalize(word)} Definition - Simple English Explanation`,
-      description: `${capitalize(word)} definition: ${definition.slice(0, 150)}${definition.length > 150 ? "..." : ""}`,
+      title: `${word} Definition - Simple English Explanation`,
+      description: `Looking for what "${word}" means? Get a clear, simple explanation that actually makes sense.`,
     },
   };
 }
@@ -76,7 +66,7 @@ export default async function WordPage({ params }: WordPageProps) {
   const session = await auth.api.getSession({ headers: await headers() });
 
   try {
-    // Get word data first to get the ID
+    // Use rate-limited API for actual page content
     const wordResult = await getWord(paramWord);
     if (!wordResult) {
       return <WordNotFound word={decodeURI(paramWord)} />;
@@ -116,7 +106,7 @@ export default async function WordPage({ params }: WordPageProps) {
       error instanceof Error &&
       (error.message.includes("Connection terminated") ||
         error.message.includes("connection timeout"));
-    return <WordNotFound word={paramWord} isTimeout={isTimeout} />;
+    return <WordNotFound word={decodeURI(paramWord)} isTimeout={isTimeout} />;
   }
 }
 

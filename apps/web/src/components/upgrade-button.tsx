@@ -8,10 +8,12 @@ import { useRouter } from "next/navigation";
 import { BillingInterval } from "./plan-selector";
 
 export async function upgrade(interval: BillingInterval = "monthly") {
+  const currentUrl = window.location.href;
+
   const { error } = await authClient.subscription.upgrade({
     plan: interval === "monthly" ? "plus" : "plus_annual",
     successUrl: "/settings",
-    cancelUrl: "/settings",
+    cancelUrl: currentUrl,
   });
 
   if (error) {

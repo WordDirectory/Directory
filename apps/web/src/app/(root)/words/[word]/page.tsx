@@ -64,9 +64,9 @@ export async function generateMetadata({
 export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
 
-  console.log("headers", (await headers()).entries());
-
-  const session = await auth.api.getSession({ headers: await headers() });
+  // Get headers once and reuse
+  const headersList = await headers();
+  const session = await auth.api.getSession({ headers: headersList });
 
   try {
     const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
@@ -74,7 +74,7 @@ export default async function WordPage({ params }: WordPageProps) {
     // Use rate-limited API for actual page content
     const res = await fetch(url, {
       cache: "no-store", // Don't cache since we need to track lookups
-      headers: await headers(),
+      headers: Object.fromEntries(headersList.entries()),
     });
 
     console.log("res", res);

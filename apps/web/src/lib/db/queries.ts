@@ -268,11 +268,17 @@ export async function unsaveWord(userId: string, wordId: string) {
 }
 
 export async function getWordLookups(userId: string | null, ip: string) {
-  return await db.query.wordLookups.findFirst({
-    where: userId
-      ? eq(wordLookups.userId, userId)
-      : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
-  });
+  if (userId) {
+    // For logged-in users, only use userId
+    return await db.query.wordLookups.findFirst({
+      where: eq(wordLookups.userId, userId),
+    });
+  } else {
+    // For anonymous users, use IP
+    return await db.query.wordLookups.findFirst({
+      where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
+    });
+  }
 }
 
 export async function createWordLookups(data: {

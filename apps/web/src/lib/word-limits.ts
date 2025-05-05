@@ -26,54 +26,52 @@ function getNextResetDate() {
 }
 
 async function getOrCreateLookupData(userId: string | null, ip: string) {
-  // First, try to get the data based on user ID if available
-  let lookupData = userId
-    ? await db.query.wordLookups.findFirst({
-        where: eq(wordLookups.userId, userId),
-      })
-    : null;
-
-  // If we have a user ID but no lookup data, check if there's an IP-based record
-  // that should be migrated to this user
-  if (userId && !lookupData) {
-    const ipBasedLookup = await db.query.wordLookups.findFirst({
-      where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
+  // If user is logged in, we only care about user ID, not IP
+  if (userId) {
+    // Try to get the data based on user ID
+    let lookupData = await db.query.wordLookups.findFirst({
+      where: eq(wordLookups.userId, userId),
     });
 
-    if (ipBasedLookup) {
-      // Migrate the IP-based record to the user
-      console.log("[Word Limits] Migrating IP-based lookup to user", {
-        ip,
+    // If no lookup data exists, create a new record
+    if (!lookupData) {
+      console.log("[Word Limits] Creating new lookup data for user", {
         userId,
-        count: ipBasedLookup.count,
       });
 
-      // Create a new record with the user ID and the count from the IP record
-      const [newUserLookupData] = await db
+      const [newLookupData] = await db
         .insert(wordLookups)
         .values({
           userId: userId,
-          ipAddress: ip,
-          count: ipBasedLookup.count,
-          resetAt: ipBasedLookup.resetAt,
+          ipAddress: ip, // We still store IP but don't use it for lookups for logged-in users
+          count: 0,
+          resetAt: getNextResetDate(),
         })
         .returning();
-
-      // Delete the IP-based record to avoid duplication
-      await db
-        .delete(wordLookups)
-        .where(and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)));
-
-      lookupData = newUserLookupData;
+      lookupData = newLookupData;
     }
+
+    // Check if we need to reset the counter
+    if (lookupData && lookupData.resetAt < new Date()) {
+      lookupData.count = 0;
+      lookupData.resetAt = getNextResetDate();
+      await db
+        .update(wordLookups)
+        .set({
+          count: 0,
+          resetAt: lookupData.resetAt,
+          updatedAt: new Date(),
+        })
+        .where(eq(wordLookups.userId, userId));
+    }
+
+    return lookupData;
   }
 
-  // If still no user-based lookup data, then try IP-based lookup for anonymous users
-  if (!lookupData && !userId) {
-    lookupData = await db.query.wordLookups.findFirst({
-      where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
-    });
-  }
+  // For anonymous users, use IP-based lookup
+  let lookupData = await db.query.wordLookups.findFirst({
+    where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
+  });
 
   // Check if we need to reset the counter
   if (lookupData && lookupData.resetAt < new Date()) {
@@ -86,24 +84,19 @@ async function getOrCreateLookupData(userId: string | null, ip: string) {
         resetAt: lookupData.resetAt,
         updatedAt: new Date(),
       })
-      .where(
-        userId
-          ? eq(wordLookups.userId, userId)
-          : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId))
-      );
+      .where(and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)));
   }
 
   // If no lookup data exists at all, create a new record
   if (!lookupData) {
-    console.log("[Word Limits] Creating new lookup data", {
-      userId,
+    console.log("[Word Limits] Creating new lookup data for anonymous user", {
       ip,
     });
 
     const [newLookupData] = await db
       .insert(wordLookups)
       .values({
-        userId: userId,
+        userId: null,
         ipAddress: ip,
         count: 0,
         resetAt: getNextResetDate(),
@@ -150,17 +143,25 @@ export async function incrementWordLookupCount(
   userId: string | null,
   ip: string
 ): Promise<void> {
-  await db
-    .update(wordLookups)
-    .set({
-      count: sql`${wordLookups.count} + 1`,
-      updatedAt: new Date(),
-    })
-    .where(
-      userId
-        ? eq(wordLookups.userId, userId)
-        : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId))
-    );
+  // For logged-in users, only use userId in the where clause
+  if (userId) {
+    await db
+      .update(wordLookups)
+      .set({
+        count: sql`${wordLookups.count} + 1`,
+        updatedAt: new Date(),
+      })
+      .where(eq(wordLookups.userId, userId));
+  } else {
+    // For anonymous users, use IP address
+    await db
+      .update(wordLookups)
+      .set({
+        count: sql`${wordLookups.count} + 1`,
+        updatedAt: new Date(),
+      })
+      .where(and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)));
+  }
 }
 
 export async function trackWordView(

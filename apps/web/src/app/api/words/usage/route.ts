@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { wordLookups } from "@/lib/db/schema";
-import { eq } from "drizzle-orm";
+import { eq, and, isNull } from "drizzle-orm";
 import { getActiveSubscription } from "@/lib/db/queries";
 import { rateLimit } from "@/lib/rate-limit";
 import { createWordLookups } from "@/lib/db/queries";
@@ -32,7 +32,7 @@ export async function GET(request: Request) {
     const lookupData = await db.query.wordLookups.findFirst({
       where: session?.user?.id
         ? eq(wordLookups.userId, session.user.id)
-        : eq(wordLookups.ipAddress, ip),
+        : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
     });
 
     console.log("Lookup data:", lookupData);

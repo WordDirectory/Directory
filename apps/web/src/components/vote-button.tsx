@@ -147,7 +147,7 @@ export function VoteButton({
             : {}
         }
         transition={{ duration: 0.2 }}
-        className="min-w-[1.5rem] text-sm font-medium"
+        className="min-w-[1rem] text-sm font-medium"
       >
         {votes}
       </motion.div>

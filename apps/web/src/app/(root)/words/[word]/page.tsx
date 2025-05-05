@@ -9,6 +9,7 @@ import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
 import { VoteButton } from "@/components/vote-button";
 import { SaveWord } from "@/components/save-word";
+import { ShareWord } from "@/components/share-word";
 import { auth } from "@/lib/auth";
 import {
   getWordVotes,
@@ -200,6 +201,9 @@ function WordHeader({
               initialHasVoted={hasVoted}
             />
             <SaveWord word={word} initialIsSaved={isSaved} />
+            <div className="pl-2">
+            <ShareWord word={word} definition={details.definitions[0].text} />
+            </div>
           </div>
         </div>
       </div>

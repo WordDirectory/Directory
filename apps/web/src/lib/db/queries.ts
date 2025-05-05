@@ -8,7 +8,7 @@ import {
   wordLookups,
   wordHistory,
 } from "@/lib/db/schema";
-import { desc, eq, ilike, sql } from "drizzle-orm";
+import { desc, eq, ilike, sql, and, isNull } from "drizzle-orm";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
   const results = await db.transaction(async (tx) => {
@@ -271,7 +271,7 @@ export async function getWordLookups(userId: string | null, ip: string) {
   return await db.query.wordLookups.findFirst({
     where: userId
       ? eq(wordLookups.userId, userId)
-      : eq(wordLookups.ipAddress, ip),
+      : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
   });
 }
 
@@ -308,7 +308,9 @@ export async function updateWordLookups(
       updatedAt: new Date(),
     })
     .where(
-      userId ? eq(wordLookups.userId, userId) : eq(wordLookups.ipAddress, ip)
+      userId
+        ? eq(wordLookups.userId, userId)
+        : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId))
     )
     .returning();
 
@@ -323,7 +325,9 @@ export async function incrementWordLookups(userId: string | null, ip: string) {
       updatedAt: new Date(),
     })
     .where(
-      userId ? eq(wordLookups.userId, userId) : eq(wordLookups.ipAddress, ip)
+      userId
+        ? eq(wordLookups.userId, userId)
+        : and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId))
     )
     .returning();
 

@@ -5,7 +5,7 @@ import { wordLookups } from "./db/schema";
 import { eq, sql, and, isNull } from "drizzle-orm";
 import {
   getActiveSubscription,
-  hasUserViewedWord,
+  hasUserViewedWord as dbHasUserViewedWord,
   trackWordView as dbTrackWordView,
 } from "./db/queries";
 import { WordUsageResponse } from "@/types/api";
@@ -233,4 +233,12 @@ export async function trackWordView(
 
   // Track this word view
   await dbTrackWordView(userId, ip, wordId);
+}
+
+export async function hasUserViewedWord(
+  userId: string | null,
+  ip: string,
+  wordId: string
+): Promise<boolean> {
+  return !!(await dbHasUserViewedWord(userId, ip, wordId));
 }

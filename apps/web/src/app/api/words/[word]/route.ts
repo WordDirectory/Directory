@@ -8,6 +8,7 @@ import {
   checkWordLookupLimit,
   trackWordView,
   incrementWordLookupCount,
+  hasUserViewedWord,
 } from "@/lib/word-limits";
 import { auth } from "@/lib/auth";
 
@@ -91,23 +92,31 @@ export async function GET(
     // If word exists, track the lookup and return the content
     if (result) {
       try {
-        console.log("[Word API] Word found, checking limits:", {
+        console.log("[Word API] Word found, checking if previously viewed:", {
           wordId: result.id,
           userId,
           ip,
         });
 
-        // Check lookup limit first
-        await checkWordLookupLimit(userId, ip);
+        // First check if user has already viewed this word
+        const hasViewed = await hasUserViewedWord(userId, ip, result.id);
+        
+        // Only check limits and increment count if this is a new view
+        if (!hasViewed) {
+          console.log("[Word API] New view, checking limits");
+          // Check lookup limit first
+          await checkWordLookupLimit(userId, ip);
 
-        console.log("[Word API] Limits OK, tracking view");
-        // Track the view and increment count
+          console.log("[Word API] Limits OK, incrementing count");
+          await incrementWordLookupCount(userId, ip);
+          console.log("[Word API] Count incremented");
+        } else {
+          console.log("[Word API] Word previously viewed, skipping limits");
+        }
+
+        // Always track the view attempt (this is idempotent)
+        console.log("[Word API] Tracking view");
         await trackWordView(request, result.id);
-
-        console.log("[Word API] View tracked, incrementing count");
-        await incrementWordLookupCount(userId, ip);
-
-        console.log("[Word API] Count incremented");
 
         // If we have a next URL, redirect there
         if (next) {

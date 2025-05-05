@@ -103,7 +103,9 @@ export async function POST(request: Request) {
       // Check limits
       const limit =
         subscriptionData?.plan === "plus" &&
-        subscriptionData?.status === "active"
+        ["active", "trialing", "past_due"].includes(
+          subscriptionData?.status || ""
+        )
           ? 1000
           : 10;
 

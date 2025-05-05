@@ -24,7 +24,10 @@ export async function GET(request: Request) {
 
     // Default limit based on plan AND status
     const limit =
-      subscriptionData?.plan === "plus" && subscriptionData?.status === "active"
+      subscriptionData?.plan === "plus" &&
+      ["active", "trialing", "past_due"].includes(
+        subscriptionData?.status || ""
+      )
         ? 1000
         : 10;
 

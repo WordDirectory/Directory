@@ -9,7 +9,15 @@ import {
   DropdownMenuTrigger,
 } from "./ui/dropdown-menu";
 import { authClient, useSession } from "@/lib/auth-client";
-import { LogIn, LogOut, Settings, CreditCard, Sun, Moon, Bookmark } from "lucide-react";
+import {
+  LogIn,
+  LogOut,
+  Settings,
+  CreditCard,
+  Sun,
+  Moon,
+  Bookmark,
+} from "lucide-react";
 import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
@@ -30,7 +38,10 @@ export function UserDropdown() {
 
       if (subscriptions) {
         const activeSubscription = subscriptions.find(
-          (sub) => sub.status === "active" || sub.status === "trialing"
+          (sub) =>
+            sub.status === "active" ||
+            sub.status === "trialing" ||
+            sub.status === "past_due"
         );
 
         if (activeSubscription) {

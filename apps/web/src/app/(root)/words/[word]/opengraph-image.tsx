@@ -1,5 +1,4 @@
 import { ImageResponse } from "next/og";
-import { getWord } from "@/lib/words";
 import { capitalize } from "@/lib/utils";
 
 export const runtime = "edge";
@@ -43,49 +42,6 @@ const Logo = () => (
 );
 
 export default async function Image({ params }: { params: { word: string } }) {
-  const result = await getWord(params.word);
-  if (!result)
-    return new ImageResponse(
-      (
-        <div
-          style={{
-            background: "black",
-            width: "100%",
-            height: "100%",
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            padding: "213px 130px",
-            gap: "52px",
-            fontFamily: "system-ui",
-          }}
-        >
-          <div style={{ display: "flex", alignItems: "center", gap: "25px" }}>
-            <Logo />
-            <b style={{ fontSize: "45px", color: "white", fontWeight: 800 }}>
-              WordDirectory
-            </b>
-          </div>
-          <div
-            style={{
-              fontSize: "80px",
-              fontWeight: 900,
-              color: "white",
-              textAlign: "center",
-            }}
-          >
-            {capitalize(params.word)}
-          </div>
-        </div>
-      ),
-      {
-        ...size,
-      }
-    );
-
-  const { word } = result;
-
   return new ImageResponse(
     (
       <div
@@ -116,7 +72,7 @@ export default async function Image({ params }: { params: { word: string } }) {
             textAlign: "center",
           }}
         >
-          {capitalize(word)}
+          {capitalize(params.word)}
         </div>
       </div>
     ),

@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
 import { capitalize } from "@/lib/utils";
-import { getWord } from "@/lib/words";
 import { Quote } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { Card, CardContent } from "@/components/ui/card";
@@ -17,6 +16,7 @@ import {
   hasUserSavedWord,
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
+import { redirect } from "next/navigation";
 
 interface WordPageProps {
   params: Promise<{
@@ -66,22 +66,67 @@ export default async function WordPage({ params }: WordPageProps) {
   const session = await auth.api.getSession({ headers: await headers() });
 
   try {
+    const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
+    console.log("url", url);
     // Use rate-limited API for actual page content
-    const wordResult = await getWord(paramWord);
-    if (!wordResult) {
-      return <WordNotFound word={decodeURI(paramWord)} />;
+    const res = await fetch(url, {
+      next: { revalidate: 31536000 },
+    });
+
+    console.log("res", res);
+
+    // Check if the fetch was redirected to the limit page
+    if (res.url.includes("/word-limit-reached")) {
+      console.log(
+        "Detected redirect to limit page, redirecting browser to:",
+        res.url
+      );
+      redirect(res.url); // Redirect the entire page
     }
 
-    // Get vote data
-    const [votes, hasVoted, isSaved] = await Promise.all([
-      getWordVotes(wordResult.id),
-      session?.user?.id
-        ? hasUserVotedWord(session.user.id, wordResult.id)
-        : false,
-      session?.user?.id
-        ? hasUserSavedWord(session.user.id, wordResult.id)
-        : false,
-    ]);
+    if (!res.ok) {
+      // We should generally not hit this for 404 anymore if the API handles it,
+      // but keep it as a fallback. The redirect handles the 429/limit case.
+      if (res.status === 404) {
+        // If the API returned 404 directly (e.g., word not found, no limit issue)
+        return <WordNotFound word={decodeURI(paramWord)} />;
+      }
+
+      // Handle other fetch errors
+      throw new Error(`Failed to fetch word: ${res.status} ${res.statusText}`);
+    }
+
+    let wordResult;
+    try {
+      wordResult = await res.json();
+    } catch (e) {
+      console.error("Failed to parse word response:", e);
+      throw new Error("Invalid response format from API");
+    }
+
+    if (!wordResult || !wordResult.id) {
+      console.error("Invalid word result:", wordResult);
+      throw new Error("Invalid word data received");
+    }
+
+    // Get vote data with error handling
+    let votes = 0,
+      hasVoted = false,
+      isSaved = false;
+    try {
+      [votes, hasVoted, isSaved] = await Promise.all([
+        getWordVotes(wordResult.id),
+        session?.user?.id
+          ? hasUserVotedWord(session.user.id, wordResult.id)
+          : false,
+        session?.user?.id
+          ? hasUserSavedWord(session.user.id, wordResult.id)
+          : false,
+      ]);
+    } catch (e) {
+      console.error("Failed to fetch word metadata:", e);
+      // Continue with default values rather than failing the whole request
+    }
 
     return (
       <div className="mx-auto max-w-3xl py-12 md:py-20 px-6">
@@ -100,7 +145,16 @@ export default async function WordPage({ params }: WordPageProps) {
         )}
       </div>
     );
-  } catch (error) {
+  } catch (error: any) {
+    // Check if the error is the specific redirect error by its digest
+    if (
+      typeof error?.digest === "string" &&
+      error.digest.startsWith("NEXT_REDIRECT")
+    ) {
+      throw error; // Re-throw the redirect error so Next.js can handle it
+    }
+
+    // Handle other errors
     console.error("Error fetching word:", error);
     const isTimeout =
       error instanceof Error &&

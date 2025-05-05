@@ -115,10 +115,7 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
     setIsLoading(true);
     try {
       // Get the base URL
-      const baseUrl =
-        process.env.NODE_ENV === "development"
-          ? `http://${process.env.NEXT_PUBLIC_SITE_URL}`
-          : `https://${process.env.NEXT_PUBLIC_SITE_URL}`;
+      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
       const { error } = await authClient.signIn.social({
         provider: "google",

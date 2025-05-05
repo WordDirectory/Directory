@@ -29,7 +29,16 @@ export type SearchWordsResponse = {
   totalCount: number;
 };
 
+// Response type for AI usage data
 export type AIUsageResponse = {
+  current: number;
+  limit: number;
+  plan: "free" | "plus";
+  nextReset: string;
+};
+
+// Response type for word lookup usage data
+export type WordUsageResponse = {
   current: number;
   limit: number;
   plan: "free" | "plus";

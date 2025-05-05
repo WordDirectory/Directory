@@ -8,17 +8,13 @@ import {
   hasUserViewedWord,
   trackWordView as dbTrackWordView,
 } from "./db/queries";
+import { WordUsageResponse } from "@/types/api";
 
 export type WordLookupError = {
   message: string;
   code: "LOOKUP_LIMIT_REACHED";
   status: 429;
-  usage: {
-    current: number;
-    limit: number;
-    plan: "free" | "plus";
-    nextReset: string;
-  };
+  usage: WordUsageResponse;
 };
 
 function getNextResetDate() {

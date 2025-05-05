@@ -7,15 +7,11 @@ import { Button } from "./ui/button";
 import { UpgradeButton } from "./upgrade-button";
 import { useState } from "react";
 import { toast } from "sonner";
+import { WordUsageResponse } from "@/types/api";
 
 interface WordLookupLimitProps {
   word: string;
-  usage: {
-    current: number;
-    limit: number;
-    plan: "free" | "plus";
-    nextReset: string;
-  };
+  usage: WordUsageResponse;
   isLoggedIn: boolean;
 }
 

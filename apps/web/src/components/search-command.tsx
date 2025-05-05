@@ -15,6 +15,7 @@ import { useDebounce } from "@/hooks/use-debounce";
 import { FileX2, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { useAskAIStore } from "@/stores/ask-ai-store";
+import { WordUsageResponse } from "@/types/api";
 
 const CACHE_KEY = "random-words-cache";
 const CACHE_DURATION = 1000 * 60 * 60 * 24; // 24 hours
@@ -65,8 +66,26 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   const [query, setQuery] = useState("");
   const [words, setWords] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [wordUsage, setWordUsage] = useState<WordUsageResponse | null>(null);
   const debouncedQuery = useDebounce(query, 300);
   const { setIsOpen: setAIOpen, setInitialMessage } = useAskAIStore();
+
+  const fetchUsage = useCallback(async () => {
+    console.log("Fetching word usage...");
+    try {
+      const response = await fetch("/api/words/usage");
+      if (!response.ok) {
+        console.error("Failed to fetch word usage:", response.statusText);
+        setWordUsage(null);
+        return;
+      }
+      const data = await response.json();
+      setWordUsage(data.usage);
+    } catch (error) {
+      console.error("Error fetching word usage:", error);
+      setWordUsage(null);
+    }
+  }, []);
 
   const performSearch = useCallback(async (searchQuery: string) => {
     if (!searchQuery) {
@@ -103,12 +122,18 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
     }
   }, []);
 
-  // Load words when opened
+  // Load words and usage when opened
   useEffect(() => {
-    if (open && !query) {
-      performSearch("");
+    if (open) {
+      fetchUsage();
+      if (!query) {
+        performSearch("");
+      }
+    } else {
+      // Reset usage when closed? Optional, depends on desired behavior
+      // setWordUsage(null);
     }
-  }, [open, query, performSearch]);
+  }, [open, query, performSearch, fetchUsage]);
 
   // Handle search query changes
   useEffect(() => {
@@ -126,6 +151,17 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
     onOpenChange(false);
   };
 
+  const remainingLookups = wordUsage
+    ? wordUsage.limit === Infinity
+      ? Infinity
+      : wordUsage.limit - wordUsage.current
+    : null;
+
+  const showWarning =
+    remainingLookups !== null &&
+    remainingLookups !== Infinity &&
+    remainingLookups < 3;
+
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>
       <CommandInput
@@ -133,6 +169,12 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         value={query}
         onValueChange={setQuery}
       />
+      {showWarning && (
+        <div className="px-4 py-2 text-sm text-amber-500 bg-amber-500/15 border-b border-amber-500/20">
+          Warning: You have {remainingLookups}{" "}
+          {remainingLookups === 1 ? "lookup" : "lookups"} remaining this month.
+        </div>
+      )}
       <CommandList>
         {isLoading ? (
           <CommandEmpty>Searching words...</CommandEmpty>

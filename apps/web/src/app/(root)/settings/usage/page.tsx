@@ -5,18 +5,12 @@ import { Loader2 } from "lucide-react";
 import { Progress } from "@/components/ui/progress";
 import { useSession } from "@/lib/auth-client";
 import { Separator } from "@/components/ui/separator";
-
-interface Usage {
-  current: number;
-  limit: number;
-  plan: string;
-  nextReset: string | null;
-}
+import { AIUsageResponse, WordUsageResponse } from "@/types/api";
 
 export default function SettingsUsagePage() {
   const { data: session, isPending } = useSession();
-  const [aiUsage, setAiUsage] = useState<Usage | null>(null);
-  const [wordUsage, setWordUsage] = useState<Usage | null>(null);
+  const [aiUsage, setAiUsage] = useState<AIUsageResponse | null>(null);
+  const [wordUsage, setWordUsage] = useState<WordUsageResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {

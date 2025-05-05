@@ -7,6 +7,7 @@ import { eq } from "drizzle-orm";
 import { getActiveSubscription } from "@/lib/db/queries";
 import { rateLimit } from "@/lib/rate-limit";
 import { createWordLookups } from "@/lib/db/queries";
+import { WordUsageResponse } from "@/types/api";
 
 export async function GET(request: Request) {
   try {
@@ -52,7 +53,9 @@ export async function GET(request: Request) {
         resetAt: new Date(new Date().setDate(new Date().getDate() + 30)),
       });
 
-      return NextResponse.json({
+      return NextResponse.json<{
+        usage: WordUsageResponse;
+      }>({
         usage: {
           current: newLookupData.count,
           limit,
@@ -64,7 +67,9 @@ export async function GET(request: Request) {
 
     // If still no lookup data (no session), return defaults
     if (!lookupData) {
-      return NextResponse.json({
+      return NextResponse.json<{
+        usage: WordUsageResponse;
+      }>({
         usage: {
           current: 0,
           limit,
@@ -76,7 +81,9 @@ export async function GET(request: Request) {
       });
     }
 
-    return NextResponse.json({
+    return NextResponse.json<{
+      usage: WordUsageResponse;
+    }>({
       usage: {
         current: lookupData.count,
         limit,

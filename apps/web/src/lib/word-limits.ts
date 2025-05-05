@@ -26,33 +26,60 @@ function getNextResetDate() {
 }
 
 async function getOrCreateLookupData(userId: string | null, ip: string) {
+  console.log("[Word Limits] Getting lookup data:", { userId, ip });
+
   // If user is logged in, we only care about user ID, not IP
   if (userId) {
+    console.log("[Word Limits] User is logged in, looking up by user ID");
+
     // Try to get the data based on user ID
     let lookupData = await db.query.wordLookups.findFirst({
       where: eq(wordLookups.userId, userId),
     });
 
+    console.log("[Word Limits] User lookup data:", lookupData);
+
     // If no lookup data exists, create a new record
     if (!lookupData) {
-      console.log("[Word Limits] Creating new lookup data for user", {
-        userId,
+      console.log(
+        "[Word Limits] No user lookup data found, creating new record"
+      );
+
+      // First check if there's an IP-based record we should migrate
+      const ipLookups = await db.query.wordLookups.findFirst({
+        where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
       });
+
+      console.log("[Word Limits] Found IP lookups to migrate:", ipLookups);
 
       const [newLookupData] = await db
         .insert(wordLookups)
         .values({
           userId: userId,
-          ipAddress: ip, // We still store IP but don't use it for lookups for logged-in users
-          count: 0,
-          resetAt: getNextResetDate(),
+          ipAddress: ip,
+          count: ipLookups?.count || 0,
+          resetAt: ipLookups?.resetAt || getNextResetDate(),
         })
         .returning();
+
+      console.log("[Word Limits] Created new user lookup data:", newLookupData);
+
+      // If we found and migrated an IP-based record, delete it
+      if (ipLookups) {
+        console.log("[Word Limits] Deleting migrated IP lookup data");
+        await db
+          .delete(wordLookups)
+          .where(
+            and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId))
+          );
+      }
+
       lookupData = newLookupData;
     }
 
     // Check if we need to reset the counter
     if (lookupData && lookupData.resetAt < new Date()) {
+      console.log("[Word Limits] Resetting counter for user");
       lookupData.count = 0;
       lookupData.resetAt = getNextResetDate();
       await db
@@ -68,13 +95,18 @@ async function getOrCreateLookupData(userId: string | null, ip: string) {
     return lookupData;
   }
 
+  console.log("[Word Limits] User not logged in, using IP-based lookup");
+
   // For anonymous users, use IP-based lookup
   let lookupData = await db.query.wordLookups.findFirst({
     where: and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)),
   });
 
+  console.log("[Word Limits] Anonymous lookup data:", lookupData);
+
   // Check if we need to reset the counter
   if (lookupData && lookupData.resetAt < new Date()) {
+    console.log("[Word Limits] Resetting counter for anonymous user");
     lookupData.count = 0;
     lookupData.resetAt = getNextResetDate();
     await db
@@ -89,10 +121,7 @@ async function getOrCreateLookupData(userId: string | null, ip: string) {
 
   // If no lookup data exists at all, create a new record
   if (!lookupData) {
-    console.log("[Word Limits] Creating new lookup data for anonymous user", {
-      ip,
-    });
-
+    console.log("[Word Limits] Creating new anonymous lookup data");
     const [newLookupData] = await db
       .insert(wordLookups)
       .values({
@@ -102,6 +131,11 @@ async function getOrCreateLookupData(userId: string | null, ip: string) {
         resetAt: getNextResetDate(),
       })
       .returning();
+
+    console.log(
+      "[Word Limits] Created new anonymous lookup data:",
+      newLookupData
+    );
     lookupData = newLookupData;
   }
 
@@ -112,17 +146,28 @@ export async function checkWordLookupLimit(
   userId: string | null,
   ip: string
 ): Promise<void> {
+  console.log("[Word Limits] Checking lookup limit:", { userId, ip });
+
   const subscriptionData = userId ? await getActiveSubscription(userId) : null;
+  console.log("[Word Limits] Subscription data:", subscriptionData);
+
   const lookupData = await getOrCreateLookupData(userId, ip);
+  console.log("[Word Limits] Got lookup data:", lookupData);
 
   // Default limit based on plan AND status
   const limit =
     subscriptionData?.plan === "plus" &&
     ["active", "trialing", "past_due"].includes(subscriptionData?.status || "")
-      ? Infinity
+      ? 999999999
       : 10;
 
+  console.log("[Word Limits] Calculated limit:", {
+    limit,
+    count: lookupData.count,
+  });
+
   if (lookupData.count >= limit) {
+    console.log("[Word Limits] Limit reached, throwing error");
     const error: WordLookupError = {
       message:
         "Word lookup limit reached. Sign up for Plus for unlimited lookups!",
@@ -143,24 +188,31 @@ export async function incrementWordLookupCount(
   userId: string | null,
   ip: string
 ): Promise<void> {
+  console.log("[Word Limits] Incrementing count:", { userId, ip });
+
   // For logged-in users, only use userId in the where clause
   if (userId) {
-    await db
+    console.log("[Word Limits] Incrementing for user");
+    const result = await db
       .update(wordLookups)
       .set({
         count: sql`${wordLookups.count} + 1`,
         updatedAt: new Date(),
       })
-      .where(eq(wordLookups.userId, userId));
+      .where(eq(wordLookups.userId, userId))
+      .returning();
+    console.log("[Word Limits] User increment result:", result);
   } else {
-    // For anonymous users, use IP address
-    await db
+    console.log("[Word Limits] Incrementing for anonymous user");
+    const result = await db
       .update(wordLookups)
       .set({
         count: sql`${wordLookups.count} + 1`,
         updatedAt: new Date(),
       })
-      .where(and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)));
+      .where(and(eq(wordLookups.ipAddress, ip), isNull(wordLookups.userId)))
+      .returning();
+    console.log("[Word Limits] Anonymous increment result:", result);
   }
 }
 

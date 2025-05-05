@@ -59,6 +59,13 @@ export async function GET(
     const session = await auth.api.getSession(request);
     const userId = session?.user?.id || null;
 
+    console.log("[Word API] Request details:", {
+      ip,
+      userId,
+      session: !!session,
+      headers: Object.fromEntries(headersList.entries()),
+    });
+
     // Apply rate limiting
     await rateLimit(ip);
 
@@ -72,17 +79,35 @@ export async function GET(
     const capitalizedWord =
       decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
 
+    console.log("[Word API] Looking up word:", {
+      word: capitalizedWord,
+      userId,
+      ip,
+    });
+
     // Get only the word content without social data
     const result = await getWord(capitalizedWord);
 
     // If word exists, track the lookup and return the content
     if (result) {
       try {
+        console.log("[Word API] Word found, checking limits:", {
+          wordId: result.id,
+          userId,
+          ip,
+        });
+
         // Check lookup limit first
         await checkWordLookupLimit(userId, ip);
+
+        console.log("[Word API] Limits OK, tracking view");
         // Track the view and increment count
         await trackWordView(request, result.id);
+
+        console.log("[Word API] View tracked, incrementing count");
         await incrementWordLookupCount(userId, ip);
+
+        console.log("[Word API] Count incremented");
 
         // If we have a next URL, redirect there
         if (next) {
@@ -126,16 +151,8 @@ export async function GET(
       } satisfies APIError,
       { status: 404 }
     );
-  } catch (error: unknown) {
-    if (error instanceof Error && error.message === "Too many requests") {
-      return new NextResponse(null, {
-        status: 429,
-        headers: {
-          "Retry-After": "60",
-        },
-      });
-    }
-
-    return new NextResponse(null, { status: 500 });
+  } catch (error) {
+    console.error("[Word API] Unhandled error:", error);
+    throw error;
   }
 }

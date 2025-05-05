@@ -63,6 +63,9 @@ export async function generateMetadata({
 
 export default async function WordPage({ params }: WordPageProps) {
   const { word: paramWord } = await params;
+
+  console.log("headers", (await headers()).entries());
+
   const session = await auth.api.getSession({ headers: await headers() });
 
   try {
@@ -70,7 +73,8 @@ export default async function WordPage({ params }: WordPageProps) {
     console.log("url", url);
     // Use rate-limited API for actual page content
     const res = await fetch(url, {
-      next: { revalidate: 31536000 },
+      cache: "no-store", // Don't cache since we need to track lookups
+      headers: await headers(),
     });
 
     console.log("res", res);

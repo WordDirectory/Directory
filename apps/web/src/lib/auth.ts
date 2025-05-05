@@ -6,7 +6,7 @@ import { anonymous } from "better-auth/plugins";
 import Stripe from "stripe";
 import { sendEmail } from "./email";
 import { wordLookups } from "./db/schema";
-import { eq } from "drizzle-orm";
+import { eq, and, isNull } from "drizzle-orm";
 
 const stripeClient = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: "2025-02-24.acacia",
@@ -174,16 +174,30 @@ export const auth = betterAuth({
         await db.transaction(async (tx) => {
           const ipAddress = anonymousUser.session.ipAddress || "127.0.0.1";
           const ipLookups = await tx.query.wordLookups.findFirst({
-            where: eq(wordLookups.ipAddress, ipAddress),
+            where: and(
+              eq(wordLookups.ipAddress, ipAddress),
+              isNull(wordLookups.userId)
+            ),
           });
 
           if (ipLookups) {
+            // Create new user-based record with the IP count
             await tx.insert(wordLookups).values({
               userId: newUser.user.id,
               count: ipLookups.count,
               resetAt: ipLookups.resetAt,
               ipAddress: ipLookups.ipAddress,
             });
+
+            // Delete the IP-based record
+            await tx
+              .delete(wordLookups)
+              .where(
+                and(
+                  eq(wordLookups.ipAddress, ipAddress),
+                  isNull(wordLookups.userId)
+                )
+              );
           }
         });
       },
@@ -207,7 +221,7 @@ export const auth = betterAuth({
             priceId: process.env.STRIPE_PLUS_PRICE_ID!,
             limits: {
               aiUsage: 1000,
-              wordLookups: Infinity,
+              wordLookups: 999999999, // 9 numbers, unlimited (nobody's using this much)
             },
           },
           {
@@ -215,7 +229,7 @@ export const auth = betterAuth({
             priceId: process.env.STRIPE_PLUS_ANNUAL_PRICE_ID!,
             limits: {
               aiUsage: 1000,
-              wordLookups: Infinity,
+              wordLookups: 999999999, // 9 numbers, unlimited (nobody's using this much)
             },
           },
         ],

@@ -43,7 +43,7 @@ export async function GET(request: Request) {
       ["active", "trialing", "past_due"].includes(
         subscriptionData?.status || ""
       )
-        ? Infinity
+        ? 999999999
         : 10;
 
     console.log("Calculated limit:", limit);

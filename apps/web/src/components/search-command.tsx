@@ -152,15 +152,12 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
   };
 
   const remainingLookups = wordUsage
-    ? wordUsage.limit === Infinity
-      ? Infinity
+    ? wordUsage.limit === 999999999
+      ? 999999999
       : wordUsage.limit - wordUsage.current
-    : null;
+    : 10;
 
-  const showWarning =
-    remainingLookups !== null &&
-    remainingLookups !== Infinity &&
-    remainingLookups < 3;
+  const showWarning = remainingLookups !== 999999999 && remainingLookups < 3;
 
   return (
     <CommandDialog open={open} onOpenChange={onOpenChange}>

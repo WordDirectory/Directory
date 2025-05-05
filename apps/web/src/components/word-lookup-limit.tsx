@@ -93,9 +93,11 @@ export function WordLookupLimit({
           You're a power user!
         </h1>
         <p className="text-muted-foreground">
-          You've used {usage.current} out of {usage.limit} word lookups this
-          month. Subscribe for just <span className="font-bold">$1/month</span>{" "}
-          to unlock unlimited word lookups and 1000 AI requests monthly.
+          You've used {usage.current} out of{" "}
+          {usage.limit === 999999999 ? "Unlimited" : usage.limit} word lookups
+          this month. Subscribe for just{" "}
+          <span className="font-bold">$1/month</span> to unlock unlimited word
+          lookups and 1000 AI requests monthly.
         </p>
       </div>
 
@@ -103,7 +105,9 @@ export function WordLookupLimit({
         <div className="h-2 w-full bg-primary/10 rounded-full overflow-hidden">
           <div
             className="h-full bg-primary transition-all duration-500"
-            style={{ width: `${(usage.current / usage.limit) * 100}%` }}
+            style={{
+              width: `${usage.limit === 999999999 ? usage.current / 100 : (usage.current / usage.limit) * 100}%`,
+            }}
           />
         </div>
         <p className="text-sm text-muted-foreground">

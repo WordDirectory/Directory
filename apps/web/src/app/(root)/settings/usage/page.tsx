@@ -72,7 +72,7 @@ export default function SettingsUsagePage() {
 
   const formatLimit = (limit: number | null) => {
     if (limit === null) return "0";
-    return limit === Infinity ? "Unlimited" : limit.toString();
+    return limit === 999999999 ? "Unlimited" : limit.toString();
   };
 
   return (
@@ -91,7 +91,7 @@ export default function SettingsUsagePage() {
                     used
                   </span>
                   {typeof wordUsage.limit === "number" &&
-                    wordUsage.limit !== Infinity && (
+                    wordUsage.limit !== 999999999 && (
                       <span className="font-medium">
                         {Math.round(
                           (wordUsage.current / wordUsage.limit) * 100
@@ -101,7 +101,7 @@ export default function SettingsUsagePage() {
                     )}
                 </div>
                 {typeof wordUsage.limit === "number" &&
-                wordUsage.limit !== Infinity ? (
+                wordUsage.limit !== 999999999 ? (
                   <Progress
                     value={(wordUsage.current / wordUsage.limit) * 100}
                     className="h-2"

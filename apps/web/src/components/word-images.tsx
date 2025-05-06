@@ -9,6 +9,7 @@ import { useEffect, useRef } from "react";
 import { Sheet, SheetContent, SheetClose } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion, AnimatePresence } from "motion/react";
+import Link from "next/link";
 
 interface UnsplashImage {
   id: string;
@@ -111,7 +112,15 @@ export function WordImages({ word }: { word: string }) {
                 />
               </div>
               <div className="p-2 text-xs text-center text-muted-foreground">
-                {image.user.name} on Unsplash
+                <Link
+                  href={`https://unsplash.com/@${image.user.username}`}
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {image.user.name}
+                </Link>{" "}
+                on Unsplash
               </div>
             </motion.div>
           ))}

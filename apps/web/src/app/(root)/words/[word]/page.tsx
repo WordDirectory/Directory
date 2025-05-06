@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
-import { capitalize } from "@/lib/utils";
-import { Quote } from "lucide-react";
+import { capitalize, cn } from "@/lib/utils";
+import { Quote, XIcon } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { Card, CardContent } from "@/components/ui/card";
 import { WordAudioButton } from "@/components/word-audio-button";
@@ -17,6 +17,11 @@ import {
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { ImageButton } from "@/components/image-button";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { useImagesStore } from "@/stores/images-store";
+import { WordImages } from "@/components/word-images";
 
 interface WordPageProps {
   params: Promise<{
@@ -70,7 +75,7 @@ export default async function WordPage({ params }: WordPageProps) {
 
   try {
     const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
-    
+
     // Use rate-limited API for actual page content
     const res = await fetch(url, {
       cache: "no-store", // Don't cache since we need to track lookups
@@ -106,7 +111,7 @@ export default async function WordPage({ params }: WordPageProps) {
       throw new Error("Invalid word data received");
     }
 
-    // Get vote data with error handling
+  // Get vote data with error handling
     let votes = 0,
       hasVoted = false,
       isSaved = false;
@@ -126,20 +131,30 @@ export default async function WordPage({ params }: WordPageProps) {
     }
 
     return (
-      <div className="mx-auto max-w-3xl py-12 md:py-20 px-6">
-        <WordHeader
-          word={wordResult.word}
-          details={wordResult.details}
-          votes={votes}
-          hasVoted={hasVoted}
-          isSaved={isSaved}
-        />
-        {wordResult.details.definitions.length > 1 && (
-          <>
-            <Separator className="mb-8" />
-            <WordContent word={wordResult.word} details={wordResult.details} />
-          </>
-        )}
+      <div className="flex w-full">
+        {/* Word */}
+        <div className="flex-1 py-12 md:py-20 px-6">
+          <div className="max-w-3xl mx-auto">
+            <WordHeader
+              word={wordResult.word}
+              details={wordResult.details}
+              votes={votes}
+              hasVoted={hasVoted}
+              isSaved={isSaved}
+            />
+            {wordResult.details.definitions.length > 1 && (
+              <>
+                <Separator className="mb-8" />
+                <WordContent
+                  word={wordResult.word}
+                  details={wordResult.details}
+                />
+              </>
+            )}
+          </div>
+        </div>
+        {/* Images */}
+        <WordImages word={wordResult.word} />
       </div>
     );
   } catch (error: any) {
@@ -190,7 +205,10 @@ function WordHeader({
             />
             <SaveWord word={word} initialIsSaved={isSaved} />
             <div className="pl-2">
-            <ShareWord word={word} definitions={details.definitions} />
+              <ShareWord word={word} definitions={details.definitions} />
+            </div>
+            <div className="pl-2">
+              <ImageButton />
             </div>
           </div>
         </div>

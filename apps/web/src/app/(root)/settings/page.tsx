@@ -25,10 +25,10 @@ import {
   ProfileFormValues,
 } from "@/lib/validation/auth-validation";
 import { Checkbox } from "@/components/ui/checkbox";
+import { SHOW_IMAGES_KEY } from "@/stores/images-store";
 
 const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
 const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
-const SHOW_IMAGES_KEY = "show-images-by-default";
 
 export default function SettingsPage() {
   const { data: session, isPending } = useSession();
@@ -179,27 +179,38 @@ export default function SettingsPage() {
           <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-semibold">Word Images</h2>
             <p className="text-sm text-muted-foreground">
-              Configure how images are displayed when looking up word definitions.
+              Configure how images are displayed when looking up word
+              definitions. These settings only apply to desktop devices - on
+              mobile, images are always accessed via the images button.
             </p>
           </div>
 
           <div className="flex flex-col gap-4">
             <div className="flex items-center space-x-2">
               <Checkbox
-              className="rounded"
+                className="rounded"
                 id="show-images"
                 checked={showImages}
                 onCheckedChange={(checked) => {
                   setShowImages(checked as boolean);
                 }}
               />
-              <Label htmlFor="show-images" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
-                Show word images automatically when available
-              </Label>
+              <div className="grid gap-1.5 leading-none">
+                <Label
+                  htmlFor="show-images"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  Show word images automatically
+                </Label>
+                <p className="text-[13px] text-muted-foreground">
+                  When enabled, the images panel will automatically open when
+                  you visit a word page (desktop only)
+                </p>
+              </div>
             </div>
 
-            <Button 
-            className="w-fit"
+            <Button
+              className="w-fit"
               onClick={async () => {
                 try {
                   setIsSavingImages(true);

@@ -44,13 +44,67 @@ function createServer() {
       word: z.string().describe("The word to look up")
     },
     async ({ word }) => {
-      // Simple dummy response for testing
-      return {
-        content: [{
-          type: "text",
-          text: `Test response for "${word}": This is a dummy definition for testing purposes.`
-        }]
-      };
+      try {
+        if (!word.trim()) {
+          return {
+            content: [{
+              type: "text",
+              text: "Please provide a non-empty word to look up"
+            }],
+            error: {
+              code: "INVALID_INPUT",
+              message: "Word parameter cannot be empty"
+            }
+          };
+        }
+
+        // First try to get the specific word
+        const wordResponse = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`);
+        
+        if (wordResponse.ok) {
+          const data = (await wordResponse.json()) as Word;
+          return {
+            content: [{
+              type: "text",
+              text: `${data.word}: ${data.details.definition}`
+            }]
+          };
+        }
+
+        // If word not found, try searching
+        const searchResponse = await fetch(`https://worddirectory.app/api/words/search?q=${encodeURIComponent(word)}&limit=5`);
+        
+        if (searchResponse.ok) {
+          const searchResults = (await searchResponse.json()) as SearchResult[];
+          if (searchResults.length > 0) {
+            return {
+              content: [{
+                type: "text",
+                text: `Word "${word}" not found. Did you mean:\n${searchResults.map(r => `- ${r.word}`).join('\n')}`
+              }]
+            };
+          }
+        }
+
+        return {
+          content: [{
+            type: "text",
+            text: `Definition not found for word: ${word}`
+          }]
+        };
+      } catch (error) {
+        console.error('Error looking up word:', error);
+        return {
+          content: [{
+            type: "text",
+            text: `Error looking up word: ${word}. Please try again later.`
+          }],
+          error: {
+            code: "API_ERROR",
+            message: error instanceof Error ? error.message : "Unknown error occurred"
+          }
+        };
+      }
     }
   );
 

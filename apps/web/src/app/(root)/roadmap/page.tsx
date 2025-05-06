@@ -23,7 +23,7 @@ const roadmapItems: {
   {
     title: "Add 150.000 words",
     description:
-      "Expect 150.000 words soon. Current count is around 90.000 but they're not live yet. Estimated completion date: May 4th, 2025.",
+      "Expect 150.000 words soon. Current count is around 110.000.",
     status: {
       text: "In progress",
       complete: false,
@@ -165,7 +165,7 @@ export default function RoadmapPage() {
         <header className="mb-12 space-y-4">
           <h1 className="text-4xl font-bold">Roadmap</h1>
           <p className="text-xl text-muted-foreground">
-            What's coming next for Word Directory (last updated: May 4, 2025)
+            What's coming next for Word Directory (last updated: May 6, 2025)
           </p>
         </header>
 

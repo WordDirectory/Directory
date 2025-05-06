@@ -6,7 +6,7 @@ import { useState } from "react";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
-  const wordCount = 90000;
+  const wordCount = 110000;
 
   const formatNumber = (num: number) => {
     return num.toLocaleString("en-US", {

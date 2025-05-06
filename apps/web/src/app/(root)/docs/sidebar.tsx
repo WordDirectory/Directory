@@ -16,15 +16,15 @@ export function Sidebar() {
   const isMobile = useIsMobile();
   const isActive = (path: string) => pathname === path;
 
+  // Single useEffect to handle all collapse logic
   useEffect(() => {
-    if (isMobile) {
+    // Default to collapsed until we know we're not on mobile
+    if (isMobile === undefined) {
       setCollapsed(true);
+      return;
     }
-  }, [pathname]);
 
-  // Set initial collapsed state based on mobile
-  useEffect(() => {
-    setCollapsed(!!isMobile);
+    setCollapsed(isMobile);
   }, [isMobile, setCollapsed]);
 
   const consumerItems = [
@@ -40,6 +40,11 @@ export function Sidebar() {
       href: "/docs/developers/api-routes",
     },
   ];
+
+  // Don't render anything until we know mobile state
+  if (isMobile === undefined) {
+    return null;
+  }
 
   return (
     <>
@@ -122,7 +127,12 @@ export function SidebarToggle() {
   }
 
   return (
-    <Button variant="outline" onClick={toggleCollapse} size="icon" className="absolute top-8 left-12">
+    <Button
+      variant="outline"
+      onClick={toggleCollapse}
+      size="icon"
+      className="absolute top-8 left-12"
+    >
       {isCollapsed ? <PanelLeft /> : <PanelRight />}
     </Button>
   );

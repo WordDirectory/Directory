@@ -16,15 +16,15 @@ export function Sidebar() {
   const isMobile = useIsMobile();
   const isActive = (path: string) => pathname === path;
 
+  // Single useEffect to handle all collapse logic
   useEffect(() => {
-    if (isMobile) {
+    // Default to collapsed until we know we're not on mobile
+    if (isMobile === undefined) {
       setCollapsed(true);
+      return;
     }
-  }, [pathname]);
 
-  // Set initial collapsed state based on mobile
-  useEffect(() => {
-    setCollapsed(!!isMobile);
+    setCollapsed(isMobile);
   }, [isMobile, setCollapsed]);
 
   const items = [
@@ -37,6 +37,11 @@ export function Sidebar() {
       href: "/settings/usage",
     },
   ];
+
+  // Don't render anything until we know mobile state
+  if (isMobile === undefined) {
+    return null;
+  }
 
   return (
     <>

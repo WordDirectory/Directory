@@ -164,6 +164,31 @@ export default function SettingsPage() {
             </Button>
           </div>
         </section>
+
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-4">
+            <h2 className="text-2xl font-semibold">Word Images</h2>
+            <p className="text-sm text-muted-foreground">
+              Configure how images are displayed when looking up word definitions.
+              Coming soon!
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <Label htmlFor="show-images">Show Images by Default</Label>
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                id="show-images"
+                className="h-4 w-4 rounded border-border"
+                disabled
+              />
+              <span className="text-sm text-muted-foreground">
+                Show word images automatically when available
+              </span>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );

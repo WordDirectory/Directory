@@ -79,7 +79,34 @@ const roadmapItems: {
     description:
       "Visual representation for words, especially useful for objects, animals, and concrete concepts. Each word will have a high-quality image to help with understanding.",
     status: {
-      text: "Not started", 
+      text: "In progress", 
+      complete: false,
+    },
+  },
+  {
+    title: "Share images by link",
+    description:
+      "Share word images easily with a direct link. Perfect for sharing interesting words and their visual representations with others.",
+    status: {
+      text: "Completed",
+      complete: true,
+    },
+  },
+  {
+    title: "MCP Server",
+    description:
+      "A dedicated server for handling core processing tasks and improving overall system performance.",
+    status: {
+      text: "In progress",
+      complete: false,
+    },
+  },
+  {
+    title: "Dictionary Rebuild",
+    description:
+      "Complete rebuild of our dictionary to provide higher quality definitions and enable new features across all words. This major update will significantly improve WordDirectory's core functionality.",
+    status: {
+      text: "In progress",
       complete: false,
     },
   },

@@ -8,24 +8,36 @@ import {
   wordLookups,
   wordHistory,
 } from "@/lib/db/schema";
-import { desc, eq, ilike, sql, and, isNull } from "drizzle-orm";
+import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
+import lemmatizer from "node-lemmatizer";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
+  // Get lemmatized forms of the query
+  const verbLemmas = lemmatizer.only_lemmas(query.toLowerCase(), 'verb');
+  const nounLemmas = lemmatizer.only_lemmas(query.toLowerCase(), 'noun');
+  
+  // Combine all forms we want to search for
+  const searchTerms = [
+    query,
+    ...verbLemmas,
+    ...nounLemmas
+  ].filter(Boolean); // Remove any empty strings/null values
+
   const results = await db.transaction(async (tx) => {
-    // Get matching words
+    // Get matching words - now using OR to match any of our terms
     const matchingWords = await tx.query.words.findMany({
       columns: { word: true },
-      where: ilike(words.word, `%${query}%`),
+      where: or(...searchTerms.map(term => ilike(words.word, `%${term}%`))),
       limit,
       offset,
       orderBy: (words) => words.word,
     });
 
-    // Get total count
+    // Get total count with the same conditions
     const [{ count }] = await tx
       .select({ count: sql<number>`count(*)` })
       .from(words)
-      .where(ilike(words.word, `%${query}%`));
+      .where(or(...searchTerms.map(term => ilike(words.word, `%${term}%`))));
 
     return {
       words: matchingWords.map((w) => w.word),

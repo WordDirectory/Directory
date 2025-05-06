@@ -45,6 +45,19 @@ function createServer() {
     },
     async ({ word }) => {
       try {
+        if (!word.trim()) {
+          return {
+            content: [{
+              type: "text",
+              text: "Please provide a non-empty word to look up"
+            }],
+            error: {
+              code: "INVALID_INPUT",
+              message: "Word parameter cannot be empty"
+            }
+          };
+        }
+
         // First try to get the specific word
         const wordResponse = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`);
         
@@ -85,7 +98,11 @@ function createServer() {
           content: [{
             type: "text",
             text: `Error looking up word: ${word}. Please try again later.`
-          }]
+          }],
+          error: {
+            code: "API_ERROR",
+            message: error instanceof Error ? error.message : "Unknown error occurred"
+          }
         };
       }
     }

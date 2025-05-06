@@ -18,7 +18,9 @@
   "files": [
     "dist",
     "smithery.yaml",
-    "Dockerfile"
+    "Dockerfile",
+    "README.md",
+    "LICENSE"
   ],
   "scripts": {
     "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
@@ -27,7 +29,8 @@
     "start": "node dist/index.js",
     "dev": "tsc && node dist/index.js",
     "docker:build": "docker build -t worddirectory-mcp .",
-    "docker:run": "docker run -p 3000:3000 worddirectory-mcp"
+    "docker:run": "docker run -p 3000:3000 worddirectory-mcp",
+    "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [
     "mcp",
@@ -35,7 +38,9 @@
     "dictionary",
     "definitions",
     "ai",
-    "llm"
+    "llm",
+    "model-context-protocol",
+    "worddirectory"
   ],
   "engines": {
     "node": ">=20.0.0"

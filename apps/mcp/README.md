@@ -7,11 +7,25 @@ A Model Context Protocol server for WordDirectory that provides word definition 
 - Look up word definitions using the `lookup_word` tool
 - Get suggestions for similar words when exact match isn't found
 - Integrates with WordDirectory's API endpoints
+- Standardized error handling with error codes
+- Session management with unique IDs
 
 ## Installation
 
+### NPM Package
+
 ```bash
-npm install
+npm install worddirectory-mcp
+```
+
+### Docker
+
+```bash
+# Build the image
+npm run docker:build
+
+# Run the container
+npm run docker:run
 ```
 
 ## Configuration
@@ -43,31 +57,31 @@ npm run build
 npm start
 ```
 
-## Using with Claude Desktop
+## MCP Integration
 
-To use this MCP server with Claude Desktop, add the following to your Claude Desktop config file:
+### Claude Desktop
 
-On Windows:
+Add to your Claude Desktop config:
 
 ```json
-// %APPDATA%/Claude/claude_desktop_config.json
 {
   "mcpServers": {
     "worddirectory-mcp": {
-      "command": "path/to/worddirectory-mcp/dist/index.js"
+      "command": "worddirectory-mcp"
     }
   }
 }
 ```
 
-On macOS:
+### Cursor
+
+Add to your Cursor settings:
 
 ```json
-// ~/Library/Application Support/Claude/claude_desktop_config.json
 {
   "mcpServers": {
     "worddirectory-mcp": {
-      "command": "path/to/worddirectory-mcp/dist/index.js"
+      "command": "worddirectory-mcp"
     }
   }
 }
@@ -79,11 +93,13 @@ On macOS:
 
 Looks up the definition of a word.
 
-Parameters:
+#### Parameters
 
 - `word` (string): The word to look up
 
-Example response:
+#### Returns
+
+Success response:
 
 ```json
 {
@@ -96,7 +112,7 @@ Example response:
 }
 ```
 
-If the word isn't found, it will suggest similar words:
+Not found response with suggestions:
 
 ```json
 {
@@ -108,3 +124,33 @@ If the word isn't found, it will suggest similar words:
   ]
 }
 ```
+
+Error response:
+
+```json
+{
+  "content": [
+    {
+      "type": "text",
+      "text": "Error message for user"
+    }
+  ],
+  "error": {
+    "code": "ERROR_CODE",
+    "message": "Detailed error message"
+  }
+}
+```
+
+#### Error Codes
+
+- `INVALID_INPUT`: The provided word is empty or invalid
+- `API_ERROR`: Error communicating with WordDirectory API
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License - see LICENSE file for details

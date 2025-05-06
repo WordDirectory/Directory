@@ -1,10 +1,11 @@
 "use client";
-import { Download, Image, LinkIcon, Share2 } from "lucide-react";
+import { LinkIcon, Share2 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useState, useRef, useEffect } from "react";
 import { motion } from "motion/react";
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 interface DefinitionItem {
   text: string;
@@ -49,6 +50,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
   const handleCopyLink = async () => {
     const url = `https://worddirectory.app/words/${encodeURIComponent(word)}`;
     await navigator.clipboard.writeText(url);
+    toast.success("Link copied to clipboard");
     setIsOpen(false);
   };
 
@@ -164,6 +166,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
       const dataUrl = await generateImage(definitionIndex, format);
       if (!dataUrl) {
         console.error("Failed to generate image");
+        toast.error("Failed to generate image");
         return;
       }
 
@@ -177,6 +180,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
         a.click();
         document.body.removeChild(a);
         console.log("Download triggered");
+        toast.success("Image downloaded successfully");
       } else {
         // Copy image on desktop
         console.log("Creating blob from dataUrl");
@@ -191,6 +195,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
             }),
           ]);
           console.log("Successfully copied to clipboard");
+          toast.success("Image copied to clipboard");
         } catch (blobError) {
           console.error("Error with blob or clipboard:", blobError);
           
@@ -204,14 +209,16 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
             document.execCommand('copy');
             document.body.removeChild(textarea);
             console.log("Fallback: Copied link instead");
-            alert("Your browser doesn't support copying images. A link to the word has been copied instead.");
+            toast.success("Link copied to clipboard (image copying not supported in your browser)");
           } catch (fallbackError) {
             console.error("Even fallback copy failed:", fallbackError);
+            toast.error("Failed to copy to clipboard");
           }
         }
       }
     } catch (error) {
       console.error(`Error in ${isMobile ? 'save' : 'copy'} image flow:`, error);
+      toast.error(`Failed to ${isMobile ? 'save' : 'copy'} image`);
     } finally {
       setIsGenerating(false);
       setIsOpen(false);

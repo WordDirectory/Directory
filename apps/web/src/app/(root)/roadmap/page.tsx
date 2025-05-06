@@ -8,7 +8,7 @@ const roadmapItems: {
   description: string;
   status: {
     text: string;
-    complete: boolean;
+    type: "complete" | "pending" | "default" | "info";
   };
 }[] = [
   {
@@ -16,17 +16,16 @@ const roadmapItems: {
     description:
       "Our Chrome extension is now live! [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
     status: {
-      text: "Published",
-      complete: true,
+      text: "Completed",
+      type: "complete",
     },
   },
   {
     title: "Add 150.000 words",
-    description:
-      "WordDirectory now has 150.000 words!",
+    description: "WordDirectory now has 150.000 words!",
     status: {
       text: "Completed",
-      complete: true,
+      type: "complete",
     },
   },
   {
@@ -35,7 +34,7 @@ const roadmapItems: {
       "As we add more words, we'll need to handle things a little differently",
     status: {
       text: "Completed",
-      complete: true,
+      type: "complete",
     },
   },
   {
@@ -44,7 +43,7 @@ const roadmapItems: {
       "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through the community.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -53,7 +52,7 @@ const roadmapItems: {
       "Daily featured words with their definitions, delivered through the website.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -62,7 +61,7 @@ const roadmapItems: {
       "A public API to get definitions for a word, finding words, etc. Check out the [API docs](https://worddirectory.app/docs/developers/api-routes)",
     status: {
       text: "Completed",
-      complete: true,
+      type: "complete",
     },
   },
   {
@@ -71,7 +70,7 @@ const roadmapItems: {
       "Advanced features powered by AI including sentence definitions and multi-language support.",
     status: {
       text: "In beta",
-      complete: true,
+      type: "info",
     },
   },
   {
@@ -79,8 +78,8 @@ const roadmapItems: {
     description:
       "Visual representation for words, especially useful for objects, animals, and concrete concepts. Each word will have a high-quality image to help with understanding.",
     status: {
-      text: "Completed", 
-      complete: true,
+      text: "Completed",
+      type: "complete",
     },
   },
   {
@@ -89,7 +88,7 @@ const roadmapItems: {
       "Share word images easily with a direct link or image. Perfect for sharing interesting words and their visual representations with others.",
     status: {
       text: "Completed",
-      complete: true,
+      type: "complete",
     },
   },
   {
@@ -98,7 +97,7 @@ const roadmapItems: {
       "A dedicated server for handling core processing tasks and improving overall system performance.",
     status: {
       text: "In progress",
-      complete: false,
+      type: "pending",
     },
   },
   {
@@ -107,7 +106,7 @@ const roadmapItems: {
       "Complete rebuild of our dictionary to provide higher quality definitions and enable new features across all words. This major update will significantly improve WordDirectory's core functionality.",
     status: {
       text: "In progress",
-      complete: false,
+      type: "pending",
     },
   },
   {
@@ -116,7 +115,7 @@ const roadmapItems: {
       "Major performance improvements to make text-to-speech 10x faster, providing instant audio pronunciation for words.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -125,7 +124,7 @@ const roadmapItems: {
       "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -134,7 +133,7 @@ const roadmapItems: {
       "A native Windows and macOS app that provides quick access to definitions from your desktop.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -143,7 +142,7 @@ const roadmapItems: {
       "A Raycast plugin that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -152,7 +151,7 @@ const roadmapItems: {
       "Support for multiple languages including Spanish, French, German, and more. Each word will have definitions in various languages while maintaining our simple, human-readable approach.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
   {
@@ -161,7 +160,7 @@ const roadmapItems: {
       "Integration with YouGlish to provide real-world pronunciation examples from YouTube videos, helping users understand how words are used in context and pronounced by native speakers.",
     status: {
       text: "Not started",
-      complete: false,
+      type: "default",
     },
   },
 ];
@@ -217,12 +216,16 @@ export default function RoadmapPage() {
                     <div className="flex items-center gap-2 mb-2">
                       <h3 className="font-medium">{item.title}</h3>
                       <Badge
-                        className={cn(
-                          "shadow-none",
-                          item.status.complete
-                            ? "!bg-green-500 text-white"
-                            : "!bg-foreground/5 text-accent-foreground"
-                        )}
+                        className={cn("shadow-none", {
+                          "!bg-green-500 text-white":
+                            item.status.type === "complete",
+                          "!bg-yellow-500 text-white":
+                            item.status.type === "pending",
+                          "!bg-blue-500 text-white":
+                            item.status.type === "info",
+                          "!bg-foreground/5 text-accent-foreground":
+                            item.status.type === "default",
+                        })}
                       >
                         {item.status.text}
                       </Badge>

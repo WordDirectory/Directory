@@ -1,19 +1,17 @@
 import { WordNotFound } from "@/components/word-not-found";
 import { notFound } from "next/navigation";
 
-type Params = Promise<{
+interface SearchParams {
   word?: string;
-}>;
-
-interface WordNotFoundPageProps {
-  params: {};
-  searchParams: Params;
 }
 
 export default async function WordNotFoundPage({
   searchParams,
-}: WordNotFoundPageProps) {
-  const { word } = await searchParams;
+}: {
+  searchParams: SearchParams;
+}) {
+  // Since we're in a Server Component, we can access searchParams directly
+  const { word } = searchParams;
 
   // If we somehow don't have a word, show the generic 404
   if (!word) {

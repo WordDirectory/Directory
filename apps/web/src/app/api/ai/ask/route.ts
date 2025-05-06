@@ -127,20 +127,12 @@ export async function POST(request: Request) {
 
     const { message, word } = result.data;
 
-    // Get word details from database
+    // Get word details from database if it exists
     let wordDetails = null;
     if (word) {
       wordDetails = await getWord(decodeURIComponent(word));
-      if (!wordDetails) {
-        // This error will only be shown if the user is on a word page
-        // Not when they search for a word and click the AI button
-        const error: APIError = {
-          message: `Word "${word}" not found`,
-          status: 404,
-          code: "WORD_NOT_FOUND",
-        };
-        return NextResponse.json(error, { status: 404 });
-      }
+      // Note: We don't return 404 if the word doesn't exist
+      // We still want to allow AI to answer questions about unknown words
     }
 
     const prompt = `
@@ -148,6 +140,7 @@ export async function POST(request: Request) {
 You are an AI assistant for WordDirectory, a website that provides simple, human-readable word definitions.
 
 ${word ? `The user is currently on a word page for ${word}.` : ""}
+${wordDetails ? `The word exists in our database with these details: ${JSON.stringify(wordDetails)}` : word ? `This word is not in our database yet.` : ""}
 
 You must answer the user's question. It will not always be about the word, sometimes it will.
 

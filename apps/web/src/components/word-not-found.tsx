@@ -1,9 +1,9 @@
 "use client";
 import { Button } from "@/components/ui/button";
-import { getRandomWords } from "@/lib/words";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
+import { useAskAIStore } from "@/stores/ask-ai-store";
+import { Sparkles } from "lucide-react";
 
 interface WordNotFoundProps {
   word: string;
@@ -12,20 +12,12 @@ interface WordNotFoundProps {
 
 export function WordNotFound({ word, isTimeout = false }: WordNotFoundProps) {
   const router = useRouter();
-  const [isLoading, setIsLoading] = useState(false);
+  const { setIsOpen, setInitialMessage } = useAskAIStore();
 
-  const handleRandomWord = async () => {
-    try {
-      setIsLoading(true);
-      const { words } = await getRandomWords(1);
-      if (words.length > 0) {
-        router.push(`/words/${words[0]}`);
-      }
-    } catch (error) {
-      console.error("Error getting random word:", error);
-    } finally {
-      setIsLoading(false);
-    }
+  const handleAskAI = () => {
+    setIsOpen(true);
+    const message = `Explain the word "${decodeURIComponent(word)}"`;
+    setInitialMessage(message);
   };
 
   return (
@@ -47,10 +39,11 @@ export function WordNotFound({ word, isTimeout = false }: WordNotFoundProps) {
         {!isTimeout && (
           <Button
             variant="outline"
-            onClick={handleRandomWord}
-            disabled={isLoading}
+            onClick={handleAskAI}
+            className="flex items-center gap-2"
           >
-            {isLoading ? "Loading..." : "Try a random word"}
+            <Sparkles className="h-4 w-4" />
+            <span>Ask AI about &quot;{decodeURIComponent(word)}&quot;</span>
           </Button>
         )}
         {isTimeout && (

@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Textarea } from "./ui/textarea";
 import { AutoResizeTextarea } from "./auto-resize-textarea";
 import { CustomPopover } from "./ui/custom-popover";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { Message as AIMessage } from "ai";
 import { cn } from "@/lib/utils";
 import { Separator } from "./ui/separator";
@@ -23,6 +23,7 @@ const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
 export function AskAI() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState<AIMessage[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -30,7 +31,13 @@ export function AskAI() {
   const [showFreeTierLimitReached, setShowFreeTierLimitReached] =
     useState(false);
   const [aiError, setAiError] = useState<AIError | null>(null);
-  const word = pathname?.split("/words/")[1]?.split("/")[0] || "";
+  
+  // Get the word from either the URL path or search params for word-not-found page
+  const isNotFoundPage = pathname === "/words/not-found";
+  const word = isNotFoundPage 
+    ? searchParams.get("word") || ""
+    : pathname?.split("/words/")[1]?.split("/")[0] || "";
+
   const { theme } = useTheme();
   const { data: session } = useSession();
   const router = useRouter();

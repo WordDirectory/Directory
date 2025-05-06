@@ -8,9 +8,6 @@ transport:
 build:
   dockerfile: Dockerfile
 startCommand:
-  type: http
-  commandFunction: |
-    async function start() {
-      const { spawn } = require('child_process');
-      return spawn('node', ['dist/index.js']);
-    }
+  type: stdio
+  command: node
+  args: ["dist/index.js"]

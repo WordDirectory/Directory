@@ -12,7 +12,7 @@ export async function middleware(request: NextRequest) {
   }
 
   // Protected pages - redirect to login if not logged in
-  if (path.startsWith("/settings") && !session) {
+  if ((path.startsWith("/settings") || path.startsWith("/user/saved")) && !session) {
     const loginUrl = new URL("/auth/login", request.url);
     loginUrl.searchParams.set("redirect", request.url);
     return NextResponse.redirect(loginUrl);

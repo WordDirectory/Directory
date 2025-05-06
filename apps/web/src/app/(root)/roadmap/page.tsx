@@ -50,7 +50,7 @@ const roadmapItems: {
   {
     title: "Word of the day",
     description:
-      "Daily featured words with their definitions, delivered through the website and social media. Will include weekly, monthly, and yearly special features.",
+      "Daily featured words with their definitions, delivered through the website.",
     status: {
       text: "Not started",
       complete: false,

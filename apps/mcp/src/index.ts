@@ -6,17 +6,6 @@ import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/
 import { isInitializeRequest } from "@modelcontextprotocol/sdk/types.js";
 import { z } from "zod";
 import fetch from 'node-fetch';
-import { config } from 'dotenv';
-
-// Load environment variables from .env file
-config();
-
-// Validate environment variables
-const APP_URL = process.env.NEXT_PUBLIC_APP_URL;
-if (!APP_URL) {
-  console.error('Error: NEXT_PUBLIC_APP_URL environment variable is required');
-  process.exit(1);
-}
 
 // Create Express app
 const app = express();
@@ -56,10 +45,10 @@ function createServer() {
     async ({ word }) => {
       try {
         // First try to get the specific word
-        const wordResponse = await fetch(`${APP_URL}/api/words/${encodeURIComponent(word)}`);
+        const wordResponse = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`);
         
         if (wordResponse.ok) {
-          const data = (await wordResponse.json()) as Word;
+          const data = (await wordResponse.json()) as Word; 
           return {
             content: [{
               type: "text",
@@ -69,7 +58,7 @@ function createServer() {
         }
 
         // If word not found, try searching
-        const searchResponse = await fetch(`${APP_URL}/api/words/search?q=${encodeURIComponent(word)}&limit=5`);
+        const searchResponse = await fetch(`https://worddirectory.app/api/words/search?q=${encodeURIComponent(word)}&limit=5`);
         
         if (searchResponse.ok) {
           const searchResults = (await searchResponse.json()) as SearchResult[];

@@ -1,0 +1,9 @@
+name: worddirectory-mcp
+version: 0.1.0
+description: A WordDirectory MCP server that provides human-readable word definitions
+type: http
+transport:
+  type: http
+  path: /mcp
+build:
+  dockerfile: Dockerfile

@@ -24,14 +24,18 @@ import {
   profileFormSchema,
   ProfileFormValues,
 } from "@/lib/validation/auth-validation";
+import { Checkbox } from "@/components/ui/checkbox";
 
 const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
 const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
+const SHOW_IMAGES_KEY = "show-images-by-default";
 
 export default function SettingsPage() {
   const { data: session, isPending } = useSession();
   const [isSaving, setIsSaving] = useState(false);
   const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
+  const [showImages, setShowImages] = useState(false);
+  const [isSavingImages, setIsSavingImages] = useState(false);
 
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
@@ -45,6 +49,12 @@ export default function SettingsPage() {
     const savedMessage = localStorage.getItem(AI_INITIAL_MESSAGE_KEY);
     if (savedMessage) {
       setInitialMessage(savedMessage);
+    }
+
+    // Load image preference from localStorage
+    const savedImagePref = localStorage.getItem(SHOW_IMAGES_KEY);
+    if (savedImagePref) {
+      setShowImages(savedImagePref === "true");
     }
   }, []);
 
@@ -170,23 +180,48 @@ export default function SettingsPage() {
             <h2 className="text-2xl font-semibold">Word Images</h2>
             <p className="text-sm text-muted-foreground">
               Configure how images are displayed when looking up word definitions.
-              Coming soon!
             </p>
           </div>
 
-          <div className="flex flex-col gap-2">
-            <Label htmlFor="show-images">Show Images by Default</Label>
-            <div className="flex items-center gap-2">
-              <input
-                type="checkbox"
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center space-x-2">
+              <Checkbox
+              className="rounded"
                 id="show-images"
-                className="h-4 w-4 rounded border-border"
-                disabled
+                checked={showImages}
+                onCheckedChange={(checked) => {
+                  setShowImages(checked as boolean);
+                }}
               />
-              <span className="text-sm text-muted-foreground">
+              <Label htmlFor="show-images" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                 Show word images automatically when available
-              </span>
+              </Label>
             </div>
+
+            <Button 
+            className="w-fit"
+              onClick={async () => {
+                try {
+                  setIsSavingImages(true);
+                  localStorage.setItem(SHOW_IMAGES_KEY, showImages.toString());
+                  toast.success("Image preferences saved!");
+                } catch (error) {
+                  toast.error("Failed to save image preferences");
+                } finally {
+                  setIsSavingImages(false);
+                }
+              }}
+              disabled={isSavingImages}
+            >
+              {isSavingImages ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Saving...
+                </>
+              ) : (
+                "Save changes"
+              )}
+            </Button>
           </div>
         </section>
       </div>

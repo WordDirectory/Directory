@@ -202,7 +202,7 @@ function WordHeader({
             />
             <SaveWord word={word} initialIsSaved={isSaved} />
             <div className="pl-2">
-            <ShareWord word={word} definition={details.definitions[0].text} />
+            <ShareWord word={word} definitions={details.definitions} />
             </div>
           </div>
         </div>

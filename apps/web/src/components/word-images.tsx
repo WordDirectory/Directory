@@ -5,16 +5,93 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useImagesStore } from "@/stores/images-store";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useEffect } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Sheet, SheetContent, SheetClose } from "@/components/ui/sheet";
+import { Skeleton } from "@/components/ui/skeleton";
+import { motion, AnimatePresence } from "motion/react";
+
+interface UnsplashImage {
+  id: string;
+  url: string;
+  alt: string;
+  user: {
+    name: string;
+    username: string;
+  };
+}
+
+// Create a cache to store images by word
+const imageCache = new Map<string, UnsplashImage[]>();
 
 export function WordImages({ word }: { word: string }) {
   const { isOpen, setIsOpen, initializeFromPreference } = useImagesStore();
   const isMobile = useIsMobile();
+  const [images, setImages] = useState<UnsplashImage[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+  const [sidebarHeight, setSidebarHeight] = useState(0);
+  const sidebarRef = useRef<HTMLDivElement>(null);
+
+  // Load from cache if available when word changes
+  useEffect(() => {
+    if (imageCache.has(word)) {
+      setImages(imageCache.get(word) || []);
+    } else {
+      setImages([]);
+    }
+  }, [word]);
 
   useEffect(() => {
     initializeFromPreference();
   }, [initializeFromPreference]);
+
+  useEffect(() => {
+    if (sidebarRef.current) {
+      setSidebarHeight(sidebarRef.current.scrollHeight);
+    }
+  }, [images]);
+
+  useEffect(() => {
+    async function fetchImages() {
+      // Check if we need to fetch images
+      // 1. Sidebar must be open
+      // 2. No images for current word in state
+      // 3. No images for current word in cache
+      if (!isOpen || images.length > 0 || imageCache.has(word)) return;
+
+      try {
+        setIsLoading(true);
+        setError(null);
+        const response = await fetch(
+          `/api/words/${encodeURIComponent(word)}/images`
+        );
+
+        if (!response.ok) {
+          throw new Error("Failed to fetch images");
+        }
+
+        const data = await response.json();
+        // Update cache and state
+        imageCache.set(word, data.images);
+        setImages(data.images);
+      } catch (err) {
+        console.error("Error fetching images:", err);
+        setError("Failed to load images");
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchImages();
+  }, [word, isOpen, images.length]);
+
+  const handleImageClick = (image: UnsplashImage) => {
+    window.open(
+      `https://unsplash.com/photos/${image.id}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
 
   const ImageGrid = ({ isMobileView }: { isMobileView?: boolean }) => (
     <div
@@ -23,22 +100,63 @@ export function WordImages({ word }: { word: string }) {
         isMobileView && "w-full"
       )}
     >
-      {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11].map((num) => (
-        <div
-          key={num}
-          className={cn(
-            "relative aspect-square rounded-lg overflow-hidden",
-            isMobileView && "w-full"
-          )}
-        >
-          <Image
-            src={`/unsplash-${num}.jpg`}
-            alt={`Image ${num} for ${word}`}
-            fill
-            className="object-cover"
-          />
+      {isLoading ? (
+        <div className="col-span-2">
+          <div className="grid grid-cols-2 gap-4">
+            {[...Array(6)].map((_, i) => (
+              <div
+                key={i}
+                className={cn(
+                  "relative flex flex-col rounded-lg overflow-hidden",
+                  isMobileView && "w-full"
+                )}
+              >
+                <div className="relative aspect-square">
+                  <Skeleton className="absolute inset-0" />
+                </div>
+                <div className="p-2 text-xs text-center">
+                  <Skeleton className="h-4 w-24 mx-auto" />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
+      ) : error ? (
+        <div className="col-span-2 text-center py-8 text-red-500">{error}</div>
+      ) : images.length === 0 ? (
+        <div className="col-span-2 text-center py-8">No images found</div>
+      ) : isOpen ? (
+        <AnimatePresence>
+          {images.map((image, index) => (
+            <motion.div
+              key={image.id}
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -10 }}
+              transition={{ duration: 0.2, delay: index * 0.05 }}
+              className={cn(
+                "relative flex flex-col rounded-lg overflow-hidden",
+                isMobileView && "w-full"
+              )}
+            >
+              <div
+                className="relative aspect-square cursor-pointer"
+                onClick={() => handleImageClick(image)}
+              >
+                <Image
+                  src={image.url}
+                  alt={image.alt}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-2 text-xs text-center text-muted-foreground">
+                {image.user.name} on Unsplash
+              </div>
+            </motion.div>
+          ))}
+        </AnimatePresence>
+      ) : null}
     </div>
   );
 
@@ -54,7 +172,7 @@ export function WordImages({ word }: { word: string }) {
               </Button>
             </SheetClose>
           </div>
-          <div className="overflow-y-auto max-h-[calc(100vh-4rem)]">
+          <div className="overflow-y-auto max-h-[calc(100vh-3.5rem)]">
             <ImageGrid isMobileView />
           </div>
         </SheetContent>
@@ -64,13 +182,18 @@ export function WordImages({ word }: { word: string }) {
 
   return (
     <div
-      className={cn(
-        "overflow-hidden transition-all duration-300 ease-in-out",
-        isOpen ? "w-96" : "w-0"
-      )}
+      className="relative transition-all duration-300 ease-in-out"
+      style={{ width: isOpen ? "24rem" : 0 }}
     >
-      <div className="w-96 border-l max-h-[calc(100vh-3.5rem)] align-top overflow-y-auto bg-background">
-        <div className="flex items-center justify-between sticky top-0 bg-background px-5 py-4 shadow-xl shadow-background/65 transition-opacity duration-300 z-10">
+      <div
+        ref={sidebarRef}
+        className="sticky top-14 w-96 border-l bg-background overflow-hidden"
+        style={{
+          height: "calc(100vh - 3.5rem)",
+          overflowY: "auto",
+        }}
+      >
+        <div className="flex items-center justify-between sticky top-0 bg-background px-5 py-4 shadow-xl shadow-background/65 z-10">
           <h3 className="text-xl font-semibold">Images</h3>
           <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
             <XIcon className="w-4 h-4" />

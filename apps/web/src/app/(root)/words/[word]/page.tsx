@@ -111,7 +111,7 @@ export default async function WordPage({ params }: WordPageProps) {
       throw new Error("Invalid word data received");
     }
 
-  // Get vote data with error handling
+    // Get vote data with error handling
     let votes = 0,
       hasVoted = false,
       isSaved = false;
@@ -131,30 +131,32 @@ export default async function WordPage({ params }: WordPageProps) {
     }
 
     return (
-      <div className="flex w-full">
-        {/* Word */}
-        <div className="flex-1 py-12 md:py-20 px-6">
-          <div className="max-w-3xl mx-auto">
-            <WordHeader
-              word={wordResult.word}
-              details={wordResult.details}
-              votes={votes}
-              hasVoted={hasVoted}
-              isSaved={isSaved}
-            />
-            {wordResult.details.definitions.length > 1 && (
-              <>
-                <Separator className="mb-8" />
-                <WordContent
-                  word={wordResult.word}
-                  details={wordResult.details}
-                />
-              </>
-            )}
+      <div className="min-h-screen relative">
+        <div className="grid grid-cols-1 md:grid-cols-[1fr,auto]">
+          {/* Word content */}
+          <div className="py-12 md:py-20 px-6">
+            <div className="max-w-3xl mx-auto">
+              <WordHeader
+                word={wordResult.word}
+                details={wordResult.details}
+                votes={votes}
+                hasVoted={hasVoted}
+                isSaved={isSaved}
+              />
+              {wordResult.details.definitions.length > 1 && (
+                <>
+                  <Separator className="mb-8" />
+                  <WordContent
+                    word={wordResult.word}
+                    details={wordResult.details}
+                  />
+                </>
+              )}
+            </div>
           </div>
+          {/* Images */}
+          <WordImages word={wordResult.word} />
         </div>
-        {/* Images */}
-        <WordImages word={wordResult.word} />
       </div>
     );
   } catch (error: any) {

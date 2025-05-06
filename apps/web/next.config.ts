@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
   images: {
-    domains: ["unsplash.com"],
+    domains: ["images.unsplash.com"],
   },
 };
 

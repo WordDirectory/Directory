@@ -87,11 +87,16 @@ export default {
           "50%": { backgroundPosition: "100% 100%" },
           "100%": { backgroundPosition: "0% 0%" },
         },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         shine: "shine var(--duration) infinite linear",
+        "fade-in": "fade-in 0.2s ease-out forwards",
       },
       transitionTimingFunction: {
         spring: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",

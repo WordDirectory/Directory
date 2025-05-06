@@ -58,7 +58,8 @@ export type AIError = APIErrorBase & {
     | "SUBSCRIPTION_LIMIT_REACHED"
     | "RATE_LIMIT_EXCEEDED"
     | "INTERNAL_SERVER_ERROR"
-    | "ALREADY_VOTED";
+    | "ALREADY_VOTED"
+    | "UNSPLASH_API_ERROR";
   usage?: AIUsageResponse;
 };
 

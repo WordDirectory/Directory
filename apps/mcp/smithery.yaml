@@ -7,3 +7,6 @@ transport:
   path: /mcp
 build:
   dockerfile: Dockerfile
+startCommand:
+  command: node
+  args: ["dist/index.js"]

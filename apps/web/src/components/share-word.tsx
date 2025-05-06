@@ -247,7 +247,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
               className="w-full justify-start"
               onClick={handleCopyLink}
             >
-              <LinkIcon className="w-4 h-4 mr-2" />
+              <LinkIcon className="w-4 h-4" />
               Copy link
             </Button>
             <div className="h-px bg-border my-1" />

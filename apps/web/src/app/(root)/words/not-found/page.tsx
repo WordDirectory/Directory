@@ -2,6 +2,7 @@ import { WordNotFound } from "@/components/word-not-found";
 import { notFound } from "next/navigation";
 
 interface WordNotFoundPageProps {
+  params: {};
   searchParams: {
     word?: string;
   };

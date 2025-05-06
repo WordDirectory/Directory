@@ -33,7 +33,8 @@ interface SearchResult {
 function createServer() {
   const server = new McpServer({
     name: "worddirectory-mcp",
-    version: "0.1.0"
+    version: "0.1.0",
+    description: "A WordDirectory MCP server that provides human-readable word definitions"
   });
 
   // Add a tool to look up word definitions
@@ -48,7 +49,7 @@ function createServer() {
         const wordResponse = await fetch(`https://worddirectory.app/api/words/${encodeURIComponent(word)}`);
         
         if (wordResponse.ok) {
-          const data = (await wordResponse.json()) as Word; 
+          const data = (await wordResponse.json()) as Word;
           return {
             content: [{
               type: "text",
@@ -95,64 +96,86 @@ function createServer() {
 
 // Handle POST requests for client-to-server communication
 app.post('/mcp', async (req, res) => {
-  const sessionId = req.headers['mcp-session-id'] as string | undefined;
-  let transport: StreamableHTTPServerTransport;
+  try {
+    const sessionId = req.headers['mcp-session-id'] as string | undefined;
+    let transport: StreamableHTTPServerTransport;
 
-  if (sessionId && transports[sessionId]) {
-    transport = transports[sessionId];
-  } else if (!sessionId && isInitializeRequest(req.body)) {
-    transport = new StreamableHTTPServerTransport({
-      sessionIdGenerator: () => randomUUID(),
-      onsessioninitialized: (sessionId) => {
-        transports[sessionId] = transport;
-      }
-    });
+    if (sessionId && transports[sessionId]) {
+      transport = transports[sessionId];
+    } else if (!sessionId && isInitializeRequest(req.body)) {
+      transport = new StreamableHTTPServerTransport({
+        sessionIdGenerator: () => randomUUID(),
+        onsessioninitialized: (sessionId) => {
+          transports[sessionId] = transport;
+        }
+      });
 
-    transport.onclose = () => {
-      if (transport.sessionId) {
-        delete transports[transport.sessionId];
-      }
-    };
+      transport.onclose = () => {
+        if (transport.sessionId) {
+          delete transports[transport.sessionId];
+        }
+      };
 
-    const server = createServer();
-    await server.connect(transport);
-  } else {
-    res.status(400).json({
+      const server = createServer();
+      await server.connect(transport);
+    } else {
+      res.status(400).json({
+        jsonrpc: '2.0',
+        error: {
+          code: -32000,
+          message: 'Bad Request: No valid session ID provided',
+        },
+        id: null,
+      });
+      return;
+    }
+
+    await transport.handleRequest(req, res, req.body);
+  } catch (error) {
+    console.error('Error handling request:', error);
+    res.status(500).json({
       jsonrpc: '2.0',
       error: {
         code: -32000,
-        message: 'Bad Request: No valid session ID provided',
+        message: 'Internal server error',
       },
       id: null,
     });
-    return;
   }
-
-  await transport.handleRequest(req, res, req.body);
 });
 
 // Handle GET requests for server-to-client notifications
 app.get('/mcp', async (req, res) => {
-  const sessionId = req.headers['mcp-session-id'] as string | undefined;
-  if (!sessionId || !transports[sessionId]) {
-    res.status(400).send('Invalid or missing session ID');
-    return;
+  try {
+    const sessionId = req.headers['mcp-session-id'] as string | undefined;
+    if (!sessionId || !transports[sessionId]) {
+      res.status(400).send('Invalid or missing session ID');
+      return;
+    }
+    
+    const transport = transports[sessionId];
+    await transport.handleRequest(req, res);
+  } catch (error) {
+    console.error('Error handling GET request:', error);
+    res.status(500).send('Internal server error');
   }
-  
-  const transport = transports[sessionId];
-  await transport.handleRequest(req, res);
 });
 
 // Handle DELETE requests for session termination
 app.delete('/mcp', async (req, res) => {
-  const sessionId = req.headers['mcp-session-id'] as string | undefined;
-  if (!sessionId || !transports[sessionId]) {
-    res.status(400).send('Invalid or missing session ID');
-    return;
+  try {
+    const sessionId = req.headers['mcp-session-id'] as string | undefined;
+    if (!sessionId || !transports[sessionId]) {
+      res.status(400).send('Invalid or missing session ID');
+      return;
+    }
+    
+    const transport = transports[sessionId];
+    await transport.handleRequest(req, res);
+  } catch (error) {
+    console.error('Error handling DELETE request:', error);
+    res.status(500).send('Internal server error');
   }
-  
-  const transport = transports[sessionId];
-  await transport.handleRequest(req, res);
 });
 
 // Start the server

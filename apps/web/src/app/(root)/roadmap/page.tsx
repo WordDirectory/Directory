@@ -23,7 +23,7 @@ const roadmapItems: {
   {
     title: "Add 150.000 words",
     description:
-      "Expect 150.000 words soon. Current count is around 150.000.",
+      "WordDirectory now has 150.000 words!",
     status: {
       text: "Completed",
       complete: true,

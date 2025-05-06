@@ -84,9 +84,9 @@ const roadmapItems: {
     },
   },
   {
-    title: "Share images by link",
+    title: "Share images",
     description:
-      "Share word images easily with a direct link. Perfect for sharing interesting words and their visual representations with others.",
+      "Share word images easily with a direct link or image. Perfect for sharing interesting words and their visual representations with others.",
     status: {
       text: "Completed",
       complete: true,

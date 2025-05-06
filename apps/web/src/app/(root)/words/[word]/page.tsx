@@ -4,7 +4,6 @@ import { capitalize } from "@/lib/utils";
 import { Quote } from "lucide-react";
 import { FaQuoteLeft } from "react-icons/fa6";
 import { Card, CardContent } from "@/components/ui/card";
-import { WordNotFound } from "@/components/word-not-found";
 import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
 import { VoteButton } from "@/components/vote-button";
@@ -71,41 +70,34 @@ export default async function WordPage({ params }: WordPageProps) {
 
   try {
     const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
-    console.log("url", url);
+    
     // Use rate-limited API for actual page content
     const res = await fetch(url, {
       cache: "no-store", // Don't cache since we need to track lookups
       headers: Object.fromEntries(headersList.entries()),
     });
 
-    console.log("res", res);
+    // Check if we've been sent to the not-found page
+    if (res.url.includes("/words/not-found")) {
+      return redirect(res.url);
+    }
 
     // Check if the fetch was redirected to the limit page
     if (res.url.includes("/word-limit-reached")) {
-      console.log(
-        "Detected redirect to limit page, redirecting browser to:",
-        res.url
-      );
-      redirect(res.url); // Redirect the entire page
+      return redirect(res.url);
     }
 
     if (!res.ok) {
-      // We should generally not hit this for 404 anymore if the API handles it,
-      // but keep it as a fallback. The redirect handles the 429/limit case.
-      if (res.status === 404) {
-        // If the API returned 404 directly (e.g., word not found, no limit issue)
-        return <WordNotFound word={decodeURI(paramWord)} />;
-      }
-
-      // Handle other fetch errors
+      // Handle fetch errors
       throw new Error(`Failed to fetch word: ${res.status} ${res.statusText}`);
     }
 
     let wordResult;
     try {
-      wordResult = await res.json();
+      const text = await res.text();
+      wordResult = JSON.parse(text);
     } catch (e) {
-      console.error("Failed to parse word response:", e);
+      console.error("[WordPage] Failed to parse word response:", e);
       throw new Error("Invalid response format from API");
     }
 
@@ -161,11 +153,7 @@ export default async function WordPage({ params }: WordPageProps) {
 
     // Handle other errors
     console.error("Error fetching word:", error);
-    const isTimeout =
-      error instanceof Error &&
-      (error.message.includes("Connection terminated") ||
-        error.message.includes("connection timeout"));
-    return <WordNotFound word={decodeURI(paramWord)} isTimeout={isTimeout} />;
+    throw error; // Let the error boundary handle it
   }
 }
 

@@ -151,15 +151,10 @@ export async function GET(
       return NextResponse.redirect(fallback);
     }
 
-    // If no fallback provided, return structured 404 error
-    return NextResponse.json(
-      {
-        message: `Word "${capitalizedWord}" not found`,
-        status: 404,
-        code: "WORD_NOT_FOUND",
-      } satisfies APIError,
-      { status: 404 }
-    );
+    // If no fallback provided, redirect to the not-found page with proper status
+    const notFoundUrl = new URL("/words/not-found", request.url);
+    notFoundUrl.searchParams.set("word", capitalizedWord);
+    return NextResponse.redirect(notFoundUrl, { status: 307 });
   } catch (error) {
     console.error("[Word API] Unhandled error:", error);
     throw error;

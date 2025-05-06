@@ -111,6 +111,15 @@ const roadmapItems: {
     },
   },
   {
+    title: "Text-to-Speech Performance",
+    description:
+      "Major performance improvements to make text-to-speech 10x faster, providing instant audio pronunciation for words.",
+    status: {
+      text: "Not started",
+      complete: false,
+    },
+  },
+  {
     title: "Twitter bot",
     description:
       "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",

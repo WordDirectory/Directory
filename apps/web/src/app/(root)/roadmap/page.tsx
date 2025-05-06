@@ -79,8 +79,8 @@ const roadmapItems: {
     description:
       "Visual representation for words, especially useful for objects, animals, and concrete concepts. Each word will have a high-quality image to help with understanding.",
     status: {
-      text: "In progress", 
-      complete: false,
+      text: "Completed", 
+      complete: true,
     },
   },
   {

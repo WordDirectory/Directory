@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/command";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
-import { FileX2, Sparkles, RotateCw } from "lucide-react";
+import { FileX2, Sparkles, RotateCw, Search as SearchIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { useAskAIStore } from "@/stores/ask-ai-store";
 import { WordUsageResponse } from "@/types/api";
@@ -201,7 +201,14 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       )}
       <CommandList>
         {isLoading ? (
-          <CommandEmpty>Searching words...</CommandEmpty>
+          <div className="py-6 text-center">
+            <div className="mb-4 flex justify-center">
+              <SearchIcon className="h-10 w-10 text-muted-foreground opacity-50 animate-pulse" />
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Searching words...
+            </p>
+          </div>
         ) : words.length === 0 && query ? (
           <div className="py-6 text-center">
             <div className="mb-4 flex justify-center">

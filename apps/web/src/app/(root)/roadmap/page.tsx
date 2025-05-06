@@ -25,8 +25,8 @@ const roadmapItems: {
     description:
       "Expect 150.000 words soon. Current count is around 150.000.",
     status: {
-      text: "In progress",
-      complete: false,
+      text: "Completed",
+      complete: true,
     },
   },
   {

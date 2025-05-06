@@ -185,22 +185,28 @@ export function WordImages({ word }: { word: string }) {
       className="relative transition-all duration-300 ease-in-out"
       style={{ width: isOpen ? "24rem" : 0 }}
     >
-      <div
-        ref={sidebarRef}
-        className="sticky top-14 w-96 border-l bg-background overflow-hidden"
-        style={{
-          height: "calc(100vh - 3.5rem)",
-          overflowY: "auto",
-        }}
-      >
-        <div className="flex items-center justify-between sticky top-0 bg-background px-5 py-4 shadow-xl shadow-background/65 z-10">
-          <h3 className="text-xl font-semibold">Images</h3>
-          <Button variant="ghost" size="icon" onClick={() => setIsOpen(false)}>
-            <XIcon className="w-4 h-4" />
-          </Button>
+      {isOpen && (
+        <div
+          ref={sidebarRef}
+          className="sticky top-14 w-96 border-l bg-background overflow-hidden"
+          style={{
+            height: "calc(100vh - 3.5rem)",
+            overflowY: "auto",
+          }}
+        >
+          <div className="flex items-center justify-between sticky top-0 bg-background px-5 py-4 shadow-xl shadow-background/65 z-10">
+            <h3 className="text-xl font-semibold">Images</h3>
+            <Button
+              variant="ghost"
+              size="icon"
+              onClick={() => setIsOpen(false)}
+            >
+              <XIcon className="w-4 h-4" />
+            </Button>
+          </div>
+          <ImageGrid />
         </div>
-        <ImageGrid />
-      </div>
+      )}
     </div>
   );
 }

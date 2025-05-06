@@ -133,7 +133,7 @@ export default function SettingsPage() {
         </section>
 
         <section className="flex flex-col gap-8 border-t pt-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-semibold">Initial AI Message</h2>
             <p className="text-sm text-muted-foreground">
               Customize the initial message that appears when you click "Ask AI"
@@ -166,7 +166,7 @@ export default function SettingsPage() {
         </section>
 
         <section className="flex flex-col gap-8 border-t pt-8">
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-3">
             <h2 className="text-2xl font-semibold">Word Images</h2>
             <p className="text-sm text-muted-foreground">
               Configure how images are displayed when looking up word definitions.

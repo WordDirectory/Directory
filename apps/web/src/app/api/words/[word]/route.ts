@@ -2,7 +2,6 @@ import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { getWord } from "@/lib/db/queries";
-import { APIError } from "@/types/api";
 import {
   WordLookupError,
   checkWordLookupLimit,
@@ -11,6 +10,7 @@ import {
   hasUserViewedWord,
 } from "@/lib/word-limits";
 import { auth } from "@/lib/auth";
+import lemmatizer from "node-lemmatizer";
 
 export async function HEAD(
   request: Request,
@@ -87,9 +87,34 @@ export async function GET(
     });
 
     // Get only the word content without social data
-    const result = await getWord(capitalizedWord);
+    let result = await getWord(capitalizedWord);
 
-    // If word exists, track the lookup and return the content
+    // If word doesn't exist, try lemmatization
+    if (!result) {
+      console.log("[Word API] Word not found, trying lemmatization");
+      
+      // Try verb form first
+      const verbLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'verb');
+      if (verbLemmas.length > 0) {
+        const baseWord = verbLemmas[0];
+        const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
+        console.log("[Word API] Found verb lemma:", capitalizedBase);
+        result = await getWord(capitalizedBase);
+      }
+      
+      // If no result, try noun form
+      if (!result) {
+        const nounLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'noun');
+        if (nounLemmas.length > 0) {
+          const baseWord = nounLemmas[0];
+          const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
+          console.log("[Word API] Found noun lemma:", capitalizedBase);
+          result = await getWord(capitalizedBase);
+        }
+      }
+    }
+
+    // If word exists (either directly or through lemmatization), track the lookup and return the content
     if (result) {
       try {
         console.log("[Word API] Word found, checking if previously viewed:", {

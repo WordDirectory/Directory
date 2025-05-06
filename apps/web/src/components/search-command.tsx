@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/command";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
-import { FileX2, Sparkles, RotateCw, Search } from "lucide-react";
+import { FileX2, Sparkles, RotateCw } from "lucide-react";
 import { Button } from "./ui/button";
 import { useAskAIStore } from "@/stores/ask-ai-store";
 import { WordUsageResponse } from "@/types/api";

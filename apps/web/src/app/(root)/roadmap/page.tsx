@@ -59,7 +59,7 @@ const roadmapItems: {
   {
     title: "Public API",
     description:
-      "A public API to get definitions for a word, finding words, etc. Check out the [API docs](https://worddirectory.app/api/docs/developers/api-routes)",
+      "A public API to get definitions for a word, finding words, etc. Check out the [API docs](https://worddirectory.app/docs/developers/api-routes)",
     status: {
       text: "Completed",
       complete: true,

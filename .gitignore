@@ -63,3 +63,6 @@ scripts/
 
 /apps/extension/dist
 /apps/extension/node_modules
+
+/apps/mcp/dist
+/apps/mcp/node_modules

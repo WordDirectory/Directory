@@ -5,7 +5,7 @@ import Image from "next/image";
 import { cn } from "@/lib/utils";
 import { useImagesStore } from "@/stores/images-store";
 import { useIsMobile } from "@/hooks/use-mobile";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { Sheet, SheetContent, SheetClose } from "@/components/ui/sheet";
 import { Skeleton } from "@/components/ui/skeleton";
 import { motion, AnimatePresence } from "motion/react";
@@ -24,68 +24,28 @@ interface UnsplashImage {
 const imageCache = new Map<string, UnsplashImage[]>();
 
 export function WordImages({ word }: { word: string }) {
-  const { isOpen, setIsOpen, initializeFromPreference } = useImagesStore();
+  const {
+    isOpen,
+    setIsOpen,
+    initializeFromPreference,
+    images,
+    isLoading,
+    error,
+    fetchImages,
+  } = useImagesStore();
   const isMobile = useIsMobile();
-  const [images, setImages] = useState<UnsplashImage[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [sidebarHeight, setSidebarHeight] = useState(0);
   const sidebarRef = useRef<HTMLDivElement>(null);
 
-  // Load from cache if available when word changes
   useEffect(() => {
-    if (imageCache.has(word)) {
-      setImages(imageCache.get(word) || []);
-    } else {
-      setImages([]);
-    }
-  }, [word]);
+    // Fetch images when word changes
+    fetchImages(word);
+  }, [word, fetchImages]);
 
   useEffect(() => {
     initializeFromPreference();
   }, [initializeFromPreference]);
 
-  useEffect(() => {
-    if (sidebarRef.current) {
-      setSidebarHeight(sidebarRef.current.scrollHeight);
-    }
-  }, [images]);
-
-  useEffect(() => {
-    async function fetchImages() {
-      // Check if we need to fetch images
-      // 1. Sidebar must be open
-      // 2. No images for current word in state
-      // 3. No images for current word in cache
-      if (!isOpen || images.length > 0 || imageCache.has(word)) return;
-
-      try {
-        setIsLoading(true);
-        setError(null);
-        const response = await fetch(
-          `/api/words/${encodeURIComponent(word)}/images`
-        );
-
-        if (!response.ok) {
-          throw new Error("Failed to fetch images");
-        }
-
-        const data = await response.json();
-        // Update cache and state
-        imageCache.set(word, data.images);
-        setImages(data.images);
-      } catch (err) {
-        console.error("Error fetching images:", err);
-        setError("Failed to load images");
-      } finally {
-        setIsLoading(false);
-      }
-    }
-
-    fetchImages();
-  }, [word, isOpen, images.length]);
-
-  const handleImageClick = (image: UnsplashImage) => {
+  const handleImageClick = (image: any) => {
     window.open(
       `https://unsplash.com/photos/${image.id}`,
       "_blank",

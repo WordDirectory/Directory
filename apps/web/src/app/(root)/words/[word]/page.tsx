@@ -210,7 +210,7 @@ function WordHeader({
               <ShareWord word={word} definitions={details.definitions} />
             </div>
             <div className="pl-2">
-              <ImageButton />
+              <ImageButton word={word} />
             </div>
           </div>
         </div>

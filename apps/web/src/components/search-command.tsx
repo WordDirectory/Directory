@@ -201,30 +201,34 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
       )}
       <CommandList>
         {isLoading ? (
-          <div className="py-6 text-center">
-            <div className="mb-4 flex justify-center">
-              <SearchIcon className="h-10 w-10 text-muted-foreground opacity-50 animate-pulse" />
+          <div className="p-2 min-h-[320px] flex items-center justify-center">
+            <div className="py-6 text-center">
+              <div className="mb-4 flex justify-center">
+                <SearchIcon className="h-10 w-10 text-muted-foreground opacity-50 animate-pulse" />
+              </div>
+              <p className="text-sm text-muted-foreground">
+                Searching words...
+              </p>
             </div>
-            <p className="text-sm text-muted-foreground">
-              Searching words...
-            </p>
           </div>
         ) : words.length === 0 && query ? (
-          <div className="py-6 text-center">
-            <div className="mb-4 flex justify-center">
-              <FileX2 className="h-12 w-12 text-muted-foreground opacity-50" />
+          <div className="p-2 min-h-[320px] flex items-center justify-center">
+            <div className="py-6 text-center">
+              <div className="mb-4 flex justify-center">
+                <FileX2 className="h-12 w-12 text-muted-foreground opacity-50" />
+              </div>
+              <p className="mb-4 text-sm text-muted-foreground">
+                No results found
+              </p>
+              <Button
+                variant="outline"
+                className="mx-auto flex items-center gap-2"
+                onClick={handleAskAI}
+              >
+                <Sparkles className="h-4 w-4" />
+                <span>Ask AI about &quot;{query}&quot;</span>
+              </Button>
             </div>
-            <p className="mb-4 text-sm text-muted-foreground">
-              No results found
-            </p>
-            <Button
-              variant="outline"
-              className="mx-auto flex items-center gap-2"
-              onClick={handleAskAI}
-            >
-              <Sparkles className="h-4 w-4" />
-              <span>Ask AI about &quot;{query}&quot;</span>
-            </Button>
           </div>
         ) : (
           <CommandGroup>

@@ -10,7 +10,7 @@ import {
   hasUserViewedWord,
 } from "@/lib/word-limits";
 import { auth } from "@/lib/auth";
-import lemmatizer from "node-lemmatizer";
+import lemmatizer from "@/lib/lemmatizer";
 
 export async function HEAD(
   request: Request,

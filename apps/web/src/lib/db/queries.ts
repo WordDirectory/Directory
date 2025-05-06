@@ -9,7 +9,7 @@ import {
   wordHistory,
 } from "@/lib/db/schema";
 import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
-import lemmatizer from "node-lemmatizer";
+import lemmatizer from "@/lib/lemmatizer";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
   // Get lemmatized forms of the query

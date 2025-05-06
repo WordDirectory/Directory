@@ -4,7 +4,6 @@ import { useRouter } from "next/navigation";
 import { searchWords, getRandomWords } from "@/lib/words";
 import {
   CommandDialog,
-  CommandEmpty,
   CommandGroup,
   CommandInput,
   CommandItem,
@@ -12,7 +11,7 @@ import {
 } from "@/components/ui/command";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
-import { FileX2, Sparkles, RotateCw, Search as SearchIcon } from "lucide-react";
+import { FileX2, Sparkles, RotateCw } from "lucide-react";
 import { Button } from "./ui/button";
 import { useAskAIStore } from "@/stores/ask-ai-store";
 import { WordUsageResponse } from "@/types/api";
@@ -204,7 +203,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
           <div className="p-2 min-h-[320px] flex items-center justify-center">
             <div className="py-6 text-center">
               <div className="mb-4 flex justify-center">
-                <SearchIcon className="h-10 w-10 text-muted-foreground opacity-50 animate-pulse" />
+                <RotateCw className="h-8 w-8 text-muted-foreground opacity-50 animate-spin" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Searching words...

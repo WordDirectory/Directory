@@ -2,16 +2,11 @@ FROM node:20-slim
 
 WORKDIR /app
 
-# Copy package files
-COPY package*.json ./
-
-# Install dependencies
-RUN npm install
-
-# Copy source code
+# Copy all source files first
 COPY . .
 
-# Build TypeScript code
+# Install dependencies and build
+RUN npm install
 RUN npm run build
 
 # Expose the port your server runs on

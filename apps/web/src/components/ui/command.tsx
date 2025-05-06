@@ -46,8 +46,10 @@ const CommandDialog = ({ children, ...props }: DialogProps) => {
 
 const CommandInput = React.forwardRef<
   React.ElementRef<typeof CommandPrimitive.Input>,
-  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input>
->(({ className, ...props }, ref) => (
+  React.ComponentPropsWithoutRef<typeof CommandPrimitive.Input> & {
+    rightSlot?: React.ReactNode;
+  }
+>(({ className, rightSlot, ...props }, ref) => (
   <div
     className="flex items-center border-b border-input px-5"
     cmdk-input-wrapper=""
@@ -65,6 +67,7 @@ const CommandInput = React.forwardRef<
       )}
       {...props}
     />
+    {rightSlot}
   </div>
 ));
 

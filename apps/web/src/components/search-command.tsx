@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/command";
 import { useCallback, useEffect, useState } from "react";
 import { useDebounce } from "@/hooks/use-debounce";
-import { FileX2, Sparkles } from "lucide-react";
+import { FileX2, Sparkles, RotateCw, Search } from "lucide-react";
 import { Button } from "./ui/button";
 import { useAskAIStore } from "@/stores/ask-ai-store";
 import { WordUsageResponse } from "@/types/api";
@@ -84,6 +84,19 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
     } catch (error) {
       console.error("Error fetching word usage:", error);
       setWordUsage(null);
+    }
+  }, []);
+
+  const handleRefresh = useCallback(async () => {
+    try {
+      setIsLoading(true);
+      const results = await getRandomWords();
+      setCache(results.words);
+      setWords(results.words);
+    } catch (error) {
+      console.error("[Random Words] Failed to fetch:", error);
+    } finally {
+      setIsLoading(false);
     }
   }, []);
 
@@ -165,6 +178,20 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
         placeholder="Search words..."
         value={query}
         onValueChange={setQuery}
+        rightSlot={
+          !query ? (
+            <button
+              onClick={handleRefresh}
+              className="group p-1 hover:text-foreground text-muted-foreground/70 transition-colors"
+              disabled={isLoading}
+            >
+              <RotateCw
+                size={16}
+                className={isLoading ? "animate-spin" : ""}
+              />
+            </button>
+          ) : null
+        }
       />
       {showWarning && (
         <div className="px-4 py-2 text-sm text-amber-500 bg-amber-500/15 border-b border-amber-500/20">

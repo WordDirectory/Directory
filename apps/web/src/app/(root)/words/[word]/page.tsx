@@ -211,6 +211,7 @@ function WordHeader({
             </div>
             <div className="pl-2">
               <ImageButton word={word} />
+            </div>
           </div>
         </div>
       </div>

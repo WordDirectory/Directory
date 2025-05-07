@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import {
   MoreHorizontal,
   Share2,
@@ -108,11 +108,12 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
     ? definitions
     : [definitions].filter(Boolean);
 
-  // Load logo and get its dimensions
-  useState(() => {
+  // Load initial report status and setup
+  useEffect(() => {
     // Check if device is mobile
     setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
 
+    // Load logo
     const img = new window.Image();
     img.src = "/logo-with-text-black.png";
     img.crossOrigin = "anonymous";
@@ -129,7 +130,7 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
         }
       })
       .catch(console.error);
-  });
+  }, [word]);
 
   const handleCopyLink = async () => {
     const url = `https://worddirectory.app/words/${encodeURIComponent(word)}`;

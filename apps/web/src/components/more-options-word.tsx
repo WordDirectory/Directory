@@ -1,10 +1,18 @@
 "use client";
-import { LinkIcon, Share2 } from "lucide-react";
+
+import { useState, useRef } from "react";
+import { MoreHorizontal, Share2, MessageSquare, LinkIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useState, useRef, useEffect } from "react";
-import { motion } from "motion/react";
-import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
-import { Button } from "@/components/ui/button";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import { toast } from "sonner";
 
 interface DefinitionItem {
@@ -12,157 +20,159 @@ interface DefinitionItem {
   examples?: string[];
 }
 
-interface ShareWordProps {
+interface MoreOptionsWordProps {
   word: string;
   definitions: DefinitionItem[];
 }
 
-export function ShareWord({ word, definitions }: ShareWordProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
   const [isGenerating, setIsGenerating] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const logoRef = useRef<HTMLImageElement | null>(null);
-  const [selectedDefinition, setSelectedDefinition] = useState<number | null>(null);
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    // Check if device is mobile
-    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
-  }, []);
-
   // Make sure definitions is an array
-  const definitionsArray = Array.isArray(definitions) 
-    ? definitions 
+  const definitionsArray = Array.isArray(definitions)
+    ? definitions
     : [definitions].filter(Boolean);
 
-  const hasMultipleDefinitions = definitionsArray.length > 1;
-  
   // Load logo and get its dimensions
-  useEffect(() => {
+  useState(() => {
+    // Check if device is mobile
+    setIsMobile(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent));
+
     const img = new window.Image();
     img.src = "/logo-with-text-black.png";
     img.crossOrigin = "anonymous";
     img.onload = () => {
       logoRef.current = img;
     };
-  }, []);
+  });
 
   const handleCopyLink = async () => {
     const url = `https://worddirectory.app/words/${encodeURIComponent(word)}`;
     await navigator.clipboard.writeText(url);
     toast.success("Link copied to clipboard");
-    setIsOpen(false);
   };
 
-  const generateImage = async (definitionIndex: number, format: 'png' | 'jpeg' = 'jpeg'): Promise<string | null> => {
+  const generateImage = async (
+    definitionIndex: number,
+    format: "png" | "jpeg" = "jpeg"
+  ): Promise<string | null> => {
     if (!canvasRef.current || !logoRef.current) {
       console.error("Canvas or logo not ready");
       return null;
     }
 
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
-    
+    const ctx = canvas.getContext("2d");
+
     if (!ctx) {
       console.error("Could not get canvas context");
       return null;
     }
-    
+
     // Set canvas size
     canvas.width = 1200;
     canvas.height = 630;
-    
+
     // Clear canvas with white background
     ctx.fillStyle = "#FFFFFF";
     ctx.fillRect(0, 0, canvas.width, canvas.height);
-    
+
     // Draw logo - maintain aspect ratio with fixed height
     const logoHeight = 44;
-    const logoWidth = logoRef.current.width * (logoHeight / logoRef.current.height);
+    const logoWidth =
+      logoRef.current.width * (logoHeight / logoRef.current.height);
     ctx.drawImage(logoRef.current, 60, 60, logoWidth, logoHeight);
-    
+
     // Set up text styles
     ctx.textBaseline = "top";
-    
+
     // Calculate vertical centering
     const wordHeight = 110; // Approx height of word
     const spaceBetween = 28; // Space between word and definition
     const def = definitionsArray[definitionIndex].text;
-    const words = def.split(' ');
+    const words = def.split(" ");
     const maxWidth = canvas.width - 120;
-    
+
     // Estimate number of lines
     let lineCount = 1;
-    let currentLine = '';
-    
+    let currentLine = "";
+
     ctx.font = "36px Inter, system-ui, sans-serif";
     for (const word of words) {
-      const testLine = currentLine + word + ' ';
+      const testLine = currentLine + word + " ";
       const metrics = ctx.measureText(testLine);
-      
-      if (metrics.width > maxWidth && currentLine !== '') {
+
+      if (metrics.width > maxWidth && currentLine !== "") {
         lineCount++;
-        currentLine = word + ' ';
+        currentLine = word + " ";
       } else {
         currentLine = testLine;
       }
     }
-    
+
     const defHeight = lineCount * 44; // Line height increased to 44px to match larger font
     const totalContentHeight = wordHeight + spaceBetween + defHeight;
     const availableHeight = canvas.height - 120 - 60; // Subtract logo area and bottom margin
-    
+
     // Center vertically in available space
     const verticalPadding = (availableHeight - totalContentHeight) / 2;
     const wordY = 120 + verticalPadding;
     const definitionY = wordY + wordHeight + spaceBetween;
-    
+
     // Draw word
     ctx.font = "bold 96px Inter, system-ui, sans-serif";
     ctx.fillStyle = "#09090B";
     ctx.fillText(word, 60, wordY);
-    
+
     // Draw definition
     ctx.font = "36px Inter, system-ui, sans-serif";
     ctx.fillStyle = "rgba(9, 9, 11, 0.7)";
-    
+
     // Word wrap the text
-    let line = '';
+    let line = "";
     let currentY = definitionY;
-    
-    words.forEach(word => {
-      const testLine = line + word + ' ';
+
+    words.forEach((word) => {
+      const testLine = line + word + " ";
       const metrics = ctx.measureText(testLine);
-      
-      if (metrics.width > maxWidth && line !== '') {
+
+      if (metrics.width > maxWidth && line !== "") {
         ctx.fillText(line, 60, currentY);
-        line = word + ' ';
+        line = word + " ";
         currentY += 44; // Line height increased to 44px
       } else {
         line = testLine;
       }
     });
-    
+
     // Draw the last line
     if (line.trim()) {
       ctx.fillText(line, 60, currentY);
     }
-    
+
     // Draw URL at bottom
     ctx.fillStyle = "rgba(9, 9, 11, 0.5)";
     ctx.font = "24px Inter, system-ui, sans-serif";
     ctx.fillText("worddirectory.app", 60, 580);
-    
+
     // Return appropriate format
-    return canvas.toDataURL(`image/${format}`, format === 'jpeg' ? 0.9 : undefined);
+    return canvas.toDataURL(
+      `image/${format}`,
+      format === "jpeg" ? 0.9 : undefined
+    );
   };
 
   const handleImageAction = async (definitionIndex: number) => {
-    console.log(`${isMobile ? 'Save' : 'Copy'} image clicked for definition ${definitionIndex + 1}`);
+    console.log(
+      `${isMobile ? "Save" : "Copy"} image clicked for definition ${definitionIndex + 1}`
+    );
     setIsGenerating(true);
     try {
       // Use JPEG for downloads (smaller file size) and PNG for clipboard (better compatibility)
-      const format = isMobile ? 'jpeg' : 'png';
+      const format = isMobile ? "jpeg" : "png";
       const dataUrl = await generateImage(definitionIndex, format);
       if (!dataUrl) {
         console.error("Failed to generate image");
@@ -187,7 +197,7 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
         try {
           const response = await fetch(dataUrl);
           const blob = await response.blob();
-          
+
           console.log("Writing to clipboard");
           await navigator.clipboard.write([
             new ClipboardItem({
@@ -198,18 +208,20 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
           toast.success("Image copied to clipboard");
         } catch (blobError) {
           console.error("Error with blob or clipboard:", blobError);
-          
+
           // Fallback method if clipboard API fails
           console.log("Trying fallback copy method...");
           try {
-            const textarea = document.createElement('textarea');
+            const textarea = document.createElement("textarea");
             textarea.value = `Check out the definition of "${word}" on WordDirectory: https://worddirectory.app/words/${encodeURIComponent(word)}`;
             document.body.appendChild(textarea);
             textarea.select();
-            document.execCommand('copy');
+            document.execCommand("copy");
             document.body.removeChild(textarea);
             console.log("Fallback: Copied link instead");
-            toast.success("Link copied to clipboard (image copying not supported in your browser)");
+            toast.success(
+              "Link copied to clipboard (image copying not supported in your browser)"
+            );
           } catch (fallbackError) {
             console.error("Even fallback copy failed:", fallbackError);
             toast.error("Failed to copy to clipboard");
@@ -217,61 +229,69 @@ export function ShareWord({ word, definitions }: ShareWordProps) {
         }
       }
     } catch (error) {
-      console.error(`Error in ${isMobile ? 'save' : 'copy'} image flow:`, error);
-      toast.error(`Failed to ${isMobile ? 'save' : 'copy'} image`);
+      console.error(
+        `Error in ${isMobile ? "save" : "copy"} image flow:`,
+        error
+      );
+      toast.error(`Failed to ${isMobile ? "save" : "copy"} image`);
     } finally {
       setIsGenerating(false);
-      setIsOpen(false);
     }
+  };
+
+  const handleFeedback = () => {
+    // Feedback functionality will be added later
+    toast.info("Feedback functionality coming soon!");
   };
 
   return (
     <>
       {/* Hidden canvas for generating image */}
-      <canvas 
-        ref={canvasRef} 
-        style={{ display: 'none' }}
-      />
+      <canvas ref={canvasRef} style={{ display: "none" }} />
 
-      {/* Share button and popover */}
-      <Popover open={isOpen} onOpenChange={setIsOpen}>
-        <PopoverTrigger asChild>
-          <motion.button
+      <DropdownMenu size="lg">
+        <DropdownMenuTrigger asChild>
+          <button
             className={cn(
               "relative flex items-center justify-center w-10 h-10 rounded-full",
-              "bg-muted hover:bg-muted/80"
+              "bg-muted hover:bg-muted/80 transition-colors focus:ring-0 focus:outline-none"
             )}
-            whileTap={{ scale: 0.85 }}
-            transition={{ type: "spring", stiffness: 500, damping: 15 }}
           >
-            <Share2 className="w-5 h-5 stroke-foreground" strokeWidth={2} />
-          </motion.button>
-        </PopoverTrigger>
-        <PopoverContent className="w-48 p-2" align="center">
-          <div className="grid gap-1">
-            <Button
-              variant="ghost"
-              className="w-full justify-start"
-              onClick={handleCopyLink}
-            >
-              <LinkIcon className="w-4 h-4" />
-              Copy link
-            </Button>
-            <div className="h-px bg-border my-1" />
-            {definitionsArray.map((_, index) => (
-              <Button
-                key={index}
-                variant="ghost"
-                className="w-full justify-start"
-                onClick={() => handleImageAction(index)}
-                disabled={isGenerating}
-              >
-                {isGenerating && selectedDefinition === index ? "Generating..." : `Definition ${index + 1}`}
-              </Button>
-            ))}
-          </div>
-        </PopoverContent>
-      </Popover>
+            <MoreHorizontal
+              className="w-5 h-5 stroke-foreground"
+              strokeWidth={2}
+            />
+          </button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align="end" className="w-48">
+          <DropdownMenuSub>
+            <DropdownMenuSubTrigger>
+              <Share2 className="mr-2 h-4 w-4" />
+              <span>Share</span>
+            </DropdownMenuSubTrigger>
+            <DropdownMenuSubContent>
+              <DropdownMenuItem onClick={handleCopyLink}>
+                <LinkIcon className="mr-2 h-4 w-4" />
+                <span>Copy link</span>
+              </DropdownMenuItem>
+              <DropdownMenuSeparator />
+              {definitionsArray.map((_, index) => (
+                <DropdownMenuItem
+                  key={index}
+                  onClick={() => handleImageAction(index)}
+                  disabled={isGenerating}
+                >
+                  {isGenerating ? "Generating..." : `Definition ${index + 1}`}
+                </DropdownMenuItem>
+              ))}
+            </DropdownMenuSubContent>
+          </DropdownMenuSub>
+          <DropdownMenuItem onClick={handleFeedback}>
+            <MessageSquare className="mr-2 h-4 w-4" />
+            <span>Feedback</span>
+          </DropdownMenuItem>
+        </DropdownMenuContent>
+      </DropdownMenu>
     </>
   );
 }

@@ -8,7 +8,6 @@ import { WordAudioButton } from "@/components/word-audio-button";
 import { WordResponse } from "@/types/api";
 import { VoteButton } from "@/components/vote-button";
 import { SaveWord } from "@/components/save-word";
-import { ShareWord } from "@/components/share-word";
 import { auth } from "@/lib/auth";
 import {
   getWordVotes,
@@ -22,6 +21,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { useImagesStore } from "@/stores/images-store";
 import { WordImages } from "@/components/word-images";
+import { MoreOptionsWord } from "@/components/more-options-word";
 
 interface WordPageProps {
   params: Promise<{
@@ -207,10 +207,10 @@ function WordHeader({
             />
             <SaveWord word={word} initialIsSaved={isSaved} />
             <div className="pl-2">
-              <ShareWord word={word} definitions={details.definitions} />
+              <ImageButton word={word} />
             </div>
             <div className="pl-2">
-              <ImageButton word={word} />
+              <MoreOptionsWord word={word} definitions={details.definitions} />
             </div>
           </div>
         </div>

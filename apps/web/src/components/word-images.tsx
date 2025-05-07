@@ -48,7 +48,7 @@ export function WordImages({ word }: { word: string }) {
 
   const handleImageClick = (image: any) => {
     window.open(
-      `https://unsplash.com/photos/${image.id}`,
+      `https://unsplash.com/photos/${image.id}?utm_source=worddirectory&utm_medium=referral`,
       "_blank",
       "noopener,noreferrer"
     );
@@ -113,14 +113,22 @@ export function WordImages({ word }: { word: string }) {
               </div>
               <div className="p-2 text-xs text-center text-muted-foreground">
                 <Link
-                  href={`https://unsplash.com/@${image.user.username}`}
+                  href={`https://unsplash.com/@${image.user.username}?utm_source=worddirectory&utm_medium=referral`}
                   className="hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   {image.user.name}
                 </Link>{" "}
-                on Unsplash
+                on{" "}
+                <Link
+                  href="https://unsplash.com/?utm_source=worddirectory&utm_medium=referral"
+                  className="hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Unsplash
+                </Link>
               </div>
             </motion.div>
           ))}

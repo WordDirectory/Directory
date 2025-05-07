@@ -42,8 +42,8 @@ const roadmapItems: {
     description:
       "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through the community.",
     status: {
-      text: "Not started",
-      type: "default",
+      text: "Completed",
+      type: "complete",
     },
   },
   {

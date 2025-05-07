@@ -62,7 +62,7 @@ export function WordLookupLimit({
           </li>
         </ul>
 
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-5">
           <Button
             className="w-full"
             onClick={() => router.push("/auth/signup")}

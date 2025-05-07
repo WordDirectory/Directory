@@ -134,7 +134,7 @@ export default async function WordPage({ params }: WordPageProps) {
       <div className="min-h-screen relative">
         <div className="grid grid-cols-1 md:grid-cols-[1fr,auto]">
           {/* Word content */}
-          <div className="py-12 md:py-20 px-12 pl-14">
+          <div className="py-12 md:py-20 px-8 lg:pl-14 lg:pr-12">
             <div className="max-w-3xl mx-auto">
               <WordHeader
                 word={wordResult.word}
@@ -211,7 +211,6 @@ function WordHeader({
             </div>
             <div className="pl-2">
               <ImageButton word={word} />
-            </div>
           </div>
         </div>
       </div>

@@ -8,6 +8,7 @@ import {
   wordLookups,
   wordHistory,
   wordFeedback,
+  wordReports,
 } from "@/lib/db/schema";
 import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
 import lemmatizer from "@/lib/lemmatizer";
@@ -452,4 +453,31 @@ export async function getUserFeedback(userId: string) {
       },
     },
   });
+}
+
+export async function hasUserReportedWord(userId: string, wordId: string) {
+  const report = await db.query.wordReports.findFirst({
+    where: sql`${wordReports.userId} = ${userId} AND ${wordReports.wordId} = ${wordId}`,
+  });
+
+  return !!report;
+}
+
+export async function createWordReport(userId: string, wordId: string) {
+  return db
+    .insert(wordReports)
+    .values({
+      userId,
+      wordId,
+    })
+    .onConflictDoNothing()
+    .returning();
+}
+
+export async function deleteWordReport(userId: string, wordId: string) {
+  return db
+    .delete(wordReports)
+    .where(
+      sql`${wordReports.userId} = ${userId} AND ${wordReports.wordId} = ${wordId}`
+    );
 }

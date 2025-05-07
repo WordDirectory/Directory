@@ -151,6 +151,7 @@ export const wordsRelations = relations(words, ({ many }) => ({
   votes: many(wordVotes),
   savedBy: many(savedWords),
   feedback: many(wordFeedback),
+  reports: many(wordReports),
 }));
 
 export const definitionsRelations = relations(definitions, ({ one, many }) => ({
@@ -255,6 +256,7 @@ export const userRelations = relations(users, ({ many }) => ({
   wordLookups: many(wordLookups),
   wordHistory: many(wordHistory),
   feedback: many(wordFeedback),
+  reports: many(wordReports),
 }));
 
 export const wordLookups = pgTable(
@@ -351,6 +353,39 @@ export const wordFeedbackRelations = relations(wordFeedback, ({ one }) => ({
   }),
   word: one(words, {
     fields: [wordFeedback.wordId],
+    references: [words.id],
+  }),
+}));
+
+export const wordReports = pgTable(
+  "word_reports",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    wordId: uuid("word_id")
+      .notNull()
+      .references(() => words.id, { onDelete: "cascade" }),
+    createdAt: timestamp("created_at").defaultNow(),
+  },
+  (table) => [
+    // Index for looking up if a user has reported a specific word
+    uniqueIndex("word_reports_user_word_idx").on(table.userId, table.wordId),
+    // Index for getting all reports for a word
+    index("word_reports_word_id_idx").on(table.wordId),
+    // Index for getting all reports by a user
+    index("word_reports_user_id_idx").on(table.userId),
+  ]
+).enableRLS();
+
+export const wordReportsRelations = relations(wordReports, ({ one }) => ({
+  user: one(users, {
+    fields: [wordReports.userId],
+    references: [users.id],
+  }),
+  word: one(words, {
+    fields: [wordReports.wordId],
     references: [words.id],
   }),
 }));

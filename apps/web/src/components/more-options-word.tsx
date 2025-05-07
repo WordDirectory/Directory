@@ -1,7 +1,13 @@
 "use client";
 
 import { useState, useRef } from "react";
-import { MoreHorizontal, Share2, MessageSquare, LinkIcon } from "lucide-react";
+import {
+  MoreHorizontal,
+  Share2,
+  MessageSquare,
+  LinkIcon,
+  ThumbsDown,
+} from "lucide-react";
 import { cn } from "@/lib/utils";
 import {
   DropdownMenu,
@@ -94,6 +100,8 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [isMobile, setIsMobile] = useState(false);
+  const [isReporting, setIsReporting] = useState(false);
+  const [hasReported, setHasReported] = useState(false);
 
   // Make sure definitions is an array
   const definitionsArray = Array.isArray(definitions)
@@ -111,6 +119,16 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
     img.onload = () => {
       logoRef.current = img;
     };
+
+    // Fetch initial report status
+    fetch(`/api/words/${encodeURIComponent(word)}/report`)
+      .then((res) => res.json())
+      .then((data) => {
+        if ("hasReported" in data) {
+          setHasReported(data.hasReported);
+        }
+      })
+      .catch(console.error);
   });
 
   const handleCopyLink = async () => {
@@ -356,6 +374,49 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
     }
   };
 
+  const handleReport = async () => {
+    setIsReporting(true);
+    try {
+      const response = await fetch(
+        `/api/words/${encodeURIComponent(word)}/report`,
+        {
+          method: hasReported ? "DELETE" : "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+
+      const data = (await response.json()) as
+        | { hasReported?: boolean }
+        | APIError;
+
+      if (!response.ok) {
+        const error = data as APIError;
+        const errorMessage = ERROR_MESSAGES[error.code];
+        toast.error(errorMessage.title, {
+          description: errorMessage.description,
+        });
+        return;
+      }
+
+      setHasReported(!hasReported);
+
+      toast.success(hasReported ? "Report removed" : "Definition reported", {
+        description: hasReported
+          ? "You've removed your report of this definition"
+          : "Thank you for helping us improve WordDirectory",
+      });
+    } catch (error) {
+      console.error("Error reporting definition:", error);
+      toast.error("Network error", {
+        description: "Please check your internet connection and try again",
+      });
+    } finally {
+      setIsReporting(false);
+    }
+  };
+
   return (
     <>
       {/* Hidden canvas for generating image */}
@@ -433,6 +494,19 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
           <DropdownMenuItem onClick={handleFeedback}>
             <MessageSquare className="mr-2 h-4 w-4" />
             <span>Feedback</span>
+          </DropdownMenuItem>
+          <DropdownMenuItem
+            onClick={handleReport}
+            disabled={isReporting}
+            className={cn(hasReported && "text-primary")}
+          >
+            <ThumbsDown
+              className={cn(
+                "mr-2 h-4 w-4",
+                hasReported && "fill-primary stroke-primary"
+              )}
+            />
+            <span>Bad definition</span>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

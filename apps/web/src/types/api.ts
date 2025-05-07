@@ -22,6 +22,7 @@ export type WordSocialResponse = {
   votes: number;
   hasVoted: boolean;
   isSaved: boolean;
+  hasReported: boolean;
 };
 
 export type SearchWordsResponse = {

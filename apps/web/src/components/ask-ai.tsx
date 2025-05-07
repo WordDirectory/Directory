@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { ShineBorder } from "./shine-border";
 import { ArrowUp, Info, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
@@ -12,7 +12,7 @@ import { cn } from "@/lib/utils";
 import { Separator } from "./ui/separator";
 import { toast } from "sonner";
 import { useTheme } from "next-themes";
-import { authClient, useSession } from "@/lib/auth-client";
+import { useSession } from "@/lib/auth-client";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { APIError, AIError, AIUsageResponse } from "@/types/api";
@@ -21,7 +21,7 @@ import { useAskAIStore } from "@/stores/ask-ai-store";
 
 const MESSAGE_STORAGE_KEY = "ai-message-draft";
 
-export function AskAI() {
+function AskAIContent() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [message, setMessage] = useState("");
@@ -31,10 +31,10 @@ export function AskAI() {
   const [showFreeTierLimitReached, setShowFreeTierLimitReached] =
     useState(false);
   const [aiError, setAiError] = useState<AIError | null>(null);
-  
+
   // Get the word from either the URL path or search params for word-not-found page
   const isNotFoundPage = pathname === "/words/not-found";
-  const word = isNotFoundPage 
+  const word = isNotFoundPage
     ? searchParams.get("word") || ""
     : pathname?.split("/words/")[1]?.split("/")[0] || "";
 
@@ -362,5 +362,13 @@ function FreeTierLimitReachedUI({ usage }: { usage: AIUsageResponse }) {
         </div>
       </div>
     </div>
+  );
+}
+
+export function AskAI() {
+  return (
+    <Suspense>
+      <AskAIContent />
+    </Suspense>
   );
 }

@@ -199,17 +199,15 @@ function WordHeader({
               <WordAudioButton word={word} />
             </div>
           </div>
-          <div className="flex gap-3">
+          <div className="flex gap-3 items-center">
             <VoteButton
               word={word}
               initialVotes={votes}
               initialHasVoted={hasVoted}
             />
-            <SaveWord word={word} initialIsSaved={isSaved} />
-            <div className="pl-2">
+            <div className="flex gap-5">
+              <SaveWord word={word} initialIsSaved={isSaved} />
               <ImageButton word={word} />
-            </div>
-            <div className="pl-2">
               <MoreOptionsWord word={word} definitions={details.definitions} />
             </div>
           </div>

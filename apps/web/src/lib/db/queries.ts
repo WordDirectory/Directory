@@ -47,12 +47,21 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
 
     // Combine results, with exact matches first
     const combinedWords = [
-      ...exactMatches.map(w => w.word),
-      ...partialMatches.map(w => w.word)
-    ];
+      ...exactMatches.map(w => ({ word: w.word, isExact: true })),
+      ...partialMatches.map(w => ({ word: w.word, isExact: false }))
+    ].sort((a, b) => {
+      // First sort by exact/partial
+      if (a.isExact !== b.isExact) {
+        return a.isExact ? -1 : 1;
+      }
+      // Then alphabetically within each group
+      return a.word.localeCompare(b.word);
+    });
 
     // Apply limit and offset to combined results
-    const paginatedWords = combinedWords.slice(offset, offset + limit);
+    const paginatedWords = combinedWords
+      .slice(offset, offset + limit)
+      .map(w => w.word);
 
     // Get total count with the same conditions
     const [{ count }] = await tx

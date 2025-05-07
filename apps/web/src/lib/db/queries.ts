@@ -8,7 +8,7 @@ import {
   wordLookups,
   wordHistory,
 } from "@/lib/db/schema";
-import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
+import { desc, eq, ilike, sql, and, isNull, or, not } from "drizzle-orm";
 import lemmatizer from "@/lib/lemmatizer";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
@@ -24,14 +24,35 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
   ].filter(Boolean); // Remove any empty strings/null values
 
   const results = await db.transaction(async (tx) => {
-    // Get matching words - now using OR to match any of our terms
-    const matchingWords = await tx.query.words.findMany({
+    // First get exact matches (case insensitive)
+    const exactMatches = await tx.query.words.findMany({
       columns: { word: true },
-      where: or(...searchTerms.map(term => ilike(words.word, `%${term}%`))),
-      limit,
-      offset,
+      where: or(...searchTerms.map(term => 
+        eq(sql`LOWER(${words.word})`, term.toLowerCase())
+      )),
       orderBy: (words) => words.word,
     });
+
+    // Then get partial matches, excluding exact matches
+    const partialMatches = await tx.query.words.findMany({
+      columns: { word: true },
+      where: and(
+        or(...searchTerms.map(term => ilike(words.word, `%${term}%`))),
+        sql`NOT (${or(...searchTerms.map(term => 
+          eq(sql`LOWER(${words.word})`, term.toLowerCase())
+        ))})`
+      ),
+      orderBy: (words) => words.word,
+    });
+
+    // Combine results, with exact matches first
+    const combinedWords = [
+      ...exactMatches.map(w => w.word),
+      ...partialMatches.map(w => w.word)
+    ];
+
+    // Apply limit and offset to combined results
+    const paginatedWords = combinedWords.slice(offset, offset + limit);
 
     // Get total count with the same conditions
     const [{ count }] = await tx
@@ -40,7 +61,7 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
       .where(or(...searchTerms.map(term => ilike(words.word, `%${term}%`))));
 
     return {
-      words: matchingWords.map((w) => w.word),
+      words: paginatedWords,
       totalCount: Number(count),
     };
   });

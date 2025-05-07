@@ -150,6 +150,7 @@ export const wordsRelations = relations(words, ({ many }) => ({
   definitions: many(definitions),
   votes: many(wordVotes),
   savedBy: many(savedWords),
+  feedback: many(wordFeedback),
 }));
 
 export const definitionsRelations = relations(definitions, ({ one, many }) => ({
@@ -253,6 +254,7 @@ export const userRelations = relations(users, ({ many }) => ({
   savedWords: many(savedWords),
   wordLookups: many(wordLookups),
   wordHistory: many(wordHistory),
+  feedback: many(wordFeedback),
 }));
 
 export const wordLookups = pgTable(
@@ -311,6 +313,44 @@ export const wordHistoryRelations = relations(wordHistory, ({ one }) => ({
   }),
   word: one(words, {
     fields: [wordHistory.wordId],
+    references: [words.id],
+  }),
+}));
+
+export const wordFeedback = pgTable(
+  "word_feedback",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    wordId: uuid("word_id")
+      .notNull()
+      .references(() => words.id, { onDelete: "cascade" }),
+    message: text("message").notNull(),
+    status: text("status", { enum: ["pending", "reviewed", "resolved"] })
+      .notNull()
+      .default("pending"),
+    createdAt: timestamp("created_at").defaultNow(),
+    updatedAt: timestamp("updated_at").defaultNow(),
+  },
+  (table) => [
+    // Index for getting all feedback for a word
+    index("word_feedback_word_id_idx").on(table.wordId),
+    // Index for getting all feedback by a user
+    index("word_feedback_user_id_idx").on(table.userId),
+    // Index for getting feedback by status
+    index("word_feedback_status_idx").on(table.status),
+  ]
+).enableRLS();
+
+export const wordFeedbackRelations = relations(wordFeedback, ({ one }) => ({
+  user: one(users, {
+    fields: [wordFeedback.userId],
+    references: [users.id],
+  }),
+  word: one(words, {
+    fields: [wordFeedback.wordId],
     references: [words.id],
   }),
 }));

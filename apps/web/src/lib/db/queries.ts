@@ -7,29 +7,28 @@ import {
   savedWords,
   wordLookups,
   wordHistory,
+  wordFeedback,
 } from "@/lib/db/schema";
-import { desc, eq, ilike, sql, and, isNull, or, not } from "drizzle-orm";
+import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
 import lemmatizer from "@/lib/lemmatizer";
 
 export async function searchWords(query: string, limit = 50, offset = 0) {
   // Get lemmatized forms of the query
-  const verbLemmas = lemmatizer.only_lemmas(query.toLowerCase(), 'verb');
-  const nounLemmas = lemmatizer.only_lemmas(query.toLowerCase(), 'noun');
-  
+  const verbLemmas = lemmatizer.only_lemmas(query.toLowerCase(), "verb");
+  const nounLemmas = lemmatizer.only_lemmas(query.toLowerCase(), "noun");
+
   // Combine all forms we want to search for
-  const searchTerms = [
-    query,
-    ...verbLemmas,
-    ...nounLemmas
-  ].filter(Boolean); // Remove any empty strings/null values
+  const searchTerms = [query, ...verbLemmas, ...nounLemmas].filter(Boolean); // Remove any empty strings/null values
 
   const results = await db.transaction(async (tx) => {
     // First get exact matches (case insensitive)
     const exactMatches = await tx.query.words.findMany({
       columns: { word: true },
-      where: or(...searchTerms.map(term => 
-        eq(sql`LOWER(${words.word})`, term.toLowerCase())
-      )),
+      where: or(
+        ...searchTerms.map((term) =>
+          eq(sql`LOWER(${words.word})`, term.toLowerCase())
+        )
+      ),
       orderBy: (words) => words.word,
     });
 
@@ -37,18 +36,20 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
     const partialMatches = await tx.query.words.findMany({
       columns: { word: true },
       where: and(
-        or(...searchTerms.map(term => ilike(words.word, `%${term}%`))),
-        sql`NOT (${or(...searchTerms.map(term => 
-          eq(sql`LOWER(${words.word})`, term.toLowerCase())
-        ))})`
+        or(...searchTerms.map((term) => ilike(words.word, `%${term}%`))),
+        sql`NOT (${or(
+          ...searchTerms.map((term) =>
+            eq(sql`LOWER(${words.word})`, term.toLowerCase())
+          )
+        )})`
       ),
       orderBy: (words) => words.word,
     });
 
     // Combine results, with exact matches first
     const combinedWords = [
-      ...exactMatches.map(w => ({ word: w.word, isExact: true })),
-      ...partialMatches.map(w => ({ word: w.word, isExact: false }))
+      ...exactMatches.map((w) => ({ word: w.word, isExact: true })),
+      ...partialMatches.map((w) => ({ word: w.word, isExact: false })),
     ].sort((a, b) => {
       // First sort by exact/partial
       if (a.isExact !== b.isExact) {
@@ -61,13 +62,13 @@ export async function searchWords(query: string, limit = 50, offset = 0) {
     // Apply limit and offset to combined results
     const paginatedWords = combinedWords
       .slice(offset, offset + limit)
-      .map(w => w.word);
+      .map((w) => w.word);
 
     // Get total count with the same conditions
     const [{ count }] = await tx
       .select({ count: sql<number>`count(*)` })
       .from(words)
-      .where(or(...searchTerms.map(term => ilike(words.word, `%${term}%`))));
+      .where(or(...searchTerms.map((term) => ilike(words.word, `%${term}%`))));
 
     return {
       words: paginatedWords,
@@ -408,4 +409,47 @@ export async function trackWordView(
     })
     .onConflictDoNothing()
     .returning();
+}
+
+export async function createWordFeedback(
+  userId: string,
+  wordId: string,
+  message: string
+) {
+  return db
+    .insert(wordFeedback)
+    .values({
+      userId,
+      wordId,
+      message,
+    })
+    .returning();
+}
+
+export async function getWordFeedback(wordId: string) {
+  return db.query.wordFeedback.findMany({
+    where: eq(wordFeedback.wordId, wordId),
+    orderBy: desc(wordFeedback.createdAt),
+    with: {
+      user: {
+        columns: {
+          name: true,
+        },
+      },
+    },
+  });
+}
+
+export async function getUserFeedback(userId: string) {
+  return db.query.wordFeedback.findMany({
+    where: eq(wordFeedback.userId, userId),
+    orderBy: desc(wordFeedback.createdAt),
+    with: {
+      word: {
+        columns: {
+          word: true,
+        },
+      },
+    },
+  });
 }

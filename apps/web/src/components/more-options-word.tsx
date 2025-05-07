@@ -13,7 +13,18 @@ import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import { toast } from "sonner";
+import type { APIError } from "@/types/api";
 
 interface DefinitionItem {
   text: string;
@@ -25,8 +36,61 @@ interface MoreOptionsWordProps {
   definitions: DefinitionItem[];
 }
 
+type ErrorMessages = {
+  [K in APIError["code"]]: {
+    title: string;
+    description: string;
+  };
+};
+
+const ERROR_MESSAGES: ErrorMessages = {
+  AUTH_REQUIRED: {
+    title: "Authentication required",
+    description: "Please sign in to submit feedback for this word",
+  },
+  SUBSCRIPTION_LIMIT_REACHED: {
+    title: "Subscription limit reached",
+    description: "Please upgrade your plan to continue",
+  },
+  RATE_LIMIT_EXCEEDED: {
+    title: "Too many requests",
+    description: "Please wait a moment before submitting more feedback",
+  },
+  INTERNAL_SERVER_ERROR: {
+    title: "Server error",
+    description: "Something went wrong on our end. Please try again later",
+  },
+  ALREADY_VOTED: {
+    title: "Already voted",
+    description: "You've already voted for this word",
+  },
+  UNSPLASH_API_ERROR: {
+    title: "Image error",
+    description: "Failed to load image",
+  },
+  WORD_NOT_FOUND: {
+    title: "Word not found",
+    description: "This word no longer exists in our dictionary",
+  },
+  INVALID_WORD: {
+    title: "Invalid word",
+    description: "This word is not valid",
+  },
+  VALIDATION_ERROR: {
+    title: "Invalid feedback",
+    description: "Please ensure your feedback meets our requirements",
+  },
+  FEEDBACK_ERROR: {
+    title: "Feedback error",
+    description: "Unable to submit feedback at this time",
+  },
+};
+
 export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
   const [isGenerating, setIsGenerating] = useState(false);
+  const [isFeedbackOpen, setIsFeedbackOpen] = useState(false);
+  const [feedbackMessage, setFeedbackMessage] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [isMobile, setIsMobile] = useState(false);
@@ -240,14 +304,94 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
   };
 
   const handleFeedback = () => {
-    // Feedback functionality will be added later
-    toast.info("Feedback functionality coming soon!");
+    setIsFeedbackOpen(true);
+  };
+
+  const handleSubmitFeedback = async () => {
+    if (!feedbackMessage.trim()) {
+      toast.error("Please enter your feedback", {
+        description: "Your feedback message cannot be empty",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch(
+        `/api/words/${encodeURIComponent(word)}/feedback`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            message: feedbackMessage.trim(),
+          }),
+        }
+      );
+
+      const data = (await response.json()) as { feedback?: unknown } | APIError;
+
+      if (!response.ok) {
+        const error = data as APIError;
+        const errorMessage = ERROR_MESSAGES[error.code];
+        toast.error(errorMessage.title, {
+          description: errorMessage.description,
+        });
+        return;
+      }
+
+      toast.success("Feedback submitted successfully", {
+        description: "Thank you for helping us improve WordDirectory!",
+      });
+      setFeedbackMessage("");
+      setIsFeedbackOpen(false);
+    } catch (error) {
+      console.error("Error submitting feedback:", error);
+      toast.error("Network error", {
+        description: "Please check your internet connection and try again",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
     <>
       {/* Hidden canvas for generating image */}
       <canvas ref={canvasRef} style={{ display: "none" }} />
+
+      <Dialog open={isFeedbackOpen} onOpenChange={setIsFeedbackOpen}>
+        <DialogContent className="p-5 bg-background">
+          <DialogHeader>
+            <DialogTitle>Submit Feedback</DialogTitle>
+            <DialogDescription>
+              Help us improve the definition of "{word}" by sharing your
+              thoughts.
+            </DialogDescription>
+          </DialogHeader>
+          <div className="grid gap-4 py-2 mx-0.5">
+            <Textarea
+              placeholder="Your feedback..."
+              value={feedbackMessage}
+              onChange={(e) => setFeedbackMessage(e.target.value)}
+              className="min-h-[100px]"
+            />
+          </div>
+          <DialogFooter>
+            <Button
+              variant="outline"
+              onClick={() => setIsFeedbackOpen(false)}
+              disabled={isSubmitting}
+            >
+              Cancel
+            </Button>
+            <Button onClick={handleSubmitFeedback} disabled={isSubmitting}>
+              {isSubmitting ? "Submitting..." : "Submit Feedback"}
+            </Button>
+          </DialogFooter>
+        </DialogContent>
+      </Dialog>
 
       <DropdownMenu size="lg">
         <DropdownMenuTrigger asChild>

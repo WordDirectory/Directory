@@ -73,7 +73,15 @@ export type ValidationError = APIErrorBase & {
 };
 
 // Union type for all possible API errors
-export type APIError = AIError | WordError | ValidationError;
+export type APIError =
+  | AIError
+  | WordError
+  | ValidationError
+  | {
+      code: "FEEDBACK_ERROR";
+      message: string;
+      status: number;
+    };
 
 // Helper type for our internal use
 export type WordWithRelations = Word & {
@@ -82,4 +90,18 @@ export type WordWithRelations = Word & {
       examples: Example[];
     }
   >;
+};
+
+export type WordFeedback = {
+  id: string;
+  message: string;
+  status: "pending" | "reviewed" | "resolved";
+  createdAt: string;
+  user: {
+    name: string;
+  };
+};
+
+export type WordFeedbackResponse = {
+  feedback: WordFeedback[];
 };

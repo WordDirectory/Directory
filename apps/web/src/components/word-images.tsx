@@ -46,14 +46,6 @@ export function WordImages({ word }: { word: string }) {
     initializeFromPreference();
   }, [initializeFromPreference]);
 
-  const handleImageClick = (image: any) => {
-    window.open(
-      `https://unsplash.com/photos/${image.id}?utm_source=worddirectory&utm_medium=referral`,
-      "_blank",
-      "noopener,noreferrer"
-    );
-  };
-
   const ImageGrid = ({ isMobileView }: { isMobileView?: boolean }) => (
     <div
       className={cn(
@@ -100,9 +92,11 @@ export function WordImages({ word }: { word: string }) {
                 isMobileView && "w-full"
               )}
             >
-              <div
+              <Link
+                href={`https://unsplash.com/photos/${image.id}?utm_source=worddirectory&utm_medium=referral`}
                 className="relative aspect-square cursor-pointer"
-                onClick={() => handleImageClick(image)}
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Image
                   src={image.url}
@@ -110,7 +104,7 @@ export function WordImages({ word }: { word: string }) {
                   fill
                   className="object-cover"
                 />
-              </div>
+              </Link>
               <div className="p-2 text-xs text-center text-muted-foreground">
                 <Link
                   href={`https://unsplash.com/@${image.user.username}?utm_source=worddirectory&utm_medium=referral`}

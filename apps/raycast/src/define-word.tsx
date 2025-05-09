@@ -17,12 +17,7 @@ export default function Command() {
         </ActionPanel>
       }
     >
-      <Form.TextField
-        id="word"
-        title="Word"
-        placeholder="Enter a word to define..."
-        autoFocus
-      />
+      <Form.TextField id="word" title="Word" placeholder="Enter a word to define..." autoFocus />
     </Form>
   );
 }

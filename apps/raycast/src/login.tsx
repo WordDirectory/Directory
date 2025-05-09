@@ -1,20 +1,15 @@
-import { Detail, ActionPanel, Action, open } from "@raycast/api";
+import { Detail, ActionPanel, Action } from "@raycast/api";
 import { useSession } from "./auth-client";
 import { useEffect, useState } from "react";
 
 export default function Command() {
   const { data, isPending } = useSession();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  useEffect(() => {
-    setIsLoggedIn(!!data?.session);
-  }, [data]);
 
   if (isPending) {
     return <Detail isLoading={true} />;
   }
 
-  if (isLoggedIn) {
+  if (data?.session) {
     return (
       <Detail
         markdown={`# Welcome ${data?.user.email}`}

@@ -2,7 +2,7 @@ import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "./db";
 import { stripe } from "@better-auth/stripe";
-import { anonymous, genericOAuth } from "better-auth/plugins";
+import { anonymous } from "better-auth/plugins";
 import Stripe from "stripe";
 import { sendEmail } from "./email";
 import { wordLookups } from "./db/schema";
@@ -239,17 +239,6 @@ export const auth = betterAuth({
           },
         }),
       },
-    }),
-    genericOAuth({
-      config: [
-        {
-          providerId: "raycast",
-          clientId: process.env.RAYCAST_CLIENT_ID!,
-          clientSecret: process.env.RAYCAST_CLIENT_SECRET!,
-          redirectURI: "raycast://oauth/worddirectory",
-          scopes: ["profile", "email"],
-        },
-      ],
     }),
   ],
   appName: "WordDirectory",

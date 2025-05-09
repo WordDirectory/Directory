@@ -1,25 +1,26 @@
-import { Detail, ActionPanel, Action } from "@raycast/api";
+import { Detail, ActionPanel, Action, open } from "@raycast/api";
 import { useSession } from "./auth-client";
+import { useEffect, useState } from "react";
 
 export default function Command() {
-  const { data, isPending, error } = useSession();
+  const { data, isPending } = useSession();
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  useEffect(() => {
+    setIsLoggedIn(!!data?.session);
+  }, [data]);
 
   if (isPending) {
     return <Detail isLoading={true} />;
   }
 
-  if (data?.session) {
+  if (isLoggedIn) {
     return (
       <Detail
-        markdown="# Already logged in"
+        markdown={`# Welcome ${data?.user.email}`}
         actions={
           <ActionPanel>
-            <Action
-              title="Logout"
-              onAction={async () => {
-                // TODO: Implement logout
-              }}
-            />
+            <Action title="Logout" onAction={() => {}} />
           </ActionPanel>
         }
       />
@@ -31,14 +32,9 @@ export default function Command() {
       markdown="# Login to WordDirectory"
       actions={
         <ActionPanel>
-          <Action
-            title="Login"
-            onAction={async () => {
-              // TODO: Implement OAuth flow
-            }}
-          />
+          <Action title="Login" onAction={() => {}} />
         </ActionPanel>
       }
     />
   );
-} 
+}

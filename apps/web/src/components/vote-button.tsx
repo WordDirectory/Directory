@@ -6,6 +6,24 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
+export async function toggleVote(word: string, prevVoted: boolean) {
+  try {
+    const res = await fetch(`/api/words/${encodeURIComponent(word)}/vote`, {
+      method: prevVoted ? "DELETE" : "POST",
+    });
+
+    if (!res.ok) {
+      console.error("[toggleVote] API error:", await res.json());
+      return null;
+    }
+
+    return (await res.json()) as { votes: number; hasVoted: boolean };
+  } catch (error) {
+    console.error("[toggleVote] Error:", error);
+    return null;
+  }
+}
+
 interface VoteButtonProps {
   word: string;
   initialVotes: number;
@@ -25,7 +43,7 @@ export function VoteButton({
 
   const handleVote = async () => {
     if (!session) {
-      // Get the current URL and encode it
+      // Redirect unauthenticated users to login
       const currentUrl = encodeURIComponent(window.location.pathname);
       router.push(`/auth/login?next=${currentUrl}`);
       return;
@@ -39,22 +57,15 @@ export function VoteButton({
     setHasVoted(!hasVoted);
     setVotes(votes + (hasVoted ? -1 : 1));
 
-    try {
-      const res = await fetch(`/api/words/${encodeURIComponent(word)}/vote`, {
-        method: prevVoted ? "DELETE" : "POST",
-      });
+    const result = await toggleVote(word, prevVoted);
 
-      if (!res.ok) {
-        // Revert on error
-        setHasVoted(prevVoted);
-        setVotes(prevVotes);
-        console.error("[Vote Button] API error:", await res.json());
-      }
-    } catch (error) {
+    if (!result) {
       // Revert on error
       setHasVoted(prevVoted);
       setVotes(prevVotes);
-      console.error("[Vote Button] Error:", error);
+    } else {
+      setHasVoted(result.hasVoted);
+      setVotes(result.votes);
     }
 
     // Reset animation state after a delay

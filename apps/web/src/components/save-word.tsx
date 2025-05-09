@@ -6,6 +6,25 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { motion, AnimatePresence } from "motion/react";
 
+export async function toggleSave(word: string, prevSaved: boolean) {
+  try {
+    const res = await fetch(`/api/words/${encodeURIComponent(word)}/save`, {
+      method: prevSaved ? "DELETE" : "POST",
+    });
+
+    if (!res.ok) {
+      console.error("[toggleSave] API error:", await res.json());
+      return null;
+    }
+
+    // We don't get a dedicated field back – the request either succeeds or fails.
+    return !prevSaved;
+  } catch (error) {
+    console.error("[toggleSave] Error:", error);
+    return null;
+  }
+}
+
 interface SaveWordProps {
   word: string;
   initialIsSaved: boolean;
@@ -31,19 +50,13 @@ export function SaveWord({ word, initialIsSaved }: SaveWordProps) {
     const prevSaved = isSaved;
     setIsSaved(!isSaved);
 
-    try {
-      const res = await fetch(`/api/words/${encodeURIComponent(word)}/save`, {
-        method: prevSaved ? "DELETE" : "POST",
-      });
+    const result = await toggleSave(word, prevSaved);
 
-      if (!res.ok) {
-        // Revert on error
-        setIsSaved(prevSaved);
-      }
-    } catch (error) {
+    if (result === null) {
       // Revert on error
       setIsSaved(prevSaved);
-      console.error("Error saving word:", error);
+    } else {
+      setIsSaved(result);
     }
 
     // Reset animation state after a delay

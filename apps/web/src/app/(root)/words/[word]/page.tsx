@@ -1,13 +1,11 @@
 import { Metadata } from "next";
 import { Separator } from "@/components/ui/separator";
-import { capitalize, cn } from "@/lib/utils";
-import { Quote, XIcon } from "lucide-react";
-import { FaQuoteLeft } from "react-icons/fa6";
-import { Card, CardContent } from "@/components/ui/card";
-import { WordAudioButton } from "@/components/word-audio-button";
+import { capitalize } from "@/lib/utils";
+import { Quote } from "lucide-react";
+import { Card } from "@/components/ui/card";
+import WordHeaderModern from "@/components/word-header";
+import { WordImages } from "@/components/word-images";
 import { WordResponse } from "@/types/api";
-import { VoteButton } from "@/components/vote-button";
-import { SaveWord } from "@/components/save-word";
 import { auth } from "@/lib/auth";
 import {
   getWordVotes,
@@ -16,12 +14,6 @@ import {
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
-import { ImageButton } from "@/components/image-button";
-import Image from "next/image";
-import { Button } from "@/components/ui/button";
-import { useImagesStore } from "@/stores/images-store";
-import { WordImages } from "@/components/word-images";
-import { MoreOptionsWord } from "@/components/more-options-word";
 
 interface WordPageProps {
   params: Promise<{
@@ -78,26 +70,23 @@ export default async function WordPage({ params }: WordPageProps) {
 
     // Use rate-limited API for actual page content
     const res = await fetch(url, {
-      cache: "no-store", // Don't cache since we need to track lookups
+      cache: "no-store",
       headers: Object.fromEntries(headersList.entries()),
     });
 
-    // Check if we've been sent to the not-found page
+    // Redirects
     if (res.url.includes("/words/not-found")) {
       return redirect(res.url);
     }
-
-    // Check if the fetch was redirected to the limit page
     if (res.url.includes("/word-limit-reached")) {
       return redirect(res.url);
     }
 
     if (!res.ok) {
-      // Handle fetch errors
       throw new Error(`Failed to fetch word: ${res.status} ${res.statusText}`);
     }
 
-    let wordResult;
+    let wordResult: WordResponse;
     try {
       const text = await res.text();
       wordResult = JSON.parse(text);
@@ -111,7 +100,7 @@ export default async function WordPage({ params }: WordPageProps) {
       throw new Error("Invalid word data received");
     }
 
-    // Get vote data with error handling
+    // Get vote / save metadata
     let votes = 0,
       hasVoted = false,
       isSaved = false;
@@ -127,7 +116,6 @@ export default async function WordPage({ params }: WordPageProps) {
       ]);
     } catch (e) {
       console.error("Failed to fetch word metadata:", e);
-      // Continue with default values rather than failing the whole request
     }
 
     return (
@@ -136,129 +124,40 @@ export default async function WordPage({ params }: WordPageProps) {
           {/* Word content */}
           <div className="py-14 md:py-20 px-8 lg:pl-14 lg:pr-12">
             <div className="max-w-3xl mx-auto">
-              <WordHeader
-                word={wordResult.word}
-                details={wordResult.details}
+              <WordHeaderModern
+                word={capitalize(wordResult.word)}
                 votes={votes}
                 hasVoted={hasVoted}
                 isSaved={isSaved}
+                definitions={wordResult.details.definitions.map((d) => d.text)}
               />
-              {wordResult.details.definitions.length > 1 && (
-                <>
-                  <Separator className="mb-8" />
-                  <WordContent
-                    word={wordResult.word}
-                    details={wordResult.details}
-                  />
-                </>
+
+              {wordResult.details.definitions.length > 0 && (
+                <Separator className="mb-8" />
               )}
+
+              <WordContent details={wordResult.details} />
             </div>
           </div>
-          {/* Images */}
+          {/* Images on the right */}
           <WordImages word={wordResult.word} />
         </div>
       </div>
     );
   } catch (error: any) {
-    // Check if the error is the specific redirect error by its digest
     if (
       typeof error?.digest === "string" &&
       error.digest.startsWith("NEXT_REDIRECT")
     ) {
-      throw error; // Re-throw the redirect error so Next.js can handle it
+      throw error;
     }
 
-    // Handle other errors
     console.error("Error fetching word:", error);
-    throw error; // Let the error boundary handle it
+    throw error;
   }
 }
 
-function WordHeader({
-  word,
-  details,
-  votes,
-  hasVoted,
-  isSaved,
-}: {
-  word: string;
-  details: WordResponse["details"];
-  votes: number;
-  hasVoted: boolean;
-  isSaved: boolean;
-}) {
-  return (
-    <>
-      <div className="mb-8 flex items-center gap-4">
-        <div className="flex flex-col gap-6">
-          <div className="flex gap-5">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-full">
-              {capitalize(word)}
-            </h1>
-            <div className="flex items-center gap-3">
-              <WordAudioButton word={word} />
-            </div>
-          </div>
-          <div className="flex gap-3 items-center">
-            <VoteButton
-              word={word}
-              initialVotes={votes}
-              initialHasVoted={hasVoted}
-            />
-            <div className="flex gap-5">
-              <SaveWord word={word} initialIsSaved={isSaved} />
-              <ImageButton word={word} />
-              <MoreOptionsWord word={word} definitions={details.definitions} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {details.definitions.length === 1 && (
-        <div className="mb-6">
-          <p className="text-foreground/70 mb-6">
-            {details.definitions[0].text}
-          </p>
-        </div>
-      )}
-
-      {details.definitions.length === 1 &&
-        details.definitions[0].examples.length > 0 && (
-          <>
-            <Separator className="mb-8" />
-            <div className="space-y-4">
-              <h2 className="text-xl font-semibold text-foreground/85 flex items-center gap-2">
-                <FaQuoteLeft className="w-5 h-5 text-muted-foreground" />
-                Examples
-              </h2>
-              <div className="grid gap-4 md:grid-cols-2">
-                {details.definitions[0].examples.map(
-                  (example: string, i: number) => (
-                    <Card key={i} className="group relative">
-                      <CardContent className="p-4">
-                        <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                        <p className="text-foreground/80 relative z-10 break-words">
-                          {example}
-                        </p>
-                      </CardContent>
-                    </Card>
-                  )
-                )}
-              </div>
-            </div>
-          </>
-        )}
-    </>
-  );
-}
-
-function WordContent({
-  word,
-  details,
-}: {
-  word: string;
-  details: WordResponse["details"];
-}) {
+function WordContent({ details }: { details: WordResponse["details"] }) {
   return (
     <section className="mb-12">
       <h2 className="mb-6 text-2xl font-semibold text-foreground/85">
@@ -266,42 +165,40 @@ function WordContent({
       </h2>
 
       <div className="space-y-12">
-        {details.definitions.map(
-          (def: WordResponse["details"]["definitions"][0], index: number) => (
-            <div key={index} className="relative">
-              {index > 0 && <Separator className="absolute -top-6 w-full" />}
-              <div className="flex items-start gap-2">
-                <span className="text-lg font-medium text-muted-foreground select-none leading-[1.5]">
-                  {index + 1}.
-                </span>
-                <div className="flex-1 pt-[2px]">
-                  <p className="text-foreground/70">{def.text}</p>
+        {details.definitions.map((def, index) => (
+          <div key={index} className="relative">
+            {index > 0 && <Separator className="absolute -top-6 w-full" />}
+            <div className="flex items-start gap-2">
+              <span className="text-lg font-medium text-muted-foreground select-none leading-[1.5]">
+                {index + 1}.
+              </span>
+              <div className="flex-1 pt-[2px]">
+                <p className="text-foreground/70">{def.text}</p>
 
-                  {def.examples.length > 0 && (
-                    <div className="mt-6">
-                      <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
-                        <Quote className="w-4 h-4" />
-                        Usage Examples
-                      </h3>
-                      <div className="grid gap-3 md:grid-cols-2">
-                        {def.examples.map((example: string, i: number) => (
-                          <Card key={i} className="group relative">
-                            <CardContent className="p-4">
-                              <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
-                              <p className="text-foreground/80 relative z-10 break-words">
-                                {example}
-                              </p>
-                            </CardContent>
-                          </Card>
-                        ))}
-                      </div>
+                {def.examples.length > 0 && (
+                  <div className="mt-6">
+                    <h3 className="text-sm font-medium text-muted-foreground flex items-center gap-2 mb-3">
+                      <Quote className="w-4 h-4" />
+                      Usage Examples
+                    </h3>
+                    <div className="grid gap-3 md:grid-cols-2">
+                      {def.examples.map((example, i) => (
+                        <Card key={i} className="group relative">
+                          <div className="p-4">
+                            <div className="absolute -left-2 -top-2 text-4xl text-muted-foreground opacity-10 select-none"></div>
+                            <p className="text-foreground/80 relative z-10 break-words">
+                              {example}
+                            </p>
+                          </div>
+                        </Card>
+                      ))}
                     </div>
-                  )}
-                </div>
+                  </div>
+                )}
               </div>
             </div>
-          )
-        )}
+          </div>
+        ))}
       </div>
     </section>
   );

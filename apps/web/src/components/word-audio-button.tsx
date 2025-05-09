@@ -4,6 +4,33 @@ import { Volume2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
+export async function playWordAudio(word: string): Promise<HTMLAudioElement> {
+  try {
+    const response = await fetch(
+      `/api/words/${encodeURIComponent(word)}/audio`
+    );
+
+    if (!response.ok) {
+      throw new Error("Failed to load audio");
+    }
+
+    const audioBlob = await response.blob();
+    const audioUrl = URL.createObjectURL(audioBlob);
+    const audio = new Audio(audioUrl);
+
+    // Clean up the blob URL when the audio is done
+    audio.addEventListener("ended", () => {
+      URL.revokeObjectURL(audioUrl);
+    });
+
+    await audio.play();
+    return audio;
+  } catch (error) {
+    console.error("Failed to play audio:", error);
+    throw error;
+  }
+}
+
 interface WordAudioButtonProps {
   word: string;
 }
@@ -22,33 +49,12 @@ export function WordAudioButton({ word }: WordAudioButtonProps) {
 
       setIsLoading(true);
 
-      // Fetch the audio
-      const response = await fetch(
-        `/api/words/${encodeURIComponent(word)}/audio`
-      );
+      const audio = await playWordAudio(word);
 
-      if (!response.ok) {
-        throw new Error("Failed to load audio");
-      }
-
-      // Get audio blob
-      const audioBlob = await response.blob();
-      const audioUrl = URL.createObjectURL(audioBlob);
-
-      // Create audio element
-      const audio = new Audio(audioUrl);
+      // Cache so subsequent plays are instant
       audioRef.current = audio;
-
-      // Clean up the blob URL when the audio is done
-      audio.addEventListener("ended", () => {
-        URL.revokeObjectURL(audioUrl);
-        audioRef.current = null;
-      });
-
-      // Play the audio
-      await audio.play();
     } catch (error) {
-      console.error("Failed to play audio:", error);
+      // Already logged inside playWordAudio
     } finally {
       setIsLoading(false);
     }

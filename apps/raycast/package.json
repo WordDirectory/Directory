@@ -18,13 +18,6 @@
       "subtitle": "Get simple, human-readable definitions",
       "description": "Look up any word and get clear, straightforward definitions without the complexity",
       "mode": "view"
-    },
-    {
-      "name": "login",
-      "title": "Login to WordDirectory",
-      "subtitle": "Connect to your WordDirectory account",
-      "description": "Sign in to access your WordDirectory account and preferences",
-      "mode": "view"
     }
   ],
   "dependencies": {

@@ -1,8 +1,6 @@
-import { Form, ActionPanel, Action, useNavigation, Detail, showToast } from "@raycast/api";
+import { Form, ActionPanel, Action, open } from "@raycast/api";
 
 export default function Command() {
-  const { push } = useNavigation();
-
   return (
     <Form
       actions={
@@ -10,10 +8,10 @@ export default function Command() {
           <Action.SubmitForm
             title="Define"
             shortcut={{ modifiers: ["cmd"], key: "enter" }}
-            onSubmit={async (values) => {
-              // Get definition from your API
-              // Then push to a detail view:
-              push(<DefinitionView word={values.word} definition="..." />);
+            onSubmit={(values) => {
+              // Open in browser instead of fetching
+              const url = `https://worddirectory.app/words/${encodeURIComponent(values.word)}`;
+              open(url);
             }}
           />
         </ActionPanel>
@@ -26,24 +24,5 @@ export default function Command() {
         autoFocus
       />
     </Form>
-  );
-}
-
-function DefinitionView({ word, definition }: { word: string; definition: string }) {
-  return (
-    <Detail
-      navigationTitle={word}
-      markdown={`# ${word}`}
-      metadata={
-        <Detail.Metadata>
-          <Detail.Metadata.Label title="Definition" text={definition} />
-          {/* You can add more structured data like: */}
-          <Detail.Metadata.Separator />
-          <Detail.Metadata.TagList title="Part of Speech">
-            <Detail.Metadata.TagList.Item text="Coming soon" color={"secondaryText"} />
-          </Detail.Metadata.TagList>
-        </Detail.Metadata>
-      }
-    />
   );
 }

@@ -548,7 +548,7 @@ export function WordHeader({
 
           {/* Desktop action buttons */}
           <div className="flex justify-between">
-            <div className="flex flex-wrap items-center gap-6">
+            <div className="flex flex-wrap items-center gap-6 pl-1.5">
               <Button
                 variant="ghost"
                 size="sm"

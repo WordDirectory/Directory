@@ -19,14 +19,17 @@ It's a fucking mess.
 We explain words how you'd explain them to a friend. No bullshit, no complex terms, just straight-up human explanations.
 
 Instead of:
+
 - ❌ "Hello is when you greet someone" (if they don't know hello, what's the fucking chance they know greet?)
 
 We do:
+
 - ✅ "Hello is basically when you meet someone and you want to let them know you see them or want to talk to them"
 
 ## What words do we include?
 
 We focus on words that people actually need explained:
+
 - Everyday words that might confuse non-native speakers
 - Slang and internet terms ("yeet", "sus", "fomo")
 - Complex words explained simply ("gaslighting", "procrastinate")
@@ -34,6 +37,7 @@ We focus on words that people actually need explained:
 - Even "inappropriate" words - we don't censor. If people use it, we explain it
 
 We don't waste time on:
+
 - Names of people or places (that's what Google Maps is for)
 - Brand names (just Google it)
 - Super technical terms only specialists use (like very technical)
@@ -50,6 +54,7 @@ We don't waste time on:
 ## Tech Stack
 
 Built with:
+
 - Next.js 15
 - Shadcn UI
 - Tailwind CSS
@@ -63,3 +68,37 @@ Made by Maze (hi! 👋) - because looking up one word shouldn't mean looking up 
 ## License
 
 MIT Licensed. Check out the [LICENSE](LICENSE) file for details.
+
+## "Why not just use AI?"
+
+Here's the thing:
+
+### Integration That Actually Makes Sense
+
+- Right-click any word, get instant definition (Chrome extension)
+- Alt + Space → "define [word]" (Raycast)
+- Google "[word] definition" → instant result
+- No "hey AI, what does this mean?" bullshit. Just instant answers.
+
+### Focused > General Purpose
+
+- LLMs try to do everything
+- We do ONE thing really fucking well
+- This lets us build specific tools and integrations
+- Result? Better user experience for this specific need
+
+### Simple Pricing
+
+- $1/month. That's it.
+- No tokens
+- No "free tier limits"
+- No "oops you ran out of credits"
+- Just unlimited definitions, always
+
+### Reliability
+
+- No AI hallucinations
+- No made-up explanations
+- Just straight-up, verified definitions
+
+Think about it: Dictionary.com still gets millions of visitors despite ChatGPT existing. Why? Because sometimes you just need a definition, not a conversation with AI.

@@ -14,7 +14,7 @@ const roadmapItems: {
   {
     title: "Chrome Extension",
     description:
-      "Our Chrome extension is now live! [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
+      "Right-click any word on any webpage to get its definition or search '[word] definition' to get a definition. [Get it here](https://chromewebstore.google.com/detail/worddirectory/nmbecimflkmecigpnnflifohoghhgdah)",
     status: {
       text: "Completed",
       type: "complete",
@@ -40,7 +40,7 @@ const roadmapItems: {
   {
     title: "Community feedback",
     description:
-      "Allow users to suggest changes to definitions and vote on them. This will help improve the quality of our definitions through the community.",
+      "See a definition that sucks? Now you can suggest better ones and vote on other people's suggestions.",
     status: {
       text: "Completed",
       type: "complete",
@@ -48,8 +48,7 @@ const roadmapItems: {
   },
   {
     title: "Word of the day",
-    description:
-      "Daily featured words with their definitions, delivered through the website.",
+    description: "Learn a new word every day.",
     status: {
       text: "Not started",
       type: "default",
@@ -58,7 +57,7 @@ const roadmapItems: {
   {
     title: "Public API",
     description:
-      "A public API to get definitions for a word, finding words, etc. Check out the [API docs](https://worddirectory.app/docs/developers/api-routes)",
+      "Want to use our definitions in your app? Now you can. Check the [API docs](https://worddirectory.app/docs/developers/api-routes)",
     status: {
       text: "Completed",
       type: "complete",
@@ -67,7 +66,7 @@ const roadmapItems: {
   {
     title: "AI integration",
     description:
-      "Advanced features powered by AI including sentence definitions and multi-language support.",
+      "Using AI to explain words in different ways and support more languages.",
     status: {
       text: "In beta",
       type: "info",
@@ -76,7 +75,7 @@ const roadmapItems: {
   {
     title: "Word images",
     description:
-      "Visual representation for words, especially useful for objects, animals, and concrete concepts. Each word will have a high-quality image to help with understanding.",
+      "Added pictures for words. Makes it way easier to understand what stuff actually looks like.",
     status: {
       text: "Completed",
       type: "complete",
@@ -85,7 +84,7 @@ const roadmapItems: {
   {
     title: "Share images",
     description:
-      "Share word images easily with a direct link or image. Perfect for sharing interesting words and their visual representations with others.",
+      "Found a cool word? Share it with a link or image. No more screenshots.",
     status: {
       text: "Completed",
       type: "complete",
@@ -94,7 +93,7 @@ const roadmapItems: {
   {
     title: "MCP Server",
     description:
-      "Implementation of a Model Context Protocol (MCP) server to allow AI assistants to interact with WordDirectory's data and features. This will enable AI tools like Claude to directly access our dictionary and pronunciations through a standardized interface.",
+      "Building an MCP server so AI tools like Claude can tap directly into our dictionary.",
     status: {
       text: "In progress",
       type: "pending",
@@ -103,7 +102,7 @@ const roadmapItems: {
   {
     title: "Dictionary Rebuild",
     description:
-      "Complete rebuild of our dictionary to provide higher quality definitions and enable new features across all words. This major update will significantly improve WordDirectory's core functionality.",
+      "Complete rebuild of our dictionary (dataset) to make definitions better and add new features. Big update, but worth it.",
     status: {
       text: "In progress",
       type: "pending",
@@ -112,7 +111,7 @@ const roadmapItems: {
   {
     title: "Text-to-Speech Performance",
     description:
-      "Major performance improvements to make text-to-speech 10x faster, providing instant audio pronunciation for words.",
+      "Making the pronunciation feature way faster. No more waiting around to hear how words sound.",
     status: {
       text: "Not started",
       type: "default",
@@ -120,8 +119,7 @@ const roadmapItems: {
   },
   {
     title: "Twitter bot",
-    description:
-      "A Twitter bot that responds with definitions when mentioned. Just tweet '@WordDirectoryBot [word]' and get an instant definition.",
+    description: "Tweet '@WordDirectoryBot [word]' and get a definition back.",
     status: {
       text: "Not started",
       type: "default",
@@ -130,7 +128,7 @@ const roadmapItems: {
   {
     title: "Native Desktop App",
     description:
-      "A native Windows and macOS app that provides quick access to definitions from your desktop.",
+      "A proper app for Windows and Mac. Quick access to definitions right from your desktop.",
     status: {
       text: "Not started",
       type: "default",
@@ -139,7 +137,7 @@ const roadmapItems: {
   {
     title: "Raycast Extension",
     description:
-      "A Raycast extension that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
+      "For you keyboard nerds - look up words without touching your mouse. Works with Raycast.",
     status: {
       text: "In review",
       type: "pending",
@@ -148,7 +146,7 @@ const roadmapItems: {
   {
     title: "Multiple Languages",
     description:
-      "Support for multiple languages including Spanish, French, German, and more. Each word will have definitions in various languages while maintaining our simple, human-readable approach.",
+      "Adding Spanish, French, German, and more. Same simple definitions, just in different languages.",
     status: {
       text: "Not started",
       type: "default",
@@ -157,7 +155,7 @@ const roadmapItems: {
   {
     title: "YouGlish Integration",
     description:
-      "Integration with YouGlish to provide real-world pronunciation examples from YouTube videos, helping users understand how words are used in context and pronounced by native speakers.",
+      "See how words are used in real YouTube videos. Great for hearing how native speakers actually say things.",
     status: {
       text: "In beta",
       type: "info",

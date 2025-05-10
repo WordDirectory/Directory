@@ -137,9 +137,9 @@ const roadmapItems: {
     },
   },
   {
-    title: "Raycast Plugin",
+    title: "Raycast Extension",
     description:
-      "A Raycast plugin that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
+      "A Raycast extension that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
     status: {
       text: "In review",
       type: "pending",

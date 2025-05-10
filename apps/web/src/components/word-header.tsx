@@ -95,7 +95,7 @@ interface WordHeaderProps {
   definitions: string[];
 }
 
-export default function WordHeader({
+export function WordHeader({
   word,
   votes,
   hasVoted,

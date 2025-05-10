@@ -3,7 +3,7 @@ import { Separator } from "@/components/ui/separator";
 import { capitalize } from "@/lib/utils";
 import { Quote } from "lucide-react";
 import { Card } from "@/components/ui/card";
-import WordHeaderModern from "@/components/word-header";
+import { WordHeader } from "@/components/word-header";
 import { WordImages } from "@/components/word-images";
 import { WordResponse } from "@/types/api";
 import { auth } from "@/lib/auth";
@@ -124,7 +124,7 @@ export default async function WordPage({ params }: WordPageProps) {
           {/* Word content */}
           <div className="py-14 md:py-20 px-8 lg:pl-14 lg:pr-12">
             <div className="max-w-3xl mx-auto">
-              <WordHeaderModern
+              <WordHeader
                 word={capitalize(wordResult.word)}
                 votes={votes}
                 hasVoted={hasVoted}

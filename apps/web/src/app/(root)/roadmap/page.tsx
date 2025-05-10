@@ -94,7 +94,7 @@ const roadmapItems: {
   {
     title: "MCP Server",
     description:
-      "A dedicated server for handling core processing tasks and improving overall system performance.",
+      "Implementation of a Model Context Protocol (MCP) server to allow AI assistants to interact with WordDirectory's data and features. This will enable AI tools like Claude to directly access our dictionary and pronunciations through a standardized interface.",
     status: {
       text: "In progress",
       type: "pending",

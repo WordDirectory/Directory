@@ -141,8 +141,8 @@ const roadmapItems: {
     description:
       "A Raycast plugin that lets you quickly look up word definitions without leaving your keyboard. Perfect for power users who want instant access to definitions.",
     status: {
-      text: "Not started",
-      type: "default",
+      text: "In review",
+      type: "pending",
     },
   },
   {

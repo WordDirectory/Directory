@@ -159,8 +159,8 @@ const roadmapItems: {
     description:
       "Integration with YouGlish to provide real-world pronunciation examples from YouTube videos, helping users understand how words are used in context and pronounced by native speakers.",
     status: {
-      text: "Not started",
-      type: "default",
+      text: "In beta",
+      type: "info",
     },
   },
 ];

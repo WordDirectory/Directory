@@ -184,7 +184,7 @@ function AskAIContent() {
           open={isOpen}
           onOpenChange={setIsOpen}
         >
-          <NotLoggedInUI router={router} />
+          <NotLoggedInUI router={router} message={message} />
         </CustomPopover>
       ) : showFreeTierLimitReached && aiError ? (
         <CustomPopover
@@ -193,7 +193,7 @@ function AskAIContent() {
           open={isOpen}
           onOpenChange={setIsOpen}
         >
-          <FreeTierLimitReachedUI usage={aiError.usage!} />
+          <FreeTierLimitReachedUI usage={aiError.usage!} message={message} />
         </CustomPopover>
       ) : (
         <CustomPopover
@@ -271,7 +271,12 @@ function Message({ message }: { message: AIMessage }) {
   );
 }
 
-function NotLoggedInUI({ router }: { router: any }) {
+function NotLoggedInUI({ router, message }: { router: any; message: string }) {
+  const handleCopyPrompt = () => {
+    navigator.clipboard.writeText(message);
+    toast.success("Prompt copied to clipboard");
+  };
+
   return (
     <div className="space-y-6">
       <div className="relative overflow-hidden bg-primary-foreground p-6">
@@ -309,6 +314,15 @@ function NotLoggedInUI({ router }: { router: any }) {
           >
             Create free account
           </Button>
+          {message && (
+            <Button
+              variant="outline"
+              className="w-full"
+              onClick={handleCopyPrompt}
+            >
+              Copy prompt
+            </Button>
+          )}
           <p className="mt-3 text-center text-xs text-muted-foreground">
             Already have an account?{" "}
             <Link href="/auth/login" className="text-primary hover:underline">
@@ -321,7 +335,18 @@ function NotLoggedInUI({ router }: { router: any }) {
   );
 }
 
-function FreeTierLimitReachedUI({ usage }: { usage: AIUsageResponse }) {
+function FreeTierLimitReachedUI({
+  usage,
+  message,
+}: {
+  usage: AIUsageResponse;
+  message: string;
+}) {
+  const handleCopyPrompt = () => {
+    navigator.clipboard.writeText(message);
+    toast.success("Prompt copied to clipboard");
+  };
+
   return (
     <div className="space-y-6">
       <div className="relative overflow-hidden bg-primary-foreground p-6">
@@ -345,6 +370,15 @@ function FreeTierLimitReachedUI({ usage }: { usage: AIUsageResponse }) {
         </div>
         <div className="mt-6 space-y-6">
           <UpgradeButton />
+          {message && (
+            <Button
+              variant="outline"
+              className="w-full"
+              onClick={handleCopyPrompt}
+            >
+              Copy prompt
+            </Button>
+          )}
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <div className="rounded-full bg-primary/10 p-1">

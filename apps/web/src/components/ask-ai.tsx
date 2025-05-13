@@ -31,6 +31,7 @@ function AskAIContent() {
   const [showFreeTierLimitReached, setShowFreeTierLimitReached] =
     useState(false);
   const [aiError, setAiError] = useState<AIError | null>(null);
+  const [lastAttemptedMessage, setLastAttemptedMessage] = useState("");
 
   // Get the word from either the URL path or search params for word-not-found page
   const isNotFoundPage = pathname === "/words/not-found";
@@ -83,6 +84,7 @@ function AskAIContent() {
     try {
       setIsLoading(true);
       setError(null);
+      setLastAttemptedMessage(message); // Store the message before clearing it
 
       // Add user message immediately
       const userMessage: AIMessage = {
@@ -114,6 +116,7 @@ function AskAIContent() {
           if (aiError.usage?.plan === "free") {
             setAiError(aiError);
             setShowFreeTierLimitReached(true);
+            return; // Return early to keep lastAttemptedMessage
           } else {
             throw new Error(
               "You've reached your AI request limit for this month. Your limit will reset on " +
@@ -141,6 +144,7 @@ function AskAIContent() {
       };
 
       setMessages((prev) => [...prev, aiMessage]);
+      setLastAttemptedMessage(""); // Clear the last attempted message on success
     } catch (error) {
       const errorMessage =
         error instanceof Error ? error.message : "Something went wrong";
@@ -184,7 +188,7 @@ function AskAIContent() {
           open={isOpen}
           onOpenChange={setIsOpen}
         >
-          <NotLoggedInUI router={router} message={message} />
+          <NotLoggedInUI router={router} message={lastAttemptedMessage} />
         </CustomPopover>
       ) : showFreeTierLimitReached && aiError ? (
         <CustomPopover
@@ -193,7 +197,10 @@ function AskAIContent() {
           open={isOpen}
           onOpenChange={setIsOpen}
         >
-          <FreeTierLimitReachedUI usage={aiError.usage!} message={message} />
+          <FreeTierLimitReachedUI
+            usage={aiError.usage!}
+            message={lastAttemptedMessage}
+          />
         </CustomPopover>
       ) : (
         <CustomPopover

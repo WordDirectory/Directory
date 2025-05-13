@@ -376,16 +376,18 @@ function FreeTierLimitReachedUI({
           </p>
         </div>
         <div className="mt-6 space-y-6">
-          <UpgradeButton />
-          {message && (
-            <Button
-              variant="outline"
-              className="w-full"
-              onClick={handleCopyPrompt}
-            >
-              Copy prompt
-            </Button>
-          )}
+          <div className="flex flex-col gap-4">
+            <UpgradeButton />
+            {message && (
+              <Button
+                variant="outline"
+                className="w-full"
+                onClick={handleCopyPrompt}
+              >
+                Copy prompt
+              </Button>
+            )}
+          </div>
           <ul className="space-y-2 text-sm">
             <li className="flex items-center gap-2">
               <div className="rounded-full bg-primary/10 p-1">

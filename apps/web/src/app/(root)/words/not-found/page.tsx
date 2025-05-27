@@ -7,8 +7,6 @@ interface WordNotFoundPageProps {
   }>;
 }
 
-export const runtime = "edge";
-
 export default async function WordNotFoundPage({
   searchParams,
 }: WordNotFoundPageProps) {

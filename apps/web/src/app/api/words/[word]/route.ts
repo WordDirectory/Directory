@@ -12,8 +12,6 @@ import {
 import { auth } from "@/lib/auth";
 import lemmatizer from "@/lib/lemmatizer";
 
-export const runtime = "edge";
-
 export async function HEAD(
   request: Request,
   { params }: { params: Promise<{ word: string }> }

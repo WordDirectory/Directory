@@ -9,9 +9,7 @@ import { auth } from "@/lib/auth";
 import { db } from "@/lib/db";
 import { aiUsage } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
-import { APIError, AIError, ValidationError } from "@/types/api";
-
-export const runtime = "edge";
+import { AIError, ValidationError } from "@/types/api";
 
 // Request validation schema
 const requestSchema = z.object({

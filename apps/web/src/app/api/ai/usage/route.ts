@@ -3,8 +3,6 @@ import { auth } from "@/lib/auth";
 import { getAIUsage, getActiveSubscription } from "@/lib/db/queries";
 import { APIError } from "@/types/api";
 
-export const runtime = "edge";
-
 export async function GET(request: Request) {
   try {
     const session = await auth.api.getSession(request);

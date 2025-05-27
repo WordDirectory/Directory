@@ -11,6 +11,8 @@ import { aiUsage } from "@/lib/db/schema";
 import { eq, sql } from "drizzle-orm";
 import { APIError, AIError, ValidationError } from "@/types/api";
 
+export const runtime = "edge";
+
 // Request validation schema
 const requestSchema = z.object({
   message: z

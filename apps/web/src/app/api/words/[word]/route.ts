@@ -12,6 +12,8 @@ import {
 import { auth } from "@/lib/auth";
 import lemmatizer from "@/lib/lemmatizer";
 
+export const runtime = "edge";
+
 export async function HEAD(
   request: Request,
   { params }: { params: Promise<{ word: string }> }
@@ -92,22 +94,30 @@ export async function GET(
     // If word doesn't exist, try lemmatization
     if (!result) {
       console.log("[Word API] Word not found, trying lemmatization");
-      
+
       // Try verb form first
-      const verbLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'verb');
+      const verbLemmas = lemmatizer.only_lemmas(
+        decodedWord.toLowerCase(),
+        "verb"
+      );
       if (verbLemmas.length > 0) {
         const baseWord = verbLemmas[0];
-        const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
+        const capitalizedBase =
+          baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
         console.log("[Word API] Found verb lemma:", capitalizedBase);
         result = await getWord(capitalizedBase);
       }
-      
+
       // If no result, try noun form
       if (!result) {
-        const nounLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'noun');
+        const nounLemmas = lemmatizer.only_lemmas(
+          decodedWord.toLowerCase(),
+          "noun"
+        );
         if (nounLemmas.length > 0) {
           const baseWord = nounLemmas[0];
-          const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
+          const capitalizedBase =
+            baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
           console.log("[Word API] Found noun lemma:", capitalizedBase);
           result = await getWord(capitalizedBase);
         }
@@ -125,7 +135,7 @@ export async function GET(
 
         // First check if user has already viewed this word
         const hasViewed = await hasUserViewedWord(userId, ip, result.id);
-        
+
         // Only check limits and increment count if this is a new view
         if (!hasViewed) {
           console.log("[Word API] New view, checking limits");

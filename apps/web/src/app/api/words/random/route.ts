@@ -3,6 +3,8 @@ import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { getRandomWords } from "@/lib/db/queries";
 
+export const runtime = "edge";
+
 export async function GET(request: Request) {
   try {
     // Get IP address from X-Forwarded-For header or fallback to a default

@@ -6,6 +6,8 @@ import { auth } from "@/lib/auth";
 import { APIError } from "@/types/api";
 import { z } from "zod";
 
+export const runtime = "edge";
+
 // Request validation schema
 const querySchema = z.object({
   limit: z

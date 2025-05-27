@@ -8,6 +8,8 @@ import { eq } from "drizzle-orm";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
+export const runtime = "edge";
+
 export async function POST(req: Request) {
   try {
     console.log("[STRIPE PORTAL] Received request");

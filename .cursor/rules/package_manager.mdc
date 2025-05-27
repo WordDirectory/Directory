@@ -1,0 +1,6 @@
+---
+description: For writing commands that use a package manager
+globs: 
+alwaysApply: false
+---
+Always use Bun. Don't ever use npm.

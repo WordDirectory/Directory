@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "npx @cloudflare/next-on-pages@1",
+    "build": "npx @cloudflare/next-on-pages@1 --experimental-minify",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",

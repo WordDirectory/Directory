@@ -14,7 +14,7 @@
     "test-db": "npx tsx scripts/test-db.ts",
     "count": "npx tsx scripts/count-words.ts",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "npx wrangler deploy"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.14",

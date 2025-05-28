@@ -3,6 +3,10 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
+  webpack: (config) => {
+    config.externals = [...(config.externals || []), "@vercel/og"];
+    return config;
+  },
   images: {
     remotePatterns: [
       {

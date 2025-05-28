@@ -27,6 +27,7 @@ import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
 import { upgrade } from "./upgrade-button";
 import { useSearchParams, useRouter } from "next/navigation";
+import { useConfig } from "@/hooks/use-config";
 
 interface AuthLayoutProps {
   mode: "login" | "signup";
@@ -41,6 +42,7 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const shouldSubscribe = searchParams.get("shouldSubscribe") === "true";
   const nextUrl = searchParams.get("next");
   const router = useRouter();
+  const { config } = useConfig();
 
   const form = useForm<LoginValues | SignupValues>({
     resolver: zodResolver(mode === "signup" ? signupSchema : loginSchema),
@@ -114,15 +116,16 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const handleGoogleSignIn = async () => {
     setIsLoading(true);
     try {
-      // Get the base URL
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+      if (!config?.siteUrl) {
+        throw new Error("Site URL not available");
+      }
 
       const { error } = await authClient.signIn.social({
         provider: "google",
         callbackURL: shouldSubscribe
-          ? `${baseUrl}/subscribe`
+          ? `${config.siteUrl}/subscribe`
           : nextUrl
-            ? `${baseUrl}${nextUrl}`
+            ? `${config.siteUrl}${nextUrl}`
             : undefined,
       });
       if (error) throw error;

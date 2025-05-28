@@ -36,7 +36,7 @@ export async function POST(req: Request) {
     }
 
     // Construct proper URL with protocol
-    const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+    const baseUrl = process.env.SITE_URL;
 
     // Create portal session
     console.log(

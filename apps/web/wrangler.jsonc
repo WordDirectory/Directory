@@ -16,10 +16,14 @@
       "service": "word-directory"
     }
   ],
-  "routes": [
-    { "pattern": "beta.worddirectory.app", "custom_domain": true }
-  ],
   "images": {
     "binding": "IMAGES"
-  }
+  },
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": ["**/@vercel/og/**/*.wasm", "**/@vercel/og/**/*.ttf.bin"],
+      "fallthrough": true
+    }
+  ]
 }

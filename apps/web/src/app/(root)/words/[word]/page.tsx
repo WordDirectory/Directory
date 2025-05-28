@@ -66,7 +66,7 @@ export default async function WordPage({ params }: WordPageProps) {
   const session = await auth.api.getSession({ headers: headersList });
 
   try {
-    const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
+    const url = `${process.env.SITE_URL}/api/words/${paramWord}`;
 
     // Use rate-limited API for actual page content
     const res = await fetch(url, {

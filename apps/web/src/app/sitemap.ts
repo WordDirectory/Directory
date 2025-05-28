@@ -2,10 +2,10 @@ import type { MetadataRoute } from "next";
 import { getUniqueFirstLetters } from "@/lib/db/queries";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+  const baseUrl = process.env.SITE_URL;
 
   if (!baseUrl) {
-    throw new Error("NEXT_PUBLIC_SITE_URL is not set");
+    throw new Error("SITE_URL is not set");
   }
 
   // Get all letters that have words - using our existing query!

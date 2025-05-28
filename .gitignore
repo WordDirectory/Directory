@@ -68,5 +68,3 @@ scripts/
 /apps/mcp/node_modules
 
 /apps/web/.open-next
-
-/apps/web/.dev.vars

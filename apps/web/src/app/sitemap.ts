@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { getUniqueFirstLetters } from "@/lib/db/queries";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.SITE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   if (!baseUrl) {
     throw new Error("SITE_URL is not set");

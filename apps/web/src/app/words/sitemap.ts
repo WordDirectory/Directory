@@ -11,7 +11,7 @@ export default async function sitemap({
 }: {
   id: string;
 }): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.SITE_URL;
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   if (!baseUrl) {
     throw new Error("SITE_URL is not set");

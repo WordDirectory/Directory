@@ -14,7 +14,7 @@ export default async function sitemap({
   const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
 
   if (!baseUrl) {
-    throw new Error("SITE_URL is not set");
+    throw new Error("NEXT_PUBLIC_SITE_URL is not set");
   }
 
   // Use the TypeScript function instead of raw SQL

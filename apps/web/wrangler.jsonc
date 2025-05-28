@@ -18,5 +18,8 @@
   ],
   "routes": [
     { "pattern": "beta.worddirectory.app", "custom_domain": true }
-  ]
+  ],
+  "images": {
+    "binding": "IMAGES"
+  }
 }

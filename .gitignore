@@ -67,4 +67,6 @@ scripts/
 /apps/mcp/dist
 /apps/mcp/node_modules
 
-apps/web/.open-next
+/apps/web/.open-next
+
+/apps/web/.dev.vars

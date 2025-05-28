@@ -14,6 +14,7 @@ import {
 } from "@/lib/db/queries";
 import { headers } from "next/headers";
 import { redirect } from "next/navigation";
+import { getWordWithLimits } from "@/lib/word-service";
 
 interface WordPageProps {
   params: Promise<{
@@ -64,86 +65,86 @@ export default async function WordPage({ params }: WordPageProps) {
   // Get headers once and reuse
   const headersList = await headers();
   const session = await auth.api.getSession({ headers: headersList });
+  const forwardedFor = headersList.get("x-forwarded-for");
+  const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
+  const userId = session?.user?.id || null;
 
   try {
-    const url = `${process.env.NEXT_PUBLIC_SITE_URL}/api/words/${paramWord}`;
+    // Use the word service directly
+    const result = await getWordWithLimits(
+      paramWord,
+      userId,
+      ip,
+      process.env.NEXT_PUBLIC_SITE_URL!
+    );
 
-    // Use rate-limited API for actual page content
-    const res = await fetch(url, {
-      cache: "no-store",
-      headers: Object.fromEntries(headersList.entries()),
-    });
+    // Handle the different result types
+    switch (result.type) {
+      case "success": {
+        // Get vote / save metadata
+        let votes = 0,
+          hasVoted = false,
+          isSaved = false;
+        try {
+          [votes, hasVoted, isSaved] = await Promise.all([
+            getWordVotes(result.data!.id),
+            session?.user?.id
+              ? hasUserVotedWord(session.user.id, result.data!.id)
+              : false,
+            session?.user?.id
+              ? hasUserSavedWord(session.user.id, result.data!.id)
+              : false,
+          ]);
+        } catch (e) {
+          console.error("Failed to fetch word metadata:", e);
+        }
 
-    // Redirects
-    if (res.url.includes("/words/not-found")) {
-      return redirect(res.url);
-    }
-    if (res.url.includes("/word-limit-reached")) {
-      return redirect(res.url);
-    }
+        return (
+          <div className="min-h-screen relative">
+            <div className="grid grid-cols-1 md:grid-cols-[1fr,auto]">
+              {/* Word content */}
+              <div className="py-14 md:py-20 px-8 lg:pl-14 lg:pr-12">
+                <div className="max-w-3xl mx-auto">
+                  <WordHeader
+                    word={result.data!.word}
+                    votes={votes}
+                    hasVoted={hasVoted}
+                    isSaved={isSaved}
+                    definitions={result.data!.details.definitions.map(
+                      (d) => d.text
+                    )}
+                  />
 
-    if (!res.ok) {
-      throw new Error(`Failed to fetch word: ${res.status} ${res.statusText}`);
-    }
+                  {result.data!.details.definitions.length > 0 && (
+                    <Separator className="mb-8" />
+                  )}
 
-    let wordResult: WordResponse;
-    try {
-      const text = await res.text();
-      wordResult = JSON.parse(text);
-    } catch (e) {
-      console.error("[WordPage] Failed to parse word response:", e);
-      throw new Error("Invalid response format from API");
-    }
-
-    if (!wordResult || !wordResult.id) {
-      console.error("Invalid word result:", wordResult);
-      throw new Error("Invalid word data received");
-    }
-
-    // Get vote / save metadata
-    let votes = 0,
-      hasVoted = false,
-      isSaved = false;
-    try {
-      [votes, hasVoted, isSaved] = await Promise.all([
-        getWordVotes(wordResult.id),
-        session?.user?.id
-          ? hasUserVotedWord(session.user.id, wordResult.id)
-          : false,
-        session?.user?.id
-          ? hasUserSavedWord(session.user.id, wordResult.id)
-          : false,
-      ]);
-    } catch (e) {
-      console.error("Failed to fetch word metadata:", e);
-    }
-
-    return (
-      <div className="min-h-screen relative">
-        <div className="grid grid-cols-1 md:grid-cols-[1fr,auto]">
-          {/* Word content */}
-          <div className="py-14 md:py-20 px-8 lg:pl-14 lg:pr-12">
-            <div className="max-w-3xl mx-auto">
-              <WordHeader
-                word={capitalize(wordResult.word)}
-                votes={votes}
-                hasVoted={hasVoted}
-                isSaved={isSaved}
-                definitions={wordResult.details.definitions.map((d) => d.text)}
-              />
-
-              {wordResult.details.definitions.length > 0 && (
-                <Separator className="mb-8" />
-              )}
-
-              <WordContent details={wordResult.details} />
+                  <WordContent details={result.data!.details} />
+                </div>
+              </div>
+              {/* Images on the right */}
+              <WordImages word={result.data!.word} />
             </div>
           </div>
-          {/* Images on the right */}
-          <WordImages word={wordResult.word} />
-        </div>
-      </div>
-    );
+        );
+      }
+
+      case "limit_reached":
+      case "not_found":
+        if (result.redirect) {
+          // For limit_reached, we need to include the usage data
+          if (result.type === "limit_reached" && result.usage) {
+            const url = new URL(result.redirect.url);
+            url.searchParams.set("usage", JSON.stringify(result.usage));
+            return redirect(url.toString());
+          }
+          return redirect(result.redirect.url);
+        }
+        throw new Error("No redirect URL provided");
+
+      default:
+        throw new Error("Unexpected result type");
+    }
   } catch (error: any) {
     if (
       typeof error?.digest === "string" &&

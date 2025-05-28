@@ -114,15 +114,16 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
   const handleGoogleSignIn = async () => {
     setIsLoading(true);
     try {
-      // Get the base URL
-      const baseUrl = process.env.NEXT_PUBLIC_SITE_URL;
+      if (!process.env.NEXT_PUBLIC_SITE_URL) {
+        throw new Error("Site URL not available");
+      }
 
       const { error } = await authClient.signIn.social({
         provider: "google",
         callbackURL: shouldSubscribe
-          ? `${baseUrl}/subscribe`
+          ? `${process.env.NEXT_PUBLIC_SITE_URL}/subscribe`
           : nextUrl
-            ? `${baseUrl}${nextUrl}`
+            ? `${process.env.NEXT_PUBLIC_SITE_URL}${nextUrl}`
             : undefined,
       });
       if (error) throw error;
@@ -351,6 +352,7 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
 }
 
 export function AuthLayout(props: AuthLayoutProps) {
+  console.log("env NEXT_PUBLIC_SITE_URL", process.env.NEXT_PUBLIC_SITE_URL);
   return (
     <Suspense
       fallback={

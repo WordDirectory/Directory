@@ -1,0 +1,6 @@
+---
+description: Running commands with the tool
+globs: 
+alwaysApply: false
+---
+Don't. Ask the user to run the commands instead.

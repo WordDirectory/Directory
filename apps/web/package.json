@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "NODE_ENV=production next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
@@ -12,7 +12,9 @@
     "db:push:prod": "cross-env NODE_ENV=production drizzle-kit push",
     "migrate:words": "npx tsx scripts/migrate-words.ts",
     "test-db": "npx tsx scripts/test-db.ts",
-    "count": "npx tsx scripts/count-words.ts"
+    "count": "npx tsx scripts/count-words.ts",
+    "build:worker": "npx @opennextjs/cloudflare build",
+    "deploy:prod": "bun --env-file=.env.production run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.14",
@@ -20,6 +22,7 @@
     "@ai-sdk/react": "^1.2.9",
     "@better-auth/stripe": "^1.2.7",
     "@hookform/resolvers": "^3.9.1",
+    "@opennextjs/cloudflare": "^1.0.4",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-alert-dialog": "^1.1.2",
     "@radix-ui/react-aspect-ratio": "^1.1.0",
@@ -55,6 +58,7 @@
     "@vercel/analytics": "^1.4.1",
     "ai": "^4.3.10",
     "better-auth": "^1.2.7",
+    "canvas": "^3.1.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
@@ -70,7 +74,7 @@
     "input-otp": "^1.4.1",
     "lucide-react": "^0.468.0",
     "motion": "^12.9.2",
-    "next": "^15.2.0",
+    "next": "^15.3.2",
     "next-themes": "^0.4.4",
     "pg": "^8.15.6",
     "react": "^18.2.0",
@@ -83,6 +87,8 @@
     "react-resizable-panels": "^2.1.7",
     "recharts": "^2.14.1",
     "resend": "^4.5.0",
+    "satori": "^0.13.1",
+    "sharp": "^0.34.2",
     "sonner": "^1.7.1",
     "stripe": "^17.7.0",
     "swr": "^2.3.3",

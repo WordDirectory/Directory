@@ -1,10 +1,7 @@
 import { auth } from "@/lib/auth";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import { db } from "@/lib/db";
 import { getActiveSubscription } from "@/lib/db/queries";
-import { subscriptions } from "@/lib/db/schema";
-import { eq } from "drizzle-orm";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 

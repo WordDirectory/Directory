@@ -1,0 +1,173 @@
+{
+  "success": true,
+  "results": {
+    "user_credit_status": {
+      "success": true,
+      "data": {
+        "normalCredits": 17,
+        "persistentCredits": 0,
+        "grantedFreeToday": null
+      }
+    },
+    "user_settings": {
+      "success": true,
+      "data": {
+        "homepageElements": {
+          "greeting": true,
+          "modeSelector": true,
+          "suggestions": true,
+          "widgets": true
+        },
+        "allowLocationalSignals": true,
+        "allowSearchDataCollection": false,
+        "customisation": {
+          "enabled": true,
+          "nickname": "",
+          "lifeRole": "",
+          "ai_traits_prompt": "Be concise and sound anything BUT robotic",
+          "extra_instructions": ""
+        },
+        "hasPickedPreferredModels": true,
+        "preferredModels": [],
+        "controlLevel": "advanced",
+        "newChatDefaultModel": "last_used",
+        "mcp": {
+          "enabled": true,
+          "servers": {
+            "exa": {
+              "type": "stdio",
+              "enabled": true,
+              "command": "bunx",
+              "args": [
+                "-y",
+                "@smithery/cli@latest",
+                "run",
+                "exa",
+                "--key",
+                "d50e44b5-500b-409a-8708-c7d1cec75cf4"
+              ],
+              "env": {
+
+              }
+            }
+          }
+        }
+      }
+    },
+    "list_active_subscriptions": {
+      "success": true,
+      "data": []
+    },
+    "list_sessions": {
+      "success": true,
+      "data": [
+        {
+          "expiresAt": "2025-06-04T12:11:28.000Z",
+          "token": "uy9iJA04FDvV7JAFbVlmhx7PJGeSDygI",
+          "createdAt": "2025-05-28T12:11:28.000Z",
+          "updatedAt": "2025-05-28T12:11:28.000Z",
+          "ipAddress": "",
+          "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36",
+          "userId": "Chm6UbahMsUOYPY1GYCsEwhETbQbALYO",
+          "impersonatedBy": null,
+          "id": "P6bHqsrDa3OPvlwPAtxakicm973Jlelx"
+        }
+      ]
+    },
+    "list_transactions": {
+      "success": true,
+      "data": [
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748435610,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748435162,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748435138,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748435108,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748434960,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748434901,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748434800,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "usage",
+          "amount": -1,
+          "balance_type": "normal",
+          "ts": 1748434326,
+          "data": {
+            "modelId": "gemini-2.5-flash-preview-04-17"
+          }
+        },
+        {
+          "type": "free_reset",
+          "amount": 25,
+          "balance_type": "normal",
+          "ts": 1748434264
+        },
+        {
+          "type": "free_reset",
+          "amount": 25,
+          "balance_type": "normal",
+          "ts": 1748295502
+        },
+        {
+          "type": "free_reset",
+          "amount": 25,
+          "balance_type": "normal",
+          "ts": 1748048704
+        }
+      ]
+    }
+  }
+}

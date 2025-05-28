@@ -11,17 +11,21 @@ export function Header() {
   return (
     <header
       className={cn(
-        "w-full px-4 border-b bg-background flex h-14 items-center justify-between sticky top-0 z-50",
+        "w-full px-4 border-b bg-background flex h-14 items-center justify-between sticky top-0 z-50"
       )}
     >
       <div className="mr-4 flex">
         <Link href="/" className="flex items-center space-x-3">
-          <Image
-            src="/logo.png"
-            alt="WordDirectory Logo"
-            width={32}
-            height={32}
-          />
+          <div className="relative w-8 h-8">
+            <Image
+              src="/logo.png"
+              alt="WordDirectory Logo"
+              fill
+              sizes="32px"
+              priority
+              className="object-contain"
+            />
+          </div>
           <h2 className="pr-12 text-lg font-bold sm:inline-block hidden md:block">
             WordDirectory
           </h2>

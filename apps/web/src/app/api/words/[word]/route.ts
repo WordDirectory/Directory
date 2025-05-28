@@ -11,6 +11,7 @@ import {
 } from "@/lib/word-limits";
 import { auth } from "@/lib/auth";
 import lemmatizer from "@/lib/lemmatizer";
+import { getWordWithLimits } from "@/lib/word-service";
 
 export async function HEAD(
   request: Request,
@@ -60,126 +61,53 @@ export async function GET(
     const session = await auth.api.getSession(request);
     const userId = session?.user?.id || null;
 
-    console.log("[Word API] Request details:", {
-      ip,
-      userId,
-      session: !!session,
-      headers: Object.fromEntries(headersList.entries()),
-    });
-
-    // Apply rate limiting
-    await rateLimit(ip);
-
     const { searchParams } = new URL(request.url);
     const fallback = searchParams.get("fallback");
     const next = searchParams.get("next");
 
-    // Decode the URL-encoded word parameter
+    // Get the word and process it with all limits and tracking
     const { word } = await params;
-    const decodedWord = decodeURIComponent(word).trim();
-    const capitalizedWord =
-      decodedWord.charAt(0).toUpperCase() + decodedWord.slice(1).toLowerCase();
-
-    console.log("[Word API] Looking up word:", {
-      word: capitalizedWord,
+    const result = await getWordWithLimits(
+      word,
       userId,
       ip,
-    });
+      new URL(request.url).origin
+    );
 
-    // Get only the word content without social data
-    let result = await getWord(capitalizedWord);
-
-    // If word doesn't exist, try lemmatization
-    if (!result) {
-      console.log("[Word API] Word not found, trying lemmatization");
-      
-      // Try verb form first
-      const verbLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'verb');
-      if (verbLemmas.length > 0) {
-        const baseWord = verbLemmas[0];
-        const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
-        console.log("[Word API] Found verb lemma:", capitalizedBase);
-        result = await getWord(capitalizedBase);
-      }
-      
-      // If no result, try noun form
-      if (!result) {
-        const nounLemmas = lemmatizer.only_lemmas(decodedWord.toLowerCase(), 'noun');
-        if (nounLemmas.length > 0) {
-          const baseWord = nounLemmas[0];
-          const capitalizedBase = baseWord.charAt(0).toUpperCase() + baseWord.slice(1);
-          console.log("[Word API] Found noun lemma:", capitalizedBase);
-          result = await getWord(capitalizedBase);
-        }
-      }
-    }
-
-    // If word exists (either directly or through lemmatization), track the lookup and return the content
-    if (result) {
-      try {
-        console.log("[Word API] Word found, checking if previously viewed:", {
-          wordId: result.id,
-          userId,
-          ip,
-        });
-
-        // First check if user has already viewed this word
-        const hasViewed = await hasUserViewedWord(userId, ip, result.id);
-        
-        // Only check limits and increment count if this is a new view
-        if (!hasViewed) {
-          console.log("[Word API] New view, checking limits");
-          // Check lookup limit first
-          await checkWordLookupLimit(userId, ip);
-
-          console.log("[Word API] Limits OK, incrementing count");
-          await incrementWordLookupCount(userId, ip);
-          console.log("[Word API] Count incremented");
-        } else {
-          console.log("[Word API] Word previously viewed, skipping limits");
-        }
-
-        // Always track the view attempt (this is idempotent)
-        console.log("[Word API] Tracking view");
-        await trackWordView(request, result.id);
-
-        // If we have a next URL, redirect there
+    // Handle the different result types
+    switch (result.type) {
+      case "success":
+        // If we have a next URL and the word was found, redirect there
         if (next) {
           return NextResponse.redirect(next);
         }
-
         // Otherwise return the word data
-        return NextResponse.json({
-          id: result.id,
-          word: result.word,
-          details: result.details,
-        });
-      } catch (error) {
-        console.log("[Word API] Error in lookup:", error);
-        if ((error as WordLookupError)?.code === "LOOKUP_LIMIT_REACHED") {
-          console.log("[Word API] Hit lookup limit, preparing redirect");
-          const limitUrl = new URL("/word-limit-reached", request.url);
-          limitUrl.searchParams.set("word", capitalizedWord);
-          limitUrl.searchParams.set(
-            "usage",
-            JSON.stringify((error as WordLookupError).usage)
-          );
-          console.log("[Word API] Redirecting to:", limitUrl.toString());
-          return NextResponse.redirect(limitUrl);
+        return NextResponse.json(result.data);
+
+      case "limit_reached":
+      case "not_found":
+        // For these cases, use fallback if provided, otherwise use the service's redirect
+        const redirectUrl = fallback || result.redirect?.url;
+        if (!redirectUrl) {
+          throw new Error("No redirect URL available");
         }
-        throw error;
-      }
-    }
 
-    // If word doesn't exist and we have a fallback URL, redirect there
-    if (fallback) {
-      return NextResponse.redirect(fallback);
-    }
+        // For limit_reached, we need to include the usage data
+        if (result.type === "limit_reached" && result.usage) {
+          const url = new URL(redirectUrl);
+          url.searchParams.set("usage", JSON.stringify(result.usage));
+          return NextResponse.redirect(url.toString(), {
+            status: result.redirect?.status,
+          });
+        }
 
-    // If no fallback provided, redirect to the not-found page with proper status
-    const notFoundUrl = new URL("/words/not-found", request.url);
-    notFoundUrl.searchParams.set("word", capitalizedWord);
-    return NextResponse.redirect(notFoundUrl, { status: 307 });
+        return NextResponse.redirect(redirectUrl, {
+          status: result.redirect?.status,
+        });
+
+      default:
+        throw new Error("Unexpected result type");
+    }
   } catch (error) {
     console.error("[Word API] Unhandled error:", error);
     throw error;

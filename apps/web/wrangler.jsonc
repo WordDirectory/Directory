@@ -1,0 +1,29 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "main": ".open-next/worker.js",
+  "name": "word-directory",
+  "compatibility_date": "2024-12-30",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      "service": "word-directory"
+    }
+  ],
+  "images": {
+    "binding": "IMAGES"
+  },
+  "rules": [
+    {
+      "type": "ESModule",
+      "globs": ["**/@vercel/og/**/*.wasm", "**/@vercel/og/**/*.ttf.bin"],
+      "fallthrough": true
+    }
+  ]
+}

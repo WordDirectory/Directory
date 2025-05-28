@@ -244,7 +244,6 @@ export const auth = betterAuth({
   appName: "WordDirectory",
   trustedOrigins: [
     "https://worddirectory.app",
-    "https://beta.worddirectory.app",
     "http://localhost:3000",
   ],
 });

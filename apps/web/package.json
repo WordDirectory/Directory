@@ -14,7 +14,7 @@
     "test-db": "npx tsx scripts/test-db.ts",
     "count": "npx tsx scripts/count-words.ts",
     "build:worker": "npx @opennextjs/cloudflare build",
-    "deploy:prod": "bun --env-file=.env.preview run build:worker && wrangler deploy"
+    "deploy:prod": "bun --env-file=.env.production run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.14",

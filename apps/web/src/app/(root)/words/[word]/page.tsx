@@ -132,6 +132,12 @@ export default async function WordPage({ params }: WordPageProps) {
       case "limit_reached":
       case "not_found":
         if (result.redirect) {
+          // For limit_reached, we need to include the usage data
+          if (result.type === "limit_reached" && result.usage) {
+            const url = new URL(result.redirect.url);
+            url.searchParams.set("usage", JSON.stringify(result.usage));
+            return redirect(url.toString());
+          }
           return redirect(result.redirect.url);
         }
         throw new Error("No redirect URL provided");

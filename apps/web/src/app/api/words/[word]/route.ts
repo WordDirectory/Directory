@@ -88,6 +88,19 @@ export async function GET(
       case "not_found":
         // For these cases, use fallback if provided, otherwise use the service's redirect
         const redirectUrl = fallback || result.redirect?.url;
+        if (!redirectUrl) {
+          throw new Error("No redirect URL available");
+        }
+
+        // For limit_reached, we need to include the usage data
+        if (result.type === "limit_reached" && result.usage) {
+          const url = new URL(redirectUrl);
+          url.searchParams.set("usage", JSON.stringify(result.usage));
+          return NextResponse.redirect(url.toString(), {
+            status: result.redirect?.status,
+          });
+        }
+
         return NextResponse.redirect(redirectUrl, {
           status: result.redirect?.status,
         });

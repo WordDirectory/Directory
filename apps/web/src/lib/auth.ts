@@ -242,10 +242,7 @@ export const auth = betterAuth({
     }),
   ],
   appName: "WordDirectory",
-  trustedOrigins: [
-    "https://worddirectory.app",
-    "http://localhost:3000",
-  ],
+  trustedOrigins: ["https://worddirectory.app", "http://localhost:3000"],
 });
 
 export type Auth = typeof auth;

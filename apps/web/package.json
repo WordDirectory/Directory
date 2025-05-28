@@ -13,8 +13,8 @@
     "migrate:words": "npx tsx scripts/migrate-words.ts",
     "test-db": "npx tsx scripts/test-db.ts",
     "count": "npx tsx scripts/count-words.ts",
-    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "npx wrangler deploy"
+    "build:worker": "npx @opennextjs/cloudflare build",
+    "deploy:worker": "npm run build:worker && wrangler deploy"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.14",

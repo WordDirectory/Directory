@@ -354,6 +354,8 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
 }
 
 export function AuthLayout(props: AuthLayoutProps) {
+  console.log("env", process.env);
+  console.log("env NEXT_PUBLIC_SITE_URL", process.env.NEXT_PUBLIC_SITE_URL);
   return (
     <Suspense
       fallback={

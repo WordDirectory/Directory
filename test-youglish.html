@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YouGlish API Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .controls {
+            margin-bottom: 20px;
+        }
+        
+        button {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+        }
+        
+        #status {
+            margin: 20px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            min-height: 100px;
+        }
+        
+        .log-entry {
+            margin: 5px 0;
+            font-family: monospace;
+            font-size: 14px;
+        }
+        
+        .error { color: red; }
+        .success { color: green; }
+        .info { color: blue; }
+    </style>
+</head>
+<body>
+    <h1>YouGlish API Test</h1>
+    
+    <div class="controls">
+        <input type="text" id="wordInput" placeholder="Enter a word" value="breath">
+        <button onclick="testBasicWidget()">Test Basic Widget</button>
+        <button onclick="testMinimalWidget()">Test Minimal Widget</button>
+        <button onclick="testAutoplayWidget()">Test Autoplay Widget</button>
+        <button onclick="testInvisibleWidget()">Test Invisible Widget</button>
+        <button onclick="clearWidget()">Clear Widget</button>
+    </div>
+    
+    <div id="status">
+        <h3>Status Log:</h3>
+        <div id="logs"></div>
+    </div>
+    
+    <!-- Widget will appear here -->
+    <div id="widget-container" style="margin-top: 20px;"></div>
+
+    <script>
+        let widget = null;
+        let widgetCount = 0;
+        
+        function log(message, type = 'info') {
+            const logsDiv = document.getElementById('logs');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            entry.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            logsDiv.appendChild(entry);
+            logsDiv.scrollTop = logsDiv.scrollHeight;
+        }
+
+        // Load YouGlish API
+        log('Loading YouGlish API script...');
+        var tag = document.createElement('script');
+        tag.src = "https://youglish.com/public/emb/widget.js";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // This function is called when YouGlish API is ready
+        function onYouglishAPIReady() {
+            log('YouGlish API Ready!', 'success');
+            log('window.YG available: ' + (typeof window.YG !== 'undefined'), 'info');
+        }
+
+        function clearWidget() {
+            const container = document.getElementById('widget-container');
+            container.innerHTML = '';
+            widget = null;
+            log('Widget cleared', 'info');
+        }
+
+        function testBasicWidget() {
+            clearWidget();
+            const word = document.getElementById('wordInput').value || 'breath';
+            const widgetId = `widget-${++widgetCount}`;
+            
+            log(`Creating basic widget for word: "${word}"`, 'info');
+            
+            const container = document.getElementById('widget-container');
+            const widgetDiv = document.createElement('div');
+            widgetDiv.id = widgetId;
+            container.appendChild(widgetDiv);
+            
+            try {
+                widget = new YG.Widget(widgetId, {
+                    width: 640,
+                    height: 360,
+                    components: 255, // All components
+                    events: {
+                        'onFetchDone': function(event) {
+                            log(`Fetch done! Total results: ${event.totalResult}`, 'success');
+                        },
+                        'onError': function(event) {
+                            log(`Error occurred: ${event.code}`, 'error');
+                        },
+                        'onPlayerReady': function() {
+                            log('Player ready', 'info');
+                        },
+                        'onStateChange': function(event) {
+                            log(`State changed: ${event.state}`, 'info');
+                        }
+                    }
+                });
+                
+                log('Widget created, fetching...', 'info');
+                widget.fetch(word, "english");
+                
+            } catch (error) {
+                log(`Error creating widget: ${error.message}`, 'error');
+            }
+        }
+
+        function testMinimalWidget() {
+            clearWidget();
+            const word = document.getElementById('wordInput').value || 'breath';
+            const widgetId = `widget-${++widgetCount}`;
+            
+            log(`Creating minimal widget for word: "${word}"`, 'info');
+            
+            const container = document.getElementById('widget-container');
+            const widgetDiv = document.createElement('div');
+            widgetDiv.id = widgetId;
+            container.appendChild(widgetDiv);
+            
+            try {
+                widget = new YG.Widget(widgetId, {
+                    width: 640,
+                    height: 360,
+                    components: 0, // No components, just video
+                    events: {
+                        'onFetchDone': function(event) {
+                            log(`Fetch done! Total results: ${event.totalResult}`, 'success');
+                        },
+                        'onError': function(event) {
+                            log(`Error occurred: ${event.code}`, 'error');
+                        }
+                    }
+                });
+                
+                log('Minimal widget created, fetching...', 'info');
+                widget.fetch(word, "english");
+                
+            } catch (error) {
+                log(`Error creating widget: ${error.message}`, 'error');
+            }
+        }
+
+        function testAutoplayWidget() {
+            clearWidget();
+            const word = document.getElementById('wordInput').value || 'breath';
+            const widgetId = `widget-${++widgetCount}`;
+            
+            log(`Creating autoplay widget for word: "${word}"`, 'info');
+            
+            const container = document.getElementById('widget-container');
+            const widgetDiv = document.createElement('div');
+            widgetDiv.id = widgetId;
+            container.appendChild(widgetDiv);
+            
+            try {
+                widget = new YG.Widget(widgetId, {
+                    width: 640,
+                    height: 360,
+                    components: 8, // Just caption
+                    autoStart: 1, // Autoplay
+                    events: {
+                        'onFetchDone': function(event) {
+                            log(`Fetch done! Total results: ${event.totalResult}`, 'success');
+                            if (event.totalResult > 0) {
+                                log('Autoplay should start soon...', 'info');
+                            }
+                        },
+                        'onError': function(event) {
+                            log(`Error occurred: ${event.code}`, 'error');
+                        },
+                        'onCaptionConsumed': function() {
+                            log('Caption consumed - moving to next', 'info');
+                            if (widget) {
+                                widget.next();
+                            }
+                        }
+                    }
+                });
+                
+                log('Autoplay widget created, fetching...', 'info');
+                widget.fetch(word, "english");
+                
+            } catch (error) {
+                log(`Error creating widget: ${error.message}`, 'error');
+            }
+        }
+
+        function testInvisibleWidget() {
+            clearWidget();
+            const word = document.getElementById('wordInput').value || 'breath';
+            const widgetId = `widget-${++widgetCount}`;
+            
+            log(`Creating INVISIBLE widget for word: "${word}"`, 'info');
+            log('Testing different hiding methods...', 'info');
+            
+            const container = document.getElementById('widget-container');
+            
+            // Create a wrapper div to contain everything
+            const wrapperDiv = document.createElement('div');
+            wrapperDiv.style.position = 'fixed';
+            wrapperDiv.style.left = '-9999px';
+            wrapperDiv.style.top = '-9999px';
+            wrapperDiv.style.overflow = 'hidden';
+            wrapperDiv.style.width = '640px';
+            wrapperDiv.style.height = '360px';
+            
+            const widgetDiv = document.createElement('div');
+            widgetDiv.id = widgetId;
+            
+            wrapperDiv.appendChild(widgetDiv);
+            container.appendChild(wrapperDiv);
+            
+            // Log what's in the DOM before widget creation
+            log('DOM before widget: ' + container.children.length + ' children', 'info');
+            
+            try {
+                widget = new YG.Widget(widgetId, {
+                    width: 640,
+                    height: 360,
+                    components: 0, // No components
+                    autoStart: 1, // Autoplay
+                    events: {
+                        'onFetchDone': function(event) {
+                            log(`[INVISIBLE] Fetch done! Total results: ${event.totalResult}`, 'success');
+                            
+                            // Check DOM after widget loads
+                            setTimeout(() => {
+                                log('DOM after widget: ' + document.body.children.length + ' body children', 'info');
+                                
+                                // Look for any YouGlish elements outside our container
+                                const allElements = document.querySelectorAll('*');
+                                allElements.forEach(el => {
+                                    if (el.id && el.id.includes('youglish') && el.id !== widgetId) {
+                                        log(`Found YouGlish element: ${el.tagName} #${el.id} at position: ${el.style.position || 'static'}`, 'info');
+                                    }
+                                    if (el.className && typeof el.className === 'string' && el.className.includes('youglish')) {
+                                        log(`Found YouGlish element: ${el.tagName} .${el.className}`, 'info');
+                                    }
+                                });
+                                
+                                // Check if widget created any iframes
+                                const iframes = document.querySelectorAll('iframe');
+                                iframes.forEach((iframe, i) => {
+                                    log(`Found iframe ${i}: src=${iframe.src || 'no-src'}, parent=${iframe.parentElement?.id || 'unknown'}`, 'info');
+                                });
+                            }, 1000);
+                        },
+                        'onError': function(event) {
+                            log(`[INVISIBLE] Error occurred: ${event.code}`, 'error');
+                        },
+                        'onPlayerReady': function() {
+                            log('[INVISIBLE] Player ready', 'info');
+                        },
+                        'onStateChange': function(event) {
+                            log(`[INVISIBLE] State changed: ${event.state}`, 'info');
+                        }
+                    }
+                });
+                
+                log('Widget instance created, fetching...', 'info');
+                widget.fetch(word, "english");
+                
+                // Add buttons to test different hiding methods
+                const buttonsDiv = document.createElement('div');
+                buttonsDiv.style.marginTop = '10px';
+                
+                const hideMethod1 = document.createElement('button');
+                hideMethod1.textContent = 'Hide Method 1: Display None';
+                hideMethod1.onclick = function() {
+                    wrapperDiv.style.display = 'none';
+                    // Also try to hide any YouGlish elements
+                    document.querySelectorAll('[id*="youglish"]').forEach(el => {
+                        if (el.id !== widgetId) el.style.display = 'none';
+                    });
+                    log('Applied display: none to wrapper and YouGlish elements', 'info');
+                };
+                
+                const hideMethod2 = document.createElement('button');
+                hideMethod2.textContent = 'Hide Method 2: Visibility Hidden';
+                hideMethod2.onclick = function() {
+                    wrapperDiv.style.visibility = 'hidden';
+                    document.querySelectorAll('[id*="youglish"]').forEach(el => {
+                        if (el.id !== widgetId) el.style.visibility = 'hidden';
+                    });
+                    log('Applied visibility: hidden', 'info');
+                };
+                
+                const hideMethod3 = document.createElement('button');
+                hideMethod3.textContent = 'Hide Method 3: Opacity 0';
+                hideMethod3.onclick = function() {
+                    wrapperDiv.style.opacity = '0';
+                    wrapperDiv.style.pointerEvents = 'none';
+                    document.querySelectorAll('[id*="youglish"]').forEach(el => {
+                        if (el.id !== widgetId) {
+                            el.style.opacity = '0';
+                            el.style.pointerEvents = 'none';
+                        }
+                    });
+                    log('Applied opacity: 0 and pointer-events: none', 'info');
+                };
+                
+                const showButton = document.createElement('button');
+                showButton.textContent = 'Show All Hidden Elements';
+                showButton.onclick = function() {
+                    wrapperDiv.style.position = 'static';
+                    wrapperDiv.style.left = 'auto';
+                    wrapperDiv.style.top = 'auto';
+                    wrapperDiv.style.display = 'block';
+                    wrapperDiv.style.visibility = 'visible';
+                    wrapperDiv.style.opacity = '1';
+                    wrapperDiv.style.pointerEvents = 'auto';
+                    
+                    document.querySelectorAll('[id*="youglish"]').forEach(el => {
+                        el.style.display = 'block';
+                        el.style.visibility = 'visible';
+                        el.style.opacity = '1';
+                        el.style.pointerEvents = 'auto';
+                    });
+                    log('Made all elements visible', 'info');
+                };
+                
+                buttonsDiv.appendChild(hideMethod1);
+                buttonsDiv.appendChild(hideMethod2);
+                buttonsDiv.appendChild(hideMethod3);
+                buttonsDiv.appendChild(showButton);
+                container.appendChild(buttonsDiv);
+                
+            } catch (error) {
+                log(`Error creating invisible widget: ${error.message}`, 'error');
+            }
+        }
+
+        // Add keyboard shortcut for quick testing
+        document.addEventListener('keypress', function(e) {
+            if (e.key === 'Enter' && document.activeElement.id === 'wordInput') {
+                testBasicWidget();
+            }
+        });
+    </script>
+</body>
+</html> 

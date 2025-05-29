@@ -25,10 +25,22 @@ import {
   ProfileFormValues,
 } from "@/lib/validation/auth-validation";
 import { Checkbox } from "@/components/ui/checkbox";
-import { SHOW_IMAGES_KEY } from "@/stores/images-store";
-
-const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
-const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  AI_INITIAL_MESSAGE_KEY,
+  DEFAULT_INITIAL_MESSAGE,
+  YOUGLISH_BEHAVIOR_KEY,
+  DEFAULT_YOUGLISH_BEHAVIOR,
+  YOUGLISH_DURATION_KEY,
+  DEFAULT_YOUGLISH_DURATION,
+  SHOW_IMAGES_KEY,
+} from "@/lib/constants/settings";
 
 export default function SettingsPage() {
   const { data: session, isPending } = useSession();
@@ -36,6 +48,16 @@ export default function SettingsPage() {
   const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
   const [showImages, setShowImages] = useState(false);
   const [isSavingImages, setIsSavingImages] = useState(false);
+  const [youglishBehavior, setYouglishBehavior] = useState(
+    DEFAULT_YOUGLISH_BEHAVIOR
+  );
+  const [isSavingYouglish, setIsSavingYouglish] = useState(false);
+  const [youglishDuration, setYouglishDuration] = useState(
+    DEFAULT_YOUGLISH_DURATION
+  );
+  const [youglishDurationInput, setYouglishDurationInput] = useState(
+    DEFAULT_YOUGLISH_DURATION.toString()
+  );
 
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
@@ -55,6 +77,20 @@ export default function SettingsPage() {
     const savedImagePref = localStorage.getItem(SHOW_IMAGES_KEY);
     if (savedImagePref) {
       setShowImages(savedImagePref === "true");
+    }
+
+    // Load Youglish behavior from localStorage
+    const savedYouglishBehavior = localStorage.getItem(YOUGLISH_BEHAVIOR_KEY);
+    if (savedYouglishBehavior) {
+      setYouglishBehavior(savedYouglishBehavior);
+    }
+
+    // Load Youglish duration from localStorage
+    const savedYouglishDuration = localStorage.getItem(YOUGLISH_DURATION_KEY);
+    if (savedYouglishDuration) {
+      const duration = parseFloat(savedYouglishDuration);
+      setYouglishDuration(duration);
+      setYouglishDurationInput(duration.toString());
     }
   }, []);
 
@@ -225,6 +261,102 @@ export default function SettingsPage() {
               disabled={isSavingImages}
             >
               {isSavingImages ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Saving...
+                </>
+              ) : (
+                "Save changes"
+              )}
+            </Button>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-2xl font-semibold">Youglish Behavior</h2>
+            <p className="text-sm text-muted-foreground">
+              Choose what happens when you click the Youglish button next to
+              word definitions. You can always access the other option using the
+              dropdown arrow.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2">
+              <Label htmlFor="youglish-behavior">Default Youglish Action</Label>
+              <Select
+                value={youglishBehavior}
+                onValueChange={setYouglishBehavior}
+              >
+                <SelectTrigger className="w-[300px]">
+                  <SelectValue placeholder="Select default behavior" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="play-sound">Play sound</SelectItem>
+                  <SelectItem value="go-to-youglish">Go to Youglish</SelectItem>
+                </SelectContent>
+              </Select>
+              <p className="text-xs text-muted-foreground">
+                {youglishBehavior === "play-sound"
+                  ? "Clicking Youglish will play the word pronunciation. Use the dropdown to visit Youglish.com."
+                  : "Clicking Youglish will open Youglish.com in a new tab. Use the dropdown to play the sound."}
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-2">
+              <Label htmlFor="youglish-duration">
+                Audio Duration (seconds)
+              </Label>
+              <Input
+                id="youglish-duration"
+                type="number"
+                min="0.5"
+                max="30"
+                step="0.1"
+                value={youglishDurationInput}
+                onChange={(e) => {
+                  setYouglishDurationInput(e.target.value);
+                }}
+                onBlur={(e) => {
+                  const value = parseFloat(e.target.value);
+                  if (!isNaN(value) && value >= 0.5 && value <= 30) {
+                    setYouglishDuration(value);
+                    setYouglishDurationInput(value.toString());
+                  } else {
+                    // Reset to previous valid value if invalid
+                    setYouglishDurationInput(youglishDuration.toString());
+                  }
+                }}
+                className="w-[300px]"
+                placeholder="5"
+              />
+              <p className="text-xs text-muted-foreground">
+                How long the Youglish audio should play before automatically
+                stopping (0.5 - 30 seconds)
+              </p>
+            </div>
+
+            <Button
+              className="w-fit"
+              onClick={async () => {
+                try {
+                  setIsSavingYouglish(true);
+                  localStorage.setItem(YOUGLISH_BEHAVIOR_KEY, youglishBehavior);
+                  localStorage.setItem(
+                    YOUGLISH_DURATION_KEY,
+                    youglishDuration.toString()
+                  );
+                  toast.success("Youglish preferences saved!");
+                } catch (error) {
+                  toast.error("Failed to save Youglish preferences");
+                } finally {
+                  setIsSavingYouglish(false);
+                }
+              }}
+              disabled={isSavingYouglish}
+            >
+              {isSavingYouglish ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   Saving...

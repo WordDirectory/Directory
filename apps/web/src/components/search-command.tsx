@@ -184,10 +184,7 @@ export function SearchCommand({ open, onOpenChange }: SearchCommandProps) {
               className="group p-1 hover:text-foreground text-muted-foreground/70 transition-colors"
               disabled={isLoading}
             >
-              <RotateCw
-                size={16}
-                className={isLoading ? "animate-spin" : ""}
-              />
+              <RotateCw size={16} className={isLoading ? "animate-spin" : ""} />
             </button>
           ) : null
         }

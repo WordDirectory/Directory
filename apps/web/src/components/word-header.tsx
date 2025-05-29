@@ -11,6 +11,9 @@ import {
   ThumbsDown,
   MessageSquareText,
   Loader2,
+  ChevronDown,
+  PlayCircle,
+  Square,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -41,6 +44,20 @@ import { useSession } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import type { APIError } from "@/types/api";
+import {
+  YOUGLISH_BEHAVIOR_KEY,
+  YOUGLISH_DURATION_KEY,
+  DEFAULT_YOUGLISH_DURATION,
+} from "@/lib/constants/settings";
+
+declare global {
+  interface Window {
+    YG?: {
+      Widget: new (elementId: string, options: any) => any;
+    };
+    onYouglishAPIReady?: () => void;
+  }
+}
 
 const ERROR_MESSAGES: {
   [K in APIError["code"]]?: { title: string; description: string };
@@ -97,6 +114,18 @@ export function WordHeader({
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [isPronouncing, setIsPronouncing] = useState(false);
+  const [isYouglishLoading, setIsYouglishLoading] = useState(false);
+  const [isYouglishPlaying, setIsYouglishPlaying] = useState(false);
+  const [youglishBehavior, setYouglishBehavior] = useState("play-sound");
+  const [youglishDuration, setYouglishDuration] = useState(
+    DEFAULT_YOUGLISH_DURATION
+  );
+  const youglishWidgetRef = useRef<any>(null);
+  const youglishTimeoutRef = useRef<NodeJS.Timeout | null>(null);
+  const [youglishAudioCache, setYouglishAudioCache] = useState<
+    Record<string, string>
+  >({});
+  const currentAudioRef = useRef<HTMLAudioElement | null>(null);
 
   // Load initial setup
   useEffect(() => {
@@ -109,6 +138,29 @@ export function WordHeader({
     img.crossOrigin = "anonymous";
     img.onload = () => {
       logoRef.current = img;
+    };
+
+    // Load Youglish behavior preference
+    const savedYouglishBehavior = localStorage.getItem(YOUGLISH_BEHAVIOR_KEY);
+    if (savedYouglishBehavior) {
+      setYouglishBehavior(savedYouglishBehavior);
+    }
+
+    // Load Youglish duration preference
+    const savedYouglishDuration = localStorage.getItem(YOUGLISH_DURATION_KEY);
+    if (savedYouglishDuration) {
+      setYouglishDuration(parseFloat(savedYouglishDuration));
+    }
+  }, []);
+
+  // Cleanup audio on unmount
+  useEffect(() => {
+    return () => {
+      if (currentAudioRef.current) {
+        currentAudioRef.current.pause();
+        currentAudioRef.current = null;
+      }
+      stopYouglishAudio();
     };
   }, []);
 
@@ -340,6 +392,228 @@ export function WordHeader({
     }
   };
 
+  const playCachedAudio = async (audioUrl: string): Promise<void> => {
+    return new Promise((resolve, reject) => {
+      console.log("Playing cached YouGlish audio:", audioUrl);
+
+      // Stop any currently playing audio
+      if (currentAudioRef.current) {
+        currentAudioRef.current.pause();
+        currentAudioRef.current = null;
+      }
+
+      const audio = new Audio(audioUrl);
+      currentAudioRef.current = audio;
+
+      audio.onloadeddata = () => {
+        setIsYouglishLoading(false);
+        setIsYouglishPlaying(true);
+      };
+
+      audio.onended = () => {
+        setIsYouglishPlaying(false);
+        currentAudioRef.current = null;
+        resolve();
+      };
+
+      audio.onerror = () => {
+        setIsYouglishLoading(false);
+        setIsYouglishPlaying(false);
+        currentAudioRef.current = null;
+        reject(new Error("Failed to play cached audio"));
+      };
+
+      audio.play().catch((error) => {
+        setIsYouglishLoading(false);
+        setIsYouglishPlaying(false);
+        currentAudioRef.current = null;
+        reject(error);
+      });
+    });
+  };
+
+  const playYouglishAudio = async (word: string): Promise<void> => {
+    // Check if we have cached audio for this word
+    const cachedAudioUrl = youglishAudioCache[word.toLowerCase()];
+    if (cachedAudioUrl) {
+      console.log("Using cached YouGlish audio for:", word);
+      try {
+        await playCachedAudio(cachedAudioUrl);
+        return;
+      } catch (error) {
+        // If cached audio fails, remove from cache and fall back to widget
+        console.warn("Cached audio failed, falling back to widget:", error);
+        setYouglishAudioCache((prev) => {
+          const newCache = { ...prev };
+          delete newCache[word.toLowerCase()];
+          return newCache;
+        });
+      }
+    }
+
+    console.log("Loading YouGlish widget for:", word);
+    // Fall back to widget method
+    return new Promise((resolve, reject) => {
+      // Create a unique ID for this widget instance
+      const widgetId = `youglish-widget-${Date.now()}`;
+
+      // Create hidden container
+      const container = document.createElement("div");
+      container.id = widgetId;
+      container.style.position = "absolute";
+      container.style.left = "-9999px";
+      container.style.top = "-9999px";
+      container.style.width = "640px";
+      container.style.height = "360px";
+      document.body.appendChild(container);
+
+      // Load YouGlish API if not already loaded
+      if (!window.YG) {
+        const script = document.createElement("script");
+        script.src = "https://youglish.com/public/emb/widget.js";
+        script.async = true;
+
+        window.onYouglishAPIReady = () => {
+          initializeWidget();
+        };
+
+        document.head.appendChild(script);
+      } else {
+        initializeWidget();
+      }
+
+      function initializeWidget() {
+        try {
+          if (!window.YG) {
+            throw new Error("YouGlish API not loaded");
+          }
+
+          const widget = new window.YG.Widget(widgetId, {
+            width: 640,
+            height: 360,
+            components: 1,
+            events: {
+              onFetchDone: (event: any) => {
+                if (event.totalResult === 0) {
+                  cleanup();
+                  reject(new Error("No YouGlish examples found"));
+                } else {
+                  // Store widget reference and start playing
+                  youglishWidgetRef.current = widget;
+                  setIsYouglishLoading(false);
+                  setIsYouglishPlaying(true);
+
+                  // Auto-play the first example
+                  setTimeout(() => {
+                    widget.play();
+
+                    // Try to extract and cache the audio URL after a short delay
+                    setTimeout(() => {
+                      try {
+                        const widgetElement = document.getElementById(widgetId);
+                        if (widgetElement) {
+                          const audioElements =
+                            widgetElement.querySelectorAll("audio");
+                          audioElements.forEach((audio) => {
+                            if (
+                              audio.src &&
+                              audio.src.includes("youglish.com")
+                            ) {
+                              // Cache the audio URL
+                              console.log(
+                                "Caching YouGlish audio URL for:",
+                                word,
+                                audio.src
+                              );
+                              setYouglishAudioCache((prev) => ({
+                                ...prev,
+                                [word.toLowerCase()]: audio.src,
+                              }));
+                            }
+                          });
+                        }
+                      } catch (error) {
+                        console.warn(
+                          "Failed to extract audio URL for caching:",
+                          error
+                        );
+                      }
+                    }, 1000);
+                  }, 500);
+
+                  // Auto-stop after configured duration
+                  youglishTimeoutRef.current = setTimeout(() => {
+                    stopYouglishAudio();
+                    resolve();
+                  }, youglishDuration * 1000);
+                }
+              },
+              onCaptionConsumed: () => {
+                // Audio finished naturally
+                stopYouglishAudio();
+                resolve();
+              },
+            },
+          });
+
+          widget.fetch(word, "english");
+        } catch (error) {
+          cleanup();
+          reject(error);
+        }
+      }
+
+      function cleanup() {
+        const element = document.getElementById(widgetId);
+        if (element) {
+          document.body.removeChild(element);
+        }
+        youglishWidgetRef.current = null;
+        setIsYouglishLoading(false);
+        setIsYouglishPlaying(false);
+        if (youglishTimeoutRef.current) {
+          clearTimeout(youglishTimeoutRef.current);
+          youglishTimeoutRef.current = null;
+        }
+      }
+    });
+  };
+
+  const stopYouglishAudio = () => {
+    // Stop cached audio if playing
+    if (currentAudioRef.current) {
+      currentAudioRef.current.pause();
+      currentAudioRef.current = null;
+    }
+
+    if (youglishWidgetRef.current) {
+      try {
+        youglishWidgetRef.current.pause();
+      } catch (error) {
+        console.error("Error stopping YouGlish audio:", error);
+      }
+    }
+
+    // Clean up timeout
+    if (youglishTimeoutRef.current) {
+      clearTimeout(youglishTimeoutRef.current);
+      youglishTimeoutRef.current = null;
+    }
+
+    // Reset states
+    setIsYouglishLoading(false);
+    setIsYouglishPlaying(false);
+    youglishWidgetRef.current = null;
+
+    // Clean up widget container
+    const widgets = document.querySelectorAll('[id^="youglish-widget-"]');
+    widgets.forEach((widget) => {
+      if (widget.parentNode) {
+        widget.parentNode.removeChild(widget);
+      }
+    });
+  };
+
   const handleCopyLink = async () => {
     const url = `https://worddirectory.app/words/${encodeURIComponent(word)}`;
     await navigator.clipboard.writeText(url);
@@ -448,6 +722,37 @@ export function WordHeader({
     }
   };
 
+  const handleYouglishClick = async () => {
+    if (youglishBehavior === "play-sound") {
+      // If currently playing, stop it
+      if (isYouglishPlaying) {
+        stopYouglishAudio();
+        return;
+      }
+
+      let loadingTimeout: NodeJS.Timeout;
+
+      // Only show loading state if operation takes more than 50ms
+      loadingTimeout = setTimeout(() => {
+        setIsYouglishLoading(true);
+      }, 50);
+
+      try {
+        await playYouglishAudio(word);
+      } catch {
+        /* already logged */
+      } finally {
+        clearTimeout(loadingTimeout);
+        setIsYouglishLoading(false);
+      }
+    } else {
+      window.open(
+        `https://youglish.com/pronounce/${encodeURIComponent(word)}/english`,
+        "_blank"
+      );
+    }
+  };
+
   // Build share definitions list (use first two for brevity)
   const shareDefinitions = definitions.slice(0, 2);
 
@@ -550,22 +855,59 @@ export function WordHeader({
                 )}
                 <span>Pronounce</span>
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-muted-foreground hover:text-primary text-sm h-auto w-auto p-0 !bg-transparent"
-                title="Watch examples on Youglish"
-                asChild
-              >
-                <a
-                  href={`https://youglish.com/pronounce/${encodeURIComponent(word)}/english`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="flex items-center gap-2">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-muted-foreground hover:text-primary text-sm h-auto w-auto p-0 !bg-transparent"
+                  title={
+                    isYouglishPlaying
+                      ? "Stop pronunciation"
+                      : youglishBehavior === "play-sound"
+                        ? "Play pronunciation"
+                        : "Watch examples on Youglish"
+                  }
+                  onClick={handleYouglishClick}
+                  disabled={isYouglishLoading}
                 >
-                  <Video className="w-4 h-4 mr-1" />
+                  {isYouglishLoading ? (
+                    <Loader2 className="w-4 h-4 mr-1 animate-spin" />
+                  ) : isYouglishPlaying ? (
+                    <Square className="w-4 h-4 mr-1" />
+                  ) : (
+                    <Video className="w-4 h-4 mr-1" />
+                  )}
                   <span>Youglish</span>
-                </a>
-              </Button>
+                </Button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button
+                      variant="ghost"
+                      className="text-muted-foreground hover:text-primary h-auto w-auto p-0 !bg-transparent"
+                      disabled={isYouglishLoading || isYouglishPlaying}
+                    >
+                      <ChevronDown className="w-4 h-4" />
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuItem onClick={handleYouglishClick}>
+                      <PlayCircle className="w-4 h-4 mr-0.5" />
+                      Play sound
+                    </DropdownMenuItem>
+                    <DropdownMenuItem
+                      onClick={() => {
+                        window.open(
+                          `https://youglish.com/pronounce/${encodeURIComponent(word)}/english`,
+                          "_blank"
+                        );
+                      }}
+                    >
+                      <LinkIcon className="w-4 h-4 mr-0.5" />
+                      Go to Youglish
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
             </div>
 
             <div className="hidden sm:flex items-center gap-3">

@@ -43,15 +43,11 @@ import { toast } from "sonner";
 import type { APIError } from "@/types/api";
 
 const ERROR_MESSAGES: {
-  [K in APIError["code"]]: { title: string; description: string };
+  [K in APIError["code"]]?: { title: string; description: string };
 } = {
   AUTH_REQUIRED: {
     title: "Authentication required",
     description: "Please sign in to submit feedback for this word",
-  },
-  SUBSCRIPTION_LIMIT_REACHED: {
-    title: "Subscription limit reached",
-    description: "Please upgrade your plan to continue",
   },
   RATE_LIMIT_EXCEEDED: {
     title: "Too many requests",
@@ -60,22 +56,6 @@ const ERROR_MESSAGES: {
   INTERNAL_SERVER_ERROR: {
     title: "Server error",
     description: "Something went wrong on our end. Please try again later",
-  },
-  ALREADY_VOTED: {
-    title: "Already voted",
-    description: "You've already voted for this word",
-  },
-  UNSPLASH_API_ERROR: {
-    title: "Image error",
-    description: "Failed to load image",
-  },
-  WORD_NOT_FOUND: {
-    title: "Word not found",
-    description: "This word no longer exists in our dictionary",
-  },
-  INVALID_WORD: {
-    title: "Invalid word",
-    description: "This word is not valid",
   },
   VALIDATION_ERROR: {
     title: "Invalid feedback",
@@ -397,7 +377,10 @@ export function WordHeader({
 
       if (!response.ok) {
         const error = data as APIError;
-        const errorMessage = ERROR_MESSAGES[error.code];
+        const errorMessage = ERROR_MESSAGES[error.code] || {
+          title: "Error",
+          description: error.message || "Something went wrong",
+        };
         toast.error(errorMessage.title, {
           description: errorMessage.description,
         });
@@ -438,7 +421,10 @@ export function WordHeader({
 
       if (!response.ok) {
         const error = data as APIError;
-        const errorMessage = ERROR_MESSAGES[error.code];
+        const errorMessage = ERROR_MESSAGES[error.code] || {
+          title: "Error",
+          description: error.message || "Something went wrong",
+        };
         toast.error(errorMessage.title, {
           description: errorMessage.description,
         });

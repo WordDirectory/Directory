@@ -60,7 +60,8 @@ export type AIError = APIErrorBase & {
     | "RATE_LIMIT_EXCEEDED"
     | "INTERNAL_SERVER_ERROR"
     | "ALREADY_VOTED"
-    | "UNSPLASH_API_ERROR";
+    | "UNSPLASH_API_ERROR"
+    | "AI_GENERATION_ERROR";
   usage?: AIUsageResponse;
 };
 
@@ -80,6 +81,11 @@ export type APIError =
   | ValidationError
   | {
       code: "FEEDBACK_ERROR";
+      message: string;
+      status: number;
+    }
+  | {
+      code: "WORD_ALREADY_EXISTS";
       message: string;
       status: number;
     };

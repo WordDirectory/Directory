@@ -32,10 +32,6 @@ export function Sidebar() {
       label: "Add words",
       href: "/admin",
     },
-    {
-      label: "Video maker",
-      href: "/admin/video-maker",
-    },
   ];
 
   // Don't render anything until we know mobile state

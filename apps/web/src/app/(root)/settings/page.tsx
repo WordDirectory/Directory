@@ -40,9 +40,15 @@ export default function SettingsPage() {
   const { data: session, isPending } = useSession();
   const [isSaving, setIsSaving] = useState(false);
   const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
+  const [savedInitialMessage, setSavedInitialMessage] = useState(
+    DEFAULT_INITIAL_MESSAGE
+  );
   const [showImages, setShowImages] = useState(false);
+  const [savedShowImages, setSavedShowImages] = useState(false);
   const [isSavingImages, setIsSavingImages] = useState(false);
   const [hearExamplesBehavior, setHearExamplesBehavior] =
+    useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
+  const [savedHearExamplesBehavior, setSavedHearExamplesBehavior] =
     useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
   const [isSavingHearExamples, setIsSavingHearExamples] = useState(false);
 
@@ -58,12 +64,14 @@ export default function SettingsPage() {
     const savedMessage = localStorage.getItem(AI_INITIAL_MESSAGE_KEY);
     if (savedMessage) {
       setInitialMessage(savedMessage);
+      setSavedInitialMessage(savedMessage);
     }
 
     // Load image preference from localStorage
     const savedImagePref = localStorage.getItem(SHOW_IMAGES_KEY);
     if (savedImagePref) {
       setShowImages(savedImagePref === "true");
+      setSavedShowImages(savedImagePref === "true");
     }
 
     // Load hear examples behavior from localStorage
@@ -79,16 +87,21 @@ export default function SettingsPage() {
       setHearExamplesBehavior(
         savedHearExamplesBehavior as HearExamplesBehavior
       );
+      setSavedHearExamplesBehavior(
+        savedHearExamplesBehavior as HearExamplesBehavior
+      );
     }
   }, []);
 
   const handleSaveMessage = () => {
     localStorage.setItem(AI_INITIAL_MESSAGE_KEY, initialMessage);
+    setSavedInitialMessage(initialMessage);
     toast.success("Initial message saved!");
   };
 
   const handleResetMessage = () => {
     setInitialMessage(DEFAULT_INITIAL_MESSAGE);
+    setSavedInitialMessage(DEFAULT_INITIAL_MESSAGE);
     localStorage.setItem(AI_INITIAL_MESSAGE_KEY, DEFAULT_INITIAL_MESSAGE);
     toast.success("Initial message reset to default!");
   };
@@ -152,7 +165,12 @@ export default function SettingsPage() {
                   </FormItem>
                 )}
               />
-              <Button type="submit" disabled={isSaving}>
+              <Button
+                type="submit"
+                disabled={
+                  isSaving || form.watch("name") === (session?.user?.name || "")
+                }
+              >
                 {isSaving ? (
                   <>
                     <Loader2 className="mr-2 h-4 w-4 animate-spin" />
@@ -192,7 +210,12 @@ export default function SettingsPage() {
           </div>
 
           <div className="flex gap-3">
-            <Button onClick={handleSaveMessage}>Save Message</Button>
+            <Button
+              onClick={handleSaveMessage}
+              disabled={initialMessage === savedInitialMessage}
+            >
+              Save Message
+            </Button>
             <Button variant="outline" onClick={handleResetMessage}>
               Reset to Default
             </Button>
@@ -260,6 +283,7 @@ export default function SettingsPage() {
                     HEAR_EXAMPLES_BEHAVIOR_KEY,
                     hearExamplesBehavior
                   );
+                  setSavedHearExamplesBehavior(hearExamplesBehavior);
                   toast.success("Hear examples preference saved!");
                 } catch (error) {
                   toast.error("Failed to save hear examples preference");
@@ -267,7 +291,10 @@ export default function SettingsPage() {
                   setIsSavingHearExamples(false);
                 }
               }}
-              disabled={isSavingHearExamples}
+              disabled={
+                isSavingHearExamples ||
+                hearExamplesBehavior === savedHearExamplesBehavior
+              }
             >
               {isSavingHearExamples ? (
                 <>
@@ -321,6 +348,7 @@ export default function SettingsPage() {
                 try {
                   setIsSavingImages(true);
                   localStorage.setItem(SHOW_IMAGES_KEY, showImages.toString());
+                  setSavedShowImages(showImages);
                   toast.success("Image preferences saved!");
                 } catch (error) {
                   toast.error("Failed to save image preferences");
@@ -328,7 +356,7 @@ export default function SettingsPage() {
                   setIsSavingImages(false);
                 }
               }}
-              disabled={isSavingImages}
+              disabled={isSavingImages || showImages === savedShowImages}
             >
               {isSavingImages ? (
                 <>

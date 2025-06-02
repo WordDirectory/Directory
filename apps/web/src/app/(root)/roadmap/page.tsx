@@ -157,8 +157,8 @@ const roadmapItems: {
     description:
       "See how words are used in real YouTube videos. Great for hearing how native speakers actually say things.",
     status: {
-      text: "In beta",
-      type: "info",
+      text: "Completed",
+      type: "complete",
     },
   },
 ];

@@ -9,6 +9,7 @@ import {
   index,
   uniqueIndex,
   integer,
+  real,
 } from "drizzle-orm/pg-core";
 
 export const users = pgTable("users", {
@@ -74,6 +75,24 @@ export const words = pgTable(
   (table) => [
     uniqueIndex("words_word_idx").on(table.word),
     index("idx_words_idx").on(table.idx),
+  ]
+).enableRLS();
+
+export const wordPronunciations = pgTable(
+  "word_pronunciations",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    word: text("word").notNull(),
+    videoId: text("video_id").notNull(),
+    timestampStart: real("timestamp_start").notNull(),
+    timestampEnd: real("timestamp_end").notNull(),
+    confidenceScore: real("confidence_score"),
+    createdAt: timestamp("created_at").defaultNow(),
+  },
+  (table) => [
+    index("word_pronunciations_word_idx").on(table.word),
+    index("word_pronunciations_video_id_idx").on(table.videoId),
+    index("word_pronunciations_confidence_idx").on(table.confidenceScore),
   ]
 ).enableRLS();
 

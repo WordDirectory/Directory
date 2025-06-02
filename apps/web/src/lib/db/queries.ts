@@ -9,6 +9,7 @@ import {
   wordHistory,
   wordFeedback,
   wordReports,
+  wordPronunciations,
 } from "@/lib/db/schema";
 import { desc, eq, ilike, sql, and, isNull, or } from "drizzle-orm";
 import lemmatizer from "@/lib/lemmatizer";
@@ -480,4 +481,22 @@ export async function deleteWordReport(userId: string, wordId: string) {
     .where(
       sql`${wordReports.userId} = ${userId} AND ${wordReports.wordId} = ${wordId}`
     );
+}
+
+export async function getBestWordPronunciation(word: string) {
+  // Get the best pronunciation directly by word text (highest confidence score)
+  const pronunciation = await db.query.wordPronunciations.findFirst({
+    where: ilike(wordPronunciations.word, word),
+    orderBy: [
+      desc(wordPronunciations.confidenceScore),
+      wordPronunciations.createdAt,
+    ],
+  });
+
+  console.log(`[DB Query] Pronunciation lookup for "${word}":`, {
+    found: !!pronunciation,
+    count: pronunciation ? 1 : 0,
+  });
+
+  return pronunciation;
 }

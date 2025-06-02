@@ -25,10 +25,16 @@ import {
   ProfileFormValues,
 } from "@/lib/validation/auth-validation";
 import { Checkbox } from "@/components/ui/checkbox";
-import { SHOW_IMAGES_KEY } from "@/stores/images-store";
-
-const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
-const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import {
+  AI_INITIAL_MESSAGE_KEY,
+  DEFAULT_INITIAL_MESSAGE,
+  SHOW_IMAGES_KEY,
+  HEAR_EXAMPLES_BEHAVIOR_KEY,
+  HEAR_EXAMPLES_BEHAVIORS,
+  DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
+  type HearExamplesBehavior,
+} from "@/lib/settings";
 
 export default function SettingsPage() {
   const { data: session, isPending } = useSession();
@@ -36,6 +42,9 @@ export default function SettingsPage() {
   const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
   const [showImages, setShowImages] = useState(false);
   const [isSavingImages, setIsSavingImages] = useState(false);
+  const [hearExamplesBehavior, setHearExamplesBehavior] =
+    useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
+  const [isSavingHearExamples, setIsSavingHearExamples] = useState(false);
 
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
@@ -55,6 +64,21 @@ export default function SettingsPage() {
     const savedImagePref = localStorage.getItem(SHOW_IMAGES_KEY);
     if (savedImagePref) {
       setShowImages(savedImagePref === "true");
+    }
+
+    // Load hear examples behavior from localStorage
+    const savedHearExamplesBehavior = localStorage.getItem(
+      HEAR_EXAMPLES_BEHAVIOR_KEY
+    );
+    if (
+      savedHearExamplesBehavior &&
+      HEAR_EXAMPLES_BEHAVIORS.includes(
+        savedHearExamplesBehavior as HearExamplesBehavior
+      )
+    ) {
+      setHearExamplesBehavior(
+        savedHearExamplesBehavior as HearExamplesBehavior
+      );
     }
   }, []);
 
@@ -171,6 +195,88 @@ export default function SettingsPage() {
             <Button onClick={handleSaveMessage}>Save Message</Button>
             <Button variant="outline" onClick={handleResetMessage}>
               Reset to Default
+            </Button>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-2xl font-semibold">Hear Examples</h2>
+            <p className="text-sm text-muted-foreground">
+              Choose what happens when you click the "Hear examples" button on
+              word pages. This controls whether you see our built-in
+              pronunciation examples or get redirected to YouGlish.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <Label className="text-sm font-medium">Default Behavior</Label>
+            <RadioGroup
+              value={hearExamplesBehavior}
+              onValueChange={(value) =>
+                setHearExamplesBehavior(value as HearExamplesBehavior)
+              }
+              className="gap-4"
+            >
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="hear-examples" id="hear-examples" />
+                <div className="grid gap-1.5 leading-none">
+                  <Label
+                    htmlFor="hear-examples"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    Hear examples
+                  </Label>
+                  <p className="text-[13px] text-muted-foreground">
+                    Listen to the word right on WordDirectory. This is not
+                    powered by YouGlish so expect less words to work with this.
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem value="youglish" id="youglish" />
+                <div className="grid gap-1.5 leading-none">
+                  <Label
+                    htmlFor="youglish"
+                    className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  >
+                    YouGlish
+                  </Label>
+                  <p className="text-[13px] text-muted-foreground">
+                    Opens YouGlish in a new tab to show real YouTube videos with
+                    the word being pronounced. More examples but requires
+                    leaving WordDirectory.
+                  </p>
+                </div>
+              </div>
+            </RadioGroup>
+
+            <Button
+              className="w-fit"
+              onClick={async () => {
+                try {
+                  setIsSavingHearExamples(true);
+                  localStorage.setItem(
+                    HEAR_EXAMPLES_BEHAVIOR_KEY,
+                    hearExamplesBehavior
+                  );
+                  toast.success("Hear examples preference saved!");
+                } catch (error) {
+                  toast.error("Failed to save hear examples preference");
+                } finally {
+                  setIsSavingHearExamples(false);
+                }
+              }}
+              disabled={isSavingHearExamples}
+            >
+              {isSavingHearExamples ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Saving...
+                </>
+              ) : (
+                "Save changes"
+              )}
             </Button>
           </div>
         </section>

@@ -1,6 +1,5 @@
-import { create } from 'zustand'
-
-export const SHOW_IMAGES_KEY = "show-images-by-default";
+import { create } from "zustand";
+import { SHOW_IMAGES_KEY } from "@/lib/settings";
 
 interface UnsplashImage {
   id: string;
@@ -14,23 +13,23 @@ interface UnsplashImage {
 
 // Simple mobile check - if window width is less than 768px
 const isMobileDevice = () => {
-  if (typeof window === 'undefined') return false;
+  if (typeof window === "undefined") return false;
   return window.innerWidth < 768;
 };
 
 interface ImagesStore {
-  isOpen: boolean
-  images: UnsplashImage[]
-  isLoading: boolean
-  error: string | null
-  hasImages: boolean
-  setIsOpen: (open: boolean) => void
-  toggle: () => void
-  setImages: (images: UnsplashImage[]) => void
-  setIsLoading: (loading: boolean) => void
-  setError: (error: string | null) => void
-  initializeFromPreference: () => void
-  fetchImages: (word: string) => Promise<void>
+  isOpen: boolean;
+  images: UnsplashImage[];
+  isLoading: boolean;
+  error: string | null;
+  hasImages: boolean;
+  setIsOpen: (open: boolean) => void;
+  toggle: () => void;
+  setImages: (images: UnsplashImage[]) => void;
+  setIsLoading: (loading: boolean) => void;
+  setError: (error: string | null) => void;
+  initializeFromPreference: () => void;
+  fetchImages: (word: string) => Promise<void>;
 }
 
 // Create a cache to store images by word
@@ -53,28 +52,34 @@ export const useImagesStore = create<ImagesStore>((set, get) => ({
   setIsLoading: (loading) => set({ isLoading: loading }),
   setError: (error) => set({ error }),
   initializeFromPreference: () => {
-    if (typeof window === 'undefined') return;
+    if (typeof window === "undefined") return;
     // Don't auto-show on mobile devices
     if (isMobileDevice()) return;
     const preference = localStorage.getItem(SHOW_IMAGES_KEY);
     const state = get();
-    if (preference === 'true' && state.hasImages) {
+    if (preference === "true" && state.hasImages) {
       set({ isOpen: true });
     }
   },
   fetchImages: async (word) => {
     const state = get();
-    
+
     // Return cached images if available
     if (imageCache.has(word)) {
       const cachedImages = imageCache.get(word) || [];
-      set({ images: cachedImages, hasImages: cachedImages.length > 0, isLoading: false });
+      set({
+        images: cachedImages,
+        hasImages: cachedImages.length > 0,
+        isLoading: false,
+      });
       return;
     }
 
     try {
       set({ isLoading: true, error: null });
-      const response = await fetch(`/api/words/${encodeURIComponent(word)}/images`);
+      const response = await fetch(
+        `/api/words/${encodeURIComponent(word)}/images`
+      );
 
       if (!response.ok) {
         throw new Error("Failed to fetch images");
@@ -82,19 +87,18 @@ export const useImagesStore = create<ImagesStore>((set, get) => ({
 
       const data = await response.json();
       imageCache.set(word, data.images);
-      set({ 
+      set({
         images: data.images,
         hasImages: data.images.length > 0,
-        isLoading: false 
+        isLoading: false,
       });
     } catch (err) {
       console.error("Error fetching images:", err);
-      set({ 
+      set({
         error: "Failed to load images",
         isLoading: false,
-        hasImages: false
+        hasImages: false,
       });
     }
-  }
-}))
-
+  },
+}));

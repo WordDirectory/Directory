@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 export async function playWordAudio(word: string): Promise<HTMLAudioElement> {
   try {
     const response = await fetch(
-      `/api/words/${encodeURIComponent(word)}/audio`
+      `/api/words/${encodeURIComponent(word)}/elevenlabs`
     );
 
     if (!response.ok) {

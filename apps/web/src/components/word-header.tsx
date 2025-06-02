@@ -11,6 +11,9 @@ import {
   ThumbsDown,
   MessageSquareText,
   Loader2,
+  PlayCircle,
+  ChevronDown,
+  Link2,
 } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { Button } from "@/components/ui/button";
@@ -40,7 +43,16 @@ import { playWordAudio } from "@/components/word-audio-button";
 import { useSession } from "@/lib/auth-client";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
-import type { APIError } from "@/types/api";
+import type { APIError, WordPronunciationResponse } from "@/types/api";
+import {
+  HEAR_EXAMPLES_BEHAVIOR_KEY,
+  DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
+  type HearExamplesBehavior,
+} from "@/lib/settings";
+
+// Buffer time (in seconds) to add before and after pronunciation examples
+const PRONUNCIATION_START_BUFFER_SECONDS = 0.5;
+const PRONUNCIATION_END_BUFFER_SECONDS = 2.0;
 
 const ERROR_MESSAGES: {
   [K in APIError["code"]]?: { title: string; description: string };
@@ -64,6 +76,10 @@ const ERROR_MESSAGES: {
   FEEDBACK_ERROR: {
     title: "Feedback error",
     description: "Unable to submit feedback at this time",
+  },
+  PRONUNCIATION_NOT_FOUND: {
+    title: "No pronunciation examples",
+    description: "Try the 'Pronounce' button for AI-generated audio instead",
   },
 };
 
@@ -97,6 +113,16 @@ export function WordHeader({
   const logoRef = useRef<HTMLImageElement | null>(null);
   const [isMobile, setIsMobile] = useState(false);
   const [isPronouncing, setIsPronouncing] = useState(false);
+  const [isPlayingExample, setIsPlayingExample] = useState(false);
+  const [hearExamplesBehavior, setHearExamplesBehavior] =
+    useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
+
+  // Pre-fetching state for pronunciation examples
+  const [prefetchedPronunciation, setPrefetchedPronunciation] =
+    useState<WordPronunciationResponse | null>(null);
+  const [isPrefetching, setIsPrefetching] = useState(false);
+  const [prefetchError, setPrefetchError] = useState<APIError | null>(null);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   // Load initial setup
   useEffect(() => {
@@ -110,7 +136,68 @@ export function WordHeader({
     img.onload = () => {
       logoRef.current = img;
     };
+
+    // Load hear examples behavior from localStorage
+    const savedBehavior = localStorage.getItem(HEAR_EXAMPLES_BEHAVIOR_KEY);
+    if (
+      savedBehavior &&
+      (savedBehavior === "hear-examples" || savedBehavior === "youglish")
+    ) {
+      setHearExamplesBehavior(savedBehavior as HearExamplesBehavior);
+    }
   }, []);
+
+  // Pre-fetch pronunciation data
+  const prefetchPronunciation = async () => {
+    if (isPrefetching || prefetchedPronunciation || prefetchError) {
+      return; // Already prefetching, cached, or failed
+    }
+
+    setIsPrefetching(true);
+    try {
+      const response = await fetch(
+        `/api/words/${encodeURIComponent(word)}/pronunciation`
+      );
+
+      const responseData = await response.json();
+
+      if (!response.ok) {
+        const errorData = responseData as APIError;
+        setPrefetchError(errorData);
+        return;
+      }
+
+      const data = responseData as WordPronunciationResponse;
+      setPrefetchedPronunciation(data);
+    } catch (error) {
+      console.error("Error prefetching pronunciation:", error);
+      setPrefetchError({
+        code: "INTERNAL_SERVER_ERROR",
+        message: "Failed to prefetch pronunciation",
+        status: 500,
+      });
+    } finally {
+      setIsPrefetching(false);
+    }
+  };
+
+  // Pre-fetch based on behavior preference
+  useEffect(() => {
+    if (hearExamplesBehavior === "hear-examples") {
+      // Pre-fetch immediately if user prefers hearing examples
+      prefetchPronunciation();
+    }
+  }, [hearExamplesBehavior, word]);
+
+  // Handle dropdown state changes to trigger pre-fetching
+  const handleDropdownOpenChange = (open: boolean) => {
+    setIsDropdownOpen(open);
+
+    // If dropdown is opened and user prefers YouGlish, pre-fetch since they might click "Hear examples"
+    if (open && hearExamplesBehavior === "youglish") {
+      prefetchPronunciation();
+    }
+  };
 
   const generateImage = async (
     definitionIndex: number,
@@ -340,6 +427,127 @@ export function WordHeader({
     }
   };
 
+  const handlePlayExample = async () => {
+    let loadingTimeout: NodeJS.Timeout;
+
+    // Only show loading state if operation takes more than 50ms
+    loadingTimeout = setTimeout(() => {
+      setIsPlayingExample(true);
+    }, 50);
+
+    try {
+      let data: WordPronunciationResponse;
+
+      // Use pre-fetched data if available
+      if (prefetchedPronunciation) {
+        data = prefetchedPronunciation;
+        // Clear loading timeout immediately since we have cached data
+        clearTimeout(loadingTimeout);
+      } else if (prefetchError) {
+        // Use cached error if we already know it failed
+        const errorInfo = ERROR_MESSAGES[prefetchError.code];
+        if (errorInfo) {
+          toast.error(errorInfo.title, {
+            description: errorInfo.description,
+          });
+        } else {
+          toast.error(
+            prefetchError.message || "Failed to get pronunciation example"
+          );
+        }
+        clearTimeout(loadingTimeout);
+        setIsPlayingExample(false);
+        return;
+      } else {
+        // Fall back to fetching if not pre-fetched
+        const response = await fetch(
+          `/api/words/${encodeURIComponent(word)}/pronunciation`
+        );
+
+        const responseData = await response.json();
+
+        if (!response.ok) {
+          // Response is an error, use the structured error message
+          const errorData = responseData as APIError;
+          const errorInfo = ERROR_MESSAGES[errorData.code];
+
+          if (errorInfo) {
+            toast.error(errorInfo.title, {
+              description: errorInfo.description,
+            });
+          } else {
+            toast.error(
+              errorData.message || "Failed to get pronunciation example"
+            );
+          }
+
+          clearTimeout(loadingTimeout);
+          setIsPlayingExample(false);
+          return;
+        }
+
+        data = responseData as WordPronunciationResponse;
+        // Clear loading timeout since we got the data
+        clearTimeout(loadingTimeout);
+      }
+
+      // Calculate buffered start time (don't go below 0)
+      const bufferedStartTime = Math.max(
+        0,
+        data.timestampStart - PRONUNCIATION_START_BUFFER_SECONDS
+      );
+
+      // Calculate total duration including buffer at both ends
+      const totalDuration =
+        data.duration +
+        PRONUNCIATION_START_BUFFER_SECONDS +
+        PRONUNCIATION_END_BUFFER_SECONDS;
+
+      // Create hidden YouTube iframe for audio playback
+      const iframe = document.createElement("iframe");
+      iframe.width = "1";
+      iframe.height = "1";
+      iframe.style.position = "absolute";
+      iframe.style.top = "-9999px";
+      iframe.style.left = "-9999px";
+      iframe.allow = "autoplay";
+      iframe.src = `https://www.youtube.com/embed/${data.videoId}?enablejsapi=1&autoplay=1&start=${Math.floor(bufferedStartTime)}`;
+
+      document.body.appendChild(iframe);
+
+      // Stop playback after duration (including buffer time)
+      setTimeout(
+        () => {
+          iframe.remove();
+          setIsPlayingExample(false);
+        },
+        (totalDuration + 0.5) * 1000
+      ); // Add 0.5s buffer for cleanup
+    } catch (error) {
+      console.error("Error playing pronunciation example:", error);
+      const errorMessage =
+        error instanceof Error
+          ? error.message
+          : "Unable to play pronunciation example";
+      toast.error(errorMessage);
+      clearTimeout(loadingTimeout);
+      setIsPlayingExample(false);
+    }
+  };
+
+  const handleYouglish = async () => {
+    const url = `https://youglish.com/pronounce/${encodeURIComponent(word)}/english`;
+    window.open(url, "_blank");
+  };
+
+  const handleHearExamples = async () => {
+    if (hearExamplesBehavior === "youglish") {
+      handleYouglish();
+    } else {
+      handlePlayExample();
+    }
+  };
+
   const handleCopyLink = async () => {
     const url = `https://worddirectory.app/words/${encodeURIComponent(word)}`;
     await navigator.clipboard.writeText(url);
@@ -550,22 +758,42 @@ export function WordHeader({
                 )}
                 <span>Pronounce</span>
               </Button>
-              <Button
-                variant="ghost"
-                size="sm"
-                className="text-muted-foreground hover:text-primary text-sm h-auto w-auto p-0 !bg-transparent"
-                title="Watch examples on Youglish"
-                asChild
-              >
-                <a
-                  href={`https://youglish.com/pronounce/${encodeURIComponent(word)}/english`}
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <div className="flex items-center gap-2.5">
+                <Button
+                  variant="ghost"
+                  size="sm"
+                  className="text-muted-foreground hover:text-primary text-sm h-auto w-auto p-0 !bg-transparent"
+                  title="Hear real world examples"
+                  onClick={handleHearExamples}
+                  disabled={isPlayingExample}
                 >
-                  <Video className="w-4 h-4 mr-1" />
-                  <span>Youglish</span>
-                </a>
-              </Button>
+                  {isPlayingExample ? (
+                    <Loader2 className="w-4 h-4 mr-1 animate-spin" />
+                  ) : (
+                    <PlayCircle className="w-4 h-4 mr-1" />
+                  )}
+                  <span>
+                    {hearExamplesBehavior === "youglish"
+                      ? "YouGlish"
+                      : "Hear examples"}
+                  </span>
+                </Button>
+                <DropdownMenu onOpenChange={handleDropdownOpenChange}>
+                  <DropdownMenuTrigger>
+                    <ChevronDown className="w-4 h-4 mr-1 text-muted-foreground" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="end">
+                    <DropdownMenuItem onClick={handlePlayExample}>
+                      <PlayCircle className="w-4 h-4 mr-0.5" />
+                      Hear examples
+                    </DropdownMenuItem>
+                    <DropdownMenuItem onClick={handleYouglish}>
+                      <Link2 className="w-4 h-4 mr-0.5" />
+                      Youglish
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
             </div>
 
             <div className="hidden sm:flex items-center gap-3">

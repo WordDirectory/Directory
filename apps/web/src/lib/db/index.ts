@@ -3,7 +3,7 @@ import { Pool } from "pg";
 import * as schema from "./schema";
 
 const pool = new Pool({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: "postgres://postgres:chakina1@localhost:5432/worddir",
   max: 10,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 2000,

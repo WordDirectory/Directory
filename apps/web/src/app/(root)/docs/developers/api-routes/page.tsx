@@ -87,7 +87,7 @@ export default function DocsPage() {
               <div className="space-y-4">
                 <p>
                   <code className="bg-muted px-2 py-1 rounded">
-                    GET /words/{"{word}"}/audio
+                    GET /words/{"{word}"}/elevenlabs
                   </code>
                 </p>
                 <p className="text-muted-foreground">

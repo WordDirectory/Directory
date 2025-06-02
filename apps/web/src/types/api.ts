@@ -46,6 +46,15 @@ export type WordUsageResponse = {
   nextReset: string;
 };
 
+// Response type for word pronunciation data
+export type WordPronunciationResponse = {
+  videoId: string;
+  timestampStart: number;
+  timestampEnd: number;
+  confidenceScore: number | null;
+  duration: number;
+};
+
 // Base API error type
 export type APIErrorBase = {
   message: string;
@@ -61,7 +70,8 @@ export type AIError = APIErrorBase & {
     | "INTERNAL_SERVER_ERROR"
     | "ALREADY_VOTED"
     | "UNSPLASH_API_ERROR"
-    | "AI_GENERATION_ERROR";
+    | "AI_GENERATION_ERROR"
+    | "PRONUNCIATION_NOT_FOUND";
   usage?: AIUsageResponse;
 };
 

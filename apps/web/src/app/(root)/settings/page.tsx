@@ -132,7 +132,7 @@ export default function SettingsPage() {
 
   return (
     <main className="relative w-full overflow-hidden">
-      <div className="flex flex-col gap-12">
+      <div className="flex flex-col gap-12 px-0.5">
         <section className="flex flex-col gap-8">
           <h1 className="text-4xl font-bold">General</h1>
           <div className="flex flex-row items-center gap-6">

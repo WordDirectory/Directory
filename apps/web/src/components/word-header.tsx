@@ -181,22 +181,14 @@ export function WordHeader({
     }
   };
 
-  // Pre-fetch based on behavior preference
+  // Always pre-fetch pronunciation data to determine availability
   useEffect(() => {
-    if (hearExamplesBehavior === "hear-examples") {
-      // Pre-fetch immediately if user prefers hearing examples
-      prefetchPronunciation();
-    }
-  }, [hearExamplesBehavior, word]);
+    prefetchPronunciation();
+  }, [word]);
 
-  // Handle dropdown state changes to trigger pre-fetching
+  // Handle dropdown state changes
   const handleDropdownOpenChange = (open: boolean) => {
     setIsDropdownOpen(open);
-
-    // If dropdown is opened and user prefers YouGlish, pre-fetch since they might click "Hear examples"
-    if (open && hearExamplesBehavior === "youglish") {
-      prefetchPronunciation();
-    }
   };
 
   const generateImage = async (
@@ -765,7 +757,11 @@ export function WordHeader({
                   className="text-muted-foreground hover:text-primary text-sm h-auto w-auto p-0 !bg-transparent"
                   title="Hear real world examples"
                   onClick={handleHearExamples}
-                  disabled={isPlayingExample}
+                  disabled={
+                    isPlayingExample ||
+                    (hearExamplesBehavior === "hear-examples" &&
+                      !prefetchedPronunciation)
+                  }
                 >
                   {isPlayingExample ? (
                     <Loader2 className="w-4 h-4 mr-1 animate-spin" />
@@ -783,7 +779,10 @@ export function WordHeader({
                     <ChevronDown className="w-4 h-4 mr-1 text-muted-foreground" />
                   </DropdownMenuTrigger>
                   <DropdownMenuContent align="end">
-                    <DropdownMenuItem onClick={handlePlayExample}>
+                    <DropdownMenuItem
+                      onClick={handlePlayExample}
+                      disabled={!prefetchedPronunciation}
+                    >
                       <PlayCircle className="w-4 h-4 mr-0.5" />
                       Hear examples
                     </DropdownMenuItem>

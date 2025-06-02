@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "NODE_ENV=production next build",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "db:generate": "drizzle-kit generate",
@@ -23,7 +23,6 @@
     "@anthropic-ai/sdk": "^0.52.0",
     "@better-auth/stripe": "^1.2.7",
     "@hookform/resolvers": "^3.9.1",
-    "@opennextjs/cloudflare": "^1.0.4",
     "@radix-ui/react-accordion": "^1.2.1",
     "@radix-ui/react-alert-dialog": "^1.1.2",
     "@radix-ui/react-aspect-ratio": "^1.1.0",

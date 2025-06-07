@@ -11,7 +11,7 @@ export function Header() {
   return (
     <header
       className={cn(
-        "w-full px-4 border-b bg-background flex h-14 items-center justify-between sticky top-0 z-50"
+        "w-full px-4 bg-background flex h-16 items-center justify-between sticky top-0 z-50"
       )}
     >
       <div className="mr-4 flex">

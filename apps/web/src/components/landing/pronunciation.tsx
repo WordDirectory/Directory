@@ -157,7 +157,7 @@ function AudioCard({
   return (
     <div
       className={cn(
-        "w-full px-4 py-3 flex items-center justify-between rounded-3xl backdrop-blur-sm border border-foreground/5",
+        "w-full px-4 py-3 flex items-center justify-between rounded-3xl backdrop-blur-md border border-foreground/5",
         background
       )}
     >

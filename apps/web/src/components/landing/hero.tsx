@@ -5,6 +5,8 @@ import { useState } from "react";
 import { ChevronRightIcon, SearchIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
+import { ShineBorder } from "../shine-border";
+import { useTheme } from "next-themes";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
@@ -43,7 +45,7 @@ function HeroSearchInput() {
   return (
     <div className="relative w-full max-w-lg">
       {/* Subtle gradient glow around the input */}
-      <div className="absolute inset-0 bg-gradient-to-r from-pink-400/25 via-amber-400/25 to-pink-400/25 rounded-full blur-xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-r from-pink-400/25 via-amber-400/25 to-pink-400/25 rounded-full blur-xl dark:opacity-35"></div>
 
       {/* Main search input */}
       <div className="relative bg-background rounded-full border shadow-sm">

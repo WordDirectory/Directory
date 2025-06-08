@@ -42,14 +42,25 @@ interface MoreOptionsWordProps {
   definitions: DefinitionItem[];
 }
 
-type ErrorMessages = {
-  [K in APIError["code"]]: {
+// Only define error messages for codes this component actually handles
+type ComponentErrorMessages = {
+  [K in
+    | "AUTH_REQUIRED"
+    | "SUBSCRIPTION_LIMIT_REACHED"
+    | "RATE_LIMIT_EXCEEDED"
+    | "INTERNAL_SERVER_ERROR"
+    | "ALREADY_VOTED"
+    | "UNSPLASH_API_ERROR"
+    | "WORD_NOT_FOUND"
+    | "INVALID_WORD"
+    | "VALIDATION_ERROR"
+    | "FEEDBACK_ERROR"]: {
     title: string;
     description: string;
   };
 };
 
-const ERROR_MESSAGES: ErrorMessages = {
+const ERROR_MESSAGES: ComponentErrorMessages = {
   AUTH_REQUIRED: {
     title: "Authentication required",
     description: "Please sign in to submit feedback for this word",
@@ -353,7 +364,12 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
 
       if (!response.ok) {
         const error = data as APIError;
-        const errorMessage = ERROR_MESSAGES[error.code];
+        const errorMessage = ERROR_MESSAGES[
+          error.code as keyof ComponentErrorMessages
+        ] || {
+          title: "Error",
+          description: "Something went wrong. Please try again later.",
+        };
         toast.error(errorMessage.title, {
           description: errorMessage.description,
         });
@@ -394,7 +410,12 @@ export function MoreOptionsWord({ word, definitions }: MoreOptionsWordProps) {
 
       if (!response.ok) {
         const error = data as APIError;
-        const errorMessage = ERROR_MESSAGES[error.code];
+        const errorMessage = ERROR_MESSAGES[
+          error.code as keyof ComponentErrorMessages
+        ] || {
+          title: "Error",
+          description: "Something went wrong. Please try again later.",
+        };
         toast.error(errorMessage.title, {
           description: errorMessage.description,
         });

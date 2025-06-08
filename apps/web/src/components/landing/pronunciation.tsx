@@ -108,14 +108,14 @@ export function PronunciationSection() {
           <AudioCard
             word="Probably"
             type={activeType}
-            iconBg="bg-sky-500/25"
+            iconBg="bg-sky-500/75"
             background="bg-accent/10"
             opacity={0.25}
           />
           <AudioCard
             word="February"
             type={activeType}
-            iconBg="bg-purple-500/50"
+            iconBg="bg-purple-500/75"
             background="bg-accent/10"
             opacity={0.5}
           />

@@ -1,0 +1,24 @@
+name = "worddirectory-web"
+main = ".open-next/worker.js"
+compatibility_date = "2025-01-15"
+compatibility_flags = [
+  "nodejs_compat",
+  "global_fetch_strictly_public"
+]
+
+[assets]
+directory = ".open-next/assets"
+binding = "ASSETS"
+
+# Uncomment when you set up R2 caching (recommended for production)
+# [[r2_buckets]]
+# binding = "NEXT_INC_CACHE_R2_BUCKET"
+# bucket_name = "worddirectory-cache"
+
+[env.beta]
+name = "worddirectory-web-beta"
+vars = { NEXTJS_ENV = "staging" }
+
+[env.production]  
+name = "worddirectory-web"
+vars = { NEXTJS_ENV = "production" }

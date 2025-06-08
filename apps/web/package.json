@@ -7,14 +7,17 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "build:worker": "bun run build && bunx @opennextjs/cloudflare build",
+    "preview:worker": "bun run build:worker && bunx wrangler dev",
+    "deploy:beta": "bun run build:worker && bunx wrangler deploy --env beta",
+    "deploy:prod": "bun run build:worker && bunx wrangler deploy --env production",
+    "cf-typegen": "bunx wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts",
     "db:generate": "drizzle-kit generate",
     "db:push:local": "cross-env NODE_ENV=development drizzle-kit push",
     "db:push:prod": "cross-env NODE_ENV=production drizzle-kit push",
     "migrate:words": "npx tsx scripts/migrate-words.ts",
     "test-db": "npx tsx scripts/test-db.ts",
-    "count": "npx tsx scripts/count-words.ts",
-    "build:worker": "npx @opennextjs/cloudflare build",
-    "deploy:prod": "bun --env-file=.env.production run build:worker && wrangler deploy"
+    "count": "npx tsx scripts/count-words.ts"
   },
   "dependencies": {
     "@ai-sdk/google": "^1.2.14",
@@ -100,6 +103,7 @@
     "zustand": "^5.0.2"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.2.1",
     "@types/bun": "latest",
     "@types/node": "^22.15.3",
     "@types/react": "^18.3.20",
@@ -111,6 +115,7 @@
     "tailwindcss": "^3.4.1",
     "tsconfig-paths": "^4.2.0",
     "tsx": "^4.7.1",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "wrangler": "^4.19.1"
   }
 }

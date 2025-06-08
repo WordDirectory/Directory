@@ -40,6 +40,9 @@ yarn-error.log*
 *.tsbuildinfo
 /apps/web/next-env.d.ts
 
+apps/web/.open-next
+apps/web/.wrangler
+
 # cursor
 .cursorrules
 .cursorignore

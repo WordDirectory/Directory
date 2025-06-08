@@ -1,6 +1,7 @@
 "use client";
 import { cn } from "@/lib/utils";
 import { ShineBorder } from "../shine-border";
+import { useTheme } from "next-themes";
 
 export function AISection() {
   return (
@@ -39,6 +40,8 @@ function AIMessage({
   role: "user" | "ai";
   content: string;
 }) {
+  const { theme } = useTheme();
+
   return (
     <div className="relative">
       <div
@@ -52,7 +55,11 @@ function AIMessage({
       </div>
       {role === "ai" ? (
         <ShineBorder
-          shineColor={["#ffc2cb", "#ffe5cc"]}
+          shineColor={
+            theme === "dark"
+              ? ["#FFC0CB50", "#FFB6C150"]
+              : ["#FFC0CB95", "#FFB6C195"]
+          }
           duration={12}
           borderWidth={2}
           className="rounded-3xl border"

@@ -81,7 +81,7 @@ export function PronunciationSection() {
                     className={cn(
                       "text-base rounded-full h-10 px-4 font-normal cursor-pointer text-muted-foreground transition-none relative",
                       activeType === type &&
-                        "bg-gradient-to-r from-pink-400/90 to-amber-500/65 bg-clip-text text-transparent"
+                        "bg-gradient-to-r from-pink-400/90 to-amber-500/65 dark:to-amber-200/75 bg-clip-text text-transparent"
                     )}
                     onClick={() => handleTypeChange(type)}
                   >

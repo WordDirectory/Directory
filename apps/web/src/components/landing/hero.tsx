@@ -4,6 +4,7 @@ import { SearchCommand } from "@/components/search-command";
 import { useState } from "react";
 import { ChevronRightIcon, SearchIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useRouter } from "next/navigation";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
@@ -63,6 +64,7 @@ function HeroSearchInput() {
 }
 
 function WordSuggestions() {
+  const router = useRouter();
   const words = ["Obelisk", "Serendipity", "Lummox"];
 
   return (
@@ -72,6 +74,7 @@ function WordSuggestions() {
           key={word}
           variant="outline"
           className="bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text text-transparent text-base rounded-full h-10 px-4 font-normal cursor-pointer"
+          onClick={() => router.push(`/words/${word}`)}
         >
           <span>{word}</span>
           <ChevronRightIcon className="!size-5 text-amber-400" />

@@ -1,7 +1,4 @@
 "use client";
-import { ShineBorder } from "../shine-border";
-import { Button } from "../ui/button";
-
 export function ImagesSection() {
   return (
     <section className="relative w-full overflow-hidden px-8">

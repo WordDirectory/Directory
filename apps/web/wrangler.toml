@@ -22,3 +22,6 @@ vars = { NEXTJS_ENV = "staging" }
 [env.production]  
 name = "worddirectory-web"
 vars = { NEXTJS_ENV = "production" }
+
+[observability.logs]
+enabled = true

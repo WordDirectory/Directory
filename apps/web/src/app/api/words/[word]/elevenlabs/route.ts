@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
-import { audioRateLimit } from "@/lib/rate-limit";
 import { wordExists } from "@/lib/db/queries";
+import { elevenlabsRateLimit } from "@/lib/rate-limit";
 
 // Default voice ID for a natural, clear voice from ElevenLabs
 const DEFAULT_VOICE_ID = "TX3LPaxmHKxFdv7VOQHJ";
@@ -16,8 +16,8 @@ export async function GET(
     const forwardedFor = headersList.get("x-forwarded-for");
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
 
-    // Apply stricter rate limiting for audio requests
-    await audioRateLimit(ip);
+    // Apply strict rate limiting for expensive ElevenLabs API calls
+    await elevenlabsRateLimit(ip);
 
     // Decode the URL-encoded word parameter
     const { word } = await params;
@@ -69,7 +69,7 @@ export async function GET(
     console.error("Error in audio generation:", error);
 
     if (error instanceof Error) {
-      if (error.message === "Too many audio requests") {
+      if (error.message === "Too many ElevenLabs requests") {
         return new NextResponse(null, {
           status: 429,
           headers: {

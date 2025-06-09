@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { headers } from "next/headers";
-import { audioRateLimit } from "@/lib/rate-limit";
+import { rateLimit } from "@/lib/rate-limit";
 import { getBestWordPronunciation } from "@/lib/db/queries";
 import { APIError, WordPronunciationResponse } from "@/types/api";
 import { db } from "@/lib/db";
@@ -17,8 +17,8 @@ export async function GET(
     const forwardedFor = headersList.get("x-forwarded-for");
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
 
-    // Apply stricter rate limiting for audio requests
-    await audioRateLimit(ip);
+    // Use general rate limiting since this is just database queries
+    await rateLimit(ip);
 
     // Decode the URL-encoded word parameter
     const { word } = await params;
@@ -69,10 +69,10 @@ export async function GET(
     console.error("Error in pronunciation API:", error);
 
     if (error instanceof Error) {
-      if (error.message === "Too many audio requests") {
+      if (error.message === "Too many requests") {
         return NextResponse.json(
           {
-            message: "Too many audio requests. Please slow down.",
+            message: "Too many requests. Please slow down.",
             status: 429,
             code: "RATE_LIMIT_EXCEEDED",
           } satisfies APIError,

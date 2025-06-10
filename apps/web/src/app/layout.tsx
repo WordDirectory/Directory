@@ -87,6 +87,18 @@ export default function RootLayout({
             }),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "WordDirectory",
+              url: "https://worddirectory.app",
+              logo: "https://worddirectory.app/logo.png",
+            }),
+          }}
+        />
       </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}

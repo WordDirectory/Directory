@@ -8,8 +8,8 @@ export function AISection() {
     <section className="relative w-full overflow-hidden px-8">
       <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-12">
         <div className="w-full text-center flex flex-col items-center gap-10">
-          <div className="flex flex-col items-center justify-center gap-8">
-            <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-[2.9rem]">
+          <div className="flex flex-col items-center justify-center gap-5 sm:gap-8">
+            <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-[2.9rem]">
               Follow-up with AI
             </h1>
             <p className="text-xl text-muted-foreground md:text-[1.4rem] max-w-[40rem]">

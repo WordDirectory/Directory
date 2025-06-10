@@ -95,7 +95,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "WordDirectory",
               url: "https://worddirectory.app",
-              logo: "https://worddirectory.app/logo.png",
+              logo: "https://worddirectory.app/logo-512.png",
             }),
           }}
         />

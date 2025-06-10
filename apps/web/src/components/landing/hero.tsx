@@ -1,12 +1,10 @@
 "use client";
 
 import { SearchCommand } from "@/components/search-command";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { ChevronRightIcon, SearchIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
-import { ShineBorder } from "../shine-border";
-import { useTheme } from "next-themes";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
@@ -68,20 +66,26 @@ function HeroSearchInput() {
 function WordSuggestions() {
   const router = useRouter();
   const words = ["Obelisk", "Serendipity", "Lummox"];
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div className="flex items-center gap-3 w-full justify-center max-w-lg">
-      {words.map((word) => (
-        <Badge
-          key={word}
-          variant="outline"
-          className="bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text text-transparent text-base rounded-full h-10 px-4 font-normal cursor-pointer"
-          onClick={() => router.push(`/words/${word}`)}
-        >
-          <span>{word}</span>
-          <ChevronRightIcon className="!size-5 text-amber-400" />
-        </Badge>
-      ))}
+    <div className="relative w-full max-w-lg">
+      <div 
+        ref={scrollRef}
+        className="flex items-center justify-start sm:justify-center gap-3 w-full overflow-x-auto hidden-scrollbar"
+      >
+        {words.map((word) => (
+          <Badge
+            key={word}
+            variant="outline"
+            className="bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text text-transparent text-base rounded-full h-10 px-4 font-normal cursor-pointer"
+            onClick={() => router.push(`/words/${word}`)}
+          >
+            <span>{word}</span>
+            <ChevronRightIcon className="!size-5 text-amber-400" />
+          </Badge>
+        ))}
+      </div>
     </div>
   );
 }

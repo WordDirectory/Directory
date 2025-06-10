@@ -57,6 +57,7 @@ export async function GET(
     // Get IP address from X-Forwarded-For header or fallback to a default
     const headersList = await headers();
     const forwardedFor = headersList.get("x-forwarded-for");
+    const userAgent = headersList.get("user-agent");
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
     const session = await auth.api.getSession(request);
     const userId = session?.user?.id || null;
@@ -71,7 +72,8 @@ export async function GET(
       word,
       userId,
       ip,
-      new URL(request.url).origin
+      new URL(request.url).origin,
+      userAgent
     );
 
     // Handle the different result types

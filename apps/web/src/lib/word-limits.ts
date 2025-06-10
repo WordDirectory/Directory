@@ -9,6 +9,7 @@ import {
   trackWordView as dbTrackWordView,
 } from "./db/queries";
 import { WordUsageResponse } from "@/types/api";
+import { isSearchEngineBot } from "./bot-detection";
 
 export type WordLookupError = {
   message: string;
@@ -144,9 +145,16 @@ async function getOrCreateLookupData(userId: string | null, ip: string) {
 
 export async function checkWordLookupLimit(
   userId: string | null,
-  ip: string
+  ip: string,
+  userAgent?: string | null
 ): Promise<void> {
   console.log("[Word Limits] Checking lookup limit:", { userId, ip });
+
+  // Allow search engine bots to bypass word lookup limits
+  if (isSearchEngineBot({ userAgent })) {
+    console.log("[Word Limits] Bypassing limits for search engine bot");
+    return;
+  }
 
   const subscriptionData = userId ? await getActiveSubscription(userId) : null;
   console.log("[Word Limits] Subscription data:", subscriptionData);

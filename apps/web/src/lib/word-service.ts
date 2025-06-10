@@ -33,7 +33,8 @@ export async function getWordWithLimits(
   word: string,
   userId: string | null,
   ip: string,
-  baseUrl: string
+  baseUrl: string,
+  userAgent?: string | null
 ): Promise<WordServiceResult> {
   try {
     // Apply rate limiting
@@ -83,7 +84,7 @@ export async function getWordWithLimits(
       // Only check limits and increment count if this is a new view
       if (!hasViewed) {
         // Check lookup limit first
-        await checkWordLookupLimit(userId, ip);
+        await checkWordLookupLimit(userId, ip, userAgent);
 
         await incrementWordLookupCount(userId, ip);
       }

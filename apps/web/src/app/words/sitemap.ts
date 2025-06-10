@@ -1,11 +1,6 @@
 import { MetadataRoute } from "next";
 import { getWordsByLetter } from "@/lib/db/queries";
 
-export async function generateSitemaps() {
-  const letters = ["a"];
-  return letters.map((letter) => ({ id: letter }));
-}
-
 export default async function sitemap({
   id,
 }: {

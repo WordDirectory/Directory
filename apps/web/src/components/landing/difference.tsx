@@ -3,6 +3,7 @@ import { ShineBorder } from "../shine-border";
 import { Button } from "../ui/button";
 import { useTheme } from "next-themes";
 import { useState } from "react";
+import { LandingSection } from "./section";
 
 export function DifferenceSection() {
   const { theme } = useTheme();
@@ -33,39 +34,37 @@ export function DifferenceSection() {
     : definitions.google;
 
   return (
-    <section className="relative w-full overflow-hidden px-8">
-      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-16">
-        <div className="w-full text-center flex flex-col items-center gap-10">
-          <div className="flex flex-col items-center justify-center gap-5 sm:gap-8">
-            <h1 className="text-3xl font-semibold italic tracking-tight text-foreground sm:text-4xl md:text-[2.9rem]">
-              "{currentDefinition.text}"
-            </h1>
-            <p className="text-xl text-muted-foreground md:text-[1.4rem] max-w-xl">
-              {currentDefinition.description}
-            </p>
-          </div>
-          <div className="relative">
-            <Button
-              variant="outline"
-              size="lg"
-              className="relative rounded-full px-6 text-lg h-12 bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text !text-transparent"
-              onClick={() => setShowSimpleDefinition(!showSimpleDefinition)}
-            >
-              See the difference
-            </Button>
-            <ShineBorder
-              shineColor={
-                theme === "dark"
-                  ? ["#FFC0CB50", "#FFB6C150"]
-                  : ["#FFC0CB95", "#FFB6C195"]
-              }
-              duration={12}
-              borderWidth={2}
-              className="rounded-full"
-            />
-          </div>
+    <LandingSection
+      title={`"${currentDefinition.text}"`}
+      titleClassName="italic"
+      description={currentDefinition.description}
+      descriptionClassName="max-w-xl"
+      gap="lg"
+      afterDescription={
+        <div className="relative">
+          <Button
+            variant="outline"
+            size="lg"
+            className="relative rounded-full px-6 text-lg h-12 bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text !text-transparent"
+            onClick={() => setShowSimpleDefinition(!showSimpleDefinition)}
+          >
+            See the difference
+          </Button>
+          <ShineBorder
+            shineColor={
+              theme === "dark"
+                ? ["#FFC0CB50", "#FFB6C150"]
+                : ["#FFC0CB95", "#FFB6C195"]
+            }
+            duration={12}
+            borderWidth={2}
+            className="rounded-full"
+          />
         </div>
-      </div>
-    </section>
+      }
+    >
+      {/* No main content for this section */}
+      <div></div>
+    </LandingSection>
   );
 }

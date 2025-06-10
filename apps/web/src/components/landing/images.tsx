@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { LandingSection } from "./section";
 
 export function ImagesSection() {
   const [isMobile, setIsMobile] = useState(false);
@@ -13,22 +14,21 @@ export function ImagesSection() {
   }, []);
 
   return (
-    <section className="relative w-full overflow-hidden px-8">
-      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-8 sm:gap-16">
-        <div className="w-full text-center flex flex-col items-center gap-6 sm:gap-10">
-          <div className="flex flex-col items-center justify-center gap-4 sm:gap-8">
-            <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-[2.9rem]">
-              Understand words with images
-            </h1>
-            <p className="text-lg text-muted-foreground sm:text-xl md:text-[1.4rem] max-w-[40rem] px-4 sm:px-0">
-              Some words are just easier to understand by visualizing them.
-              We've got that too.
-            </p>
-          </div>
-          {isMobile ? <MobileFloatingSection /> : <DesktopImagesCard />}
-        </div>
-      </div>
-    </section>
+    <LandingSection
+      title="Understand words with images"
+      titleClassName="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-5xl lg:text-[2.9rem]"
+      description="Some words are just easier to understand by visualizing them. We've got that too."
+      descriptionClassName="text-lg text-muted-foreground sm:text-xl md:text-[1.4rem] max-w-[40rem] px-4 sm:px-0"
+      gap="custom"
+      customGaps={{
+        main: "gap-8 sm:gap-16",
+        header: "gap-6 sm:gap-10",
+        titleDesc: "gap-4 sm:gap-8",
+      }}
+      contentMaxWidth=""
+    >
+      {isMobile ? <MobileFloatingSection /> : <DesktopImagesCard />}
+    </LandingSection>
   );
 }
 

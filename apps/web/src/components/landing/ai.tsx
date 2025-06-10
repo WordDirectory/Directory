@@ -2,34 +2,26 @@
 import { cn } from "@/lib/utils";
 import { ShineBorder } from "../shine-border";
 import { useTheme } from "next-themes";
+import { LandingSection } from "./section";
 
 export function AISection() {
   return (
-    <section className="relative w-full overflow-hidden px-8">
-      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-12">
-        <div className="w-full text-center flex flex-col items-center gap-10">
-          <div className="flex flex-col items-center justify-center gap-5 sm:gap-8">
-            <h1 className="text-3xl font-semibold tracking-tight text-foreground sm:text-4xl md:text-[2.9rem]">
-              Follow-up with AI
-            </h1>
-            <p className="text-xl text-muted-foreground md:text-[1.4rem] max-w-[40rem]">
-              Understand words in your specific context, translate it to another
-              language, and more.
-            </p>
-          </div>
-        </div>
-        <div className="w-full flex flex-col gap-6 max-w-[40rem]">
-          <AIMessage
-            role="user"
-            content="When would I actually use this word in a conversation?"
-          />
-          <AIMessage
-            role="ai"
-            content="When describing monuments or giving directions - like 'Meet me by the obelisk in the park' or talking about ancient Egyptian stuff"
-          />
-        </div>
+    <LandingSection
+      title="Follow-up with AI"
+      description="Understand words in your specific context, translate it to another language, and more."
+      gap="md"
+    >
+      <div className="gap-6 flex flex-col">
+        <AIMessage
+          role="user"
+          content="When would I actually use this word in a conversation?"
+        />
+        <AIMessage
+          role="ai"
+          content="When describing monuments or giving directions - like 'Meet me by the obelisk in the park' or talking about ancient Egyptian stuff"
+        />
       </div>
-    </section>
+    </LandingSection>
   );
 }
 

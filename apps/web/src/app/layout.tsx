@@ -14,18 +14,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "WordDirectory",
+  title: "WordDirectory - Simple dictionary with human-readable definitions",
   description:
-    "Words explained like a human would - definitions that actually make sense without using other complex words you don't know",
+    "WordDirectory explains words like a human would - clear, simple definitions without complex jargon. Search 150,000+ words with AI pronunciation and examples.",
   keywords: [
-    "words",
+    "worddirectory",
+    "word directory",
+    "simple dictionary",
+    "human readable definitions",
+    "words explained simply",
     "dictionary",
     "definitions",
     "learning",
     "language",
-    "simple",
-    "human",
-    "readable",
   ],
   openGraph: {
     title: "WordDirectory",
@@ -68,6 +69,25 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "WordDirectory",
+              url: "https://worddirectory.app",
+              description: "Simple dictionary with human-readable definitions",
+              potentialAction: {
+                "@type": "SearchAction",
+                target: "https://worddirectory.app/words/{search_term_string}",
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${inter.variable} font-sans antialiased overflow-x-hidden`}
       >

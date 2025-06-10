@@ -1,7 +1,7 @@
 "use client";
 
 import { SearchCommand } from "@/components/search-command";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ChevronRightIcon, SearchIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
@@ -67,10 +67,50 @@ function WordSuggestions() {
   const router = useRouter();
   const words = ["Obelisk", "Serendipity", "Lummox"];
   const scrollRef = useRef<HTMLDivElement>(null);
+  const [scrollState, setScrollState] = useState({
+    canScrollLeft: false,
+    canScrollRight: false,
+  });
+
+  useEffect(() => {
+    const element = scrollRef.current;
+    if (!element) return;
+
+    const updateScrollState = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = element;
+      const canScrollLeft = scrollLeft > 0;
+      const canScrollRight = scrollLeft < scrollWidth - clientWidth - 1; // -1 for rounding
+
+      setScrollState({ canScrollLeft, canScrollRight });
+    };
+
+    // Initial check
+    updateScrollState();
+
+    // Add scroll listener
+    element.addEventListener("scroll", updateScrollState);
+
+    // Cleanup
+    return () => element.removeEventListener("scroll", updateScrollState);
+  }, []);
 
   return (
     <div className="relative w-full max-w-lg">
-      <div 
+      {/* Left fade overlay */}
+      <div
+        className={`absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-200 ${
+          scrollState.canScrollLeft ? "opacity-100" : "opacity-0"
+        }`}
+      />
+
+      {/* Right fade overlay */}
+      <div
+        className={`absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none transition-opacity duration-200 ${
+          scrollState.canScrollRight ? "opacity-100" : "opacity-0"
+        }`}
+      />
+
+      <div
         ref={scrollRef}
         className="flex items-center justify-start sm:justify-center gap-3 w-full overflow-x-auto hidden-scrollbar"
       >

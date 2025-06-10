@@ -7,7 +7,7 @@ import { CTA } from "@/components/landing/cta";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-40 py-20 md:py-24 lg:py-32">
+    <div className="flex flex-col gap-40 pt-20 md:py-24 lg:py-32">
       <Hero />
       <DifferenceSection />
       <ImagesSection />

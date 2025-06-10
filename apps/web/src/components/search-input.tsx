@@ -3,8 +3,21 @@
 import { useState } from "react";
 import { Input } from "./ui/input";
 import { SearchCommand } from "./search-command";
-import { cn, capitalize } from "@/lib/utils";
+import { capitalize } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+
+function getWordFromPathname(pathname: string): string {
+  if (!pathname.startsWith("/words/")) {
+    return "";
+  }
+
+  const wordPart = pathname.split("/words/")[1];
+  if (!wordPart) {
+    return "";
+  }
+
+  return capitalize(decodeURIComponent(wordPart).replace(/\/$/, ""));
+}
 
 export function SearchInput() {
   const [open, setOpen] = useState(false);
@@ -12,10 +25,7 @@ export function SearchInput() {
 
   const handleOpen = () => setOpen(true);
 
-  // Get the word from the pathname if we're on a word page
-  const word = pathname.startsWith("/words/")
-    ? capitalize(decodeURIComponent(pathname.split("/words/")[1]))
-    : "";
+  const word = getWordFromPathname(pathname);
 
   return (
     <div className="relative mx-auto w-full md:w-auto">

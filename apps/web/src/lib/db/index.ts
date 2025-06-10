@@ -4,9 +4,11 @@ import * as schema from "./schema";
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
-  max: 10,
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
+  max: 3,
+  idleTimeoutMillis: 10000,
+  connectionTimeoutMillis: 15000,
+  query_timeout: 20000,
+  statement_timeout: 20000,
 });
 
 export const db = drizzle(pool, { schema });

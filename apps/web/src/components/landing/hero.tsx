@@ -1,21 +1,19 @@
 "use client";
 
 import { SearchCommand } from "@/components/search-command";
-import { useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ChevronRightIcon, SearchIcon } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
-import { ShineBorder } from "../shine-border";
-import { useTheme } from "next-themes";
 
 export function Hero() {
   const [open, setOpen] = useState(false);
 
   return (
     <section className="relative w-full overflow-hidden px-8">
-      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-16">
+      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-8">
         <div className="w-full text-center flex flex-col items-center gap-10">
-          <div className="flex flex-col items-center justify-center gap-7">
+          <div className="flex flex-col items-center justify-center gap-5 sm:gap-7">
             <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               Words explained{" "}
               <span className="bg-gradient-to-r from-pink-400/90 to-amber-400 bg-clip-text text-transparent">
@@ -68,20 +66,66 @@ function HeroSearchInput() {
 function WordSuggestions() {
   const router = useRouter();
   const words = ["Obelisk", "Serendipity", "Lummox"];
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [scrollState, setScrollState] = useState({
+    canScrollLeft: false,
+    canScrollRight: false,
+  });
+
+  useEffect(() => {
+    const element = scrollRef.current;
+    if (!element) return;
+
+    const updateScrollState = () => {
+      const { scrollLeft, scrollWidth, clientWidth } = element;
+      const canScrollLeft = scrollLeft > 0;
+      const canScrollRight = scrollLeft < scrollWidth - clientWidth - 1; // -1 for rounding
+
+      setScrollState({ canScrollLeft, canScrollRight });
+    };
+
+    // Initial check
+    updateScrollState();
+
+    // Add scroll listener
+    element.addEventListener("scroll", updateScrollState);
+
+    // Cleanup
+    return () => element.removeEventListener("scroll", updateScrollState);
+  }, []);
 
   return (
-    <div className="flex items-center gap-3 w-full justify-center max-w-lg">
-      {words.map((word) => (
-        <Badge
-          key={word}
-          variant="outline"
-          className="bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text text-transparent text-base rounded-full h-10 px-4 font-normal cursor-pointer"
-          onClick={() => router.push(`/words/${word}`)}
-        >
-          <span>{word}</span>
-          <ChevronRightIcon className="!size-5 text-amber-400" />
-        </Badge>
-      ))}
+    <div className="relative w-full max-w-lg">
+      {/* Left fade overlay */}
+      <div
+        className={`absolute left-0 top-0 bottom-0 w-8 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none transition-opacity duration-200 ${
+          scrollState.canScrollLeft ? "opacity-100" : "opacity-0"
+        }`}
+      />
+
+      {/* Right fade overlay */}
+      <div
+        className={`absolute right-0 top-0 bottom-0 w-8 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none transition-opacity duration-200 ${
+          scrollState.canScrollRight ? "opacity-100" : "opacity-0"
+        }`}
+      />
+
+      <div
+        ref={scrollRef}
+        className="flex items-center justify-start sm:justify-center gap-3 w-full overflow-x-auto hidden-scrollbar"
+      >
+        {words.map((word) => (
+          <Badge
+            key={word}
+            variant="outline"
+            className="bg-gradient-to-r from-pink-400/90 to-amber-400/80 bg-clip-text text-transparent text-base rounded-full h-10 px-4 font-normal cursor-pointer"
+            onClick={() => router.push(`/words/${word}`)}
+          >
+            <span>{word}</span>
+            <ChevronRightIcon className="!size-5 text-amber-400" />
+          </Badge>
+        ))}
+      </div>
     </div>
   );
 }

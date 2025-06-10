@@ -495,6 +495,9 @@ export function WordHeader({
         PRONUNCIATION_START_BUFFER_SECONDS +
         PRONUNCIATION_END_BUFFER_SECONDS;
 
+      // Add loading buffer to account for YouTube iframe startup time
+      const YOUTUBE_LOADING_BUFFER_SECONDS = 3.0;
+
       // Create hidden YouTube iframe for audio playback
       const iframe = document.createElement("iframe");
       iframe.width = "1";
@@ -507,14 +510,14 @@ export function WordHeader({
 
       document.body.appendChild(iframe);
 
-      // Stop playback after duration (including buffer time)
+      // Stop playback after duration (including buffer time + loading time)
       setTimeout(
         () => {
           iframe.remove();
           setIsPlayingExample(false);
         },
-        (totalDuration + 0.5) * 1000
-      ); // Add 0.5s buffer for cleanup
+        (totalDuration + YOUTUBE_LOADING_BUFFER_SECONDS) * 1000
+      );
     } catch (error) {
       console.error("Error playing pronunciation example:", error);
       const errorMessage =

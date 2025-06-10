@@ -6,6 +6,7 @@ import { AudioLines, PlayIcon, PauseIcon } from "lucide-react";
 import { Button } from "../ui/button";
 import { ShineBorder } from "../shine-border";
 import { useTheme } from "next-themes";
+import { LandingSection } from "./section";
 
 type PronunciationType = "AI transcription" | "Real example";
 
@@ -15,7 +16,7 @@ export function PronunciationSection() {
   const [isPlaying, setIsPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const { theme } = useTheme();
-  
+
   const handleTypeChange = (type: PronunciationType) => {
     // Reset audio when changing type
     if (audioRef.current) {
@@ -62,76 +63,69 @@ export function PronunciationSection() {
   };
 
   return (
-    <section className="relative w-full overflow-hidden px-8">
-      <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-12">
-        <div className="w-full text-center flex flex-col items-center gap-10">
-          <div className="flex flex-col items-center justify-center gap-8">
-            <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-[2.9rem]">
-              Pronunce the word
-            </h1>
-            <p className="text-xl text-muted-foreground md:text-[1.4rem] max-w-[40rem]">
-              Ever understood a word but couldn't pronounce it? Get AI
-              pronunciations or listen to how people use them in real-life.
-            </p>
-            <div className="w-full flex items-center gap-3 max-w-[40rem]">
-              {(["AI transcription", "Real example"] as const).map((type) => (
-                <div key={type} className="relative">
-                  <Badge
-                    variant="outline"
-                    className={cn(
-                      "text-base rounded-full h-10 px-4 font-normal cursor-pointer text-muted-foreground transition-none relative",
-                      activeType === type &&
-                        "bg-gradient-to-r from-pink-400/90 to-amber-500/65 dark:to-amber-200/75 bg-clip-text text-transparent"
-                    )}
-                    onClick={() => handleTypeChange(type)}
-                  >
-                    <span>{type}</span>
-                  </Badge>
-                  {activeType === type && (
-                    <ShineBorder
-                      shineColor={
-                        theme === "dark"
-                          ? ["#FFC0CB50", "#FFB6C150"]
-                          : ["#FFC0CB95", "#FFB6C195"]
-                      }
-                      duration={12}
-                      borderWidth={2}
-                      className="rounded-full"
-                    />
-                  )}
-                </div>
-              ))}
+    <LandingSection
+      title="Pronunce the word"
+      description="Ever understood a word but couldn't pronounce it? Get AI pronunciations or listen to how people use them in real-life."
+      gap="md"
+      afterDescription={
+        <div className="w-full flex items-center gap-3 max-w-[40rem]">
+          {(["AI transcription", "Real example"] as const).map((type) => (
+            <div key={type} className="relative">
+              <Badge
+                variant="outline"
+                className={cn(
+                  "text-base rounded-full h-10 px-4 font-normal cursor-pointer text-muted-foreground transition-none relative",
+                  activeType === type &&
+                    "bg-gradient-to-r from-pink-400/90 to-amber-500/65 dark:to-amber-200/75 bg-clip-text text-transparent"
+                )}
+                onClick={() => handleTypeChange(type)}
+              >
+                <span>{type}</span>
+              </Badge>
+              {activeType === type && (
+                <ShineBorder
+                  shineColor={
+                    theme === "dark"
+                      ? ["#FFC0CB50", "#FFB6C150"]
+                      : ["#FFC0CB95", "#FFB6C195"]
+                  }
+                  duration={12}
+                  borderWidth={2}
+                  className="rounded-full"
+                />
+              )}
             </div>
-          </div>
+          ))}
         </div>
-        <div className="w-full flex flex-col -space-y-9 max-w-[40rem]">
-          <AudioCard
-            word="Probably"
-            type={activeType}
-            iconBg="bg-sky-500/75"
-            background="bg-accent/10"
-            opacity={0.25}
-          />
-          <AudioCard
-            word="February"
-            type={activeType}
-            iconBg="bg-purple-500/75"
-            background="bg-accent/10"
-            opacity={0.5}
-          />
-          <AudioCard
-            word="Rural"
-            type={activeType}
-            iconBg="bg-rose-500"
-            background="bg-accent/10"
-            opacity={1}
-            isLast
-            onPlayPause={handlePlayPause}
-            isPlaying={isPlaying}
-          />
-        </div>
+      }
+    >
+      <div className="flex flex-col -space-y-9">
+        <AudioCard
+          word="Probably"
+          type={activeType}
+          iconBg="bg-sky-500/75"
+          background="bg-accent/10"
+          opacity={0.25}
+        />
+        <AudioCard
+          word="February"
+          type={activeType}
+          iconBg="bg-purple-500/75"
+          background="bg-accent/10"
+          opacity={0.5}
+        />
+        <AudioCard
+          word="Rural"
+          type={activeType}
+          iconBg="bg-rose-500"
+          background="bg-accent/10"
+          opacity={1}
+          isLast
+          onPlayPause={handlePlayPause}
+          isPlaying={isPlaying}
+        />
       </div>
-    </section>
+    </LandingSection>
   );
 }
 

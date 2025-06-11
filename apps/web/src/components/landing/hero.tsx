@@ -12,9 +12,9 @@ import { SearchDropdown } from "../search-dropdown";
 
 export function Hero() {
   return (
-    <section className="relative w-full overflow-hidden px-8">
+    <section className="relative w-full px-8">
       <div className="max-w-2xl mx-auto flex flex-col items-center justify-center gap-8">
-        <div className="w-full text-center flex flex-col items-center gap-10">
+        <div className="w-full text-center flex flex-col items-center gap-10 overflow-visible">
           <div className="flex flex-col items-center justify-center gap-5 sm:gap-7">
             <h1 className="text-4xl font-semibold tracking-tight text-foreground sm:text-5xl md:text-6xl">
               Words explained{" "}
@@ -27,7 +27,7 @@ export function Hero() {
               We explain words how you'd explain them to a friend.
             </p>
           </div>
-          <div className="w-full flex flex-col items-center justify-center gap-8">
+          <div className="w-full flex flex-col items-center justify-center gap-8 overflow-visible">
             <HeroSearchInput />
             <WordSuggestions />
           </div>
@@ -113,7 +113,10 @@ function HeroSearchInput() {
   };
 
   return (
-    <div ref={containerRef} className="relative w-full max-w-lg">
+    <div
+      ref={containerRef}
+      className="relative w-full max-w-lg overflow-visible"
+    >
       {/* Subtle gradient glow around the input - stays constant */}
       <div className="absolute inset-0 bg-gradient-to-r from-pink-400/25 via-amber-400/25 to-pink-400/25 rounded-full blur-xl dark:opacity-35"></div>
 

@@ -6,6 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { useRouter } from "next/navigation";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
+import { useSearchStore } from "@/stores/search-store";
+import { useDebounce } from "@/hooks/use-debounce";
+import { SearchDropdown } from "../search-dropdown";
 
 export function Hero() {
   return (
@@ -36,25 +39,91 @@ export function Hero() {
 
 function HeroSearchInput() {
   const router = useRouter();
-  const [value, setValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  // Zustand store
+  const { query, setQuery, performSearch, fetchUsage } = useSearchStore();
+
+  const debouncedQuery = useDebounce(query, 300);
+
+  // Pre-fetch usage and random words in background on mount
+  useEffect(() => {
+    fetchUsage();
+    performSearch(""); // Pre-load random words
+  }, [fetchUsage, performSearch]);
+
+  // Handle search query changes - always keep words in sync with query
+  useEffect(() => {
+    performSearch(debouncedQuery);
+  }, [debouncedQuery, performSearch]);
+
+  // Handle delayed dropdown visibility
+  useEffect(() => {
+    if (isOpen) {
+      // Delay dropdown appearance to match input transition
+      const timer = setTimeout(() => {
+        setDropdownVisible(true);
+      }, 150); // Match the transition duration
+      return () => clearTimeout(timer);
+    } else {
+      // Close dropdown immediately
+      setDropdownVisible(false);
+    }
+  }, [isOpen]);
+
+  // Handle outside clicks to close dropdown
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as Element;
+      if (containerRef.current && !containerRef.current.contains(target)) {
+        setIsOpen(false);
+      }
+    };
+
+    if (isOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+      return () =>
+        document.removeEventListener("mousedown", handleClickOutside);
+    }
+  }, [isOpen]);
 
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (value.trim() && !isLoading) {
+    if (query.trim() && !isLoading) {
       setIsLoading(true);
-      router.push(`/words/${encodeURIComponent(value.trim())}`);
+      router.push(`/words/${encodeURIComponent(query.trim())}`);
     }
   };
 
+  const handleWordSelect = (word: string) => {
+    const url = `/words/${encodeURIComponent(word)}`;
+    router.push(url);
+    setIsOpen(false);
+  };
+
+  const handleOpen = () => {
+    setIsOpen(true);
+  };
+
+  const handleClose = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="relative w-full max-w-lg">
-      {/* Subtle gradient glow around the input */}
+    <div ref={containerRef} className="relative w-full max-w-lg">
+      {/* Subtle gradient glow around the input - stays constant */}
       <div className="absolute inset-0 bg-gradient-to-r from-pink-400/25 via-amber-400/25 to-pink-400/25 rounded-full blur-xl dark:opacity-35"></div>
 
       {/* Main search input */}
       <form onSubmit={handleSearch} className="relative">
-        <div className="relative bg-background rounded-full border shadow-sm">
+        <div
+          className={`relative bg-background border shadow-sm transition-all duration-150 ${
+            isOpen ? "rounded-t-3xl rounded-b-none" : "rounded-full"
+          }`}
+        >
           <div className="flex items-center pl-5 pr-3 h-[3.2rem] rounded-full">
             <SearchIcon className="w-5 h-5 text-muted-foreground mr-4 flex-shrink-0" />
             <Input
@@ -62,12 +131,13 @@ function HeroSearchInput() {
               type="search"
               placeholder="Search for a word"
               className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 rounded-full h-[3.2rem] px-0 shadow-none [&::-webkit-search-cancel-button]:hidden"
-              value={value}
-              onChange={(e) => setValue(e.target.value)}
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              onClick={handleOpen}
               onKeyDown={(e) => {
-                if (e.key === "Enter" && value.trim() && !isLoading) {
+                if (e.key === "Enter" && query.trim() && !isLoading) {
                   setIsLoading(true);
-                  router.push(`/words/${encodeURIComponent(value.trim())}`);
+                  router.push(`/words/${encodeURIComponent(query.trim())}`);
                 }
               }}
             />
@@ -86,6 +156,20 @@ function HeroSearchInput() {
           </div>
         </div>
       </form>
+
+      {/* Fixed positioned dropdown that connects seamlessly */}
+      <SearchDropdown
+        isOpen={dropdownVisible}
+        onClose={handleClose}
+        onWordSelect={handleWordSelect}
+        showBackdrop={false}
+        useFixedPosition={true}
+        showUsageWarning={false}
+        showRefreshButton={false}
+        isIntegrated={true}
+        containerClassName=""
+        dropdownClassName="bg-background border border-t-0 border-border rounded-t-none rounded-b-2xl shadow-lg overflow-hidden"
+      />
     </div>
   );
 }

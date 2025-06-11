@@ -18,14 +18,12 @@ interface SearchCache {
 
 interface SearchState {
   // State
-  isOpen: boolean;
   query: string;
   words: string[];
   isLoading: boolean;
   wordUsage: WordUsageResponse | null;
 
   // Actions
-  setIsOpen: (open: boolean) => void;
   setQuery: (query: string) => void;
   setWords: (words: string[]) => void;
   setIsLoading: (loading: boolean) => void;
@@ -35,8 +33,6 @@ interface SearchState {
   performSearch: (searchQuery: string) => Promise<void>;
   refreshRandomWords: () => Promise<void>;
   fetchUsage: () => Promise<void>;
-  openWithQuery: (initialQuery: string) => void;
-  close: () => void;
 
   // Cache utilities
   getRandomWordsFromCache: () => string[] | null;
@@ -47,14 +43,12 @@ interface SearchState {
 
 export const useSearchStore = create<SearchState>((set, get) => ({
   // Initial state
-  isOpen: false,
   query: "",
   words: [],
   isLoading: false,
   wordUsage: null,
 
   // Basic setters
-  setIsOpen: (open) => set({ isOpen: open }),
   setQuery: (query) => set({ query }),
   setWords: (words) => set({ words }),
   setIsLoading: (loading) => set({ isLoading: loading }),
@@ -209,20 +203,5 @@ export const useSearchStore = create<SearchState>((set, get) => ({
       console.error("Error fetching word usage:", error);
       set({ wordUsage: null });
     }
-  },
-
-  openWithQuery: (initialQuery: string) => {
-    const { performSearch } = get();
-    set({
-      isOpen: true,
-      query: initialQuery,
-    });
-    // Immediately search to avoid flicker
-    performSearch(initialQuery);
-  },
-
-  close: () => {
-    set({ isOpen: false });
-    // Don't reset query to avoid unnecessary fetching
   },
 }));

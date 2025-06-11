@@ -161,7 +161,7 @@ function HeroSearchInput() {
             <Input
               name="search"
               type="search"
-              placeholder="Search for a word"
+              placeholder="Search a word"
               className="border-0 focus-visible:ring-0 focus-visible:ring-offset-0 rounded-full h-[3.2rem] px-0 shadow-none [&::-webkit-search-cancel-button]:hidden"
               value={query}
               onChange={(e) => setQuery(e.target.value)}

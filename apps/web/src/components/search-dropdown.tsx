@@ -8,6 +8,10 @@ import { Separator } from "./ui/separator";
 import { cn } from "@/lib/utils";
 import { useSearchStore } from "@/stores/search-store";
 import { useAskAIStore } from "@/stores/ask-ai-store";
+import {
+  SHOW_RANDOM_WORDS_KEY,
+  DEFAULT_SHOW_RANDOM_WORDS,
+} from "@/lib/settings";
 
 const AI_INITIAL_MESSAGE_KEY = "ai-initial-message";
 const DEFAULT_INITIAL_MESSAGE = 'Explain the word "{word}"';
@@ -132,37 +136,105 @@ export function SearchDropdown({
         ) : (
           <>
             {/* Scrollable word list */}
-            <div className="flex-1 overflow-y-auto py-2">
-              {words.map((word) => (
-                <button
-                  key={word}
-                  onClick={() => onWordSelect(word)}
-                  className="w-full px-4 py-2 text-left hover:bg-accent text-sm transition-colors"
-                >
-                  {word}
-                </button>
-              ))}
+            <div
+              className={cn(
+                "flex-1 py-2",
+                (() => {
+                  // Check if random words should be scrollable
+                  const showRandomWords = localStorage.getItem(
+                    SHOW_RANDOM_WORDS_KEY
+                  );
+                  const shouldShowRandomWords = showRandomWords
+                    ? showRandomWords === "true"
+                    : DEFAULT_SHOW_RANDOM_WORDS;
+                  const isRandomWordsDisabled =
+                    !query && !shouldShowRandomWords;
+                  return isRandomWordsDisabled
+                    ? "overflow-hidden"
+                    : "overflow-y-auto";
+                })()
+              )}
+            >
+              <div
+                className={cn(
+                  "relative",
+                  !query &&
+                    (() => {
+                      // Check if random words should be shown clearly
+                      const showRandomWords = localStorage.getItem(
+                        SHOW_RANDOM_WORDS_KEY
+                      );
+                      const shouldShowRandomWords = showRandomWords
+                        ? showRandomWords === "true"
+                        : DEFAULT_SHOW_RANDOM_WORDS;
+                      return !shouldShowRandomWords ? "blur-md" : "";
+                    })()
+                )}
+              >
+                {words.map((word) => {
+                  // Check if random words should be interactive
+                  const showRandomWords = localStorage.getItem(
+                    SHOW_RANDOM_WORDS_KEY
+                  );
+                  const shouldShowRandomWords = showRandomWords
+                    ? showRandomWords === "true"
+                    : DEFAULT_SHOW_RANDOM_WORDS;
+                  const isRandomWordsDisabled =
+                    !query && !shouldShowRandomWords;
+
+                  return (
+                    <button
+                      key={word}
+                      onClick={
+                        isRandomWordsDisabled
+                          ? undefined
+                          : () => onWordSelect(word)
+                      }
+                      className={cn(
+                        "w-full px-4 py-2 text-left text-sm transition-colors",
+                        isRandomWordsDisabled
+                          ? "cursor-default opacity-60"
+                          : "hover:bg-accent cursor-pointer"
+                      )}
+                      disabled={isRandomWordsDisabled}
+                    >
+                      {word}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
 
             {/* Fixed refresh button at bottom */}
-            {showRefreshButton && words.length > 0 && !query && (
-              <>
-                <Separator />
-                <div>
-                  <button
-                    onClick={refreshRandomWords}
-                    disabled={isLoading}
-                    className="w-full px-4 py-3 text-left hover:bg-accent text-sm transition-colors flex items-center gap-2 text-muted-foreground hover:text-foreground"
-                  >
-                    <RotateCw
-                      size={14}
-                      className={isLoading ? "animate-spin" : ""}
-                    />
-                    <span>Refresh list</span>
-                  </button>
-                </div>
-              </>
-            )}
+            {showRefreshButton &&
+              words.length > 0 &&
+              !query &&
+              (() => {
+                const showRandomWords = localStorage.getItem(
+                  SHOW_RANDOM_WORDS_KEY
+                );
+                const shouldShowRandomWords = showRandomWords
+                  ? showRandomWords === "true"
+                  : DEFAULT_SHOW_RANDOM_WORDS;
+                return shouldShowRandomWords;
+              })() && (
+                <>
+                  <Separator />
+                  <div>
+                    <button
+                      onClick={refreshRandomWords}
+                      disabled={isLoading}
+                      className="w-full px-4 py-3 text-left hover:bg-accent text-sm transition-colors flex items-center gap-2 text-muted-foreground hover:text-foreground"
+                    >
+                      <RotateCw
+                        size={14}
+                        className={isLoading ? "animate-spin" : ""}
+                      />
+                      <span>Refresh list</span>
+                    </button>
+                  </div>
+                </>
+              )}
           </>
         )}
       </div>
@@ -216,9 +288,23 @@ export function SearchDropdown({
               }}
               className={cn(
                 "absolute top-full left-0 right-0 z-50 overflow-visible",
-                isIntegrated
-                  ? "bg-background border border-t-0 border-border rounded-t-none rounded-b-2xl shadow-lg"
-                  : "bg-background border border-border rounded-lg shadow-lg",
+                (() => {
+                  // Check if random words should be shown clearly for background opacity
+                  const showRandomWords = localStorage.getItem(
+                    SHOW_RANDOM_WORDS_KEY
+                  );
+                  const shouldShowRandomWords = showRandomWords
+                    ? showRandomWords === "true"
+                    : DEFAULT_SHOW_RANDOM_WORDS;
+                  const bgOpacity =
+                    shouldShowRandomWords || query
+                      ? "bg-background"
+                      : "bg-background/50";
+
+                  return isIntegrated
+                    ? `${bgOpacity} border border-t-0 border-border rounded-t-none rounded-b-2xl shadow-lg`
+                    : `${bgOpacity} border border-border rounded-lg shadow-lg`;
+                })(),
                 dropdownClassName
               )}
             >

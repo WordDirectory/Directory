@@ -33,6 +33,8 @@ import {
   HEAR_EXAMPLES_BEHAVIOR_KEY,
   HEAR_EXAMPLES_BEHAVIORS,
   DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
+  SHOW_RANDOM_WORDS_KEY,
+  DEFAULT_SHOW_RANDOM_WORDS,
   type HearExamplesBehavior,
 } from "@/lib/settings";
 
@@ -51,6 +53,13 @@ export default function SettingsPage() {
   const [savedHearExamplesBehavior, setSavedHearExamplesBehavior] =
     useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
   const [isSavingHearExamples, setIsSavingHearExamples] = useState(false);
+  const [showRandomWords, setShowRandomWords] = useState(
+    DEFAULT_SHOW_RANDOM_WORDS
+  );
+  const [savedShowRandomWords, setSavedShowRandomWords] = useState(
+    DEFAULT_SHOW_RANDOM_WORDS
+  );
+  const [isSavingRandomWords, setIsSavingRandomWords] = useState(false);
 
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
@@ -90,6 +99,13 @@ export default function SettingsPage() {
       setSavedHearExamplesBehavior(
         savedHearExamplesBehavior as HearExamplesBehavior
       );
+    }
+
+    // Load random words preference from localStorage
+    const savedRandomWordsPref = localStorage.getItem(SHOW_RANDOM_WORDS_KEY);
+    if (savedRandomWordsPref) {
+      setShowRandomWords(savedRandomWordsPref === "true");
+      setSavedShowRandomWords(savedRandomWordsPref === "true");
     }
   }, []);
 
@@ -359,6 +375,73 @@ export default function SettingsPage() {
               disabled={isSavingImages || showImages === savedShowImages}
             >
               {isSavingImages ? (
+                <>
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                  Saving...
+                </>
+              ) : (
+                "Save changes"
+              )}
+            </Button>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-2xl font-semibold">Search behavior</h2>
+            <p className="text-sm text-muted-foreground">
+              Configure how the search dropdown behaves when there's no search
+              query.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <div className="flex items-center space-x-2">
+              <Checkbox
+                className="rounded"
+                id="show-random-words"
+                checked={showRandomWords}
+                onCheckedChange={(checked) => {
+                  setShowRandomWords(checked as boolean);
+                }}
+              />
+              <div className="grid gap-1.5 leading-none">
+                <Label
+                  htmlFor="show-random-words"
+                  className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                >
+                  Show random words when search is empty
+                </Label>
+                <p className="text-[13px] text-muted-foreground">
+                  When enabled, the search dropdown will show random words when
+                  you haven't typed anything. When disabled, the dropdown will
+                  be empty until you start typing.
+                </p>
+              </div>
+            </div>
+
+            <Button
+              className="w-fit"
+              onClick={async () => {
+                try {
+                  setIsSavingRandomWords(true);
+                  localStorage.setItem(
+                    SHOW_RANDOM_WORDS_KEY,
+                    showRandomWords.toString()
+                  );
+                  setSavedShowRandomWords(showRandomWords);
+                  toast.success("Random words preference saved!");
+                } catch (error) {
+                  toast.error("Failed to save random words preference");
+                } finally {
+                  setIsSavingRandomWords(false);
+                }
+              }}
+              disabled={
+                isSavingRandomWords || showRandomWords === savedShowRandomWords
+              }
+            >
+              {isSavingRandomWords ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   Saving...

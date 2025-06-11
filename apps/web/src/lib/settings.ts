@@ -8,3 +8,6 @@ export const DEFAULT_HEAR_EXAMPLES_BEHAVIOR: HearExamplesBehavior =
   "hear-examples";
 
 export const SHOW_IMAGES_KEY = "show-images";
+
+export const SHOW_RANDOM_WORDS_KEY = "show-random-words";
+export const DEFAULT_SHOW_RANDOM_WORDS = true;

@@ -1,6 +1,10 @@
 import { create } from "zustand";
 import { searchWords, getRandomWords } from "@/lib/words";
 import { WordUsageResponse } from "@/types/api";
+import {
+  SHOW_RANDOM_WORDS_KEY,
+  DEFAULT_SHOW_RANDOM_WORDS,
+} from "@/lib/settings";
 
 const RANDOM_WORDS_CACHE_KEY = "random-words-cache";
 const SEARCH_CACHE_KEY = "search-results-cache";
@@ -133,6 +137,9 @@ export const useSearchStore = create<SearchState>((set, get) => ({
     } = get();
 
     if (!searchQuery) {
+      // Always fetch random words for visual consistency
+      // The UI will handle blurring based on user preference
+
       // Try to get cached random words first
       const cached = getRandomWordsFromCache();
       if (cached) {
@@ -177,6 +184,9 @@ export const useSearchStore = create<SearchState>((set, get) => ({
 
   refreshRandomWords: async () => {
     const { setRandomWordsCache } = get();
+
+    // Always refresh random words for visual consistency
+    // The UI will handle blurring based on user preference
 
     try {
       set({ isLoading: true });

@@ -88,6 +88,15 @@ export function SearchInput() {
     handleClose();
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter" && query.trim()) {
+      // Immediately navigate to the word, even if search results are still loading
+      const url = `/words/${encodeURIComponent(query.trim())}`;
+      router.push(url);
+      handleClose();
+    }
+  };
+
   return (
     <div className="relative mx-auto w-full md:w-auto">
       <div className="relative w-full">
@@ -98,6 +107,7 @@ export function SearchInput() {
           value={isOpen ? query : currentWord}
           onChange={(e) => setQuery(e.target.value)}
           onClick={handleOpen}
+          onKeyDown={handleKeyDown}
           readOnly={!isOpen}
           className="h-9 w-full md:w-72 text-sm rounded-full"
         />

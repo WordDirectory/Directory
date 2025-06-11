@@ -5,7 +5,7 @@ interface LandingSectionProps {
   title: ReactNode;
   description?: ReactNode;
   afterDescription?: ReactNode; // For badges, buttons, etc.
-  children: ReactNode; // Main content
+  children?: ReactNode; // Main content
   titleClassName?: string;
   descriptionClassName?: string;
   contentMaxWidth?: string; // For constraining main content width

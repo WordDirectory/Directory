@@ -63,8 +63,6 @@ export function DifferenceSection() {
         </div>
       }
     >
-      {/* No main content for this section */}
-      <div></div>
     </LandingSection>
   );
 }

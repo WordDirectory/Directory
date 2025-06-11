@@ -18,11 +18,17 @@ export const auth = betterAuth({
     usePlural: true,
   }),
   secret: process.env.BETTER_AUTH_SECRET!,
+  user: {
+    deleteUser: {
+      enabled: true,
+    },
+  },
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: true,
   },
   emailVerification: {
+    autoSignInAfterVerification: true,
     sendVerificationEmail: async ({ user, url }) => {
       await sendEmail({
         to: user.email,

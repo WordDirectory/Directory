@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { Loader2 } from "lucide-react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { DeleteAccountDialog } from "@/components/delete-account-dialog";
 import {
   Form,
   FormControl,
@@ -60,6 +61,7 @@ export default function SettingsPage() {
     DEFAULT_SHOW_RANDOM_WORDS
   );
   const [isSavingRandomWords, setIsSavingRandomWords] = useState(false);
+  const [showDeleteDialog, setShowDeleteDialog] = useState(false);
 
   const form = useForm<ProfileFormValues>({
     resolver: zodResolver(profileFormSchema),
@@ -153,7 +155,10 @@ export default function SettingsPage() {
           <h1 className="text-4xl font-bold">General</h1>
           <div className="flex flex-row items-center gap-6">
             <Avatar className="h-24 w-24">
-              <AvatarImage src={session?.user?.image || ""} alt="User avatar" />
+              <AvatarImage
+                src={session?.user?.image || undefined}
+                alt="User avatar"
+              />
               <AvatarFallback className="text-xl">
                 {getFirstLetter(session?.user?.name || "U")}
               </AvatarFallback>
@@ -452,7 +457,35 @@ export default function SettingsPage() {
             </Button>
           </div>
         </section>
+
+        <section className="flex flex-col gap-5 border-t pt-8">
+          <div className="flex flex-col gap-3">
+            <h2 className="text-2xl font-semibold text-destructive">
+              Delete Account
+            </h2>
+            <p className="text-sm text-muted-foreground">
+              This will permanently delete your account, profile data, and
+              remove all your information from our servers.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <Button
+              variant="destructive"
+              className="w-fit"
+              onClick={() => setShowDeleteDialog(true)}
+            >
+              Delete Account
+            </Button>
+          </div>
+        </section>
       </div>
+
+      <DeleteAccountDialog
+        open={showDeleteDialog}
+        onOpenChange={setShowDeleteDialog}
+        userEmail={session?.user?.email}
+      />
     </main>
   );
 }

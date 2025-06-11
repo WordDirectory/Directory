@@ -55,7 +55,7 @@ export function Sidebar() {
       )}
       <aside
         className={cn(
-          "bg-sidebar w-[20rem] h-dvh sticky top-14 border-r p-0 overflow-hidden transition-transform duration-300 ease-in-out",
+          "bg-sidebar w-[20rem] h-dvh sticky top-16 border-r p-0 overflow-hidden transition-transform duration-300 ease-in-out",
           isCollapsed && "-translate-x-full",
           isMobile && "absolute top-0 left-0 z-50"
         )}

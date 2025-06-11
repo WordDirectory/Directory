@@ -34,6 +34,14 @@ export function UserDropdown() {
 
   useEffect(() => {
     const getSubscriptions = async () => {
+      // Reset isPlus first
+      setIsPlus(false);
+
+      // Only fetch subscriptions if user is logged in
+      if (!session?.user?.id) {
+        return;
+      }
+
       const { data: subscriptions } = await authClient.subscription.list();
 
       if (subscriptions) {
@@ -51,7 +59,7 @@ export function UserDropdown() {
     };
 
     getSubscriptions();
-  }, []);
+  }, [session]); // Add session as dependency
 
   const handleSignOut = async () => {
     try {
@@ -108,7 +116,10 @@ export function UserDropdown() {
       <DropdownMenuTrigger asChild>
         <div className="relative">
           <Avatar className="h-8 w-8 cursor-pointer">
-            <AvatarImage src={session?.user?.image || ""} alt="User avatar" />
+            <AvatarImage
+              src={session?.user?.image || undefined}
+              alt="User avatar"
+            />
             <AvatarFallback className="">
               {getFirstLetter(session?.user?.name || "U")}
             </AvatarFallback>

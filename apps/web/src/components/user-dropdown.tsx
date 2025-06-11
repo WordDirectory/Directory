@@ -21,7 +21,7 @@ import {
 import { Badge } from "./ui/badge";
 import { usePathname, useRouter } from "next/navigation";
 import { toast } from "sonner";
-import { getFirstLetter } from "@/lib/utils";
+import { getFirstLetter, getLetterColor } from "@/lib/utils";
 import { useEffect, useState } from "react";
 import { upgrade } from "./upgrade-button";
 
@@ -120,8 +120,10 @@ export function UserDropdown() {
               src={session?.user?.image || undefined}
               alt="User avatar"
             />
-            <AvatarFallback className="">
-              {getFirstLetter(session?.user?.name || "U")}
+            <AvatarFallback
+              className={`text-white ${session?.user?.email ? getLetterColor(session?.user?.email) : "bg-gray-500"}`}
+            >
+              {getFirstLetter(session?.user?.email || "U")}
             </AvatarFallback>
           </Avatar>
           {isPlus && (

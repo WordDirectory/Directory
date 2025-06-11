@@ -1,10 +1,17 @@
 import type { Config } from "tailwindcss";
+import { AVATAR_COLORS } from "./src/lib/utils";
+
 export default {
   darkMode: ["class"],
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  safelist: [
+    // Avatar colors for each letter A-Z
+    ...Object.values(AVATAR_COLORS),
+    "bg-gray-500", // fallback color
   ],
   theme: {
     extend: {

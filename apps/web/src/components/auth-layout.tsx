@@ -73,6 +73,7 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
           email: signupValues.email,
           password: signupValues.password,
           name,
+          image: undefined,
         });
 
         if (error) {

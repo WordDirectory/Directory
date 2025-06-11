@@ -2,7 +2,7 @@
 
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 import { useSession } from "@/lib/auth-client";
-import { getFirstLetter } from "@/lib/utils";
+import { getFirstLetter, getLetterColor } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { authClient } from "@/lib/auth-client";
 import { toast } from "sonner";
@@ -159,8 +159,10 @@ export default function SettingsPage() {
                 src={session?.user?.image || undefined}
                 alt="User avatar"
               />
-              <AvatarFallback className="text-xl">
-                {getFirstLetter(session?.user?.name || "U")}
+              <AvatarFallback
+                className={`text-[2.5rem] text-white ${session?.user?.email ? getLetterColor(session?.user?.email) : "bg-gray-500"}`}
+              >
+                {getFirstLetter(session?.user?.email || "U")}
               </AvatarFallback>
             </Avatar>
             <div className="flex flex-col gap-2">

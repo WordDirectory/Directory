@@ -6,6 +6,7 @@ import "./globals.css";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
 import { MessageProvider } from "@/components/message-provider";
+import { GlobalKeyboardShortcuts } from "@/components/global-keyboard-shortcuts";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -109,6 +110,7 @@ export default function RootLayout({
             <Analytics />
             <Toaster />
             <MessageProvider />
+            <GlobalKeyboardShortcuts />
           </TooltipProvider>
         </ThemeProvider>
       </body>

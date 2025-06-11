@@ -90,6 +90,35 @@ function HeroSearchInput() {
     }
   }, [isOpen]);
 
+  // Listen for custom event to open hero search from keyboard shortcuts
+  useEffect(() => {
+    console.log("HeroSearchInput: Setting up openHeroSearch event listener");
+
+    const handleOpenHeroSearch = () => {
+      console.log(
+        "HeroSearchInput: openHeroSearch event received, calling handleOpen()"
+      );
+      handleOpen();
+      // Focus the input after opening
+      setTimeout(() => {
+        const input = containerRef.current?.querySelector(
+          'input[name="search"]'
+        ) as HTMLInputElement;
+        console.log(
+          "HeroSearchInput: Attempting to focus input element:",
+          input
+        );
+        input?.focus();
+      }, 0);
+    };
+
+    window.addEventListener("openHeroSearch", handleOpenHeroSearch);
+    return () => {
+      console.log("HeroSearchInput: Cleaning up openHeroSearch event listener");
+      window.removeEventListener("openHeroSearch", handleOpenHeroSearch);
+    };
+  }, []);
+
   const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (query.trim() && !isLoading) {

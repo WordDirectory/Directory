@@ -61,12 +61,18 @@ export function SearchInput() {
 
   // Listen for custom event to open header search from external components
   useEffect(() => {
+    console.log("SearchInput: Setting up openHeaderSearch event listener");
+
     const handleOpenHeaderSearch = () => {
+      console.log(
+        "SearchInput: openHeaderSearch event received, calling handleOpen()"
+      );
       handleOpen();
     };
 
     window.addEventListener("openHeaderSearch", handleOpenHeaderSearch);
     return () => {
+      console.log("SearchInput: Cleaning up openHeaderSearch event listener");
       window.removeEventListener("openHeaderSearch", handleOpenHeaderSearch);
     };
   }, [handleOpen]);

@@ -303,7 +303,7 @@ export function SearchDropdown({
 
                   return isIntegrated
                     ? `${bgOpacity} border border-t-0 border-border rounded-t-none rounded-b-2xl shadow-lg`
-                    : `${bgOpacity} border border-border rounded-lg shadow-lg`;
+                    : `${bgOpacity} border border-border rounded-lg overflow-hidden shadow-lg`;
                 })(),
                 dropdownClassName
               )}

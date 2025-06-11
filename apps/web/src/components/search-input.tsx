@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useCallback, useState } from "react";
+import { useEffect, useCallback, useState, useRef } from "react";
 import { Input } from "./ui/input";
 import { capitalize } from "@/lib/utils";
 import { usePathname, useRouter } from "next/navigation";
@@ -25,6 +25,7 @@ export function SearchInput() {
   const pathname = usePathname();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   // Zustand store
   const { query, setQuery, performSearch, fetchUsage } = useSearchStore();
@@ -41,6 +42,11 @@ export function SearchInput() {
       setQuery("");
     }
     setIsOpen(true);
+
+    // Focus the input after state update
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
   }, [pathname, query, setQuery]);
 
   const handleClose = () => {
@@ -52,6 +58,18 @@ export function SearchInput() {
     fetchUsage();
     performSearch(""); // Pre-load random words
   }, [fetchUsage, performSearch]);
+
+  // Listen for custom event to open header search from external components
+  useEffect(() => {
+    const handleOpenHeaderSearch = () => {
+      handleOpen();
+    };
+
+    window.addEventListener("openHeaderSearch", handleOpenHeaderSearch);
+    return () => {
+      window.removeEventListener("openHeaderSearch", handleOpenHeaderSearch);
+    };
+  }, [handleOpen]);
 
   // Handle search query changes - always keep words in sync with query
   useEffect(() => {
@@ -68,6 +86,7 @@ export function SearchInput() {
     <div className="relative mx-auto w-full md:w-auto">
       <div className="relative w-full">
         <Input
+          ref={inputRef}
           type="search"
           placeholder="Search words..."
           value={isOpen ? query : currentWord}

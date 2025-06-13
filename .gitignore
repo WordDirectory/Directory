@@ -71,3 +71,5 @@ scripts/
 /apps/mcp/node_modules
 
 /apps/videos
+
+/apps/web/src/app/admin

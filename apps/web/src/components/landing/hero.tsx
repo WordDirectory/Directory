@@ -230,6 +230,19 @@ function WordSuggestions() {
   });
   const [recentlyScrolled, setRecentlyScrolled] = useState(false);
 
+  // Restore scroll position on mount
+  useEffect(() => {
+    const element = scrollRef.current;
+    if (!element) return;
+
+    const savedScrollPosition = sessionStorage.getItem(
+      "wordSuggestionsScrollPosition"
+    );
+    if (savedScrollPosition) {
+      element.scrollLeft = parseInt(savedScrollPosition, 10);
+    }
+  }, []);
+
   useEffect(() => {
     const element = scrollRef.current;
     if (!element) return;
@@ -240,6 +253,12 @@ function WordSuggestions() {
       const canScrollRight = scrollLeft < scrollWidth - clientWidth - 1; // -1 for rounding
 
       setScrollState({ canScrollLeft, canScrollRight });
+
+      // Save scroll position to sessionStorage
+      sessionStorage.setItem(
+        "wordSuggestionsScrollPosition",
+        scrollLeft.toString()
+      );
     };
 
     // Initial check

@@ -49,6 +49,7 @@ import {
   DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
   type HearExamplesBehavior,
 } from "@/lib/settings";
+import { capitalize } from "@/lib/utils";
 
 // Buffer time (in seconds) to add before and after pronunciation examples
 const PRONUNCIATION_START_BUFFER_SECONDS = 0.5;
@@ -663,7 +664,7 @@ export function WordHeader({
         <div className="flex flex-col gap-6">
           <div className="flex flex-wrap justify-between">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-foreground/85 break-words hyphens-auto max-w-[80%]">
-              {word}
+              {capitalize(word)}
             </h1>
 
             {/* Mobile action buttons */}

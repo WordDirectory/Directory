@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { RotateCw, FileX2, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Separator } from "./ui/separator";
-import { cn } from "@/lib/utils";
+import { capitalize, cn } from "@/lib/utils";
 import { useSearchStore } from "@/stores/search-store";
 import { useAskAIStore } from "@/stores/ask-ai-store";
 import {
@@ -198,7 +198,7 @@ export function SearchDropdown({
                       )}
                       disabled={isRandomWordsDisabled}
                     >
-                      {word}
+                      {capitalize(word)}
                     </button>
                   );
                 })}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useCallback, useState, useRef } from "react";
+import { useEffect, useCallback, useState, useRef, Suspense } from "react";
 import { Input } from "./ui/input";
 import { capitalize } from "@/lib/utils";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -30,7 +30,7 @@ function getWordFromPathname(pathname: string, searchParams: URLSearchParams): s
   return capitalize(decodeURIComponent(wordPart).replace(/\/$/, ""));
 }
 
-export function SearchInput() {
+function SearchInputInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -130,5 +130,13 @@ export function SearchInput() {
         showBackdrop={true}
       />
     </div>
+  );
+}
+
+export function SearchInput() {
+  return (
+    <Suspense>
+      <SearchInputInner />
+    </Suspense>
   );
 }

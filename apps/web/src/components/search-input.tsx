@@ -3,12 +3,21 @@
 import { useEffect, useCallback, useState, useRef } from "react";
 import { Input } from "./ui/input";
 import { capitalize } from "@/lib/utils";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import { useDebounce } from "@/hooks/use-debounce";
 import { useSearchStore } from "@/stores/search-store";
 import { SearchDropdown } from "./search-dropdown";
 
-function getWordFromPathname(pathname: string): string {
+function getWordFromPathname(pathname: string, searchParams: URLSearchParams): string {
+  // Check for word param on not-found page
+  if (pathname === "/words/not-found") {
+    const wordParam = searchParams.get("word");
+    if (wordParam) {
+      return capitalize(decodeURIComponent(wordParam));
+    }
+  }
+
+  // Normal word path handling
   if (!pathname.startsWith("/words/")) {
     return "";
   }
@@ -23,6 +32,7 @@ function getWordFromPathname(pathname: string): string {
 
 export function SearchInput() {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement>(null);
@@ -31,10 +41,10 @@ export function SearchInput() {
   const { query, setQuery, performSearch, fetchUsage } = useSearchStore();
 
   const debouncedQuery = useDebounce(query, 300);
-  const currentWord = getWordFromPathname(pathname);
+  const currentWord = getWordFromPathname(pathname, searchParams);
 
   const handleOpen = useCallback(() => {
-    const currentWord = getWordFromPathname(pathname);
+    const currentWord = getWordFromPathname(pathname, searchParams);
     if (currentWord && currentWord !== query) {
       setQuery(currentWord);
     } else if (!currentWord && query) {
@@ -47,7 +57,7 @@ export function SearchInput() {
     setTimeout(() => {
       inputRef.current?.focus();
     }, 0);
-  }, [pathname, query, setQuery]);
+  }, [pathname, searchParams, query, setQuery]);
 
   const handleClose = () => {
     setIsOpen(false);

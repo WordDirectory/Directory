@@ -32,6 +32,10 @@ export function Sidebar() {
       label: "Add words",
       href: "/admin",
     },
+    {
+      label: "Videos",
+      href: "/admin/videos",
+    },
   ];
 
   // Don't render anything until we know mobile state

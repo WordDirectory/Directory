@@ -99,13 +99,8 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
           throw new Error(error.message);
         }
 
-        // Force a page refresh or redirect to ensure session state updates
-        if (nextUrl) {
-          router.push(nextUrl);
-        } else {
-          // Refresh the page to ensure session state is updated
-          window.location.reload();
-        }
+        // Refresh the page to ensure session state is updated
+        window.location.href = nextUrl || "/";
       }
     } catch (error) {
       console.error("Something went wrong", error);

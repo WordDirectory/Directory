@@ -28,15 +28,26 @@ import {
 import { Checkbox } from "@/components/ui/checkbox";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
   AI_INITIAL_MESSAGE_KEY,
   DEFAULT_INITIAL_MESSAGE,
   SHOW_IMAGES_KEY,
+  SMART_IMAGE_OPEN_KEY,
+  SMART_IMAGE_OPEN_OPTIONS,
+  DEFAULT_SMART_IMAGE_OPEN,
   HEAR_EXAMPLES_BEHAVIOR_KEY,
   HEAR_EXAMPLES_BEHAVIORS,
   DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
   SHOW_RANDOM_WORDS_KEY,
   DEFAULT_SHOW_RANDOM_WORDS,
   type HearExamplesBehavior,
+  type SmartImageOpenBehavior,
 } from "@/lib/settings";
 
 export default function SettingsPage() {
@@ -49,6 +60,12 @@ export default function SettingsPage() {
   const [showImages, setShowImages] = useState(false);
   const [savedShowImages, setSavedShowImages] = useState(false);
   const [isSavingImages, setIsSavingImages] = useState(false);
+  const [smartImageOpen, setSmartImageOpen] = useState<SmartImageOpenBehavior>(
+    DEFAULT_SMART_IMAGE_OPEN
+  );
+  const [savedSmartImageOpen, setSavedSmartImageOpen] =
+    useState<SmartImageOpenBehavior>(DEFAULT_SMART_IMAGE_OPEN);
+  const [isSavingSmartImage, setIsSavingSmartImage] = useState(false);
   const [hearExamplesBehavior, setHearExamplesBehavior] =
     useState<HearExamplesBehavior>(DEFAULT_HEAR_EXAMPLES_BEHAVIOR);
   const [savedHearExamplesBehavior, setSavedHearExamplesBehavior] =
@@ -83,6 +100,18 @@ export default function SettingsPage() {
     if (savedImagePref) {
       setShowImages(savedImagePref === "true");
       setSavedShowImages(savedImagePref === "true");
+    }
+
+    // Load smart image open behavior from localStorage
+    const savedSmartImageOpen = localStorage.getItem(SMART_IMAGE_OPEN_KEY);
+    if (
+      savedSmartImageOpen &&
+      SMART_IMAGE_OPEN_OPTIONS.includes(
+        savedSmartImageOpen as SmartImageOpenBehavior
+      )
+    ) {
+      setSmartImageOpen(savedSmartImageOpen as SmartImageOpenBehavior);
+      setSavedSmartImageOpen(savedSmartImageOpen as SmartImageOpenBehavior);
     }
 
     // Load hear examples behavior from localStorage
@@ -365,23 +394,60 @@ export default function SettingsPage() {
               </div>
             </div>
 
+            {showImages && (
+              <div className="flex flex-col gap-2 ml-6">
+                <Label className="text-sm font-medium">Smart Image Open</Label>
+                <Select
+                  value={smartImageOpen}
+                  onValueChange={(value: SmartImageOpenBehavior) =>
+                    setSmartImageOpen(value)
+                  }
+                  disabled={!showImages}
+                >
+                  <SelectTrigger className="w-full max-w-xs">
+                    <SelectValue />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="smart">
+                      Smart (AI decides relevance)
+                    </SelectItem>
+                    <SelectItem value="always">Always show images</SelectItem>
+                  </SelectContent>
+                </Select>
+                <p className="text-[13px] text-muted-foreground">
+                  Smart mode uses AI to determine if images are relevant for the
+                  word (e.g., "apple" yes, "idea" no). Always mode shows images
+                  regardless of relevance.
+                </p>
+              </div>
+            )}
+
             <Button
               className="w-fit"
               onClick={async () => {
                 try {
                   setIsSavingImages(true);
+                  setIsSavingSmartImage(true);
                   localStorage.setItem(SHOW_IMAGES_KEY, showImages.toString());
+                  localStorage.setItem(SMART_IMAGE_OPEN_KEY, smartImageOpen);
                   setSavedShowImages(showImages);
+                  setSavedSmartImageOpen(smartImageOpen);
                   toast.success("Image preferences saved!");
                 } catch (error) {
                   toast.error("Failed to save image preferences");
                 } finally {
                   setIsSavingImages(false);
+                  setIsSavingSmartImage(false);
                 }
               }}
-              disabled={isSavingImages || showImages === savedShowImages}
+              disabled={
+                isSavingImages ||
+                isSavingSmartImage ||
+                (showImages === savedShowImages &&
+                  smartImageOpen === savedSmartImageOpen)
+              }
             >
-              {isSavingImages ? (
+              {isSavingImages || isSavingSmartImage ? (
                 <>
                   <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   Saving...

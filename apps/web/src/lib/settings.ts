@@ -9,5 +9,10 @@ export const DEFAULT_HEAR_EXAMPLES_BEHAVIOR: HearExamplesBehavior =
 
 export const SHOW_IMAGES_KEY = "show-images";
 
+export const SMART_IMAGE_OPEN_KEY = "smart-image-open";
+export const SMART_IMAGE_OPEN_OPTIONS = ["smart", "always"] as const;
+export type SmartImageOpenBehavior = (typeof SMART_IMAGE_OPEN_OPTIONS)[number];
+export const DEFAULT_SMART_IMAGE_OPEN: SmartImageOpenBehavior = "smart";
+
 export const SHOW_RANDOM_WORDS_KEY = "show-random-words";
 export const DEFAULT_SHOW_RANDOM_WORDS = true;

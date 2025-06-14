@@ -6,11 +6,6 @@ export async function middleware(request: NextRequest) {
   const path = request.nextUrl.pathname;
   const session = getSessionCookie(request);
 
-  // Auth pages - redirect to home if already logged in
-  if (path.startsWith("/auth") && session) {
-    return NextResponse.redirect(new URL("/", request.url));
-  }
-
   // Protected pages - redirect to login if not logged in
   if ((path.startsWith("/settings") || path.startsWith("/user/saved")) && !session) {
     const loginUrl = new URL("/auth/login", request.url);

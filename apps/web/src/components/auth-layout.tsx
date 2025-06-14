@@ -47,7 +47,6 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
     defaultValues: {
       email: "",
       password: "",
-      ...(mode === "signup" ? { confirmPassword: "" } : {}),
     },
   });
 
@@ -230,41 +229,6 @@ function AuthLayoutInner({ mode }: AuthLayoutProps) {
                     </FormItem>
                   )}
                 />
-
-                {mode === "signup" && (
-                  <FormField
-                    control={form.control}
-                    name="confirmPassword"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Confirm Password</FormLabel>
-                        <FormControl>
-                          <div className="relative">
-                            <Input
-                              type={showPassword ? "text" : "password"}
-                              placeholder="••••••••"
-                              {...field}
-                            />
-                            <Button
-                              type="button"
-                              variant="ghost"
-                              size="icon"
-                              className="absolute right-0 top-0 h-full px-3 text-muted-foreground hover:text-foreground"
-                              onClick={() => setShowPassword(!showPassword)}
-                            >
-                              {showPassword ? (
-                                <Eye className="h-4 w-4" />
-                              ) : (
-                                <EyeOff className="h-4 w-4" />
-                              )}
-                            </Button>
-                          </div>
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
-                )}
 
                 {formError && (
                   <div className="text-sm font-medium text-destructive">

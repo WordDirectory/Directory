@@ -16,3 +16,8 @@ export const DEFAULT_SMART_IMAGE_OPEN: SmartImageOpenBehavior = "smart";
 
 export const SHOW_RANDOM_WORDS_KEY = "show-random-words";
 export const DEFAULT_SHOW_RANDOM_WORDS = true;
+
+export const SENSITIVITY_LEVEL_KEY = "sensitivity-level";
+export const SENSITIVITY_LEVELS = [0, 0.5, 1] as const;
+export type SensitivityLevel = (typeof SENSITIVITY_LEVELS)[number];
+export const DEFAULT_SENSITIVITY_LEVEL: SensitivityLevel = 0.5;

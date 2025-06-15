@@ -2,9 +2,11 @@
 
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
+import { useSensitivityStore } from "@/stores/sensitivity-store";
 
 export function GlobalKeyboardShortcuts() {
   const pathname = usePathname();
+  const { cycleSensitivityLevel } = useSensitivityStore();
 
   useEffect(() => {
     console.log(
@@ -16,6 +18,7 @@ export function GlobalKeyboardShortcuts() {
       console.log("GlobalKeyboardShortcuts: Key pressed:", event.key, {
         ctrlKey: event.ctrlKey,
         metaKey: event.metaKey,
+        shiftKey: event.shiftKey,
         target: event.target,
         isTypingInInput: isTypingInInput(event.target as Element),
       });
@@ -37,6 +40,18 @@ export function GlobalKeyboardShortcuts() {
         );
         event.preventDefault();
         focusSearchInput();
+        return;
+      }
+
+      // Handle Ctrl+Shift+S or Cmd+Shift+S for sensitivity cycling
+      if (
+        (event.ctrlKey || event.metaKey) &&
+        event.shiftKey &&
+        event.key.toLowerCase() === "s" &&
+        !isTypingInInput(event.target as Element)
+      ) {
+        event.preventDefault();
+        cycleSensitivityLevel();
         return;
       }
     };
@@ -77,7 +92,7 @@ export function GlobalKeyboardShortcuts() {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [pathname]);
+  }, [pathname, cycleSensitivityLevel]);
 
   return null; // This component doesn't render anything
 }

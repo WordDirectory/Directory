@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { Toaster } from "@/components/ui/sonner";
 import { MessageProvider } from "@/components/message-provider";
 import { GlobalKeyboardShortcuts } from "@/components/global-keyboard-shortcuts";
+import { SensitivityBadge } from "@/components/sensitivity-badge";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -111,6 +112,7 @@ export default function RootLayout({
             <Toaster />
             <MessageProvider />
             <GlobalKeyboardShortcuts />
+            <SensitivityBadge />
           </TooltipProvider>
         </ThemeProvider>
       </body>

@@ -46,12 +46,17 @@ import {
   DEFAULT_HEAR_EXAMPLES_BEHAVIOR,
   SHOW_RANDOM_WORDS_KEY,
   DEFAULT_SHOW_RANDOM_WORDS,
+  SENSITIVITY_LEVELS,
   type HearExamplesBehavior,
   type SmartImageOpenBehavior,
+  type SensitivityLevel,
 } from "@/lib/settings";
+import { useSensitivityStore } from "@/stores/sensitivity-store";
 
 export default function SettingsPage() {
   const { data: session, isPending } = useSession();
+  const { sensitivityLevel, setSensitivityLevel, formatSensitivityLabel } =
+    useSensitivityStore();
   const [isSaving, setIsSaving] = useState(false);
   const [initialMessage, setInitialMessage] = useState(DEFAULT_INITIAL_MESSAGE);
   const [savedInitialMessage, setSavedInitialMessage] = useState(
@@ -523,6 +528,71 @@ export default function SettingsPage() {
                 "Save changes"
               )}
             </Button>
+          </div>
+        </section>
+
+        <section className="flex flex-col gap-8 border-t pt-8">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center justify-between">
+              <h2 className="text-2xl font-semibold">Content Sensitivity</h2>
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                <kbd className="pointer-events-none inline-flex h-5 select-none items-center gap-1 rounded border bg-muted px-1.5 font-mono text-[10px] font-medium text-muted-foreground opacity-100">
+                  <span className="text-xs">⌘</span>⇧S
+                </kbd>
+              </div>
+            </div>
+            <p className="text-sm text-muted-foreground">
+              Control which words are shown based on their content sensitivity.
+              Words with definitions at or above your selected level will be
+              hidden from search results and require explicit confirmation to
+              view.
+            </p>
+          </div>
+
+          <div className="flex flex-col gap-4">
+            <Label className="text-sm font-medium">Sensitivity Level</Label>
+            <RadioGroup
+              value={sensitivityLevel.toString()}
+              onValueChange={(value) =>
+                setSensitivityLevel(parseFloat(value) as SensitivityLevel)
+              }
+              className="gap-4"
+            >
+              {SENSITIVITY_LEVELS.map((level) => (
+                <div key={level} className="flex items-center space-x-2">
+                  <RadioGroupItem
+                    value={level.toString()}
+                    id={`sensitivity-${level}`}
+                  />
+                  <div className="grid gap-1.5 leading-none">
+                    <Label
+                      htmlFor={`sensitivity-${level}`}
+                      className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                    >
+                      {formatSensitivityLabel(level)} ({level})
+                    </Label>
+                    <p className="text-[13px] text-muted-foreground">
+                      {level === 0 &&
+                        "Only show words with safe, family-friendly definitions"}
+                      {level === 0.5 &&
+                        "Show most words, hide only highly sensitive content (default)"}
+                      {level === 1 &&
+                        "Show all words regardless of content sensitivity"}
+                    </p>
+                  </div>
+                </div>
+              ))}
+            </RadioGroup>
+
+            <div className="text-xs text-muted-foreground">
+              <p>
+                <strong>Quick toggle:</strong> Press{" "}
+                <kbd className="inline-flex h-4 select-none items-center gap-1 rounded border bg-muted px-1 font-mono text-[9px] font-medium">
+                  ⌘⇧S
+                </kbd>{" "}
+                to cycle through sensitivity levels quickly
+              </p>
+            </div>
           </div>
         </section>
 

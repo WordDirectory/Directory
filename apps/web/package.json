@@ -16,6 +16,7 @@
     "db:push:local": "cross-env NODE_ENV=development drizzle-kit push",
     "db:push:prod": "cross-env NODE_ENV=production drizzle-kit push",
     "migrate:words": "npx tsx scripts/migrate-words.ts",
+    "export:sqlite": "npx tsx scripts/export-to-sqlite.ts",
     "test-db": "npx tsx scripts/test-db.ts",
     "count": "npx tsx scripts/count-words.ts"
   },
@@ -105,10 +106,12 @@
   "devDependencies": {
     "@netlify/plugin-nextjs": "^5.11.2",
     "@opennextjs/cloudflare": "^1.2.1",
+    "@types/better-sqlite3": "^7.6.13",
     "@types/bun": "latest",
     "@types/node": "^22.15.3",
     "@types/react": "^18.3.20",
     "@types/react-dom": "^18.3.7",
+    "better-sqlite3": "^11.10.0",
     "cross-env": "^7.0.3",
     "drizzle-kit": "^0.31.0",
     "postcss": "^8",

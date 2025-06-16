@@ -103,7 +103,7 @@ export function SearchDropdown({
           <div className="p-4 flex items-center justify-center h-full">
             <div className="text-center">
               <div className="mb-4 flex justify-center">
-                <RotateCw className="h-8 w-8 text-muted-foreground opacity-50 animate-spin" />
+                <RotateCw className="h-8 w-8 text-muted-foreground opacity-50 animate-spin [animation-duration:250ms]" />
               </div>
               <p className="text-sm text-muted-foreground">
                 Searching words...

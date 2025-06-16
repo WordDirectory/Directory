@@ -8,7 +8,10 @@ import { useDebounce } from "@/hooks/use-debounce";
 import { useSearchStore } from "@/stores/search-store";
 import { SearchDropdown } from "./search-dropdown";
 
-function getWordFromPathname(pathname: string, searchParams: URLSearchParams): string {
+function getWordFromPathname(
+  pathname: string,
+  searchParams: URLSearchParams
+): string {
   // Check for word param on not-found page
   if (pathname === "/words/not-found") {
     const wordParam = searchParams.get("word");
@@ -118,7 +121,6 @@ function SearchInputInner() {
           onChange={(e) => setQuery(e.target.value)}
           onClick={handleOpen}
           onKeyDown={handleKeyDown}
-          readOnly={!isOpen}
           className="h-9 w-full md:w-72 text-sm rounded-full"
         />
       </div>

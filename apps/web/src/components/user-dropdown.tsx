@@ -80,17 +80,18 @@ export function UserDropdown() {
 
   const handleBillingPortal = async () => {
     try {
-      const response = await fetch("/api/stripe/portal", {
-        method: "POST",
-      });
+      const response = await fetch("/api/stripe/portal", { method: "POST" });
+      const data = await response.json();
 
-      const { url } = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || "API error");
+      }
 
-      if (url) {
-        window.location.href = url;
-      } else {
+      if (!data.url) {
         throw new Error("No portal URL received");
       }
+
+      window.location.href = data.url;
     } catch (error) {
       toast.error("Error opening billing portal", {
         description: error instanceof Error ? error.message : "Unknown error",

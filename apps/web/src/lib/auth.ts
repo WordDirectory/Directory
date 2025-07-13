@@ -219,7 +219,7 @@ export const auth = betterAuth({
             name: "free",
             limits: {
               aiUsage: 10,
-              wordLookups: 10,
+              wordLookups: 999999999,
             },
           },
           {

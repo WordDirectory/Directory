@@ -2,15 +2,7 @@ import { NextResponse } from "next/server";
 import { headers } from "next/headers";
 import { rateLimit } from "@/lib/rate-limit";
 import { getWord } from "@/lib/db/queries";
-import {
-  WordLookupError,
-  checkWordLookupLimit,
-  trackWordView,
-  incrementWordLookupCount,
-  hasUserViewedWord,
-} from "@/lib/word-limits";
 import { auth } from "@/lib/auth";
-import lemmatizer from "@/lib/lemmatizer";
 import { getWordWithLimits } from "@/lib/word-service";
 
 export async function HEAD(
@@ -54,20 +46,33 @@ export async function GET(
   { params }: { params: Promise<{ word: string }> }
 ) {
   try {
-    // Get IP address from X-Forwarded-For header or fallback to a default
+    const { searchParams } = new URL(request.url);
+    const next = searchParams.get("next");
+    const { word } = await params;
+
+    // If we have a next URL, do a fast redirect without all the tracking bullshit
+    if (next) {
+      // Just do basic rate limiting and redirect immediately
+      const headersList = await headers();
+      const forwardedFor = headersList.get("x-forwarded-for");
+      const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
+
+      // Quick rate limit check only
+      await rateLimit(ip);
+
+      return NextResponse.redirect(next);
+    }
+
+    // Only do the full processing if we're not redirecting
     const headersList = await headers();
     const forwardedFor = headersList.get("x-forwarded-for");
     const userAgent = headersList.get("user-agent");
     const ip = forwardedFor ? forwardedFor.split(",")[0] : "127.0.0.1";
     const session = await auth.api.getSession(request);
     const userId = session?.user?.id || null;
-
-    const { searchParams } = new URL(request.url);
     const fallback = searchParams.get("fallback");
-    const next = searchParams.get("next");
 
     // Get the word and process it with all limits and tracking
-    const { word } = await params;
     const result = await getWordWithLimits(
       word,
       userId,
@@ -79,11 +84,6 @@ export async function GET(
     // Handle the different result types
     switch (result.type) {
       case "success":
-        // If we have a next URL and the word was found, redirect there
-        if (next) {
-          return NextResponse.redirect(next);
-        }
-        // Otherwise return the word data
         return NextResponse.json(result.data);
 
       case "limit_reached":

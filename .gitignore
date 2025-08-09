@@ -73,3 +73,5 @@ scripts/
 /apps/videos
 
 /apps/web/src/app/admin
+
+/apps/native/node_modules

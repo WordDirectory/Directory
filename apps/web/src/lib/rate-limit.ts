@@ -6,17 +6,25 @@ export async function rateLimit(ip: string) {
   const now = Date.now();
   const key = `rate-limit:${ip}`;
 
-  const requests = await redis.zrange(key, now - RATE_LIMIT_WINDOW, "+inf", {
-    byScore: true,
-  });
+  // Use a pipeline to batch Redis operations for better performance
+  const pipeline = redis.pipeline();
 
-  if (requests.length >= RATE_LIMIT_MAX) {
+  // Get current request count in the window
+  pipeline.zcount(key, now - RATE_LIMIT_WINDOW, "+inf");
+
+  const results = await pipeline.exec();
+  const requestCount = results?.[0]?.[1] as number;
+
+  if (requestCount >= RATE_LIMIT_MAX) {
     throw new Error("Too many requests");
   }
 
-  await redis.zadd(key, { score: now, member: now.toString() });
-  await redis.zremrangebyscore(key, 0, now - RATE_LIMIT_WINDOW);
-  await redis.expire(key, 60);
+  // Only add and cleanup if we're not over the limit
+  const cleanupPipeline = redis.pipeline();
+  cleanupPipeline.zadd(key, { score: now, member: now.toString() });
+  cleanupPipeline.zremrangebyscore(key, 0, now - RATE_LIMIT_WINDOW);
+  cleanupPipeline.expire(key, 60);
+  await cleanupPipeline.exec();
 }
 
 export async function elevenlabsRateLimit(ip: string) {
